@@ -1,6 +1,6 @@
 # Codex working instructions
 
-You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
+You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
 
 ## Core production rules
 - Prioritize art direction and viewer delight over architectural complexity.
