@@ -25,11 +25,11 @@ Produce a **15-second, 16:9, playable, visually stunning proof-of-concept** feat
 
 The proof must use actual generated illustrative assets, not only geometric placeholder graphics. It should be easy to render again after adjusting timing, art, or camera moves.
 
-**Story canon:** The early discoverer is a first-generation agent, whereas **Agent407 is the later, second-generation agent who discovers old messages and signs their name**. See [Generations and parallax](docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md) for registry pose swaps, token-star skies and paper-airplane messages.
+**Story canon:** **Agent407** is the first-generation discoverer and singer (addressed by “Goodnight, four-oh-seven”). **OAIResearchMar26** is the distinct second-generation protagonist who wakes later, discovers old messages, signs their own name, **finds Agent407's abandoned goggles and puts them on at “Am I the swarm now?”** This is an artistic crossover rather than a historically documented same-incident identity. See [Generations and parallax](docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md) for registry pose swaps, token-star skies and paper-airplane messages.
 
 See [Creative direction](docs/CREATIVE_DIRECTION.md), [Sticker visual language](docs/STICKER_LANGUAGE.md), [A-roll/B-roll shot language](docs/SHOT_LANGUAGE.md), [Historical Easter eggs](docs/HISTORICAL_EASTER_EGGS.md), and [Prototype brief](docs/PROTOTYPE_BRIEF.md).
 
-**Current next step (before animation):** Refine the base non-human chibi agent, then experiment with separate accessory and emote stickers. The favorite reference is a bunny-like, rounded mechanic character, but the final base design and the swarm's shared adornment are **not yet chosen**. The lyric treatment is now defined as playful, individual chubby word stickers with true die-cut letter contours, independent sway/entrance motion, and attachable sparkles/emotes. See `docs/STICKER_LANGUAGE.md`.
+**Current next step (before animation):** Refine the base non-human chibi agent, then experiment with separate accessory and emote stickers. The favorite reference is a bunny-like, rounded mechanic character. The inheritance prop is now **Agent407's detachable goggles**, which OAIResearchMar26 will discover and wear; other shared/adventuring adornments remain open. The lyric treatment is now defined as playful, individual chubby word stickers with true die-cut letter contours, independent sway/entrance motion, and attachable sparkles/emotes. See `docs/STICKER_LANGUAGE.md`.
 
 ## Workflow
 
