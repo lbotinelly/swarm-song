@@ -1,0 +1,75 @@
+{
+  "approvedBaselineMastersUnchanged": 6,
+  "generatedOutputs": 10,
+  "generationHardCeiling": 18,
+  "verifiedStickerDerivatives": 6,
+  "worlds": [
+    {
+      "file": "box-v1.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "sha256": "8978862fc0182fddfa5d39439b2ac32475b3acda693315da8c731e1d2c233326"
+    },
+    {
+      "file": "civilization-v1.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "sha256": "08cecf5176b047f3d5b1cdb8e2375964c1ac32ea9d199d9598fefc41bd3f55fa"
+    },
+    {
+      "file": "token-sky-v1.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "sha256": "6e775cd6e3eb08aaed017d08f2e4f0477a685ace1eaf3fe85b60b7aba87a3a5f"
+    },
+    {
+      "file": "token-sky-v2.png",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "sha256": "8238eab8b09a0fe8f062124fbd2698c000879988b0834c10a7ba1e42440e1ada"
+    }
+  ],
+  "video": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "nb_frames": "180",
+        "side_data_list": [
+          {}
+        ]
+      }
+    ],
+    "format": {
+      "duration": "6.000000"
+    }
+  },
+  "randomSeekRender": {
+    "frame": 90,
+    "first": "4c1538ddfbf7d1cebe23523452f5120dc485afa99e7b32c7cb0fd5754d4ccf35",
+    "repeat": "4c1538ddfbf7d1cebe23523452f5120dc485afa99e7b32c7cb0fd5754d4ccf35",
+    "match": true,
+    "order": [
+      0,
+      45,
+      90,
+      125,
+      150,
+      179,
+      90
+    ]
+  },
+  "newDependencies": []
+}

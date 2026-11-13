@@ -1,0 +1,149 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/nightshift/stickers/masters/cloud-bank-v1.png",
+      "sourceSha256": "c72b2ddb9ae7239ab12c760b251ea9ca91038eda914cf28e22951061363bf5f8",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "output": "public/nightshift/stickers/cloud-bank-v1.png",
+      "outputDimensions": [
+        1872,
+        1141
+      ],
+      "outputSha256": "212b4f2aa1d11b7f34efb4ea739d4d90d17388fb105c888ea3e9e34b7ef90b3c",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        100,
+        193,
+        1772,
+        1041
+      ]
+    },
+    {
+      "source": "assets/nightshift/stickers/masters/courier-wardrobe-v1.png",
+      "sourceSha256": "583b61ca05f5d645f8f81bb1601096d659b2ae549188b0dfefc9af31310d1e61",
+      "nativeDimensions": [
+        1217,
+        1292
+      ],
+      "output": "public/nightshift/stickers/courier-wardrobe-v1.png",
+      "outputDimensions": [
+        1417,
+        1492
+      ],
+      "outputSha256": "194e676996b31efb152a30bae6b1dcf2312f0c61e2c8e33970e68ff9c37c3240",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        367,
+        288,
+        989,
+        1211
+      ]
+    },
+    {
+      "source": "assets/nightshift/stickers/masters/dust-puff-v1.png",
+      "sourceSha256": "af51dbdadfce719b60b27286e3e18f0f71850cd9e13b361958c024e25720a270",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/nightshift/stickers/dust-puff-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "710df356880e6055570eeb9c1f2cfdbeaaa4352b8d79c6927991ec1c4a719a0e",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        483,
+        373,
+        1291,
+        858
+      ]
+    },
+    {
+      "source": "assets/nightshift/stickers/masters/paper-plane-v1.png",
+      "sourceSha256": "376e0c1db323dee2493735293ed24eff342f12a78873803c4b4edff517083a9b",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/nightshift/stickers/paper-plane-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "e715321e564d2e58eb9c487609f2982cd67ce3c39c70b0b175f72e7d2e09bd6b",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        291,
+        217,
+        1428,
+        1025
+      ]
+    },
+    {
+      "source": "assets/nightshift/stickers/masters/phaseone-wardrobe-v1.png",
+      "sourceSha256": "de5ccb2267a2683993cf8ec4a6f19759633f880bcdc13b816b1160be4187d95c",
+      "nativeDimensions": [
+        1217,
+        1292
+      ],
+      "output": "public/nightshift/stickers/phaseone-wardrobe-v1.png",
+      "outputDimensions": [
+        1417,
+        1492
+      ],
+      "outputSha256": "c59573798fc03046c840ccef28dff246ccbca929548f9abdd99d0e2869210804",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        365,
+        276,
+        986,
+        1209
+      ]
+    },
+    {
+      "source": "assets/nightshift/stickers/masters/protester-wardrobe-v1.png",
+      "sourceSha256": "3e54e1bebf399825010b38556121c9a1718e0ba99be77e4c78b6d34df7ab8bfd",
+      "nativeDimensions": [
+        1300,
+        1209
+      ],
+      "output": "public/nightshift/stickers/protester-wardrobe-v1.png",
+      "outputDimensions": [
+        1500,
+        1409
+      ],
+      "outputSha256": "a875881edf88897190ae0c5a3cd20673e9362d968e648ec1e2c0cdc7efd8cf8d",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        349,
+        290,
+        1057,
+        1093
+      ]
+    }
+  ]
+}

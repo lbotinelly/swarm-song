@@ -1,0 +1,15 @@
+{
+  "frame": 90,
+  "first": "4c1538ddfbf7d1cebe23523452f5120dc485afa99e7b32c7cb0fd5754d4ccf35",
+  "repeat": "4c1538ddfbf7d1cebe23523452f5120dc485afa99e7b32c7cb0fd5754d4ccf35",
+  "match": true,
+  "order": [
+    0,
+    45,
+    90,
+    125,
+    150,
+    179,
+    90
+  ]
+}

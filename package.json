@@ -2,7 +2,7 @@
   "name": "swarm-song", "version": "0.0.1", "private": true, "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.tsx",
-    "check": "tsc --noEmit && node --test src/timeline.test.ts src/sprites.test.ts",
+    "check": "tsc --noEmit && node --test src/timeline.test.ts src/sprites.test.ts src/night-sky.test.ts",
     "timing": "node scripts/timing.ts",
     "render": "remotion render src/index.tsx RegistryDiscovery output/registry-v2/registry.mp4 --codec=h264",
     "review": "node scripts/review.mjs"

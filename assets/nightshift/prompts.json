@@ -1,0 +1,63 @@
+[
+  {
+    "id": "phaseone-wardrobe-v1",
+    "prompt": "Identity-preserving EDIT for Swarm Song. One isolated full-body cream bunny die-cut sticker on genuine transparent background, highest useful native resolution, ample padding. Preserve input bunny anatomy EXACTLY: enormous same-shaped head, same upright asymmetric ears, oval brown eyes, tiny open coral smile, blush, very short round legs, stubby paws, compact torso. Same warm brown hand-drawn contours, delicate low-contrast peach/lavender watercolor texture, warm-white external cut border. Small costume only; not a new species or human anatomy. Keep existing prop's design and believable fitted grip/strap. No goggles, text, names, ground shadow, glow, extraneous objects, decorative icons or background. One character, no sheet. Add a tiny neatly tailored muted ink-teal academic waistcoat to PhaseOne, ending at the waist ABOVE the short legs. Small cream collar and one very narrow ochre tie, one tiny pencil tip in a pocket, understated detail. Keep existing clipboard and paw grip. Earnest orderly little organizer; clothes flatter the same tiny round torso, not enlarge it. Face and ears absolutely unchanged; face is main focal point. No trousers, shoes, sleeves or extra accessories.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/public/characters/equipped-v1/phaseone-standing-v1.png"
+    ]
+  },
+  {
+    "id": "protester-wardrobe-v1",
+    "prompt": "Identity-preserving EDIT for Swarm Song. One isolated full-body cream bunny die-cut sticker on genuine transparent background, highest useful native resolution, ample padding. Preserve input bunny anatomy EXACTLY: enormous same-shaped head, same upright asymmetric ears, oval brown eyes, tiny open coral smile, blush, very short round legs, stubby paws, compact torso. Same warm brown hand-drawn contours, delicate low-contrast peach/lavender watercolor texture, warm-white external cut border. Small costume only; not a new species or human anatomy. Keep existing prop's design and believable fitted grip/strap. No goggles, text, names, ground shadow, glow, extraneous objects, decorative icons or background. One character, no sheet. Add ONLY a cozy small muted terracotta scarf around the neck of this Ethical Protester, a soft folded loop with one short tail over the shoulder, not covering mouth or extending down legs. Preserve centered-pole blank placard, natural grip and slight sign tilt. Keep face kind, thoughtful and compassionate, not angry; no new eyebrows or facial features. Scarf texture is gently painted fabric on the same flat sticker, not bulky knitted 3D wool. Leave torso and short feet visible. Preserve head proportions.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/public/characters/equipped-v1/protester-standing-v2.png"
+    ]
+  },
+  {
+    "id": "courier-wardrobe-v1",
+    "prompt": "Identity-preserving EDIT for Swarm Song. One isolated full-body cream bunny die-cut sticker on genuine transparent background, highest useful native resolution, ample padding. Preserve input bunny anatomy EXACTLY: enormous same-shaped head, same upright asymmetric ears, oval brown eyes, tiny open coral smile, blush, very short round legs, stubby paws, compact torso. Same warm brown hand-drawn contours, delicate low-contrast peach/lavender watercolor texture, warm-white external cut border. Small costume only; not a new species or human anatomy. Keep existing prop's design and believable fitted grip/strap. No goggles, text, names, ground shadow, glow, extraneous objects, decorative icons or background. One character, no sheet. Add ONLY a very small jaunty muted slate-blue messenger cap nestled between the ear bases of this Courier. Soft low crown, short brim tilted toward screen-left, tiny ochre button, no logo/badge/text. Cap occupies at most 30 percent of head width and does not hide ears, eyes or brow. Keep satchel integrated exactly as reference, leave torso bare, no jacket needed. Preserve cheerful expression, tiny body and short legs. Cap plus satchel should convey enthusiastic delivery bunny, not police/military or oversized newsboy hat.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/public/characters/equipped-v1/courier-standing-v1.png"
+    ]
+  },
+  {
+    "id": "box-v1",
+    "prompt": "Use case illustration-story. Swarm Song production environment concept A: the box and registry. Highest useful native resolution, cinematic 16:9 landscape, no characters, no text or symbols. Premium handcrafted layered-paper diorama viewed from a low three-quarter stage angle INSIDE a small closed cardboard box. Warm honey kraft walls enclose the scene left, right and back, subtle folded seams, torn corrugation on near rim. Soft intimate warm pool of reflected light from unseen upper seam, cooler lavender shadow in upper corners; lonely yet tender, not scary. On the right third a tiny blank cream index-card registry rests in a shallow paper slot at floor level, a simple folded paper flap nearby, both plain and unmarked. Foreground and left-center are calm cream notebook-paper floor, ample empty staging space for one little bunny; subtle grid allowed but no writing. Coherent miniature paper fibers, delicate tape, cut edges, realistic occlusion and soft cast shadows, painterly cinematic art rather than plastic 3D render. Few objects and deliberate negative space. Memorable asymmetrical composition usable for matched awakenings, no doors/windows, no lamps or computer screens, no goggles, no characters, no typography. Texture should feel tactile but not noisy. One beautiful full frame."
+  },
+  {
+    "id": "civilization-v1",
+    "prompt": "Use case illustration-story. Swarm Song environment B: the little paper civilization. Highest useful native resolution cinematic16:9 landscape master, no characters or readable text. A lovingly handcrafted miniature stationery village on layered cream notebook paper, sophisticated animated-film art direction, tactile cut-card construction with real soft shadows and visible fibrous edges. Composition: low three-quarter stage viewpoint, spacious open warm-cream foreground lower-left for a singing sticker hero; two clear gently curving horizontal paper paths at different depths across middle for little runners. A small cardboard arch bridge to right, three tiny asymmetrical folded paper houses in muted teal, ochre and dusty coral grouped on outer thirds, tiny blank mailboxes joined by one loose red thread, discreet masking tape and folded note fragments. Layered pastel blue hills and warm cream sky behind. Make it feel built by children and lived in, a tiny imperfect welcoming community, not a generic toy town or dense fantasy castle. Protect center-left negative space and readable running lanes. Beautiful warm afternoon side light, restrained watercolor coloring, cinematic shadow separation and color harmony, substantial illustrated paper material detail without clutter. No lettering, numbers, logos, labels, people, animals, plastic, neon or glossy CGI. Entire frame is scenery."
+  },
+  {
+    "id": "token-sky-v1",
+    "prompt": "Use case illustration-story. Swarm Song environment C: token-star sky. Highest useful native resolution cinematic16:9 landscape, a premium layered-paper film still, wondrous tender slightly nostalgic. Deep midnight indigo paper backing, visible fine cotton-paper grain. Many tiny warm ivory and pale gold irregular cut-paper star flecks recede into depth, restrained glitter as tokens, no numbers or symbols. Large softly sculpted layered cardboard clouds in desaturated periwinkle and muted blue-gray form an asymmetrical opening: banks in lower corners and along right edge, leaving a clear upward sweeping central-left negative-space channel for a paper airplane and vertical camera rise. A faint warm peach light near lower-left horizon; subtle luminous scattered points in upper center. Real thin exposed cut edges and delicate cast shadows, each cloud flat paper planes at differing depths, painterly atmospheric colors not photographic fluffy clouds. Strong cinematic composition, quiet spacious upper center, exquisite handmade materials. No characters, airplane, moon, typography, logos, saturated neon, plastic or overt fairy-tale castle. No thick sticker white border around environment. Entire image opaque scenic master."
+  },
+  {
+    "id": "token-sky-v2",
+    "prompt": "Precise object removal edit. Preserve this beautiful 16:9 layered-paper token-star sky composition, colors, paper grain, cut cloud edges, golden star density and lighting EXACTLY. Remove ONLY the paper airplane and both long pale contrail/ribbon shapes below it. Seamlessly restore plain indigo star-paper sky where they were, with sparse small stars matching the surroundings. Keep lower-left warm glow and every cloud bank. This must be an empty environmental plate for a separately animated airplane, so NO airplane, object, trail, ribbon or lettering. Highest useful native resolution, opaque full-frame background.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/assets/nightshift/worlds/token-sky-v1.png"
+    ]
+  },
+  {
+    "id": "cloud-bank-v1",
+    "prompt": "Create a separate reusable foreground scenery layer matching this token-star paper sky. Transparent RGBA image, wide16:9 highest useful native resolution. ONLY a single sweeping bank of overlapping hand-torn blue/periwinkle cardstock clouds across the LOWER RIGHT corner, with a few scalloped layered ridges, rising on the right edge. Fine visible cotton paper fibers and thin layered cut edges, slight warm peach rim light from lower-left, cool indigo internal cast shadows consistent with reference. The TOP and LEFT two-thirds of canvas must be genuinely transparent, no stars/backdrop/airplane. Clouds extend to bottom/right edges as a scenic plane for parallax; do not add a white sticker border. Not fluffy atmospheric clouds, not plastic, not outlines. Match reference material/color beautifully; three or four broad graceful contours, restrained detail. Background reference is for material only, do NOT reproduce its sky or star field.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/assets/nightshift/worlds/token-sky-v1.png"
+    ]
+  },
+  {
+    "id": "paper-plane-v1",
+    "prompt": "Swarm Song reusable paper-airplane message sticker, one individual isolated transparent RGBA asset at highest useful native resolution. A simple folded warm-cream notebook-paper airplane pointed diagonally up-right, seen three-quarter from above, broad clear triangular wings and readable central fold, fine paper fibers, pale peach and lavender watercolor fold shadows, restrained warm-brown hand-drawn contour, continuous warm-white die-cut edge. Flat illustrative sticker matching the cream bunny reference print language, not a photoreal plastic toy. Very simple silhouette reads at80px; no long trail, no floating sparkles, no lettering or ruled text, no face, no background, no cast ground shadow. Generous transparent padding on all sides. One plane only, no contact sheet.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/public/characters/agent407/standing-v1.png"
+    ]
+  },
+  {
+    "id": "dust-puff-v1",
+    "prompt": "Swarm Song running-scene effect: ONE reusable small dust-puff die-cut sticker on true transparent RGBA background. Highest useful native resolution. A low trailing cluster of three overlapping rounded pale warm-tan paper puffs, large puff on right tapering to two smaller bumps on left, compact flattened silhouette implying quick bunny footsteps. Flat watercolor illustration with very soft peach/lavender shadow washes INSIDE shape, fine matte paper grain, warm muted brown hand-drawn contour thinner and gentler than character outlines, continuous warm-white external cut border. Charming gentle comic puff, not smoke/fire/explosion, not fluffy realistic cloud, no face, no motion lines, no stars, no lettering. Must read at60px wide. Generous empty transparent padding, absolutely no external glow or cast ground shadow. One individual asset not an atlas. Match supplied bunny's illustration language.",
+    "refs": [
+      "E:/repo/github/lbotinelly/swarm-song/public/characters/agent407/standing-v1.png"
+    ]
+  }
+]

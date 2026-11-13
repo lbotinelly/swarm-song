@@ -4,6 +4,8 @@ A music-video production project built around expressive **die-cut chibi sticker
 
 ## Milestone 3 — supporting cast fitting review
 
+**Night Shift review package:** [wardrobe, paper worlds and parallax](assets/nightshift/README.md), with [visual gallery](assets/nightshift/review/index.html). Three micro-wardrobe proposals, three environment studies, plane/dust/cloud assets and a six-second silent parallax test have independent critic reports. These are proposed directions, not new canon. The optional dark-box lighting diagnostic remains below the 8.5 target. Ten generations, no new dependencies; approved masters preserved.
+
 Latest: [integrated equipped standing sprites](assets/characters/equipped-v1/README.md) implement the approved approach of minting naturally worn/held equipment into separate character copies. The first three edits and a baseline comparison sheet are ready for review. Clean bodies and standalone props are preserved; this supersedes the mechanical overlay fitting below for worn equipment.
 
 The [three supporting identity kits](assets/accessories/supporting-v1/README.md) now have separate native prop masters and a fitted contact sheet: PhaseOne, Ethical Protester and Courier. Goggles follow each pose's forehead tilt; the satchel has rear/front strap layering and standing/walking fits. The new cast kits await art-direction approval before chorus production. Reproduction commands and light/dark review sheets are linked in the kit notes.
