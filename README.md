@@ -4,7 +4,7 @@ A music-video production project built around expressive **die-cut chibi sticker
 
 ## First milestone — ready for review
 
-The selected reference has now been supplied and preserved at `assets/reference/selected-bunny-mechanic.png`. The earlier handoff notes below describe its previous absence. The user accepted Agent407's base design direction and requested consistent proportions. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) locks that direction. The [art review](assets/characters/agent407/concepts/README.md) now contains six individual core-pose PNGs, including a shorter-legged kneeling refinement, with contact sheets, exact prompts and alpha QA. Pose-specific review and production export cleanup remain pending.
+The selected reference has now been supplied and preserved at `assets/reference/selected-bunny-mechanic.png`. The earlier handoff notes below describe its previous absence. The user accepted Agent407's base design direction and requested consistent proportions. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) locks that direction. The [art review](assets/characters/agent407/concepts/README.md) now contains six individual core-pose PNGs, including a shorter-legged kneeling refinement, with contact sheets, exact prompts and alpha QA. All six poses and the design direction are now user-approved. Technical production export cleanup remains; preserve the approved appearance.
 
 The independent [registry engine rehearsal](docs/REGISTRY_SPIKE.md) uses temporary SVG test sprites and six millisecond-authored cues. Run `npm ci`, `npm run check`, `npm run render`, and `npm run review`. It is an 8-second silent timing/attachment test, not the integrated film or a lyric-aligned edit.
 

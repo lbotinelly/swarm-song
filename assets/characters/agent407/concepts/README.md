@@ -1,6 +1,6 @@
-# Agent407 — controlled core-pose review
+# Agent407 — approved core poses
 
-The user **accepted the base design direction**, requested no design drift, and flagged kneeling-v1's longer legs. Standing-v1 remains the identity/proportion reference. The controlled six-pose expansion is now available for pose-specific review; it is not yet final production approval. All illustrations were generated individually with built-in Codex imagegen. No goggles, clothes, tools or emotes are baked into the bodies.
+The user **accepted the base design direction**, requested no design drift, and flagged kneeling-v1's longer legs. Standing-v1 remains the identity/proportion reference. On November 12, 2026, the user approved all six core poses and the style direction: “All approved! The design is consistent and charming.” Visual approval is complete; the technical export exceptions below remain. All illustrations were generated individually with built-in Codex imagegen. No goggles, clothes, tools or emotes are baked into the bodies.
 
 See [the mini style spec](../../../../docs/AGENT407_MINI_STYLE_SPEC.md) and [design lock / next stages](../../../../docs/CHARACTER_DESIGN_LOCK.md).
 
