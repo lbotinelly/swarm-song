@@ -1,5 +1,9 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Registry finishing candidate
+
+[Play the discovery shot](assets/registry-finish/review/index.html) · [Art-critic evaluation](assets/registry-finish/REVIEW.md) · [Reproduction](assets/registry-finish/README.md). A focused 4.87-second final-quality attempt using the existing approved art and timing, awaiting Leo's playback review. The full M8 animatic remains unchanged.
+
 ## Milestone 8 — The whole story
 
 [Playable storyboard and full animatic](assets/milestone8/review-v2/index.html) · [83–112s focused film](assets/milestone8/review-v2/middle.mp4) · [Storyboard](assets/milestone8/STORYBOARD.md) · [Reproduction and review](assets/milestone8/README.md).

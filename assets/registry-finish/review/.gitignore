@@ -1,0 +1,9 @@
+# Keep representative lossless frames and both contact sheets in Git.
+# The reproduction command regenerates every diagnostic boundary/encoded frame.
+frame-*.png
+!frame-066.png
+!frame-108.png
+!frame-145.png
+repeat-*.png
+encoded-*.png
+!encoded-108.png

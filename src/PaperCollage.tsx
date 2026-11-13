@@ -5,7 +5,7 @@ import {fanPower} from './paper-fans';
 
 // One deliberately hand-placed review board. All placement is flat x/y + rotation.
 // Stock is reused as cut paper, never as a painted room or a perspective surface.
-function Card({x,y,w,h,color,angle=0}:{x:number;y:number;w:number;h:number;color:string;angle?:number}) {
+export function Card({x,y,w,h,color,angle=0}:{x:number;y:number;w:number;h:number;color:string;angle?:number}) {
  return <div style={{position:'absolute',left:x,top:y,width:w,height:h,transform:`rotate(${angle}deg)`,filter:'drop-shadow(2px 3px 1px #53463030)'}}>
   <div style={{position:'absolute',inset:0,overflow:'hidden',clipPath:'polygon(0.5% 1%,98.8% 0,100% 98%,1% 100%)'}}>
    <Piece part="wall" w={w} h={h}/><div style={{position:'absolute',inset:0,background:color,mixBlendMode:'multiply'}}/>

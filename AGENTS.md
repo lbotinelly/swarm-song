@@ -1,5 +1,9 @@
 # Codex working instructions
 
+## Current finishing study — registry discovery
+
+Leo authorized one well-defined final-quality attempt with an art critic. `assets/registry-finish/README.md` records the isolated23–27.8667s candidate and eight-second context extension. Preserve M7 timing and approved artwork. The independent critic's static-frame assessment is not human playback approval; do not replace the M8 film or expand production based on it alone.
+
 ## Active milestone — full-song storyboard and rough animatic (M8)
 
 Read `docs/WORLD_MADE_OF_THEORIES.md` and `assets/milestone8/BRIEF.md`. M8 authorizes full-song rough scene staging and an 83–112s focused animatic, superseding the M7 expansion pause below for this scope. Preserve all approved M7 data. No large polished art batch. Use an independent read-only reviewer. S16 post-song duration/audio remains unresolved. New shot blocking awaits Leo; canon and shot proposals are distinct.
