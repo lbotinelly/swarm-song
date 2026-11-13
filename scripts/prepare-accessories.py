@@ -7,9 +7,10 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
-parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1'], default='pack-v1')
-SOURCE = ROOT / 'assets/accessories' / parser.parse_args().pack / 'masters'
-DEST = ROOT / 'public/accessories'
+parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1', 'equipped-v1'], default='pack-v1')
+pack = parser.parse_args().pack
+SOURCE = ROOT / ('assets/characters' if pack == 'equipped-v1' else 'assets/accessories') / pack / 'masters'
+DEST = ROOT / ('public/characters/equipped-v1' if pack == 'equipped-v1' else 'public/accessories')
 DEST.mkdir(parents=True, exist_ok=True)
 records = []
 for src in sorted(SOURCE.glob('*.png')):

@@ -1,0 +1,77 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/characters/equipped-v1/masters/courier-standing-v1.png",
+      "sourceSha256": "2b23fe816dee29bd32dd016ae234471c554b759ed9ad67bdb8fe0223c8f2d37a",
+      "nativeDimensions": [
+        1212,
+        1298
+      ],
+      "output": "public/characters/equipped-v1/courier-standing-v1.png",
+      "outputDimensions": [
+        1412,
+        1498
+      ],
+      "outputSha256": "b9713fbfb5c0e039276be9b3d3cb3acd842d994bf9382a97a608913be9fa43fd",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        312,
+        219,
+        1029,
+        1287
+      ]
+    },
+    {
+      "source": "assets/characters/equipped-v1/masters/phaseone-standing-v1.png",
+      "sourceSha256": "27c59b5ce1904bce661ab071d8eca75883343951552ab0e729e1357cf85f7e09",
+      "nativeDimensions": [
+        1212,
+        1298
+      ],
+      "output": "public/characters/equipped-v1/phaseone-standing-v1.png",
+      "outputDimensions": [
+        1412,
+        1498
+      ],
+      "outputSha256": "880a92818527801af2a8ec140687819232b1b20cfe0968b0e573e26a13ad067e",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        307,
+        204,
+        1026,
+        1284
+      ]
+    },
+    {
+      "source": "assets/characters/equipped-v1/masters/protester-standing-v1.png",
+      "sourceSha256": "b1b285ac14c8eaeb29195d7cb59002ec58ac84e2b3800a0fc699afdc46472a52",
+      "nativeDimensions": [
+        1316,
+        1195
+      ],
+      "output": "public/characters/equipped-v1/protester-standing-v1.png",
+      "outputDimensions": [
+        1516,
+        1395
+      ],
+      "outputSha256": "04a76d7f62d207943ee4dc6875fbad6f4a56fb0548f3117f5e5a601f3b3199c7",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        221,
+        142,
+        1277,
+        1218
+      ]
+    }
+  ]
+}

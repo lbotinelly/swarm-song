@@ -49,7 +49,24 @@ const Props=()=> <AbsoluteFill style={{background:'#eae1d0',fontFamily:'Arial, s
     <div style={{position:'absolute',top:530,width:750,fontSize:25}}>{name} / separate transparent master</div>
   </div>)}
 </AbsoluteFill>;
+// Display at approximately equal cheek width, never equal file width: the sign
+// extends the canvas without making its bearer a smaller species.
+const equipped = [
+  {name:'Approved clean baseline',src:'characters/agent407/standing-v1.png',w:1400,h:1500,scale:.39,x:693,y:1363},
+  {name:'PhaseOne / integrated grip',src:'characters/equipped-v1/phaseone-standing-v1.png',w:1412,h:1498,scale:.435,x:700,y:1284},
+  {name:'Protester / integrated grip',src:'characters/equipped-v1/protester-standing-v1.png',w:1516,h:1395,scale:.435,x:610,y:1218},
+  {name:'Courier / worn satchel',src:'characters/equipped-v1/courier-standing-v1.png',w:1412,h:1498,scale:.435,x:700,y:1287},
+];
+const Equipped=()=> <AbsoluteFill style={{background:'#eae1d0',fontFamily:'Arial, sans-serif',color:'#59483c'}}>
+  <div style={{position:'absolute',left:35,top:25,fontSize:30}}>SWARM SONG / integrated equipped sprites / first review</div>
+  <div style={{position:'absolute',left:35,top:68,fontSize:20}}>Same baseline proportions · natural grip and strap contact · separate clean masters retained</div>
+  {equipped.flatMap((a,col)=>[0,1].map(row=><div key={a.name+row} style={{position:'absolute',left:20+col*540,top:115+row*610,width:520,height:590,borderRadius:16,background:row?'#243b49':'#fbf3e4',color:row?'#fbf3e4':'#59483c'}}>
+    <Img src={staticFile(a.src)} style={{position:'absolute',left:(col===2?220:260)-a.x*a.scale,top:510-a.y*a.scale,width:a.w*a.scale,height:a.h*a.scale}}/>
+    <div style={{position:'absolute',left:18,top:545,fontSize:22}}>{a.name}</div>
+  </div>))}
+</AbsoluteFill>;
 registerRoot(()=> <>
+  <Composition id="EquippedCast" component={Equipped} width={2180} height={1350} fps={30} durationInFrames={1}/>
   <Composition id="SupportingCast" component={Sheet} width={1800} height={1580} fps={30} durationInFrames={1}/>
   <Composition id="SupportingProps" component={Props} width={1600} height={1320} fps={30} durationInFrames={1}/>
 </>);

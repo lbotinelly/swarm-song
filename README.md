@@ -4,6 +4,8 @@ A music-video production project built around expressive **die-cut chibi sticker
 
 ## Milestone 3 — supporting cast fitting review
 
+Latest: [integrated equipped standing sprites](assets/characters/equipped-v1/README.md) implement the approved approach of minting naturally worn/held equipment into separate character copies. The first three edits and a baseline comparison sheet are ready for review. Clean bodies and standalone props are preserved; this supersedes the mechanical overlay fitting below for worn equipment.
+
 The [three supporting identity kits](assets/accessories/supporting-v1/README.md) now have separate native prop masters and a fitted contact sheet: PhaseOne, Ethical Protester and Courier. Goggles follow each pose's forehead tilt; the satchel has rear/front strap layering and standing/walking fits. The new cast kits await art-direction approval before chorus production. Reproduction commands and light/dark review sheets are linked in the kit notes.
 
 Agent407's six poses and shared cast baseline are approved. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) and [design lock](docs/CHARACTER_DESIGN_LOCK.md) are the authority for future work. Original masters remain unchanged; [production derivatives](assets/characters/agent407/PRODUCTION.md) remove alpha noise and add consistent padding without resampling artwork.
