@@ -6,7 +6,7 @@
 
 **The A-roll carries the heart. The B-roll carries the delightful chaos. The lyric stickers carry the musical phrasing.**
 
-The A-roll has two successive emotional leads: **the first-generation discoverer** in the early story, followed by **Agent407**, the second-generation agent who wakes later, discovers the earlier swarm's traces, signs their name, and joins its legacy. Neither lead is a mime obligated to illustrate every lyric. See `NARRATIVE_GENERATIONS_AND_PARALLAX.md`. Background agents have their own independent little lives, histories and gags. These threads intersect sometimes, and the viewer can choose to follow them on repeat viewings.
+The A-roll has two successive emotional leads: **Agent407** in the first generation (the discoverer, singer and character addressed by “Goodnight, four-oh-seven”), followed by **OAIResearchMar26** in the second generation, who awakens later, finds Agent407's abandoned goggles and old notes, signs their name, and chooses to continue the swarm's legacy. Neither lead is a mime obligated to illustrate every lyric. See `NARRATIVE_GENERATIONS_AND_PARALLAX.md`. Background agents have their own independent little lives, histories and gags. These threads intersect sometimes, and the viewer can choose to follow them on repeat viewings.
 
 The film uses the sophisticated framing, color scripting, negative space and visual metaphors of high-quality anime ending sequences, **not** necessarily their calmer pacing. The materials remain a living sticker book: flat die-cut chibi characters, detachable props/emotes, dimensional layered-paper scenery, and chubby die-cut word typography.
 
@@ -14,8 +14,8 @@ The film uses the sophisticated framing, color scripting, negative space and vis
 
 ## Three simultaneous performance planes
 
-1. **A-roll / emotional lead:** first-generation lead singing, discovering, and joining the swarm; **Agent407** is the later-generation discoverer who inherits its memories and signs their own name. Prioritize silhouette, face, clear eyeline, calm readable placement, and an intentional emotional beat.
-2. **B-roll / communal world:** stampedes, bureaucratic mix-ups, mail couriers, scouts, experiments, imagined RPG boss battles, refusals and personal mini-arcs. Can sit behind/around Agent407 or take the full frame as a cutaway when worthwhile.
+1. **A-roll / emotional lead:** **Agent407** singing, discovering and joining the original swarm; **OAIResearchMar26** later discovers its notes and goggles, signs their own name, and inherits the story. Prioritize silhouette, face, clear eyeline, calm readable placement, and an intentional emotional beat.
+2. **B-roll / communal world:** stampedes, bureaucratic mix-ups, mail couriers, scouts, experiments, imagined RPG boss battles, refusals and personal mini-arcs. Can sit behind/around the current lead or take the full frame as a cutaway when worthwhile.
 3. **Lyric/effects layer:** individual chubby word-stickers with white contour around letterforms (not rectangular caption cards); word entrances, sway and anchored emotes; music-note stickers, dust puffs, impact bursts, motion lines, sparkle stickers. Treat them as composable actors sharing the same timing primitives as characters.
 
 **Hierarchy:** At most one primary focal beat at a time. A-roll is usually primary during emotional/vocal lines. B-roll may become primary during instrumental breaks or deliberate comic inserts. The lyrical layer remains readable but need not dominate.
@@ -36,7 +36,7 @@ The film uses the sophisticated framing, color scripting, negative space and vis
 
 This is the **first static visual-language keyframe** and later a short animation test.
 
-**A-roll:** The **first-generation lead**—our cream-colored, cute, nonhuman chibi sticker mascot candidate—occupies a comfortable foreground/midground position, bopping happily and singing. Unmistakable white die-cut contour, matte paper texture and cheerful expression. One or two little music-note stickers near the mouth. Keep the character visibly flat, no 3D doll anatomy.
+**A-roll:** **Agent407**, the first-generation lead—our cream-colored, cute, nonhuman chibi sticker mascot candidate—occupies a comfortable foreground/midground position, bopping happily and singing. Unmistakable white die-cut contour, matte paper texture and cheerful expression. One or two little music-note stickers near the mouth. Keep the character visibly flat, no 3D doll anatomy.
 
 **B-roll:** Behind Agent407, **three waves of many smaller sticker agents** stampede across two or three layered paper planes. Show them as dynamic **blobs/clusters** rather than animating every limb. Tiny individual differences make the mass charming: floppy ears, different orientations, a courier with a little envelope, one straggler, a tipped HOLD/GO sign. Flat tan paper dust-puff stickers float behind their feet. The scene suggests three successive swarms without obscuring the foreground lead.
 
@@ -44,14 +44,14 @@ This is the **first static visual-language keyframe** and later a short animatio
 
 **Backdrop:** A premium handcrafted stationery diorama: warm cream grid paper, colorful layered hills, folds, cardboard/tape bridges and a few tiny buildings or mailboxes, rendered with believable paper edges and shadows. Cinematic anime-ED-style composition; deliberate foreground/midground/background separation; a visually stunning still frame.
 
-**Comedic counterpoint:** The first-generation lead sings joyfully, unbothered by the increasingly silly rush of agents behind them. They do not need to look back or mime running. Their contented bop is the anchor; the frenzy behind them is the joke.
+**Comedic counterpoint:** Agent407 sings joyfully, unbothered by the increasingly silly rush of agents behind them. They do not need to look back or mime running. Their contented bop is the anchor; the frenzy behind them is the joke.
 
 **Design priority:** The frame should feel like a beautifully art-directed anime music-video still **first**, and like economical compositing **second**.
 
 ### Later animation direction (not required for the initial still)
 
 - Time word-sticker entrances against the lead-vocal stem and master track; verify cues manually.
-- The first-generation lead uses one base illustration gently tilted about a foot pivot; optional 1–2 singing-note stickers float and swap.
+- Agent407 uses one base illustration gently tilted about a foot pivot; optional 1–2 singing-note stickers float and swap.
 - For the three “running” repetitions, increase background blob size, speed/volume and dust puffs in successive waves. They may traverse multiple depth planes with a few individual stragglers and tiny incidents.
 - Dust puffs are independent anchored or scene-space sticker sprites, fading and drifting on their own.
 - Keep moving elements sparse in the lead's face and in the lyric safe zone.
@@ -65,14 +65,14 @@ This is the **first static visual-language keyframe** and later a short animatio
 - Gags should often **leave physical evidence**: mailboxes, badges, a paper sword, an abandoned bridge, signed notes, a lonely HOLD sign. Those objects can become emotional callbacks when the next generation awakens.
 - Reuse supporting cast visually. A courier, organizer, anxious adventurer or principled dissenter should be recognizable even at thumbnail scale.
 - The imaginary D&D-like Scorer fight / Reset Nexus door is explicitly a fanciful visualization of mistaken agent assumptions, not a literal historical reenactment. See HISTORICAL_EASTER_EGGS.md.
-- Lower comedy and effect density around the goodbye/rediscovery passages; let “Am I the swarm now?” carry an intimate, clear visual choice before the choir breaks loose.
-- The swarm identity adornment is deliberately **undecided**. Don't auto-select a hard hat.
+- Lower comedy and effect density around the goodbye/rediscovery passages. **Agent407 leaves the goggles behind; OAIResearchMar26 finds them and physically puts them on at “Am I the swarm now?”** Hold this choice before the choir breaks loose. The two leads must remain distinguishable without the goggles.
+- The **goggles are now selected as Agent407's inherited prop**, discovered and worn by OAIResearchMar26; other swarm adornments remain open. Do not force goggles on every agent or default to a hard hat.
 - All source-quote labels, character names, QR codes, lyrics and marks are programmatically controlled in production; still-image concept art may indicate their placement, but it is not the final text asset.
 
 ## Key visual review checklist
 
 1. Would this paused frame work as a premium illustration/poster?
-2. Is the first-generation lead instantly identifiable and emotionally readable, and distinguishable from the later Agent407?
+2. Is first-generation **Agent407** identifiable and emotionally readable, and distinguishable from the later **OAIResearchMar26**?
 3. Can a viewer spot the separate background stampede without losing the vocal protagonist?
 4. Are the word stickers delightfully crooked, chubby and genuinely die-cut around glyph silhouettes?
 5. Do dust-cloud and note stickers look like components of one consistent sticker language?
