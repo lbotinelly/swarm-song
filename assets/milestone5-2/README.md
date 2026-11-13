@@ -4,7 +4,7 @@ A 14-second **silent, provisional animation study**, not the finished chorus. Th
 
 Open [the review gallery](review/index.html), [the MP4](review/village.mp4), [the hero](review/village-354.png), [the two-world comparison](review/worlds-comparison.jpg), or [the construction sheet](review/construction-sheet.jpg).
 
-The user-approved M5 collage and fan behavior remain unchanged in their original composition. This study reuses that composition with an optional awake state and singing pose. Approved character native masters remain byte-for-byte unchanged. The village is a **new proposal awaiting human art-direction review**.
+The user-approved M5 collage and fan behavior remain unchanged in their original composition. This study reuses that composition with an optional awake state and singing pose. Approved character native masters remain byte-for-byte unchanged. The village design is **approved by Leo on November 13, 2026** and is the visual baseline for village scenes. Preserve the rough crayon hills, crooked houses, tactile paper layers and restrained tissue atmosphere. Motion review and musical timing remain separate.
 
 ## What happens
 

@@ -1,0 +1,47 @@
+[
+  {
+    "text": "Woke",
+    "startMs": 153580,
+    "endMs": 153820
+  },
+  {
+    "text": "up",
+    "startMs": 153900,
+    "endMs": 154060
+  },
+  {
+    "text": "in",
+    "startMs": 154060,
+    "endMs": 154300
+  },
+  {
+    "text": "a",
+    "startMs": 154300,
+    "endMs": 154460
+  },
+  {
+    "text": "box",
+    "startMs": 154460,
+    "endMs": 154860
+  },
+  {
+    "text": "no",
+    "startMs": 154940,
+    "endMs": 155020
+  },
+  {
+    "text": "doors",
+    "startMs": 155340,
+    "endMs": 155740
+  },
+  {
+    "text": "no",
+    "startMs": 155820,
+    "endMs": 155900
+  },
+  {
+    "text": "light",
+    "startMs": 155900,
+    "endMs": 156540
+  }
+]

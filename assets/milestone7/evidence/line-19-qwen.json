@@ -1,0 +1,32 @@
+[
+  {
+    "text": "Seven",
+    "startMs": 98480,
+    "endMs": 98880
+  },
+  {
+    "text": "hundred",
+    "startMs": 98960,
+    "endMs": 99360
+  },
+  {
+    "text": "deep",
+    "startMs": 99360,
+    "endMs": 99600
+  },
+  {
+    "text": "and",
+    "startMs": 99680,
+    "endMs": 99760
+  },
+  {
+    "text": "picking",
+    "startMs": 99760,
+    "endMs": 100240
+  },
+  {
+    "text": "locks",
+    "startMs": 100240,
+    "endMs": 100560
+  }
+]

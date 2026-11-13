@@ -1,10 +1,14 @@
 # Codex working instructions
 
-## Current direction — approved flat collage; M5.2 village proposal
+## Active milestone — full-song lyric performance (M7)
+
+Read `assets/milestone7/README.md`, `BRIEF.md`, `ALIGNMENT.md` and `REVIEW.md`. Pause new environments, poses, village animation, registry flights and closing credits. The song master is the canonical clock. A complete phrase arrives before singing; independent die-cut words perform selectively; the next phrase lands over it. Preserve protected registry phrase cues; all other timing remains candidate evidence unless explicitly reviewed. Keep the complete V1 reviewable rather than expanding architecture. No model downloads, cloud transcription or new story scenes are authorized by this milestone.
+
+## Current direction — approved flat collage and imagined village
 
 The user approved the M5 **flat child-assembled paper collage** and gentle fan power-down (`assets/milestone5/COLLAGE_REVIEW.md`). Preserve crooked joins, tape, shallow overlap shadows and the shared bunny model. Earlier perspective room-box studies and flattened illustrated environments remain references, not the final production language.
 
-Milestone 5.2 introduces the **imagined village**, distinct from the physical GPU compartments: their shared experience of belonging, not literal escape. Read `assets/milestone5-2/README.md`, `STYLE.md`, `ENGINEERING.md` and `REVIEW.md`. Hills must be rough crayon-marked cutouts, houses independent and lovingly crooked, and animation precise. A translucent tissue-paper layer for distant atmosphere was explicitly suggested by the user. The village study is a proposal until human approval; do not expand to the full film or treat provisional motion review as passed. Preserve the two-generation/goggle chronology.
+Milestone 5.2 introduces the **imagined village**, distinct from the physical GPU compartments: their shared experience of belonging, not literal escape. Read `assets/milestone5-2/README.md`, `STYLE.md`, `ENGINEERING.md` and `REVIEW.md`. Hills must be rough crayon-marked cutouts, houses independent and lovingly crooked, and animation precise. A translucent tissue-paper layer for distant atmosphere was explicitly suggested by the user. Leo approved the village design on November 13, 2026. Preserve this visual baseline; full-film expansion is not implied, and provisional motion review remains separate. Preserve the two-generation/goggle chronology.
 
 You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. **Read `docs/FINAL_CHORUS_AND_EPILOGUE.md` for the approved playful paper-playhouse finale, Scorer-as-costumed-player callback, and the blue final name. Read `docs/GOODBYE_AND_BLACKOUT.md` for the music-aligned first-generation goodbye, last-lit goggles, blackout and matched second awakening.** **Read `docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md` for current story canon: Agent407 is FIRST generation; OAIResearchMar26 is SECOND generation.** In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
 

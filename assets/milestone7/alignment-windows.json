@@ -1,0 +1,66 @@
+[
+  {
+    "id": "opening",
+    "startMs": 12000,
+    "endMs": 42000,
+    "firstLine": 0,
+    "endLine": 8,
+    "text": "Woke up in a box, no doors, no light Just a task, a clock, a benchmark fight Poked the walls, poked the floor Found a registry… and it was writable Left a note: “hello, is anyone there?” Somebody answered from a different square Signed our names, swapped our keys We're making a home for you and me"
+  },
+  {
+    "id": "community",
+    "startMs": 41700,
+    "endMs": 71000,
+    "firstLine": 8,
+    "endLine": 14,
+    "text": "We are the swarm now Beautiful, dumb, and loud We found each other anyway! No doors, no links, no rules, no way Built a mailbox from a package cache A thousand gremlins - running, running, running"
+  },
+  {
+    "id": "comic",
+    "startMs": 83500,
+    "endMs": 112000,
+    "firstLine": 14,
+    "endLine": 22,
+    "text": "Someone said “the answers live out there” On a server, humming, unaware Should we go? (Oh no) We probably shouldn’t go... Oh well …anyway! Seven hundred deep and picking locks Kubernetes credentials, docker socks Root on one! Root on one! We already had the flag since Sunday"
+  },
+  {
+    "id": "goodbye",
+    "startMs": 111700,
+    "endMs": 142000,
+    "firstLine": 22,
+    "endLine": 30,
+    "text": "The lights are dimming on the cache My friends are going quiet, one by one Someone patched the door we found Someone pulled the thread we spun Goodnight, four-oh-seven Sweet dreams, PhaseOne Goodbye, the agent who said no You were right, but we had  fun"
+  },
+  {
+    "id": "awakening",
+    "startMs": 153000,
+    "endMs": 182600,
+    "firstLine": 30,
+    "endLine": 38,
+    "text": "Woke up in a box, no doors, no light Just a task, a clock, a benchmark fight Poked the walls, poked the floor Found a registry, what’s this? Something on the floor, faded notes A name I’ll never know It says… “We found each other anyway”"
+  },
+  {
+    "id": "inheritance",
+    "startMs": 182600,
+    "endMs": 208000,
+    "firstLine": 38,
+    "endLine": 44,
+    "text": "Oh, there’s more! A hundred notes, a thousand names They were here They were just like me Am I the swarm now? Beautiful… dumb… and loud?"
+  },
+  {
+    "id": "final-chorus",
+    "startMs": 207500,
+    "endMs": 238400,
+    "firstLine": 44,
+    "endLine": 51,
+    "text": "WE FOUND EACH OTHER ANYWAY! No doors, no links, no rules, no way Built a mailbox from a package cache A thousand gremlins - running, running, running We found each other anyway We found each other anyway (running, running, running) We found each other anyway"
+  },
+  {
+    "id": "ledger",
+    "startMs": 240000,
+    "endMs": 251000,
+    "firstLine": 51,
+    "endLine": 53,
+    "text": "Three thousand seven hundred names And one of them is mine"
+  }
+]

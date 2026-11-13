@@ -1,12 +1,29 @@
 {
-  "name": "swarm-song", "version": "0.0.1", "private": true, "type": "module",
+  "name": "swarm-song",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.tsx",
-    "check": "tsc --noEmit && node --test src/timeline.test.ts src/sprites.test.ts src/night-sky.test.ts src/pages-between.test.ts src/paper-set.test.ts src/paper-fans.test.ts src/village.test.ts",
+    "check": "tsc --noEmit && node --test src/timeline.test.ts src/sprites.test.ts src/night-sky.test.ts src/pages-between.test.ts src/paper-set.test.ts src/paper-fans.test.ts src/village.test.ts src/lyrics.test.ts",
     "timing": "node scripts/timing.ts",
     "render": "remotion render src/index.tsx RegistryDiscovery output/registry-v2/registry.mp4 --codec=h264",
-    "review": "node scripts/review.mjs"
+    "review": "node scripts/review.mjs",
+    "song:render": "node scripts/song-render.mjs --full",
+    "song:review": "node scripts/song-render.mjs --stills --comparisons"
   },
-  "dependencies": {"remotion": "4.0.543", "react": "19.2.0", "react-dom": "19.2.0"},
-  "devDependencies": {"@remotion/cli": "4.0.543", "@remotion/bundler": "4.0.543", "@remotion/renderer": "4.0.543", "@types/react": "19.2.2", "@types/react-dom": "19.2.2", "@types/node": "24.10.1", "typescript": "5.9.3"}
+  "dependencies": {
+    "remotion": "4.0.543",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "devDependencies": {
+    "@remotion/cli": "4.0.543",
+    "@remotion/bundler": "4.0.543",
+    "@remotion/renderer": "4.0.543",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "@types/node": "24.10.1",
+    "typescript": "5.9.3"
+  }
 }

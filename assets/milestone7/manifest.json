@@ -1,0 +1,354 @@
+{
+  "alignment-windows.json": {
+    "bytes": 2842,
+    "sha256": "e672d59da8f1d9a5a90e179d3aab1fd1574b49ade27f0afd747c0b041b2ef8e6"
+  },
+  "ALIGNMENT.md": {
+    "bytes": 5284,
+    "sha256": "306c9e195e507cea37952b58690e4fdefece357cf19b4a79e9164522e237d8ff"
+  },
+  "BRIEF.md": {
+    "bytes": 25881,
+    "sha256": "cb0831a8c8b79e97e7c246c6091cb105f7d21cef2e9af17c01c2cabc37403b16"
+  },
+  "focused-windows.json": {
+    "bytes": 1347,
+    "sha256": "2f7a3edc49eca8d4e045f94ab8c675c6ac4dfeda9095aea55d11adc988a04493"
+  },
+  "qa-report.json": {
+    "bytes": 3135,
+    "sha256": "ea82c2ed9fb39e2f213d0210da351dcfa2b907c2daff31e54412fdc8d00f6ec9"
+  },
+  "README.md": {
+    "bytes": 5425,
+    "sha256": "c7ecf9368d20c775e7d1887f71074814b008a459627df4ea9fa814d4f98ce0e2"
+  },
+  "REVIEW.md": {
+    "bytes": 3171,
+    "sha256": "6947f69207b9c62438e282d32452e598040bac0b8be1bf1f471b6137408cc613"
+  },
+  "reviewed-corrections.json": {
+    "bytes": 518,
+    "sha256": "6031f5934fb6e798ab0518de1a98c546e06ac71b4d73057e55de3e324d5d2d24"
+  },
+  "timeline.json": {
+    "bytes": 151728,
+    "sha256": "5f9d2136b38ee1d3d6eb3ea6b52aedf8965266b3b26cfc30f6cbe6ffdeb429d9"
+  },
+  "timing-issues.json": {
+    "bytes": 10552,
+    "sha256": "70e02296ac366142ad521168b1cb6dc18402b98a14d81e57f36ed2c7cc92b1fd"
+  },
+  "toolchain.json": {
+    "bytes": 692,
+    "sha256": "f327298bc2adfcb7218e2a8d5e86517911c2aa63e89248f542b634d1c0b6249f"
+  },
+  "evidence/awakening-qwen-initial.json": {
+    "bytes": 3542,
+    "sha256": "c9f27fadda1427d23673d5417f5c94c0c2255bbe278564cc099b14e2c4f19db4"
+  },
+  "evidence/awakening-qwen.json": {
+    "bytes": 3542,
+    "sha256": "a5f616c21646b805faa102f5e195882feeee066eb0018304875fb3e009ae99bd"
+  },
+  "evidence/comic-qwen-initial.json": {
+    "bytes": 3592,
+    "sha256": "5784fcbd8d1cae002c2251911c0fd1c4119236cb7b3ac233c7124ae5b1270d94"
+  },
+  "evidence/comic-qwen.json": {
+    "bytes": 3591,
+    "sha256": "870d9d47ddc9fef2d446751c01cc683836fbdec8f957f241f3b167f707a8e307"
+  },
+  "evidence/community-qwen-initial.json": {
+    "bytes": 2642,
+    "sha256": "010293f35a3bf7d4f273abd3b094c011760e03a1d09d2214e286683634408af9"
+  },
+  "evidence/community-qwen.json": {
+    "bytes": 2642,
+    "sha256": "e2040f43e862d5cb87ca1c51f1df30e45454b997bc9a3ee951d781cd02e0a516"
+  },
+  "evidence/final-chorus-qwen-initial.json": {
+    "bytes": 3420,
+    "sha256": "7408be1e7781f3e7af24650dfcb609bad3c9db2e66204064af03425404605981"
+  },
+  "evidence/final-chorus-qwen.json": {
+    "bytes": 3420,
+    "sha256": "3c26da0ac53a93543b4e43ebac0e40a3c90a048ac44e542ef50624e8c6b25b26"
+  },
+  "evidence/goodbye-qwen-initial.json": {
+    "bytes": 3491,
+    "sha256": "bc5fd3405dbf716fe4ff5e0a51adba0c8911a60dae1b9e402b53a38d7a9ed67b"
+  },
+  "evidence/goodbye-qwen.json": {
+    "bytes": 3491,
+    "sha256": "6d6eaddd4d0676b93fe3d09fe1fc78b1945a727f5dee321b4bbf903073839882"
+  },
+  "evidence/inheritance-qwen-initial.json": {
+    "bytes": 2006,
+    "sha256": "7d7d6aa01ee457c1282b46c35922d94368ba3b3b64008379927466a86adb7562"
+  },
+  "evidence/inheritance-qwen.json": {
+    "bytes": 2006,
+    "sha256": "757c742b1c5f97eee9e092944cf0f13b39cddb263a34e0ddadf2eb84a29a236c"
+  },
+  "evidence/ledger-qwen-initial.json": {
+    "bytes": 856,
+    "sha256": "602ba4ebf4db02b6ecfb5e515096e0c01c3f37e122d9da8e9a3916ba2f16851e"
+  },
+  "evidence/ledger-qwen.json": {
+    "bytes": 856,
+    "sha256": "0bb8bff593f39c277f0eac8159d3a1442ea13f42ef7c9b1fd79c514fa5cae853"
+  },
+  "evidence/line-09-qwen.json": {
+    "bytes": 376,
+    "sha256": "9a56d71c1c897fe9823630cb201ba5d103a04f158213c2c6eb0f28033351b921"
+  },
+  "evidence/line-10-qwen.json": {
+    "bytes": 309,
+    "sha256": "9d4fd69af7fabea4f30cb401b0ee8324b9e1c2fdf97ad495ab4fb2430b75dcc0"
+  },
+  "evidence/line-18-qwen.json": {
+    "bytes": 230,
+    "sha256": "90fac1d3e3d02d819afc5f59bffb5a2f87ff6307c4d5f6805644a7eaeab8e6ec"
+  },
+  "evidence/line-19-qwen.json": {
+    "bytes": 465,
+    "sha256": "a434dbd42a502df475206fc823b9399c6752a0e1c0c2aa824143cffd186d9a24"
+  },
+  "evidence/line-31-qwen.json": {
+    "bytes": 688,
+    "sha256": "34ef54fca9d155f6ddd04b47e0be9d5db3511cd583e15b1e814240b211fe97dd"
+  },
+  "evidence/line-39-qwen.json": {
+    "bytes": 236,
+    "sha256": "8b006b654c4030492f36fdf2e988734b6a583120a900b9a4af3533feb3b962f5"
+  },
+  "evidence/line-43-qwen.json": {
+    "bytes": 384,
+    "sha256": "4eb20c4944460a0bd277c25dd1f7b6a272b223e58d6992cf72af579ecdb70df9"
+  },
+  "evidence/line-45-qwen.json": {
+    "bytes": 392,
+    "sha256": "e2a8764bd8b2697c0c3a3615650f9a561a095e18ed5cc341266e3322a99ed100"
+  },
+  "evidence/line-49-qwen.json": {
+    "bytes": 392,
+    "sha256": "817cfa52e9251f4b415c72aecbb5712e5578c35fb2d2e21b2fddaacafb3dfcf5"
+  },
+  "evidence/line-50-qwen.json": {
+    "bytes": 632,
+    "sha256": "7b7f8344c8e8542719623887f7219f05592b08f9ba9a67db9f9901b4b359f987"
+  },
+  "evidence/line-51-qwen.json": {
+    "bytes": 392,
+    "sha256": "82148223fa3fe4c1ed95eebbcfb2604e47356bb7050f61a0f797bc5c41fccd11"
+  },
+  "evidence/local-stem-lags.json": {
+    "bytes": 2386,
+    "sha256": "a045e10ec78785bb735502d512c8ea401371cc3e6f8a73746dbff3459c100cb5"
+  },
+  "evidence/opening-qwen.json": {
+    "bytes": 4282,
+    "sha256": "6448194d80f987879a2acdcbe7891d23a153181ddc714a37c57e03f4d0c754ef"
+  },
+  "evidence/whisper-master.json": {
+    "bytes": 161295,
+    "sha256": "d3a218d68b1da9380f461be085f2b370aaf0d744644a309ee52f4d25a6c32d71"
+  },
+  "review/chorus-read.mp4": {
+    "bytes": 997009,
+    "sha256": "07aa5426396e643508e1e84ee37ff3c1e626e8429447cd9f77f7d04572b0f04c"
+  },
+  "review/chorus-slap.mp4": {
+    "bytes": 1227574,
+    "sha256": "83f715b6aa2f7e3dee329f42979ea0018c745486eee7d7283e52b7641e7534a8"
+  },
+  "review/chorus-word.mp4": {
+    "bytes": 717232,
+    "sha256": "bbeac699c66a3d68f6406b4879e940eaf42cd54ded65a703c3abe27c070205d8"
+  },
+  "review/composition-gpu.png": {
+    "bytes": 2656199,
+    "sha256": "3ea4161f30ba178ac2b8b7e768caf1a49ec376af44863225d79a48b16a252179"
+  },
+  "review/composition-village.png": {
+    "bytes": 3434537,
+    "sha256": "bdc64af5afc1d477e09d81af27e1bd401f921843bb09393aa22229d9b9b2962e"
+  },
+  "review/compressed-128500.png": {
+    "bytes": 1133615,
+    "sha256": "bdfaa9dbb8c2f0b0f0dce1b933e2f9eaf96eb84817b0829630b737810f407f23"
+  },
+  "review/compressed-14000.png": {
+    "bytes": 1456539,
+    "sha256": "f403b524b677177d604cf70fd74a382b9c6a1949f6d8c299bc018744419165b9"
+  },
+  "review/compressed-154500.png": {
+    "bytes": 1458303,
+    "sha256": "13eff3c9dc6b7f61ca6c0f4105b03f6ae0e2698043f99e327d430b01556c85bc"
+  },
+  "review/compressed-208500.png": {
+    "bytes": 1580666,
+    "sha256": "81b4375026711e3d805e08a2058a7292d1d6bb346fb420d2d5640c2dd0126955"
+  },
+  "review/compressed-244500.png": {
+    "bytes": 1439440,
+    "sha256": "32ba6fd6b1e84d01e13b3f18dfe6ff1cb765ec9b80faf55d2175ad31e35d0e67"
+  },
+  "review/compressed-248000.png": {
+    "bytes": 1389526,
+    "sha256": "318e23bae88e7e53f0d66ef343a9ad510441011a0677f884815cb5159af722c2"
+  },
+  "review/compressed-55000.png": {
+    "bytes": 1498530,
+    "sha256": "774ddd33e6066e2c4bccef508ab01b4c3daabb22760ceaeafff0833a7ba0d961"
+  },
+  "review/compressed-92500.png": {
+    "bytes": 1511309,
+    "sha256": "edefabcad36d480fd919da2f2b95d81c70c001d738cdc538ce54dcc667b4a30e"
+  },
+  "review/compressed-contact-sheet.jpg": {
+    "bytes": 345585,
+    "sha256": "314bf24a9a1193f1659f059add4d10f6c2475de908788eb946db877dcc97c798"
+  },
+  "review/goodbye-read.mp4": {
+    "bytes": 823110,
+    "sha256": "b18d1d1e55942967aa4e4e96183715e235957a796cd449c35ece74e2c1a56abe"
+  },
+  "review/goodbye-slap.mp4": {
+    "bytes": 978065,
+    "sha256": "707c060d488cfecf4031373f7a9f1a0a59162f910965a6f65b4f3dfc2d1a586c"
+  },
+  "review/goodbye-word.mp4": {
+    "bytes": 674649,
+    "sha256": "885a391c4fb38bda324fcb34afadf6e0e608360aa8e05cafb3a92edc95602d25"
+  },
+  "review/index.html": {
+    "bytes": 2889,
+    "sha256": "c4bad5b8790758d2c48faf1c741787d14aebb00ee7c9e7f216a2594825a617b9"
+  },
+  "review/registry-read.mp4": {
+    "bytes": 875921,
+    "sha256": "8a68d7e26c260c1ddbbec92c74012dd0355d494d812061069884f82b4c80a245"
+  },
+  "review/registry-slap.mp4": {
+    "bytes": 1059805,
+    "sha256": "a390bc3b1a251ab1dd33480e030724bd8555e93343b709024fcf19c6934513a7"
+  },
+  "review/registry-word.mp4": {
+    "bytes": 650582,
+    "sha256": "d22a8c06b8a840e7989598523e9384c253eb05121ccf04d6998eab3cb2b8286d"
+  },
+  "review/song-102500.png": {
+    "bytes": 3077648,
+    "sha256": "9cb6ca529e01d02d300626e82e41f91d0c21819a64f146386d1c8fc09d73d311"
+  },
+  "review/song-128500.png": {
+    "bytes": 2859699,
+    "sha256": "0943de81e96d7e51b331f085d151c4045d59ec6236c946da3cb0adbdba655f4a"
+  },
+  "review/song-134800.png": {
+    "bytes": 2867319,
+    "sha256": "360428c4997c2e9212d7bdf4181422417bb0cee388855147568de1bc240a17f2"
+  },
+  "review/song-14000.png": {
+    "bytes": 3069653,
+    "sha256": "8cc9fa9deff18e0966490298c950abfb068a5f5f8b724c510b769c1bb291ead4"
+  },
+  "review/song-154500.png": {
+    "bytes": 3069782,
+    "sha256": "2a9b354761185d0cf3f255edb83f5a2bf3394daff986f76067a947a455f8889c"
+  },
+  "review/song-179500.png": {
+    "bytes": 3087441,
+    "sha256": "964e6e24a1ab4f09abc943a4158e7847e842ed7c20332ce89d5bfc272d6fa477"
+  },
+  "review/song-18500.png": {
+    "bytes": 3075775,
+    "sha256": "d836e7a1c2c75b7db0d063f5950987f47de49f19737656e3d657cf3ca9a71db2"
+  },
+  "review/song-198500.png": {
+    "bytes": 3065846,
+    "sha256": "78cf122ada36c390e3079e1920784bc23bf3afdf7c09f62bb44b078ed9b6d90d"
+  },
+  "review/song-208500.png": {
+    "bytes": 3112467,
+    "sha256": "0b8565230c70a54e045fd29042fa82590bf651a2e2802a851347dc4ec294d9bd"
+  },
+  "review/song-232000.png": {
+    "bytes": 3064106,
+    "sha256": "a4b0187a114d97311d78c9f6f139a088f62012da7639c4032858762838c57b95"
+  },
+  "review/song-24400.png": {
+    "bytes": 3041519,
+    "sha256": "90c9ff164d7aa31d46b7554554ea7babeb272e0c5e6b8ca81b16b55194e69cde"
+  },
+  "review/song-244500.png": {
+    "bytes": 3069917,
+    "sha256": "02040da334d67461eddc76bcadad43515d0e8ba0bc9bfba478a13ae7efb92d4c"
+  },
+  "review/song-248000.png": {
+    "bytes": 3046021,
+    "sha256": "9d3a6393650635eab654c3253a07f8e12acb034e293def4ae6a86b322956214e"
+  },
+  "review/song-26500.png": {
+    "bytes": 3041332,
+    "sha256": "90b5833cc23806720ff94a9ff37574c4bbd3bad3301efbd80943dbaacd9bf826"
+  },
+  "review/song-45000.png": {
+    "bytes": 3067800,
+    "sha256": "ce3929b6c15a81acb8d386fdaae0fa029c4e1d1a5c72b0400f45562b2e836986"
+  },
+  "review/song-55000-repeat.png": {
+    "bytes": 3083854,
+    "sha256": "93e2fc50e661b7aa803bf9b2c596dacd2c0468d409ac6855fab8ce7ea71a73d4"
+  },
+  "review/song-55000.png": {
+    "bytes": 3083854,
+    "sha256": "93e2fc50e661b7aa803bf9b2c596dacd2c0468d409ac6855fab8ce7ea71a73d4"
+  },
+  "review/song-64000.png": {
+    "bytes": 3043757,
+    "sha256": "05df60976bf969f9ea88baeb8fbf440d48d852d2ea1a1791f4770bc3194bee60"
+  },
+  "review/song-92500.png": {
+    "bytes": 3093821,
+    "sha256": "644b8f0c34fa169a15820c355ba36492b20d562701718cac11035c91a942e47f"
+  },
+  "review/swarm-song-v1.mp4": {
+    "bytes": 30552794,
+    "sha256": "0e326e6d0a5a9ded9e1c3deec72a94ec6e703e6940f82de8eb0c1d0872187fb7"
+  },
+  "review/verse-read.mp4": {
+    "bytes": 795244,
+    "sha256": "ae2fa9a8add28ed20dd4343477296a3bb272dc3fe7edfab9f3c022875c7ed75d"
+  },
+  "review/verse-slap.mp4": {
+    "bytes": 1020219,
+    "sha256": "6fe8027c58ecd0037a5524c678aa26f44cae915ecd7778d705912f62972582e2"
+  },
+  "review/verse-word.mp4": {
+    "bytes": 642625,
+    "sha256": "c47c9afbf1a9a247a5383a655483400a545f92f74362482156bf8ee1f28348e0"
+  },
+  "review/cycle1/composition-village.png": {
+    "bytes": 3690468,
+    "sha256": "35307906068cd9b761a0560ad203d4bf08b534ce82ec459a43d7af77c21d3367"
+  },
+  "review/cycle1/song-102500.png": {
+    "bytes": 3072113,
+    "sha256": "ff20d1fbd5752b0e833623730a3a3b9d6175fdaa75addb4dc6a3c8a311b5f9fd"
+  },
+  "review/cycle1/song-14000.png": {
+    "bytes": 3064267,
+    "sha256": "58399793973c28c9fbbdd1507c7646c2efbec4d7d84795cbea4b038c727fd6a1"
+  },
+  "review/cycle1/song-55000.png": {
+    "bytes": 3083744,
+    "sha256": "fd8b9bf1e0f0a97e28f4c94543a86a7f58a395a87422c1cad988814016b3c138"
+  },
+  "review/cycle1/song-92500.png": {
+    "bytes": 3091179,
+    "sha256": "fa07fe66a11ed1079f305037962a2d529c1bbdc500c21cc8b9b9cafc8c823a94"
+  }
+}

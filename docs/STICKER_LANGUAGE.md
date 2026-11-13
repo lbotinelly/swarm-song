@@ -18,6 +18,10 @@ The important unification is **placement + timing = performance**. A beautiful i
 - Separate **ongoing loops** (walking, singing, thinking, blinking) from **one-shot events** (discover, react, pick up, attach, detach, drop, hand over). Give each character recognizable personality through scale, rhythm, anticipation and pauses, not through excessive animation.
 - Make actions declarative, composable, deterministic, and frame-seekable: rendering frame N must not require simulating all previous frames. Per-character timing and seeded variation may create individuality without unstable renders.
 
+## Current lyric direction — M7
+
+**The phrase arrives. The words perform.** Complete short phrases become readable ahead of singing; individual words receive selective emphasis. Paper-slap replacement places the incoming phrase above the old arrangement, which clears by a brief slide/dissolve. Read-ahead is the default; surprise groups protect punchlines and hero typography emphasizes major refrains. Acoustic timing, presentation timing and performance remain distinct. See `../assets/milestone7/README.md` and `ALIGNMENT.md`. The earlier per-word entrance ideas below remain optional accents, not the default reveal strategy.
+
 ## Lyrics are die-cut word stickers, NOT subtitle cards
 
 - All lyrics are **rendered from editable text at render time**. Never bake them into image-generated backgrounds or character assets.

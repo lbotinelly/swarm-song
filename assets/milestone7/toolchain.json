@@ -1,0 +1,21 @@
+{
+  "node": "v26.12.1",
+  "python": "3.14.7",
+  "ffmpeg": "ffmpeg version 9.0.1-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+  "font": {
+    "family": "Comic Sans MS",
+    "weight": 700,
+    "source": "Licensed local Windows font; not redistributed",
+    "sha256": "128fdcfdfdd358e1624c15dd1f84a4d0689e59afcdefb81f8105efb2253b9c00"
+  },
+  "renderer": "Remotion 4.0.543 / React 19.2.0 / existing headless Chromium",
+  "newProjectDependencies": [],
+  "newGeneratedArt": 0,
+  "fullOutput": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 7884,
+    "audioEncoding": "AAC 320k from unchanged source master; not lossless"
+  }
+}

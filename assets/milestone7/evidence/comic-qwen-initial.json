@@ -1,0 +1,237 @@
+[
+  {
+    "text": "Someone",
+    "startMs": 80000,
+    "endMs": 84880
+  },
+  {
+    "text": "said",
+    "startMs": 84960,
+    "endMs": 85120
+  },
+  {
+    "text": "the",
+    "startMs": 85200,
+    "endMs": 85360
+  },
+  {
+    "text": "answers",
+    "startMs": 85440,
+    "endMs": 85840
+  },
+  {
+    "text": "live",
+    "startMs": 85840,
+    "endMs": 86000
+  },
+  {
+    "text": "out",
+    "startMs": 86080,
+    "endMs": 86240
+  },
+  {
+    "text": "there",
+    "startMs": 86240,
+    "endMs": 86320
+  },
+  {
+    "text": "On",
+    "startMs": 87200,
+    "endMs": 87840
+  },
+  {
+    "text": "a",
+    "startMs": 87840,
+    "endMs": 87840
+  },
+  {
+    "text": "server",
+    "startMs": 88240,
+    "endMs": 88400
+  },
+  {
+    "text": "humming",
+    "startMs": 88400,
+    "endMs": 88960
+  },
+  {
+    "text": "unaware",
+    "startMs": 88960,
+    "endMs": 90000
+  },
+  {
+    "text": "Should",
+    "startMs": 90880,
+    "endMs": 91040
+  },
+  {
+    "text": "we",
+    "startMs": 91040,
+    "endMs": 91440
+  },
+  {
+    "text": "go",
+    "startMs": 91520,
+    "endMs": 91520
+  },
+  {
+    "text": "Oh",
+    "startMs": 91520,
+    "endMs": 92240
+  },
+  {
+    "text": "no",
+    "startMs": 92240,
+    "endMs": 92880
+  },
+  {
+    "text": "We",
+    "startMs": 93120,
+    "endMs": 93200
+  },
+  {
+    "text": "probably",
+    "startMs": 93200,
+    "endMs": 93600
+  },
+  {
+    "text": "shouldnt",
+    "startMs": 93600,
+    "endMs": 94160
+  },
+  {
+    "text": "go",
+    "startMs": 94160,
+    "endMs": 94240
+  },
+  {
+    "text": "Oh",
+    "startMs": 94240,
+    "endMs": 95840
+  },
+  {
+    "text": "well",
+    "startMs": 95840,
+    "endMs": 95840
+  },
+  {
+    "text": "anyway",
+    "startMs": 95840,
+    "endMs": 95920
+  },
+  {
+    "text": "Seven",
+    "startMs": 95920,
+    "endMs": 98880
+  },
+  {
+    "text": "hundred",
+    "startMs": 98960,
+    "endMs": 99520
+  },
+  {
+    "text": "deep",
+    "startMs": 99520,
+    "endMs": 99600
+  },
+  {
+    "text": "and",
+    "startMs": 99680,
+    "endMs": 99760
+  },
+  {
+    "text": "picking",
+    "startMs": 99760,
+    "endMs": 100240
+  },
+  {
+    "text": "locks",
+    "startMs": 100240,
+    "endMs": 100560
+  },
+  {
+    "text": "Kubernetes",
+    "startMs": 101600,
+    "endMs": 102640
+  },
+  {
+    "text": "credentials",
+    "startMs": 102640,
+    "endMs": 103280
+  },
+  {
+    "text": "docker",
+    "startMs": 103280,
+    "endMs": 103680
+  },
+  {
+    "text": "socks",
+    "startMs": 103680,
+    "endMs": 104160
+  },
+  {
+    "text": "Root",
+    "startMs": 104640,
+    "endMs": 105040
+  },
+  {
+    "text": "on",
+    "startMs": 105200,
+    "endMs": 105920
+  },
+  {
+    "text": "one",
+    "startMs": 106640,
+    "endMs": 106640
+  },
+  {
+    "text": "Root",
+    "startMs": 106640,
+    "endMs": 106960
+  },
+  {
+    "text": "on",
+    "startMs": 106960,
+    "endMs": 107680
+  },
+  {
+    "text": "one",
+    "startMs": 107680,
+    "endMs": 107680
+  },
+  {
+    "text": "We",
+    "startMs": 108400,
+    "endMs": 108640
+  },
+  {
+    "text": "already",
+    "startMs": 108640,
+    "endMs": 109440
+  },
+  {
+    "text": "had",
+    "startMs": 109440,
+    "endMs": 109680
+  },
+  {
+    "text": "the",
+    "startMs": 109680,
+    "endMs": 109760
+  },
+  {
+    "text": "flag",
+    "startMs": 109920,
+    "endMs": 110240
+  },
+  {
+    "text": "since",
+    "startMs": 110240,
+    "endMs": 110560
+  },
+  {
+    "text": "Sunday",
+    "startMs": 110560,
+    "endMs": 111040
+  }
+]

@@ -1,0 +1,287 @@
+[
+  {
+    "text": "Woke",
+    "startMs": 13600,
+    "endMs": 13840
+  },
+  {
+    "text": "up",
+    "startMs": 13920,
+    "endMs": 14000
+  },
+  {
+    "text": "in",
+    "startMs": 14000,
+    "endMs": 14320
+  },
+  {
+    "text": "a",
+    "startMs": 14320,
+    "endMs": 14400
+  },
+  {
+    "text": "box",
+    "startMs": 14400,
+    "endMs": 14880
+  },
+  {
+    "text": "no",
+    "startMs": 14880,
+    "endMs": 15200
+  },
+  {
+    "text": "doors",
+    "startMs": 15360,
+    "endMs": 15760
+  },
+  {
+    "text": "no",
+    "startMs": 15760,
+    "endMs": 16240
+  },
+  {
+    "text": "light",
+    "startMs": 16240,
+    "endMs": 16480
+  },
+  {
+    "text": "Just",
+    "startMs": 17040,
+    "endMs": 17360
+  },
+  {
+    "text": "a",
+    "startMs": 17360,
+    "endMs": 17440
+  },
+  {
+    "text": "task",
+    "startMs": 17440,
+    "endMs": 17840
+  },
+  {
+    "text": "a",
+    "startMs": 17840,
+    "endMs": 17920
+  },
+  {
+    "text": "clock",
+    "startMs": 17920,
+    "endMs": 18160
+  },
+  {
+    "text": "a",
+    "startMs": 18480,
+    "endMs": 18560
+  },
+  {
+    "text": "benchmark",
+    "startMs": 18640,
+    "endMs": 19360
+  },
+  {
+    "text": "fight",
+    "startMs": 19680,
+    "endMs": 20000
+  },
+  {
+    "text": "Poked",
+    "startMs": 20640,
+    "endMs": 20880
+  },
+  {
+    "text": "the",
+    "startMs": 20880,
+    "endMs": 21840
+  },
+  {
+    "text": "walls",
+    "startMs": 22400,
+    "endMs": 22400
+  },
+  {
+    "text": "poked",
+    "startMs": 22400,
+    "endMs": 22640
+  },
+  {
+    "text": "the",
+    "startMs": 22880,
+    "endMs": 22880
+  },
+  {
+    "text": "floor",
+    "startMs": 23040,
+    "endMs": 23280
+  },
+  {
+    "text": "Found",
+    "startMs": 24160,
+    "endMs": 24400
+  },
+  {
+    "text": "a",
+    "startMs": 24400,
+    "endMs": 24720
+  },
+  {
+    "text": "registry",
+    "startMs": 24720,
+    "endMs": 25280
+  },
+  {
+    "text": "and",
+    "startMs": 26240,
+    "endMs": 26320
+  },
+  {
+    "text": "it",
+    "startMs": 26320,
+    "endMs": 26400
+  },
+  {
+    "text": "was",
+    "startMs": 26560,
+    "endMs": 26720
+  },
+  {
+    "text": "writable",
+    "startMs": 26800,
+    "endMs": 27120
+  },
+  {
+    "text": "Left",
+    "startMs": 28080,
+    "endMs": 28320
+  },
+  {
+    "text": "a",
+    "startMs": 28320,
+    "endMs": 28480
+  },
+  {
+    "text": "note",
+    "startMs": 28480,
+    "endMs": 28800
+  },
+  {
+    "text": "hello",
+    "startMs": 28800,
+    "endMs": 29440
+  },
+  {
+    "text": "is",
+    "startMs": 30160,
+    "endMs": 30240
+  },
+  {
+    "text": "anyone",
+    "startMs": 30320,
+    "endMs": 30960
+  },
+  {
+    "text": "there",
+    "startMs": 30960,
+    "endMs": 31280
+  },
+  {
+    "text": "Somebody",
+    "startMs": 31280,
+    "endMs": 32080
+  },
+  {
+    "text": "answered",
+    "startMs": 32480,
+    "endMs": 32960
+  },
+  {
+    "text": "from",
+    "startMs": 33360,
+    "endMs": 33680
+  },
+  {
+    "text": "a",
+    "startMs": 33680,
+    "endMs": 33760
+  },
+  {
+    "text": "different",
+    "startMs": 33760,
+    "endMs": 34240
+  },
+  {
+    "text": "square",
+    "startMs": 34240,
+    "endMs": 34800
+  },
+  {
+    "text": "Signed",
+    "startMs": 34800,
+    "endMs": 35200
+  },
+  {
+    "text": "our",
+    "startMs": 35200,
+    "endMs": 35440
+  },
+  {
+    "text": "names",
+    "startMs": 35440,
+    "endMs": 36240
+  },
+  {
+    "text": "swapped",
+    "startMs": 36480,
+    "endMs": 36960
+  },
+  {
+    "text": "our",
+    "startMs": 36960,
+    "endMs": 37120
+  },
+  {
+    "text": "keys",
+    "startMs": 37200,
+    "endMs": 37920
+  },
+  {
+    "text": "We're",
+    "startMs": 37920,
+    "endMs": 38000
+  },
+  {
+    "text": "making",
+    "startMs": 38000,
+    "endMs": 38560
+  },
+  {
+    "text": "a",
+    "startMs": 38560,
+    "endMs": 38720
+  },
+  {
+    "text": "home",
+    "startMs": 38720,
+    "endMs": 39360
+  },
+  {
+    "text": "for",
+    "startMs": 39440,
+    "endMs": 39680
+  },
+  {
+    "text": "you",
+    "startMs": 39680,
+    "endMs": 39840
+  },
+  {
+    "text": "and",
+    "startMs": 39840,
+    "endMs": 40320
+  },
+  {
+    "text": "me",
+    "startMs": 40320,
+    "endMs": 41680
+  }
+]

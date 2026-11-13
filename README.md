@@ -1,8 +1,12 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 7 — The song is the timeline
+
+[Full-song V1 and comparison gallery](assets/milestone7/review/index.html) · [Production and reproduction notes](assets/milestone7/README.md) · [Timing uncertainty](assets/milestone7/ALIGNMENT.md). The complete 262.8-second master accompanies 57 phrase groups and 311 editable word stickers. Read-ahead, surprise reveal and hero typography share one master-relative JSON timeline. Twelve controlled clips compare word-only, phrase read-ahead and paper-slap replacement. New story-scene production is paused. Machine word timings remain candidates; only the existing registry phrase cues have human playback approval.
+
 ## Milestone 5.2 — The Village We Imagined
 
-[Village review package](assets/milestone5-2/README.md) · [playable gallery](assets/milestone5-2/review/index.html). A 14-second silent, provisional study moves from the approved GPU collage into a shared imagined village: rough crayon hills, crooked houses, a translucent tissue sheet, paper smoke and three interacting bunny stickers. The physical agents remain in separate rooms. New village art awaits human approval; independent visual and animation gates are reported separately.
+[Village review package](assets/milestone5-2/README.md) · [playable gallery](assets/milestone5-2/review/index.html). A 14-second silent, provisional study moves from the approved GPU collage into a shared imagined village: rough crayon hills, crooked houses, a translucent tissue sheet, paper smoke and three interacting bunny stickers. The physical agents remain in separate rooms. Leo approved the village design on November 13, 2026. This is the visual baseline for village scenes; animation review and musical timing remain separate.
 
 The [M5 flat collage and gentle fan power-down](assets/milestone5/COLLAGE_REVIEW.md) are user-approved. This child-assembled 2D construction language supersedes the earlier miniature-perspective approach. Previous environment studies remain preserved references.
 

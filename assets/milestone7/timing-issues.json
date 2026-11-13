@@ -1,0 +1,530 @@
+{
+  "wordIssues": [
+    {
+      "id": "line-03-word-03",
+      "text": "walls,",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-03-word-05",
+      "text": "the",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-04-word-07",
+      "text": "writable",
+      "issues": [
+        "known-onset-disagreement-26800-to-27260"
+      ]
+    },
+    {
+      "id": "line-09-word-01",
+      "text": "We",
+      "issues": [
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-09-word-02",
+      "text": "are",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-09-word-03",
+      "text": "the",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-10-word-01",
+      "text": "Beautiful,",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-10-word-03",
+      "text": "and",
+      "issues": [
+        "context-onset-disagreement",
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-10-word-04",
+      "text": "loud",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-12-word-08",
+      "text": "way",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-13-word-02",
+      "text": "a",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-13-word-05",
+      "text": "a",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-13-word-07",
+      "text": "cache",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-14-word-01",
+      "text": "A",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-14-word-06",
+      "text": "running",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-16-word-02",
+      "text": "a",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-17-word-04",
+      "text": "(Oh",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-18-word-01",
+      "text": "Oh",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-18-word-02",
+      "text": "well",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-18-word-03",
+      "text": "\u2026anyway!",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-19-word-01",
+      "text": "Seven",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-19-word-02",
+      "text": "hundred",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-19-word-06",
+      "text": "locks",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-21-word-03",
+      "text": "one!",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-21-word-06",
+      "text": "one!",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-23-word-01",
+      "text": "The",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-28-word-01",
+      "text": "Sweet",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-30-word-01",
+      "text": "You",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-30-word-07",
+      "text": "fun",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-31-word-01",
+      "text": "Woke",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-32-word-02",
+      "text": "a",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-32-word-04",
+      "text": "a",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-34-word-04",
+      "text": "what\u2019s",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-34-word-05",
+      "text": "this?",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-35-word-03",
+      "text": "the",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-35-word-04",
+      "text": "floor,",
+      "issues": [
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-36-word-05",
+      "text": "know",
+      "issues": [
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-37-word-01",
+      "text": "It",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-39-word-01",
+      "text": "Oh,",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-39-word-02",
+      "text": "there\u2019s",
+      "issues": [
+        "context-onset-disagreement",
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-39-word-03",
+      "text": "more!",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-40-word-01",
+      "text": "A",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-40-word-04",
+      "text": "a",
+      "issues": [
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-40-word-05",
+      "text": "thousand",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-40-word-06",
+      "text": "names",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-41-word-01",
+      "text": "They",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-41-word-02",
+      "text": "were",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-42-word-02",
+      "text": "were",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-42-word-05",
+      "text": "me",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-43-word-01",
+      "text": "Am",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-43-word-02",
+      "text": "I",
+      "issues": [
+        "context-onset-disagreement",
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-43-word-03",
+      "text": "the",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-45-word-01",
+      "text": "WE",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-45-word-05",
+      "text": "ANYWAY!",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-46-word-01",
+      "text": "No",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-46-word-06",
+      "text": "rules,",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-47-word-06",
+      "text": "package",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-48-word-05",
+      "text": "running,",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-48-word-06",
+      "text": "running",
+      "issues": [
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-49-word-01",
+      "text": "We",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-49-word-04",
+      "text": "other",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-49-word-05",
+      "text": "anyway",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-50-word-01",
+      "text": "We",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-50-word-02",
+      "text": "found",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-50-word-03",
+      "text": "each",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-50-word-04",
+      "text": "other",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-50-word-05",
+      "text": "anyway",
+      "issues": [
+        "context-onset-disagreement",
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-50-word-06",
+      "text": "(running,",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    },
+    {
+      "id": "line-50-word-07",
+      "text": "running,",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-50-word-08",
+      "text": "running)",
+      "issues": [
+        "context-onset-disagreement",
+        "collapsed-boundary"
+      ]
+    },
+    {
+      "id": "line-51-word-01",
+      "text": "We",
+      "issues": [
+        "context-onset-disagreement",
+        "long-or-sustained-word"
+      ]
+    },
+    {
+      "id": "line-51-word-05",
+      "text": "anyway",
+      "issues": [
+        "context-onset-disagreement"
+      ]
+    }
+  ],
+  "editorialDisagreements": [
+    "Whisper hears four running repetitions in first chorus versus three in supplied lyrics; unresolved.",
+    "Whisper repeats the names line during outro, potentially hallucinated; not added without listening evidence.",
+    "Whisper duplicates Goodnight and My friends; supplied lyric occurrences retained pending listening.",
+    "Backing running response is represented in its own phrase, overlap and word count need listening."
+  ],
+  "humanListeningPerformed": false
+}

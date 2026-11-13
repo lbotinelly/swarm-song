@@ -1,0 +1,97 @@
+{
+  "method": "Existing normalized waveform cross-correlation, 16 kHz mono, four-second windows, +/-3 seconds search",
+  "appliedToTimeline": false,
+  "reason": "All canonical candidates aligned against master directly; weak correlation and changing lag forbid universal correction.",
+  "windows": [
+    {
+      "leadStartMs": 13000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -2.312,
+      "correlation": 0.3892
+    },
+    {
+      "leadStartMs": 28000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -42.187,
+      "correlation": 0.2668
+    },
+    {
+      "leadStartMs": 43000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -210.938,
+      "correlation": 0.2622
+    },
+    {
+      "leadStartMs": 58000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -336.0,
+      "correlation": 0.133
+    },
+    {
+      "leadStartMs": 84000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -535.75,
+      "correlation": 0.1904
+    },
+    {
+      "leadStartMs": 99000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -655.438,
+      "correlation": 0.1468
+    },
+    {
+      "leadStartMs": 113000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -782.25,
+      "correlation": 0.3374
+    },
+    {
+      "leadStartMs": 128000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -912.75,
+      "correlation": 0.1145
+    },
+    {
+      "leadStartMs": 154000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1145.75,
+      "correlation": 0.1673
+    },
+    {
+      "leadStartMs": 169000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1231.312,
+      "correlation": 0.6302
+    },
+    {
+      "leadStartMs": 184000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1378.375,
+      "correlation": 0.314
+    },
+    {
+      "leadStartMs": 199000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1538.062,
+      "correlation": 0.3209
+    },
+    {
+      "leadStartMs": 214000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1704.375,
+      "correlation": 0.1022
+    },
+    {
+      "leadStartMs": 229000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1902.375,
+      "correlation": 0.1728
+    },
+    {
+      "leadStartMs": 244000,
+      "durationMs": 4000,
+      "masterMinusStemMs": -1761.25,
+      "correlation": 0.4554
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "phrases": {
+    "phrase-04-1": {
+      "startMs": 24160,
+      "status": "human-reviewed",
+      "scope": "Scene phrase cue only, not word boundaries",
+      "source": "assets/registry-cues.json",
+      "approval": "Timing feels right"
+    },
+    "phrase-04-2": {
+      "startMs": 26240,
+      "status": "human-reviewed",
+      "scope": "Scene phrase cue only, not word boundaries",
+      "source": "assets/registry-cues.json",
+      "approval": "Timing feels right"
+    }
+  },
+  "words": {}
+}

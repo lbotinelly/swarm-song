@@ -2,6 +2,10 @@
 
 Two independent read-only critics inspected actual imagery. Neither generated artwork or edited implementation. Three focused review/correction stages were used; no further score-chasing revisions are planned.
 
+## Human art-direction approval — November 13, 2026
+
+Leo: **“Village design approved.”** The retained final village design is now the approved visual baseline. This approval supersedes the earlier awaiting-review status; it does not convert the sampled motion assessment into a continuous-playback Gate B pass.
+
 ## Before / after
 
 1. Initial `hero-v1.png`: Gate A **8.41** (charm 8.7, crayon 9.0, imperfection 8.6, composition 7.0, consistency 8.6). Rough hills and houses succeeded. The reused rectangular cloud bank, smoke/sun tangent and broad tissue stripe weakened composition.
@@ -42,4 +46,4 @@ The assessable 65%-normalized subtotal is **8.60**, **not a Gate B score or pass
 - Tissue is restrained atmosphere, not an unmistakable featured tissue-sheet moment.
 - Motion approval remains pending playback, and musical timing is provisional.
 
-**Retain this final study for human review. Gate A is met; no full two-gate cinematic pass or human approval is claimed.** Do not expand the scene or regenerate art merely to chase a number.
+**Retain the human-approved village design. Gate A is met; no full two-gate cinematic pass is claimed.** Do not expand the scene or regenerate art merely to chase a number.

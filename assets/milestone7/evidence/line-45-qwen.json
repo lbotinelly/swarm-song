@@ -1,0 +1,27 @@
+[
+  {
+    "text": "WE",
+    "startMs": 208500,
+    "endMs": 208580
+  },
+  {
+    "text": "FOUND",
+    "startMs": 208820,
+    "endMs": 208900
+  },
+  {
+    "text": "EACH",
+    "startMs": 208900,
+    "endMs": 209060
+  },
+  {
+    "text": "OTHER",
+    "startMs": 209060,
+    "endMs": 209140
+  },
+  {
+    "text": "ANYWAY",
+    "startMs": 209140,
+    "endMs": 209140
+  }
+]
