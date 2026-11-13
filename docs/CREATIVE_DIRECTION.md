@@ -1,5 +1,7 @@
 # Creative direction — Chibi Sticker Cinema
 
+For agreed details on **character anchors, minimal cutout performances, detachable emotes, individual die-cut word lyrics, and the still-unselected swarm adornment**, see [Sticker visual language](STICKER_LANGUAGE.md).
+
 ## North star
 A visually stunning, playful music video with the *compositional intelligence* of high-quality anime ending sequences: arresting illustration, color harmony, cinematic framing, purposeful negative space, visual metaphor, surprising transitions, and moments of wonder. Pacing should be energetic when the music calls for it.
 
