@@ -1,0 +1,101 @@
+[
+  {
+    "file": "assets/milestone4/masters/apartment-interior-v1.png",
+    "sha256": "9e4bfbdabdf155ba0b1c7a269df0949f7b8f36a7f80e2682843e79e779e3b49d",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/milestone4/masters/edge-city-v2.png",
+    "sha256": "89d0e7b5a6b6c03b9586de620668455311e0367a30d00a96921efe70085d3b95",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/milestone4/masters/gpu-edge-tower-v3.png",
+    "sha256": "b5e08ef5af1fe4074260289139c5924dffd2932b63301f52772281e8962a8897",
+    "nativeDimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/milestone4/masters/gpu-tower-v1.png",
+    "sha256": "a898716d37d5cd48862081ce41f1101a0fe01afb8793cab3fd607989a136b635",
+    "nativeDimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/milestone4/masters/gpu-tower-v2.png",
+    "sha256": "03b5e239a5a82e73cd197431cbc09d95cac54eaef7d7ebac21a4619f9d3d4315",
+    "nativeDimensions": [
+      1024,
+      1536
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/milestone4/masters/gpu-valley-ground-v1.png",
+    "sha256": "be9b0d800da871fb3a395f71f4a1955c2e2e72d1df647edc5ddd7330f26272ca",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/milestone4/masters/history-book-base-v1.png",
+    "sha256": "576e7c9269a40af7d21d89e731b1b61dd62462d241ab0147318d4bff93ef1568",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/milestone4/masters/second-apartment-v1.png",
+    "sha256": "88a2be84064b4d186301a282d459603597a0bf5c2fe1cefc72857a81fa2c4e60",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/milestone4/masters/second-apartment-v2.png",
+    "sha256": "df5f026391e4ba7341ccb977014d98c2ef6577dc1f22e7e1b60b941f1e33dad7",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "assets/milestone4/masters/sleepy-expression-study-v1.png",
+    "sha256": "ad23857f63cf4960648ba43697796e8fd993197f72bf8e81a8f9ad6105e6027b",
+    "nativeDimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA"
+  },
+  {
+    "file": "assets/milestone4/masters/twilight-city-v1.png",
+    "sha256": "5caeff4bce4b2ef86349e6896c979885973d5b874380b8c062ac1371f559f66e",
+    "nativeDimensions": [
+      1672,
+      941
+    ],
+    "mode": "RGB"
+  }
+]

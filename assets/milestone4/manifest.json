@@ -1,0 +1,77 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/milestone4/masters/gpu-edge-tower-v3.png",
+      "sourceSha256": "b5e08ef5af1fe4074260289139c5924dffd2932b63301f52772281e8962a8897",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "output": "public/milestone4/gpu-edge-tower-v3.png",
+      "outputDimensions": [
+        1224,
+        1736
+      ],
+      "outputSha256": "72f6a0dc3de1c2e5f1885f0a9a618f370d50329a2ee44904be715c21947e01f0",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        170,
+        109,
+        1020,
+        1615
+      ]
+    },
+    {
+      "source": "assets/milestone4/masters/history-book-base-v1.png",
+      "sourceSha256": "576e7c9269a40af7d21d89e731b1b61dd62462d241ab0147318d4bff93ef1568",
+      "nativeDimensions": [
+        1672,
+        941
+      ],
+      "output": "public/milestone4/history-book-base-v1.png",
+      "outputDimensions": [
+        1872,
+        1141
+      ],
+      "outputSha256": "a62033a722d7e0fc8ef137d1d4134b129bfb77cc6707550bf65146f0f1882621",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        106,
+        200,
+        1766,
+        932
+      ]
+    },
+    {
+      "source": "assets/milestone4/masters/sleepy-expression-study-v1.png",
+      "sourceSha256": "ad23857f63cf4960648ba43697796e8fd993197f72bf8e81a8f9ad6105e6027b",
+      "nativeDimensions": [
+        1184,
+        1328
+      ],
+      "output": "public/milestone4/sleepy-expression-study-v1.png",
+      "outputDimensions": [
+        1384,
+        1528
+      ],
+      "outputSha256": "7eba068712fd99f66ca10fc623bedefeb564c78de1e47c518d0d585dce742f18",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        230,
+        151,
+        1058,
+        1381
+      ]
+    }
+  ]
+}

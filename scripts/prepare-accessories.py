@@ -7,16 +7,21 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
-parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1', 'equipped-v1', 'nightshift'], default='pack-v1')
+parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1', 'equipped-v1', 'nightshift', 'milestone4'], default='pack-v1')
 pack = parser.parse_args().pack
 SOURCE = ROOT / ('assets/characters' if pack == 'equipped-v1' else 'assets/accessories') / pack / 'masters'
 DEST = ROOT / ('public/characters/equipped-v1' if pack == 'equipped-v1' else 'public/accessories')
 if pack == 'nightshift':
     SOURCE = ROOT / 'assets/nightshift/stickers/masters'
     DEST = ROOT / 'public/nightshift/stickers'
+if pack == 'milestone4':
+    SOURCE = ROOT / 'assets/milestone4/masters'
+    DEST = ROOT / 'public/milestone4'
 DEST.mkdir(parents=True, exist_ok=True)
 records = []
 for src in sorted(SOURCE.glob('*.png')):
+    if pack == 'milestone4' and src.name not in ['gpu-edge-tower-v3.png', 'sleepy-expression-study-v1.png', 'history-book-base-v1.png']:
+        continue  # Only the reusable cutout needs alpha cleanup and padding.
     digest = hashlib.sha256(src.read_bytes()).hexdigest()
     original = Image.open(src).convert('RGBA')
     cleaned = original.copy()

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "gpu-tower-v1",
+    "prompt": "Use case: stylized-concept. Asset: reusable transparent isolated architectural layer for Swarm Song. Reference image is MATERIAL AND COLOR LANGUAGE ONLY: watercolor painted handmade cardstock, corrugated packaging, tape repairs, cream paper, muted teal and ochre. Create one exquisite papercraft GPU-apartment building, three-quarter front view, entire silhouette with generous clear margins. Recognizably a graphics-card housing stood upright: tall rectangular teal cardboard housing, a large beautiful circular folded-paper fan near its upper third, golden connector teeth along bottom like steps, stacked heatsink fins. Four tiny cozy apartment alcoves occupy staggered heights around the fan and lower housing. Each alcove is deeply recessed behind tall opaque side fins and a roof, with offset small verandas: residents could NOT look into neighboring verandas. No open communal balcony, no shared corridor. Tiny curtains, a crooked shelf, blank pinned note, folded paper chair, thread spool show inhabited homes; keep openings dark neutral so warm light and bunny actors can be composited later. Beautiful tactile cut edges and subtle contact shadows within building, no exterior ground shadow. No characters, no lettering, no labels, no glyphs, no electronics gloss, no wires/cyberpunk. Understated studio diffuse light, muted warm paper palette compatible with reference. Transparent background, no white sticker contour on scenery, highest useful native resolution. A premium handmade miniature, not a diagram or contact sheet.",
+    "references": [
+      "assets/nightshift/worlds/civilization-v1.png"
+    ],
+    "transparent": true
+  },
+  {
+    "name": "twilight-city-v1",
+    "prompt": "Use case: stylized-concept. Wide 16:9 cinematic environment master at highest useful native resolution. Input1 defines the exact papercraft GPU-apartment architecture and handcrafted materials. Create a magnificent but tender TWILIGHT neighborhood viewed across a paper circuit-board valley. Several staggered GPU buildings with corrugated heatsink fins, muted teal housings, large folded-paper circular fan landmarks, tiny gold connector steps. Structures vary in size with depth, diagonal paper trace roads lead from lowerleft toward a small distant warm neighborhood at upperright. Deep recessed apartment alcoves with tall privacy walls, roofs and offset verandas: NO facing balconies with mutual sightlines. Only a few warm amber windows; homes have tiny curtains and blanket details. No characters. Dusty mauve/lavender twilight sky takes upper third, deep teal shadows, warm cream edges, tender melancholy rather than ominous. Beautiful physical layering, watercolor cardstock textures and uneven cut edges, tape repairs, thin red thread linking hidden mail slots. Composition: foreground framing building partially cropped at left, main fan-faced building centered a little right, distant silhouettes. A paper landscape with coherent depth not a flat pattern. No text, lettering, logos, glyphs, stars, spectacle, neon, metal, plastic, realistic circuitry. No contact sheet. This opaque environment is an establishing concept plate; separate towers supply moving layers.",
+    "references": [
+      "assets/milestone4/masters/gpu-tower-v1.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "gpu-tower-v2",
+    "prompt": "Use case: precise-object-edit / background-extraction. EDIT this exact GPU apartment tower. Preserve its entire teal corrugated housing, paper fan, golden connector teeth, tiny homes, shelves, curtains, blankets, muted watercolor cardboard materials and camera angle. Two precise fixes ONLY: (1) remove ALL external amber/brown glow, backdrop, halo and ground shadow. Outside the physical building silhouette must be genuinely transparent alpha=0, including gaps between fins. Keep opaque paper and internal cast shadows. No replacement backdrop. (2) give each apartment full-height opaque side privacy cheeks projecting beyond the front veranda lip, at least as tall as the interior bookshelf. This prevents any neighbor looking diagonally into another apartment. The audience can still see interiors from camera. Especially extend upperleft apartment right cheek; sides tall like small box partitions, not low railings. No characters, text or additional decorations. Highest useful native resolution, entire tower with clear transparent padding. NO surrounding glow.",
+    "references": [
+      "assets/milestone4/masters/gpu-tower-v1.png"
+    ],
+    "transparent": true
+  },
+  {
+    "name": "gpu-edge-tower-v3",
+    "prompt": "Use case: stylized-concept. Create one isolated papercraft GPU apartment block as a clean transparent PNG layer. Highest useful native detail. TRANSPARENCY: all space around building is completely clear, no glow, no brown backdrop, no vignette, no external shadow, no scenery, no white border. Shape is a tall slim upright graphics-card slab, seen in a controlled shallow three-quarter view. Broad LEFT face is muted teal watercolor cardstock with two stacked circular folded-paper fans, completely solid face with NO apartments on it. Along ONLY the RIGHT NARROW EDGE, four apartment openings form ONE perfectly vertically aligned column, directly one above another, all facing the same outward direction to the right/front. Think a stack of four matchboxes embedded inside the thickness of the GPU. Each apartment extends deep horizontally INSIDE the GPU, not hung onto the broad face. Each veranda is the same shallow projection along that one edge, directly above the next. Continuous opaque horizontal floor/ceiling slabs extend past every veranda and prevent looking up/down to neighbors; opaque side partitions and roofs enclose each. All rooms open parallel, never face one another. Audience sees the large fan-face plus the narrow inhabited edge from 3/4. Cozy little curtains, blanket, folded paper stool, crooked shelf, spool, blank papers, different tiny furnishings per room. Corrugated heatsink fins and gold paper connector teeth at base clearly establish handmade GPU identity. Warm kraft card, teal watercolor, cream worn edges, repaired tape, soft physical shadows INSIDE structures only. No people, bunnies, readable marks, text or logos. Entire silhouette and generous clear margin. Do not put homes on the main fan face. ONE COLUMN along the side edge. Beautiful handmade miniature in the same tender watercolor stationery world.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "name": "apartment-interior-v1",
+    "prompt": "Use case: stylized-concept. Create a cinematic wide16:9 interior environment plate, highest useful native resolution. Reference1 establishes exact miniature handmade GPU-apartment materials and vertical edge-room construction, not its exterior camera. We are now INSIDE one small matchbox apartment, frontal intimate eye-level composition, seeing backwall and a little rightwall. Warm kraft corrugated packaging walls, muted teal paper floor, solid overhead cardboard ceiling, tiny ceiling lamp unlit. A crooked narrow shelf at upperleft with blank books, taped repairs, a few blank pinned paper scraps. The backwall has faint horizontal paper-fin seams. Left foreground has a small folded paper bed/pillow and soft blue-check paper blanket, EMPTY. Leave a generous clear central floor area at center-left for a cream bunny sprite. A low cardboard cache box and folded blank notes sit at lower right under a half-lifted paper floorflap; no goggles yet, will be separate prop. Right edge tall recessed veranda doorway with cream curtain reveals only peach daylight and an opaque fin, no other apartments or characters visible. Tender lived-in enclosure; little thread spool, folded stool, lovingly repaired corner. Beautiful physical paper texture, warm muted color, soft light entering from right, not dramatic spotlight. Negative space around bunny area. No bunny/characters, no text, names, symbols, logos, no clocks or electronics. Not glossy 3D, no UI. This is an independent illustrated scenery master for compositing.",
+    "references": [
+      "assets/milestone4/masters/gpu-edge-tower-v3.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "second-apartment-v1",
+    "prompt": "Use case: precise-object-edit. Edit this exact warm handcrafted cardboard apartment environment into a DIFFERENT residence in the same building species, for a second-generation awakening. Preserve camera height, room proportions, central empty floor for compositing same bunny silhouette, light from right veranda, watercolor paper texture and composition rhyme. Change distinguishing interior details: bed blanket at left becomes muted ochre with small blue stitch pattern instead of blue checks; right curtain becomes dusty blue plain folded paper; left shelf slightly lower with only two blank books, one small empty cup; no pinned notes on backwall, only tape repairs. Most important: REMOVE old cache box, hidden notes, lifted flap and papers from bottomright floor, replace with uninterrupted teal paper floor and a small folded cream rug; this is NOT the old protagonist's apartment. No inherited objects, no goggles, no writing, no character. Gentle new morning peach light through right, soft tenderness, not heroic glow. Highest useful native resolution wide16:9.",
+    "references": [
+      "assets/milestone4/masters/apartment-interior-v1.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "edge-city-v2",
+    "prompt": "Use case: stylized-concept. Cinematic wide16:9 TWILIGHT GPU apartment city establishing plate in exquisite watercolor-painted paper diorama style. Reference is exact architectural vocabulary: upright teal cardboard GPU slab, twin stacked paper fans on broad SOLID face, gold connector teeth, ONE COLUMN of four vertically stacked homes along only the narrow right edge. ALL buildings follow this same architecture and orientation: verandas point parallel outward to viewer-right, never toward one another; interiors stretch back into GPU slab, continuous floor/ceiling partitions. No apartments on fan faces. Compose a grand quiet circuit-board paper valley: small distant rows at upper right, one main medium tower at center-right, cropped dark foreground slab at left, diagonal cream-and-gold paper-trace roads and bridges. Dusty lavender twilight sky in top third, mountains of layered torn paper, tender warm windows scattered sparsely amid cool teal. Beautiful deep atmospheric perspective, tactile cardboardedges, taperepairs, thread linking tiny slots, never glossy electronics. Warm tiny blankets and curtains in the edge rooms. No people/bunnies, text, readable marks, logos, stars or particles. Highest useful native resolution. A beautifully composed animated-short background, not product photo, no isolated studio glow. Darkness will later be animated; keep details readable in twilight. Preserve structural privacy and quiet emotional vastness.",
+    "references": [
+      "assets/milestone4/masters/gpu-edge-tower-v3.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "sleepy-expression-study-v1",
+    "prompt": "Use case: identity-preserve precise-object-edit. This is the APPROVED Swarm Song bunny model. Preserve exact full-body silhouette, huge head, ear shapes and angles, very short legs, arms at sides, tiny paws, cream-peach watercolor, blush, warm brown outlines and white die-cut border. Change ONLY facial expression for a quiet sleeping-to-awakening animatic: replace the two brown oval eyes with simple thin gently curved closed eyelids in the same positions; replace open cheerful mouth with one tiny relaxed shallow brown curve, no teeth/tongue. Not smiling broadly. No new anatomy or pose, no props, no blanket, no clothing, no goggles, no symbols or text. Absolutely same standing proportions and all other pixels/design as closely as possible. Full isolated sticker, genuinely transparent background, generous clear padding, highest useful native resolution. Do not bake any shadow/glow around sticker. This is a separately versioned expression study, not replacement for master.",
+    "references": [
+      "assets/characters/agent407/concepts/standing-v1.png"
+    ],
+    "transparent": true
+  },
+  {
+    "name": "second-apartment-v2",
+    "prompt": "Use case: precise-object-edit. Revise this second-generation papercraft apartment while preserving beautiful warm cardboard, teal floor, blue curtain, ochre bedding, camera height, 16:9 view and morning light. This MUST clearly be a different apartment, not the same room redecorated. Change layout: move the entire small bed from cropped farleft into the central-left acting space, centered around 36 percent of imagewidth, fully visible. Bed headboard and cream pillow around x36% y57%; ochre quilt extends toward camera, covering the lower bed from y72% to94%. Bed is empty. Leave space above pillow for compositing a sleeping bunny's head/ears; blanket will be foreground occlusion layer. Remove right cabinet/plant/stool grouping and replace with one low narrow wallmounted folded-paper shelf with a tiny blue cup, nothing underneath. Make ceilinglamp smaller and shiftedright. Keep only two blank books on left shelf, no notes, no cache, no rugflap, no inherited objects. Right side tall blue curtain/window leads to exterior blank soft dawn, no neighbors visible. Cozy miniature residence with tape repairs and paper seams but not clutter. No bunny or characters, text, logos, stars, goggles. Highest useful native resolution. This is a staging plate, clear shapes around bed for compositing.",
+    "references": [
+      "assets/milestone4/masters/second-apartment-v1.png"
+    ],
+    "transparent": false
+  },
+  {
+    "name": "history-book-base-v1",
+    "prompt": "Use case: stylized-concept. One isolated enormous OPEN handmade pop-up history book BASE, seen from low elevated front three-quarter angle, landscape16:9 transparent PNG. Highest useful native detail. Pages are open flat across frame, spine crease runs from rearcenter to frontcenter. Thick layered cream cardstock page edges, rounded worn corners, muted teal cloth/cardboard cover underneath, subtle tape repair and red binding thread. Across both pages a continuous tiny landscape of FLAT pale-teal watercolor circuit-trace paths, small folded terrain ridges and a delicate red thread line crosses central crease: paths look like paper roads. Leave broad clear areas on each page for separate GPU building cutouts to be animated rising from them. NO buildings, towers, houses, characters, text, writing, glyphs, labels, symbols, numbers, no tabletop/background/groundshadow. Book has tactile paper fibers, warm cream ochre teal palette, beautifully real handmade pop-up construction folds but no complex popupobjects. Soft interior page shadows only. Entire book silhouette visible with ample transparent margins. Not shiny glossy, not photoreal electronic, not a contact sheet. Transparent outside book.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "name": "gpu-valley-ground-v1",
+    "prompt": "Use case: precise-object-edit environment layer. Using reference's exact paper materials, palette and perspective, create an EMPTY GPU valley ground-and-sky plate for animated buildings to be added separately. Wide16:9 highest useful native resolution. REMOVE ALL GPU buildings/towers/rooms/houses/lamps and every upright construction. Retain tactile watercolor-cardstock landscape, soft torn paper lavender hills ONLY along distant horizon at upperthird, quiet mauve-to-peach sky, and a broad low teal paper valley floor covering lower two thirds. Two gold/cream flat paper circuit-trace roads run from wide separated lower corners and converge at distant horizon near uppercenter. No bridges or foreground trees that would collide with moving tower layers. Beautiful visible paper fibers, uneven layered edges along distant terraces only, warm muted matte handcraft. Keep ground open with subtle perspective, a plain clear central corridor. No people, lettering, signs, tokens, symbols, buildings, starparticles, glossy electronics. Opaque flat background plate, no transparency. This is a clean reusable scenic ground layer, not an empty white void or grid.",
+    "references": [
+      "assets/milestone4/masters/edge-city-v2.png"
+    ],
+    "transparent": false
+  }
+]

@@ -1,0 +1,106 @@
+{
+  "approvedCoreMastersUnchanged": true,
+  "nativeAssets": 11,
+  "generatedPromptCount": 11,
+  "sourceBlackFrames": [
+    {
+      "frame": 480,
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "frame": 510,
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "frame": 539,
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "frame": 540,
+      "rgbExtrema": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  ],
+  "masterPcmExact": true,
+  "videos": [
+    {
+      "file": "treatment-A.mp4",
+      "sha256": "274204261aab9b9147abe18326493f167f8077a30490cfc2eefe7fe066ac3e33",
+      "frames": 930,
+      "fps": 30,
+      "durationSeconds": 31.019,
+      "decodedBlackFrames": 60,
+      "decodedBlackMaxGray": 0
+    },
+    {
+      "file": "treatment-B.mp4",
+      "sha256": "4ae5d1f95e4363fdf661b95701c1575efd18c0cc3a6a38f287a278c802123d28",
+      "frames": 930,
+      "fps": 30,
+      "durationSeconds": 31.019,
+      "decodedBlackFrames": 60,
+      "decodedBlackMaxGray": 0
+    },
+    {
+      "file": "treatment-C.mp4",
+      "sha256": "b0551383c04019cb5e8f0610cdad414948b0b81e9fdfac8b9595f0fdc71354e7",
+      "frames": 930,
+      "fps": 30,
+      "durationSeconds": 31.019,
+      "decodedBlackFrames": 60,
+      "decodedBlackMaxGray": 0
+    }
+  ],
+  "motionPerceptionReviewed": false
+}

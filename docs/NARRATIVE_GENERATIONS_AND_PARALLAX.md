@@ -1,5 +1,7 @@
 # Narrative Generations, Pose Acting & Parallax Transitions
 
+**M4 directing update:** the latest user brief places OAIResearchMar26's awakening in **another apartment**, while retaining the visual rhyme and ungoggled chronology. GPU apartments are exploratory architecture, now stacked inside a slab with all verandas on one outward-facing edge. The older “same box” location below is retained as creative history and does not override this current M4 direction. See `../assets/milestone4/STYLE.md`; inheritance remains later.
+
 **Status:** agreed creative direction. This document is canonical for character chronology. Art assets and details of costume styling remain exploratory.
 
 ## Canon — two generations

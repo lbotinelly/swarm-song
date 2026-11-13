@@ -1,0 +1,271 @@
+{
+  "status": "machine-estimates-awaiting-listening-review",
+  "authoritativeSource": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+  "sourceSha256": "1634161c4b8774cba73f7ee50848610bdaf8e8d273cd83a3efbd0d91e8862eca",
+  "methods": [
+    "Local whisper.cpp large-v3-turbo-q5_0 unprompted transcription on master95–195s",
+    "Local Qwen3-ForcedAligner-0.6B given supplied lyrics against master123–142s and150–165s"
+  ],
+  "manualListeningPerformed": false,
+  "globalStemOffsetApplied": false,
+  "limitations": [
+    "Whisper segment boundaries can precede actual word onsets.",
+    "Qwen output granularity80ms is not precision certainty. Zero-duration tokens include oh,fun,Woke,up,a; do not treat these as exact boundaries.",
+    "Instrumental window is inferred from ASR gap and lyric structure, not verified absence of all vocal/reverb energy."
+  ],
+  "masterLandmarks": [
+    {
+      "label": "lights dimming",
+      "whisperSegmentMs": [
+        111780,
+        116320
+      ]
+    },
+    {
+      "label": "friends going quiet",
+      "whisperSegmentMs": [
+        116320,
+        119720
+      ]
+    },
+    {
+      "label": "patched door",
+      "whisperSegmentMs": [
+        119720,
+        123320
+      ]
+    },
+    {
+      "label": "pulled thread",
+      "whisperSegmentMs": [
+        123320,
+        126720
+      ],
+      "qwenPhraseMs": [
+        123880,
+        126920
+      ]
+    },
+    {
+      "label": "Goodnight four oh seven",
+      "whisperSegmentMs": [
+        126720,
+        129580
+      ],
+      "qwenPhraseMs": [
+        126920,
+        129800
+      ]
+    },
+    {
+      "label": "Sweet dreams PhaseOne",
+      "whisperSegmentMs": [
+        129580,
+        133040
+      ],
+      "qwenPhraseMs": [
+        130200,
+        133480
+      ]
+    },
+    {
+      "label": "Goodbye the agent who said no",
+      "whisperSegmentMs": [
+        133040,
+        136520
+      ],
+      "qwenPhraseMs": [
+        133880,
+        136120
+      ]
+    },
+    {
+      "label": "You were right but we had fun",
+      "whisperSegmentMs": [
+        136520,
+        139940
+      ],
+      "qwenPhraseMs": [
+        136840,
+        140440
+      ],
+      "note": "fun zero-duration token; end boundary uncertain"
+    },
+    {
+      "label": "sleep instrumental candidate",
+      "approximateMs": [
+        140500,
+        153300
+      ],
+      "safeInteriorForTimePassageMs": [
+        142000,
+        152800
+      ]
+    },
+    {
+      "label": "second Woke up in a box",
+      "whisperSegmentMs": [
+        153320,
+        156560
+      ],
+      "qwenPhraseMs": [
+        153600,
+        156560
+      ],
+      "note": "Woke/up zero-duration; provisional onset range153320–153600"
+    },
+    {
+      "label": "second Just a task",
+      "whisperSegmentMs": [
+        156560,
+        160100
+      ],
+      "qwenFirstWordMs": [
+        157120,
+        157360
+      ]
+    }
+  ],
+  "recommendedContinuousExcerpt": {
+    "masterStartMs": 126000,
+    "masterEndMs": 157000,
+    "durationMs": 31000,
+    "sourceSamplesHalfOpen": [
+      6048000,
+      7536000
+    ],
+    "sampleRate": 48000,
+    "note": "Includes tail of thread line, all four named goodbye lines, full intervening instrumental, complete second awakening first line. Ends before Qwen Just onset; listening review required."
+  },
+  "proposedVisualBeatsNotLyricMeasurements": [
+    {
+      "masterMs": [
+        126000,
+        140000
+      ],
+      "relativeMs": [
+        0,
+        14000
+      ],
+      "action": "few personal goodbye actions; lights withdraw; goggles placed beside notes"
+    },
+    {
+      "masterMs": [
+        140000,
+        142000
+      ],
+      "relativeMs": [
+        14000,
+        16000
+      ],
+      "action": "goggles only; last glint fades"
+    },
+    {
+      "masterMs": [
+        142000,
+        144000
+      ],
+      "relativeMs": [
+        16000,
+        18000
+      ],
+      "action": "complete black; no captions"
+    },
+    {
+      "masterMs": [
+        144000,
+        152000
+      ],
+      "relativeMs": [
+        18000,
+        26000
+      ],
+      "action": "book/flyover/folding passage of time"
+    },
+    {
+      "masterMs": [
+        152000,
+        153400
+      ],
+      "relativeMs": [
+        26000,
+        27400
+      ],
+      "action": "new dawn approach; no early protagonist reveal"
+    },
+    {
+      "masterMs": [
+        153400,
+        157000
+      ],
+      "relativeMs": [
+        27400,
+        31000
+      ],
+      "action": "matched intimate awakening, no goggles or notes discovery"
+    }
+  ],
+  "whisperSourceSegments": [
+    {
+      "text": "The lights are dimming on the cache",
+      "startMs": 111780,
+      "endMs": 116320
+    },
+    {
+      "text": "My friends are going quiet one by one",
+      "startMs": 116320,
+      "endMs": 119720
+    },
+    {
+      "text": "Someone patched the door we found",
+      "startMs": 119720,
+      "endMs": 123320
+    },
+    {
+      "text": "Someone pulled the thread we spun",
+      "startMs": 123320,
+      "endMs": 126720
+    },
+    {
+      "text": "Good night, 407",
+      "startMs": 126720,
+      "endMs": 129580
+    },
+    {
+      "text": "Sweet dreams, phase one",
+      "startMs": 129580,
+      "endMs": 133040
+    },
+    {
+      "text": "Goodbye, the agent who said no",
+      "startMs": 133040,
+      "endMs": 136520
+    },
+    {
+      "text": "You were right, but we had fun",
+      "startMs": 136520,
+      "endMs": 139940
+    },
+    {
+      "text": "Woke up in a box, no doors, no light",
+      "startMs": 153320,
+      "endMs": 156560
+    },
+    {
+      "text": "Just a task, a clock, a benchmark, a fight",
+      "startMs": 156560,
+      "endMs": 160100
+    },
+    {
+      "text": "Poked the walls, poked the floor, found a registry",
+      "startMs": 160100,
+      "endMs": 164940
+    }
+  ],
+  "rawEvidence": [
+    "output/audio/m4-master-95-195-whisper.json",
+    "output/audio/m4-goodbye-qwen.json",
+    "output/audio/m4-awakening-qwen.json",
+    "output/audio/m4-align.py"
+  ]
+}

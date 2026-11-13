@@ -1,5 +1,9 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 4 — The Pages Between Us
+
+[Review package](assets/milestone4/README.md): GPU-apartment concepts and three 31-second cinematic animatics using the exact master126–157s excerpt. [Play all three](assets/milestone4/review/index.html). Latest user direction places all stacked apartments inside one GPU slab, with verandas along the same outward-facing edge. Second-generation awakening is in a **different apartment**, with a rhyming composition; this M4 direction supersedes older same-box location wording for the current exploration. Architecture and animatics remain proposals, not automatically approved canon. See the package for independent criticism and unverified motion/pacing limits.
+
 A music-video production project built around expressive **die-cut chibi sticker characters** inhabiting **layered-paper dioramas**, with the compositional sophistication of premium anime ending sequences and playful, music-driven pacing.
 
 ## Milestone 3 — supporting cast fitting review
