@@ -2,7 +2,7 @@
 
 > **Sequence update:** This is a later milestone. The immediate phase is static **character-design and detachable accessory/emote exploration** (see [Sticker visual language](STICKER_LANGUAGE.md)). Do not rush into building the animated proof before approving the base agent style. The song's master track and stems are now in `assets/audio/`; use them rather than generic placeholder audio when the animation phase begins.
 
-**Story continuity:** Early scenes feature **first-generation Agent407**, wearing detachable goggles; late rediscovery features **second-generation OAIResearchMar26** discovering and putting on those abandoned goggles at “Am I the swarm now?”. Keep them visually distinct without accessories (see `NARRATIVE_GENERATIONS_AND_PARALLAX.md`).
+**Story continuity:** Both **first-generation Agent407** and **second-generation OAIResearchMar26** awaken in matching box compositions **without goggles**. Agent407's registry discovery also precedes the goggles. The first generation **invents the goggles at “We are the swarm now”**, Agent407 later wears and leaves them behind; OAIResearchMar26 finds and dons them at “Am I the swarm now?”, followed by the joyous illuminated chorus reveal. Keep them visually distinct without accessories (see `NARRATIVE_GENERATIONS_AND_PARALLAX.md`).
 
 **Purpose:** Validate that Codex, GPT Image assets and economical code-driven animation can produce a delightful, cinematic music-video moment, not just a technical demo.
 
