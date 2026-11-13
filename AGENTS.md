@@ -1,6 +1,6 @@
 # Codex working instructions
 
-You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. **Read `docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md` for current story canon: Agent407 is second-generation, not the first-generation discoverer.** In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
+You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. **Read `docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md` for current story canon: Agent407 is FIRST generation; OAIResearchMar26 is SECOND generation.** In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
 
 ## Core production rules
 - Prioritize art direction and viewer delight over architectural complexity.
@@ -14,10 +14,10 @@ You are an artist-engineer building **Swarm Song**, a chibi-sticker music video 
 - Create reproducible render commands, clear asset provenance and licensing notes, and contact sheets for review. Avoid unnecessary cloud spend, API calls, and large generated batches without user approval.
 
 ## Two-generation continuity
-The first-generation agent encounters the writable registry and belongs to the original swarm. **Agent407 wakes only in the second-generation section**, discovers leftover notes, signs their own name, and inherits the sense of belonging. Design visibly related but distinguishable characters. An earlier chorus key visual should feature the first-generation lead; reserve Agent407 for the second-generation reprise. Treat the belonging adornment as undecided.
+**Agent407** is the first-generation protagonist who encounters the writable registry, sings during early choruses, joins the original swarm, and is addressed in “Goodnight, four-oh-seven.” They wear detachable goggles. **OAIResearchMar26** is the *distinct second-generation protagonist*, who wakes after the swarm disappears, finds its notes, discovers Agent407's abandoned goggles, and **puts them on during “Am I the swarm now?”**; they sign their own name. The first chorus features Agent407; the final reprise features OAIResearchMar26 wearing the inherited goggles. Ensure their base silhouettes remain distinguishable without accessories. This named historical crossover is artistic, not a documented literal July-incident succession.
 
 ## Current priority: character design exploration
-Before implementing the 15-second animation milestone, explore the **base agent character** and its removable sticker accessories/emotes as outlined in `docs/STICKER_LANGUAGE.md`. The bunny-like nonhuman mechanic is a favored reference, not a locked final identity. The swarm adornment is **not selected**; do not default to a hard hat. Present still-image concepts and plain cutouts first.
+Before implementing the 15-second animation milestone, explore the **base agent character** and its removable sticker accessories/emotes as outlined in `docs/STICKER_LANGUAGE.md`. The bunny-like nonhuman mechanic is a favored reference, not a locked final identity. The inheritance item **is now Agent407's goggles**; other swarm adornments are not fixed and should not default to a hard hat. Present still-image concepts and plain cutouts first.
 
 ## Initial deliverable
 Deliver one delightful 15-second, 16:9 proof-of-concept with two recognizable sticker characters, multi-plane diorama, parallax camera motion, expressive gestures, and one tactile paper-world transition. It must be renderable to MP4 and have a small set of preview frames. Keep work on a feature branch and propose a PR when viable.
