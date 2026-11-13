@@ -2,9 +2,9 @@
   "name": "swarm-song", "version": "0.0.1", "private": true, "type": "module",
   "scripts": {
     "studio": "remotion studio src/index.tsx",
-    "check": "tsc --noEmit && node --test src/timeline.test.ts",
+    "check": "tsc --noEmit && node --test src/timeline.test.ts src/sprites.test.ts",
     "timing": "node scripts/timing.ts",
-    "render": "remotion render src/index.tsx RegistryDiscovery output/registry/registry.mp4 --codec=h264",
+    "render": "remotion render src/index.tsx RegistryDiscovery output/registry-v2/registry.mp4 --codec=h264",
     "review": "node scripts/review.mjs"
   },
   "dependencies": {"remotion": "4.0.543", "react": "19.2.0", "react-dom": "19.2.0"},

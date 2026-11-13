@@ -4,7 +4,7 @@
 
 ## The selected character reference is mandatory
 
-The user selected a specific cream bunny-like chibi mechanic sticker, posted in the ChatGPT conversation. **That image is currently not checked into the repository.** Codex must ask the user to attach the selected reference image in the Codex thread or place it at **`assets/reference/selected-bunny-mechanic.png`** before character generation. **Do not silently substitute the previous generated style boards or another bunny.**
+The user selected a specific cream bunny-like chibi mechanic sticker, posted in the ChatGPT conversation. **That image is now preserved at `assets/reference/selected-bunny-mechanic.png`.** The approved shared six-pose baseline and separate production derivatives are available; see CHARACTER_DESIGN_LOCK.md and assets/characters/agent407/PRODUCTION.md. **Do not silently substitute the previous generated style boards or another bunny.**
 
 What makes the chosen reference distinctive: upright tall rabbit-like ears, tiny oval black eyes, cheerful open mouth, little blushing cheeks, rounded and compact chibi proportions, warm brown hand-drawn outlines, tactile painterly print, and an irregular thick white die-cut sticker contour. Its illustrative outfit consists of vintage aviator goggles, dark mechanic apron/vest with brown pockets and gear badge, chunky gray wrench, and three yellow action rays. These must be decomposed into separate attachable sticker props/emotes; the initial character base is **bare, with no goggles**. Avoid generic floppy-eared puppies, 3D dolls, anatomical puppet rigs, or invented facial features that change the species.
 
@@ -47,7 +47,7 @@ Reusable **emote stickers are separate**: question mark, three yellow exclamatio
 3. Develop core supporting cast using same species and print language; show individual character/pose contact sheets for approval.
 4. Generate separate full-resolution transparent character, accessory, emote and prop PNG masters. Validate alpha and edges, consistent scale/style, attachment anchors, and two-color background composites.
 5. Only after the characters are approved, integrate them into the first chorus keyframe and 15-second animated proof. Do not prematurely build a generic engine or offer placeholder shapes as final art.
-6. Work on a **feature branch** and propose a PR with asset provenance, source dimensions, contact sheets and reproducible workflow. Avoid unbounded batch generation or surprise cloud spending.
+6. Work directly on **main**, as authorized by the user, with asset provenance, source dimensions, contact sheets and reproducible workflow. Avoid unbounded batch generation or surprise cloud spending.
 
 ## Story continuity checkpoints
 

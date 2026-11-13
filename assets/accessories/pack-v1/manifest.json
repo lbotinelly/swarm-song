@@ -1,0 +1,125 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/accessories/pack-v1/masters/goggles-v1.png",
+      "sourceSha256": "2c4cc261f55fb2eec9e74352299aa6bef71c44df9447a5a44cb42238bfea9b9b",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/accessories/goggles-v1.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "435afd5cea20ddfb5e9d4bd4cee7ee54acd6f4ef68dc4e7f014a74e9a3e4a7d6",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        280,
+        266,
+        1694,
+        809
+      ]
+    },
+    {
+      "source": "assets/accessories/pack-v1/masters/music-note-a-v1.png",
+      "sourceSha256": "e701494f1b9035276b3245ac85921c5c729f997865a03cbe1aa4d3b9da1d2eeb",
+      "nativeDimensions": [
+        1312,
+        1199
+      ],
+      "output": "public/accessories/music-note-a-v1.png",
+      "outputDimensions": [
+        1512,
+        1399
+      ],
+      "outputSha256": "7cb2907216ed24ab28370f71bd6e6022e5d364db12c427efb629aff5e2d5d4af",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        309,
+        199,
+        1236,
+        1215
+      ]
+    },
+    {
+      "source": "assets/accessories/pack-v1/masters/music-note-b-v1.png",
+      "sourceSha256": "ff007334d184397dcd163a58e8f64c919b351e48296bd8babff9918fb87b2d44",
+      "nativeDimensions": [
+        1271,
+        1238
+      ],
+      "output": "public/accessories/music-note-b-v1.png",
+      "outputDimensions": [
+        1471,
+        1438
+      ],
+      "outputSha256": "43ff8bd6ec3c077acda91cbc4ccfd25fe9f820dbbd62c0b860ab2474c43bafb9",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        347,
+        220,
+        1080,
+        1244
+      ]
+    },
+    {
+      "source": "assets/accessories/pack-v1/masters/surprise-rays-v1.png",
+      "sourceSha256": "8cf5acb523e51c9c3fb855250f82286053acf9ff235ea1c0b63858f1d24b72c5",
+      "nativeDimensions": [
+        1316,
+        1195
+      ],
+      "output": "public/accessories/surprise-rays-v1.png",
+      "outputDimensions": [
+        1516,
+        1395
+      ],
+      "outputSha256": "ca0a170cf84537aa6aa41cf5068925984b2778cf773d57bb612423203395dd1e",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        316,
+        280,
+        1199,
+        1065
+      ]
+    },
+    {
+      "source": "assets/accessories/pack-v1/masters/wrench-v1.png",
+      "sourceSha256": "cf1cef69a39087ef77e8686f9e07bb512481affde41c24641e975cb83d46690c",
+      "nativeDimensions": [
+        1314,
+        1197
+      ],
+      "output": "public/accessories/wrench-v1.png",
+      "outputDimensions": [
+        1514,
+        1397
+      ],
+      "outputSha256": "b99aae315a3b58ca33d6339bdd962ac8469dcef97d8e49d7ad3864b6575ec860",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        333,
+        181,
+        1089,
+        1217
+      ]
+    }
+  ]
+}

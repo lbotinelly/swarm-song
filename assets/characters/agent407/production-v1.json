@@ -1,0 +1,209 @@
+{
+  "recipe": "alpha<=16 -> 0; alpha>=250 -> 255; other alpha unchanged; RGB unchanged where visible; zero hidden RGB; centered padding only, no resizing",
+  "sprites": [
+    {
+      "source": "assets/characters/agent407/concepts/standing-v1.png",
+      "sourceSha256": "1fac2446cce566f99480d1f5de3760913fd36f3d574e1d995aace96a5be0e4e0",
+      "output": "public/characters/agent407/standing-v1.png",
+      "outputSha256": "c9373e0112d67cd6758ef9177956f03ecbf4a56e45beb39c5ffe5fdb11ea80f3",
+      "sourceDimensions": [
+        1184,
+        1328
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "alphaBounds": [
+        249,
+        139,
+        1066,
+        1367
+      ],
+      "paddingFractionsLTRB": [
+        0.17785714285714285,
+        0.09266666666666666,
+        0.23857142857142857,
+        0.08866666666666667
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "source": "assets/characters/agent407/concepts/kneeling-v2.png",
+      "sourceSha256": "e5847fce83ec85ab82150a220d64b411d898d9752e177a654a6b37095cb35709",
+      "output": "public/characters/agent407/kneeling-v1.png",
+      "outputSha256": "afdab09e3bad17c4820868973159d423084e7c645e283ef1c91fcb7031062d53",
+      "sourceDimensions": [
+        1184,
+        1328
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "alphaBounds": [
+        311,
+        204,
+        1133,
+        1306
+      ],
+      "paddingFractionsLTRB": [
+        0.22214285714285714,
+        0.136,
+        0.19071428571428573,
+        0.12933333333333333
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "source": "assets/characters/agent407/concepts/singing-v1.png",
+      "sourceSha256": "b81972cb4e00b2745e010e872873ce9c3f43d624e2522393525de08388d1d0d1",
+      "output": "public/characters/agent407/singing-v1.png",
+      "outputSha256": "761f1ea3743144bcd86412fca65ce7d44bae1b69cba29c1714dea67041ac58b1",
+      "sourceDimensions": [
+        1184,
+        1328
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "alphaBounds": [
+        248,
+        140,
+        1065,
+        1364
+      ],
+      "paddingFractionsLTRB": [
+        0.17714285714285713,
+        0.09333333333333334,
+        0.2392857142857143,
+        0.09066666666666667
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "source": "assets/characters/agent407/concepts/surprised-v1.png",
+      "sourceSha256": "8903c77a0e0e799d77190d887319376b650c7f70c5b0b3aa93ac7201d83d5850",
+      "output": "public/characters/agent407/surprised-v1.png",
+      "outputSha256": "667c7ad45109cb62495af53982449f09a0581a450d91407834e5c52203906289",
+      "sourceDimensions": [
+        1184,
+        1328
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "alphaBounds": [
+        246,
+        136,
+        1062,
+        1366
+      ],
+      "paddingFractionsLTRB": [
+        0.1757142857142857,
+        0.09066666666666667,
+        0.24142857142857144,
+        0.08933333333333333
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "source": "assets/characters/agent407/concepts/cheer-v1.png",
+      "sourceSha256": "5ebdf841670c40af175b8f01e569b79d59784049c8c4d4f762f8d622ac3495a6",
+      "output": "public/characters/agent407/cheer-v1.png",
+      "outputSha256": "ca3585909d7f6a737427f277ad9de25f52274174774945e404d99592b380bfc5",
+      "sourceDimensions": [
+        1182,
+        1331
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        109,
+        84
+      ],
+      "alphaBounds": [
+        241,
+        137,
+        1058,
+        1366
+      ],
+      "paddingFractionsLTRB": [
+        0.17214285714285715,
+        0.09133333333333334,
+        0.24428571428571427,
+        0.08933333333333333
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "source": "assets/characters/agent407/concepts/walking-v1.png",
+      "sourceSha256": "161702ebff5a8856d5e7fb62f2ceece4c7b7f0f4d1b34793eb9d47a58b23f0b1",
+      "output": "public/characters/agent407/walking-v1.png",
+      "outputSha256": "cb74204b4f9e81962c2be5496474db6994a69f0a024601c515f3627a4ee552df",
+      "sourceDimensions": [
+        1184,
+        1328
+      ],
+      "dimensions": [
+        1400,
+        1500
+      ],
+      "offset": [
+        108,
+        86
+      ],
+      "alphaBounds": [
+        242,
+        145,
+        1071,
+        1346
+      ],
+      "paddingFractionsLTRB": [
+        0.17285714285714285,
+        0.09666666666666666,
+        0.235,
+        0.10266666666666667
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    }
+  ]
+}

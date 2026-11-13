@@ -1,19 +1,25 @@
-export type Pose = 'standing' | 'kneeling';
+import type {agent407} from './sprites.ts';
+export type Pose = keyof typeof agent407;
 export type Cue =
   | {atMs: number; action: 'pose'; pose: Pose}
   | {atMs: number; durationMs: number; action: 'emote'; emote: 'question' | 'surprise'}
   | {atMs: number; durationMs: number; action: 'bop'};
 
-// Rehearsal timings, NOT measured lyric timestamps. No goggles in this scene.
+// Current phrase cues approved after human playback review: "Timing feels right".
+// This approves the performance timing, not exact individual-word boundaries.
+// See docs/AUDIO_SYNC.md. No goggles in this scene.
 export const registry = {
   durationMs: 8000,
+  syncStatus: 'phrase-approved' as const,
+  audio: {src:'audio/registry-master-v1.wav',masterStartMs:23000},
   cues: [
     {atMs: 0, action: 'pose', pose: 'standing'},
-    {atMs: 703, durationMs: 2400, action: 'emote', emote: 'question'},
-    {atMs: 1807, action: 'pose', pose: 'kneeling'},
-    {atMs: 3601, action: 'pose', pose: 'standing'},
-    {atMs: 4109, durationMs: 2700, action: 'emote', emote: 'surprise'},
-    {atMs: 4703, durationMs: 2400, action: 'bop'},
+    {atMs: 1160, durationMs: 1840, action: 'emote', emote: 'question'},
+    {atMs: 1750, action: 'pose', pose: 'kneeling'},
+    {atMs: 3000, action: 'pose', pose: 'standing'},
+    // Rays on crosschecked "and", NOT a claim of precise "writable" onset.
+    {atMs: 3240, durationMs: 3000, action: 'emote', emote: 'surprise'},
+    {atMs: 4000, durationMs: 2400, action: 'bop'},
   ] satisfies Cue[],
 };
 

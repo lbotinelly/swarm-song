@@ -2,11 +2,11 @@ import {bundle} from '@remotion/bundler';
 import {selectComposition,renderStill} from '@remotion/renderer';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
-const dir = 'output/registry';
+const dir = 'output/registry-v2';
 await mkdir(dir,{recursive:true});
 const serveUrl = await bundle({entryPoint:'src/index.tsx'});
 const composition = await selectComposition({serveUrl,id:'RegistryDiscovery'});
-for (const frame of [0,30,75,115,135,170]) {
+for (const frame of [0,40,65,92,104,170]) {
   await renderStill({serveUrl,composition,frame,output:`${dir}/frame-${frame}.png`,imageFormat:'png'});
   console.log(`Rendered frame ${frame}`);
 }

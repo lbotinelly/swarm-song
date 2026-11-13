@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="407" result="grain"/>
+      <feColorMatrix in="grain" type="saturate" values="0"/>
+      <feComponentTransfer><feFuncR type="linear" slope="0.16" intercept="0.84"/><feFuncG type="linear" slope="0.16" intercept="0.84"/><feFuncB type="linear" slope="0.16" intercept="0.84"/></feComponentTransfer>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+      <feComposite in2="SourceAlpha" operator="in"/>
+    </filter>
+  </defs>
+  <!-- Editable runtime typography, not a generatively drawn or baked label. -->
+  <text x="512" y="780" text-anchor="middle" font-family="Comic Sans MS, Arial, sans-serif" font-size="780" font-weight="bold" fill="#91afa8" stroke="#fffdf7" stroke-width="62" stroke-linejoin="round" paint-order="stroke fill" filter="url(#paper)">?</text>
+</svg>

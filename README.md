@@ -2,15 +2,29 @@
 
 A music-video production project built around expressive **die-cut chibi sticker characters** inhabiting **layered-paper dioramas**, with the compositional sophistication of premium anime ending sequences and playful, music-driven pacing.
 
-## First milestone — ready for review
+## Milestone 2 — real-art registry review
 
-The selected reference has now been supplied and preserved at `assets/reference/selected-bunny-mechanic.png`. The earlier handoff notes below describe its previous absence. The user accepted Agent407's base design direction and requested consistent proportions. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) locks that direction. The [art review](assets/characters/agent407/concepts/README.md) now contains six individual core-pose PNGs, including a shorter-legged kneeling refinement, with contact sheets, exact prompts and alpha QA. All six poses and the design direction are now user-approved. Technical production export cleanup remains; preserve the approved appearance.
+Agent407's six poses and shared cast baseline are approved. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) and [design lock](docs/CHARACTER_DESIGN_LOCK.md) are the authority for future work. Original masters remain unchanged; [production derivatives](assets/characters/agent407/PRODUCTION.md) remove alpha noise and add consistent padding without resampling artwork.
 
-The independent [registry engine rehearsal](docs/REGISTRY_SPIKE.md) uses temporary SVG test sprites and six millisecond-authored cues. Run `npm ci`, `npm run check`, `npm run render`, and `npm run review`. It is an 8-second silent timing/attachment test, not the integrated film or a lyric-aligned edit.
+The [first detachable pack](assets/accessories/pack-v1/README.md) contains goggles, editable question-mark typography, three surprise rays, two separate music notes and a wrench. The contact sheet and six-pose placement sheet are ready for approval. No supporting cast has been expanded.
 
-[Audio metadata](assets/audio-inventory.json) records the available master and stems: master WAV/MP3 duration 262.8 seconds, twelve WAV stems 264.238146 seconds, all audio stereo at 48 kHz. The stem-folder name says 68 BPM; no beat grid or lyric timestamps have been verified. Different durations do not by themselves establish an offset. Original audio and lyrics remain unchanged.
+The [registry demonstration](docs/REGISTRY_SPIKE.md) now uses the approved standing/kneeling artwork and attached emotes, with an eight-second excerpt of the real master. **Phrase timing is user-approved through playback review**, with the measured evidence and remaining individual-word uncertainty in [audio sync notes](docs/AUDIO_SYNC.md). The registry remains ungoggled. Local render output: `output/registry-v2/registry.mp4`.
 
-**Shared cast baseline:** all main and supporting characters reuse the approved six-pose model. Individual detachable props make them unique; expressions and timing add personality without redesigning the body. See [the design lock](docs/CHARACTER_DESIGN_LOCK.md).
+```powershell
+npm ci
+python scripts/prepare-sprites.py
+python scripts/prepare-accessories.py
+npm run check
+npm run timing
+npm run render
+npm run review
+```
+
+Preparation requires Python/Pillow; existing generated derivatives are checked in, so rendering does not need Python. Contact-sheet reproduction is documented beside the art. Work continues directly on **main**, as authorized by the user; no additional branch/PR coordination is required.
+
+The earlier planning sections below preserve the project's creative history. References to missing artwork or proposed engine work are superseded by this status. Master audio and lyrics remain unchanged. Master duration is 262.8 seconds; stems are 264.238146 seconds, all stereo at 48 kHz. The 68 BPM folder name is not a timing source.
+
+**Shared cast baseline:** all main and supporting characters reuse the approved six-pose model. Individual detachable props make them unique; expressions and timing add personality without redesigning the body.
 
 ## Creative North Star
 

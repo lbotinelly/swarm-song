@@ -1,0 +1,105 @@
+{
+  "status": "phrase-timing-approved",
+  "master": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+  "leadStem": "assets/audio/Stems (68BPM)/0 Lead Vocals.wav",
+  "excerptStartMs": 23000,
+  "excerptDurationMs": 8000,
+  "export": {
+    "file": "public/audio/registry-master-v1.wav",
+    "startSample": 1104000,
+    "endSampleExclusive": 1488000,
+    "sampleRate": 48000,
+    "channels": 2,
+    "frames": 384000,
+    "pcmMatchesSourceExactly": true,
+    "sha256": "be324c8ab0e003c7135439881d62c669d1e9b0b8cb37853e17e514f4b089e2c8"
+  },
+  "confirmedCueTimings": [
+    {
+      "text": "Found",
+      "masterMs": 24160,
+      "excerptMs": 1160,
+      "frame30fps": 35,
+      "visibleExcerptMs": 1166.6666666666667,
+      "confirmation": "User playback approval"
+    },
+    {
+      "text": "and it was writable",
+      "masterMs": 26240,
+      "excerptMs": 3240,
+      "frame30fps": 98,
+      "visibleExcerptMs": 3266.6666666666665,
+      "confirmation": "User playback approval"
+    }
+  ],
+  "candidatePhraseAnchors": [
+    {
+      "text": "Found",
+      "candidateMasterMs": 24160,
+      "candidateExcerptMs": 1160,
+      "evidence": "Qwen master/lead 24140\u201324160; independent Whisper lead word estimate 24080.",
+      "confidence": "strong phrase localization; audition required for final onset"
+    },
+    {
+      "text": "and it was writable",
+      "candidateMasterMs": 26240,
+      "candidateExcerptMs": 3240,
+      "evidence": "Full-context Qwen master and lead 'and' starts 26240; independent Whisper lead 'and' starts 26240.",
+      "confidence": "strong phrase localization; audition required for final onset"
+    }
+  ],
+  "uncertainWord": {
+    "text": "writable",
+    "observedMasterOrNearAlignedStemEstimatesMs": [
+      26800,
+      26990,
+      27180,
+      27200,
+      27260
+    ],
+    "note": "Some short-context Qwen outputs are zero-length; reject them as precise timing. Do not average inconsistent estimates into a supposedly confirmed timestamp."
+  },
+  "stemAlignment": {
+    "singleGlobalOffsetVerified": false,
+    "signConvention": "master_time = stem_time + offset",
+    "method": "16 kHz mono waveform normalized cross-correlation, 4-second windows, +/-3-second search",
+    "windowStartSecondsAndOffsetMs": [
+      [
+        13,
+        -2.3125
+      ],
+      [
+        18,
+        1.5625
+      ],
+      [
+        23,
+        -2.8125
+      ],
+      [
+        28,
+        -42.1875
+      ],
+      [
+        33,
+        -79.25
+      ],
+      [
+        38,
+        -128.3125
+      ],
+      [
+        50,
+        -275.1875
+      ]
+    ],
+    "note": "Registry region is nearly aligned, but later offsets drift. Duration difference is not a valid constant time offset."
+  },
+  "reviewPolicy": "Current phrase timing approved by user playback review. Individual writable word onset remains uncertain; do not extrapolate to globally aligned stems or sample-accurate words.",
+  "approval": {
+    "date": "2026-11-13",
+    "method": "User watched/listened to eight-second actual-song registry preview and answered the question about question-mark/rays timing.",
+    "response": "Timing feels right",
+    "scope": "Current scene phrase onsets and choreography; not sample-accurate per-word transcription."
+  }
+}
