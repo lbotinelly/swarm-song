@@ -2,11 +2,13 @@
 
 A music-video production project built around expressive **die-cut chibi sticker characters** inhabiting **layered-paper dioramas**, with the compositional sophistication of premium anime ending sequences and playful, music-driven pacing.
 
-## Milestone 2 — real-art registry review
+## Milestone 3 — supporting cast fitting review
+
+The [three supporting identity kits](assets/accessories/supporting-v1/README.md) now have separate native prop masters and a fitted contact sheet: PhaseOne, Ethical Protester and Courier. Goggles follow each pose's forehead tilt; the satchel has rear/front strap layering and standing/walking fits. The new cast kits await art-direction approval before chorus production. Reproduction commands and light/dark review sheets are linked in the kit notes.
 
 Agent407's six poses and shared cast baseline are approved. The [mini style spec](docs/AGENT407_MINI_STYLE_SPEC.md) and [design lock](docs/CHARACTER_DESIGN_LOCK.md) are the authority for future work. Original masters remain unchanged; [production derivatives](assets/characters/agent407/PRODUCTION.md) remove alpha noise and add consistent padding without resampling artwork.
 
-The [first detachable pack](assets/accessories/pack-v1/README.md) contains goggles, editable question-mark typography, three surprise rays, two separate music notes and a wrench. The contact sheet and six-pose placement sheet are ready for approval. No supporting cast has been expanded.
+The [first detachable pack](assets/accessories/pack-v1/README.md) contains goggles, editable question-mark typography, three surprise rays, two separate music notes and a wrench. The accessory contact sheet, six-pose placement sheet and registry integration were explicitly approved on November 13, 2026. Milestone 3 begins with three supporting identity kits, reviewed before the chorus proof.
 
 The [registry demonstration](docs/REGISTRY_SPIKE.md) now uses the approved standing/kneeling artwork and attached emotes, with an eight-second excerpt of the real master. **Phrase timing is user-approved through playback review**, with the measured evidence and remaining individual-word uncertainty in [audio sync notes](docs/AUDIO_SYNC.md). The registry remains ungoggled. Local render output: `output/registry-v2/registry.mp4`.
 

@@ -2,10 +2,13 @@
 from pathlib import Path
 import hashlib
 import json
+import argparse
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / 'assets/accessories/pack-v1/masters'
+parser = argparse.ArgumentParser()
+parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1'], default='pack-v1')
+SOURCE = ROOT / 'assets/accessories' / parser.parse_args().pack / 'masters'
 DEST = ROOT / 'public/accessories'
 DEST.mkdir(parents=True, exist_ok=True)
 records = []

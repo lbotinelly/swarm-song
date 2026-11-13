@@ -1,4 +1,6 @@
-# First detachable pack — approval pending
+# First detachable pack — approved
+
+Approved November 13, 2026, together with the six-pose placement sheet and registry visual integration: user response **“Yes, all approved! Proceed.”**
 
 Scope: goggles, curiosity question, three yellow rays, two independently animatable music notes, and wrench. No supporting cast or additional accessories were produced.
 

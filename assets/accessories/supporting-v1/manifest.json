@@ -1,0 +1,101 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/accessories/supporting-v1/masters/clipboard-v1.png",
+      "sourceSha256": "00c2c46c600cbfefa342a624ea437c567b2b8e3dd5ec90a09387a96049eee5f7",
+      "nativeDimensions": [
+        1173,
+        1341
+      ],
+      "output": "public/accessories/clipboard-v1.png",
+      "outputDimensions": [
+        1373,
+        1541
+      ],
+      "outputSha256": "e61d5fb6cedc990452dd612c6b97a62331b267b6e0fedc3635c8ba877f74f0cc",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        217,
+        138,
+        1129,
+        1409
+      ]
+    },
+    {
+      "source": "assets/accessories/supporting-v1/masters/envelope-v1.png",
+      "sourceSha256": "0463737bbd5ace7c9a0f491087c7d68dd6dd473ac4f6fbad88448c863ff56d50",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/accessories/envelope-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "633720c92b6cc28bdb7fa880e3e01fa6ae729ca3ea5ceb72ac235a23b5b0dcc0",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        408,
+        315,
+        1319,
+        932
+      ]
+    },
+    {
+      "source": "assets/accessories/supporting-v1/masters/placard-v1.png",
+      "sourceSha256": "23d38fe65291761a29ef987650f6b26c3ec1d2c0d19247beab60731c77e9bd4a",
+      "nativeDimensions": [
+        1312,
+        1199
+      ],
+      "output": "public/accessories/placard-v1.png",
+      "outputDimensions": [
+        1512,
+        1399
+      ],
+      "outputSha256": "0c9f5dffee380f9787ee2a592f3ab06d914f69320b036e85e00be5823de78783",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        231,
+        208,
+        1264,
+        1218
+      ]
+    },
+    {
+      "source": "assets/accessories/supporting-v1/masters/satchel-v1.png",
+      "sourceSha256": "13b39fc1c204bf985ad6835f1e1a90ad98d6c3f2fd1de8620d22ced4aa9b4b8e",
+      "nativeDimensions": [
+        1312,
+        1199
+      ],
+      "output": "public/accessories/satchel-v1.png",
+      "outputDimensions": [
+        1512,
+        1399
+      ],
+      "outputSha256": "fc22b8b4c31b18a59c58405a009895180b7affaf454ef5fc2a8a3b024062f62e",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        344,
+        284,
+        1112,
+        1158
+      ]
+    }
+  ]
+}

@@ -18,25 +18,26 @@ const Pack = ({production=false}:{production?:boolean}) => <AbsoluteFill style={
 </AbsoluteFill>;
 
 const poses = Object.keys(agent407) as (keyof typeof agent407)[];
-const Placement = () => <AbsoluteFill style={{background:'#eae1d0'}}>
-  <div style={title}>SWARM SONG / anchor placement review / not a story sequence</div>
+const Placement = ({gogglesOnly=false}:{gogglesOnly?:boolean}) => <AbsoluteFill style={{background:'#eae1d0'}}>
+  <div style={title}>SWARM SONG / {gogglesOnly?'goggles fit / six poses / later-story prop':'anchor placement review / not a story sequence'}</div>
   {poses.map((pose,i)=>{
     const sprite = agent407[pose], scale=.36;
     const [fx,fy] = sprite.anchors.footPivot.map(n=>n*scale);
     const attach = (name:string, anchor:AnchorName, width:number,height:number, offset:readonly[number,number]=[0,0], pivot:readonly[number,number]=[.5,.5]) => {
       const [x,y]=attachmentPoint(sprite,anchor,scale,offset);
-      return <Img key={name} src={staticFile('accessories/'+name)} style={{position:'absolute',left:x-width*pivot[0],top:y-height*pivot[1],width,height,objectFit:'contain',transformOrigin:`${pivot[0]*100}% ${pivot[1]*100}%`,transform:name==='wrench-v1.png'?'rotate(-18deg)':undefined}}/>;
+      const angle = name==='goggles-v1.png'?sprite.mountDegrees.head:name==='wrench-v1.png'?sprite.mountDegrees.leftHand+7:0;
+      return <Img key={name} src={staticFile('accessories/'+name)} style={{position:'absolute',left:x-width*pivot[0],top:y-height*pivot[1],width,height,objectFit:'contain',transformOrigin:`${pivot[0]*100}% ${pivot[1]*100}%`,transform:`rotate(${angle}deg)`}}/>;
     };
     return <div key={pose} style={{position:'absolute',left:30+i%3*590,top:110+Math.floor(i/3)*730,width:560,height:690,background:i%2?palette[1]:palette[0],borderRadius:16}}>
       <div style={{position:'absolute',left:270,top:590}}>
-        {pose==='walking' && attach('wrench-v1.png','leftHand',270,249,[0,0],[.60,.70])}
+        {!gogglesOnly && pose==='walking' && attach('wrench-v1.png','leftHand',270,249,[0,0],[.60,.70])}
         <Img src={staticFile(sprite.src)} style={{position:'absolute',left:-fx,top:-fy,width:sprite.width*scale,height:sprite.height*scale}}/>
-        {pose==='standing' && attach('goggles-v1.png','head',320,176,[0,10])}
-        {pose==='kneeling' && attach('question-mark-v1.svg','head',115,115,[430,-90])}
-        {pose==='surprised' && attach('surprise-rays-v1.png','head',190,175,[430,-50])}
-        {(pose==='singing'||pose==='cheer') && <>{attach('music-note-a-v1.png','mouth',105,97,[420,-200])}{attach('music-note-b-v1.png','mouth',85,83,[520,-380])}</>}
+        {(gogglesOnly||pose==='standing') && attach('goggles-v1.png','head',320,320*1087/1974,[0,10])}
+        {!gogglesOnly && pose==='kneeling' && attach('question-mark-v1.svg','head',115,115,[430,-90])}
+        {!gogglesOnly && pose==='surprised' && attach('surprise-rays-v1.png','head',190,175,[430,-50])}
+        {!gogglesOnly && (pose==='singing'||pose==='cheer') && <>{attach('music-note-a-v1.png','mouth',105,97,[420,-200])}{attach('music-note-b-v1.png','mouth',85,83,[520,-380])}</>}
       </div>
-      <div style={{position:'absolute',left:20,bottom:35,fontFamily:'Arial, sans-serif',fontSize:22,color:i%2?'#fbf3e4':'#59483c'}}>{pose}{pose==='standing'?' / later-story goggles test':''}</div>
+      <div style={{position:'absolute',left:20,bottom:35,fontFamily:'Arial, sans-serif',fontSize:22,color:i%2?'#fbf3e4':'#59483c'}}>{pose}{gogglesOnly?` / head ${sprite.mountDegrees.head}°`:pose==='standing'?' / later-story goggles test':''}</div>
     </div>;
   })}
 </AbsoluteFill>;
@@ -46,5 +47,6 @@ registerRoot(()=><>
   <Composition id="AccessoryPack" component={Pack} width={1800} height={1400} fps={30} durationInFrames={1}/>
   <Composition id="ProductionReview" component={Pack} defaultProps={{production:true}} width={1800} height={1400} fps={30} durationInFrames={1}/>
   <Composition id="AccessoryPlacement" component={Placement} width={1800} height={1600} fps={30} durationInFrames={1}/>
+  <Composition id="GogglesFit" component={Placement} defaultProps={{gogglesOnly:true}} width={1800} height={1600} fps={30} durationInFrames={1}/>
   <Composition id="QuestionPreview" component={Question} width={1024} height={1024} fps={30} durationInFrames={1}/>
 </>);

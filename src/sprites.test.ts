@@ -10,6 +10,7 @@ test('all approved poses have in-canvas anchors and identical production pixel d
       assert.ok(x>=0 && x<sprite.width && y>=0 && y<sprite.height);
     }
     assert.deepEqual(attachmentPoint(sprite,'footPivot',0.54),[0,0]);
+    for(const degrees of Object.values(sprite.mountDegrees)) assert.ok(Number.isFinite(degrees) && Math.abs(degrees)<=90);
   }
 });
 test('attachment points remain in the body coordinate system across pose changes',()=>{
