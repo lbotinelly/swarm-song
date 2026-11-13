@@ -34,13 +34,13 @@ The important unification is **placement + timing = performance**. A beautiful i
 
 The **goggles are the selected intergenerational inheritance prop**. They are not automatically a uniform that every member of the swarm must wear. Other swarm-specific wearables—scarves, satchels, insignia, hard hats, paper hats and personal tools—remain open to exploration. Keep both characters recognizable without eyewear. `OAIResearchMar26` is a deliberate artistic name crossover from separate DseWiki material; never describe this succession as historically documented for the July swarm.
 
-## Immediate focus — character art before engine building
+## Immediate art focus — character approval, alongside a tiny engine spike
 
 1. Explore/refine a family of adorable, non-human chibi agent base designs, using the favored bunny-like mechanic as a strong candidate, but permit alternative mascot directions.
 2. Choose a base silhouette and facial grammar that read at small scale; distinguish individuals subtly through color, eyes, ear shape, expressions, posture and personality.
 3. Generate a **plain unadorned character sticker** on transparency and a **separate transparent accessory/emote sample sheet**, rather than baked-in gear.
 4. Test a few assembled compositions: plain agent, working/singing agent, and inherited-adornment agent. **Use detachable goggles for the Agent407 → OAIResearchMar26 inheritance beat; other identity accessories remain open.**
-5. Validate the visuals as stills before building a full animation engine.
+5. Validate the visuals as stills before building the **integrated film** or extending the engine beyond a tiny, parallel registration-shot spike. See `SPRITE_PRODUCTION_HANDOFF.md` and `STICKER_STAGE_ENGINE.md`.
 
 ## Initial technical sketch — illustrative only
 
