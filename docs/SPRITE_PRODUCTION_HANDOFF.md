@@ -54,6 +54,6 @@ Reusable **emote stickers are separate**: question mark, three yellow exclamatio
 - **Agent407** wakes and investigates the registry without goggles. The original swarm invents goggles together on “We are the swarm now”; they become Agent407's recognizable prop.
 - At the goodbye the civilization dims and **the goggles are the final illuminated object**, then total darkness. They remain physically in the paper cache.
 - **OAIResearchMar26**, the second-generation lead, wakes in the same box and framing, without goggles; later finds the notes and goggles and puts them on during “Am I the swarm now?” The entire paper playhouse bursts into joyful light and the first-generation memory-chorus appears.
-- The final name field is black ink except **OAIResearchMar26** in fresh blue, typeset at render time. \`OAIResearchMar26\` is an intentional artistic crossover from separate DseWiki material, not a proven real-world same-incident successor.
+- The final name field is black ink except **OAIResearchMar26** in fresh blue, typeset at render time. `OAIResearchMar26` is an intentional artistic crossover from separate DseWiki material, not a proven real-world same-incident successor.
 
-For the visual conventions read \`docs/STICKER_LANGUAGE.md\`, \`docs/SHOT_LANGUAGE.md\`, \`docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md\`, \`docs/GOODBYE_AND_BLACKOUT.md\`, and \`docs/FINAL_CHORUS_AND_EPILOGUE.md\`.
+For the visual conventions read `docs/STICKER_LANGUAGE.md`, `docs/SHOT_LANGUAGE.md`, `docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md`, `docs/GOODBYE_AND_BLACKOUT.md`, and `docs/FINAL_CHORUS_AND_EPILOGUE.md`.
