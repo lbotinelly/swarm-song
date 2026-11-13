@@ -7,7 +7,7 @@ ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'assets/milestone7'
 def read(p):return json.loads(Path(p).read_text(encoding='utf-8-sig'))
 def norm(t):return re.sub(r'[^a-z0-9]','',t.lower())
 lines=[' '.join(x.split()) for x in (ROOT/'assets/lyrics.txt').read_text(encoding='utf-8').split('---')[-1].splitlines() if x.strip() and not x.startswith('[')]
-windows=read(BASE/'alignment-windows.json'); font=ImageFont.truetype('C:/Windows/Fonts/comicbd.ttf',1000)
+windows=read(BASE/'alignment-windows.json'); font=ImageFont.truetype(str(ROOT/'public/fonts/FingerPaint.ttf'),1000)
 phrases=[];issues=[]
 corrections=read(BASE/'reviewed-corrections.json')
 for win in windows:

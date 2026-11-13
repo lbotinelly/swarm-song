@@ -20,6 +20,8 @@ The important unification is **placement + timing = performance**. A beautiful i
 
 ## Current lyric direction — M7
 
+**Approved font direction (November 13, 2026):** Leo approved **Finger Paint** for general lyrics and **Bitcount Single** for agent-message B-roll after reviewing the actual-font proof. Finger Paint should use a lighter white contour and restrained added texture so its handmade letterforms stay clear. Bitcount Single belongs on plain paper at a generous size and substantial weight, without outlining each dot. Bundle the font files locally with their SIL OFL notices; reuse runtime text rendering. The V3 caption test implements these fonts with locally bundled files and preserves the approved V2 timing. The previous V2 film remains available.
+
 **The phrase arrives. The words perform.** Complete short phrases become readable ahead of singing; individual words receive selective emphasis. Incoming phrases land above the old arrangement. Following Leo’s V1 playback review, the old words now fade quickly **in place**, without exit sliding or rotation. Default placement is the **bottom half**, with a stable bottom caption baseline; central hero arrangements are an optional authored exception. Reduce pre-roll after long vocal pauses. Read-ahead is the default; surprise groups protect punchlines and hero typography emphasizes major refrains. Acoustic timing, presentation timing and performance remain distinct. See `../assets/milestone7/README.md` and `ALIGNMENT.md`. The earlier per-word entrance ideas below remain optional accents, not the default reveal strategy.
 
 ## Lyrics are die-cut word stickers, NOT subtitle cards

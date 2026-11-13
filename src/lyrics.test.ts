@@ -34,7 +34,7 @@ test('exits fade in place within 150ms; long-gap entrances are closer without mo
  const old=JSON.parse(readFileSync('assets/milestone7/timeline-v1.json','utf8'));
  for(const [i,p] of ps.entries()){
   assert.equal(p.startMs,old.phrases[i].startMs);assert.equal(p.endMs,old.phrases[i].endMs);
-  for(const w of p.words){const previous=old.phrases[i].words.find((v:{id:string})=>v.id===w.id);if(w.id==='line-14-word-05-extra'){assert.equal(w.startMs,68780);assert.equal(w.endMs,69620);}else if(w.id==='line-14-word-05'){assert.equal(w.startMs,previous.startMs);assert.equal(w.endMs,68780);}else assert.deepEqual(w,previous);}
+  for(const w of p.words){const previous=old.phrases[i].words.find((v:{id:string})=>v.id===w.id);if(w.id==='line-14-word-05-extra'){assert.equal(w.startMs,68780);assert.equal(w.endMs,69620);}else if(w.id==='line-14-word-05'){assert.equal(w.startMs,previous.startMs);assert.equal(w.endMs,68780);}else {const {widthEm:currentWidth,...current}=w;const {widthEm:oldWidth,...prior}=previous;assert.deepEqual(current,prior);}}
   for(const w of p.words){const a=wordMotion(p,w,p.presentation.endMs);const b=wordMotion(p,w,p.presentation.endMs+75);for(const key of ['x','y','turn','scale','shadow'] as const)assert.equal(a[key],b[key]);assert.equal(wordMotion(p,w,p.presentation.endMs+EXIT_MS).opacity,0);}
   const gap=p.startMs-(i?ps[i-1].endMs:0);
   if(gap>=1800&&p.mode!=='surprise')assert.equal(p.startMs-p.presentation.startMs,250);
@@ -50,4 +50,11 @@ test('director corrections survive regeneration; pauses and fourth running are e
  assert.equal(p('phrase-14-2').words.length,4);
  const goodbye=p('phrase-29-1');assert.equal(new Set(layoutWords(goodbye).slice(0,3).map(w=>Math.round((w.y+6)/140))).size,1);
  assert.deepEqual(goodbye.lineBreakAfter,[3]);
+});
+
+
+test('font migration preserves the approved V2 timeline except glyph metrics',()=>{
+ const previous=JSON.parse(readFileSync('assets/milestone7/timeline-v2.json','utf8'));
+ const withoutMetrics=(value:unknown)=>JSON.stringify(value,(key,item)=>key==='widthEm'?undefined:item);
+ assert.equal(withoutMetrics(data),withoutMetrics(previous));
 });

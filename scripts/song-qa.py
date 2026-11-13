@@ -2,10 +2,10 @@ import json,hashlib,subprocess
 from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
-ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';review=base/'review-v2'
+ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';review=base/'review-v3'
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
-j=read(base/'timeline.json');master=ROOT/j['master'];movie=review/'swarm-song-v2.mp4'
+j=read(base/'timeline.json');master=ROOT/j['master'];movie=review/'swarm-song-v3.mp4'
 assert sha(master)==j['masterSha256']
 for row in read(ROOT/'assets/characters/agent407/concepts/core-quality-report.json'):
  if 'sha256' in row:assert sha(ROOT/'assets/characters/agent407/concepts'/row['file'])==row['sha256']
@@ -38,7 +38,7 @@ sheet.save(review/'compressed-contact-sheet.jpg',quality=92)
 clippedPerformance=[dict(phrase=p['id'],word=w['id'],onsetMs=w['startMs'],presentationClearMs=p['presentation']['endMs']+j['presentationDefaults']['exitMs']) for p in j['phrases'] for w in p['words'] if w['startMs']>=p['presentation']['endMs']+j['presentationDefaults']['exitMs']]
 assert not clippedPerformance,clippedPerformance
 result=dict(masterHashPreserved=True,approvedCharacterMastersPreserved=True,comparisons=comparisons,repeatFrameHash=sha(review/'song-55000.png'),video=dict(width=v['width'],height=v['height'],fps=v['r_frame_rate'],frames=v['nb_frames'],duration=probe['format']['duration']),audio=dict(codec=a['codec_name'],sampleRate=a['sample_rate'],channels=a['channels'],checks=rows),editorialLines=len(set(p['sourceLine'] for p in j['phrases'])),phrases=len(j['phrases']),words=sum(len(p['words']) for p in j['phrases']),unresolvedWords=sum(w['status']=='unresolved' for p in j['phrases'] for w in p['words']),performanceOnsetsAfterCaptionClear=clippedPerformance,continuousAudiovisualReview='unverified',limitations=['Acoustic coverage differs from verified editorial text coverage; see ALIGNMENT.md.','Compression contact sheet is static evidence, not continuous playback review.'])
-(base/'qa-report-v2.json').write_text(json.dumps(result,indent=2)+'\n')
+(base/'qa-report-v3.json').write_text(json.dumps(result,indent=2)+'\n')
 manifest={str(p.relative_to(base)).replace('\\','/'):dict(bytes=p.stat().st_size,sha256=sha(p)) for p in base.rglob('*') if p.is_file() and p.name!='manifest.json'}
 (base/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
 print(json.dumps(result,indent=2))

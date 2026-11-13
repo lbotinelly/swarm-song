@@ -1,5 +1,9 @@
 # V2 — Leo's playback notes
 
+## Approved playback baseline — November 13, 2026
+
+Leo approved the updated 23–72s timing preview after the final two 800 ms entrance delays: “the updated timing preview is perfect now!” Preserve this presentation baseline, including the four-running performance, when changing typography. Approval covers the reviewed preview's visible timing; it does not certify every machine-estimated acoustic word boundary or unreviewed portions of the full song.
+
 Leo described V1 as an excellent overall timing result, while requesting three refinements: text sometimes arrived too early after long vocal pauses; slide/fade exits distracted; final captions should live in the bottom half. This is overall playback feedback, not individual acoustic-boundary approval.
 
 ## Implemented presentation changes

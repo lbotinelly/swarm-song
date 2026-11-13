@@ -1,6 +1,19 @@
 # Milestone 7 — The song is the timeline
 
-**Current: V2 playback refinements.** [Play V2](review-v2/index.html): bottom-half captions, a 150 ms stationary fade, and closer entrances after long vocal gaps. [Changes and reproduction](PLAYBACK_FEEDBACK.md). The V1 description and review below are retained as history; V1 media is unchanged. Current render commands output to `review-v2/`, and QA writes `qa-report-v2.json`.
+**Current: V3 typography test.** [Play the full test](review-v3/index.html): bundled Finger Paint Regular lyrics with a lighter 9 px white contour and restrained texture; Bitcount Single weight 550 on the existing blue agent-name outro. No new B-roll scenes. All approved V2 timing and text remain unchanged; only glyph metrics changed. V2 is preserved, with its exact timeline in `timeline-v2.json`. Font provenance and OFL notices are in `public/fonts/`. Rendering waits for both local fonts before capturing frames.
+
+Reproduce V3 (no aligner rerun needed):
+```powershell
+python scripts/build-lyrics.py
+npm run check
+node scripts/song-render.mjs --stills --full
+python scripts/song-qa.py
+```
+V3 validation: 24 tests pass; encoded output is 1920x1080, 30 fps, 7,884 frames and 262.8 seconds. Repeated-frame hashes match, and five sampled audio windows remain aligned with the unchanged master. Static encoded frames and the Bitcount outro were visually inspected; continuous playback awaits Leo’s review.
+
+Current render commands output to `review-v3/`; QA writes `qa-report-v3.json`. Python/Pillow measures the bundled Finger Paint file, so V3 does not require a system Comic Sans installation.
+
+**Preserved V2 playback refinements.** [Play V2](review-v2/index.html): bottom-half captions, a 150 ms stationary fade, and closer entrances after long vocal gaps. [Changes and reproduction](PLAYBACK_FEEDBACK.md). The V1 description and review below are retained as history; V1 media is unchanged. V2 output and its QA remain preserved.
 
 ## Preserved V1 production record
 

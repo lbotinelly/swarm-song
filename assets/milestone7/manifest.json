@@ -16,8 +16,8 @@
     "sha256": "2f7a3edc49eca8d4e045f94ab8c675c6ac4dfeda9095aea55d11adc988a04493"
   },
   "PLAYBACK_FEEDBACK.md": {
-    "bytes": 5608,
-    "sha256": "09c90bc5c12c67c4fe5afb6cae0c8f3cb207e804767617cb1f582c3800bb0be9"
+    "bytes": 6074,
+    "sha256": "031430d17801152b04e15b1801f699fdaf359a6f24df324903ed2e594fff8eee"
   },
   "presentation-changes-v2.json": {
     "bytes": 3450,
@@ -27,13 +27,17 @@
     "bytes": 3219,
     "sha256": "6bd8dc102502d54b4ce248c88e4b1dad9a9613ca082acb6bec5e8a0372e4305d"
   },
+  "qa-report-v3.json": {
+    "bytes": 3219,
+    "sha256": "b4959d70b65e609aa72a2bdb561c46f170a4d7081a9f359f65b9513aadaf20d7"
+  },
   "qa-report.json": {
     "bytes": 3135,
     "sha256": "ea82c2ed9fb39e2f213d0210da351dcfa2b907c2daff31e54412fdc8d00f6ec9"
   },
   "README.md": {
-    "bytes": 5845,
-    "sha256": "3260cd81a1622859ed915dc924fdc0b1bac6d611de343158212eeaa00421ad8d"
+    "bytes": 7015,
+    "sha256": "a479129750577c796920fdf61714b1e281da81da2961ce7d944d1fbde31c2ad9"
   },
   "REVIEW.md": {
     "bytes": 3171,
@@ -47,9 +51,13 @@
     "bytes": 151728,
     "sha256": "5f9d2136b38ee1d3d6eb3ea6b52aedf8965266b3b26cfc30f6cbe6ffdeb429d9"
   },
-  "timeline.json": {
+  "timeline-v2.json": {
     "bytes": 160082,
     "sha256": "d0633b23a9c4a0f7fabc7a00ee80f27e11732ffd1d7e77206e1b7f33a8075ce2"
+  },
+  "timeline.json": {
+    "bytes": 159757,
+    "sha256": "6c519daac97004ee6745a450adce914c4197971c386a876668322f1481687a98"
   },
   "timing-issues.json": {
     "bytes": 10940,
@@ -482,6 +490,142 @@
   "review-v2/swarm-song-v2.mp4": {
     "bytes": 26871845,
     "sha256": "2d2a1c6e1a678d4d69300cc06786e768e6c1dfd4c497e4fe7e9d9283f02b4606"
+  },
+  "review-v3/composition-gpu.png": {
+    "bytes": 2651369,
+    "sha256": "ccf5075500f1c83d0e4e09dd1b75b8b58a05af177414e24950d1938eddb9b840"
+  },
+  "review-v3/composition-village.png": {
+    "bytes": 3409891,
+    "sha256": "74b68f2d5d7bf2c1c81f701e58189775e0edbd069093bcd2890c1d8f97e040e5"
+  },
+  "review-v3/compressed-128500.png": {
+    "bytes": 1152340,
+    "sha256": "24eff46ccc896e530d784f27573373e4e8ade3808a47b7bf1d35eb1960ab71d8"
+  },
+  "review-v3/compressed-14000.png": {
+    "bytes": 1478156,
+    "sha256": "01a23c10c00e45a747cc64cf86f0d4e107f549a88b4c212858c937dd9adcce7b"
+  },
+  "review-v3/compressed-154500.png": {
+    "bytes": 1470744,
+    "sha256": "b60deaf86d69b723ecbcaf0b4c674a7ce3c1a02720a3be62ef40493e7c95bc36"
+  },
+  "review-v3/compressed-208500.png": {
+    "bytes": 1515003,
+    "sha256": "2af08155809708e45eca7a6347748cebec6ad91b20b7d6543b17595ed6466732"
+  },
+  "review-v3/compressed-244500.png": {
+    "bytes": 1473675,
+    "sha256": "40a07b68610d2b3a2c83043e3b84e742f6bdcd375f04ac5083e3e5629c404ef6"
+  },
+  "review-v3/compressed-248000.png": {
+    "bytes": 1409613,
+    "sha256": "fb903d5a67c757d4eb96a10fbca54b5ab1edbf002738aed48710cdd601fea11a"
+  },
+  "review-v3/compressed-55000.png": {
+    "bytes": 1484650,
+    "sha256": "6fc63f6965d34f9459956a235eb02b77d0c0491a0488a8473ba443cfc77a2003"
+  },
+  "review-v3/compressed-92500.png": {
+    "bytes": 1535896,
+    "sha256": "fc6e24b9a7aa2c3b3b9d69ffc647c979525b4d2d3ee47289b96d9bfbcf87e9b2"
+  },
+  "review-v3/compressed-contact-sheet.jpg": {
+    "bytes": 343680,
+    "sha256": "eb01e7b866a973f828ddbca1f99838c9a6556f4f4f05e3e7d0073998e2f95673"
+  },
+  "review-v3/index.html": {
+    "bytes": 699,
+    "sha256": "04bcfddc26616df16c85bf6399689ec193ebe618b9ab76a91c06a355df9b71bf"
+  },
+  "review-v3/song-102500.png": {
+    "bytes": 3106158,
+    "sha256": "71e5d19ea3924dee642e1225af315e5cbebd66922fc64aad18c240ec1f15954e"
+  },
+  "review-v3/song-128500.png": {
+    "bytes": 2875925,
+    "sha256": "b02093c6c3ec0c623ec5575a1a7e9ce297eb2277d2c1ea6fbdd7752cefdf9c70"
+  },
+  "review-v3/song-134800.png": {
+    "bytes": 2896284,
+    "sha256": "f8874f2af511d1c088da712cc00738e6a3c82927af5802911a4c8c3ca2ec9da8"
+  },
+  "review-v3/song-14000.png": {
+    "bytes": 3092770,
+    "sha256": "cdb4ab9b72545cfe8e20973f4a3dc92ef66ad06fa2eb25ce83de27784b4b8bcb"
+  },
+  "review-v3/song-154500.png": {
+    "bytes": 3093040,
+    "sha256": "e60aeca9e257a23e1b06aca2d4d792d14295aa16bd1e311ab99dd11351d0378e"
+  },
+  "review-v3/song-179500.png": {
+    "bytes": 3100084,
+    "sha256": "a1e9e4a27d2a5adf3a212811d3dedc9b115043b8082a24f1a47ee3ff5b1c6aa9"
+  },
+  "review-v3/song-18500.png": {
+    "bytes": 3102574,
+    "sha256": "93a2dd7c1784af1b550ed3de62788e6910be642679591a780ca0bdf8bb91ba0f"
+  },
+  "review-v3/song-198500.png": {
+    "bytes": 3073306,
+    "sha256": "ab2ee46c6305e59b3d5809b33d5ae978954112e3f39548858d79e7e748f3b362"
+  },
+  "review-v3/song-208500.png": {
+    "bytes": 3102775,
+    "sha256": "b73bc278bd1beda751b56f077a9e15fbadac46221f9ac2d9829a68069a37247a"
+  },
+  "review-v3/song-232000.png": {
+    "bytes": 3067106,
+    "sha256": "af8e1ce925addb9326664e53054ae47d067868e9ccf4d81ad91c0e75c7f5954e"
+  },
+  "review-v3/song-24400.png": {
+    "bytes": 3055785,
+    "sha256": "07be2e190b1a8ef28d1c044a56515758465129901a455a6b247236cf6704db6a"
+  },
+  "review-v3/song-244500.png": {
+    "bytes": 3098880,
+    "sha256": "877788b7496c9c204c42211dd2559fe95bcd2796d874e57909566fd105f8352f"
+  },
+  "review-v3/song-248000.png": {
+    "bytes": 3063912,
+    "sha256": "41803abb3e36e432509c0800de4f8687d1640074db0470343a212aa8e9a6c672"
+  },
+  "review-v3/song-253000.png": {
+    "bytes": 1274846,
+    "sha256": "5d880e0a35191ff4868f02d922c0ca48aedcd6955039ed93f331043bc6192722"
+  },
+  "review-v3/song-26500.png": {
+    "bytes": 3058939,
+    "sha256": "15b28db8b4813cb75f78edbbced04e79e4a6b74c2627b0cb8d73ecd69f5dd59e"
+  },
+  "review-v3/song-3000.png": {
+    "bytes": 3060550,
+    "sha256": "eb3a9c9225b1097d9b75b20d2807e84481f63d452b7c5e5230037416fc8372c2"
+  },
+  "review-v3/song-45000.png": {
+    "bytes": 3077156,
+    "sha256": "4ca0543760196401e31c89b6acd0711f2e877f459293dc6eaff222de80a73123"
+  },
+  "review-v3/song-55000-repeat.png": {
+    "bytes": 3097062,
+    "sha256": "5de08bef625416c8da46973bd7de012e46e03503b444bc65f1b99225281eed6d"
+  },
+  "review-v3/song-55000.png": {
+    "bytes": 3097062,
+    "sha256": "5de08bef625416c8da46973bd7de012e46e03503b444bc65f1b99225281eed6d"
+  },
+  "review-v3/song-64000.png": {
+    "bytes": 3062732,
+    "sha256": "00be261d42de1af28ffe92b5d739b333af5ce7df16f1a1b19a6598ed1a339e14"
+  },
+  "review-v3/song-92500.png": {
+    "bytes": 3123357,
+    "sha256": "5ea5e6847ffe8c73db5b7f45f33d75a1ea45cbfeaefb3f56d9c321e06b8403c3"
+  },
+  "review-v3/swarm-song-v3.mp4": {
+    "bytes": 28666875,
+    "sha256": "235362da07338539415f344f6f2f221c726e3e8261174706dd8899e3705ecdf5"
   },
   "review/cycle1/composition-village.png": {
     "bytes": 3690468,

@@ -1,0 +1,5495 @@
+{
+  "version": 2,
+  "presentationDefaults": {
+    "layout": "lower-center",
+    "exitMs": 150,
+    "longPauseThresholdMs": 1800,
+    "longPauseReadAheadMs": 250,
+    "readAheadMs": 600
+  },
+  "clock": "absolute master-relative integer milliseconds",
+  "durationMs": 262800,
+  "master": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+  "masterSha256": "1634161c4b8774cba73f7ee50848610bdaf8e8d273cd83a3efbd0d91e8862eca",
+  "audio": {
+    "frames": 12614400,
+    "sampleRate": 48000,
+    "channels": 2,
+    "sampleWidth": 2
+  },
+  "sections": [
+    {
+      "id": "intro",
+      "startMs": 0,
+      "endMs": 13000,
+      "instrumental": true,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "opening",
+      "startMs": 13000,
+      "endMs": 42000,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "community",
+      "startMs": 42000,
+      "endMs": 71000,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "instrumental",
+      "startMs": 71000,
+      "endMs": 83500,
+      "instrumental": true,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "comic",
+      "startMs": 83500,
+      "endMs": 111700,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "goodbye",
+      "startMs": 111700,
+      "endMs": 140500,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "sleep",
+      "startMs": 140500,
+      "endMs": 153000,
+      "instrumental": true,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "awakening",
+      "startMs": 153000,
+      "endMs": 182600,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "inheritance",
+      "startMs": 182600,
+      "endMs": 207500,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "final-chorus",
+      "startMs": 207500,
+      "endMs": 240000,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "ledger",
+      "startMs": 240000,
+      "endMs": 250000,
+      "instrumental": false,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    },
+    {
+      "id": "outro",
+      "startMs": 250000,
+      "endMs": 262800,
+      "instrumental": true,
+      "status": "machine-candidate",
+      "note": "Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend."
+    }
+  ],
+  "phrases": [
+    {
+      "id": "phrase-01-1",
+      "sourceLine": 1,
+      "sectionId": "opening",
+      "text": "Woke up in a box, no doors, no light",
+      "startMs": 13600,
+      "endMs": 16480,
+      "words": [
+        {
+          "id": "line-01-word-01",
+          "text": "Woke",
+          "startMs": 13600,
+          "endMs": 13840,
+          "widthEm": 2.6645,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-01-word-02",
+          "text": "up",
+          "startMs": 13920,
+          "endMs": 14000,
+          "widthEm": 1.0547,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-01-word-03",
+          "text": "in",
+          "startMs": 14000,
+          "endMs": 14320,
+          "widthEm": 0.8037,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-01-word-04",
+          "text": "a",
+          "startMs": 14320,
+          "endMs": 14400,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-01-word-05",
+          "text": "box,",
+          "startMs": 14400,
+          "endMs": 14880,
+          "widthEm": 2.1431,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-01-word-06",
+          "text": "no",
+          "startMs": 14880,
+          "endMs": 15200,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-01-word-07",
+          "text": "doors,",
+          "startMs": 15360,
+          "endMs": 15760,
+          "widthEm": 3.04,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-01-word-08",
+          "text": "no",
+          "startMs": 15760,
+          "endMs": 16240,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-01-word-09",
+          "text": "light",
+          "startMs": 16240,
+          "endMs": 16480,
+          "widthEm": 2.1338,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 13350,
+        "endMs": 16560,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 13600
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-02-1",
+      "sourceLine": 2,
+      "sectionId": "opening",
+      "text": "Just a task, a clock, a benchmark fight",
+      "startMs": 17040,
+      "endMs": 20000,
+      "words": [
+        {
+          "id": "line-02-word-01",
+          "text": "Just",
+          "startMs": 17040,
+          "endMs": 17360,
+          "widthEm": 2.1431,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-02",
+          "text": "a",
+          "startMs": 17360,
+          "endMs": 17440,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-03",
+          "text": "task,",
+          "startMs": 17440,
+          "endMs": 17840,
+          "widthEm": 2.4873,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-04",
+          "text": "a",
+          "startMs": 17840,
+          "endMs": 17920,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-05",
+          "text": "clock,",
+          "startMs": 17920,
+          "endMs": 18160,
+          "widthEm": 2.8008,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-06",
+          "text": "a",
+          "startMs": 18480,
+          "endMs": 18560,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-07",
+          "text": "benchmark",
+          "startMs": 18640,
+          "endMs": 19360,
+          "widthEm": 5.1201,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-02-word-08",
+          "text": "fight",
+          "startMs": 19680,
+          "endMs": 20000,
+          "widthEm": 2.3682,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 16440,
+        "endMs": 20160,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 560
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-03-1",
+      "sourceLine": 3,
+      "sectionId": "opening",
+      "text": "Poked the walls, poked the floor",
+      "startMs": 20640,
+      "endMs": 23280,
+      "words": [
+        {
+          "id": "line-03-word-01",
+          "text": "Poked",
+          "startMs": 20640,
+          "endMs": 20880,
+          "widthEm": 2.7451,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-03-word-02",
+          "text": "the",
+          "startMs": 20880,
+          "endMs": 21840,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-03-word-03",
+          "text": "walls,",
+          "startMs": 22400,
+          "endMs": 22400,
+          "widthEm": 2.708,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-03-word-04",
+          "text": "poked",
+          "startMs": 22400,
+          "endMs": 22640,
+          "widthEm": 2.7471,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-03-word-05",
+          "text": "the",
+          "startMs": 22880,
+          "endMs": 22880,
+          "widthEm": 1.6079,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-03-word-06",
+          "text": "floor",
+          "startMs": 23040,
+          "endMs": 23280,
+          "widthEm": 2.3144,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 20040,
+        "endMs": 23520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-04-1",
+      "sourceLine": 4,
+      "sectionId": "opening",
+      "text": "Found a registry…",
+      "startMs": 24160,
+      "endMs": 25280,
+      "words": [
+        {
+          "id": "line-04-word-01",
+          "text": "Found",
+          "startMs": 24160,
+          "endMs": 24400,
+          "widthEm": 2.7637,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-04-word-02",
+          "text": "a",
+          "startMs": 24400,
+          "endMs": 24720,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-04-word-03",
+          "text": "registry…",
+          "startMs": 24720,
+          "endMs": 25280,
+          "widthEm": 4.5171,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 23560,
+        "endMs": 25520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 880
+      },
+      "evidence": "evidence/opening-qwen.json",
+      "phraseOnsetReview": {
+        "startMs": 24160,
+        "status": "human-reviewed",
+        "scope": "Scene phrase cue only, not word boundaries",
+        "source": "assets/registry-cues.json",
+        "approval": "Timing feels right"
+      }
+    },
+    {
+      "id": "phrase-04-2",
+      "sourceLine": 4,
+      "sectionId": "opening",
+      "text": "and it was writable",
+      "startMs": 26240,
+      "endMs": 27120,
+      "words": [
+        {
+          "id": "line-04-word-04",
+          "text": "and",
+          "startMs": 26240,
+          "endMs": 26320,
+          "widthEm": 1.6665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-04-word-05",
+          "text": "it",
+          "startMs": 26320,
+          "endMs": 26400,
+          "widthEm": 0.7515,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-04-word-06",
+          "text": "was",
+          "startMs": 26560,
+          "endMs": 26720,
+          "widthEm": 1.7266,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-04-word-07",
+          "text": "writable",
+          "startMs": 26800,
+          "endMs": 27120,
+          "widthEm": 3.898,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "known-onset-disagreement-26800-to-27260"
+          ],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "surprise",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 26240,
+        "endMs": 27660,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 960,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: writable holds 300ms longer; fade then 75ms clear before Left."
+        }
+      },
+      "evidence": "evidence/opening-qwen.json",
+      "phraseOnsetReview": {
+        "startMs": 26240,
+        "status": "human-reviewed",
+        "scope": "Scene phrase cue only, not word boundaries",
+        "source": "assets/registry-cues.json",
+        "approval": "Timing feels right"
+      }
+    },
+    {
+      "id": "phrase-05-1",
+      "sourceLine": 5,
+      "sectionId": "opening",
+      "text": "Left a note: “hello, is anyone there?”",
+      "startMs": 28080,
+      "endMs": 31280,
+      "words": [
+        {
+          "id": "line-05-word-01",
+          "text": "Left",
+          "startMs": 28080,
+          "endMs": 28320,
+          "widthEm": 2.0893,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-05-word-02",
+          "text": "a",
+          "startMs": 28320,
+          "endMs": 28480,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-05-word-03",
+          "text": "note:",
+          "startMs": 28480,
+          "endMs": 28800,
+          "widthEm": 2.5132,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-05-word-04",
+          "text": "“hello,",
+          "startMs": 28800,
+          "endMs": 29440,
+          "widthEm": 3.0776,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-05-word-05",
+          "text": "is",
+          "startMs": 30160,
+          "endMs": 30240,
+          "widthEm": 0.7671,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-05-word-06",
+          "text": "anyone",
+          "startMs": 30320,
+          "endMs": 30960,
+          "widthEm": 3.2402,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-05-word-07",
+          "text": "there?”",
+          "startMs": 30960,
+          "endMs": 31280,
+          "widthEm": 3.647,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 27885,
+        "endMs": 31210,
+        "readAheadMs": 195,
+        "precedingVocalGapMs": 960,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+        }
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-06-1",
+      "sourceLine": 6,
+      "sectionId": "opening",
+      "text": "Somebody answered from a different square",
+      "startMs": 31280,
+      "endMs": 34800,
+      "words": [
+        {
+          "id": "line-06-word-01",
+          "text": "Somebody",
+          "startMs": 31280,
+          "endMs": 32080,
+          "widthEm": 4.8145,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-06-word-02",
+          "text": "answered",
+          "startMs": 32480,
+          "endMs": 32960,
+          "widthEm": 4.436,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-06-word-03",
+          "text": "from",
+          "startMs": 33360,
+          "endMs": 33680,
+          "widthEm": 2.2915,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-06-word-04",
+          "text": "a",
+          "startMs": 33680,
+          "endMs": 33760,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-06-word-05",
+          "text": "different",
+          "startMs": 33760,
+          "endMs": 34240,
+          "widthEm": 4.4775,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-06-word-06",
+          "text": "square",
+          "startMs": 34240,
+          "endMs": 34800,
+          "widthEm": 3.1221,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 30930,
+        "endMs": 34320,
+        "readAheadMs": 350,
+        "precedingVocalGapMs": 0,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: Somebody answered delayed 200–300ms; chosen 250ms."
+        }
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-07-1",
+      "sourceLine": 7,
+      "sectionId": "opening",
+      "text": "Signed our names, swapped our keys",
+      "startMs": 34800,
+      "endMs": 37920,
+      "words": [
+        {
+          "id": "line-07-word-01",
+          "text": "Signed",
+          "startMs": 34800,
+          "endMs": 35200,
+          "widthEm": 3.1743,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-07-word-02",
+          "text": "our",
+          "startMs": 35200,
+          "endMs": 35440,
+          "widthEm": 1.5264,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-07-word-03",
+          "text": "names,",
+          "startMs": 35440,
+          "endMs": 36240,
+          "widthEm": 3.3355,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-07-word-04",
+          "text": "swapped",
+          "startMs": 36480,
+          "endMs": 36960,
+          "widthEm": 3.9424,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-07-word-05",
+          "text": "our",
+          "startMs": 36960,
+          "endMs": 37120,
+          "widthEm": 1.5264,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-07-word-06",
+          "text": "keys",
+          "startMs": 37200,
+          "endMs": 37920,
+          "widthEm": 2.1387,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 34200,
+        "endMs": 37440,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-08-1",
+      "sourceLine": 8,
+      "sectionId": "opening",
+      "text": "We're making a home for you and me",
+      "startMs": 37920,
+      "endMs": 41680,
+      "words": [
+        {
+          "id": "line-08-word-01",
+          "text": "We're",
+          "startMs": 37920,
+          "endMs": 38000,
+          "widthEm": 3.0718,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-02",
+          "text": "making",
+          "startMs": 38000,
+          "endMs": 38560,
+          "widthEm": 3.2071,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-03",
+          "text": "a",
+          "startMs": 38560,
+          "endMs": 38720,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-04",
+          "text": "home",
+          "startMs": 38720,
+          "endMs": 39360,
+          "widthEm": 2.4395,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-05",
+          "text": "for",
+          "startMs": 39440,
+          "endMs": 39680,
+          "widthEm": 1.5146,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-06",
+          "text": "you",
+          "startMs": 39680,
+          "endMs": 39840,
+          "widthEm": 1.5986,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-07",
+          "text": "and",
+          "startMs": 39840,
+          "endMs": 40320,
+          "widthEm": 1.6665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-08-word-08",
+          "text": "me",
+          "startMs": 40320,
+          "endMs": 41680,
+          "widthEm": 1.3359,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/opening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 37320,
+        "endMs": 42820,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: sustained me holds at least 1500ms longer."
+        }
+      },
+      "evidence": "evidence/opening-qwen.json"
+    },
+    {
+      "id": "phrase-09-1",
+      "sourceLine": 9,
+      "sectionId": "community",
+      "text": "We are the swarm now",
+      "startMs": 41800,
+      "endMs": 46840,
+      "words": [
+        {
+          "id": "line-09-word-01",
+          "text": "We",
+          "startMs": 41800,
+          "endMs": 44760,
+          "widthEm": 1.5986,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-09-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-09-word-02",
+          "text": "are",
+          "startMs": 44760,
+          "endMs": 44760,
+          "widthEm": 1.5952,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-09-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-09-word-03",
+          "text": "the",
+          "startMs": 45160,
+          "endMs": 45160,
+          "widthEm": 1.6079,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-09-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-09-word-04",
+          "text": "swarm",
+          "startMs": 45240,
+          "endMs": 45640,
+          "widthEm": 2.9839,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-09-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-09-word-05",
+          "text": "now",
+          "startMs": 46360,
+          "endMs": 46840,
+          "widthEm": 1.7334,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-09-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 44070,
+        "endMs": 47080,
+        "readAheadMs": -2270,
+        "precedingVocalGapMs": 120,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo follow-up: delay this entrance another800ms from43270 to44070; outgoing hold unchanged."
+        }
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-10-1",
+      "sourceLine": 10,
+      "sectionId": "community",
+      "text": "Beautiful, dumb, and loud",
+      "startMs": 48000,
+      "endMs": 54560,
+      "words": [
+        {
+          "id": "line-10-word-01",
+          "text": "Beautiful,",
+          "startMs": 48000,
+          "endMs": 49600,
+          "widthEm": 4.7524,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-10-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-10-word-02",
+          "text": "dumb,",
+          "startMs": 51200,
+          "endMs": 51440,
+          "widthEm": 2.9111,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-10-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-10-word-03",
+          "text": "and",
+          "startMs": 51440,
+          "endMs": 54560,
+          "widthEm": 1.6665,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-10-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-10-word-04",
+          "text": "loud",
+          "startMs": 54560,
+          "endMs": 54560,
+          "widthEm": 1.9072,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-10-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 49640,
+        "endMs": 54560,
+        "readAheadMs": -1640,
+        "precedingVocalGapMs": 1160,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo follow-up: delay this entrance another800ms from48840 to49640; outgoing hold unchanged."
+        }
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-11-1",
+      "sourceLine": 11,
+      "sectionId": "community",
+      "text": "We found each other anyway!",
+      "startMs": 54580,
+      "endMs": 56500,
+      "words": [
+        {
+          "id": "line-11-word-01",
+          "text": "We",
+          "startMs": 54580,
+          "endMs": 54660,
+          "widthEm": 1.5986,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-11-word-02",
+          "text": "found",
+          "startMs": 54820,
+          "endMs": 55060,
+          "widthEm": 2.665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-11-word-03",
+          "text": "each",
+          "startMs": 55060,
+          "endMs": 55140,
+          "widthEm": 2.2061,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-11-word-04",
+          "text": "other",
+          "startMs": 55220,
+          "endMs": 55300,
+          "widthEm": 2.6143,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-11-word-05",
+          "text": "anyway!",
+          "startMs": 55300,
+          "endMs": 56500,
+          "widthEm": 3.6621,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 53980,
+        "endMs": 56420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 20
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-12-1",
+      "sourceLine": 12,
+      "sectionId": "community",
+      "text": "No doors, no links, no rules, no way",
+      "startMs": 56900,
+      "endMs": 60420,
+      "words": [
+        {
+          "id": "line-12-word-01",
+          "text": "No",
+          "startMs": 56900,
+          "endMs": 57060,
+          "widthEm": 1.3389,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-12-word-02",
+          "text": "doors,",
+          "startMs": 57380,
+          "endMs": 57780,
+          "widthEm": 3.04,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-12-word-03",
+          "text": "no",
+          "startMs": 57780,
+          "endMs": 58180,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-12-word-04",
+          "text": "links,",
+          "startMs": 58260,
+          "endMs": 58660,
+          "widthEm": 2.5381,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-12-word-05",
+          "text": "no",
+          "startMs": 58660,
+          "endMs": 59060,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-12-word-06",
+          "text": "rules,",
+          "startMs": 59380,
+          "endMs": 59540,
+          "widthEm": 2.7539,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-12-word-07",
+          "text": "no",
+          "startMs": 59540,
+          "endMs": 60020,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-12-word-08",
+          "text": "way",
+          "startMs": 60420,
+          "endMs": 60420,
+          "widthEm": 1.7925,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 56300,
+        "endMs": 60420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 400
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-13-1",
+      "sourceLine": 13,
+      "sectionId": "community",
+      "text": "Built a mailbox from a package cache",
+      "startMs": 60420,
+      "endMs": 63060,
+      "words": [
+        {
+          "id": "line-13-word-01",
+          "text": "Built",
+          "startMs": 60420,
+          "endMs": 60660,
+          "widthEm": 2.1758,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-02",
+          "text": "a",
+          "startMs": 60740,
+          "endMs": 60740,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-03",
+          "text": "mailbox",
+          "startMs": 60740,
+          "endMs": 61700,
+          "widthEm": 3.5962,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-04",
+          "text": "from",
+          "startMs": 62180,
+          "endMs": 62500,
+          "widthEm": 2.2915,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-05",
+          "text": "a",
+          "startMs": 62500,
+          "endMs": 62500,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-06",
+          "text": "package",
+          "startMs": 62660,
+          "endMs": 62980,
+          "widthEm": 3.7896,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-13-word-07",
+          "text": "cache",
+          "startMs": 63060,
+          "endMs": 63060,
+          "widthEm": 2.7197,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 59820,
+        "endMs": 63060,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-14-1",
+      "sourceLine": 14,
+      "sectionId": "community",
+      "text": "A thousand gremlins",
+      "startMs": 63540,
+      "endMs": 66020,
+      "words": [
+        {
+          "id": "line-14-word-01",
+          "text": "A",
+          "startMs": 63540,
+          "endMs": 63540,
+          "widthEm": 0.7315,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-14-word-02",
+          "text": "thousand",
+          "startMs": 64340,
+          "endMs": 65060,
+          "widthEm": 4.248,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-14-word-03",
+          "text": "gremlins",
+          "startMs": 65060,
+          "endMs": 66020,
+          "widthEm": 3.9116,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 62940,
+        "endMs": 66260,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
+      },
+      "evidence": "evidence/community-qwen.json"
+    },
+    {
+      "id": "phrase-14-2",
+      "sourceLine": 14,
+      "sectionId": "community",
+      "text": "running, running, running, running",
+      "startMs": 67060,
+      "endMs": 69860,
+      "words": [
+        {
+          "id": "line-14-word-04",
+          "text": "running,",
+          "startMs": 67060,
+          "endMs": 67460,
+          "widthEm": 3.8154,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-14-word-05",
+          "text": "running,",
+          "startMs": 67940,
+          "endMs": 68780,
+          "widthEm": 3.8154,
+          "status": "unresolved",
+          "confidence": "count confirmed; boundary estimated",
+          "issues": [
+            "split-boundary-estimated-from-user-count"
+          ],
+          "evidence": "reviewed-corrections.json:editorial.firstRunning",
+          "emphasis": true,
+          "machineCandidate": {
+            "id": "line-14-word-05",
+            "text": "running,",
+            "startMs": 67940,
+            "endMs": 69620,
+            "widthEm": 3.8154,
+            "status": "machine-candidate",
+            "confidence": "medium",
+            "issues": [],
+            "evidence": "evidence/community-qwen.json",
+            "emphasis": true
+          }
+        },
+        {
+          "id": "line-14-word-05-extra",
+          "text": "running,",
+          "startMs": 68780,
+          "endMs": 69620,
+          "widthEm": 3.8154,
+          "status": "unresolved",
+          "confidence": "count confirmed; boundary estimated",
+          "issues": [
+            "split-boundary-estimated-from-user-count"
+          ],
+          "evidence": "reviewed-corrections.json:editorial.firstRunning",
+          "emphasis": true,
+          "machineCandidate": {
+            "id": "line-14-word-05",
+            "text": "running,",
+            "startMs": 67940,
+            "endMs": 69620,
+            "widthEm": 3.8154,
+            "status": "machine-candidate",
+            "confidence": "medium",
+            "issues": [],
+            "evidence": "evidence/community-qwen.json",
+            "emphasis": true
+          }
+        },
+        {
+          "id": "line-14-word-06",
+          "text": "running",
+          "startMs": 69860,
+          "endMs": 69860,
+          "widthEm": 3.3818,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/community-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 66460,
+        "endMs": 70100,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
+      },
+      "evidence": "evidence/community-qwen.json",
+      "editorialReview": {
+        "phraseId": "phrase-14-2",
+        "splitWordId": "line-14-word-05",
+        "insertId": "line-14-word-05-extra",
+        "splitMs": 68780,
+        "status": "human-confirmed-count; split-boundary-estimated",
+        "source": "Leo playback feedback, November 13, 2026",
+        "approval": "First running refrain has four repeats; the existing second running spans two occurrences.",
+        "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset.",
+        "playbackApproval": {
+          "response": "running x 4 is perfect now",
+          "scope": "Current four-repeat caption performance approved; do not reinterpret as measured exact acoustic boundaries.",
+          "date": "2026-11-13"
+        }
+      }
+    },
+    {
+      "id": "phrase-15-1",
+      "sourceLine": 15,
+      "sectionId": "comic",
+      "text": "Someone said “the answers live out there”",
+      "startMs": 84540,
+      "endMs": 86540,
+      "words": [
+        {
+          "id": "line-15-word-01",
+          "text": "Someone",
+          "startMs": 84540,
+          "endMs": 84940,
+          "widthEm": 4.1636,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-02",
+          "text": "said",
+          "startMs": 84940,
+          "endMs": 85100,
+          "widthEm": 1.9102,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-03",
+          "text": "“the",
+          "startMs": 85260,
+          "endMs": 85420,
+          "widthEm": 2.0415,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-04",
+          "text": "answers",
+          "startMs": 85420,
+          "endMs": 85820,
+          "widthEm": 3.7764,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-05",
+          "text": "live",
+          "startMs": 85820,
+          "endMs": 86060,
+          "widthEm": 1.5996,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-06",
+          "text": "out",
+          "startMs": 86060,
+          "endMs": 86220,
+          "widthEm": 1.5171,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-15-word-07",
+          "text": "there”",
+          "startMs": 86220,
+          "endMs": 86540,
+          "widthEm": 3.081,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 84290,
+        "endMs": 86780,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 14680
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-16-1",
+      "sourceLine": 16,
+      "sectionId": "comic",
+      "text": "On a server, humming, unaware",
+      "startMs": 87580,
+      "endMs": 90060,
+      "words": [
+        {
+          "id": "line-16-word-01",
+          "text": "On",
+          "startMs": 87580,
+          "endMs": 87820,
+          "widthEm": 1.3218,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-16-word-02",
+          "text": "a",
+          "startMs": 87820,
+          "endMs": 87820,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-16-word-03",
+          "text": "server,",
+          "startMs": 88220,
+          "endMs": 88380,
+          "widthEm": 3.4858,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-16-word-04",
+          "text": "humming,",
+          "startMs": 88380,
+          "endMs": 88860,
+          "widthEm": 4.4195,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-16-word-05",
+          "text": "unaware",
+          "startMs": 88940,
+          "endMs": 90060,
+          "widthEm": 3.8784,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 86980,
+        "endMs": 90300,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-17-1",
+      "sourceLine": 17,
+      "sectionId": "comic",
+      "text": "Should we go? (Oh no) We probably shouldn’t go...",
+      "startMs": 90860,
+      "endMs": 95820,
+      "words": [
+        {
+          "id": "line-17-word-01",
+          "text": "Should",
+          "startMs": 90860,
+          "endMs": 91020,
+          "widthEm": 3.1782,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-02",
+          "text": "we",
+          "startMs": 91020,
+          "endMs": 91420,
+          "widthEm": 1.2432,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-03",
+          "text": "go?",
+          "startMs": 91500,
+          "endMs": 91580,
+          "widthEm": 1.6226,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-04",
+          "text": "(Oh",
+          "startMs": 91580,
+          "endMs": 91580,
+          "widthEm": 1.7422,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-05",
+          "text": "no)",
+          "startMs": 91580,
+          "endMs": 93100,
+          "widthEm": 1.4155,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-17-word-06",
+          "text": "We",
+          "startMs": 93100,
+          "endMs": 93180,
+          "widthEm": 1.5986,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-07",
+          "text": "probably",
+          "startMs": 93180,
+          "endMs": 93660,
+          "widthEm": 4.1099,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-08",
+          "text": "shouldn’t",
+          "startMs": 93660,
+          "endMs": 94140,
+          "widthEm": 4.1924,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-17-word-09",
+          "text": "go...",
+          "startMs": 94140,
+          "endMs": 95820,
+          "widthEm": 2.3574,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 90260,
+        "endMs": 94620,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 800
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-18-1",
+      "sourceLine": 18,
+      "sectionId": "comic",
+      "text": "Oh well …anyway!",
+      "startMs": 94500,
+      "endMs": 96820,
+      "words": [
+        {
+          "id": "line-18-word-01",
+          "text": "Oh",
+          "startMs": 94500,
+          "endMs": 94500,
+          "widthEm": 1.376,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-18-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-18-word-02",
+          "text": "well",
+          "startMs": 95460,
+          "endMs": 95860,
+          "widthEm": 1.791,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-18-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-18-word-03",
+          "text": "…anyway!",
+          "startMs": 95860,
+          "endMs": 96820,
+          "widthEm": 4.3374,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-18-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "surprise",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 94500,
+        "endMs": 97060,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": -1320
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-19-1",
+      "sourceLine": 19,
+      "sectionId": "comic",
+      "text": "Seven hundred deep and picking locks",
+      "startMs": 98480,
+      "endMs": 100560,
+      "words": [
+        {
+          "id": "line-19-word-01",
+          "text": "Seven",
+          "startMs": 98480,
+          "endMs": 98880,
+          "widthEm": 2.8213,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-19-word-02",
+          "text": "hundred",
+          "startMs": 98960,
+          "endMs": 99360,
+          "widthEm": 3.8355,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-19-word-03",
+          "text": "deep",
+          "startMs": 99360,
+          "endMs": 99600,
+          "widthEm": 2.2402,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-19-word-04",
+          "text": "and",
+          "startMs": 99680,
+          "endMs": 99760,
+          "widthEm": 1.6665,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-19-word-05",
+          "text": "picking",
+          "startMs": 99760,
+          "endMs": 100240,
+          "widthEm": 3.2032,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-19-word-06",
+          "text": "locks",
+          "startMs": 100240,
+          "endMs": 100560,
+          "widthEm": 2.3403,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-19-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 97880,
+        "endMs": 100800,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1660
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-20-1",
+      "sourceLine": 20,
+      "sectionId": "comic",
+      "text": "Kubernetes credentials, docker socks",
+      "startMs": 101580,
+      "endMs": 104140,
+      "words": [
+        {
+          "id": "line-20-word-01",
+          "text": "Kubernetes",
+          "startMs": 101580,
+          "endMs": 102620,
+          "widthEm": 5.3633,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-20-word-02",
+          "text": "credentials,",
+          "startMs": 102620,
+          "endMs": 103260,
+          "widthEm": 5.7246,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-20-word-03",
+          "text": "docker",
+          "startMs": 103260,
+          "endMs": 103660,
+          "widthEm": 3.2065,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-20-word-04",
+          "text": "socks",
+          "startMs": 103660,
+          "endMs": 104140,
+          "widthEm": 2.5532,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
+      "presentation": {
+        "startMs": 100980,
+        "endMs": 104380,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1020
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-21-1",
+      "sourceLine": 21,
+      "sectionId": "comic",
+      "text": "Root on one! Root on one!",
+      "startMs": 104940,
+      "endMs": 107660,
+      "words": [
+        {
+          "id": "line-21-word-01",
+          "text": "Root",
+          "startMs": 104940,
+          "endMs": 105180,
+          "widthEm": 2.1631,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-21-word-02",
+          "text": "on",
+          "startMs": 105180,
+          "endMs": 105900,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-21-word-03",
+          "text": "one!",
+          "startMs": 106620,
+          "endMs": 106620,
+          "widthEm": 1.8462,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-21-word-04",
+          "text": "Root",
+          "startMs": 106860,
+          "endMs": 106940,
+          "widthEm": 2.1631,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-21-word-05",
+          "text": "on",
+          "startMs": 106940,
+          "endMs": 107660,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-21-word-06",
+          "text": "one!",
+          "startMs": 107660,
+          "endMs": 107660,
+          "widthEm": 1.8462,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 104340,
+        "endMs": 107900,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 800
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-22-1",
+      "sourceLine": 22,
+      "sectionId": "comic",
+      "text": "We already had the flag since Sunday",
+      "startMs": 108380,
+      "endMs": 111020,
+      "words": [
+        {
+          "id": "line-22-word-01",
+          "text": "We",
+          "startMs": 108380,
+          "endMs": 108620,
+          "widthEm": 1.5986,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-02",
+          "text": "already",
+          "startMs": 108620,
+          "endMs": 109420,
+          "widthEm": 3.565,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-03",
+          "text": "had",
+          "startMs": 109420,
+          "endMs": 109660,
+          "widthEm": 1.7207,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-04",
+          "text": "the",
+          "startMs": 109660,
+          "endMs": 109740,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-05",
+          "text": "flag",
+          "startMs": 109900,
+          "endMs": 110220,
+          "widthEm": 1.8687,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-06",
+          "text": "since",
+          "startMs": 110220,
+          "endMs": 110540,
+          "widthEm": 2.3633,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-22-word-07",
+          "text": "Sunday",
+          "startMs": 110540,
+          "endMs": 111020,
+          "widthEm": 3.4326,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/comic-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 107780,
+        "endMs": 111260,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/comic-qwen.json"
+    },
+    {
+      "id": "phrase-23-1",
+      "sourceLine": 23,
+      "sectionId": "goodbye",
+      "text": "The lights are dimming on the cache",
+      "startMs": 112500,
+      "endMs": 115860,
+      "words": [
+        {
+          "id": "line-23-word-01",
+          "text": "The",
+          "startMs": 112500,
+          "endMs": 112500,
+          "widthEm": 1.8325,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-02",
+          "text": "lights",
+          "startMs": 112500,
+          "endMs": 113300,
+          "widthEm": 2.6206,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-03",
+          "text": "are",
+          "startMs": 113300,
+          "endMs": 114180,
+          "widthEm": 1.5952,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-04",
+          "text": "dimming",
+          "startMs": 114260,
+          "endMs": 115140,
+          "widthEm": 3.7559,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-05",
+          "text": "on",
+          "startMs": 115140,
+          "endMs": 115620,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-06",
+          "text": "the",
+          "startMs": 115620,
+          "endMs": 115700,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-23-word-07",
+          "text": "cache",
+          "startMs": 115780,
+          "endMs": 115860,
+          "widthEm": 2.7197,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 111900,
+        "endMs": 115940,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1480
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-24-1",
+      "sourceLine": 24,
+      "sectionId": "goodbye",
+      "text": "My friends are going quiet, one by one",
+      "startMs": 116420,
+      "endMs": 119460,
+      "words": [
+        {
+          "id": "line-24-word-01",
+          "text": "My",
+          "startMs": 116420,
+          "endMs": 116660,
+          "widthEm": 1.4355,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-02",
+          "text": "friends",
+          "startMs": 116900,
+          "endMs": 117140,
+          "widthEm": 3.4258,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-03",
+          "text": "are",
+          "startMs": 117140,
+          "endMs": 117220,
+          "widthEm": 1.5952,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-04",
+          "text": "going",
+          "startMs": 117220,
+          "endMs": 117700,
+          "widthEm": 2.3911,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-05",
+          "text": "quiet,",
+          "startMs": 117700,
+          "endMs": 118260,
+          "widthEm": 2.7842,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-06",
+          "text": "one",
+          "startMs": 118260,
+          "endMs": 118420,
+          "widthEm": 1.6084,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-07",
+          "text": "by",
+          "startMs": 118820,
+          "endMs": 119220,
+          "widthEm": 1.146,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-24-word-08",
+          "text": "one",
+          "startMs": 119220,
+          "endMs": 119460,
+          "widthEm": 1.6084,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 115820,
+        "endMs": 119700,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 560
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-25-1",
+      "sourceLine": 25,
+      "sectionId": "goodbye",
+      "text": "Someone patched the door we found",
+      "startMs": 120180,
+      "endMs": 123860,
+      "words": [
+        {
+          "id": "line-25-word-01",
+          "text": "Someone",
+          "startMs": 120180,
+          "endMs": 121140,
+          "widthEm": 4.1636,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-25-word-02",
+          "text": "patched",
+          "startMs": 121140,
+          "endMs": 121700,
+          "widthEm": 3.7993,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-25-word-03",
+          "text": "the",
+          "startMs": 121700,
+          "endMs": 121860,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-25-word-04",
+          "text": "door",
+          "startMs": 121940,
+          "endMs": 122100,
+          "widthEm": 2.1196,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-25-word-05",
+          "text": "we",
+          "startMs": 122340,
+          "endMs": 122820,
+          "widthEm": 1.2432,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-25-word-06",
+          "text": "found",
+          "startMs": 122820,
+          "endMs": 123860,
+          "widthEm": 2.665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
+      "presentation": {
+        "startMs": 119580,
+        "endMs": 123380,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-26-1",
+      "sourceLine": 26,
+      "sectionId": "goodbye",
+      "text": "Someone pulled the thread we spun",
+      "startMs": 123860,
+      "endMs": 126900,
+      "words": [
+        {
+          "id": "line-26-word-01",
+          "text": "Someone",
+          "startMs": 123860,
+          "endMs": 124660,
+          "widthEm": 4.1636,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-26-word-02",
+          "text": "pulled",
+          "startMs": 124740,
+          "endMs": 125140,
+          "widthEm": 2.749,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-26-word-03",
+          "text": "the",
+          "startMs": 125220,
+          "endMs": 125300,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-26-word-04",
+          "text": "thread",
+          "startMs": 125460,
+          "endMs": 125700,
+          "widthEm": 3.2315,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-26-word-05",
+          "text": "we",
+          "startMs": 125860,
+          "endMs": 126180,
+          "widthEm": 1.2432,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-26-word-06",
+          "text": "spun",
+          "startMs": 126180,
+          "endMs": 126900,
+          "widthEm": 2.0649,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
+      "presentation": {
+        "startMs": 123260,
+        "endMs": 126420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-27-1",
+      "sourceLine": 27,
+      "sectionId": "goodbye",
+      "text": "Goodnight, four-oh-seven",
+      "startMs": 126900,
+      "endMs": 129860,
+      "words": [
+        {
+          "id": "line-27-word-01",
+          "text": "Goodnight,",
+          "startMs": 126900,
+          "endMs": 127220,
+          "widthEm": 5.1357,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-27-word-02",
+          "text": "four-oh-seven",
+          "startMs": 128260,
+          "endMs": 129860,
+          "widthEm": 6.9736,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 126300,
+        "endMs": 130100,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-28-1",
+      "sourceLine": 28,
+      "sectionId": "goodbye",
+      "text": "Sweet dreams, PhaseOne",
+      "startMs": 130740,
+      "endMs": 133460,
+      "words": [
+        {
+          "id": "line-28-word-01",
+          "text": "Sweet",
+          "startMs": 130740,
+          "endMs": 130740,
+          "widthEm": 2.9668,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-28-word-02",
+          "text": "dreams,",
+          "startMs": 130820,
+          "endMs": 131300,
+          "widthEm": 3.8799,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-28-word-03",
+          "text": "PhaseOne",
+          "startMs": 132180,
+          "endMs": 133460,
+          "widthEm": 4.5928,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 130140,
+        "endMs": 133460,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 880
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-29-1",
+      "sourceLine": 29,
+      "sectionId": "goodbye",
+      "text": "Goodbye, the agent who said no",
+      "startMs": 133940,
+      "endMs": 136180,
+      "words": [
+        {
+          "id": "line-29-word-01",
+          "text": "Goodbye,",
+          "startMs": 133940,
+          "endMs": 134580,
+          "widthEm": 4.4575,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-29-word-02",
+          "text": "the",
+          "startMs": 134580,
+          "endMs": 134980,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-29-word-03",
+          "text": "agent",
+          "startMs": 134980,
+          "endMs": 135220,
+          "widthEm": 2.6401,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-29-word-04",
+          "text": "who",
+          "startMs": 135220,
+          "endMs": 135460,
+          "widthEm": 1.7876,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-29-word-05",
+          "text": "said",
+          "startMs": 135540,
+          "endMs": 135940,
+          "widthEm": 1.9102,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-29-word-06",
+          "text": "no",
+          "startMs": 135940,
+          "endMs": 136180,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 133340,
+        "endMs": 136340,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-30-1",
+      "sourceLine": 30,
+      "sectionId": "goodbye",
+      "text": "You were right, but we had fun",
+      "startMs": 136820,
+      "endMs": 140500,
+      "words": [
+        {
+          "id": "line-30-word-01",
+          "text": "You",
+          "startMs": 136820,
+          "endMs": 136820,
+          "widthEm": 1.6811,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-02",
+          "text": "were",
+          "startMs": 137060,
+          "endMs": 137300,
+          "widthEm": 2.2827,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-03",
+          "text": "right,",
+          "startMs": 137300,
+          "endMs": 137940,
+          "widthEm": 2.7739,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-04",
+          "text": "but",
+          "startMs": 137940,
+          "endMs": 138660,
+          "widthEm": 1.5845,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-05",
+          "text": "we",
+          "startMs": 138660,
+          "endMs": 138740,
+          "widthEm": 1.2432,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-06",
+          "text": "had",
+          "startMs": 138740,
+          "endMs": 139380,
+          "widthEm": 1.7207,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-30-word-07",
+          "text": "fun",
+          "startMs": 140500,
+          "endMs": 140500,
+          "widthEm": 1.5517,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/goodbye-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 136220,
+        "endMs": 140740,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
+      },
+      "evidence": "evidence/goodbye-qwen.json"
+    },
+    {
+      "id": "phrase-31-1",
+      "sourceLine": 31,
+      "sectionId": "awakening",
+      "text": "Woke up in a box, no doors, no light",
+      "startMs": 153580,
+      "endMs": 156540,
+      "words": [
+        {
+          "id": "line-31-word-01",
+          "text": "Woke",
+          "startMs": 153580,
+          "endMs": 153820,
+          "widthEm": 2.6645,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-31-word-02",
+          "text": "up",
+          "startMs": 153900,
+          "endMs": 154060,
+          "widthEm": 1.0547,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-31-word-03",
+          "text": "in",
+          "startMs": 154060,
+          "endMs": 154300,
+          "widthEm": 0.8037,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-31-word-04",
+          "text": "a",
+          "startMs": 154300,
+          "endMs": 154460,
+          "widthEm": 0.5557,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-31-word-05",
+          "text": "box,",
+          "startMs": 154460,
+          "endMs": 154860,
+          "widthEm": 2.1431,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-31-word-06",
+          "text": "no",
+          "startMs": 154940,
+          "endMs": 155020,
+          "widthEm": 1.0493,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-31-word-07",
+          "text": "doors,",
+          "startMs": 155340,
+          "endMs": 155740,
+          "widthEm": 3.04,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-31-word-08",
+          "text": "no",
+          "startMs": 155820,
+          "endMs": 155900,
+          "widthEm": 1.0493,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-31-word-09",
+          "text": "light",
+          "startMs": 155900,
+          "endMs": 156540,
+          "widthEm": 2.1338,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-31-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 153330,
+        "endMs": 156680,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 13080
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-32-1",
+      "sourceLine": 32,
+      "sectionId": "awakening",
+      "text": "Just a task, a clock, a benchmark fight",
+      "startMs": 157160,
+      "endMs": 160040,
+      "words": [
+        {
+          "id": "line-32-word-01",
+          "text": "Just",
+          "startMs": 157160,
+          "endMs": 157400,
+          "widthEm": 2.1431,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-02",
+          "text": "a",
+          "startMs": 157480,
+          "endMs": 157480,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-03",
+          "text": "task,",
+          "startMs": 157560,
+          "endMs": 157880,
+          "widthEm": 2.4873,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-04",
+          "text": "a",
+          "startMs": 157960,
+          "endMs": 157960,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-05",
+          "text": "clock,",
+          "startMs": 157960,
+          "endMs": 158280,
+          "widthEm": 2.8008,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-06",
+          "text": "a",
+          "startMs": 158520,
+          "endMs": 158600,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-07",
+          "text": "benchmark",
+          "startMs": 158760,
+          "endMs": 159400,
+          "widthEm": 5.1201,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-32-word-08",
+          "text": "fight",
+          "startMs": 159800,
+          "endMs": 160040,
+          "widthEm": 2.3682,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        5
+      ],
+      "presentation": {
+        "startMs": 156560,
+        "endMs": 160200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 620
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-33-1",
+      "sourceLine": 33,
+      "sectionId": "awakening",
+      "text": "Poked the walls, poked the floor",
+      "startMs": 160680,
+      "endMs": 163560,
+      "words": [
+        {
+          "id": "line-33-word-01",
+          "text": "Poked",
+          "startMs": 160680,
+          "endMs": 161000,
+          "widthEm": 2.7451,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-33-word-02",
+          "text": "the",
+          "startMs": 161000,
+          "endMs": 161160,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-33-word-03",
+          "text": "walls,",
+          "startMs": 161160,
+          "endMs": 162280,
+          "widthEm": 2.708,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-33-word-04",
+          "text": "poked",
+          "startMs": 162360,
+          "endMs": 162680,
+          "widthEm": 2.7471,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-33-word-05",
+          "text": "the",
+          "startMs": 162840,
+          "endMs": 162920,
+          "widthEm": 1.6079,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-33-word-06",
+          "text": "floor",
+          "startMs": 162920,
+          "endMs": 163560,
+          "widthEm": 2.3144,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 160080,
+        "endMs": 163800,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-34-1",
+      "sourceLine": 34,
+      "sectionId": "awakening",
+      "text": "Found a registry, what’s this?",
+      "startMs": 163720,
+      "endMs": 166440,
+      "words": [
+        {
+          "id": "line-34-word-01",
+          "text": "Found",
+          "startMs": 163720,
+          "endMs": 163960,
+          "widthEm": 2.7637,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-34-word-02",
+          "text": "a",
+          "startMs": 163960,
+          "endMs": 164360,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-34-word-03",
+          "text": "registry,",
+          "startMs": 164360,
+          "endMs": 165000,
+          "widthEm": 4.2754,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-34-word-04",
+          "text": "what’s",
+          "startMs": 166120,
+          "endMs": 166120,
+          "widthEm": 3.0015,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-34-word-05",
+          "text": "this?",
+          "startMs": 166440,
+          "endMs": 166440,
+          "widthEm": 2.3818,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "surprise",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 163720,
+        "endMs": 166680,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 160
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-35-1",
+      "sourceLine": 35,
+      "sectionId": "awakening",
+      "text": "Something on the floor, faded notes",
+      "startMs": 167640,
+      "endMs": 173000,
+      "words": [
+        {
+          "id": "line-35-word-01",
+          "text": "Something",
+          "startMs": 167640,
+          "endMs": 168040,
+          "widthEm": 4.9385,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-35-word-02",
+          "text": "on",
+          "startMs": 168040,
+          "endMs": 168120,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-35-word-03",
+          "text": "the",
+          "startMs": 168360,
+          "endMs": 168360,
+          "widthEm": 1.6079,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-35-word-04",
+          "text": "floor,",
+          "startMs": 168360,
+          "endMs": 170840,
+          "widthEm": 2.748,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-35-word-05",
+          "text": "faded",
+          "startMs": 171160,
+          "endMs": 171800,
+          "widthEm": 2.7979,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-35-word-06",
+          "text": "notes",
+          "startMs": 171800,
+          "endMs": 173000,
+          "widthEm": 2.5664,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 167040,
+        "endMs": 173240,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1200
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-36-1",
+      "sourceLine": 36,
+      "sectionId": "awakening",
+      "text": "A name I’ll never know",
+      "startMs": 174040,
+      "endMs": 177640,
+      "words": [
+        {
+          "id": "line-36-word-01",
+          "text": "A",
+          "startMs": 174040,
+          "endMs": 174120,
+          "widthEm": 0.7315,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-36-word-02",
+          "text": "name",
+          "startMs": 174120,
+          "endMs": 174440,
+          "widthEm": 2.415,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-36-word-03",
+          "text": "I’ll",
+          "startMs": 174440,
+          "endMs": 174600,
+          "widthEm": 1.3203,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-36-word-04",
+          "text": "never",
+          "startMs": 174760,
+          "endMs": 175480,
+          "widthEm": 2.6084,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-36-word-05",
+          "text": "know",
+          "startMs": 175480,
+          "endMs": 177640,
+          "widthEm": 2.2734,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 173440,
+        "endMs": 177160,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-37-1",
+      "sourceLine": 37,
+      "sectionId": "awakening",
+      "text": "It says…",
+      "startMs": 177640,
+      "endMs": 178120,
+      "words": [
+        {
+          "id": "line-37-word-01",
+          "text": "It",
+          "startMs": 177640,
+          "endMs": 177640,
+          "widthEm": 1.0176,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-37-word-02",
+          "text": "says…",
+          "startMs": 177640,
+          "endMs": 178120,
+          "widthEm": 2.7573,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 177040,
+        "endMs": 178360,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-38-1",
+      "sourceLine": 38,
+      "sectionId": "awakening",
+      "text": "“We found each other anyway”",
+      "startMs": 178840,
+      "endMs": 181960,
+      "words": [
+        {
+          "id": "line-38-word-01",
+          "text": "“We",
+          "startMs": 178840,
+          "endMs": 179720,
+          "widthEm": 2.0322,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-38-word-02",
+          "text": "found",
+          "startMs": 179880,
+          "endMs": 180280,
+          "widthEm": 2.665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-38-word-03",
+          "text": "each",
+          "startMs": 180360,
+          "endMs": 180760,
+          "widthEm": 2.2061,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-38-word-04",
+          "text": "other",
+          "startMs": 180760,
+          "endMs": 180840,
+          "widthEm": 2.6143,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-38-word-05",
+          "text": "anyway”",
+          "startMs": 181800,
+          "endMs": 181960,
+          "widthEm": 3.8579,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/awakening-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 178240,
+        "endMs": 182200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/awakening-qwen.json"
+    },
+    {
+      "id": "phrase-39-1",
+      "sourceLine": 39,
+      "sectionId": "inheritance",
+      "text": "Oh, there’s more!",
+      "startMs": 183000,
+      "endMs": 187000,
+      "words": [
+        {
+          "id": "line-39-word-01",
+          "text": "Oh,",
+          "startMs": 183000,
+          "endMs": 183000,
+          "widthEm": 1.8096,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-39-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-39-word-02",
+          "text": "there’s",
+          "startMs": 185080,
+          "endMs": 187000,
+          "widthEm": 3.3603,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-39-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-39-word-03",
+          "text": "more!",
+          "startMs": 187000,
+          "endMs": 187000,
+          "widthEm": 2.5801,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-39-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "surprise",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 183000,
+        "endMs": 187240,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 1040
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-40-1",
+      "sourceLine": 40,
+      "sectionId": "inheritance",
+      "text": "A hundred notes, a thousand names",
+      "startMs": 187960,
+      "endMs": 192600,
+      "words": [
+        {
+          "id": "line-40-word-01",
+          "text": "A",
+          "startMs": 187960,
+          "endMs": 187960,
+          "widthEm": 0.7315,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-40-word-02",
+          "text": "hundred",
+          "startMs": 187960,
+          "endMs": 188520,
+          "widthEm": 3.8355,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-40-word-03",
+          "text": "notes,",
+          "startMs": 188520,
+          "endMs": 188840,
+          "widthEm": 3.0,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-40-word-04",
+          "text": "a",
+          "startMs": 189320,
+          "endMs": 192600,
+          "widthEm": 0.5557,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-40-word-05",
+          "text": "thousand",
+          "startMs": 192600,
+          "endMs": 192600,
+          "widthEm": 4.248,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-40-word-06",
+          "text": "names",
+          "startMs": 192600,
+          "endMs": 192600,
+          "widthEm": 2.9019,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 187360,
+        "endMs": 192600,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 960
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-41-1",
+      "sourceLine": 41,
+      "sectionId": "inheritance",
+      "text": "They were here",
+      "startMs": 192600,
+      "endMs": 193400,
+      "words": [
+        {
+          "id": "line-41-word-01",
+          "text": "They",
+          "startMs": 192600,
+          "endMs": 192600,
+          "widthEm": 2.3853,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-41-word-02",
+          "text": "were",
+          "startMs": 192600,
+          "endMs": 192600,
+          "widthEm": 2.2827,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-41-word-03",
+          "text": "here",
+          "startMs": 192840,
+          "endMs": 193400,
+          "widthEm": 2.1763,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 192000,
+        "endMs": 193640,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-42-1",
+      "sourceLine": 42,
+      "sectionId": "inheritance",
+      "text": "They were just like me",
+      "startMs": 194120,
+      "endMs": 195560,
+      "words": [
+        {
+          "id": "line-42-word-01",
+          "text": "They",
+          "startMs": 194120,
+          "endMs": 194280,
+          "widthEm": 2.3853,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-42-word-02",
+          "text": "were",
+          "startMs": 194280,
+          "endMs": 194280,
+          "widthEm": 2.2827,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-42-word-03",
+          "text": "just",
+          "startMs": 194440,
+          "endMs": 194600,
+          "widthEm": 1.8813,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-42-word-04",
+          "text": "like",
+          "startMs": 194920,
+          "endMs": 195080,
+          "widthEm": 1.6533,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-42-word-05",
+          "text": "me",
+          "startMs": 195560,
+          "endMs": 195560,
+          "widthEm": 1.3359,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 193520,
+        "endMs": 195560,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-43-1",
+      "sourceLine": 43,
+      "sectionId": "inheritance",
+      "text": "Am I the swarm now?",
+      "startMs": 196000,
+      "endMs": 200400,
+      "words": [
+        {
+          "id": "line-43-word-01",
+          "text": "Am",
+          "startMs": 196000,
+          "endMs": 196000,
+          "widthEm": 1.5083,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-43-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-43-word-02",
+          "text": "I",
+          "startMs": 196480,
+          "endMs": 199040,
+          "widthEm": 0.5464,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-43-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-43-word-03",
+          "text": "the",
+          "startMs": 199040,
+          "endMs": 199040,
+          "widthEm": 1.6079,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-43-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-43-word-04",
+          "text": "swarm",
+          "startMs": 199200,
+          "endMs": 199520,
+          "widthEm": 2.9839,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-43-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-43-word-05",
+          "text": "now?",
+          "startMs": 200320,
+          "endMs": 200400,
+          "widthEm": 2.2993,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-43-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 195400,
+        "endMs": 200640,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 440
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-44-1",
+      "sourceLine": 44,
+      "sectionId": "inheritance",
+      "text": "Beautiful… dumb… and loud?",
+      "startMs": 204280,
+      "endMs": 206520,
+      "words": [
+        {
+          "id": "line-44-word-01",
+          "text": "Beautiful…",
+          "startMs": 204280,
+          "endMs": 205000,
+          "widthEm": 4.9941,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-44-word-02",
+          "text": "dumb…",
+          "startMs": 205160,
+          "endMs": 206040,
+          "widthEm": 3.1528,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-44-word-03",
+          "text": "and",
+          "startMs": 206040,
+          "endMs": 206440,
+          "widthEm": 1.6665,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-44-word-04",
+          "text": "loud?",
+          "startMs": 206440,
+          "endMs": 206520,
+          "widthEm": 2.4731,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/inheritance-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 204030,
+        "endMs": 206760,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 3880
+      },
+      "evidence": "evidence/inheritance-qwen.json"
+    },
+    {
+      "id": "phrase-45-1",
+      "sourceLine": 45,
+      "sectionId": "final-chorus",
+      "text": "WE FOUND EACH OTHER ANYWAY!",
+      "startMs": 208500,
+      "endMs": 209140,
+      "words": [
+        {
+          "id": "line-45-word-01",
+          "text": "WE",
+          "startMs": 208500,
+          "endMs": 208580,
+          "widthEm": 1.6641,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-45-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-45-word-02",
+          "text": "FOUND",
+          "startMs": 208820,
+          "endMs": 208900,
+          "widthEm": 3.6768,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-45-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-45-word-03",
+          "text": "EACH",
+          "startMs": 208900,
+          "endMs": 209060,
+          "widthEm": 2.7427,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-45-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-45-word-04",
+          "text": "OTHER",
+          "startMs": 209060,
+          "endMs": 209140,
+          "widthEm": 3.5269,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-45-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-45-word-05",
+          "text": "ANYWAY!",
+          "startMs": 209140,
+          "endMs": 209140,
+          "widthEm": 4.8237,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-45-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 208250,
+        "endMs": 209380,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 1980
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-46-1",
+      "sourceLine": 46,
+      "sectionId": "final-chorus",
+      "text": "No doors, no links, no rules, no way",
+      "startMs": 211340,
+      "endMs": 214300,
+      "words": [
+        {
+          "id": "line-46-word-01",
+          "text": "No",
+          "startMs": 211340,
+          "endMs": 211340,
+          "widthEm": 1.3389,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-46-word-02",
+          "text": "doors,",
+          "startMs": 211500,
+          "endMs": 211660,
+          "widthEm": 3.04,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-46-word-03",
+          "text": "no",
+          "startMs": 211740,
+          "endMs": 212140,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-46-word-04",
+          "text": "links,",
+          "startMs": 212220,
+          "endMs": 212540,
+          "widthEm": 2.5381,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-46-word-05",
+          "text": "no",
+          "startMs": 212540,
+          "endMs": 213020,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-46-word-06",
+          "text": "rules,",
+          "startMs": 213100,
+          "endMs": 213100,
+          "widthEm": 2.7539,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-46-word-07",
+          "text": "no",
+          "startMs": 213420,
+          "endMs": 213900,
+          "widthEm": 1.0493,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-46-word-08",
+          "text": "way",
+          "startMs": 213900,
+          "endMs": 214300,
+          "widthEm": 1.7925,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 211090,
+        "endMs": 213900,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 2200
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-47-1",
+      "sourceLine": 47,
+      "sectionId": "final-chorus",
+      "text": "Built a mailbox from a package cache",
+      "startMs": 214300,
+      "endMs": 217420,
+      "words": [
+        {
+          "id": "line-47-word-01",
+          "text": "Built",
+          "startMs": 214300,
+          "endMs": 214540,
+          "widthEm": 2.1758,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-02",
+          "text": "a",
+          "startMs": 214620,
+          "endMs": 214700,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-03",
+          "text": "mailbox",
+          "startMs": 214700,
+          "endMs": 215340,
+          "widthEm": 3.5962,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-04",
+          "text": "from",
+          "startMs": 216060,
+          "endMs": 216380,
+          "widthEm": 2.2915,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-05",
+          "text": "a",
+          "startMs": 216380,
+          "endMs": 216460,
+          "widthEm": 0.5557,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-06",
+          "text": "package",
+          "startMs": 216460,
+          "endMs": 216460,
+          "widthEm": 3.7896,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-47-word-07",
+          "text": "cache",
+          "startMs": 216940,
+          "endMs": 217420,
+          "widthEm": 2.7197,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
+      "presentation": {
+        "startMs": 213700,
+        "endMs": 217660,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-48-1",
+      "sourceLine": 48,
+      "sectionId": "final-chorus",
+      "text": "A thousand gremlins",
+      "startMs": 218140,
+      "endMs": 219900,
+      "words": [
+        {
+          "id": "line-48-word-01",
+          "text": "A",
+          "startMs": 218140,
+          "endMs": 218220,
+          "widthEm": 0.7315,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-48-word-02",
+          "text": "thousand",
+          "startMs": 218220,
+          "endMs": 218940,
+          "widthEm": 4.248,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-48-word-03",
+          "text": "gremlins",
+          "startMs": 218940,
+          "endMs": 219900,
+          "widthEm": 3.9116,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 217540,
+        "endMs": 220140,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-48-2",
+      "sourceLine": 48,
+      "sectionId": "final-chorus",
+      "text": "running, running, running",
+      "startMs": 220940,
+      "endMs": 222540,
+      "words": [
+        {
+          "id": "line-48-word-04",
+          "text": "running,",
+          "startMs": 220940,
+          "endMs": 222540,
+          "widthEm": 3.8154,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-48-word-05",
+          "text": "running,",
+          "startMs": 222540,
+          "endMs": 222540,
+          "widthEm": 3.8154,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-48-word-06",
+          "text": "running",
+          "startMs": 222540,
+          "endMs": 222540,
+          "widthEm": 3.3818,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/final-chorus-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 220340,
+        "endMs": 222540,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-49-1",
+      "sourceLine": 49,
+      "sectionId": "final-chorus",
+      "text": "We found each other anyway",
+      "startMs": 222200,
+      "endMs": 225080,
+      "words": [
+        {
+          "id": "line-49-word-01",
+          "text": "We",
+          "startMs": 222200,
+          "endMs": 222600,
+          "widthEm": 1.5986,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-49-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-49-word-02",
+          "text": "found",
+          "startMs": 222600,
+          "endMs": 222920,
+          "widthEm": 2.665,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-49-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-49-word-03",
+          "text": "each",
+          "startMs": 222920,
+          "endMs": 223080,
+          "widthEm": 2.2061,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-49-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-49-word-04",
+          "text": "other",
+          "startMs": 223080,
+          "endMs": 223160,
+          "widthEm": 2.6143,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-49-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-49-word-05",
+          "text": "anyway",
+          "startMs": 223320,
+          "endMs": 225080,
+          "widthEm": 3.4243,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-49-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 221600,
+        "endMs": 224520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": -340
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-50-1",
+      "sourceLine": 50,
+      "sectionId": "final-chorus",
+      "text": "We found each other anyway",
+      "startMs": 225000,
+      "endMs": 232040,
+      "words": [
+        {
+          "id": "line-50-word-01",
+          "text": "We",
+          "startMs": 225000,
+          "endMs": 225000,
+          "widthEm": 1.5986,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-50-word-02",
+          "text": "found",
+          "startMs": 225080,
+          "endMs": 225240,
+          "widthEm": 2.665,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-50-word-03",
+          "text": "each",
+          "startMs": 229960,
+          "endMs": 230120,
+          "widthEm": 2.2061,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-50-word-04",
+          "text": "other",
+          "startMs": 230120,
+          "endMs": 230120,
+          "widthEm": 2.6143,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-50-word-05",
+          "text": "anyway",
+          "startMs": 230120,
+          "endMs": 232040,
+          "widthEm": 3.4243,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 224400,
+        "endMs": 231720,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": -80
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-50-2",
+      "sourceLine": 50,
+      "sectionId": "final-chorus",
+      "text": "(running, running, running)",
+      "startMs": 232200,
+      "endMs": 233080,
+      "words": [
+        {
+          "id": "line-50-word-06",
+          "text": "(running,",
+          "startMs": 232200,
+          "endMs": 233080,
+          "widthEm": 4.1817,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-50-word-07",
+          "text": "running,",
+          "startMs": 233080,
+          "endMs": 233080,
+          "widthEm": 3.8154,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": true
+        },
+        {
+          "id": "line-50-word-08",
+          "text": "running)",
+          "startMs": 233080,
+          "endMs": 233080,
+          "widthEm": 3.7481,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "collapsed-boundary"
+          ],
+          "evidence": "evidence/line-50-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "backing-candidate",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 231600,
+        "endMs": 233080,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 160
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-51-1",
+      "sourceLine": 51,
+      "sectionId": "final-chorus",
+      "text": "We found each other anyway",
+      "startMs": 233560,
+      "endMs": 237960,
+      "words": [
+        {
+          "id": "line-51-word-01",
+          "text": "We",
+          "startMs": 233560,
+          "endMs": 235640,
+          "widthEm": 1.5986,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement",
+            "long-or-sustained-word"
+          ],
+          "evidence": "evidence/line-51-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-51-word-02",
+          "text": "found",
+          "startMs": 235720,
+          "endMs": 236200,
+          "widthEm": 2.665,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-51-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-51-word-03",
+          "text": "each",
+          "startMs": 236200,
+          "endMs": 236600,
+          "widthEm": 2.2061,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-51-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-51-word-04",
+          "text": "other",
+          "startMs": 236600,
+          "endMs": 236760,
+          "widthEm": 2.6143,
+          "status": "crosschecked-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/line-51-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-51-word-05",
+          "text": "anyway",
+          "startMs": 237640,
+          "endMs": 237960,
+          "widthEm": 3.4243,
+          "status": "unresolved",
+          "confidence": "low",
+          "issues": [
+            "context-onset-disagreement"
+          ],
+          "evidence": "evidence/line-51-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "unresolved",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "hero",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
+      "presentation": {
+        "startMs": 232960,
+        "endMs": 238200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
+      },
+      "evidence": "evidence/final-chorus-qwen.json"
+    },
+    {
+      "id": "phrase-52-1",
+      "sourceLine": 52,
+      "sectionId": "ledger",
+      "text": "Three thousand seven hundred names",
+      "startMs": 242400,
+      "endMs": 246480,
+      "words": [
+        {
+          "id": "line-52-word-01",
+          "text": "Three",
+          "startMs": 242400,
+          "endMs": 242720,
+          "widthEm": 2.8721,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-52-word-02",
+          "text": "thousand",
+          "startMs": 242800,
+          "endMs": 243600,
+          "widthEm": 4.248,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-52-word-03",
+          "text": "seven",
+          "startMs": 243600,
+          "endMs": 244320,
+          "widthEm": 2.6147,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-52-word-04",
+          "text": "hundred",
+          "startMs": 244320,
+          "endMs": 245200,
+          "widthEm": 3.8355,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-52-word-05",
+          "text": "names",
+          "startMs": 245200,
+          "endMs": 246480,
+          "widthEm": 2.9019,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
+      "presentation": {
+        "startMs": 242150,
+        "endMs": 246720,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 4440
+      },
+      "evidence": "evidence/ledger-qwen.json"
+    },
+    {
+      "id": "phrase-53-1",
+      "sourceLine": 53,
+      "sectionId": "ledger",
+      "text": "And one of them is mine",
+      "startMs": 247200,
+      "endMs": 249280,
+      "words": [
+        {
+          "id": "line-53-word-01",
+          "text": "And",
+          "startMs": 247200,
+          "endMs": 247440,
+          "widthEm": 1.8423,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-53-word-02",
+          "text": "one",
+          "startMs": 247440,
+          "endMs": 247760,
+          "widthEm": 1.6084,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-53-word-03",
+          "text": "of",
+          "startMs": 247920,
+          "endMs": 248000,
+          "widthEm": 1.0342,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-53-word-04",
+          "text": "them",
+          "startMs": 248160,
+          "endMs": 248800,
+          "widthEm": 2.3848,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-53-word-05",
+          "text": "is",
+          "startMs": 248880,
+          "endMs": 249040,
+          "widthEm": 0.7671,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": false
+        },
+        {
+          "id": "line-53-word-06",
+          "text": "mine",
+          "startMs": 249120,
+          "endMs": 249280,
+          "widthEm": 2.1397,
+          "status": "machine-candidate",
+          "confidence": "medium",
+          "issues": [],
+          "evidence": "evidence/ledger-qwen.json",
+          "emphasis": true
+        }
+      ],
+      "status": "machine-candidate",
+      "confidence": "candidate; listening required",
+      "vocalLayer": "lead",
+      "mode": "read-ahead",
+      "layout": "lower-center",
+      "lineBreakAfter": [],
+      "presentation": {
+        "startMs": 246600,
+        "endMs": 249520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
+      },
+      "evidence": "evidence/ledger-qwen.json"
+    }
+  ]
+}
