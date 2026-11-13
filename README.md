@@ -25,7 +25,9 @@ Produce a **15-second, 16:9, playable, visually stunning proof-of-concept** feat
 
 The proof must use actual generated illustrative assets, not only geometric placeholder graphics. It should be easy to render again after adjusting timing, art, or camera moves.
 
-See [Creative direction](docs/CREATIVE_DIRECTION.md) and [Prototype brief](docs/PROTOTYPE_BRIEF.md).
+See [Creative direction](docs/CREATIVE_DIRECTION.md), [Sticker visual language](docs/STICKER_LANGUAGE.md), and [Prototype brief](docs/PROTOTYPE_BRIEF.md).
+
+**Current next step (before animation):** Refine the base non-human chibi agent, then experiment with separate accessory and emote stickers. The favorite reference is a bunny-like, rounded mechanic character, but the final base design and the swarm's shared adornment are **not yet chosen**. The lyric treatment is now defined as playful, individual chubby word stickers with true die-cut letter contours, independent sway/entrance motion, and attachable sparkles/emotes. See `docs/STICKER_LANGUAGE.md`.
 
 ## Workflow
 
