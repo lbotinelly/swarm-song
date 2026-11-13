@@ -10,6 +10,8 @@ The independent [registry engine rehearsal](docs/REGISTRY_SPIKE.md) uses tempora
 
 [Audio metadata](assets/audio-inventory.json) records the available master and stems: master WAV/MP3 duration 262.8 seconds, twelve WAV stems 264.238146 seconds, all audio stereo at 48 kHz. The stem-folder name says 68 BPM; no beat grid or lyric timestamps have been verified. Different durations do not by themselves establish an offset. Original audio and lyrics remain unchanged.
 
+**Shared cast baseline:** all main and supporting characters reuse the approved six-pose model. Individual detachable props make them unique; expressions and timing add personality without redesigning the body. See [the design lock](docs/CHARACTER_DESIGN_LOCK.md).
+
 ## Creative North Star
 
 Make every frame feel like a beautifully art-directed illustration rather than a demonstration of animation technology. The audience should notice the charm, composition, atmosphere, narrative surprises, and little personalities before noticing the production technique.

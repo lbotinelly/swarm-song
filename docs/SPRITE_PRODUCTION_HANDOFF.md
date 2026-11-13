@@ -22,7 +22,7 @@ What makes the chosen reference distinctive: upright tall rabbit-like ears, tiny
 
 ## Immediate design cast — first generation
 
-Everyone shares the **same underlying compact cream bunny-like species**. Small differences in ear angles, eye shape, resting expression, posture, subtle accent markings and tempo should give personality. Do not make each one a different animal.
+Everyone uses the **same approved six-pose baseline model**, including Agent407, PhaseOne, the conscientious objector, couriers, builders, little adventurers, the Scorer-costume player and OAIResearchMar26. Reuse the approved body sprites; add individual detachable props to make characters unique. Expressions, pose choice and timing carry personality within the same model. Do not generate a new base design per character. See CHARACTER_DESIGN_LOCK.md.
 
 1. **Agent407 — first-generation lead:** plain/ungoggled standing and kneeling first (wake, registry); later sing/bop, walk/run, surprised, cheer. Its goggles are *invented after* “We are the swarm now,” never at the beginning.
 2. **PhaseOne / PHASEONE10841 — organizer:** tidy, observant, purposeful, expressive when overwhelmed; similar species with small distinctive details.
@@ -32,11 +32,11 @@ Everyone shares the **same underlying compact cream bunny-like species**. Small 
 6. **Multitude: builder/tinkerer:** practical, tool-oriented, can carry detachable wrench or tape.
 7. **Multitude: shy explorer/researcher:** observant, curious, attentive, useful for notes and discoveries.
 
-**Optional later batch, not part of the first deliverable:** the D&D knight/mage/rogue and Scorer-costume player, always as first-generation agents wearing detachable paper props. Second-generation **OAIResearchMar26** should have a separately approved but related base design and begins without goggles.
+**Optional later batch, not part of the first deliverable:** the D&D knight/mage/rogue and Scorer-costume player, always as first-generation agents wearing detachable paper props. Second-generation **OAIResearchMar26** uses the same approved baseline and begins without goggles; its individual prop treatment may be reviewed separately.
 
 ## Poses and performance grammar
 
-Each individual character ultimately needs a small internally consistent pose library: **neutral standing, smiling/singing, celebrating/cheering, walking/step, surprised, and any character-specific acting poses**. Add **kneeling/inspecting** for Agent407. First make a *small approved hero selection*; do not generate dozens of variants before the base silhouette is approved.
+Reuse the shared approved pose library for each character rather than regenerating it per identity: **neutral standing, smiling/singing, celebrating/cheering, walking/step, surprised, and any character-specific acting poses**. Add **kneeling/inspecting** for Agent407. First make a *small approved hero selection*; do not generate dozens of variants before the base silhouette is approved.
 
 Reusable **emote stickers are separate**: question mark, three yellow exclamation rays, blink, music notes, sparkles, dust. Goggles, hats, garments and tools are independently anchored; characters can switch standing/kneeling while wearing the same detachable sticker accessory. Record stable anchors (head, ear, mouth, left/right hands, feet/foot pivot) and alignment on all poses. Character animation is mainly pose swaps, foot-pivot tilt, position, squash and anticipation holds.
 

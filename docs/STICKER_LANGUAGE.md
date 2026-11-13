@@ -36,8 +36,8 @@ The **goggles are the selected intergenerational inheritance prop**. They are no
 
 ## Immediate art focus — character approval, alongside a tiny engine spike
 
-1. Explore/refine a family of adorable, non-human chibi agent base designs, using the favored bunny-like mechanic as a strong candidate, but permit alternative mascot directions.
-2. Choose a base silhouette and facial grammar that read at small scale; distinguish individuals subtly through color, eyes, ear shape, expressions, posture and personality.
+1. Reuse the approved six-pose baseline model for the entire cast; the character direction is locked. No alternative mascot exploration.
+2. Distinguish individuals primarily through detachable props, supported by expressions, pose selection and timing within the same approved body and face grammar.
 3. Generate a **plain unadorned character sticker** on transparency and a **separate transparent accessory/emote sample sheet**, rather than baked-in gear.
 4. Test a few assembled compositions: plain agent, working/singing agent, and inherited-adornment agent. **Use detachable goggles for the Agent407 → OAIResearchMar26 inheritance beat; other identity accessories remain open.**
 5. Validate the visuals as stills before building the **integrated film** or extending the engine beyond a tiny, parallel registration-shot spike. See `SPRITE_PRODUCTION_HANDOFF.md` and `STICKER_STAGE_ENGINE.md`.

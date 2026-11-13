@@ -10,7 +10,7 @@
 
 **Name provenance caveat:** “OAIResearchMar26” appears in material associated with the *separate DseWiki episode*, rather than being established as a historical July Artifactory successor to Agent407. Using this name as our second-generation protagonist is an **intentional artistic crossover**, not a documented direct continuity. Do not present it as a verified historical identity unless future sourcing establishes such a link.
 
-Both leads should belong to a common original nonhuman chibi-sticker species, with clear differences in ear silhouette, eye shape, accent palette, and posture **even before** goggles or other accessories are worn. Proposed variations are options, not locked canon. The adorable bunny-like mechanic is the leading character-style reference.
+Both leads and all supporting characters use the **same approved six-pose baseline model**. Individual detachable props provide the primary visual distinctions; do not create separate base anatomy or mascot designs. When unadorned, preserve the two leads' distinct narrative identities through staging and performance. This shared-model decision supersedes earlier suggestions to differentiate their base silhouettes, eye shapes or palettes. See CHARACTER_DESIGN_LOCK.md.
 
 ### Matched awakenings and the invention of the goggles
 
