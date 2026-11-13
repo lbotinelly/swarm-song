@@ -22,6 +22,8 @@ node scripts/song-render.mjs --director --stills --full
 python scripts/song-qa.py --director
 ```
 
-The gallery regenerates seven short master excerpts for the five new director moments and two revised swells. Previous versions retain their render switches. Tests cover source preservation, unambiguous non-overlapping cue cards, exact1.5x rise duration, pause gating and seekable poses. Caption timing remains identical. Final playback still requires Leo's review.
+The gallery regenerates seven short master excerpts for the five new director moments and two revised swells. Previous versions retain their render switches. Tests cover source preservation, unambiguous non-overlapping cue cards, exact1.5x rise duration, pause gating and seekable poses. Caption timing remains identical. Leo approved this playback on November 13, 2026: “this is perfect.”
 
-Validation: 28 tests pass. V6 retains1920x1080/30fps,7,884frames,262.8s, unchanged master/artwork hashes, matching repeat-frame hashes and five aligned audio windows. All32 cue excerpts and15 spectral-pattern excerpts passed stereo/duration checks. Revised sampled poses were visually inspected; musical playback approval remains pending. See `qa-report-v6.json`.
+Validation: 28 tests pass. V6 retains1920x1080/30fps,7,884frames,262.8s, unchanged master/artwork hashes, matching repeat-frame hashes and five aligned audio windows. All32 cue excerpts and15 spectral-pattern excerpts passed stereo/duration checks. Revised sampled poses were visually inspected; V6 musical playback is approved. See `qa-report-v6.json`.
+
+Approval scope: the delivered V6 musical test and current direction. Spectral-search windows remain audition candidates; this approval does not turn similarity scores into verified acoustic boundaries or instrument identities.

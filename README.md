@@ -4,7 +4,7 @@
 
 [Whole-song spectral-pattern audition](assets/milestone7/pattern-review/index.html) uses Leo’s examples to search by spectral contrast, flux and tonal texture. [Method and findings](assets/milestone7/SPECTRAL_PATTERN_REVIEW.md).
 
-**V6 director pass:** [full test and cue map](assets/milestone7/review-v6/index.html) applies Leo’s specific pauses, later swell peaks, follow-up brass and big chorus. [Details](assets/milestone7/DIRECTOR_MUSIC_REVIEW.md).
+**V6 director pass — approved November 13, 2026:** [full test and cue map](assets/milestone7/review-v6/index.html) applies Leo’s specific pauses, later swell peaks, follow-up brass and big chorus. [Details](assets/milestone7/DIRECTOR_MUSIC_REVIEW.md).
 
 [V5 percussion and expanded musical map](assets/milestone7/review-v5/index.html) preserves the well-timed V4 moments, adds five cue candidates, and gives the solo agent small percussion-driven bops. [Details](assets/milestone7/PERCUSSION_REVIEW.md).
 

@@ -2,3 +2,5 @@ node_modules/
 output/
 .remotion/
 *.tsbuildinfo
+__pycache__/
+*.py[cod]
