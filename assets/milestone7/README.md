@@ -1,6 +1,8 @@
 # Milestone 7 — The song is the timeline
 
-**Current: V3 typography test.** [Play the full test](review-v3/index.html): bundled Finger Paint Regular lyrics with a lighter 9 px white contour and restrained texture; Bitcount Single weight 550 on the existing blue agent-name outro. No new B-roll scenes. All approved V2 timing and text remain unchanged; only glyph metrics changed. V2 is preserved, with its exact timeline in `timeline-v2.json`. Font provenance and OFL notices are in `public/fonts/`. Rendering waits for both local fonts before capturing frames.
+**Current: V4 musical-cue listening study.** [Watch with the interactive cue map](music-review/index.html). The full master accompanies cue labels and the existing solo agent performing selected swells, accents and releases. Approved lyric timing is unchanged. See [MUSIC_REVIEW.md](MUSIC_REVIEW.md) for evidence, limitations and reproduction. This is a listening-review candidate, not an approved emotional score.
+
+**Preserved V3 typography test.** [Play the full test](review-v3/index.html): bundled Finger Paint Regular lyrics with a lighter 9 px white contour and restrained texture; Bitcount Single weight 550 on the existing blue agent-name outro. No new B-roll scenes. All approved V2 timing and text remain unchanged; only glyph metrics changed. V2 is preserved, with its exact timeline in `timeline-v2.json`. Font provenance and OFL notices are in `public/fonts/`. Rendering waits for both local fonts before capturing frames.
 
 Reproduce V3 (no aligner rerun needed):
 ```powershell

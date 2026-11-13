@@ -15,6 +15,18 @@
     "bytes": 1347,
     "sha256": "2f7a3edc49eca8d4e045f94ab8c675c6ac4dfeda9095aea55d11adc988a04493"
   },
+  "musical-cues.json": {
+    "bytes": 28945,
+    "sha256": "8a8827044f07dcd8122411e2eceba50358a74424c64ef731dd43cef401bc4e83"
+  },
+  "MUSICAL_CUES.md": {
+    "bytes": 2234,
+    "sha256": "7620c0407f3c4afac954d34002f6537fe3db0abece1df58c1e62e0413e414463"
+  },
+  "MUSIC_REVIEW.md": {
+    "bytes": 5129,
+    "sha256": "b346bd2e50a123a39b6104a317361560fa6ca959337df8558e347ca86a43c685"
+  },
   "PLAYBACK_FEEDBACK.md": {
     "bytes": 6074,
     "sha256": "031430d17801152b04e15b1801f699fdaf359a6f24df324903ed2e594fff8eee"
@@ -31,13 +43,17 @@
     "bytes": 3219,
     "sha256": "b4959d70b65e609aa72a2bdb561c46f170a4d7081a9f359f65b9513aadaf20d7"
   },
+  "qa-report-v4.json": {
+    "bytes": 3948,
+    "sha256": "4e17302dfeee2f1fe2f9b2f72fc84b1a708d13cf23c2e8db951c834be5cb3c8d"
+  },
   "qa-report.json": {
     "bytes": 3135,
     "sha256": "ea82c2ed9fb39e2f213d0210da351dcfa2b907c2daff31e54412fdc8d00f6ec9"
   },
   "README.md": {
-    "bytes": 7015,
-    "sha256": "a479129750577c796920fdf61714b1e281da81da2961ce7d944d1fbde31c2ad9"
+    "bytes": 7434,
+    "sha256": "80ad809ea10be380ce9af2a273dc82f021083d5eb02a32456afbf4b290d91750"
   },
   "REVIEW.md": {
     "bytes": 3171,
@@ -178,6 +194,102 @@
   "evidence/whisper-master.json": {
     "bytes": 161295,
     "sha256": "d3a218d68b1da9380f461be085f2b370aaf0d744644a309ee52f4d25a6c32d71"
+  },
+  "music-review/bass-release.mp3": {
+    "bytes": 169493,
+    "sha256": "0db7191d8432846ed077e58c80157a1b2ab350440f4a7cc50c26d71cc505b9e1"
+  },
+  "music-review/bass-withdraws.mp3": {
+    "bytes": 169493,
+    "sha256": "27826513119535de7bdb2009715cccbedda6d730104df22add49dcf761ed8a28"
+  },
+  "music-review/brass-answer.mp3": {
+    "bytes": 169493,
+    "sha256": "9059ce907bc4c4bf333337c102880e31f2ce0324e77a04d7cb38ea1cd58d6765"
+  },
+  "music-review/brass-break.mp3": {
+    "bytes": 169493,
+    "sha256": "eba8642ba656b516efb9eb1bffe390d10baeaf85f3caeaa5b0f039efb52b9857"
+  },
+  "music-review/brass-final.mp3": {
+    "bytes": 169493,
+    "sha256": "587b184b7c0c8f6d368d78ec9ddda6359be671571ee0cbe60732847a6ab612fb"
+  },
+  "music-review/cue-map.svg": {
+    "bytes": 235308,
+    "sha256": "e298b49fe557bf8775a44ca3c8f73234dafcfe9c859e5111b1fa6f89ef81efb9"
+  },
+  "music-review/drums-chorus.mp3": {
+    "bytes": 169493,
+    "sha256": "e88409452e2794d8877792bee3ecace18feaee4e9fd2bb614c1a34a3536e2839"
+  },
+  "music-review/drums-farewell.mp3": {
+    "bytes": 169493,
+    "sha256": "062e78cdd09f8f107b033af1393799b2043b14daeb465b3b319630b26d358ce7"
+  },
+  "music-review/drums-final.mp3": {
+    "bytes": 169493,
+    "sha256": "30005cbfea2bcc49022ffeb8fa7b8a4407b9adb64b98d703c0a11f7d990505b4"
+  },
+  "music-review/index.html": {
+    "bytes": 8775,
+    "sha256": "41fb6b9172bbc79bc9cee8a75ef04c781146b7fd7314f6f3d189fd0c4712359b"
+  },
+  "music-review/keys-discovery.mp3": {
+    "bytes": 169493,
+    "sha256": "2e34b21e75450a958c12cd0678e00c361c16ec47b2fa0102b38dd3e3e8d066b6"
+  },
+  "music-review/keys-goodnight.mp3": {
+    "bytes": 169493,
+    "sha256": "29b50f48568b2fc4c5909089aa2d15b1d66001e83acb017636ab5a667f237482"
+  },
+  "music-review/keys-outro.mp3": {
+    "bytes": 169493,
+    "sha256": "edd6110491018a0c5f96776206a39db570902bcc1710c0b541b12f809649f1e0"
+  },
+  "music-review/strings-first-bloom.mp3": {
+    "bytes": 169493,
+    "sha256": "f6457b608dae9d47c4ca3b6d151394727d64660d1e954f19982336969f58b5de"
+  },
+  "music-review/strings-home.mp3": {
+    "bytes": 169493,
+    "sha256": "e318906353344be82a40f9b624efc1a238f60bdc3f01a302c8060349ac9f6af0"
+  },
+  "music-review/strings-inheritance.mp3": {
+    "bytes": 169493,
+    "sha256": "9e3643eddfe7773a91bf418525db46b86067a7f57f3a63054751854d3d21b98f"
+  },
+  "music-review/strings-intro.mp3": {
+    "bytes": 169493,
+    "sha256": "a254499e2542dd3663e2c5ea33423e2f55cbc35097cf24f96e567ad3b89c01cd"
+  },
+  "music-review/strings-last.mp3": {
+    "bytes": 136085,
+    "sha256": "cf559742da015b7bd024dea0ad3721cf41bf137ccb806f8b23dbc3f06cea8c29"
+  },
+  "music-review/strings-second-lift.mp3": {
+    "bytes": 169493,
+    "sha256": "b86d7e32215d11ad5c1e4f5a14f10c21c8d29a3207680bd332b5f37c4148ac4c"
+  },
+  "music-review/strings-turn.mp3": {
+    "bytes": 169493,
+    "sha256": "55a6270bfe273a66d67d143618b9d365703945824e23c0b2a6b8cc2142abcb9a"
+  },
+  "music-review/synth-answer.mp3": {
+    "bytes": 169493,
+    "sha256": "159aca2fb509844d107cef4a5b82ec4cbe9f2d2f84f48cd11201b0139f3579ea"
+  },
+  "music-review/synth-awakening.mp3": {
+    "bytes": 169493,
+    "sha256": "160926ebf6e395a41faa9c4f39156e1ce53187109e023f4e16bb70ec12063dda"
+  },
+  "music-review/synth-bridge.mp3": {
+    "bytes": 169493,
+    "sha256": "24aa474e2494caec7ec045c86a5fc98e235fada3bec459fc80dbb6f4fab43870"
+  },
+  "music-review/synth-inheritance.mp3": {
+    "bytes": 169493,
+    "sha256": "93589f4740e84598a439ebc95fcc028ef3d40435bdafaea4f7ed3ec0b05af009"
   },
   "review/chorus-read.mp4": {
     "bytes": 997009,
@@ -626,6 +738,178 @@
   "review-v3/swarm-song-v3.mp4": {
     "bytes": 28666875,
     "sha256": "235362da07338539415f344f6f2f221c726e3e8261174706dd8899e3705ecdf5"
+  },
+  "review-v4/composition-gpu.png": {
+    "bytes": 2651369,
+    "sha256": "ccf5075500f1c83d0e4e09dd1b75b8b58a05af177414e24950d1938eddb9b840"
+  },
+  "review-v4/composition-village.png": {
+    "bytes": 3409846,
+    "sha256": "978ca300283e071d6b5ab571cd9ecca5c6686e11114ec2618ea614fda4e2ed7e"
+  },
+  "review-v4/compressed-128500.png": {
+    "bytes": 1207434,
+    "sha256": "4a1d5d7249ec1736c34dbbdaf4029c49c66ffeb49ff22d9e1cf23a0139807353"
+  },
+  "review-v4/compressed-14000.png": {
+    "bytes": 1462798,
+    "sha256": "1bd7c4dc0054ca00dcebc036619c3fd38e63d7086616094a1b3c2bd41d524396"
+  },
+  "review-v4/compressed-154500.png": {
+    "bytes": 1448735,
+    "sha256": "3d9a6f54305f13ccc2d21e270b732e0ec76893d4b92608915a5c52bd1ba14dbd"
+  },
+  "review-v4/compressed-208500.png": {
+    "bytes": 1493520,
+    "sha256": "4f179d9a580a31959dc9c26a6d272b4597172c2122b69af474e5f6e7426b0ab5"
+  },
+  "review-v4/compressed-244500.png": {
+    "bytes": 1449858,
+    "sha256": "c45263b29a25246ca21fb20bcb3fb34940288f9bb49f1aeb279927c28f7dbd88"
+  },
+  "review-v4/compressed-248000.png": {
+    "bytes": 1385454,
+    "sha256": "af24d9439cb5494505a9048cf13445397d7d23e1eeb519f5fd16b7dbb68edffe"
+  },
+  "review-v4/compressed-55000.png": {
+    "bytes": 1446869,
+    "sha256": "2dbbb77450c24505140d7d6cd79981229efc6a2935b804fdee30f308c727274c"
+  },
+  "review-v4/compressed-92500.png": {
+    "bytes": 1513250,
+    "sha256": "826bd6b45e30ee2d0779c0ebb968625206b5453783bf110aa93fa58e373b4693"
+  },
+  "review-v4/compressed-contact-sheet.jpg": {
+    "bytes": 379114,
+    "sha256": "9ba8572ddeefd25800fa588e2af35f8d9e5e134eb73ae46426ca0b80f0cde483"
+  },
+  "review-v4/compressed-cue-71900.png": {
+    "bytes": 1274753,
+    "sha256": "cc68635fc36fe1a841b02898e621c71ff7780fcb149e964fd4c8118375ea6e7a"
+  },
+  "review-v4/index.html": {
+    "bytes": 571,
+    "sha256": "9349eb5e4f73593a4a40479531f08878d8b7dfd28d61b57e4fcadfdaeb0f2eec"
+  },
+  "review-v4/song-102500.png": {
+    "bytes": 2923821,
+    "sha256": "68a9dd0a57bf60f761902b6b9be6eb4a5d69560ffb20a4964f94c773f85fe184"
+  },
+  "review-v4/song-126700.png": {
+    "bytes": 2757109,
+    "sha256": "1617d0abdb07007325f2d3ca7373c58cda552e839d202208d619a5d9710e5311"
+  },
+  "review-v4/song-128500.png": {
+    "bytes": 2764368,
+    "sha256": "943e18c8d4383499cc4823a2be7a8a8d97b4bcc948ebf8ea66462cba0bb53ec4"
+  },
+  "review-v4/song-134800.png": {
+    "bytes": 2781270,
+    "sha256": "56c6421aea54229fd779943212eb10eed3698a85bbee3a498d5a64ddebf1f9b2"
+  },
+  "review-v4/song-136600.png": {
+    "bytes": 2771450,
+    "sha256": "b52d9310f2f2afefe69a41cfafb7c4b074189c27f54b500db66d34ca68369b81"
+  },
+  "review-v4/song-14000.png": {
+    "bytes": 2910914,
+    "sha256": "488b8babb579424187a370a1dc333d8d5702b1506f02ca68b2e5ee6499dbadc8"
+  },
+  "review-v4/song-153500.png": {
+    "bytes": 2900263,
+    "sha256": "2c022572fb83225d76cb9ad891c234c25456af9ab424aba2dce4e56f0f6057f3"
+  },
+  "review-v4/song-154500.png": {
+    "bytes": 2896769,
+    "sha256": "5ed08c3160af9a1c1d94845ff66c0c89938e9880935163d57e4d537782e84e58"
+  },
+  "review-v4/song-179500.png": {
+    "bytes": 2916264,
+    "sha256": "4cfda004082fc4476facf81393fecccd59790b3a5c0a3975f2141cb9db96d10d"
+  },
+  "review-v4/song-18500.png": {
+    "bytes": 2921004,
+    "sha256": "54c574db5c9348ccd6cf07911b1532153385a60bb61acee8f573c209ee11905c"
+  },
+  "review-v4/song-198500.png": {
+    "bytes": 2890601,
+    "sha256": "c4707e6e99a580f931b35fee30d2616c044679f4830e3ed537ff14a250971ef9"
+  },
+  "review-v4/song-208500.png": {
+    "bytes": 2919986,
+    "sha256": "a2cdaf539ebacd387acab26c12e24e54dec8fa93737fd21391d1ef3f43ae141e"
+  },
+  "review-v4/song-228900.png": {
+    "bytes": 2882676,
+    "sha256": "152f6e8d7e408d9ab3c56c9e70ff141a6a2cda83521227cb60656020f1617951"
+  },
+  "review-v4/song-232000.png": {
+    "bytes": 2884304,
+    "sha256": "acd6e0dab818ad3ab01acb342c67254d00e125f42e2920dcbff9a392cf345e65"
+  },
+  "review-v4/song-24400.png": {
+    "bytes": 2874279,
+    "sha256": "31e749765ea674f9e4f55653120e87cb8d71fcd33e39dbc0bfa52d670af95e42"
+  },
+  "review-v4/song-244500.png": {
+    "bytes": 2915636,
+    "sha256": "029ccc68cc6dacdd2efb61c3a76c357373fce4509b29a7e1da019241cf533721"
+  },
+  "review-v4/song-248000.png": {
+    "bytes": 2880590,
+    "sha256": "c387212ff201964767655a82db18d0a743a5bede57e76d9b44723e1c5f6a5852"
+  },
+  "review-v4/song-253000.png": {
+    "bytes": 2837014,
+    "sha256": "9b21b99ea6620ce18f6a5cfbec4c78c79b7c0db9200de3fe29c14131df4c685b"
+  },
+  "review-v4/song-260300.png": {
+    "bytes": 2822426,
+    "sha256": "e068595030a3be330d05adec2a8258772cb40b5ea5dd26ef6e801e73049d5e03"
+  },
+  "review-v4/song-26500.png": {
+    "bytes": 2877482,
+    "sha256": "944d3932af9810bc19e1a0f89666fdee9a686bcb09ce7fa3329023698c8da524"
+  },
+  "review-v4/song-3000.png": {
+    "bytes": 2829427,
+    "sha256": "f6202941a38ba61e9c57e91a40b47ba9ac13f62723145c6f7e8e64ecfe1640f8"
+  },
+  "review-v4/song-42000.png": {
+    "bytes": 2895819,
+    "sha256": "3dd5b075657a6073ae32d1739496fb6c02d9ad976e59dc108b0e46cc2fb98703"
+  },
+  "review-v4/song-45000.png": {
+    "bytes": 2893354,
+    "sha256": "a2d759afb2e1549b6251b100b6524609fe010891285c765322196edacd8bfdd6"
+  },
+  "review-v4/song-55000-repeat.png": {
+    "bytes": 2893743,
+    "sha256": "247424c986c74fc807d3ad0689e165b235d1e225c25e2798d5baa87fa2d91f08"
+  },
+  "review-v4/song-55000.png": {
+    "bytes": 2893743,
+    "sha256": "247424c986c74fc807d3ad0689e165b235d1e225c25e2798d5baa87fa2d91f08"
+  },
+  "review-v4/song-64000.png": {
+    "bytes": 2877947,
+    "sha256": "528b4d53d827aac5fe9afe8ce40ddf9753a18ec265835054d031706345ad190a"
+  },
+  "review-v4/song-71900.png": {
+    "bytes": 2817674,
+    "sha256": "ebfb2ce423e17d86ce2048ed902d44e8ebcb89d33118ced6e43df164b9dd30f5"
+  },
+  "review-v4/song-9000.png": {
+    "bytes": 2811819,
+    "sha256": "79b7510ca4595bcc147798e6a2395e0e1bf19d8a5bc862e339a569badbed4edd"
+  },
+  "review-v4/song-92500.png": {
+    "bytes": 2940343,
+    "sha256": "c489fd9e6bc59534bda2be6b109144d2dcbcf1176792739661a971d0fa41d0ac"
+  },
+  "review-v4/swarm-song-v4.mp4": {
+    "bytes": 31700293,
+    "sha256": "cc1b7e049c6b3f4df9b91a6133bafa76d5369b5f782ebd7de025d3cd19e1eedf"
   },
   "review/cycle1/composition-village.png": {
     "bytes": 3690468,

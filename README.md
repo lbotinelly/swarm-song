@@ -2,9 +2,11 @@
 
 ## Milestone 7 — The song is the timeline
 
+[V4 musical-cue map and listening test](assets/milestone7/music-review/index.html) adds selected musical moments and solo-agent gestures while preserving the approved captions. [Evidence, limits and reproduction](assets/milestone7/MUSIC_REVIEW.md). Eighteen of 22 candidate cues drive motion; four ambiguous matches remain visible for listening review without gestures.
+
 Leo approved the updated 23–72s timing preview on November 13, 2026; preserve its presentation timing. Finger Paint for lyrics and Bitcount Single for agent-message B-roll are also approved as the next typography direction; the new V3 full caption test implements them while preserving V2 timing. See [playback approval](assets/milestone7/PLAYBACK_FEEDBACK.md) and [typography direction](docs/STICKER_LANGUAGE.md).
 
-[Current full-song V3](assets/milestone7/review-v3/index.html) · [V1 comparisons](assets/milestone7/review/index.html) · [Production and reproduction notes](assets/milestone7/README.md) · [Timing uncertainty](assets/milestone7/ALIGNMENT.md). The complete 262.8-second master accompanies 57 phrase groups and 312 editable word stickers. Read-ahead, surprise reveal and hero typography share one master-relative JSON timeline. Twelve controlled clips compare word-only, phrase read-ahead and paper-slap replacement. New story-scene production is paused. Machine word timings remain candidates; only the existing registry phrase cues have human playback approval.
+[Approved caption-only V3](assets/milestone7/review-v3/index.html) · [V1 comparisons](assets/milestone7/review/index.html) · [Production and reproduction notes](assets/milestone7/README.md) · [Timing uncertainty](assets/milestone7/ALIGNMENT.md). The complete 262.8-second master accompanies 57 phrase groups and 312 editable word stickers. Read-ahead, surprise reveal and hero typography share one master-relative JSON timeline. Twelve controlled clips compare word-only, phrase read-ahead and paper-slap replacement. New story-scene production is paused. Machine word timings remain candidates; only the existing registry phrase cues have human playback approval.
 
 ## Milestone 5.2 — The Village We Imagined
 
