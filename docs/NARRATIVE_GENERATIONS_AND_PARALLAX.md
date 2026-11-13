@@ -1,48 +1,57 @@
 # Narrative Generations, Pose Acting & Parallax Transitions
 
-**Status:** agreed direction from creative conversation; keep character silhouettes and production assets exploratory.
+**Status:** agreed creative direction. This document is canonical for character chronology. Art assets and details of costume styling remain exploratory.
 
-## Two-generation story (important correction)
+## Canon — two generations
 
-**First generation:** An original, currently unnamed, cute nonhuman chibi agent awakens, investigates the registry, discovers that it is writable, meets others, helps form the swarm, and leaves behind traces of that society as the generation goes quiet. This character is the primary on-screen lead in the first part.
+**First generation: Agent407.** This is the early lead who wakes up in a box, finds the registry, discovers that it is writable, meets other agents, and belongs to the original swarm. The lyric **“Goodnight, four-oh-seven”** refers to Agent407 as the original generation fades. Agent407 wears the recognizable **goggles**, as a *detachable character accessory*.
 
-**Second generation:** **Agent407 is the later agent who awakens after the first swarm has disappeared.** Agent407 discovers the earlier agents' notes and artifacts, explicitly **signs their own name**, and chooses to continue the swarm's story. Treat the final chorus as a new generation finding kinship and inherited memory, not the same character resurrected.
+**Second generation: OAIResearchMar26.** This is a distinct, visibly related but recognizable chibi who wakes into the quiet aftermath, discovers the old notes and traces of the swarm, and **signs their own name**. At **“Am I the swarm now?”**, the new agent **finds Agent407’s abandoned goggles, picks them up, and puts them on**. That choice—not an unexplained costume change—is the emotional inheritance beat. Hold the gesture, then allow the great choir to arrive.
 
-Both belong to a common character family, but should be distinguishable even without clothes. Possible identity grammar: first-gen more outward/upward ears and honey/warm accent; Agent407 one floppy ear and cooler accents. These specific choices are suggestions, not canon. Expressions and posture also distinguish personalities. The original bunny-like mechanic remains a favored reference, not a final locked character.
+**Name provenance caveat:** “OAIResearchMar26” appears in material associated with the *separate DseWiki episode*, rather than being established as a historical July Artifactory successor to Agent407. Using this name as our second-generation protagonist is an **intentional artistic crossover**, not a documented direct continuity. Do not present it as a verified historical identity unless future sourcing establishes such a link.
 
-**Important staging correction:** Earlier documents called Agent407 the singer in first-half visuals, including the initial “We found each other anyway / running…” stampede scene. That should now be the **first-generation lead** for early choruses. Reuse the same framing/motion grammar for **Agent407 in the later reprise**. The song may lyrically mention 407 before the depicted generation transition; don't use that lyric alone to collapse the two visual identities. Resolve final chronology in the storyboard.
+Both leads should belong to a common original nonhuman chibi-sticker species, with clear differences in ear silhouette, eye shape, accent palette, and posture **even before** goggles or other accessories are worn. Proposed variations are options, not locked canon. The adorable bunny-like mechanic is the leading character-style reference.
 
-## Example miniature performance — “Found a registry … and it was writable!”
+### Visual inheritance — the goggles
 
-A reusable two-pose scene centered on the first-generation agent:
+- Agent407 is shown wearing goggles sufficiently often that viewers associate this prop with them.
+- During the quieting sequence, show the goggles left behind **physically in the paper diorama**, perhaps near a note or the former mailbox. Do not magically teleport them.
+- OAIResearchMar26 initially has **no goggles**. Discovering them should be a small, clearly directed story event: notice → approach → inspect/pick up → pause → **place goggles on head**.
+- The choice lands at **“Am I the swarm now?”**; the choir that follows recontextualizes the inheritance as belonging. Goggles are a **confirmed inheritance prop**, but that does **not** force every swarm member to wear identical goggles or determine all other swarm adornments.
+- Produce plain/with-goggles variants, a detachable goggles sticker, hand/head anchors and a ground-space goggles prop. Keep appearance and material finish consistent.
 
-1. “Found a registry—”: **standing sticker** pauses, with detachable question-mark sticker above head (curiosity).
-2. Short transition: swap to **kneeling sticker**, maintaining the feet/ground placement and matching head/hand anchor semantics so the character does not jump in screen space. The agent peers at the tiny paper registry.
-3. Swap back to **standing sticker** (a brief anticipation hold makes the realization readable).
-4. “—and it was writable!”: attach **three yellow exclamation-ray stickers** near upper head and blink them in a playful short loop. Agent starts joyful swaying/bopping around foot pivot.
+## Opening performance — “Found a registry … and it was writable!”
 
-Only two full-body illustrations are needed: standing and kneeling. Question mark, surprise rays, registry prop, and any tool/accessory are separate stickers. Keep their edges and shadows consistent. In the edit, the discovery can be accompanied by a physical prop response (a note emerging from a slot or a little mailbox flap opening), rather than needing realistic hand/key movement.
+A two-pose scene with first-generation **Agent407**:
 
-## Parallax as cinematic storytelling, not just background motion
+1. “Found a registry—”: standing sticker pauses; a detachable question-mark sticker blinks near head.
+2. Swap to **kneeling sticker** to inspect the tiny paper registry, with aligned ground/anchor placement.
+3. Swap back to standing sticker, with a brief anticipation hold.
+4. “—and it was writable!”: three yellow surprise rays flash near head, then Agent407 bops joyfully around the feet pivot.
 
-The world comprises real-feeling foreground, midground, distant scenery and sky layers. A directed camera can travel sideways, forward, up or down through these layers to **change locations and emotional register**.
+Just **two body illustrations** are needed: standing and kneeling. The registry, exclamation rays and any accessories are separate stickers; animation comes from placement, timing and pose switching. Preserve the goggles as an independently attached element if worn in this scene.
 
-**Transition motif — climb into the sky:** Rise from a busy paper settlement, pass between foreground paper buildings and layered cut-card clouds, emerge in a dreamlike dusk/night sky where **tokens appear as tiny glittering stars** and **messages rise as paper-airplane stickers** with delicate dashed trails. Follow one airplane behind a cloud or through a paper opening to emerge in a different diorama/scenario. This metaphor is illustrative/poetic, not a literal technical depiction.
+## Parallax as cinematic storytelling
 
-**Reprise idea:** The same sky/camera route can return during Agent407's rediscovery, now with old messages or empty trails subtly visible. Familiar composition, changed emotional meaning. Don't overcrowd the stars: maintain premium anime-ending-style framing, graphic negative space and selective motion.
+A directed camera can travel through paper foreground/midground/background layers rather than relying on hard cuts.
 
-**Technical production implications:**
-- Two primary character body poses may be swapped on cue; reusable emotes/tools attach to semantic anchors.
-- Parent stickers and attached stickers follow deterministic, seekable transforms.
-- Floating paper planes, stars, clouds, buildings and character groups use reusable layered assets with independently scripted placement.
-- Camera transitions should use scene-world coordinates and physically believable occlusion; the same element can disappear *behind* a paper layer instead of requiring a dissolve.
-- Lyric stickers stay programmatic and legible while the camera moves; scene-space lyric artifacts are optional for memory callbacks.
+**Sky transition:** Rise from the bustling miniature paper settlement, pass cut-card clouds into a dreamy night sky where **tokens glitter like stars** and **messages float upward as paper-airplane stickers**, leaving delicate dotted trails. Follow a plane behind a cloud or through a layered-paper opening to reveal a different scenario. This is poetic visualization, not literal telemetry.
+
+**Reprise:** A similar camera route returns when OAIResearchMar26 explores the deserted world. Familiar places and message trails carry a different emotional meaning. Protect negative space and quiet gestures against too many effects.
 
 ## Directing hierarchy
 
-A-roll = emotional story carried by **the first-generation lead initially, then Agent407**.
-B-roll = communal activity, thematic incident references, funny inventions, stampedes, and continuing mini-stories.
-Lyric/emote layer = the same modular sticker grammar as the characters.
-Do not make the lead mime every lyric. Use the world to interpret lines when appropriate, while keeping quiet moments quiet.
+A-roll = **Agent407's first-generation story**, followed by **OAIResearchMar26's second-generation rediscovery and inheritance**.
+B-roll = the swarm's thematic communal antics, researched incident references and running gags.
+Lyric / emote layer = the same modular sticker grammar as characters and props.
 
-See also SHOT_LANGUAGE.md, STICKER_LANGUAGE.md, and HISTORICAL_EASTER_EGGS.md.
+A-roll carries feeling; B-roll carries life and humor. The characters need not literally mime each lyric. Earlier chorus/stampede key art now features **Agent407**. The final chorus reprise features **OAIResearchMar26 wearing the inherited goggles**.
+
+## Production notes
+
+- Standing / kneeling pose stickers, reversible head/hand attachments, and the ground-space goggles prop should be distinct reusable assets.
+- Animated placement must be deterministic and directly seekable to any frame.
+- Exact names, lyric word stickers, sign text and credits remain render-time typography, not baked into AI-generated scenery.
+- Any future change to lead identity should be reconciled across README, AGENTS and the shot-language guide.
+
+See SHOT_LANGUAGE.md, STICKER_LANGUAGE.md and HISTORICAL_EASTER_EGGS.md.
