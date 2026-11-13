@@ -41,10 +41,10 @@ See [Sprite Production Handoff](docs/SPRITE_PRODUCTION_HANDOFF.md), [Sticker Sta
 ## Workflow
 
 1. Open this GitHub repository as a project in Codex and select **GPT-6 Astra** if available to your account.
-2. Read `AGENTS.md`, `docs/CREATIVE_DIRECTION.md`, and `docs/PROTOTYPE_BRIEF.md`.
-3. Generate an art-direction contact sheet / initial concepts, then create **separate transparent production cutouts** and layered backgrounds with the imagegen skill.
-4. Build and render the prototype; review at full playback speed and as still frames.
-5. Iterate on a feature branch and present results for art-direction approval before expanding to the full music video.
+2. Read `AGENTS.md`, `docs/SPRITE_PRODUCTION_HANDOFF.md`, `docs/STICKER_STAGE_ENGINE.md`, and the linked narrative/style documents. **Apply Rule Zero before creating code.**
+3. Attach the user's **selected bunny-mechanic image** in Codex or commit it as `assets/reference/selected-bunny-mechanic.png` (it is not currently in the repo). Work in a feature branch.
+4. Run two small workstreams: **(a)** Agent407 ungoggled standing/kneeling high-resolution sprite masters and a preview sheet for approval; **(b)** registry-scene millisecond-cue script runner using temporary assets and proven Remotion capabilities.
+5. Review art, reproducible render/timing tests, and what was *not* built. Only after approval integrate approved sprites into an animated prototype; propose a PR before broader film production.
 
 ## Guiding Constraint
 
