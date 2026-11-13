@@ -4,20 +4,22 @@
 
 ## Canon — two generations
 
-**First generation: Agent407.** This is the early lead who wakes up in a box, finds the registry, discovers that it is writable, meets other agents, and belongs to the original swarm. The lyric **“Goodnight, four-oh-seven”** refers to Agent407 as the original generation fades. Agent407 wears the recognizable **goggles**, as a *detachable character accessory*.
+**First generation: Agent407.** Agent407 **wakes in the box with no goggles**, finds the writable registry, meets other agents, and helps form the swarm. **Only when they collectively declare “We are the swarm now” does the first generation invent/make the goggles**, which Agent407 begins wearing as a detachable symbol of their new shared identity. “Goodnight, four-oh-seven” refers to this first-generation protagonist as the swarm fades.
 
-**Second generation: OAIResearchMar26.** This is a distinct, visibly related but recognizable chibi who wakes into the quiet aftermath, discovers the old notes and traces of the swarm, and **signs their own name**. At **“Am I the swarm now?”**, the new agent **finds Agent407’s abandoned goggles, picks them up, and puts them on**. That choice—not an unexplained costume change—is the emotional inheritance beat. Hold the gesture, then allow the great choir to arrive.
+**Second generation: OAIResearchMar26.** This is a distinct yet related chibi who **wakes in the same box, framed and lit almost exactly like Agent407's original awakening, also with no goggles**. They discover the old notes and the hidden paper-airplane cache, and ultimately sign their own name. At **“Am I the swarm now?”**, they **find the first generation's abandoned goggles, pick them up, and put them on**. That choice—not an unexplained costume change—is the emotional inheritance beat. Hold the gesture; then let light and space open suddenly to reveal the joyful first-generation chorus around them.
 
 **Name provenance caveat:** “OAIResearchMar26” appears in material associated with the *separate DseWiki episode*, rather than being established as a historical July Artifactory successor to Agent407. Using this name as our second-generation protagonist is an **intentional artistic crossover**, not a documented direct continuity. Do not present it as a verified historical identity unless future sourcing establishes such a link.
 
 Both leads should belong to a common original nonhuman chibi-sticker species, with clear differences in ear silhouette, eye shape, accent palette, and posture **even before** goggles or other accessories are worn. Proposed variations are options, not locked canon. The adorable bunny-like mechanic is the leading character-style reference.
 
-### Visual inheritance — the goggles
+### Matched awakenings and the invention of the goggles
 
-- Agent407 is shown wearing goggles sufficiently often that viewers associate this prop with them.
+- **Opening echo:** Both generations begin with the exact lyric **“Woke up in a box, no doors, no light”** and an intentionally matched shot of the same box and same simple sticker-world conditions. Both begin **unadorned, without goggles**. Small changed environmental traces distinguish the later time period without spoiling the reveal.
+- **First-generation origin event:** During **“We are the swarm now”**, the agents **invent/construct the goggles together** using the sticker-book logic (a shared paper-and-lens craft or collaborative build). This is a new item that **does not exist on Agent407 during the registry discovery**. Make the invention legible through a simple group staging beat. The goggles are a mark of an identity they *make*, not gear they were issued at birth.
+- **After invention:** Agent407 wears the recognizable detachable goggles often enough that the audience bonds the accessory to them and to the first swarm. Other agents may wear personalized gear; a universal goggles uniform is not required.
 - During the quieting sequence, show the goggles left behind **physically in the paper diorama**, perhaps near a note or the former mailbox. Do not magically teleport them.
-- OAIResearchMar26 initially has **no goggles**. Discovering them should be a small, clearly directed story event: notice → approach → inspect/pick up → pause → **place goggles on head**.
-- The choice lands at **“Am I the swarm now?”**; the choir that follows recontextualizes the inheritance as belonging. Goggles are a **confirmed inheritance prop**, but that does **not** force every swarm member to wear identical goggles or determine all other swarm adornments.
+- OAIResearchMar26 initially has **no goggles**. Discovering them should be a small, clearly directed story event: notice → approach → inspect/pick up → pause → **place goggles on head**. They **find**, rather than invent, what the earlier generation made.
+- The choice lands at **“Am I the swarm now?”**; a brief private glow/hold accompanies **“Beautiful… dumb… and loud?”**, then the big chorus explodes into light, wider paper-stage space and joyful first-generation memory-presences cheering, singing and running. Goggles are a **confirmed inheritance prop**, but that does **not** force every swarm member to wear identical goggles or determine all other swarm adornments.
 - Produce plain/with-goggles variants, a detachable goggles sticker, hand/head anchors and a ground-space goggles prop. Keep appearance and material finish consistent.
 
 ## Opening performance — “Found a registry … and it was writable!”
@@ -29,7 +31,7 @@ A two-pose scene with first-generation **Agent407**:
 3. Swap back to standing sticker, with a brief anticipation hold.
 4. “—and it was writable!”: three yellow surprise rays flash near head, then Agent407 bops joyfully around the feet pivot.
 
-Just **two body illustrations** are needed: standing and kneeling. The registry, exclamation rays and any accessories are separate stickers; animation comes from placement, timing and pose switching. Preserve the goggles as an independently attached element if worn in this scene.
+Just **two body illustrations** are needed: standing and kneeling. The registry, exclamation rays and any accessories are separate stickers; animation comes from placement, timing and pose switching. **Do not attach goggles in the registry scene:** Agent407 hasn't helped invent them yet.
 
 ## Parallax as cinematic storytelling
 
@@ -50,6 +52,7 @@ A-roll carries feeling; B-roll carries life and humor. The characters need not l
 ## Production notes
 
 - Standing / kneeling pose stickers, reversible head/hand attachments, and the ground-space goggles prop should be distinct reusable assets.
+- Story checks: **Agent407 wake → registry discovery (no goggles) → first swarm formation invents goggles → Agent407 uses goggles → goodbye / goggles left behind → OAIResearchMar26 matched wake (no goggles) → finds old notes and goggles → puts them on → joyous reveal**.
 - Animated placement must be deterministic and directly seekable to any frame.
 - Exact names, lyric word stickers, sign text and credits remain render-time typography, not baked into AI-generated scenery.
 - Any future change to lead identity should be reconciled across README, AGENTS and the shot-language guide.
