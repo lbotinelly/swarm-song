@@ -1,0 +1,149 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/milestone5/masters/blue-curtain-v1.png",
+      "sourceSha256": "ed7f24955bf1a957718853a54d3840be20068bd821afbe92622df3a2824f2e18",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "output": "public/milestone5/blue-curtain-v1.png",
+      "outputDimensions": [
+        1224,
+        1736
+      ],
+      "outputSha256": "534f2ea484ba6af509892594ed46bc58829416212cf7148291b2a8f149704a10",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        168,
+        205,
+        1057,
+        1531
+      ]
+    },
+    {
+      "source": "assets/milestone5/masters/folded-lamp-v1.png",
+      "sourceSha256": "25549c11c869cf827f1f3f3e3244dcfcf018ff096fc0e48c65166230173ec38d",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone5/folded-lamp-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "592932de0c8f3a1548f2366785bf41a89b6f29a0bf64933bd869795f25912e2e",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        387,
+        171,
+        1307,
+        1028
+      ]
+    },
+    {
+      "source": "assets/milestone5/masters/kraft-wall-v1.png",
+      "sourceSha256": "eca0eb9f9d3c935ff7f59b446d8c01d5317223078780e45851de956ed9581c76",
+      "nativeDimensions": [
+        1448,
+        1086
+      ],
+      "output": "public/milestone5/kraft-wall-v1.png",
+      "outputDimensions": [
+        1648,
+        1286
+      ],
+      "outputSha256": "8231d1d74f2a0174e7763e2469c16ed39df42cc5cdf33b63d16e2481f86763ff",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        176,
+        167,
+        1471,
+        1154
+      ]
+    },
+    {
+      "source": "assets/milestone5/masters/ochre-quilt-v1.png",
+      "sourceSha256": "2c9711ae2ea911a678870c1e369005f6af611cd7abbb79058db58b5e308c4e9f",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/milestone5/ochre-quilt-v1.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "e321c2dc5af891e319d3de17aaf073ab3939746a41bdd40e341df5dd3d1714bd",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        160,
+        199,
+        1813,
+        887
+      ]
+    },
+    {
+      "source": "assets/milestone5/masters/paper-fan-v1.png",
+      "sourceSha256": "dc4cbf8ce33209b520c376a96257ac07e6b127aba418df10141dddbf9592f4e5",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "output": "public/milestone5/paper-fan-v1.png",
+      "outputDimensions": [
+        1454,
+        1454
+      ],
+      "outputSha256": "0fa9d2edbb76b4c261fdc61d6739a9684d9bb860775bf613d89e89c966e07766",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        114,
+        110,
+        1332,
+        1333
+      ]
+    },
+    {
+      "source": "assets/milestone5/masters/veranda-front-v1.png",
+      "sourceSha256": "26c0ffaed3b12a78d262a8e39b6f6db6e7017532d7561678fd225b6c0663e3fa",
+      "nativeDimensions": [
+        2172,
+        724
+      ],
+      "output": "public/milestone5/veranda-front-v1.png",
+      "outputDimensions": [
+        2372,
+        924
+      ],
+      "outputSha256": "2c30643a61cd2c57b6c6eecda8352350034bba187eeef0fb774e2ed80af00d69",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        159,
+        236,
+        2218,
+        756
+      ]
+    }
+  ]
+}

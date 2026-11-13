@@ -1,0 +1,28 @@
+{
+  "nativeMasters": 6,
+  "approvedMastersPreserved": 6,
+  "paddingPixels": 100,
+  "seekComparison": {
+    "maxChannelDifference": 2.0,
+    "meanChannelDifference": 7.748199588477367e-05,
+    "changedPixels": 377
+  },
+  "residentVisibleVersusRemoved": {
+    "0": {
+      "maxChannelDifference": 188.0,
+      "meanChannelDifference": 1.177124324845679,
+      "changedPixels": 51895
+    },
+    "195": {
+      "maxChannelDifference": 2.0,
+      "meanChannelDifference": 2.4112654320987654e-06,
+      "changedPixels": 8
+    },
+    "240": {
+      "maxChannelDifference": 2.0,
+      "meanChannelDifference": 2.4112654320987654e-06,
+      "changedPixels": 8
+    }
+  },
+  "note": "Exact time state; raster equality is bounded to 5/255 max and .002 mean because Chromium antialiasing can vary. Closed-curtain comparison removes only the resident, not its floor shadow."
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "kraft-wall-v1",
+    "prompt": "Use case: stylized-concept. Production component for handcrafted papercraft miniature cinema. ONE isolated warm ivory-kraft cardstock rectangular wall panel, orthographic straight-on flat front view, landscape 4:3. The panel itself fills about85% of canvas with generous genuine transparent margin. Exquisite fine natural paper fibers and very soft uneven warm cream watercolor wash; subtle evidence of a real cut edge and thickness: narrow darker kraft edge at bottom/right, tiny handmade irregularities at corners, two small foldable mounting tabs projecting from lower edge. No room, no furniture, no objects, no scene, no illustration printed on paper, no patterns, no words, no ruled lines, no black border, no stickerwhiteoutline. This is one actual blank physical sheet to stand as a wall, not a background image or material swatch collage. Diffuse flat surface illumination, keep any shading internal and restrained; no external drop shadow, glow or backdrop. Highest useful native resolution, lossless RGBA with fully transparent exterior. Tactile but delicate, charming watercolor paper consistent with soft cream bunny stickers. Do NOT create perspective or a floor: the renderer will place this flat panel in space.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "id": "blue-curtain-v1",
+    "prompt": "Use case: stylized-concept. ONE isolated paper curtain component for a handcrafted miniature film set, front orthographic view. A single broad rectangular muted dusty-blue watercolor cardstock curtain with six gentle accordion folds running vertically, uneven handcut lower hem, tiny punched hanging holes along its top fold, soft cream exposed paper fibers at edges. It is PAPER folded like fabric, not real cloth. Hanging straight and covering a doorway, width about two-thirds of height. Highest useful native detail. Transparent exterior and generous margin. No rod, wall, window, tieback, tassels, ropes, background, room, furniture, text, printed motifs, icons or characters. No white sticker outline or external shadow/glow. Show restrained physical shadow only inside the fold valleys. Charming matte watercolor softness and fine paper grain, not glossy/photoreal fabric, not a dramatic wrinkled sheet. This independent panel slides sideways on a separate rail in the renderer, so keep silhouette clean and front-facing.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "id": "folded-lamp-v1",
+    "prompt": "Use case: stylized-concept. ONE isolated miniature pendant lampshade made from folded warm ochre and cream cardstock, front view with only a little underside visible. Six faceted paper folds create a small bell shade, handcut scalloped lower edge, tiny cream inner diffuser visible, narrow folded tab at top for hanging. No cord (renderer supplies thread), no bulb glare, no light rays or external glow, no shadow beyond object. A warm OFF lamp with local soft paper shading only, not switched on. Tactile fine watercolor grain, exposed pale paper edges, charming slightly uneven construction, not metal or plastic. Transparent background with very generous padding, highest useful native resolution. No room, objects, text, collage, labels or characters. A physical prop suitable for assembling into a miniature apartment film set.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "id": "veranda-front-v1",
+    "prompt": "Use case: stylized-concept. ONE isolated miniature papercraft balcony-front assembly, straight-on orthographic front view, genuinely transparent background, highest useful native resolution. A very wide low railing: width about five times total height. Five short thick warm kraft-cardboard upright posts, one gently imperfect cream top rail, an ochre horizontal lower beam; below it a visible thick corrugated-cardstock floor edge with tiny evenly visible hollow corrugation flutes. This is a tiny physical piece lovingly handcut and glued, not wood! Fine watercolor paper fibers, exposed cream cut edges, a tiny muted blue paper repair patch at one lower corner, two unobtrusive folded mounting tabs on underside. Railing openings BETWEEN posts must be genuinely transparent so a bunny behind is visible through them. No filled wall or fenceboard behind the openings. Restrained shadows only within construction, no background or external glow/groundshadow. Slight handmade crookedness, pleasing delicacy, coherent paper thickness. No bunnies, plant, cloth, curtain, furniture, text, logos, white stickeroutline, room or scene. Whole piece centered with generous transparent margin. Practical foreground occluder for an actual layered paper apartment set.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "id": "ochre-quilt-v1",
+    "prompt": "Use case: stylized-concept. One isolated tiny folded PAPER QUilt, a physical component for a miniature papercraft bed. Straight front view, broad landscape rectangle about twice as wide as tall. Muted warm ochre watercolor cardstock printed with a sparse tiny dusty-blue four-petal stitch motif, soft paperfibers. Upper edge is folded over into one rounded paper hem, bottom corners turn down and show pale cut-paper thickness. A few gentle vertical fold creases, not realistic fabricwrinkles. Transparent exterior, no bed frame, mattress, pillow, room, otherprops, characters, lettering, white stickeroutline, castgroundshadow, background or glow. Fine exquisite handmade craft, charming restrained softness compatible with cream watercolor bunny stickers. Highest useful native resolution and generous transparent padding. This is a standalone blanket front drape, not an illustrated bedroom.",
+    "references": [],
+    "transparent": true
+  },
+  {
+    "id": "paper-fan-v1",
+    "prompt": "Use case: stylized-concept. One isolated circular paper FAN INSERT for a handmade GPU-shaped apartment building, orthographic front view, square composition, fully transparent exterior, generous padding, highest useful native detail. Nine broad cream-and-muted-teal watercolor cardstock fan blades lovingly folded and overlapped into a circular spiral around a small plain ochre paper hub. Visible pale cut edges, subtle fold creases, fine paper fibers, soft physical shadows between overlapping blades. A delicate corrugated cardboard ring around the outer circumference holds the blades as one real assembled component. Recognizably a cooling fan reimagined entirely as a child's exquisite paper miniature. No metal, bolts, gloss, electronic parts, words, logos, mounting panel, building, backdrop, drop shadow outside silhouette, glow, white stickerborder or characters. Keep circular symmetry handmade and slightly imperfect. One coherent physical fan rosette, no contact sheet. This component will be mounted onto a separate teal cardstock housing plane in the renderer.",
+    "references": [],
+    "transparent": true
+  }
+]

@@ -2,6 +2,8 @@
 
 Status: strong agreed emotional sequence, precise timing to be aligned against master audio and lead-vocal stem, not inferred.
 
+Approved paper-world detail: the GPU building fans turn gently while the homes are awake. When the building goes dark, they coast down smoothly to rest rather than stopping abruptly. Keep this as flat paper-cutout motion within the approved child-assembled collage language. The eight-second M5 power-down preview uses demonstration timings only; align the film version with this sequence and preserve the goggles as the last light.
+
 ## The governing image
 
 **The goggles are the last object visible before total blackout.** They do not physically evaporate; their illumination goes out. Much later, second-generation OAIResearchMar26 will find these same goggles among papers hidden near the old cache and wear them at 'Am I the swarm now?', triggering the joyful full-cast reunion. The film's two lighting transitions form one visual sentence: **first generation vanishes into darkness around the goggles; second generation restores the light by putting them on.**
