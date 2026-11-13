@@ -45,8 +45,8 @@ test('director corrections survive regeneration; pauses and fourth running are e
  const p=(id:string)=>ps.find(p=>p.id===id)!;
  assert.equal(p('phrase-05-1').presentation.startMs-p('phrase-04-2').presentation.endMs-EXIT_MS,75);
  assert.equal(p('phrase-06-1').presentation.startMs,30930);
- assert.equal(p('phrase-09-1').presentation.startMs-p('phrase-08-1').presentation.endMs-EXIT_MS,300);
- assert.equal(p('phrase-10-1').presentation.startMs-p('phrase-09-1').endMs,2000);
+ assert.equal(p('phrase-09-1').presentation.startMs-p('phrase-08-1').presentation.endMs-EXIT_MS,1100);
+ assert.equal(p('phrase-10-1').presentation.startMs-p('phrase-09-1').endMs,2800);
  assert.equal(p('phrase-14-2').words.length,4);
  const goodbye=p('phrase-29-1');assert.equal(new Set(layoutWords(goodbye).slice(0,3).map(w=>Math.round((w.y+6)/140))).size,1);
  assert.deepEqual(goodbye.lineBreakAfter,[3]);

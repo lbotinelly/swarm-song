@@ -35,12 +35,12 @@
       "reason": "Leo: sustained me holds at least 1500ms longer."
     },
     "phrase-09-1": {
-      "startMs": 43270,
-      "reason": "Allow 300ms clear after sustained me and its 150ms fade."
+      "startMs": 44070,
+      "reason": "Leo follow-up: delay this entrance another800ms from43270 to44070; outgoing hold unchanged."
     },
     "phrase-10-1": {
-      "startMs": 48840,
-      "reason": "Leo: two-second vocal pause after now; next phrase arrives 2000ms after candidate now ending46840."
+      "startMs": 49640,
+      "reason": "Leo follow-up: delay this entrance another800ms from48840 to49640; outgoing hold unchanged."
     }
   },
   "editorial": {
@@ -52,7 +52,12 @@
       "status": "human-confirmed-count; split-boundary-estimated",
       "source": "Leo playback feedback, November 13, 2026",
       "approval": "First running refrain has four repeats; the existing second running spans two occurrences.",
-      "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset."
+      "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset.",
+      "playbackApproval": {
+        "response": "running x 4 is perfect now",
+        "scope": "Current four-repeat caption performance approved; do not reinterpret as measured exact acoustic boundaries.",
+        "date": "2026-11-13"
+      }
     }
   }
 }

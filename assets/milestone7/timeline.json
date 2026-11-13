@@ -1147,14 +1147,14 @@
         3
       ],
       "presentation": {
-        "startMs": 43270,
+        "startMs": 44070,
         "endMs": 47080,
-        "readAheadMs": -1470,
+        "readAheadMs": -2270,
         "precedingVocalGapMs": 120,
         "review": {
           "status": "director-guided-editorial-estimate",
           "source": "Leo playback feedback, November13,2026",
-          "reason": "Allow 300ms clear after sustained me and its 150ms fade."
+          "reason": "Leo follow-up: delay this entrance another800ms from43270 to44070; outgoing hold unchanged."
         }
       },
       "evidence": "evidence/community-qwen.json"
@@ -1231,14 +1231,14 @@
       "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
-        "startMs": 48840,
+        "startMs": 49640,
         "endMs": 54560,
-        "readAheadMs": -840,
+        "readAheadMs": -1640,
         "precedingVocalGapMs": 1160,
         "review": {
           "status": "director-guided-editorial-estimate",
           "source": "Leo playback feedback, November13,2026",
-          "reason": "Leo: two-second vocal pause after now; next phrase arrives 2000ms after candidate now ending46840."
+          "reason": "Leo follow-up: delay this entrance another800ms from48840 to49640; outgoing hold unchanged."
         }
       },
       "evidence": "evidence/community-qwen.json"
@@ -1735,7 +1735,12 @@
         "status": "human-confirmed-count; split-boundary-estimated",
         "source": "Leo playback feedback, November 13, 2026",
         "approval": "First running refrain has four repeats; the existing second running spans two occurrences.",
-        "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset."
+        "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset.",
+        "playbackApproval": {
+          "response": "running x 4 is perfect now",
+          "scope": "Current four-repeat caption performance approved; do not reinterpret as measured exact acoustic boundaries.",
+          "date": "2026-11-13"
+        }
       }
     },
     {
