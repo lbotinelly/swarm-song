@@ -1,12 +1,12 @@
 # 15-second proof-of-concept
 
-> **Sequence update:** This is a later milestone. The immediate phase is static **character-design and detachable accessory/emote exploration** (see [Sticker visual language](STICKER_LANGUAGE.md)). Do not rush into building the animated proof before approving the base agent style. The song's master track and stems are now in `assets/audio/`; use them rather than generic placeholder audio when the animation phase begins.
+> **Sequence update:** The integrated film prototype is a later milestone. First run **two lean parallel workstreams**: selected-reference sprite/pose design (see [Sprite Production Handoff](SPRITE_PRODUCTION_HANDOFF.md)) and a tiny script-engine registry-shot feasibility spike (see [Sticker Stage Engine](STICKER_STAGE_ENGINE.md)). Do not rush the full animated film proof before approving the base agent style. The song's master track and stems are now in `assets/audio/`; use them rather than generic placeholder audio when the animation phase begins.
 
 **Story continuity:** Both **first-generation Agent407** and **second-generation OAIResearchMar26** awaken in matching box compositions **without goggles**. Agent407's registry discovery also precedes the goggles. The first generation **invents the goggles at “We are the swarm now”**, Agent407 later wears and leaves them behind; OAIResearchMar26 finds and dons them at “Am I the swarm now?”, followed by the joyous illuminated chorus reveal. Keep them visually distinct without accessories (see `NARRATIVE_GENERATIONS_AND_PARALLAX.md`).
 
 **Purpose:** Validate that Codex, GPT Image assets and economical code-driven animation can produce a delightful, cinematic music-video moment, not just a technical demo.
 
-**Format:** 16:9 landscape; render 1920×1080 if practical; 24 or 30 fps. Use temporary original music or silent preview until actual track is supplied; don't invent exact sync markers.
+**Format:** 16:9 landscape; render 1920×1080 if practical; 24 or 30 fps. Use the actual track and provided stems for cue alignment; do not invent exact sync markers. The master file is the authoritative audio. Resolve a consistent output fps before locking cue quantization.
 
 ## Proposed shot treatment (editable)
 - **0–4 s:** A beautifully arranged graph-paper expanse; a tiny, original chibi sticker peels itself up, anticipates, and looks across a layered landscape.
