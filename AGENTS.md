@@ -2,6 +2,8 @@
 
 ## Active milestone — full-song lyric performance (M7)
 
+Leo found the V4 musical moments well timed and requested missing cues plus percussion bops. Preserve `musical-cues.json`; additions and percussion live in separate maps. Read `assets/milestone7/PERCUSSION_REVIEW.md` for V5. The full lyric timeline remains unchanged.
+
 Leo approved the V3 typography test and requested a musical-cue map plus a new full test with cue labels and solo-agent gestures. Read `assets/milestone7/MUSIC_REVIEW.md`. This small V4 listening study is authorized; new story-scene expansion remains paused. Preserve the approved caption timeline. Instrumental cue timings and emotional roles remain candidates until listening review.
 
 Read `assets/milestone7/README.md`, `BRIEF.md`, `ALIGNMENT.md` and `REVIEW.md`. Pause new environments, poses, village animation, registry flights and closing credits. The song master is the canonical clock. A complete phrase arrives before singing; independent die-cut words perform selectively; the next phrase lands over it. Leo’s V1 playback notes establish bottom-half default captions and fast stationary fade-outs, with reduced pre-roll after long vocal gaps; see `assets/milestone7/PLAYBACK_FEEDBACK.md`. Preserve protected registry phrase cues; all other timing remains candidate evidence unless explicitly reviewed. Keep the complete V1 reviewable rather than expanding architecture. No model downloads, cloud transcription or new story scenes are authorized by this milestone.

@@ -2,6 +2,8 @@
 
 ## Milestone 7 — The song is the timeline
 
+[V5 percussion and expanded musical map](assets/milestone7/review-v5/index.html) preserves the well-timed V4 moments, adds five cue candidates, and gives the solo agent small percussion-driven bops. [Details](assets/milestone7/PERCUSSION_REVIEW.md).
+
 [V4 musical-cue map and listening test](assets/milestone7/music-review/index.html) adds selected musical moments and solo-agent gestures while preserving the approved captions. [Evidence, limits and reproduction](assets/milestone7/MUSIC_REVIEW.md). Eighteen of 22 candidate cues drive motion; four ambiguous matches remain visible for listening review without gestures.
 
 Leo approved the updated 23–72s timing preview on November 13, 2026; preserve its presentation timing. Finger Paint for lyrics and Bitcount Single for agent-message B-roll are also approved as the next typography direction; the new V3 full caption test implements them while preserving V2 timing. See [playback approval](assets/milestone7/PLAYBACK_FEEDBACK.md) and [typography direction](docs/STICKER_LANGUAGE.md).

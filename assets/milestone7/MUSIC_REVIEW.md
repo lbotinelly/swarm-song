@@ -1,5 +1,7 @@
 # Musical cues — V4 listening study
 
+**Playback update:** Leo found the captured moments well timed, while noting missing moments and requesting percussion bops. The original map is now protected; see `music-playback-feedback.json`. [V5 additions and percussion](PERCUSSION_REVIEW.md) extend this pass without moving its cues.
+
 Leo requested musical moments in both the timing map and the full caption test, with the solo agent responding. This authorizes the small listening study; it does not resume new story scenes or character production. V3 typography was approved with minor future refinements, and its caption data remains byte-for-byte unchanged.
 
 ## Watch and listen

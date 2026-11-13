@@ -1,5 +1,17 @@
 import {clamp,smooth} from './lyrics.ts';
 export type MusicCue={id:string;sectionId:string;startMs:number;peakMs:number;endMs:number;label:string;emotionalRole:string;action:string;enabled:boolean;uncertaintyMs:number};
+export type PercussionAccent={atMs:number;strength:number};
+
+export function percussionStateAt(ms:number,accents:readonly PercussionAccent[],majorGesture=false){
+ let index=accents.length-1;
+ while(index>=0&&accents[index].atMs>ms)index--;
+ const hit=accents[index];const age=hit?ms-hit.atMs:Infinity;
+ if(age>=260)return {y:0,rotation:0,scaleY:1,pulse:0};
+ const pulse=Math.sin(Math.PI*age/260)**2;
+ const quiet=ms>=111000&&ms<153000;
+ const amount=(.4+.6*hit.strength)*(majorGesture?.2:1)*(quiet?.3:1);
+ return {y:-11*pulse*amount,rotation:(index%2?1:-1)*2.5*pulse*amount,scaleY:1-.018*pulse*amount,pulse};
+}
 
 // One small, seekable performance for this solo-agent listening test.
 // The peak is the gesture's apex, not the start of an arbitrary repeating loop.

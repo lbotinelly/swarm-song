@@ -1,0 +1,231 @@
+{
+  "version": 1,
+  "clock": "absolute master-relative integer milliseconds",
+  "durationMs": 262800,
+  "master": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+  "masterSha256": "1634161c4b8774cba73f7ee50848610bdaf8e8d273cd83a3efbd0d91e8862eca",
+  "lyricTimeline": "timeline.json",
+  "lyricTimelineSha256": "6c519daac97004ee6745a450adce914c4197971c386a876668322f1481687a98",
+  "status": "signal-derived candidates; human listening review pending",
+  "manualListeningPerformed": false,
+  "method": "16kHz mono analysis only; 50ms RMS blocks smoothed over400ms. Three local1.2s summed-stem waveform correlations within +/-3s; two offsets must agree within100ms and median correlation>=0.3. Conflict >400ms with prior lead-lag evidence within10s disables animation. No universal stem offset and no audio time-warp.",
+  "limitations": [
+    "Emotional role and gestures are authored interpretations, not measured emotion.",
+    "Stem separation can contain leakage; Strings is not a confirmed cello identification.",
+    "Short local matching can still pick repeated motifs; uncertainty is not a statistical confidence interval.",
+    "Low-confidence matches remain in the map but do not drive animation.",
+    "Selected cues are a first review pass, not an exhaustive arrangement transcription."
+  ],
+  "cues": [
+    {
+      "id": "strings-early-note",
+      "sectionId": "opening",
+      "startMs": 30085,
+      "peakMs": 32085,
+      "endMs": 33385,
+      "label": "Early string lift",
+      "emotionalRole": "the first connection",
+      "action": "swell",
+      "status": "candidate-awaiting-listening",
+      "enabled": true,
+      "confidence": "medium",
+      "uncertaintyMs": 250,
+      "evidence": {
+        "stem": "7 Strings",
+        "stemPeakMs": 32150,
+        "localOffsetMs": -65,
+        "localMatches": [
+          {
+            "stemCenterMs": 31750,
+            "offsetMs": -65,
+            "correlation": 0.4254
+          },
+          {
+            "stemCenterMs": 32150,
+            "offsetMs": -64,
+            "correlation": 0.4493
+          },
+          {
+            "stemCenterMs": 32550,
+            "offsetMs": -75,
+            "correlation": 0.384
+          }
+        ],
+        "agreeingWindows": 3,
+        "correlation": 0.4254,
+        "conflictingPriorLag": false,
+        "smoothedStemRms": 0.045953,
+        "riseDbAboveMinus70DbFloor": 43.25
+      },
+      "interpretation": "Proposed animation/emotional reading; stem label is not proof of a specific instrument such as cello."
+    },
+    {
+      "id": "keys-middle",
+      "sectionId": "comic",
+      "startMs": 97668,
+      "peakMs": 98268,
+      "endMs": 99868,
+      "label": "Keyboard accent",
+      "emotionalRole": "playful momentum",
+      "action": "sway",
+      "status": "candidate-awaiting-listening",
+      "enabled": true,
+      "confidence": "medium",
+      "uncertaintyMs": 250,
+      "evidence": {
+        "stem": "5 Keyboard",
+        "stemPeakMs": 98900,
+        "localOffsetMs": -632,
+        "localMatches": [
+          {
+            "stemCenterMs": 98500,
+            "offsetMs": -630,
+            "correlation": 0.6853
+          },
+          {
+            "stemCenterMs": 98900,
+            "offsetMs": -632,
+            "correlation": 0.4527
+          },
+          {
+            "stemCenterMs": 99300,
+            "offsetMs": -632,
+            "correlation": 0.4811
+          }
+        ],
+        "agreeingWindows": 3,
+        "correlation": 0.4811,
+        "conflictingPriorLag": false,
+        "smoothedStemRms": 0.139873,
+        "riseDbAboveMinus70DbFloor": 23.66
+      },
+      "interpretation": "Proposed animation/emotional reading; stem label is not proof of a specific instrument such as cello."
+    },
+    {
+      "id": "percussion-goodbye",
+      "sectionId": "goodbye",
+      "startMs": 117726,
+      "peakMs": 119726,
+      "endMs": 121326,
+      "label": "Percussion detail",
+      "emotionalRole": "a little movement in the quiet",
+      "action": "sway",
+      "status": "candidate-awaiting-listening",
+      "enabled": true,
+      "confidence": "medium",
+      "uncertaintyMs": 250,
+      "evidence": {
+        "stem": "6 Percussion",
+        "stemPeakMs": 120550,
+        "localOffsetMs": -824,
+        "localMatches": [
+          {
+            "stemCenterMs": 120150,
+            "offsetMs": -824,
+            "correlation": 0.6453
+          },
+          {
+            "stemCenterMs": 120550,
+            "offsetMs": -824,
+            "correlation": 0.7421
+          },
+          {
+            "stemCenterMs": 120950,
+            "offsetMs": 2672,
+            "correlation": 0.6472
+          }
+        ],
+        "agreeingWindows": 2,
+        "correlation": 0.6937,
+        "conflictingPriorLag": false,
+        "smoothedStemRms": 0.021656,
+        "riseDbAboveMinus70DbFloor": 36.72
+      },
+      "interpretation": "Proposed animation/emotional reading; stem label is not proof of a specific instrument such as cello."
+    },
+    {
+      "id": "keys-old-note",
+      "sectionId": "awakening",
+      "startMs": 174912,
+      "peakMs": 175712,
+      "endMs": 177312,
+      "label": "Keyboard lift",
+      "emotionalRole": "finding an old note",
+      "action": "sway",
+      "status": "candidate-awaiting-listening",
+      "enabled": true,
+      "confidence": "medium",
+      "uncertaintyMs": 250,
+      "evidence": {
+        "stem": "5 Keyboard",
+        "stemPeakMs": 177000,
+        "localOffsetMs": -1288,
+        "localMatches": [
+          {
+            "stemCenterMs": 176600,
+            "offsetMs": -1288,
+            "correlation": 0.6651
+          },
+          {
+            "stemCenterMs": 177000,
+            "offsetMs": -1288,
+            "correlation": 0.4965
+          },
+          {
+            "stemCenterMs": 177400,
+            "offsetMs": 2211,
+            "correlation": 0.4987
+          }
+        ],
+        "agreeingWindows": 2,
+        "correlation": 0.5808,
+        "conflictingPriorLag": false,
+        "smoothedStemRms": 0.057134,
+        "riseDbAboveMinus70DbFloor": 11.65
+      },
+      "interpretation": "Proposed animation/emotional reading; stem label is not proof of a specific instrument such as cello."
+    },
+    {
+      "id": "keys-reprise",
+      "sectionId": "inheritance",
+      "startMs": 195231,
+      "peakMs": 196681,
+      "endMs": 197981,
+      "label": "Keyboard lift",
+      "emotionalRole": "recognition grows",
+      "action": "swell",
+      "status": "candidate-awaiting-listening",
+      "enabled": true,
+      "confidence": "medium",
+      "uncertaintyMs": 250,
+      "evidence": {
+        "stem": "5 Keyboard",
+        "stemPeakMs": 198200,
+        "localOffsetMs": -1519,
+        "localMatches": [
+          {
+            "stemCenterMs": 197800,
+            "offsetMs": -1517,
+            "correlation": 0.571
+          },
+          {
+            "stemCenterMs": 198200,
+            "offsetMs": -1519,
+            "correlation": 0.5486
+          },
+          {
+            "stemCenterMs": 198600,
+            "offsetMs": -1521,
+            "correlation": 0.9609
+          }
+        ],
+        "agreeingWindows": 3,
+        "correlation": 0.571,
+        "conflictingPriorLag": false,
+        "smoothedStemRms": 0.083726,
+        "riseDbAboveMinus70DbFloor": 27.77
+      },
+      "interpretation": "Proposed animation/emotional reading; stem label is not proof of a specific instrument such as cello."
+    }
+  ]
+}

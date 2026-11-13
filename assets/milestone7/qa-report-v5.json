@@ -1,0 +1,158 @@
+{
+  "masterHashPreserved": true,
+  "approvedCharacterMastersPreserved": true,
+  "comparisons": [
+    {
+      "file": "review/verse-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/verse-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/verse-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    }
+  ],
+  "repeatFrameHash": "a0711dd0e7934145f0576f7660d4093171cdee7a4d3ff96915cc59f0a2a80e9c",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": "7884",
+    "duration": "262.800000"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2,
+    "checks": [
+      {
+        "masterStartSeconds": 13,
+        "correlation": 0.9999661533357442,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 55,
+        "correlation": 0.9999929150017959,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 128,
+        "correlation": 0.9999287383856901,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 208,
+        "correlation": 0.9998777762875377,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 247,
+        "correlation": 0.9999863512453735,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      }
+    ]
+  },
+  "editorialLines": 53,
+  "phrases": 57,
+  "words": 312,
+  "unresolvedWords": 74,
+  "performanceOnsetsAfterCaptionClear": [],
+  "continuousAudiovisualReview": "unverified",
+  "limitations": [
+    "Acoustic coverage differs from verified editorial text coverage; see ALIGNMENT.md.",
+    "Compression contact sheet is static evidence, not continuous playback review."
+  ],
+  "percussion": {
+    "accents": 283,
+    "reviewedCueMapUnchanged": true,
+    "newMoments": 5,
+    "listeningApproval": false
+  },
+  "musicalCues": {
+    "total": 27,
+    "enabled": 23,
+    "held": 4,
+    "lyricTimelineUnchanged": true,
+    "validatedStereoExcerpts": [
+      "strings-intro",
+      "strings-home",
+      "strings-first-bloom",
+      "strings-second-lift",
+      "drums-chorus",
+      "synth-answer",
+      "brass-break",
+      "brass-answer",
+      "strings-turn",
+      "bass-withdraws",
+      "keys-goodnight",
+      "drums-farewell",
+      "synth-bridge",
+      "synth-awakening",
+      "keys-discovery",
+      "synth-inheritance",
+      "strings-inheritance",
+      "drums-final",
+      "brass-final",
+      "bass-release",
+      "keys-outro",
+      "strings-last",
+      "strings-early-note",
+      "keys-middle",
+      "percussion-goodbye",
+      "keys-old-note",
+      "keys-reprise"
+    ],
+    "listeningApproval": false
+  }
+}

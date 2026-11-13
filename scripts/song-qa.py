@@ -2,7 +2,7 @@ import json,hashlib,subprocess,sys
 from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
-ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';version='v4' if '--music-cues' in sys.argv else 'v3';review=base/f'review-{version}'
+ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';version='v5' if '--percussion' in sys.argv else 'v4' if '--music-cues' in sys.argv else 'v3';review=base/f'review-{version}'
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 j=read(base/'timeline.json');master=ROOT/j['master'];movie=review/f'swarm-song-{version}.mp4'
@@ -38,12 +38,22 @@ sheet.save(review/'compressed-contact-sheet.jpg',quality=92)
 clippedPerformance=[dict(phrase=p['id'],word=w['id'],onsetMs=w['startMs'],presentationClearMs=p['presentation']['endMs']+j['presentationDefaults']['exitMs']) for p in j['phrases'] for w in p['words'] if w['startMs']>=p['presentation']['endMs']+j['presentationDefaults']['exitMs']]
 assert not clippedPerformance,clippedPerformance
 result=dict(masterHashPreserved=True,approvedCharacterMastersPreserved=True,comparisons=comparisons,repeatFrameHash=sha(review/'song-55000.png'),video=dict(width=v['width'],height=v['height'],fps=v['r_frame_rate'],frames=v['nb_frames'],duration=probe['format']['duration']),audio=dict(codec=a['codec_name'],sampleRate=a['sample_rate'],channels=a['channels'],checks=rows),editorialLines=len(set(p['sourceLine'] for p in j['phrases'])),phrases=len(j['phrases']),words=sum(len(p['words']) for p in j['phrases']),unresolvedWords=sum(w['status']=='unresolved' for p in j['phrases'] for w in p['words']),performanceOnsetsAfterCaptionClear=clippedPerformance,continuousAudiovisualReview='unverified',limitations=['Acoustic coverage differs from verified editorial text coverage; see ALIGNMENT.md.','Compression contact sheet is static evidence, not continuous playback review.'])
-if version=='v4':
+if version in ['v4','v5']:
  cues=read(base/'musical-cues.json')
  assert sha(base/'timeline.json')==cues['lyricTimelineSha256']
+ extra_ids=set()
+ if version=='v5':
+  rhythm=read(base/'percussion-cues.json')
+  assert rhythm['approvedCueMapSha256']==sha(base/'musical-cues.json')
+  extra=read(base/'musical-cue-additions.json')['cues'];extra_ids={c['id'] for c in extra}
+  cues={**cues,'cues':cues['cues']+extra}
+  events=rhythm['events']
+  assert all(0<=e['atMs']<262800 and e['correlation']>=.3 for e in events)
+  assert all(events[i]['atMs']-events[i-1]['atMs']>=300 for i in range(1,len(events)))
+  result['percussion']=dict(accents=len(events),reviewedCueMapUnchanged=True,newMoments=len(extra),listeningApproval=False)
  clips=[]
  for cue in cues['cues']:
-  path=base/'music-review'/f"{cue['id']}.mp3"
+  path=base/('music-additions' if cue['id'] in extra_ids else 'music-review')/f"{cue['id']}.mp3"
   info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]))
   expected=min(7,262.8-max(0,cue['peakMs']/1000-3))
   assert abs(float(info['format']['duration'])-expected)<.1

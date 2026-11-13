@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {musicStateAt,type MusicCue} from './music-cues.ts';
+import {musicStateAt,percussionStateAt,type MusicCue} from './music-cues.ts';
 import {frameAt} from './timeline.ts';
 const data=JSON.parse(readFileSync('assets/milestone7/musical-cues.json','utf8'));
 const cues=data.cues as MusicCue[];
@@ -22,5 +22,23 @@ test('musical gestures seek deterministically and respect cue bounds at 24/30/60
   }
   const end=musicStateAt(c.endMs,[c]);assert.equal(end.y,0);assert.equal(end.rotation,0);assert.equal(end.scaleX,1);
   if(!c.enabled){const held=musicStateAt(c.peakMs,[c]);assert.equal(held.pose,'standing');assert.equal(held.y,0);assert.equal(held.rotation,0);}
+ }
+});
+
+
+test('percussion preserves reviewed cues, never starts early, and stays subtle under major gestures',()=>{
+ const beats=JSON.parse(readFileSync('assets/milestone7/percussion-cues.json','utf8'));
+ assert.equal(beats.approvedCueMapSha256,createHash('sha256').update(readFileSync('assets/milestone7/musical-cues.json')).digest('hex'));
+ const extra=JSON.parse(readFileSync('assets/milestone7/musical-cue-additions.json','utf8')).cues as MusicCue[];
+ const all=[...cues,...extra].sort((a,b)=>a.startMs-b.startMs);
+ for(let i=1;i<all.length;i++)assert.ok(all[i].startMs>=all[i-1].endMs,'New cues must not displace reviewed moments');
+ for(const [i,e] of beats.events.entries()){
+  if(i)assert.ok(e.atMs-beats.events[i-1].atMs>=300);
+  assert.equal(percussionStateAt(e.atMs-1,[e]).pulse,0);
+  const apex=percussionStateAt(e.atMs+130,beats.events);
+  percussionStateAt(262000,beats.events);assert.deepEqual(percussionStateAt(e.atMs+130,beats.events),apex);
+  assert.ok(apex.y>=-11&&apex.y<=0);assert.ok(Math.abs(apex.rotation)<=2.5);
+  assert.ok(Math.abs(percussionStateAt(e.atMs+130,beats.events,true).y)<=Math.abs(apex.y)*.201);
+  assert.equal(percussionStateAt(e.atMs+260,[e]).pulse,0);
  }
 });

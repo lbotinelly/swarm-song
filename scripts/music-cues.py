@@ -3,12 +3,15 @@
 Selections are editorial hypotheses. Measurements are not listening approval.
 The master clock and all existing lyric cues remain untouched.
 """
-import hashlib, html, json, runpy, subprocess
+import hashlib, html, json, runpy, subprocess, sys
 from pathlib import Path
 import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE=ROOT/'assets/milestone7'; OUT=BASE/'music-review'; OUT.mkdir(exist_ok=True)
+BASE=ROOT/'assets/milestone7'; additions='--additions' in sys.argv
+if not additions and (BASE/'music-playback-feedback.json').exists():
+    raise SystemExit('V4 timing has playback approval. Preserve its map; use --additions for further candidates.')
+OUT=BASE/('music-additions' if additions else 'music-review'); OUT.mkdir(exist_ok=True)
 h=runpy.run_path(str(ROOT/'scripts/audio-investigate.py')); pcm=h['pcm']; RATE=h['RATE']
 master=pcm(h['MASTER'],0,262.8)
 stems={p.stem:pcm(p,0,264.24) for p in (ROOT/'assets/audio/Stems (68BPM)').glob('*.wav')}
@@ -57,6 +60,14 @@ selections=[
  ('keys-outro','5 Keyboard',257,259,'Keyboard outro','afterglow','sway'),
  ('strings-last','7 Strings',260.5,262.5,'Final string swell','a warm last breath','swell'),
 ]
+if additions:
+    selections=[
+      ('strings-early-note','7 Strings',31,33,'Early string lift','the first connection','swell'),
+      ('keys-middle','5 Keyboard',97.5,100,'Keyboard accent','playful momentum','sway'),
+      ('percussion-goodbye','6 Percussion',119.5,122,'Percussion detail','a little movement in the quiet','sway'),
+      ('keys-old-note','5 Keyboard',176,179,'Keyboard lift','finding an old note','sway'),
+      ('keys-reprise','5 Keyboard',197,199,'Keyboard lift','recognition grows','swell'),
+    ]
 timeline=json.loads((BASE/'timeline.json').read_text(encoding='utf-8'))
 prior_lags=json.loads((BASE/'evidence/local-stem-lags.json').read_text())['windows']
 cues=[]
@@ -96,7 +107,7 @@ result=dict(version=1,clock='absolute master-relative integer milliseconds',dura
  status='signal-derived candidates; human listening review pending',manualListeningPerformed=False,
  method='16kHz mono analysis only; 50ms RMS blocks smoothed over400ms. Three local1.2s summed-stem waveform correlations within +/-3s; two offsets must agree within100ms and median correlation>=0.3. Conflict >400ms with prior lead-lag evidence within10s disables animation. No universal stem offset and no audio time-warp.',
  limitations=['Emotional role and gestures are authored interpretations, not measured emotion.','Stem separation can contain leakage; Strings is not a confirmed cello identification.','Short local matching can still pick repeated motifs; uncertainty is not a statistical confidence interval.','Low-confidence matches remain in the map but do not drive animation.','Selected cues are a first review pass, not an exhaustive arrangement transcription.'],cues=cues)
-(BASE/'musical-cues.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+(BASE/('musical-cue-additions.json' if additions else 'musical-cues.json')).write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
 
 # Small standalone SVG overview: independent normalization, no loudness comparison between lanes.
 names=['master','7 Strings','10 Brass','2 Drums','3 Bass','5 Keyboard','8 Synth']
@@ -120,6 +131,6 @@ for i,c in enumerate(cues):
     state='candidate' if c['enabled'] else 'uncertain — animation disabled'
     markdown.append(f"| {i+1} | {t:.3f}s | {c['label']} | {c['emotionalRole']} / {c['action']} | {state}; ±{c['uncertaintyMs']}ms |")
     rows.append(f'''<article><button data-time="{max(0,t-3)}">{i+1}. {t:.3f}s · {html.escape(c['label'])}</button><p>{html.escape(c['emotionalRole'])} → {c['action']}. {state}; estimated ±{c['uncertaintyMs']}ms. Stem peak {c['evidence']['stemPeakMs']/1000:.2f}s, local offset {c['evidence']['localOffsetMs']}ms.</p><audio controls preload="none" src="{c['id']}.mp3"></audio><small>Master excerpt starts {clipstart:.3f}s; cue peak is {t-clipstart:.3f}s into this clip.</small></article>''')
-(BASE/'MUSICAL_CUES.md').write_text('\n'.join(markdown)+'\n',encoding='utf-8')
-(OUT/'index.html').write_text('''<!doctype html><html lang="en"><meta charset="utf-8"><title>Swarm Song musical cue map</title><style>body{background:#eee4ce;color:#354e4c;font:18px system-ui;max-width:1400px;margin:30px auto;padding:0 20px}video,img{width:100%}video{max-height:60vh}article{background:#fff9ed;margin:16px 0;padding:18px}button{font:inherit;color:#286f76;background:none;border:0;text-align:left;cursor:pointer}small{display:block}audio{width:450px;max-width:100%}</style><h1>Musical cues — listen, watch, refine</h1><p>Signal-derived candidates; emotional roles and agent gestures are proposals. String-stem evidence does not confirm cello. Click a cue to seek the full master video, or listen to its short excerpt.</p><video id="film" controls preload="metadata" src="../review-v4/swarm-song-v4.mp4"></video><img src="cue-map.svg" alt="Measured master and stem energy envelopes with numbered candidate peaks"><p>Stem traces use their original clock; numbered markers use the master clock. Local offsets are listed below. Lane heights are independently normalized.</p>'''+''.join(rows)+'''<script>document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{const v=document.querySelector('#film');v.currentTime=Number(b.dataset.time);v.play();v.scrollIntoView({behavior:'smooth',block:'center'});});</script></html>''',encoding='utf-8')
+(BASE/('MUSICAL_CUE_ADDITIONS.md' if additions else 'MUSICAL_CUES.md')).write_text('\n'.join(markdown)+'\n',encoding='utf-8')
+(OUT/'index.html').write_text('''<!doctype html><html lang="en"><meta charset="utf-8"><title>Swarm Song musical cue map</title><style>body{background:#eee4ce;color:#354e4c;font:18px system-ui;max-width:1400px;margin:30px auto;padding:0 20px}video,img{width:100%}video{max-height:60vh}article{background:#fff9ed;margin:16px 0;padding:18px}button{font:inherit;color:#286f76;background:none;border:0;text-align:left;cursor:pointer}small{display:block}audio{width:450px;max-width:100%}</style><h1>Musical cues — listen, watch, refine</h1><p>Signal-derived candidates; emotional roles and agent gestures are proposals. String-stem evidence does not confirm cello. Click a cue to seek the full master video, or listen to its short excerpt.</p><video id="film" controls preload="metadata" src="../review-v5/swarm-song-v5.mp4"></video><img src="cue-map.svg" alt="Measured master and stem energy envelopes with numbered candidate peaks"><p>Stem traces use their original clock; numbered markers use the master clock. Local offsets are listed below. Lane heights are independently normalized.</p>'''+''.join(rows)+'''<script>document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{const v=document.querySelector('#film');v.currentTime=Number(b.dataset.time);v.play();v.scrollIntoView({behavior:'smooth',block:'center'});});</script></html>''',encoding='utf-8')
 for c in cues:print(c['id'],c['peakMs'],c['enabled'],c['evidence']['localOffsetMs'],c['evidence']['correlation'],c['evidence']['agreeingWindows'])
