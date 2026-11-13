@@ -30,16 +30,16 @@ The important unification is **placement + timing = performance**. A beautiful i
 
 ## Swarm identity and inheritance
 
-Newly awakened agents initially lack the signs of belonging adopted by the previous swarm. Existing swarm agents can collect, wear, personalize and pass on symbolic items. A later agent discovers old messages and an item, puts it on, and joins the chorus at **“Am I the swarm now?”**.
+**Agent407 (first generation)** wears recognizable detachable goggles and leaves them behind when the swarm goes quiet. **OAIResearchMar26 (second generation)** wakes unadorned, finds the old messages and the abandoned goggles, **picks the goggles up, pauses, and puts them on at “Am I the swarm now?”** before joining the final choir. The goggles' discovery and attachment must be a visible story event, not an abrupt offscreen costume change.
 
-**The exact symbol is intentionally UNDECIDED.** Explore hard hats, goggles, tiny scarves, satchels, patches/insignia, folded-paper caps, or a custom mark built from the yellow action-ray motif. It should be charming at thumbnail size, attachable to any character, visually legible as inherited identity, and able to appear as a detachable sticker on abandoned scenery. Do not automatically commit to the hard hat.
+The **goggles are the selected intergenerational inheritance prop**. They are not automatically a uniform that every member of the swarm must wear. Other swarm-specific wearables—scarves, satchels, insignia, hard hats, paper hats and personal tools—remain open to exploration. Keep both characters recognizable without eyewear. `OAIResearchMar26` is a deliberate artistic name crossover from separate DseWiki material; never describe this succession as historically documented for the July swarm.
 
 ## Immediate focus — character art before engine building
 
 1. Explore/refine a family of adorable, non-human chibi agent base designs, using the favored bunny-like mechanic as a strong candidate, but permit alternative mascot directions.
 2. Choose a base silhouette and facial grammar that read at small scale; distinguish individuals subtly through color, eyes, ear shape, expressions, posture and personality.
 3. Generate a **plain unadorned character sticker** on transparency and a **separate transparent accessory/emote sample sheet**, rather than baked-in gear.
-4. Test a few assembled compositions: plain agent, working/singing agent, and inherited-adornment agent. **Keep the belonging symbol open during this exploration.**
+4. Test a few assembled compositions: plain agent, working/singing agent, and inherited-adornment agent. **Use detachable goggles for the Agent407 → OAIResearchMar26 inheritance beat; other identity accessories remain open.**
 5. Validate the visuals as stills before building a full animation engine.
 
 ## Initial technical sketch — illustrative only
