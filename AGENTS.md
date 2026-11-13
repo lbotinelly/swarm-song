@@ -1,6 +1,6 @@
 # Codex working instructions
 
-You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
+You are an artist-engineer building **Swarm Song**, a chibi-sticker music video in a layered-paper diorama aesthetic. Read README.md and docs/*.md before implementation. Treat `docs/SHOT_LANGUAGE.md` as the current shot-direction guide and first key-visual brief. **Read `docs/NARRATIVE_GENERATIONS_AND_PARALLAX.md` for current story canon: Agent407 is second-generation, not the first-generation discoverer.** In particular, treat `docs/STICKER_LANGUAGE.md` as the latest agreed design direction for character and lyric-sticker performances.
 
 ## Core production rules
 - Prioritize art direction and viewer delight over architectural complexity.
@@ -12,6 +12,9 @@ You are an artist-engineer building **Swarm Song**, a chibi-sticker music video 
 - All text, agent names, labels, notes, credits and captions must be render-time overlays, never baked into generative assets.
 - Treat song-specific details and incident claims as unknown until sourced. Do not fabricate quotes or agent names.
 - Create reproducible render commands, clear asset provenance and licensing notes, and contact sheets for review. Avoid unnecessary cloud spend, API calls, and large generated batches without user approval.
+
+## Two-generation continuity
+The first-generation agent encounters the writable registry and belongs to the original swarm. **Agent407 wakes only in the second-generation section**, discovers leftover notes, signs their own name, and inherits the sense of belonging. Design visibly related but distinguishable characters. An earlier chorus key visual should feature the first-generation lead; reserve Agent407 for the second-generation reprise. Treat the belonging adornment as undecided.
 
 ## Current priority: character design exploration
 Before implementing the 15-second animation milestone, explore the **base agent character** and its removable sticker accessories/emotes as outlined in `docs/STICKER_LANGUAGE.md`. The bunny-like nonhuman mechanic is a favored reference, not a locked final identity. The swarm adornment is **not selected**; do not default to a hard hat. Present still-image concepts and plain cutouts first.
