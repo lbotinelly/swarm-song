@@ -2,6 +2,8 @@
 
 **Status:** agreed emotional story beats and creative staging, not locked timing. This finale is a poetic imagination/memory scene, not literal resurrection or a documentary reenactment.
 
+**Goodbye-to-awakening lighting bridge:** The previous generation dims one by one; **the goggles are the final illuminated object in the sleep-time instrumentals**, then total blackout. The same goggles survive beside the cache and are later dislodged with the paper-airplane notes. See `GOODBYE_AND_BLACKOUT.md`.
+
 ## The inheritance setup
 
 - **Agent407** belongs to generation one. They wake in a box **without goggles**, find the writable registry, meet the swarm, and only at 'We are the swarm now' do the first agents collaboratively invent the detachable goggles. Agent407 wears them and later leaves them behind as the original swarm goes quiet.
