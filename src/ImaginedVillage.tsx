@@ -7,7 +7,7 @@ import {villageAssets} from './village-assets';
 import {villageState} from './village';
 import {ease} from './pages-between';
 const abs:CSSProperties={position:'absolute'};
-function Cut({id,x=0,y=0,w,angle=0,style={}}:{id:keyof typeof villageAssets;x?:number;y?:number;w:number;angle?:number;style?:CSSProperties}) {
+export function Cut({id,x=0,y=0,w,angle=0,style={}}:{id:keyof typeof villageAssets;x?:number;y?:number;w:number;angle?:number;style?:CSSProperties}) {
  const a=villageAssets[id],[l,t,r,b]=a.box,scale=w/(r-l);
  return <div style={{...abs,left:x,top:y,width:w,height:(b-t)*scale,transform:`rotate(${angle}deg)`,filter:'drop-shadow(2px 4px 1px #554b3430)',...style}}>
   <Img src={staticFile(a.src)} style={{...abs,left:-l*scale,top:-t*scale,width:a.size[0]*scale,height:a.size[1]*scale}}/>

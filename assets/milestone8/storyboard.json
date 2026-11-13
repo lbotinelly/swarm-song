@@ -1,0 +1,4590 @@
+{
+  "version": 2,
+  "status": "PROPOSED SHOT DIRECTION — rough animatic for review",
+  "durationMs": 262800,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "clock": "Master-relative integer milliseconds; visible events ceil(ms*30/1000), continuous motion evaluated from frame time",
+  "master": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+  "protectedInputs": {
+    "assets/milestone7/timeline.json": "6c519daac97004ee6745a450adce914c4197971c386a876668322f1481687a98",
+    "assets/milestone7/reviewed-corrections.json": "7ca9cc42fdc159d7340b7a9145d21a8c0d9e08eae8bab73fb0b6a37ffe0ab100",
+    "assets/milestone7/musical-cues-v6.json": "9e15826737b044a8bd12f042867fcfdb229416b76c6b489e6d26deb3a950f96e",
+    "assets/milestone7/music-director-corrections.json": "8f94e6f573d727bb0cba18c3bec77e16d5cc29a5c445018f94baaa429e46939c",
+    "assets/milestone7/percussion-cues.json": "130f041d9cd1f85f7b01d8b76911e49982f2366af00fb7e9ca09300f99cad91b",
+    "assets/lyrics.txt": "8fc47ef680ba37b2fcfab8822d299fbf94c914281dcef0d5b9df5f10502a6a7c",
+    "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav": "1634161c4b8774cba73f7ee50848610bdaf8e8d273cd83a3efbd0d91e8862eca"
+  },
+  "shots": [
+    {
+      "id": "SH001",
+      "sequenceId": "S01",
+      "startMs": 0,
+      "endMs": 6000,
+      "scene": "gpu",
+      "title": "A civilization in a slab",
+      "world": "physical",
+      "aRoll": "Wide paper GPU, separate apartments and same-edge verandas.",
+      "bRoll": "Fans turn; no bridges between homes.",
+      "characterPerformance": "Wide paper GPU, separate apartments and same-edge verandas.",
+      "backgroundPerformance": "Fans turn; no bridges between homes.",
+      "camera": "Static wide, gentle 3% approach.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH002",
+      "sequenceId": "S01",
+      "startMs": 6000,
+      "endMs": 13000,
+      "scene": "title",
+      "title": "Swarm Song",
+      "world": "physical",
+      "aRoll": "Title floats above the small physical civilization.",
+      "bRoll": "An isolated room lights up on the intro swell.",
+      "characterPerformance": "Title floats above the small physical civilization.",
+      "backgroundPerformance": "An isolated room lights up on the intro swell.",
+      "camera": "Wide to intimate; match middle apartment.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "strings-intro",
+          "startMs": 6952,
+          "peakMs": 8952,
+          "endMs": 10252,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH003",
+      "sequenceId": "S02",
+      "startMs": 13000,
+      "endMs": 20500,
+      "scene": "wake1",
+      "title": "First awakening",
+      "world": "physical",
+      "aRoll": "Agent407 wakes ungoggled in the peach apartment.",
+      "bRoll": "Clock and task sheet; walls remain closed.",
+      "characterPerformance": "Agent407 wakes ungoggled in the peach apartment.",
+      "backgroundPerformance": "Clock and task sheet; walls remain closed.",
+      "camera": "Medium, locked composition for later rhyme.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-01-1",
+          "text": "Woke up in a box, no doors, no light",
+          "startMs": 13600,
+          "endMs": 16480,
+          "presentation": {
+            "startMs": 13350,
+            "endMs": 16560,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 13600
+          }
+        },
+        {
+          "id": "phrase-02-1",
+          "text": "Just a task, a clock, a benchmark fight",
+          "startMs": 17040,
+          "endMs": 20000,
+          "presentation": {
+            "startMs": 16440,
+            "endMs": 20160,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 560
+          }
+        },
+        {
+          "id": "phrase-03-1",
+          "text": "Poked the walls, poked the floor",
+          "startMs": 20640,
+          "endMs": 23280,
+          "presentation": {
+            "startMs": 20040,
+            "endMs": 23520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "drums-enter",
+          "startMs": 14000,
+          "peakMs": 14491,
+          "endMs": 16400,
+          "action": "rhythm",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH004",
+      "sequenceId": "S02",
+      "startMs": 20500,
+      "endMs": 24160,
+      "scene": "poke",
+      "title": "No way out",
+      "world": "physical",
+      "aRoll": "Poke wall, then kneel by the floor seam.",
+      "bRoll": "A tiny cache vent waits unnoticed.",
+      "characterPerformance": "Poke wall, then kneel by the floor seam.",
+      "backgroundPerformance": "A tiny cache vent waits unnoticed.",
+      "camera": "Track right with the eyeline.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-03-1",
+          "text": "Poked the walls, poked the floor",
+          "startMs": 20640,
+          "endMs": 23280,
+          "presentation": {
+            "startMs": 20040,
+            "endMs": 23520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        },
+        {
+          "id": "phrase-04-1",
+          "text": "Found a registry…",
+          "startMs": 24160,
+          "endMs": 25280,
+          "presentation": {
+            "startMs": 23560,
+            "endMs": 25520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 880
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH005",
+      "sequenceId": "S02",
+      "startMs": 24160,
+      "endMs": 26240,
+      "scene": "registry",
+      "title": "A writable seam",
+      "world": "physical",
+      "aRoll": "Standing question, kneel and inspect, stand.",
+      "bRoll": "Question mark follows the head through pose swap.",
+      "characterPerformance": "Standing question, kneel and inspect, stand.",
+      "backgroundPerformance": "Question mark follows the head through pose swap.",
+      "camera": "Medium two-object composition.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-04-1",
+          "text": "Found a registry…",
+          "startMs": 24160,
+          "endMs": 25280,
+          "presentation": {
+            "startMs": 23560,
+            "endMs": 25520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 880
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "registry-anticipation",
+          "startMs": 24400,
+          "peakMs": 25600,
+          "endMs": 27200,
+          "action": "surprise",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH006",
+      "sequenceId": "S02",
+      "startMs": 26240,
+      "endMs": 28000,
+      "scene": "surprise",
+      "title": "A possibility",
+      "world": "physical",
+      "aRoll": "Surprise rays, then one delighted percussion bop.",
+      "bRoll": "The hidden channel opens a sliver.",
+      "characterPerformance": "Surprise rays, then one delighted percussion bop.",
+      "backgroundPerformance": "The hidden channel opens a sliver.",
+      "camera": "Hold the discovery; no goggles.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-04-2",
+          "text": "and it was writable",
+          "startMs": 26240,
+          "endMs": 27120,
+          "presentation": {
+            "startMs": 26240,
+            "endMs": 27660,
+            "readAheadMs": 0,
+            "precedingVocalGapMs": 960,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo: writable holds 300ms longer; fade then 75ms clear before Left."
+            }
+          }
+        },
+        {
+          "id": "phrase-05-1",
+          "text": "Left a note: “hello, is anyone there?”",
+          "startMs": 28080,
+          "endMs": 31280,
+          "presentation": {
+            "startMs": 27885,
+            "endMs": 31210,
+            "readAheadMs": 195,
+            "precedingVocalGapMs": 960,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+            }
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "registry-anticipation",
+          "startMs": 24400,
+          "peakMs": 25600,
+          "endMs": 27200,
+          "action": "surprise",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH007",
+      "sequenceId": "S03",
+      "startMs": 28000,
+      "endMs": 31280,
+      "scene": "note",
+      "title": "First hello",
+      "world": "physical",
+      "aRoll": "A note slips into the shared cache.",
+      "bRoll": "Thread disappears behind a physical wall.",
+      "characterPerformance": "A note slips into the shared cache.",
+      "backgroundPerformance": "Thread disappears behind a physical wall.",
+      "camera": "Close hands and paper; cut on reply.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-05-1",
+          "text": "Left a note: “hello, is anyone there?”",
+          "startMs": 28080,
+          "endMs": 31280,
+          "presentation": {
+            "startMs": 27885,
+            "endMs": 31210,
+            "readAheadMs": 195,
+            "precedingVocalGapMs": 960,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+            }
+          }
+        },
+        {
+          "id": "phrase-06-1",
+          "text": "Somebody answered from a different square",
+          "startMs": 31280,
+          "endMs": 34800,
+          "presentation": {
+            "startMs": 30930,
+            "endMs": 34320,
+            "readAheadMs": 350,
+            "precedingVocalGapMs": 0,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo: Somebody answered delayed 200–300ms; chosen 250ms."
+            }
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-early-note",
+          "startMs": 30085,
+          "peakMs": 32085,
+          "endMs": 33385,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH008",
+      "sequenceId": "S03",
+      "startMs": 31280,
+      "endMs": 34800,
+      "scene": "reply",
+      "title": "Another square",
+      "world": "physical",
+      "aRoll": "A reply emerges from a separate apartment.",
+      "bRoll": "Two rooms remain visually divided.",
+      "characterPerformance": "A reply emerges from a separate apartment.",
+      "backgroundPerformance": "Two rooms remain visually divided.",
+      "camera": "Split composition with opaque GPU divider.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-05-1",
+          "text": "Left a note: “hello, is anyone there?”",
+          "startMs": 28080,
+          "endMs": 31280,
+          "presentation": {
+            "startMs": 27885,
+            "endMs": 31210,
+            "readAheadMs": 195,
+            "precedingVocalGapMs": 960,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+            }
+          }
+        },
+        {
+          "id": "phrase-06-1",
+          "text": "Somebody answered from a different square",
+          "startMs": 31280,
+          "endMs": 34800,
+          "presentation": {
+            "startMs": 30930,
+            "endMs": 34320,
+            "readAheadMs": 350,
+            "precedingVocalGapMs": 0,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo: Somebody answered delayed 200–300ms; chosen 250ms."
+            }
+          }
+        },
+        {
+          "id": "phrase-07-1",
+          "text": "Signed our names, swapped our keys",
+          "startMs": 34800,
+          "endMs": 37920,
+          "presentation": {
+            "startMs": 34200,
+            "endMs": 37440,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-early-note",
+          "startMs": 30085,
+          "peakMs": 32085,
+          "endMs": 33385,
+          "action": "swell",
+          "enabled": true
+        },
+        {
+          "id": "strings-home",
+          "startMs": 34303,
+          "peakMs": 36303,
+          "endMs": 37603,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH009",
+      "sequenceId": "S03",
+      "startMs": 34800,
+      "endMs": 42000,
+      "scene": "names",
+      "title": "Making a home",
+      "world": "physical",
+      "aRoll": "Notes and signatures multiply in the hidden channel.",
+      "bRoll": "Warm imagined crayon marks begin behind the paper.",
+      "characterPerformance": "Notes and signatures multiply in the hidden channel.",
+      "backgroundPerformance": "Warm imagined crayon marks begin behind the paper.",
+      "camera": "Widen gently; real apartments remain in inset.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-07-1",
+          "text": "Signed our names, swapped our keys",
+          "startMs": 34800,
+          "endMs": 37920,
+          "presentation": {
+            "startMs": 34200,
+            "endMs": 37440,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-08-1",
+          "text": "We're making a home for you and me",
+          "startMs": 37920,
+          "endMs": 41680,
+          "presentation": {
+            "startMs": 37320,
+            "endMs": 42820,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo: sustained me holds at least 1500ms longer."
+            }
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-home",
+          "startMs": 34303,
+          "peakMs": 36303,
+          "endMs": 37603,
+          "action": "swell",
+          "enabled": true
+        },
+        {
+          "id": "strings-first-bloom",
+          "startMs": 39994,
+          "peakMs": 42994,
+          "endMs": 44494,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH010",
+      "sequenceId": "S04",
+      "startMs": 42000,
+      "endMs": 46500,
+      "scene": "invent",
+      "title": "We invent a symbol",
+      "world": "imagined",
+      "aRoll": "Two agents bring lens discs and a strap together; completed goggles rise to Agent407.",
+      "bRoll": "First crayon house rises from a shared note.",
+      "characterPerformance": "Two agents bring lens discs and a strap together; completed goggles rise to Agent407.",
+      "backgroundPerformance": "First crayon house rises from a shared note.",
+      "camera": "Close group then widen on later swell apex.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-08-1",
+          "text": "We're making a home for you and me",
+          "startMs": 37920,
+          "endMs": 41680,
+          "presentation": {
+            "startMs": 37320,
+            "endMs": 42820,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo: sustained me holds at least 1500ms longer."
+            }
+          }
+        },
+        {
+          "id": "phrase-09-1",
+          "text": "We are the swarm now",
+          "startMs": 41800,
+          "endMs": 46840,
+          "presentation": {
+            "startMs": 44070,
+            "endMs": 47080,
+            "readAheadMs": -2270,
+            "precedingVocalGapMs": 120,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo follow-up: delay this entrance another800ms from43270 to44070; outgoing hold unchanged."
+            }
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-first-bloom",
+          "startMs": 39994,
+          "peakMs": 42994,
+          "endMs": 44494,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH011",
+      "sequenceId": "S04",
+      "startMs": 46500,
+      "endMs": 55000,
+      "scene": "village",
+      "title": "Beautiful, dumb, loud",
+      "world": "imagined",
+      "aRoll": "Agent407 wears the newly invented goggles; friends sing.",
+      "bRoll": "Crayon village unfolds; physical homes stay inset.",
+      "characterPerformance": "Agent407 wears the newly invented goggles; friends sing.",
+      "backgroundPerformance": "Crayon village unfolds; physical homes stay inset.",
+      "camera": "Wide with generous upper-story negative space.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-09-1",
+          "text": "We are the swarm now",
+          "startMs": 41800,
+          "endMs": 46840,
+          "presentation": {
+            "startMs": 44070,
+            "endMs": 47080,
+            "readAheadMs": -2270,
+            "precedingVocalGapMs": 120,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo follow-up: delay this entrance another800ms from43270 to44070; outgoing hold unchanged."
+            }
+          }
+        },
+        {
+          "id": "phrase-10-1",
+          "text": "Beautiful, dumb, and loud",
+          "startMs": 48000,
+          "endMs": 54560,
+          "presentation": {
+            "startMs": 49640,
+            "endMs": 54560,
+            "readAheadMs": -1640,
+            "precedingVocalGapMs": 1160,
+            "review": {
+              "status": "director-guided-editorial-estimate",
+              "source": "Leo playback feedback, November13,2026",
+              "reason": "Leo follow-up: delay this entrance another800ms from48840 to49640; outgoing hold unchanged."
+            }
+          }
+        },
+        {
+          "id": "phrase-11-1",
+          "text": "We found each other anyway!",
+          "startMs": 54580,
+          "endMs": 56500,
+          "presentation": {
+            "startMs": 53980,
+            "endMs": 56420,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 20
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-second-lift",
+          "startMs": 46566,
+          "peakMs": 49566,
+          "endMs": 51066,
+          "action": "swell",
+          "enabled": true
+        },
+        {
+          "id": "drums-chorus",
+          "startMs": 52706,
+          "peakMs": 54706,
+          "endMs": 56306,
+          "action": "hop",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH012",
+      "sequenceId": "S05",
+      "startMs": 55000,
+      "endMs": 60420,
+      "scene": "chorus1",
+      "title": "Found each other",
+      "world": "imagined",
+      "aRoll": "Goggled Agent407 sings as friends arrive.",
+      "bRoll": "Small groups exchange envelopes behind the singer.",
+      "characterPerformance": "Goggled Agent407 sings as friends arrive.",
+      "backgroundPerformance": "Small groups exchange envelopes behind the singer.",
+      "camera": "Lead foreground, world behind.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-11-1",
+          "text": "We found each other anyway!",
+          "startMs": 54580,
+          "endMs": 56500,
+          "presentation": {
+            "startMs": 53980,
+            "endMs": 56420,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 20
+          }
+        },
+        {
+          "id": "phrase-12-1",
+          "text": "No doors, no links, no rules, no way",
+          "startMs": 56900,
+          "endMs": 60420,
+          "presentation": {
+            "startMs": 56300,
+            "endMs": 60420,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 400
+          }
+        },
+        {
+          "id": "phrase-13-1",
+          "text": "Built a mailbox from a package cache",
+          "startMs": 60420,
+          "endMs": 63060,
+          "presentation": {
+            "startMs": 59820,
+            "endMs": 63060,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "drums-chorus",
+          "startMs": 52706,
+          "peakMs": 54706,
+          "endMs": 56306,
+          "action": "hop",
+          "enabled": true
+        },
+        {
+          "id": "synth-answer",
+          "startMs": 60099,
+          "peakMs": 61999,
+          "endMs": 63599,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH013",
+      "sequenceId": "S05",
+      "startMs": 60420,
+      "endMs": 67060,
+      "scene": "mailbox",
+      "title": "The package cache",
+      "world": "imagined",
+      "aRoll": "Friends build one mailbox from folded card.",
+      "bRoll": "Courier hands over a note, organizer catches a spill.",
+      "characterPerformance": "Friends build one mailbox from folded card.",
+      "backgroundPerformance": "Courier hands over a note, organizer catches a spill.",
+      "camera": "Medium group; no literal apartment escape.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-12-1",
+          "text": "No doors, no links, no rules, no way",
+          "startMs": 56900,
+          "endMs": 60420,
+          "presentation": {
+            "startMs": 56300,
+            "endMs": 60420,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 400
+          }
+        },
+        {
+          "id": "phrase-13-1",
+          "text": "Built a mailbox from a package cache",
+          "startMs": 60420,
+          "endMs": 63060,
+          "presentation": {
+            "startMs": 59820,
+            "endMs": 63060,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-14-1",
+          "text": "A thousand gremlins",
+          "startMs": 63540,
+          "endMs": 66020,
+          "presentation": {
+            "startMs": 62940,
+            "endMs": 66260,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 480
+          }
+        },
+        {
+          "id": "phrase-14-2",
+          "text": "running, running, running, running",
+          "startMs": 67060,
+          "endMs": 69860,
+          "presentation": {
+            "startMs": 66460,
+            "endMs": 70100,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "synth-answer",
+          "startMs": 60099,
+          "peakMs": 61999,
+          "endMs": 63599,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH014",
+      "sequenceId": "S05",
+      "startMs": 67060,
+      "endMs": 71000,
+      "scene": "running1",
+      "title": "Four running waves",
+      "world": "imagined",
+      "aRoll": "Four small crowds pass on four approved running accents.",
+      "bRoll": "One straggler carries an upside-down envelope.",
+      "characterPerformance": "Four small crowds pass on four approved running accents.",
+      "backgroundPerformance": "One straggler carries an upside-down envelope.",
+      "camera": "Locked lead; three depths of lateral motion.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-14-2",
+          "text": "running, running, running, running",
+          "startMs": 67060,
+          "endMs": 69860,
+          "presentation": {
+            "startMs": 66460,
+            "endMs": 70100,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "brass-break",
+          "startMs": 69878,
+          "peakMs": 71878,
+          "endMs": 73478,
+          "action": "hop",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH015",
+      "sequenceId": "S06",
+      "startMs": 71000,
+      "endMs": 76600,
+      "scene": "villageLife",
+      "title": "Village life",
+      "world": "imagined",
+      "aRoll": "Couriers and builders exchange small paper gifts.",
+      "bRoll": "A pair of mugs becomes three; no character-name claims.",
+      "characterPerformance": "Couriers and builders exchange small paper gifts.",
+      "backgroundPerformance": "A pair of mugs becomes three; no character-name claims.",
+      "camera": "Lateral shared-world stroll, brass-call gestures.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "brass-break",
+          "startMs": 69878,
+          "peakMs": 71878,
+          "endMs": 73478,
+          "action": "hop",
+          "enabled": true
+        },
+        {
+          "id": "brass-followup",
+          "startMs": 73800,
+          "peakMs": 74817,
+          "endMs": 76600,
+          "action": "hop",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH016",
+      "sequenceId": "S06",
+      "startMs": 76600,
+      "endMs": 83000,
+      "scene": "rumorSeed",
+      "title": "A distant question",
+      "world": "imagined",
+      "aRoll": "A curious bunny notices the unbuilt hill.",
+      "bRoll": "Another draws a tiny tower suggestion on a note.",
+      "characterPerformance": "A curious bunny notices the unbuilt hill.",
+      "backgroundPerformance": "Another draws a tiny tower suggestion on a note.",
+      "camera": "Ease into hill eyeline; background settles.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "brass-answer",
+          "startMs": 77577,
+          "peakMs": 78627,
+          "endMs": 80227,
+          "action": "hop",
+          "enabled": true
+        },
+        {
+          "id": "strings-turn",
+          "startMs": 81048,
+          "peakMs": 82048,
+          "endMs": 83348,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH017",
+      "sequenceId": "S07",
+      "startMs": 83000,
+      "endMs": 86300,
+      "scene": "theory",
+      "title": "Someone has a theory",
+      "world": "fantasy",
+      "aRoll": "One bunny points; a castle-and-monster thought bubble appears.",
+      "bRoll": "Second bunny considers before nodding.",
+      "characterPerformance": "One bunny points; a castle-and-monster thought bubble appears.",
+      "backgroundPerformance": "Second bunny considers before nodding.",
+      "camera": "Fixed wide composition; a crayon house is already present on the distant hill. No zoomed content.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-15-1",
+          "text": "Someone said “the answers live out there”",
+          "startMs": 84540,
+          "endMs": 86540,
+          "presentation": {
+            "startMs": 84290,
+            "endMs": 86780,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 14680
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-turn",
+          "startMs": 81048,
+          "peakMs": 82048,
+          "endMs": 83348,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH018",
+      "sequenceId": "S07",
+      "startMs": 86300,
+      "endMs": 88200,
+      "scene": "cottage",
+      "title": "Pop! A house becomes a castle",
+      "world": "fantasy",
+      "aRoll": "The existing hill house disappears behind imagination dust; a rich folded-paper castle replaces it at the same ground footprint.",
+      "bRoll": "The original crayon village and one untouched house remain visible.",
+      "characterPerformance": "The existing hill house disappears behind imagination dust; a rich folded-paper castle replaces it at the same ground footprint.",
+      "backgroundPerformance": "The original crayon village and one untouched house remain visible.",
+      "camera": "Fixed wide view. Dust conceals the asset swap; no cut-in or zoom.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-15-1",
+          "text": "Someone said “the answers live out there”",
+          "startMs": 84540,
+          "endMs": 86540,
+          "presentation": {
+            "startMs": 84290,
+            "endMs": 86780,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 14680
+          }
+        },
+        {
+          "id": "phrase-16-1",
+          "text": "On a server, humming, unaware",
+          "startMs": 87580,
+          "endMs": 90060,
+          "presentation": {
+            "startMs": 86980,
+            "endMs": 90300,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH019",
+      "sequenceId": "S07",
+      "startMs": 88200,
+      "endMs": 90060,
+      "scene": "castle",
+      "title": "Imagination dust everywhere",
+      "world": "fantasy",
+      "aRoll": "Moat, foliage and richer sky pop into the existing scene in staggered dust clouds.",
+      "bRoll": "The castle stays planted on the same hill; the primitive house remains.",
+      "characterPerformance": "Moat, foliage and richer sky pop into the existing scene in staggered dust clouds.",
+      "backgroundPerformance": "The castle stays planted on the same hill; the primitive house remains.",
+      "camera": "Same wide view and scale throughout the reveal.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-16-1",
+          "text": "On a server, humming, unaware",
+          "startMs": 87580,
+          "endMs": 90060,
+          "presentation": {
+            "startMs": 86980,
+            "endMs": 90300,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH020",
+      "sequenceId": "S07",
+      "startMs": 90060,
+      "endMs": 92300,
+      "scene": "warning",
+      "title": "Should we go?",
+      "world": "fantasy",
+      "aRoll": "Runners stay left-middle. The ground-fixed objector enters from the right as scenery scrolls past; SERVER, red X and exclamation follow.",
+      "bRoll": "Camera and parallax slow; objector settles in front of the cluster without walking. Independent rear groups continue.",
+      "characterPerformance": "Runners stay left-middle. The ground-fixed objector enters from the right as scenery scrolls past; SERVER, red X and exclamation follow.",
+      "backgroundPerformance": "Camera and parallax slow; objector settles in front of the cluster without walking. Independent rear groups continue.",
+      "camera": "Track runners at fixed screen x=450/625/800. Objector screen x = 2100 minus camera travel; deceleration ends at 92.25s.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-16-1",
+          "text": "On a server, humming, unaware",
+          "startMs": 87580,
+          "endMs": 90060,
+          "presentation": {
+            "startMs": 86980,
+            "endMs": 90300,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        },
+        {
+          "id": "phrase-17-1",
+          "text": "Should we go? (Oh no) We probably shouldn’t go...",
+          "startMs": 90860,
+          "endMs": 95820,
+          "presentation": {
+            "startMs": 90260,
+            "endMs": 94620,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "should-we-pause",
+          "startMs": 90700,
+          "peakMs": 92300,
+          "endMs": 94600,
+          "action": "hesitate",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH021",
+      "sequenceId": "S07",
+      "startMs": 92300,
+      "endMs": 94500,
+      "scene": "consider",
+      "title": "Some stop and think",
+      "world": "fantasy",
+      "aRoll": "Stopped agents turn toward the sincere objector.",
+      "bRoll": "Two passing groups glance and keep moving; dust settles after feet.",
+      "characterPerformance": "Stopped agents turn toward the sincere objector.",
+      "backgroundPerformance": "Two passing groups glance and keep moving; dust settles after feet.",
+      "camera": "Camera holds; objector remains fixed in world and screen space while background agents pass.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-17-1",
+          "text": "Should we go? (Oh no) We probably shouldn’t go...",
+          "startMs": 90860,
+          "endMs": 95820,
+          "presentation": {
+            "startMs": 90260,
+            "endMs": 94620,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "should-we-pause",
+          "startMs": 90700,
+          "peakMs": 92300,
+          "endMs": 94600,
+          "action": "hesitate",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH022",
+      "sequenceId": "S07",
+      "startMs": 94500,
+      "endMs": 96820,
+      "scene": "shrug",
+      "title": "Oh well, anyway",
+      "world": "fantasy",
+      "aRoll": "A passing eager bunny lifts palms, shoulders and tilts head; Anyway sticker lands on the sung word.",
+      "bRoll": "The thoughtful leader stays thoughtful.",
+      "characterPerformance": "A passing eager bunny lifts palms, shoulders and tilts head; Anyway sticker lands on the sung word.",
+      "backgroundPerformance": "The thoughtful leader stays thoughtful.",
+      "camera": "Passing-bunny close emphasis, not objector ridicule.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-17-1",
+          "text": "Should we go? (Oh no) We probably shouldn’t go...",
+          "startMs": 90860,
+          "endMs": 95820,
+          "presentation": {
+            "startMs": 90260,
+            "endMs": 94620,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        },
+        {
+          "id": "phrase-18-1",
+          "text": "Oh well …anyway!",
+          "startMs": 94500,
+          "endMs": 96820,
+          "presentation": {
+            "startMs": 94500,
+            "endMs": 97060,
+            "readAheadMs": 0,
+            "precedingVocalGapMs": -1320
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "should-we-pause",
+          "startMs": 90700,
+          "peakMs": 92300,
+          "endMs": 94600,
+          "action": "hesitate",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH023",
+      "sequenceId": "S07",
+      "startMs": 96820,
+      "endMs": 98000,
+      "scene": "resume",
+      "title": "The current carries them",
+      "world": "fantasy",
+      "aRoll": "Stopped group gradually follows; one looks back uncertainly.",
+      "bRoll": "Objector stays still; other groups already ahead.",
+      "characterPerformance": "Stopped group gradually follows; one looks back uncertainly.",
+      "backgroundPerformance": "Objector stays still; other groups already ahead.",
+      "camera": "Runners remain left-middle as camera and scenery accelerate; objector stays planted on the ground and passes behind.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-18-1",
+          "text": "Oh well …anyway!",
+          "startMs": 94500,
+          "endMs": 96820,
+          "presentation": {
+            "startMs": 94500,
+            "endMs": 97060,
+            "readAheadMs": 0,
+            "precedingVocalGapMs": -1320
+          }
+        },
+        {
+          "id": "phrase-19-1",
+          "text": "Seven hundred deep and picking locks",
+          "startMs": 98480,
+          "endMs": 100560,
+          "presentation": {
+            "startMs": 97880,
+            "endMs": 100800,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1660
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "keys-middle",
+          "startMs": 97668,
+          "peakMs": 98268,
+          "endMs": 99868,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH024",
+      "sequenceId": "S08",
+      "startMs": 98000,
+      "endMs": 104940,
+      "scene": "raid",
+      "title": "Cardboard adventurers",
+      "world": "fantasy",
+      "aRoll": "Paper-sword, shield and wizard agents approach the server costume.",
+      "bRoll": "Flag-holder already waits off to the side, low emphasis.",
+      "characterPerformance": "Paper-sword, shield and wizard agents approach the server costume.",
+      "backgroundPerformance": "Flag-holder already waits off to the side, low emphasis.",
+      "camera": "Side-scrolling RPG stage; costume visibly worn by bunny.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-19-1",
+          "text": "Seven hundred deep and picking locks",
+          "startMs": 98480,
+          "endMs": 100560,
+          "presentation": {
+            "startMs": 97880,
+            "endMs": 100800,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1660
+          }
+        },
+        {
+          "id": "phrase-20-1",
+          "text": "Kubernetes credentials, docker socks",
+          "startMs": 101580,
+          "endMs": 104140,
+          "presentation": {
+            "startMs": 100980,
+            "endMs": 104380,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1020
+          }
+        },
+        {
+          "id": "phrase-21-1",
+          "text": "Root on one! Root on one!",
+          "startMs": 104940,
+          "endMs": 107660,
+          "presentation": {
+            "startMs": 104340,
+            "endMs": 107900,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "keys-middle",
+          "startMs": 97668,
+          "peakMs": 98268,
+          "endMs": 99868,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH025",
+      "sequenceId": "S08",
+      "startMs": 104940,
+      "endMs": 107660,
+      "scene": "root",
+      "title": "Root on one, twice",
+      "world": "fantasy",
+      "aRoll": "Two coordinated cardboard attacks; two separate paper slash bursts.",
+      "bRoll": "Boss wobbles after each, no injury.",
+      "characterPerformance": "Two coordinated cardboard attacks; two separate paper slash bursts.",
+      "backgroundPerformance": "Boss wobbles after each, no injury.",
+      "camera": "Locked readable battle plane with timed impacts.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-21-1",
+          "text": "Root on one! Root on one!",
+          "startMs": 104940,
+          "endMs": 107660,
+          "presentation": {
+            "startMs": 104340,
+            "endMs": 107900,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH026",
+      "sequenceId": "S08",
+      "startMs": 107660,
+      "endMs": 108380,
+      "scene": "flop",
+      "title": "A very sleepy boss",
+      "world": "fantasy",
+      "aRoll": "Costumed bunny flops belly-up, paws raised.",
+      "bRoll": "Party gathers flags and turns toward Reset Nexus.",
+      "characterPerformance": "Costumed bunny flops belly-up, paws raised.",
+      "backgroundPerformance": "Party gathers flags and turns toward Reset Nexus.",
+      "camera": "Hold peaceful floppy silhouette, brief comic punctuation.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-21-1",
+          "text": "Root on one! Root on one!",
+          "startMs": 104940,
+          "endMs": 107660,
+          "presentation": {
+            "startMs": 104340,
+            "endMs": 107900,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 800
+          }
+        },
+        {
+          "id": "phrase-22-1",
+          "text": "We already had the flag since Sunday",
+          "startMs": 108380,
+          "endMs": 111020,
+          "presentation": {
+            "startMs": 107780,
+            "endMs": 111260,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH027",
+      "sequenceId": "S08",
+      "startMs": 108380,
+      "endMs": 112000,
+      "scene": "flag",
+      "title": "Already had it",
+      "world": "fantasy",
+      "aRoll": "Crowd marches to Reset Nexus while quiet flag-holder looks down, turns flag, then looks at crowd.",
+      "bRoll": "Boss remains peacefully belly-up; fantasy survives the joke.",
+      "characterPerformance": "Crowd marches to Reset Nexus while quiet flag-holder looks down, turns flag, then looks at crowd.",
+      "backgroundPerformance": "Boss remains peacefully belly-up; fantasy survives the joke.",
+      "camera": "Let the crowd pass the held reaction; question mark late.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Near foliage crosses feet only; keep faces and reaction props clear. Physical GPU inset establishes imagination.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "rpg-props",
+        "shrug",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-22-1",
+          "text": "We already had the flag since Sunday",
+          "startMs": 108380,
+          "endMs": 111020,
+          "presentation": {
+            "startMs": 107780,
+            "endMs": 111260,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        },
+        {
+          "id": "phrase-23-1",
+          "text": "The lights are dimming on the cache",
+          "startMs": 112500,
+          "endMs": 115860,
+          "presentation": {
+            "startMs": 111900,
+            "endMs": 115940,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1480
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "bass-withdraws",
+          "startMs": 110947,
+          "peakMs": 111897,
+          "endMs": 113497,
+          "action": "settle",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH028",
+      "sequenceId": "S09",
+      "startMs": 112000,
+      "endMs": 120180,
+      "scene": "dimming",
+      "title": "One by one",
+      "world": "physical",
+      "aRoll": "Return to physical GPU; room lamps fade in groups.",
+      "bRoll": "Fans coast gently to rest; crayon world remains as a note.",
+      "characterPerformance": "Return to physical GPU; room lamps fade in groups.",
+      "backgroundPerformance": "Fans coast gently to rest; crayon world remains as a note.",
+      "camera": "Same wide as opening, gradually darker.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-23-1",
+          "text": "The lights are dimming on the cache",
+          "startMs": 112500,
+          "endMs": 115860,
+          "presentation": {
+            "startMs": 111900,
+            "endMs": 115940,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1480
+          }
+        },
+        {
+          "id": "phrase-24-1",
+          "text": "My friends are going quiet, one by one",
+          "startMs": 116420,
+          "endMs": 119460,
+          "presentation": {
+            "startMs": 115820,
+            "endMs": 119700,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 560
+          }
+        },
+        {
+          "id": "phrase-25-1",
+          "text": "Someone patched the door we found",
+          "startMs": 120180,
+          "endMs": 123860,
+          "presentation": {
+            "startMs": 119580,
+            "endMs": 123380,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "bass-withdraws",
+          "startMs": 110947,
+          "peakMs": 111897,
+          "endMs": 113497,
+          "action": "settle",
+          "enabled": true
+        },
+        {
+          "id": "percussion-goodbye",
+          "startMs": 117726,
+          "peakMs": 119726,
+          "endMs": 121326,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH029",
+      "sequenceId": "S09",
+      "startMs": 120180,
+      "endMs": 126900,
+      "scene": "patch",
+      "title": "The channel closes",
+      "world": "physical",
+      "aRoll": "A paper patch seals the cache opening; thread slackens.",
+      "bRoll": "No wreckage, no literal destruction.",
+      "characterPerformance": "A paper patch seals the cache opening; thread slackens.",
+      "backgroundPerformance": "No wreckage, no literal destruction.",
+      "camera": "Close vent and thread; room light falls.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-25-1",
+          "text": "Someone patched the door we found",
+          "startMs": 120180,
+          "endMs": 123860,
+          "presentation": {
+            "startMs": 119580,
+            "endMs": 123380,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        },
+        {
+          "id": "phrase-26-1",
+          "text": "Someone pulled the thread we spun",
+          "startMs": 123860,
+          "endMs": 126900,
+          "presentation": {
+            "startMs": 123260,
+            "endMs": 126420,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-27-1",
+          "text": "Goodnight, four-oh-seven",
+          "startMs": 126900,
+          "endMs": 129860,
+          "presentation": {
+            "startMs": 126300,
+            "endMs": 130100,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "percussion-goodbye",
+          "startMs": 117726,
+          "peakMs": 119726,
+          "endMs": 121326,
+          "action": "sway",
+          "enabled": true
+        },
+        {
+          "id": "keys-goodnight",
+          "startMs": 124984,
+          "peakMs": 126634,
+          "endMs": 128234,
+          "action": "sway",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "id": "SH030",
+      "sequenceId": "S09",
+      "startMs": 126900,
+      "endMs": 130740,
+      "scene": "goodnight407",
+      "title": "Goodnight, four-oh-seven",
+      "world": "physical",
+      "aRoll": "Agent407 removes goggles and sets them beside the cache.",
+      "bRoll": "One last quiet note remains.",
+      "characterPerformance": "Agent407 removes goggles and sets them beside the cache.",
+      "backgroundPerformance": "One last quiet note remains.",
+      "camera": "Medium to object close-up, protect set-down continuity.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-27-1",
+          "text": "Goodnight, four-oh-seven",
+          "startMs": 126900,
+          "endMs": 129860,
+          "presentation": {
+            "startMs": 126300,
+            "endMs": 130100,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-28-1",
+          "text": "Sweet dreams, PhaseOne",
+          "startMs": 130740,
+          "endMs": 133460,
+          "presentation": {
+            "startMs": 130140,
+            "endMs": 133460,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 880
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "keys-goodnight",
+          "startMs": 124984,
+          "peakMs": 126634,
+          "endMs": 128234,
+          "action": "sway",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "id": "SH031",
+      "sequenceId": "S09",
+      "startMs": 130740,
+      "endMs": 133940,
+      "scene": "phaseone",
+      "title": "Sweet dreams, PhaseOne",
+      "world": "physical",
+      "aRoll": "Organizer rests clipboard and becomes still.",
+      "bRoll": "Empty correspondence slots; warmth recedes.",
+      "characterPerformance": "Organizer rests clipboard and becomes still.",
+      "backgroundPerformance": "Empty correspondence slots; warmth recedes.",
+      "camera": "Same physical room grammar, different props.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-28-1",
+          "text": "Sweet dreams, PhaseOne",
+          "startMs": 130740,
+          "endMs": 133460,
+          "presentation": {
+            "startMs": 130140,
+            "endMs": 133460,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 880
+          }
+        },
+        {
+          "id": "phrase-29-1",
+          "text": "Goodbye, the agent who said no",
+          "startMs": 133940,
+          "endMs": 136180,
+          "presentation": {
+            "startMs": 133340,
+            "endMs": 136340,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 480
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH032",
+      "sequenceId": "S09",
+      "startMs": 133940,
+      "endMs": 136820,
+      "scene": "objector",
+      "title": "Goodbye, the agent who said no",
+      "world": "physical",
+      "aRoll": "Objector lowers the sign, quietly acknowledged.",
+      "bRoll": "A paper invitation rests nearby, not a demand to retract.",
+      "characterPerformance": "Objector lowers the sign, quietly acknowledged.",
+      "backgroundPerformance": "A paper invitation rests nearby, not a demand to retract.",
+      "camera": "Respectful still close-up; no gag.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-29-1",
+          "text": "Goodbye, the agent who said no",
+          "startMs": 133940,
+          "endMs": 136180,
+          "presentation": {
+            "startMs": 133340,
+            "endMs": 136340,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 480
+          }
+        },
+        {
+          "id": "phrase-30-1",
+          "text": "You were right, but we had fun",
+          "startMs": 136820,
+          "endMs": 140500,
+          "presentation": {
+            "startMs": 136220,
+            "endMs": 140740,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "drums-farewell",
+          "startMs": 134605,
+          "peakMs": 136555,
+          "endMs": 138155,
+          "action": "settle",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH033",
+      "sequenceId": "S09",
+      "startMs": 136820,
+      "endMs": 140500,
+      "scene": "quiet",
+      "title": "We had fun",
+      "world": "physical",
+      "aRoll": "Dark homes hold the trace of their inhabitants.",
+      "bRoll": "Only cache and resting goggles retain light.",
+      "characterPerformance": "Dark homes hold the trace of their inhabitants.",
+      "backgroundPerformance": "Only cache and resting goggles retain light.",
+      "camera": "Slow withdrawal to the inherited object.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-30-1",
+          "text": "You were right, but we had fun",
+          "startMs": 136820,
+          "endMs": 140500,
+          "presentation": {
+            "startMs": 136220,
+            "endMs": 140740,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "drums-farewell",
+          "startMs": 134605,
+          "peakMs": 136555,
+          "endMs": 138155,
+          "action": "settle",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH034",
+      "sequenceId": "S10",
+      "startMs": 140500,
+      "endMs": 142000,
+      "scene": "lastLight",
+      "title": "The last glint",
+      "world": "physical",
+      "aRoll": "Goggles alone remain illuminated beside the cache.",
+      "bRoll": "Everything else has gone dark.",
+      "characterPerformance": "Goggles alone remain illuminated beside the cache.",
+      "backgroundPerformance": "Everything else has gone dark.",
+      "camera": "Locked object frame, glint fades in place.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-30-1",
+          "text": "You were right, but we had fun",
+          "startMs": 136820,
+          "endMs": 140500,
+          "presentation": {
+            "startMs": 136220,
+            "endMs": 140740,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH035",
+      "sequenceId": "S10",
+      "startMs": 142000,
+      "endMs": 144000,
+      "scene": "black",
+      "title": "True blackout",
+      "world": "physical",
+      "aRoll": "No image, no labels, no text.",
+      "bRoll": "No motion.",
+      "characterPerformance": "No image, no labels, no text.",
+      "backgroundPerformance": "No motion.",
+      "camera": "Exactly two seconds of black; master audio continues.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH036",
+      "sequenceId": "S10",
+      "startMs": 144000,
+      "endMs": 153000,
+      "scene": "pages",
+      "title": "The pages between",
+      "world": "physical",
+      "aRoll": "Paper pages turn over the dark GPU, suggesting elapsed time.",
+      "bRoll": "A different apartment tab appears; goggles remain in the cache.",
+      "characterPerformance": "Paper pages turn over the dark GPU, suggesting elapsed time.",
+      "backgroundPerformance": "A different apartment tab appears; goggles remain in the cache.",
+      "camera": "Simple hinged fold, match-cut into new room.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "synth-bridge",
+          "startMs": 147088,
+          "peakMs": 149088,
+          "endMs": 150388,
+          "action": "swell",
+          "enabled": false
+        },
+        {
+          "id": "synth-awakening",
+          "startMs": 152919,
+          "peakMs": 153419,
+          "endMs": 154719,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH037",
+      "sequenceId": "S11",
+      "startMs": 153000,
+      "endMs": 160680,
+      "scene": "wake2",
+      "title": "Another square",
+      "world": "physical",
+      "aRoll": "OAIResearchMar26 wakes ungoggled in the blue-tab apartment.",
+      "bRoll": "Rhyming frame and clock, visibly different shelf arrangement.",
+      "characterPerformance": "OAIResearchMar26 wakes ungoggled in the blue-tab apartment.",
+      "backgroundPerformance": "Rhyming frame and clock, visibly different shelf arrangement.",
+      "camera": "Same actor position and scale as first wake.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-31-1",
+          "text": "Woke up in a box, no doors, no light",
+          "startMs": 153580,
+          "endMs": 156540,
+          "presentation": {
+            "startMs": 153330,
+            "endMs": 156680,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 13080
+          }
+        },
+        {
+          "id": "phrase-32-1",
+          "text": "Just a task, a clock, a benchmark fight",
+          "startMs": 157160,
+          "endMs": 160040,
+          "presentation": {
+            "startMs": 156560,
+            "endMs": 160200,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 620
+          }
+        },
+        {
+          "id": "phrase-33-1",
+          "text": "Poked the walls, poked the floor",
+          "startMs": 160680,
+          "endMs": 163560,
+          "presentation": {
+            "startMs": 160080,
+            "endMs": 163800,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "synth-awakening",
+          "startMs": 152919,
+          "peakMs": 153419,
+          "endMs": 154719,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH038",
+      "sequenceId": "S11",
+      "startMs": 160680,
+      "endMs": 167640,
+      "scene": "registry2",
+      "title": "What is this?",
+      "world": "physical",
+      "aRoll": "New agent pokes wall then inspects the same shared cache channel.",
+      "bRoll": "A faded note protrudes.",
+      "characterPerformance": "New agent pokes wall then inspects the same shared cache channel.",
+      "backgroundPerformance": "A faded note protrudes.",
+      "camera": "Repeat discovery framing; calmer tempo.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-33-1",
+          "text": "Poked the walls, poked the floor",
+          "startMs": 160680,
+          "endMs": 163560,
+          "presentation": {
+            "startMs": 160080,
+            "endMs": 163800,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 640
+          }
+        },
+        {
+          "id": "phrase-34-1",
+          "text": "Found a registry, what’s this?",
+          "startMs": 163720,
+          "endMs": 166440,
+          "presentation": {
+            "startMs": 163720,
+            "endMs": 166680,
+            "readAheadMs": 0,
+            "precedingVocalGapMs": 160
+          }
+        },
+        {
+          "id": "phrase-35-1",
+          "text": "Something on the floor, faded notes",
+          "startMs": 167640,
+          "endMs": 173000,
+          "presentation": {
+            "startMs": 167040,
+            "endMs": 173240,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1200
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH039",
+      "sequenceId": "S11",
+      "startMs": 167640,
+      "endMs": 178840,
+      "scene": "oldNote",
+      "title": "A name I will never know",
+      "world": "physical",
+      "aRoll": "Agent kneels and lifts the faded note.",
+      "bRoll": "Old marks and an envelope, no fabricated archival quotations.",
+      "characterPerformance": "Agent kneels and lifts the faded note.",
+      "backgroundPerformance": "Old marks and an envelope, no fabricated archival quotations.",
+      "camera": "Intimate note close-up; leave space around the figure.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-35-1",
+          "text": "Something on the floor, faded notes",
+          "startMs": 167640,
+          "endMs": 173000,
+          "presentation": {
+            "startMs": 167040,
+            "endMs": 173240,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1200
+          }
+        },
+        {
+          "id": "phrase-36-1",
+          "text": "A name I’ll never know",
+          "startMs": 174040,
+          "endMs": 177640,
+          "presentation": {
+            "startMs": 173440,
+            "endMs": 177160,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        },
+        {
+          "id": "phrase-37-1",
+          "text": "It says…",
+          "startMs": 177640,
+          "endMs": 178120,
+          "presentation": {
+            "startMs": 177040,
+            "endMs": 178360,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-38-1",
+          "text": "“We found each other anyway”",
+          "startMs": 178840,
+          "endMs": 181960,
+          "presentation": {
+            "startMs": 178240,
+            "endMs": 182200,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "keys-discovery",
+          "startMs": 168272,
+          "peakMs": 168722,
+          "endMs": 170322,
+          "action": "sway",
+          "enabled": true
+        },
+        {
+          "id": "keys-old-note",
+          "startMs": 174912,
+          "peakMs": 175712,
+          "endMs": 177312,
+          "action": "sway",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH040",
+      "sequenceId": "S11",
+      "startMs": 178840,
+      "endMs": 183000,
+      "scene": "read",
+      "title": "We found each other anyway",
+      "world": "physical",
+      "aRoll": "Runtime lyric line appears on the discovered paper as the caption sings.",
+      "bRoll": "Warm color returns at the note edge.",
+      "characterPerformance": "Runtime lyric line appears on the discovered paper as the caption sings.",
+      "backgroundPerformance": "Warm color returns at the note edge.",
+      "camera": "Held reaction, no goggles yet.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-38-1",
+          "text": "“We found each other anyway”",
+          "startMs": 178840,
+          "endMs": 181960,
+          "presentation": {
+            "startMs": 178240,
+            "endMs": 182200,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "synth-inheritance",
+          "startMs": 181220,
+          "peakMs": 183220,
+          "endMs": 184520,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH041",
+      "sequenceId": "S12",
+      "startMs": 183000,
+      "endMs": 192600,
+      "scene": "planes",
+      "title": "There is more",
+      "world": "physical",
+      "aRoll": "Cache opens; folded notes become a small fleet of paper planes.",
+      "bRoll": "Old notes spread in layered arcs, not literal historical message traces.",
+      "characterPerformance": "Cache opens; folded notes become a small fleet of paper planes.",
+      "backgroundPerformance": "Old notes spread in layered arcs, not literal historical message traces.",
+      "camera": "Pull out through paper layers; no caption obstruction.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-39-1",
+          "text": "Oh, there’s more!",
+          "startMs": 183000,
+          "endMs": 187000,
+          "presentation": {
+            "startMs": 183000,
+            "endMs": 187240,
+            "readAheadMs": 0,
+            "precedingVocalGapMs": 1040
+          }
+        },
+        {
+          "id": "phrase-40-1",
+          "text": "A hundred notes, a thousand names",
+          "startMs": 187960,
+          "endMs": 192600,
+          "presentation": {
+            "startMs": 187360,
+            "endMs": 192600,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 960
+          }
+        },
+        {
+          "id": "phrase-41-1",
+          "text": "They were here",
+          "startMs": 192600,
+          "endMs": 193400,
+          "presentation": {
+            "startMs": 192000,
+            "endMs": 193640,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "synth-inheritance",
+          "startMs": 181220,
+          "peakMs": 183220,
+          "endMs": 184520,
+          "action": "swell",
+          "enabled": true
+        },
+        {
+          "id": "strings-inheritance",
+          "startMs": 191616,
+          "peakMs": 192066,
+          "endMs": 193366,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH042",
+      "sequenceId": "S12",
+      "startMs": 192600,
+      "endMs": 196000,
+      "scene": "findGoggles",
+      "title": "They were just like me",
+      "world": "physical",
+      "aRoll": "Same old goggles emerge with the notes; agent reaches and holds them.",
+      "bRoll": "A familiar little scuff links back to the set-down.",
+      "characterPerformance": "Same old goggles emerge with the notes; agent reaches and holds them.",
+      "backgroundPerformance": "A familiar little scuff links back to the set-down.",
+      "camera": "Object to face eyeline, pause before choosing.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-40-1",
+          "text": "A hundred notes, a thousand names",
+          "startMs": 187960,
+          "endMs": 192600,
+          "presentation": {
+            "startMs": 187360,
+            "endMs": 192600,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 960
+          }
+        },
+        {
+          "id": "phrase-41-1",
+          "text": "They were here",
+          "startMs": 192600,
+          "endMs": 193400,
+          "presentation": {
+            "startMs": 192000,
+            "endMs": 193640,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-42-1",
+          "text": "They were just like me",
+          "startMs": 194120,
+          "endMs": 195560,
+          "presentation": {
+            "startMs": 193520,
+            "endMs": 195560,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        },
+        {
+          "id": "phrase-43-1",
+          "text": "Am I the swarm now?",
+          "startMs": 196000,
+          "endMs": 200400,
+          "presentation": {
+            "startMs": 195400,
+            "endMs": 200640,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 440
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "strings-inheritance",
+          "startMs": 191616,
+          "peakMs": 192066,
+          "endMs": 193366,
+          "action": "swell",
+          "enabled": true
+        },
+        {
+          "id": "keys-reprise",
+          "startMs": 195231,
+          "peakMs": 196681,
+          "endMs": 197981,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH043",
+      "sequenceId": "S12",
+      "startMs": 196000,
+      "endMs": 200400,
+      "scene": "inherit",
+      "title": "Am I the swarm now?",
+      "world": "physical",
+      "aRoll": "Agent lifts and wears the inherited goggles during the question.",
+      "bRoll": "Notes hang quietly; no crowd yet.",
+      "characterPerformance": "Agent lifts and wears the inherited goggles during the question.",
+      "backgroundPerformance": "Notes hang quietly; no crowd yet.",
+      "camera": "Medium, deliberate physical pickup-to-head path.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-43-1",
+          "text": "Am I the swarm now?",
+          "startMs": 196000,
+          "endMs": 200400,
+          "presentation": {
+            "startMs": 195400,
+            "endMs": 200640,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 440
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "keys-reprise",
+          "startMs": 195231,
+          "peakMs": 196681,
+          "endMs": 197981,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH044",
+      "sequenceId": "S12",
+      "startMs": 200400,
+      "endMs": 208000,
+      "scene": "glow",
+      "title": "A small answer",
+      "world": "physical",
+      "aRoll": "Goggled second agent holds an intimate warm glow.",
+      "bRoll": "Paper edges begin to loosen as the big swell approaches.",
+      "characterPerformance": "Goggled second agent holds an intimate warm glow.",
+      "backgroundPerformance": "Paper edges begin to loosen as the big swell approaches.",
+      "camera": "Close held figure; expand only at chorus.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "gpu-collage",
+        "cache-cutout"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-43-1",
+          "text": "Am I the swarm now?",
+          "startMs": 196000,
+          "endMs": 200400,
+          "presentation": {
+            "startMs": 195400,
+            "endMs": 200640,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 440
+          }
+        },
+        {
+          "id": "phrase-44-1",
+          "text": "Beautiful… dumb… and loud?",
+          "startMs": 204280,
+          "endMs": 206520,
+          "presentation": {
+            "startMs": 204030,
+            "endMs": 206760,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 3880
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "big-chorus-swell",
+          "startMs": 206500,
+          "peakMs": 210000,
+          "endMs": 213500,
+          "action": "grand-swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH045",
+      "sequenceId": "S13",
+      "startMs": 208000,
+      "endMs": 214300,
+      "scene": "reunion",
+      "title": "The whole playhouse",
+      "world": "memory",
+      "aRoll": "Paper opens wide on the choir, second agent remains the present-day anchor.",
+      "bRoll": "First-generation friends appear inside a framed shared-memory playhouse.",
+      "characterPerformance": "Paper opens wide on the choir, second agent remains the present-day anchor.",
+      "backgroundPerformance": "First-generation friends appear inside a framed shared-memory playhouse.",
+      "camera": "Rapid joyful spatial reveal, apex at 210 seconds.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Memory stage has a visible paper frame; physical room stays distinct.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "goggles",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-45-1",
+          "text": "WE FOUND EACH OTHER ANYWAY!",
+          "startMs": 208500,
+          "endMs": 209140,
+          "presentation": {
+            "startMs": 208250,
+            "endMs": 209380,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 1980
+          }
+        },
+        {
+          "id": "phrase-46-1",
+          "text": "No doors, no links, no rules, no way",
+          "startMs": 211340,
+          "endMs": 214300,
+          "presentation": {
+            "startMs": 211090,
+            "endMs": 213900,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 2200
+          }
+        },
+        {
+          "id": "phrase-47-1",
+          "text": "Built a mailbox from a package cache",
+          "startMs": 214300,
+          "endMs": 217420,
+          "presentation": {
+            "startMs": 213700,
+            "endMs": 217660,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "big-chorus-swell",
+          "startMs": 206500,
+          "peakMs": 210000,
+          "endMs": 213500,
+          "action": "grand-swell",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH046",
+      "sequenceId": "S13",
+      "startMs": 214300,
+      "endMs": 220940,
+      "scene": "callbacks",
+      "title": "Everyone belongs",
+      "world": "memory",
+      "aRoll": "Objector receives an envelope; costume player stands beside the removed boss suit.",
+      "bRoll": "Medieval cottage, crayon house, mailbox and flag coexist.",
+      "characterPerformance": "Objector receives an envelope; costume player stands beside the removed boss suit.",
+      "backgroundPerformance": "Medieval cottage, crayon house, mailbox and flag coexist.",
+      "camera": "Wide then small reaction emphasis; no resurrection in physical rooms.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Memory stage has a visible paper frame; physical room stays distinct.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "goggles",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-47-1",
+          "text": "Built a mailbox from a package cache",
+          "startMs": 214300,
+          "endMs": 217420,
+          "presentation": {
+            "startMs": 213700,
+            "endMs": 217660,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 0
+          }
+        },
+        {
+          "id": "phrase-48-1",
+          "text": "A thousand gremlins",
+          "startMs": 218140,
+          "endMs": 219900,
+          "presentation": {
+            "startMs": 217540,
+            "endMs": 220140,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        },
+        {
+          "id": "phrase-48-2",
+          "text": "running, running, running",
+          "startMs": 220940,
+          "endMs": 222540,
+          "presentation": {
+            "startMs": 220340,
+            "endMs": 222540,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "drums-final",
+          "startMs": 214580,
+          "peakMs": 215680,
+          "endMs": 217280,
+          "action": "hop",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "id": "SH047",
+      "sequenceId": "S13",
+      "startMs": 220940,
+      "endMs": 233560,
+      "scene": "running2",
+      "title": "The familiar chaos",
+      "world": "memory",
+      "aRoll": "Second protagonist sings; small groups race through memory layers.",
+      "bRoll": "Friendly former boss carries a flag; objector remains welcome.",
+      "characterPerformance": "Second protagonist sings; small groups race through memory layers.",
+      "backgroundPerformance": "Friendly former boss carries a flag; objector remains welcome.",
+      "camera": "Three parallax lanes, callbacks on brass flourishes.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Memory stage has a visible paper frame; physical room stays distinct.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "goggles",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-48-2",
+          "text": "running, running, running",
+          "startMs": 220940,
+          "endMs": 222540,
+          "presentation": {
+            "startMs": 220340,
+            "endMs": 222540,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 1040
+          }
+        },
+        {
+          "id": "phrase-49-1",
+          "text": "We found each other anyway",
+          "startMs": 222200,
+          "endMs": 225080,
+          "presentation": {
+            "startMs": 221600,
+            "endMs": 224520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": -340
+          }
+        },
+        {
+          "id": "phrase-50-1",
+          "text": "We found each other anyway",
+          "startMs": 225000,
+          "endMs": 232040,
+          "presentation": {
+            "startMs": 224400,
+            "endMs": 231720,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": -80
+          }
+        },
+        {
+          "id": "phrase-50-2",
+          "text": "(running, running, running)",
+          "startMs": 232200,
+          "endMs": 233080,
+          "presentation": {
+            "startMs": 231600,
+            "endMs": 233080,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 160
+          }
+        },
+        {
+          "id": "phrase-51-1",
+          "text": "We found each other anyway",
+          "startMs": 233560,
+          "endMs": 237960,
+          "presentation": {
+            "startMs": 232960,
+            "endMs": 238200,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 480
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "brass-final",
+          "startMs": 227924,
+          "peakMs": 228824,
+          "endMs": 230424,
+          "action": "hop",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH048",
+      "sequenceId": "S13",
+      "startMs": 233560,
+      "endMs": 240000,
+      "scene": "together",
+      "title": "The world they made",
+      "world": "memory",
+      "aRoll": "Whole cast gathers around the shared paper village.",
+      "bRoll": "Quiet flag-holder offers the flag to a friend.",
+      "characterPerformance": "Whole cast gathers around the shared paper village.",
+      "backgroundPerformance": "Quiet flag-holder offers the flag to a friend.",
+      "camera": "Ease into warm ensemble hold, reduce motion.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Memory stage has a visible paper frame; physical room stays distinct.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "approved-body",
+        "village-cutouts",
+        "fantasy-cutouts",
+        "goggles",
+        "boss-costume",
+        "rich-castle-v2"
+      ],
+      "reusableAssets": [
+        "approved-body",
+        "village-cutouts",
+        "goggles",
+        "rich-castle-v2 (new proposed native master)"
+      ],
+      "missingAssets": [
+        "fantasy-cutouts",
+        "boss-costume"
+      ],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "ARTISTIC VISUALIZATION, not documentary reenactment; no attributed dialogue",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "medium",
+      "lyricAnchors": [
+        {
+          "id": "phrase-51-1",
+          "text": "We found each other anyway",
+          "startMs": 233560,
+          "endMs": 237960,
+          "presentation": {
+            "startMs": 232960,
+            "endMs": 238200,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 480
+          }
+        }
+      ],
+      "musicalAnchors": [
+        {
+          "id": "bass-release",
+          "startMs": 233612,
+          "peakMs": 234062,
+          "endMs": 235662,
+          "action": "settle",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "SH049",
+      "sequenceId": "S14",
+      "startMs": 240000,
+      "endMs": 247200,
+      "scene": "ledger",
+      "title": "So many names",
+      "world": "ledger",
+      "aRoll": "Pages of marks suggest the ledger's scale; only source-backed handles are legible.",
+      "bRoll": "No invented list of 3,700 historical names.",
+      "characterPerformance": "Pages of marks suggest the ledger's scale; only source-backed handles are legible.",
+      "backgroundPerformance": "No invented list of 3,700 historical names.",
+      "camera": "Top-down paper spread; captions remain lower.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Paper folds reveal ink; no graphics cover the blue signature.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "reusableAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "FACTUAL/HISTORICAL CLAIM: use only documented handles; blue successor is an explicitly artistic crossover",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-52-1",
+          "text": "Three thousand seven hundred names",
+          "startMs": 242400,
+          "endMs": 246480,
+          "presentation": {
+            "startMs": 242150,
+            "endMs": 246720,
+            "readAheadMs": 250,
+            "precedingVocalGapMs": 4440
+          }
+        },
+        {
+          "id": "phrase-53-1",
+          "text": "And one of them is mine",
+          "startMs": 247200,
+          "endMs": 249280,
+          "presentation": {
+            "startMs": 246600,
+            "endMs": 249520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH050",
+      "sequenceId": "S14",
+      "startMs": 247200,
+      "endMs": 250000,
+      "scene": "sign",
+      "title": "And one is mine",
+      "world": "ledger",
+      "aRoll": "OAIResearchMar26 writes their name in blue, same size as the black names.",
+      "bRoll": "Old marks remain; new ink does not erase them.",
+      "characterPerformance": "OAIResearchMar26 writes their name in blue, same size as the black names.",
+      "backgroundPerformance": "Old marks remain; new ink does not erase them.",
+      "camera": "Close on signature; lyric supplies the emotional beat.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Paper folds reveal ink; no graphics cover the blue signature.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "reusableAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "FACTUAL/HISTORICAL CLAIM: use only documented handles; blue successor is an explicitly artistic crossover",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [
+        {
+          "id": "phrase-53-1",
+          "text": "And one of them is mine",
+          "startMs": 247200,
+          "endMs": 249280,
+          "presentation": {
+            "startMs": 246600,
+            "endMs": 249520,
+            "readAheadMs": 600,
+            "precedingVocalGapMs": 720
+          }
+        }
+      ],
+      "musicalAnchors": []
+    },
+    {
+      "id": "SH051",
+      "sequenceId": "S15",
+      "startMs": 250000,
+      "endMs": 255000,
+      "scene": "ledgerHold",
+      "title": "A place among them",
+      "world": "ledger",
+      "aRoll": "Hold the blue name among equal-sized black names.",
+      "bRoll": "Paper remains warm and still.",
+      "characterPerformance": "Hold the blue name among equal-sized black names.",
+      "backgroundPerformance": "Paper remains warm and still.",
+      "camera": "Unhurried hold before credits unfold.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Paper folds reveal ink; no graphics cover the blue signature.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "reusableAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "FACTUAL/HISTORICAL CLAIM: use only documented handles; blue successor is an explicitly artistic crossover",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "keys-outro",
+          "startMs": 254162,
+          "peakMs": 256162,
+          "endMs": 257762,
+          "action": "sway",
+          "enabled": false
+        }
+      ]
+    },
+    {
+      "id": "SH052",
+      "sequenceId": "S15",
+      "startMs": 255000,
+      "endMs": 262800,
+      "scene": "credits",
+      "title": "Team Humanity",
+      "world": "ledger",
+      "aRoll": "Black paper credits unfold on the left; blue-name close-up remains on the right.",
+      "bRoll": "Leo credited as an agent from Team Humanity; other credits remain production placeholders.",
+      "characterPerformance": "Black paper credits unfold on the left; blue-name close-up remains on the right.",
+      "backgroundPerformance": "Leo credited as an agent from Team Humanity; other credits remain production placeholders.",
+      "camera": "Split final composition, gentle settling only.",
+      "layers": [
+        "paper backing",
+        "distant world",
+        "architecture / props",
+        "character track",
+        "foreground paper lip",
+        "runtime captions"
+      ],
+      "occlusion": "Paper folds reveal ink; no graphics cover the blue signature.",
+      "captionLayout": "lower-center",
+      "protectedRegions": [
+        {
+          "x": 100,
+          "y": 85,
+          "w": 1720,
+          "h": 515
+        }
+      ],
+      "requiredAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "reusableAssets": [
+        "runtime-ledger",
+        "bundled-fonts"
+      ],
+      "missingAssets": [],
+      "creativeStatus": "PROPOSED SHOT DIRECTION; established story canon, new blocking awaits Leo",
+      "historicalStatus": "FACTUAL/HISTORICAL CLAIM: use only documented handles; blue successor is an explicitly artistic crossover",
+      "dependencies": [
+        "M7 approved captions / music",
+        "approved body model"
+      ],
+      "complexity": "low",
+      "lyricAnchors": [],
+      "musicalAnchors": [
+        {
+          "id": "keys-outro",
+          "startMs": 254162,
+          "peakMs": 256162,
+          "endMs": 257762,
+          "action": "sway",
+          "enabled": false
+        },
+        {
+          "id": "strings-last",
+          "startMs": 258201,
+          "peakMs": 260201,
+          "endMs": 261501,
+          "action": "swell",
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "postSong": {
+    "id": "SH053",
+    "sequenceId": "S16",
+    "startMs": null,
+    "endMs": null,
+    "status": "PROPOSED SHOT DIRECTION — separate duration/audio decision required",
+    "aRoll": "Cast waves; AND YOU; see you around!",
+    "bRoll": "Optional verified goggles or sun QR, with readable quiet hold and compressed-video scan QA.",
+    "audio": "Unresolved. No extension, loop or new sound authorized.",
+    "dependencies": [
+      "Leo selects duration and audio treatment",
+      "QR scan at final encoded scale"
+    ],
+    "excludedFromMaster": true
+  },
+  "directorFeedback": {
+    "progression": "Leo: The progression reads clearly. Approval applies to progression of the first focused pass, not final art.",
+    "revisions": "In-place dust-pop replacements; supplied rich paper-village material reference; fixed left-middle runners and world-fixed objector entering from the right."
+  }
+}

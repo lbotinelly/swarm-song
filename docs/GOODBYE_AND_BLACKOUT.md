@@ -1,5 +1,7 @@
 # Goodbye / Sleep Instrumental — The Last Light
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 Status: strong agreed emotional sequence, precise timing to be aligned against master audio and lead-vocal stem, not inferred.
 
 Approved paper-world detail: the GPU building fans turn gently while the homes are awake. When the building goes dark, they coast down smoothly to rest rather than stopping abruptly. Keep this as flat paper-cutout motion within the approved child-assembled collage language. The eight-second M5 power-down preview uses demonstration timings only; align the film version with this sequence and preserve the goggles as the last light.

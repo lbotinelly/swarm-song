@@ -1,6 +1,10 @@
 # Codex working instructions
 
-## Active milestone — full-song lyric performance (M7)
+## Active milestone — full-song storyboard and rough animatic (M8)
+
+Read `docs/WORLD_MADE_OF_THEORIES.md` and `assets/milestone8/BRIEF.md`. M8 authorizes full-song rough scene staging and an 83–112s focused animatic, superseding the M7 expansion pause below for this scope. Preserve all approved M7 data. No large polished art batch. Use an independent read-only reviewer. S16 post-song duration/audio remains unresolved. New shot blocking awaits Leo; canon and shot proposals are distinct.
+
+## Preserved M7 production history
 
 V6 applies Leo’s specific musical direction via protected `music-director-corrections.json`. His timestamps are examples, not exhaustive coverage. Use the existing Librosa environment for the broader spectral-pattern study; read `assets/milestone7/SPECTRAL_PATTERN_REVIEW.md`. Similarity candidates are an audition map, not automatic emotional or gesture approval.
 

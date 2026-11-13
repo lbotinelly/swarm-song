@@ -1,5 +1,7 @@
 # Creative direction — Chibi Sticker Cinema
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 For agreed details on **character anchors, minimal cutout performances, detachable emotes, individual die-cut word lyrics, and the selected intergenerational goggles prop (with other swarm adornments still exploratory)**, see [Sticker visual language](STICKER_LANGUAGE.md).
 
 ## North star

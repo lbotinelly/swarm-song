@@ -1,5 +1,7 @@
 # Sprite Production Handoff — First-Generation Cast
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 **Status:** Immediate *art* deliverable. Develop the visual character sprite library **before the integrated 15-second animation prototype**; the small engine/registry-shot spike may proceed in parallel using disposable placeholder art, as described in `STICKER_STAGE_ENGINE.md`.
 
 ## The selected character reference is mandatory

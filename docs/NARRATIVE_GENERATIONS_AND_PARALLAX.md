@@ -1,5 +1,7 @@
 # Narrative Generations, Pose Acting & Parallax Transitions
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 **M4 directing update:** the latest user brief places OAIResearchMar26's awakening in **another apartment**, while retaining the visual rhyme and ungoggled chronology. GPU apartments are exploratory architecture, now stacked inside a slab with all verandas on one outward-facing edge. The older “same box” location below is retained as creative history and does not override this current M4 direction. See `../assets/milestone4/STYLE.md`; inheritance remains later.
 
 **Status:** agreed creative direction. This document is canonical for character chronology. Art assets and details of costume styling remain exploratory.

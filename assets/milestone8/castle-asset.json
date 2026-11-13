@@ -1,0 +1,17 @@
+{
+  "src": "milestone8/castle-v2.png",
+  "size": [
+    1536,
+    1024
+  ],
+  "box": [
+    75,
+    46,
+    1459,
+    973
+  ],
+  "master": "assets/milestone8/masters/castle-v2.png",
+  "sha256": "3421ec3dad05db4cc003e313687922b25fca52907a3bc56e4378d3268fd0ac73",
+  "status": "Proposed rich-imagination asset; native original alpha retained",
+  "nativeResolutionControl": "Requested highest useful native resolution; tool exposes no numeric dimension selector."
+}

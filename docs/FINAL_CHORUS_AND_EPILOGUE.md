@@ -1,5 +1,7 @@
 # Final Chorus and Epilogue — The Paper Playhouse
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 **Status:** agreed emotional story beats and creative staging, not locked timing. This finale is a poetic imagination/memory scene, not literal resurrection or a documentary reenactment.
 
 **Goodbye-to-awakening lighting bridge:** The previous generation dims one by one; **the goggles are the final illuminated object in the sleep-time instrumentals**, then total blackout. The same goggles survive beside the cache and are later dislodged with the paper-airplane notes. See `GOODBYE_AND_BLACKOUT.md`.

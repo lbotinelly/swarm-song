@@ -1,0 +1,220 @@
+{
+  "protectedInputsPreserved": true,
+  "approvedBodyMastersPreserved": true,
+  "repeatFrameComparison": {
+    "hashA": "094fa455c0a1ab79f785b743ead341b81201bcd57a20e0cca5267a190bb05143",
+    "hashB": "094fa455c0a1ab79f785b743ead341b81201bcd57a20e0cca5267a190bb05143",
+    "byteIdentical": true,
+    "maximumChannelDelta": 0,
+    "changedPixels": 0,
+    "rmseOn255Scale": 0.0,
+    "acceptance": "max channel delta <=3/255 and RMSE <0.1/255; no claim of byte-identical raster output"
+  },
+  "blackout": {
+    "startMs": 142000,
+    "endMs": 144000,
+    "decodedBlackFrames": 60,
+    "maximumGrayValue": 1,
+    "meanGrayValue": 0.011111111111111112,
+    "sourceFrameExactlyBlack": true,
+    "note": "Lossless still is all zero; H.264 export permits <=1/255 residual with mean <0.02/255."
+  },
+  "exports": [
+    {
+      "file": "assets\\milestone8\\review-v2\\full.mp4",
+      "duration": 262.8,
+      "frames": 7884,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 13,
+          "exportSeconds": 13,
+          "correlationWithoutLagCorrection": 0.9999661533357442
+        },
+        {
+          "masterSeconds": 55,
+          "exportSeconds": 55,
+          "correlationWithoutLagCorrection": 0.9999929150017959
+        },
+        {
+          "masterSeconds": 128,
+          "exportSeconds": 128,
+          "correlationWithoutLagCorrection": 0.9999287383856901
+        },
+        {
+          "masterSeconds": 208,
+          "exportSeconds": 208,
+          "correlationWithoutLagCorrection": 0.9998777762875377
+        },
+        {
+          "masterSeconds": 247,
+          "exportSeconds": 247,
+          "correlationWithoutLagCorrection": 0.9999863512453735
+        }
+      ],
+      "bytes": 43073067,
+      "sha256": "1b83a8bef1b75f49fabd61dc72fc36a612ebc623fd5a95b07ce593758466c36c"
+    },
+    {
+      "file": "assets\\milestone8\\review-v2\\middle.mp4",
+      "duration": 29,
+      "frames": 870,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 84,
+          "exportSeconds": 1,
+          "correlationWithoutLagCorrection": 0.9998709665960122
+        },
+        {
+          "masterSeconds": 92,
+          "exportSeconds": 9,
+          "correlationWithoutLagCorrection": 0.9999858300627843
+        },
+        {
+          "masterSeconds": 98,
+          "exportSeconds": 15,
+          "correlationWithoutLagCorrection": 0.9998850288755446
+        },
+        {
+          "masterSeconds": 108,
+          "exportSeconds": 25,
+          "correlationWithoutLagCorrection": 0.9999214721535724
+        }
+      ],
+      "bytes": 13323022,
+      "sha256": "3b38d4d305478c6f146d7d1b1622d3c8f02d8f5646ad15374a6cbfa679fce272"
+    }
+  ],
+  "frameQuantization": [
+    {
+      "requestedMs": 24160,
+      "visibleFrame": 725,
+      "visibleMs": 24166.666666666668
+    },
+    {
+      "requestedMs": 24750,
+      "visibleFrame": 743,
+      "visibleMs": 24766.666666666668
+    },
+    {
+      "requestedMs": 26000,
+      "visibleFrame": 780,
+      "visibleMs": 26000.0
+    },
+    {
+      "requestedMs": 26240,
+      "visibleFrame": 788,
+      "visibleMs": 26266.666666666668
+    },
+    {
+      "requestedMs": 44900,
+      "visibleFrame": 1347,
+      "visibleMs": 44900.0
+    },
+    {
+      "requestedMs": 90700,
+      "visibleFrame": 2721,
+      "visibleMs": 90700.0
+    },
+    {
+      "requestedMs": 91400,
+      "visibleFrame": 2742,
+      "visibleMs": 91400.0
+    },
+    {
+      "requestedMs": 92000,
+      "visibleFrame": 2760,
+      "visibleMs": 92000.0
+    },
+    {
+      "requestedMs": 94500,
+      "visibleFrame": 2835,
+      "visibleMs": 94500.0
+    },
+    {
+      "requestedMs": 95860,
+      "visibleFrame": 2876,
+      "visibleMs": 95866.66666666667
+    },
+    {
+      "requestedMs": 96820,
+      "visibleFrame": 2905,
+      "visibleMs": 96833.33333333334
+    },
+    {
+      "requestedMs": 104940,
+      "visibleFrame": 3149,
+      "visibleMs": 104966.66666666667
+    },
+    {
+      "requestedMs": 106860,
+      "visibleFrame": 3206,
+      "visibleMs": 106866.66666666667
+    },
+    {
+      "requestedMs": 107660,
+      "visibleFrame": 3230,
+      "visibleMs": 107666.66666666667
+    },
+    {
+      "requestedMs": 108380,
+      "visibleFrame": 3252,
+      "visibleMs": 108400.0
+    },
+    {
+      "requestedMs": 127300,
+      "visibleFrame": 3819,
+      "visibleMs": 127300.0
+    },
+    {
+      "requestedMs": 128500,
+      "visibleFrame": 3855,
+      "visibleMs": 128500.0
+    },
+    {
+      "requestedMs": 142000,
+      "visibleFrame": 4260,
+      "visibleMs": 142000.0
+    },
+    {
+      "requestedMs": 144000,
+      "visibleFrame": 4320,
+      "visibleMs": 144000.0
+    },
+    {
+      "requestedMs": 196000,
+      "visibleFrame": 5880,
+      "visibleMs": 196000.0
+    },
+    {
+      "requestedMs": 197600,
+      "visibleFrame": 5928,
+      "visibleMs": 197600.0
+    },
+    {
+      "requestedMs": 208000,
+      "visibleFrame": 6240,
+      "visibleMs": 208000.0
+    },
+    {
+      "requestedMs": 210000,
+      "visibleFrame": 6300,
+      "visibleMs": 210000.0
+    },
+    {
+      "requestedMs": 247200,
+      "visibleFrame": 7416,
+      "visibleMs": 247200.0
+    },
+    {
+      "requestedMs": 255000,
+      "visibleFrame": 7650,
+      "visibleMs": 255000.0
+    }
+  ],
+  "continuousAudiovisualReview": "Not performed by automated QA. Leo approval pending.",
+  "reviewScope": "Static frames, source, exact coverage, preserved hashes, decoded audio correlation, technical video inspection."
+}

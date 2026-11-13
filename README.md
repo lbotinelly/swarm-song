@@ -1,5 +1,11 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 8 — The whole story
+
+[Playable storyboard and full animatic](assets/milestone8/review-v2/index.html) · [83–112s focused film](assets/milestone8/review-v2/middle.mp4) · [Storyboard](assets/milestone8/STORYBOARD.md) · [Reproduction and review](assets/milestone8/README.md).
+
+The [world made of theories](docs/WORLD_MADE_OF_THEORIES.md) is established direction. New shot timing/blocking is a proposal for Leo, using approved sprites and scenery plus disclosed temporary cutouts. M8 supersedes the earlier scene-expansion pause for a rough full-song film; approved captions and musical maps remain protected. The separate post-song wave awaits a duration/audio decision.
+
 ## Milestone 7 — The song is the timeline
 
 [Whole-song spectral-pattern audition](assets/milestone7/pattern-review/index.html) uses Leo’s examples to search by spectral contrast, flux and tonal texture. [Method and findings](assets/milestone7/SPECTRAL_PATTERN_REVIEW.md).

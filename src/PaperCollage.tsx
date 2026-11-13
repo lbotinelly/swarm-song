@@ -53,9 +53,9 @@ function Home({x,y,role,angle,darkness,calling=false}:{x:number;y:number;role:'a
   <div style={{position:'absolute',inset:'-2px -1px -6px',background:'#273e54',opacity:darkness*.62,mixBlendMode:'multiply',clipPath:'polygon(0 0,99% 1%,100% 99%,0 100%)'}}/>
  </div>;
 }
-export function PaperCollage({awake=false,calling=false}:{awake?:boolean;calling?:boolean}) {
+export function PaperCollage({awake=false,calling=false,powerMs}:{awake?:boolean;calling?:boolean;powerMs?:number}) {
  const frame=useCurrentFrame(),{fps}=useVideoConfig();
- const {angleTop,angleBottom,darkness}=awake?{angleTop:-8+frame/fps*12,angleBottom:13+frame/fps*9,darkness:0}:fanPower(frame*1000/fps);
+ const {angleTop,angleBottom,darkness}=awake?{angleTop:-8+frame/fps*12,angleBottom:13+frame/fps*9,darkness:0}:fanPower(powerMs??frame*1000/fps);
  return <AbsoluteFill style={{background:'#e9e3d3',overflow:'hidden'}}>
   {/* A sheet on the worktable; modest misalignment belongs to individual pieces. */}
   <Card x={130} y={62} w={1660} h={947} color="#bfcfc8" angle={-.6}/>

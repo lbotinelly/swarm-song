@@ -1,0 +1,16 @@
+{
+  "mode": "Built-in Codex imagegen; no specific backend model claimed",
+  "reference": "assets/milestone8/reference/rich-imagination-directed.png",
+  "assets": [
+    {
+      "file": "masters/castle-v1-superseded.png",
+      "status": "Superseded by Leo's richer material reference",
+      "prompt": "Transform the supplied simple crayon-paper house into its astonishingly beautiful imagined fantasy CASTLE upgrade, as ONE isolated transparent production asset for Swarm Song. Keep the same child-assembled FLAT 2D cut-paper collage language and front elevation, but lavishly elaborate its handmade construction: beautifully layered cream and warm lavender cardstock towers, small coral and teal folded roofs, scalloped paper shingles, tiny warm golden window cutouts, a welcoming arched door, delicate cut-paper vines and flower details, slightly crooked pennants without symbols, subtle fold creases, fiber-rich edges, occasional tiny tape joins. A visually sophisticated child's loving craft project, theatrical paper silhouette with shallow overlap shadows. NOT a perspective miniature, no 3D building, no isometric geometry, no CGI polish. Wide, readable fairy-tale castle silhouette, 3 main towers and a central gate; silhouette remains clear at small screen size. No surrounding landscape, sky, ground, moat, dust, character, text or labels. Genuine transparent background, generous transparent padding, entire castle in frame. Highest useful native detail/resolution; one lossless master, not a contact sheet. Retain tangible paper textures, gentle material softness and warm cheerful colors from the reference. This is a proposed single hero upgrade asset, not a style redesign."
+    },
+    {
+      "file": "masters/castle-v2.png",
+      "status": "Proposed hero castle; native transparent original preserved",
+      "prompt": "Create ONE isolated fairy-tale CASTLE asset for the rich-imagination transformation in Swarm Song. The supplied village image is the EXACT MATERIAL AND ART-DIRECTION REFERENCE: tactile watercolor-washed paper, rough fibrous cut edges, folded cardstock construction, gently irregular hand-cut roof shingles, warm natural cast shadows between shallow layers, beautifully sophisticated but lovingly child-assembled. The castle should look built by the same person from the same materials as these houses. Wide front elevation / very shallow stage depth, cream and muted ochre stone-paper walls, dusty blue and soft coral folded roofs, three readable principal towers, arched wooden-paper gate, small warm windows, occasional tiny tape joints, delicate sage foliage at its base. Make it lush and elegant through material craft, NOT extra crayon doodles or bright candy-colored sticker decorations. It is a paper-theater scenery cutout on a flat 2D animation plane, not a CGI toy or isometric model. No surrounding landscape, sky, ground plate, text, labels, characters or emotes. Transparent background with alpha zero outside its exact silhouette; NO external glow, haze or colored aura. Include the entire structure and flags with at least 7% clear transparent margin on every side. Highest useful native resolution and detail. A single lossless transparent master, not a board of variants."
+    }
+  ]
+}

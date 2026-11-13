@@ -4,3 +4,6 @@ output/
 *.tsbuildinfo
 __pycache__/
 *.py[cod]
+
+# Initial M8 work-in-progress previews remain local; current review package is review-v2.
+assets/milestone8/review/

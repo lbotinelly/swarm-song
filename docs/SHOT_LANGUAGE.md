@@ -1,5 +1,7 @@
 # Shot Language — A-Roll, B-Roll, and Living Stickers
 
+> **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
+
 **Status:** agreed directing principles; first still-image style exploration precedes animation implementation.
 
 ## Thesis
