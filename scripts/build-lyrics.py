@@ -1,5 +1,5 @@
 """Build inspectable candidates; never overwrite reviewed timing corrections."""
-import json,re,hashlib,wave
+import json,re,hashlib,wave,copy
 from pathlib import Path
 from difflib import SequenceMatcher
 from PIL import ImageFont
@@ -60,20 +60,46 @@ for win in windows:
    a=min(w['startMs'] for w in group);b=max(w['endMs'] for w in group)
    mode='hero' if li in [8,10,37,42,44,48,50] else 'surprise' if li in [3,17,33,38] and (li!=3 or gi==1) else 'read-ahead'
    for w in group:w['emphasis']=norm(w['text']) in ['box','light','registry','writable','hello','swarm','anyway','running','goodnight','phaseone','no','mine','names'] or w is group[-1]
-   phrases.append(dict(id=f'phrase-{li+1:02d}-{gi+1}',sourceLine=li+1,sectionId=win['id'],text=' '.join(w['text'] for w in group),startMs=a,endMs=b,words=group,status='unresolved' if any(w['issues'] for w in group) else 'machine-candidate',confidence='candidate; listening required',vocalLayer='backing-candidate' if li==49 and gi==1 else 'lead',mode=mode,layout='hero',lineBreakAfter=({0:[5],1:[5],2:[3],4:[3],6:[3],7:[4],8:[3],10:[4],11:[4],12:[3],16:[5],19:[2],20:[3],23:[5],30:[5],31:[5],32:[3],34:[4],37:[4],39:[3],42:[3],44:[4],45:[4],46:[3],48:[4],49:[4]}.get(li,[]) if len(groups)==1 else []),presentation=dict(startMs=max(0,a-(0 if mode=='surprise' else 600)),endMs=b+240),evidence=f"evidence/{win['id']}-qwen.json"))
+   phrases.append(dict(id=f'phrase-{li+1:02d}-{gi+1}',sourceLine=li+1,sectionId=win['id'],text=' '.join(w['text'] for w in group),startMs=a,endMs=b,words=group,status='unresolved' if any(w['issues'] for w in group) else 'machine-candidate',confidence='candidate; listening required',vocalLayer='backing-candidate' if li==49 and gi==1 else 'lead',mode=mode,layout='lower-center',lineBreakAfter=({0:[5],1:[5],2:[3],4:[3],5:[3],6:[3],7:[4],8:[3],10:[4],11:[4],12:[3],14:[4],16:[5],18:[3],19:[2],20:[3],21:[3],22:[4],23:[5],24:[2],25:[2],28:[3],29:[3],30:[5],31:[5],32:[3],33:[3],34:[4],37:[4],39:[3],42:[3],44:[4],45:[4],46:[3],48:[4],49:[4],50:[4],51:[2]}.get(li,[]) if len(groups)==1 else []),presentation=dict(startMs=max(0,a-(0 if mode=='surprise' else 600)),endMs=b+240),evidence=f"evidence/{win['id']}-qwen.json"))
 # Independently protected human-approved phrase cues, never emitted by the aligner.
 corrections=read(BASE/'reviewed-corrections.json')
 for p in phrases:
  if p['id'] in corrections['phrases']:
   fix=corrections['phrases'][p['id']];p['startMs']=fix['startMs'];p['presentation']['startMs']=fix['startMs']-(0 if p['mode']=='surprise' else 600);p['phraseOnsetReview']=fix
+# Presentation-only response to Leo's playback notes; acoustic evidence stays intact.
+for i,p in enumerate(phrases):
+ gap=p['startMs']-(phrases[i-1]['endMs'] if i else 0)
+ lead=0 if p['mode']=='surprise' else (250 if gap>=1800 else 600)
+ p['presentation']['startMs']=max(0,p['startMs']-lead)
+ p['presentation']['readAheadMs']=lead
+ p['presentation']['precedingVocalGapMs']=gap
 # Clear older arrangements after incoming group is above it in draw order.
 for i,p in enumerate(phrases[:-1]):
  following=phrases[i+1]['presentation']['startMs']
  p['presentation']['endMs']=max(max(w['startMs'] for w in p['words']),min(p['presentation']['endMs'],max(p['presentation']['startMs']+220,following+120)))
+# Protected director-authored presentation overrides run after automated defaults.
+for p in phrases:
+ if p['id'] in corrections.get('presentation',{}):
+  fix=corrections['presentation'][p['id']]
+  for key in ['startMs','endMs']:
+   if key in fix:p['presentation'][key]=fix[key]
+  p['presentation']['readAheadMs']=p['startMs']-p['presentation']['startMs']
+  p['presentation']['review']={'status':'director-guided-editorial-estimate','source':'Leo playback feedback, November13,2026','reason':fix['reason']}
+# Preserve source lyrics; apply the user's confirmed transcription amendment explicitly.
+amendment=corrections.get('editorial',{}).get('firstRunning')
+if amendment:
+ p=next(p for p in phrases if p['id']==amendment['phraseId'])
+ i=next(i for i,w in enumerate(p['words']) if w['id']==amendment['splitWordId'])
+ second=p['words'][i];original=copy.deepcopy(second);third=copy.deepcopy(second)
+ second['endMs']=amendment['splitMs'];third.update(id=amendment['insertId'],startMs=amendment['splitMs'])
+ for w in [second,third]:
+  w.update(status='unresolved',confidence='count confirmed; boundary estimated',issues=['split-boundary-estimated-from-user-count'],evidence='reviewed-corrections.json:editorial.firstRunning',machineCandidate=original)
+ p['words'].insert(i+1,third);p['text']=' '.join(w['text'] for w in p['words']);p['editorialReview']=amendment;p['status']='unresolved'
+ issues=[dict(id=w['id'],text=w['text'],issues=w['issues']) for p in phrases for w in p['words'] if w['issues']]
 sections=[('intro',0,13000),('opening',13000,42000),('community',42000,71000),('instrumental',71000,83500),('comic',83500,111700),('goodbye',111700,140500),('sleep',140500,153000),('awakening',153000,182600),('inheritance',182600,207500),('final-chorus',207500,240000),('ledger',240000,250000),('outro',250000,262800)]
 master=ROOT/'assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav'
 with wave.open(str(master)) as f:audio=dict(frames=f.getnframes(),sampleRate=f.getframerate(),channels=f.getnchannels(),sampleWidth=f.getsampwidth())
-result=dict(version=1,clock='absolute master-relative integer milliseconds',durationMs=262800,master=str(master.relative_to(ROOT)).replace('\\','/'),masterSha256=hashlib.sha256(master.read_bytes()).hexdigest(),audio=audio,sections=[dict(id=id,startMs=a,endMs=b,instrumental=id in ['intro','instrumental','sleep','outro'],status='machine-candidate',note='Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend.') for id,a,b in sections],phrases=phrases)
+result=dict(version=2,presentationDefaults=dict(layout='lower-center',exitMs=150,longPauseThresholdMs=1800,longPauseReadAheadMs=250,readAheadMs=600),clock='absolute master-relative integer milliseconds',durationMs=262800,master=str(master.relative_to(ROOT)).replace('\\','/'),masterSha256=hashlib.sha256(master.read_bytes()).hexdigest(),audio=audio,sections=[dict(id=id,startMs=a,endMs=b,instrumental=id in ['intro','instrumental','sleep','outro'],status='machine-candidate',note='Section boundaries and instrumental classification require listening; reverberation/backing vocals may extend.') for id,a,b in sections],phrases=phrases)
 (BASE/'timeline.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
-(BASE/'timing-issues.json').write_text(json.dumps(dict(wordIssues=issues,editorialDisagreements=['Whisper hears four running repetitions in first chorus versus three in supplied lyrics; unresolved.','Whisper repeats the names line during outro, potentially hallucinated; not added without listening evidence.','Whisper duplicates Goodnight and My friends; supplied lyric occurrences retained pending listening.','Backing running response is represented in its own phrase, overlap and word count need listening.'],humanListeningPerformed=False),indent=2)+'\n',encoding='utf-8')
+(BASE/'timing-issues.json').write_text(json.dumps(dict(wordIssues=issues,editorialDisagreements=['Leo confirmed four first-chorus running repetitions. Original lyrics retained; explicit amendment applied. Second candidate span split at midpoint pending precise listening.','Whisper repeats the names line during outro, potentially hallucinated; not added without listening evidence.','Whisper duplicates Goodnight and My friends; supplied lyric occurrences retained pending listening.','Backing running response is represented in its own phrase, overlap and word count need listening.'],humanListeningPerformed=False),indent=2)+'\n',encoding='utf-8')
 print(len(phrases),'phrases;',sum(len(p['words']) for p in phrases),'words;',len(issues),'flagged words')

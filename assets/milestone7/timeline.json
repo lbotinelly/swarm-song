@@ -1,5 +1,12 @@
 {
-  "version": 1,
+  "version": 2,
+  "presentationDefaults": {
+    "layout": "lower-center",
+    "exitMs": 150,
+    "longPauseThresholdMs": 1800,
+    "longPauseReadAheadMs": 250,
+    "readAheadMs": 600
+  },
   "clock": "absolute master-relative integer milliseconds",
   "durationMs": 262800,
   "master": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
@@ -230,13 +237,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
-        "startMs": 13000,
-        "endMs": 16560
+        "startMs": 13350,
+        "endMs": 16560,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 13600
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -349,13 +358,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
         "startMs": 16440,
-        "endMs": 20160
+        "endMs": 20160,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 560
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -448,13 +459,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 20040,
-        "endMs": 23520
+        "endMs": 23520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -507,11 +520,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 23560,
-        "endMs": 25520
+        "endMs": 25520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 880
       },
       "evidence": "evidence/opening-qwen.json",
       "phraseOnsetReview": {
@@ -585,11 +600,18 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "surprise",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 26240,
-        "endMs": 27360
+        "endMs": 27660,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 960,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: writable holds 300ms longer; fade then 75ms clear before Left."
+        }
       },
       "evidence": "evidence/opening-qwen.json",
       "phraseOnsetReview": {
@@ -697,13 +719,20 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
-        "startMs": 27480,
-        "endMs": 30960
+        "startMs": 27885,
+        "endMs": 31210,
+        "readAheadMs": 195,
+        "precedingVocalGapMs": 960,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+        }
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -792,11 +821,20 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
-        "startMs": 30680,
-        "endMs": 34320
+        "startMs": 30930,
+        "endMs": 34320,
+        "readAheadMs": 350,
+        "precedingVocalGapMs": 0,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: Somebody answered delayed 200–300ms; chosen 250ms."
+        }
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -885,13 +923,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 34200,
-        "endMs": 37440
+        "endMs": 37440,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -1004,13 +1044,20 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 37320,
-        "endMs": 41320
+        "endMs": 42820,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: sustained me holds at least 1500ms longer."
+        }
       },
       "evidence": "evidence/opening-qwen.json"
     },
@@ -1095,13 +1142,20 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
-        "startMs": 41200,
-        "endMs": 47080
+        "startMs": 43270,
+        "endMs": 47080,
+        "readAheadMs": -1470,
+        "precedingVocalGapMs": 120,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Allow 300ms clear after sustained me and its 150ms fade."
+        }
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1174,11 +1228,18 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
-        "startMs": 47400,
-        "endMs": 54560
+        "startMs": 48840,
+        "endMs": 54560,
+        "readAheadMs": -840,
+        "precedingVocalGapMs": 1160,
+        "review": {
+          "status": "director-guided-editorial-estimate",
+          "source": "Leo playback feedback, November13,2026",
+          "reason": "Leo: two-second vocal pause after now; next phrase arrives 2000ms after candidate now ending46840."
+        }
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1255,13 +1316,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 53980,
-        "endMs": 56420
+        "endMs": 56420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 20
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1376,13 +1439,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 56300,
-        "endMs": 60420
+        "endMs": 60420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 400
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1489,13 +1554,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 59820,
-        "endMs": 63060
+        "endMs": 63060,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1550,11 +1617,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 62940,
-        "endMs": 66260
+        "endMs": 66260,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
       },
       "evidence": "evidence/community-qwen.json"
     },
@@ -1562,7 +1631,7 @@
       "id": "phrase-14-2",
       "sourceLine": 14,
       "sectionId": "community",
-      "text": "running, running, running",
+      "text": "running, running, running, running",
       "startMs": 67060,
       "endMs": 69860,
       "words": [
@@ -1582,13 +1651,53 @@
           "id": "line-14-word-05",
           "text": "running,",
           "startMs": 67940,
+          "endMs": 68780,
+          "widthEm": 3.8154,
+          "status": "unresolved",
+          "confidence": "count confirmed; boundary estimated",
+          "issues": [
+            "split-boundary-estimated-from-user-count"
+          ],
+          "evidence": "reviewed-corrections.json:editorial.firstRunning",
+          "emphasis": true,
+          "machineCandidate": {
+            "id": "line-14-word-05",
+            "text": "running,",
+            "startMs": 67940,
+            "endMs": 69620,
+            "widthEm": 3.8154,
+            "status": "machine-candidate",
+            "confidence": "medium",
+            "issues": [],
+            "evidence": "evidence/community-qwen.json",
+            "emphasis": true
+          }
+        },
+        {
+          "id": "line-14-word-05-extra",
+          "text": "running,",
+          "startMs": 68780,
           "endMs": 69620,
           "widthEm": 3.8154,
-          "status": "machine-candidate",
-          "confidence": "medium",
-          "issues": [],
-          "evidence": "evidence/community-qwen.json",
-          "emphasis": true
+          "status": "unresolved",
+          "confidence": "count confirmed; boundary estimated",
+          "issues": [
+            "split-boundary-estimated-from-user-count"
+          ],
+          "evidence": "reviewed-corrections.json:editorial.firstRunning",
+          "emphasis": true,
+          "machineCandidate": {
+            "id": "line-14-word-05",
+            "text": "running,",
+            "startMs": 67940,
+            "endMs": 69620,
+            "widthEm": 3.8154,
+            "status": "machine-candidate",
+            "confidence": "medium",
+            "issues": [],
+            "evidence": "evidence/community-qwen.json",
+            "emphasis": true
+          }
         },
         {
           "id": "line-14-word-06",
@@ -1609,13 +1718,25 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 66460,
-        "endMs": 70100
+        "endMs": 70100,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
       },
-      "evidence": "evidence/community-qwen.json"
+      "evidence": "evidence/community-qwen.json",
+      "editorialReview": {
+        "phraseId": "phrase-14-2",
+        "splitWordId": "line-14-word-05",
+        "insertId": "line-14-word-05-extra",
+        "splitMs": 68780,
+        "status": "human-confirmed-count; split-boundary-estimated",
+        "source": "Leo playback feedback, November 13, 2026",
+        "approval": "First running refrain has four repeats; the existing second running spans two occurrences.",
+        "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset."
+      }
     },
     {
       "id": "phrase-15-1",
@@ -1714,11 +1835,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
       "presentation": {
-        "startMs": 83940,
-        "endMs": 86780
+        "startMs": 84290,
+        "endMs": 86780,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 14680
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -1797,11 +1922,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 86980,
-        "endMs": 90300
+        "endMs": 90300,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -1928,13 +2055,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
         "startMs": 90260,
-        "endMs": 94620
+        "endMs": 94620,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 800
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -1994,11 +2123,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "surprise",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 94500,
-        "endMs": 97060
+        "endMs": 97060,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": -1320
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -2093,11 +2224,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
         "startMs": 97880,
-        "endMs": 100800
+        "endMs": 100800,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1660
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -2162,13 +2297,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         2
       ],
       "presentation": {
         "startMs": 100980,
-        "endMs": 104380
+        "endMs": 104380,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1020
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -2261,13 +2398,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 104340,
-        "endMs": 107900
+        "endMs": 107900,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 800
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -2368,11 +2507,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
         "startMs": 107780,
-        "endMs": 111260
+        "endMs": 111260,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/comic-qwen.json"
     },
@@ -2475,11 +2618,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
       "presentation": {
         "startMs": 111900,
-        "endMs": 115940
+        "endMs": 115940,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1480
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2592,13 +2739,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
         "startMs": 115820,
-        "endMs": 119700
+        "endMs": 119700,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 560
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2687,11 +2836,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
       "presentation": {
         "startMs": 119580,
-        "endMs": 123380
+        "endMs": 123380,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2780,11 +2933,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
       "presentation": {
         "startMs": 123260,
-        "endMs": 126420
+        "endMs": 126420,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2825,11 +2982,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 126300,
-        "endMs": 130100
+        "endMs": 130100,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2884,11 +3043,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 130140,
-        "endMs": 133460
+        "endMs": 133460,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 880
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -2977,11 +3138,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
         "startMs": 133340,
-        "endMs": 136340
+        "endMs": 136340,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -3086,11 +3251,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
         "startMs": 136220,
-        "endMs": 140740
+        "endMs": 140740,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
       },
       "evidence": "evidence/goodbye-qwen.json"
     },
@@ -3217,13 +3386,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
-        "startMs": 152980,
-        "endMs": 156680
+        "startMs": 153330,
+        "endMs": 156680,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 13080
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3340,13 +3511,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         5
       ],
       "presentation": {
         "startMs": 156560,
-        "endMs": 160200
+        "endMs": 160200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 620
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3435,13 +3608,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 160080,
-        "endMs": 163800
+        "endMs": 163800,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 640
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3522,11 +3697,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "surprise",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        3
+      ],
       "presentation": {
         "startMs": 163720,
-        "endMs": 166680
+        "endMs": 166680,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 160
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3619,13 +3798,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 167040,
-        "endMs": 173240
+        "endMs": 173240,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1200
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3704,11 +3885,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 173440,
-        "endMs": 177160
+        "endMs": 177160,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3751,11 +3934,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 177040,
-        "endMs": 178360
+        "endMs": 178360,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3832,13 +4017,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 178240,
-        "endMs": 182200
+        "endMs": 182200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/awakening-qwen.json"
     },
@@ -3899,11 +4086,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "surprise",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 183000,
-        "endMs": 187240
+        "endMs": 187240,
+        "readAheadMs": 0,
+        "precedingVocalGapMs": 1040
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4000,13 +4189,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 187360,
-        "endMs": 192600
+        "endMs": 192600,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 960
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4063,11 +4254,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 192000,
-        "endMs": 193640
+        "endMs": 193640,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4148,11 +4341,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 193520,
-        "endMs": 195560
+        "endMs": 195560,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4237,13 +4432,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 195400,
-        "endMs": 200640
+        "endMs": 200640,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 440
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4308,11 +4505,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
-        "startMs": 203680,
-        "endMs": 206760
+        "startMs": 204030,
+        "endMs": 206760,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 3880
       },
       "evidence": "evidence/inheritance-qwen.json"
     },
@@ -4393,13 +4592,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
-        "startMs": 207900,
-        "endMs": 209380
+        "startMs": 208250,
+        "endMs": 209380,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 1980
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4516,13 +4717,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
-        "startMs": 210740,
-        "endMs": 213900
+        "startMs": 211090,
+        "endMs": 213900,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 2200
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4625,13 +4828,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         3
       ],
       "presentation": {
         "startMs": 213700,
-        "endMs": 217660
+        "endMs": 217660,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 0
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4684,11 +4889,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 217540,
-        "endMs": 220140
+        "endMs": 220140,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4745,11 +4952,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 220340,
-        "endMs": 222540
+        "endMs": 222540,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 1040
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4832,13 +5041,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [
         4
       ],
       "presentation": {
         "startMs": 221600,
-        "endMs": 224520
+        "endMs": 224520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": -340
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4928,11 +5139,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 224400,
-        "endMs": 231720
+        "endMs": 231720,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": -80
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -4993,11 +5206,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "backing-candidate",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 231600,
-        "endMs": 233080
+        "endMs": 233080,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 160
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -5079,11 +5294,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "hero",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        4
+      ],
       "presentation": {
         "startMs": 232960,
-        "endMs": 238200
+        "endMs": 238200,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 480
       },
       "evidence": "evidence/final-chorus-qwen.json"
     },
@@ -5160,11 +5379,15 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
-      "lineBreakAfter": [],
+      "layout": "lower-center",
+      "lineBreakAfter": [
+        2
+      ],
       "presentation": {
-        "startMs": 241800,
-        "endMs": 246720
+        "startMs": 242150,
+        "endMs": 246720,
+        "readAheadMs": 250,
+        "precedingVocalGapMs": 4440
       },
       "evidence": "evidence/ledger-qwen.json"
     },
@@ -5253,11 +5476,13 @@
       "confidence": "candidate; listening required",
       "vocalLayer": "lead",
       "mode": "read-ahead",
-      "layout": "hero",
+      "layout": "lower-center",
       "lineBreakAfter": [],
       "presentation": {
         "startMs": 246600,
-        "endMs": 249520
+        "endMs": 249520,
+        "readAheadMs": 600,
+        "precedingVocalGapMs": 720
       },
       "evidence": "evidence/ledger-qwen.json"
     }

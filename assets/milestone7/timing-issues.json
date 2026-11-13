@@ -103,6 +103,20 @@
       ]
     },
     {
+      "id": "line-14-word-05",
+      "text": "running,",
+      "issues": [
+        "split-boundary-estimated-from-user-count"
+      ]
+    },
+    {
+      "id": "line-14-word-05-extra",
+      "text": "running,",
+      "issues": [
+        "split-boundary-estimated-from-user-count"
+      ]
+    },
+    {
       "id": "line-14-word-06",
       "text": "running",
       "issues": [
@@ -521,7 +535,7 @@
     }
   ],
   "editorialDisagreements": [
-    "Whisper hears four running repetitions in first chorus versus three in supplied lyrics; unresolved.",
+    "Leo confirmed four first-chorus running repetitions. Original lyrics retained; explicit amendment applied. Second candidate span split at midpoint pending precise listening.",
     "Whisper repeats the names line during outro, potentially hallucinated; not added without listening evidence.",
     "Whisper duplicates Goodnight and My friends; supplied lyric occurrences retained pending listening.",
     "Backing running response is represented in its own phrase, overlap and word count need listening."

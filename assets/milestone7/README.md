@@ -1,5 +1,9 @@
 # Milestone 7 — The song is the timeline
 
+**Current: V2 playback refinements.** [Play V2](review-v2/index.html): bottom-half captions, a 150 ms stationary fade, and closer entrances after long vocal gaps. [Changes and reproduction](PLAYBACK_FEEDBACK.md). The V1 description and review below are retained as history; V1 media is unchanged. Current render commands output to `review-v2/`, and QA writes `qa-report-v2.json`.
+
+## Preserved V1 production record
+
 The first complete lyric-film V1 uses the unchanged 262.8-second master recording, 57 phrase groups and 311 editorial word occurrences. New scenery, cast, registry flights and credits are paused. The village design is human-approved; this milestone does not revise it.
 
 ## Watch and compare

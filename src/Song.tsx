@@ -23,13 +23,13 @@ export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride=''
  if(contract)for(const p of live)if(conflicts(p,contract.protectedRegions,preset||p.layout).length)throw new Error(`Caption ${p.id} overlaps protected ${scene} region; author a different layout.`);
  return <AbsoluteFill style={{background:'#eee4ce',overflow:'hidden'}}>
   {scene!=='paper'&&<Piece part="wall" x={-20} y={-20} w={1960} h={1120}/>}
-  {scene==='gpu'?<div style={{position:'absolute',inset:0,transform:'scale(.78)',transformOrigin:'50% 0'}}><PaperCollage awake/></div>:scene==='village'?<div style={{position:'absolute',inset:0,transform:'translateY(360px) scale(.64)',transformOrigin:'50% 0',outline:'12px solid #fff9ea',boxShadow:'0 9px 12px #58452c40'}}><ImaginedVillage hero/></div>:<>
+  {scene==='gpu'?<div style={{position:'absolute',inset:0,transform:'scale(.78)',transformOrigin:'50% 0'}}><PaperCollage awake/></div>:scene==='village'?<div style={{position:'absolute',inset:0,transform:'translateY(0px) scale(.58)',transformOrigin:'50% 0',outline:'12px solid #fff9ea',boxShadow:'0 9px 12px #58452c40'}}><ImaginedVillage hero/></div>:<>
    <Piece part="wall" x={-20} y={-20} w={1960} h={1120}/>
    <AbsoluteFill style={{background:quiet?'#6a6685':'#fff9e7',mixBlendMode:'multiply',opacity:quiet?.42:.48}}/>
    <div style={{position:'absolute',left:70,top:65,right:70,bottom:65,border:'2px dashed #998d6a38',borderRadius:9,transform:'rotate(-.35deg)'}}/>
    <div style={{position:'absolute',left:108,top:82,width:110,height:32,background:'#d9b16d70',transform:'rotate(-14deg)'}}/>
    <div style={{position:'absolute',right:115,bottom:85,width:115,height:32,background:'#87b5ab60',transform:'rotate(11deg)'}}/>
-   {ms>12500&&ms<251000&&!quiet&&<Img src={staticFile('characters/agent407/'+(quiet?'standing':'singing')+'-v1.png')} style={{position:'absolute',width:230,left:130,bottom:100,opacity:.95}}/>}
+   {ms>12500&&ms<251000&&!quiet&&<Img src={staticFile('characters/agent407/'+(quiet?'standing':'singing')+'-v1.png')} style={{position:'absolute',width:300,left:160,top:175,opacity:.95}}/>}
   </>}
   {ms<12000&&<div style={{position:'absolute',left:320,top:320,opacity:smooth(ms/1200)*(1-smooth((ms-10500)/1500))}}>
    <WordSticker text="Swarm Song" w={1300} font={180} color="#287d82" id="title"/>

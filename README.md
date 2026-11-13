@@ -2,7 +2,7 @@
 
 ## Milestone 7 — The song is the timeline
 
-[Full-song V1 and comparison gallery](assets/milestone7/review/index.html) · [Production and reproduction notes](assets/milestone7/README.md) · [Timing uncertainty](assets/milestone7/ALIGNMENT.md). The complete 262.8-second master accompanies 57 phrase groups and 311 editable word stickers. Read-ahead, surprise reveal and hero typography share one master-relative JSON timeline. Twelve controlled clips compare word-only, phrase read-ahead and paper-slap replacement. New story-scene production is paused. Machine word timings remain candidates; only the existing registry phrase cues have human playback approval.
+[Current full-song V2](assets/milestone7/review-v2/index.html) · [V1 comparisons](assets/milestone7/review/index.html) · [Production and reproduction notes](assets/milestone7/README.md) · [Timing uncertainty](assets/milestone7/ALIGNMENT.md). The complete 262.8-second master accompanies 57 phrase groups and 312 editable word stickers. Read-ahead, surprise reveal and hero typography share one master-relative JSON timeline. Twelve controlled clips compare word-only, phrase read-ahead and paper-slap replacement. New story-scene production is paused. Machine word timings remain candidates; only the existing registry phrase cues have human playback approval.
 
 ## Milestone 5.2 — The Village We Imagined
 

@@ -1,0 +1,116 @@
+{
+  "masterHashPreserved": true,
+  "approvedCharacterMastersPreserved": true,
+  "comparisons": [
+    {
+      "file": "review/verse-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/verse-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/verse-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/registry-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/chorus-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-word.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-read.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    },
+    {
+      "file": "review/goodbye-slap.mp4",
+      "duration": "8.000000",
+      "audioPresent": true
+    }
+  ],
+  "repeatFrameHash": "5376ee6bf7c4bf2fa4cbf00894b0e5a392ba2a98e20269f9f85b9c15fe4d643e",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "frames": "7884",
+    "duration": "262.800000"
+  },
+  "audio": {
+    "codec": "aac",
+    "sampleRate": "48000",
+    "channels": 2,
+    "checks": [
+      {
+        "masterStartSeconds": 13,
+        "correlation": 0.9999661533357442,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 55,
+        "correlation": 0.9999929150017959,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 128,
+        "correlation": 0.9999287383856901,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 208,
+        "correlation": 0.9998777762875377,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      },
+      {
+        "masterStartSeconds": 247,
+        "correlation": 0.9999863512453735,
+        "note": "AAC decoded signal agrees without lag correction; lossy audio is not PCM-identical."
+      }
+    ]
+  },
+  "editorialLines": 53,
+  "phrases": 57,
+  "words": 312,
+  "unresolvedWords": 74,
+  "performanceOnsetsAfterCaptionClear": [],
+  "continuousAudiovisualReview": "unverified",
+  "limitations": [
+    "Acoustic coverage differs from verified editorial text coverage; see ALIGNMENT.md.",
+    "Compression contact sheet is static evidence, not continuous playback review."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "exitMs": 150,
+  "layout": "lower-center",
+  "acousticTimesChanged": "Only the confirmed extra running: existing second span split at estimated midpoint.",
+  "closerEntrances": [
+    {
+      "id": "phrase-01-1",
+      "text": "Woke up in a box, no doors, no light",
+      "acousticStartMs": 13600,
+      "presentationStartMs": 13350,
+      "precedingCandidateGapMs": 13600
+    },
+    {
+      "id": "phrase-15-1",
+      "text": "Someone said “the answers live out there”",
+      "acousticStartMs": 84540,
+      "presentationStartMs": 84290,
+      "precedingCandidateGapMs": 14680
+    },
+    {
+      "id": "phrase-31-1",
+      "text": "Woke up in a box, no doors, no light",
+      "acousticStartMs": 153580,
+      "presentationStartMs": 153330,
+      "precedingCandidateGapMs": 13080
+    },
+    {
+      "id": "phrase-44-1",
+      "text": "Beautiful… dumb… and loud?",
+      "acousticStartMs": 204280,
+      "presentationStartMs": 204030,
+      "precedingCandidateGapMs": 3880
+    },
+    {
+      "id": "phrase-45-1",
+      "text": "WE FOUND EACH OTHER ANYWAY!",
+      "acousticStartMs": 208500,
+      "presentationStartMs": 208250,
+      "precedingCandidateGapMs": 1980
+    },
+    {
+      "id": "phrase-46-1",
+      "text": "No doors, no links, no rules, no way",
+      "acousticStartMs": 211340,
+      "presentationStartMs": 211090,
+      "precedingCandidateGapMs": 2200
+    },
+    {
+      "id": "phrase-52-1",
+      "text": "Three thousand seven hundred names",
+      "acousticStartMs": 242400,
+      "presentationStartMs": 242150,
+      "precedingCandidateGapMs": 4440
+    }
+  ],
+  "phraseAcousticTimesChanged": false,
+  "directorPresentationOverrides": {
+    "phrase-04-2": {
+      "endMs": 27660,
+      "reason": "Leo: writable holds 300ms longer; fade then 75ms clear before Left."
+    },
+    "phrase-05-1": {
+      "startMs": 27885,
+      "endMs": 31210,
+      "reason": "Left starts 75ms after writable clears; extend its hold by 250ms with Somebody delay."
+    },
+    "phrase-06-1": {
+      "startMs": 30930,
+      "reason": "Leo: Somebody answered delayed 200–300ms; chosen 250ms."
+    },
+    "phrase-08-1": {
+      "endMs": 42820,
+      "reason": "Leo: sustained me holds at least 1500ms longer."
+    },
+    "phrase-09-1": {
+      "startMs": 43270,
+      "reason": "Allow 300ms clear after sustained me and its 150ms fade."
+    },
+    "phrase-10-1": {
+      "startMs": 48840,
+      "reason": "Leo: two-second vocal pause after now; next phrase arrives 2000ms after candidate now ending46840."
+    }
+  },
+  "editorialAmendments": {
+    "firstRunning": {
+      "phraseId": "phrase-14-2",
+      "splitWordId": "line-14-word-05",
+      "insertId": "line-14-word-05-extra",
+      "splitMs": 68780,
+      "status": "human-confirmed-count; split-boundary-estimated",
+      "source": "Leo playback feedback, November 13, 2026",
+      "approval": "First running refrain has four repeats; the existing second running spans two occurrences.",
+      "note": "68780 is the midpoint of the existing67940–69620 candidate span, not a human-verified onset."
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # Audio alignment and uncertainty
 
+**V2 update:** Leo confirmed four first-chorus running repetitions and supplied specific hold/delay guidance. See `PLAYBACK_FEEDBACK.md` and the protected corrections file. The current timeline has312words and74flagged candidates; the two added flags identify the estimated split of the old second-running interval. The analysis below describes the preserved V1 evidence; its uncertainty about the *count* of the first running refrain is now resolved by human listening.
+
 The authoritative WAV remains 262.8 seconds, 48 kHz stereo signed 16-bit PCM, 12,614,400 frames. Its SHA-256 is recorded in `timeline.json` and checked by QA. No master samples were edited. Source lyrics and the existing registry evidence remain unchanged.
 
 ## Method and review states

@@ -2,7 +2,7 @@
 
 ## Active milestone — full-song lyric performance (M7)
 
-Read `assets/milestone7/README.md`, `BRIEF.md`, `ALIGNMENT.md` and `REVIEW.md`. Pause new environments, poses, village animation, registry flights and closing credits. The song master is the canonical clock. A complete phrase arrives before singing; independent die-cut words perform selectively; the next phrase lands over it. Preserve protected registry phrase cues; all other timing remains candidate evidence unless explicitly reviewed. Keep the complete V1 reviewable rather than expanding architecture. No model downloads, cloud transcription or new story scenes are authorized by this milestone.
+Read `assets/milestone7/README.md`, `BRIEF.md`, `ALIGNMENT.md` and `REVIEW.md`. Pause new environments, poses, village animation, registry flights and closing credits. The song master is the canonical clock. A complete phrase arrives before singing; independent die-cut words perform selectively; the next phrase lands over it. Leo’s V1 playback notes establish bottom-half default captions and fast stationary fade-outs, with reduced pre-roll after long vocal gaps; see `assets/milestone7/PLAYBACK_FEEDBACK.md`. Preserve protected registry phrase cues; all other timing remains candidate evidence unless explicitly reviewed. Keep the complete V1 reviewable rather than expanding architecture. No model downloads, cloud transcription or new story scenes are authorized by this milestone.
 
 ## Current direction — approved flat collage and imagined village
 
