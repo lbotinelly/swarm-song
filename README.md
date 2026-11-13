@@ -2,6 +2,14 @@
 
 A music-video production project built around expressive **die-cut chibi sticker characters** inhabiting **layered-paper dioramas**, with the compositional sophistication of premium anime ending sequences and playful, music-driven pacing.
 
+## First milestone — ready for review
+
+The selected reference has now been supplied and preserved at `assets/reference/selected-bunny-mechanic.png`. The earlier handoff notes below describe its previous absence. Agent407's separate standing/kneeling PNG concepts, contact sheet, exact prompts and alpha QA are in [the art review](assets/characters/agent407/concepts/README.md); approval is still pending.
+
+The independent [registry engine rehearsal](docs/REGISTRY_SPIKE.md) uses temporary SVG test sprites and six millisecond-authored cues. Run `npm ci`, `npm run check`, `npm run render`, and `npm run review`. It is an 8-second silent timing/attachment test, not the integrated film or a lyric-aligned edit.
+
+[Audio metadata](assets/audio-inventory.json) records the available master and stems: master WAV/MP3 duration 262.8 seconds, twelve WAV stems 264.238146 seconds, all audio stereo at 48 kHz. The stem-folder name says 68 BPM; no beat grid or lyric timestamps have been verified. Different durations do not by themselves establish an offset. Original audio and lyrics remain unchanged.
+
 ## Creative North Star
 
 Make every frame feel like a beautifully art-directed illustration rather than a demonstration of animation technology. The audience should notice the charm, composition, atmosphere, narrative surprises, and little personalities before noticing the production technique.

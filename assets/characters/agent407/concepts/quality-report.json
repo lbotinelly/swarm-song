@@ -1,0 +1,52 @@
+[
+  {
+    "file": "standing-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      0,
+      1170,
+      1328
+    ],
+    "visible_alpha_above_16_bounds": [
+      141,
+      53,
+      958,
+      1281
+    ],
+    "sha256": "1fac2446cce566f99480d1f5de3760913fd36f3d574e1d995aace96a5be0e4e0"
+  },
+  {
+    "file": "kneeling-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      28,
+      1154,
+      1304
+    ],
+    "visible_alpha_above_16_bounds": [
+      200,
+      121,
+      1026,
+      1232
+    ],
+    "sha256": "8460712cea084b3f5e27a2625473846e416310cd7b43dc292fe9832023464f1e"
+  }
+]

@@ -1,0 +1,173 @@
+[
+  {
+    "path": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.mp3",
+    "bytes": 6025447,
+    "durationSeconds": 262.8,
+    "streams": [
+      {
+        "codec_name": "mp3",
+        "sample_rate": "48000",
+        "channels": 2
+      },
+      {
+        "codec_name": "mjpeg"
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav",
+    "bytes": 50471418,
+    "durationSeconds": 262.8,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/0 Lead Vocals.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/1 Backing Vocals.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/10 Brass.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/11 Woodwinds.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/2 Drums.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/3 Bass.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/4 Guitar.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/5 Keyboard.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/6 Percussion.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/7 Strings.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/8 Synth.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  },
+  {
+    "path": "assets/audio/Stems (68BPM)/9 Other.wav",
+    "bytes": 50733840,
+    "durationSeconds": 264.238146,
+    "streams": [
+      {
+        "codec_name": "pcm_s16le",
+        "sample_rate": "48000",
+        "channels": 2
+      }
+    ]
+  }
+]

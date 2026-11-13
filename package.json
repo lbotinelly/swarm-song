@@ -1,0 +1,12 @@
+{
+  "name": "swarm-song", "version": "0.0.1", "private": true, "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "check": "tsc --noEmit && node --test src/timeline.test.ts",
+    "timing": "node scripts/timing.ts",
+    "render": "remotion render src/index.tsx RegistryDiscovery output/registry/registry.mp4 --codec=h264",
+    "review": "node scripts/review.mjs"
+  },
+  "dependencies": {"remotion": "4.0.543", "react": "19.2.0", "react-dom": "19.2.0"},
+  "devDependencies": {"@remotion/cli": "4.0.543", "@remotion/bundler": "4.0.543", "@remotion/renderer": "4.0.543", "@types/react": "19.2.2", "@types/react-dom": "19.2.2", "@types/node": "24.10.1", "typescript": "5.9.3"}
+}
