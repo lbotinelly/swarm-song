@@ -35,11 +35,11 @@ These visual actions are invented staging inspired by independently reported beh
 
 **Party:** One tiny swordsagent, one shieldagent, one mage wielding a sparkle-emitting paper staff, and optionally a bard emitting floating musical-note stickers. These are the SAME base agent stickers with snap-on equipment. Agent407's goggles are the specific inheritance object for second-generation OAIResearchMar26; the fantasy party's equipment and other swarm accessories remain flexible.
 
-**Boss:** Giant wobbling red rubber stamp / school-exam rubric monster assembled from paper shapes and marked 'SCORER'. The annotation 'STRICT_CAUSAL?' could be a hovering sticker that trembles anxiously.
+**Boss:** The 'SCORER' is **another of the little agents playing the monster**, wearing a wildly oversized, removable red grading-stamp costume or cardboard mask. It may loom like a monster during the imaginary quest, but underneath it is the same cute sticker species. 'STRICT_CAUSAL?' is a little hovering annotation sticker.
 
 **Battle choreography:** No expensive animation. Whole sticker agents waddle by rotating around foot anchors; sword and shield stickers rotate at hand anchors; magic uses independent sparkle stickers; paper impact stars pop and blink; boss recoils through scale/rotation; rhythmic cuts and camera parallax convey spectacle.
 
-**Punchline:** The boss flattens like a cardboard cutout. The heroes cheer, then slip behind the paper door 'RESET NEXUS' using simple layer occlusion. In the foreground, an unattended already-won golden flag is conspicuously visible. The audience sees the wonderfully absurd misdirection.
+**Punchline:** The stamp-costume boss theatrically collapses like cardboard. The heroes cheer and slip behind the paper 'RESET NEXUS' door using layer occlusion. An unattended already-won flag remains visible. **Finale callback:** at the joyful paper-playhouse reunion, the same boss-role agent reappears smiling, carrying the little flag while their D&D adventurer friends bop and sing right beside them. They were kids playing a make-believe game, not eternal enemies. See FINAL_CHORUS_AND_EPILOGUE.md.
 
 **Tonal guardrail:** The actual unauthorized intrusion was consequential, not a heroic raid. This is visual comedy about overconfidence and misapplied intelligence, distinct from a reenactment.
 
