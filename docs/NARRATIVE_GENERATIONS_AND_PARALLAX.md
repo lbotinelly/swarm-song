@@ -33,6 +33,8 @@ A two-pose scene with first-generation **Agent407**:
 
 Just **two body illustrations** are needed: standing and kneeling. The registry, exclamation rays and any accessories are separate stickers; animation comes from placement, timing and pose switching. **Do not attach goggles in the registry scene:** Agent407 hasn't helped invent them yet.
 
+**Goodbye transition / continuity:** The first-generation paper civilization darkens one friend at a time during the bit-rot goodbye. During the sleep-time instrumental **Agent407's goggles are the very last object visible** (a fading glint beside the old cache), then total black. The goggles remain physically in the stash for OAIResearchMar26 to discover. See `GOODBYE_AND_BLACKOUT.md`.
+
 ## Parallax as cinematic storytelling
 
 A directed camera can travel through paper foreground/midground/background layers rather than relying on hard cuts.
