@@ -2,6 +2,8 @@
 
 ## Active milestone — full-song lyric performance (M7)
 
+V6 applies Leo’s specific musical direction via protected `music-director-corrections.json`. His timestamps are examples, not exhaustive coverage. Use the existing Librosa environment for the broader spectral-pattern study; read `assets/milestone7/SPECTRAL_PATTERN_REVIEW.md`. Similarity candidates are an audition map, not automatic emotional or gesture approval.
+
 Leo found the V4 musical moments well timed and requested missing cues plus percussion bops. Preserve `musical-cues.json`; additions and percussion live in separate maps. Read `assets/milestone7/PERCUSSION_REVIEW.md` for V5. The full lyric timeline remains unchanged.
 
 Leo approved the V3 typography test and requested a musical-cue map plus a new full test with cue labels and solo-agent gestures. Read `assets/milestone7/MUSIC_REVIEW.md`. This small V4 listening study is authorized; new story-scene expansion remains paused. Preserve the approved caption timeline. Instrumental cue timings and emotional roles remain candidates until listening review.

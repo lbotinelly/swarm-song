@@ -22,7 +22,7 @@ export function WordSticker({text,w,font,color,id}:{text:string;w:number;font:nu
   <text x={12} y={font*1.12} fontFamily="Finger Paint" fontWeight="400" fontSize={font} fill={color} stroke="#fffdf7" strokeWidth={9} strokeLinejoin="round" paintOrder="stroke fill" filter={`url(#ink-${id})`}>{text}</text>
  </svg>;
 }
-export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride='',musicCues=false,rhythmCues=false}:{offsetMs?:number;strategy?:string;scene?:string;layoutOverride?:string;musicCues?:boolean;rhythmCues?:boolean}){
+export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride='',musicCues=false,rhythmCues=false,directorCues=false}:{offsetMs?:number;strategy?:string;scene?:string;layoutOverride?:string;musicCues?:boolean;rhythmCues?:boolean;directorCues?:boolean}){
  const [fontHandle]=useState(()=>delayRender('Loading bundled typography'));
  useEffect(()=>{loadFonts().then(()=>continueRender(fontHandle)).catch(cancelRender);},[fontHandle]);
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=offsetMs+frame*1000/fps;
@@ -54,7 +54,7 @@ export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride=''
    </div>;
   })}</div>)}
   {ms>=251000&&<div style={{position:'absolute',left:790,top:470,fontFamily:'Bitcount Single',fontWeight:550,fontSize:38,color:'#417eaa',opacity:smooth((ms-251000)/1500)*(1-smooth((ms-260000)/2800))}}>OAIResearchMar26</div>}
-  {musicCues&&<MusicCueStudy ms={ms} rhythm={rhythmCues}/>}
+  {musicCues&&<MusicCueStudy ms={ms} rhythm={rhythmCues} directed={directorCues}/>}
   {dark&&<AbsoluteFill style={{background:'#000'}}/>}
  </AbsoluteFill>;
 }

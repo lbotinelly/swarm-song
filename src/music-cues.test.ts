@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {musicStateAt,percussionStateAt,type MusicCue} from './music-cues.ts';
+import {musicStateAt,percussionStateAt,applyMusicDirection,percussionAllowedAt,type MusicCue} from './music-cues.ts';
 import {frameAt} from './timeline.ts';
 const data=JSON.parse(readFileSync('assets/milestone7/musical-cues.json','utf8'));
 const cues=data.cues as MusicCue[];
@@ -41,4 +41,19 @@ test('percussion preserves reviewed cues, never starts early, and stays subtle u
   assert.ok(Math.abs(percussionStateAt(e.atMs+130,beats.events,true).y)<=Math.abs(apex.y)*.201);
   assert.equal(percussionStateAt(e.atMs+260,[e]).pulse,0);
  }
+});
+
+
+test('director revisions preserve source cues and protect anticipation rests',()=>{
+ const direction=JSON.parse(readFileSync('assets/milestone7/music-director-corrections.json','utf8'));
+ assert.equal(direction.baselineMapSha256,createHash('sha256').update(readFileSync('assets/milestone7/musical-cues.json')).digest('hex'));
+ const extra=JSON.parse(readFileSync('assets/milestone7/musical-cue-additions.json','utf8')).cues as MusicCue[];
+ const source=[...cues,...extra];const before=JSON.stringify(source);const directed=applyMusicDirection(source,direction);
+ assert.equal(JSON.stringify(source),before);
+ for(let i=1;i<directed.length;i++)assert.ok(directed[i].startMs>=directed[i-1].endMs,directed[i].id);
+ for(const c of directed){assert.ok(c.startMs<c.peakMs&&c.peakMs<c.endMs);const state=musicStateAt(c.peakMs,directed);musicStateAt(260000,directed);assert.deepEqual(musicStateAt(c.peakMs,directed),state);assert.ok(Math.abs(state.y)<=48&&state.scaleX<=1.08);}
+ for(const id of ['strings-first-bloom','strings-second-lift']){const old=source.find(c=>c.id===id)!;const revised=directed.find(c=>c.id===id)!;assert.equal(revised.peakMs-revised.startMs,1.5*(old.peakMs-old.startMs));}
+ assert.equal(percussionAllowedAt(13999,direction),false);assert.equal(percussionAllowedAt(14000,direction),true);
+ for(const rest of direction.percussion.rests){assert.equal(percussionAllowedAt(rest.startMs,direction),false);assert.equal(percussionAllowedAt(rest.endMs-1,direction),false);assert.equal(percussionAllowedAt(rest.endMs,direction),true);}
+ assert.equal(musicStateAt(25600,directed).pose,'surprised');assert.equal(musicStateAt(210000,directed).pose,'cheer');
 });

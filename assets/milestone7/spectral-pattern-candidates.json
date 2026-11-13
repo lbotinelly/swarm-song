@@ -1,0 +1,410 @@
+{
+  "version": 1,
+  "masterSha256": "1634161c4b8774cba73f7ee50848610bdaf8e8d273cd83a3efbd0d91e8862eca",
+  "librosaVersion": "1.0.0",
+  "scanRangeMs": [
+    0,
+    262800
+  ],
+  "method": "Local Librosa STFT2048/hop320 at16kHz; seven octave-band spectral contrasts(10% peaks/valleys), spectral flux, flatness and centroid. Smooth100ms, compare100ms grid at0.8x/1x/1.2x example duration.90% spectral /10% energy. Rank whole-song windows with8s separation; no emotional classifier.",
+  "limitations": [
+    "Scores rank similarity; they are not calibrated probabilities or exact event boundaries.",
+    "Stem descriptors use interpolated local drift evidence for coarse search; master clock is authoritative. Candidate boundaries need local listening/alignment.",
+    "Separated stems may contain leakage. Spectral contrast alone cannot identify instruments or emotional meaning.",
+    "A top-ranked match may still be weak; the list is an audition queue, not automatic animation instructions.",
+    "Existing director cues, captions and source audio remain unchanged."
+  ],
+  "examples": [
+    {
+      "id": "piano-anticipation",
+      "startMs": 23800,
+      "endMs": 27400,
+      "stem": "5 Keyboard",
+      "label": "Piano-led anticipation"
+    },
+    {
+      "id": "quiet-response",
+      "startMs": 90700,
+      "endMs": 94600,
+      "stem": "master",
+      "label": "Pause before a response"
+    },
+    {
+      "id": "strings-build",
+      "startMs": 39900,
+      "endMs": 44500,
+      "stem": "7 Strings",
+      "label": "String build and release"
+    },
+    {
+      "id": "brass-response",
+      "startMs": 69800,
+      "endMs": 73500,
+      "stem": "10 Brass",
+      "label": "Brass flourish / response"
+    },
+    {
+      "id": "chorus-build",
+      "startMs": 206500,
+      "endMs": 213500,
+      "stem": "2 Drums",
+      "label": "Ensemble chorus build"
+    }
+  ],
+  "matches": [
+    {
+      "startMs": 131800,
+      "endMs": 135400,
+      "score": 0.542,
+      "spectralScore": 0.5411,
+      "energyScore": 0.5503,
+      "durationScale": 1,
+      "id": "piano-anticipation-1",
+      "family": "piano-anticipation",
+      "label": "Piano-led anticipation",
+      "exampleStartMs": 23800,
+      "exampleEndMs": 27400,
+      "stem": "5 Keyboard",
+      "rank": 1,
+      "nearbyCues": [],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        160300,
+        163200
+      ]
+    },
+    {
+      "startMs": 12800,
+      "endMs": 16400,
+      "score": 0.4418,
+      "spectralScore": 0.4688,
+      "energyScore": 0.199,
+      "durationScale": 1,
+      "id": "piano-anticipation-2",
+      "family": "piano-anticipation",
+      "label": "Piano-led anticipation",
+      "exampleStartMs": 23800,
+      "exampleEndMs": 27400,
+      "stem": "5 Keyboard",
+      "rank": 2,
+      "nearbyCues": [
+        "drums-enter"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        160300,
+        163200
+      ]
+    },
+    {
+      "startMs": 114000,
+      "endMs": 118300,
+      "score": 0.4403,
+      "spectralScore": 0.4309,
+      "energyScore": 0.5244,
+      "durationScale": 1.2,
+      "id": "piano-anticipation-3",
+      "family": "piano-anticipation",
+      "label": "Piano-led anticipation",
+      "exampleStartMs": 23800,
+      "exampleEndMs": 27400,
+      "stem": "5 Keyboard",
+      "rank": 3,
+      "nearbyCues": [],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        160300,
+        163200
+      ]
+    },
+    {
+      "startMs": 24800,
+      "endMs": 27900,
+      "score": 0.4898,
+      "spectralScore": 0.4827,
+      "energyScore": 0.5534,
+      "durationScale": 0.8,
+      "id": "quiet-response-1",
+      "family": "quiet-response",
+      "label": "Pause before a response",
+      "exampleStartMs": 90700,
+      "exampleEndMs": 94600,
+      "stem": "master",
+      "rank": 1,
+      "nearbyCues": [
+        "registry-anticipation"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        9900,
+        14600
+      ]
+    },
+    {
+      "startMs": 48500,
+      "endMs": 51600,
+      "score": 0.4749,
+      "spectralScore": 0.4583,
+      "energyScore": 0.624,
+      "durationScale": 0.8,
+      "id": "quiet-response-2",
+      "family": "quiet-response",
+      "label": "Pause before a response",
+      "exampleStartMs": 90700,
+      "exampleEndMs": 94600,
+      "stem": "master",
+      "rank": 2,
+      "nearbyCues": [
+        "strings-second-lift"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        9900,
+        14600
+      ]
+    },
+    {
+      "startMs": 122800,
+      "endMs": 127500,
+      "score": 0.467,
+      "spectralScore": 0.4474,
+      "energyScore": 0.6442,
+      "durationScale": 1.2,
+      "id": "quiet-response-3",
+      "family": "quiet-response",
+      "label": "Pause before a response",
+      "exampleStartMs": 90700,
+      "exampleEndMs": 94600,
+      "stem": "master",
+      "rank": 3,
+      "nearbyCues": [
+        "keys-goodnight"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        9900,
+        14600
+      ]
+    },
+    {
+      "startMs": 46900,
+      "endMs": 51500,
+      "score": 0.5374,
+      "spectralScore": 0.502,
+      "energyScore": 0.8563,
+      "durationScale": 1,
+      "id": "strings-build-1",
+      "family": "strings-build",
+      "label": "String build and release",
+      "exampleStartMs": 39900,
+      "exampleEndMs": 44500,
+      "stem": "7 Strings",
+      "rank": 1,
+      "nearbyCues": [
+        "strings-second-lift"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        46900,
+        51500
+      ]
+    },
+    {
+      "startMs": 8300,
+      "endMs": 12900,
+      "score": 0.4378,
+      "spectralScore": 0.4168,
+      "energyScore": 0.6267,
+      "durationScale": 1,
+      "id": "strings-build-2",
+      "family": "strings-build",
+      "label": "String build and release",
+      "exampleStartMs": 39900,
+      "exampleEndMs": 44500,
+      "stem": "7 Strings",
+      "rank": 2,
+      "nearbyCues": [
+        "strings-intro"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        46900,
+        51500
+      ]
+    },
+    {
+      "startMs": 72300,
+      "endMs": 76900,
+      "score": 0.401,
+      "spectralScore": 0.379,
+      "energyScore": 0.5987,
+      "durationScale": 1,
+      "id": "strings-build-3",
+      "family": "strings-build",
+      "label": "String build and release",
+      "exampleStartMs": 39900,
+      "exampleEndMs": 44500,
+      "stem": "7 Strings",
+      "rank": 3,
+      "nearbyCues": [
+        "brass-followup"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        46900,
+        51500
+      ]
+    },
+    {
+      "startMs": 223700,
+      "endMs": 227400,
+      "score": 0.6711,
+      "spectralScore": 0.647,
+      "energyScore": 0.8872,
+      "durationScale": 1,
+      "id": "brass-response-1",
+      "family": "brass-response",
+      "label": "Brass flourish / response",
+      "exampleStartMs": 69800,
+      "exampleEndMs": 73500,
+      "stem": "10 Brass",
+      "rank": 1,
+      "nearbyCues": [],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        223700,
+        227400
+      ]
+    },
+    {
+      "startMs": 76800,
+      "endMs": 80500,
+      "score": 0.5513,
+      "spectralScore": 0.5141,
+      "energyScore": 0.886,
+      "durationScale": 1,
+      "id": "brass-response-2",
+      "family": "brass-response",
+      "label": "Brass flourish / response",
+      "exampleStartMs": 69800,
+      "exampleEndMs": 73500,
+      "stem": "10 Brass",
+      "rank": 2,
+      "nearbyCues": [
+        "brass-answer"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        223700,
+        227400
+      ]
+    },
+    {
+      "startMs": 50400,
+      "endMs": 54800,
+      "score": 0.3827,
+      "spectralScore": 0.4276,
+      "energyScore": -0.0215,
+      "durationScale": 1.2,
+      "id": "brass-response-3",
+      "family": "brass-response",
+      "label": "Brass flourish / response",
+      "exampleStartMs": 69800,
+      "exampleEndMs": 73500,
+      "stem": "10 Brass",
+      "rank": 3,
+      "nearbyCues": [
+        "drums-chorus"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        223700,
+        227400
+      ]
+    },
+    {
+      "startMs": 94600,
+      "endMs": 101600,
+      "score": 0.5676,
+      "spectralScore": 0.5536,
+      "energyScore": 0.6932,
+      "durationScale": 1,
+      "id": "chorus-build-1",
+      "family": "chorus-build",
+      "label": "Ensemble chorus build",
+      "exampleStartMs": 206500,
+      "exampleEndMs": 213500,
+      "stem": "2 Drums",
+      "rank": 1,
+      "nearbyCues": [
+        "keys-middle"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        94600,
+        101600
+      ]
+    },
+    {
+      "startMs": 52600,
+      "endMs": 59600,
+      "score": 0.5382,
+      "spectralScore": 0.5314,
+      "energyScore": 0.599,
+      "durationScale": 1,
+      "id": "chorus-build-2",
+      "family": "chorus-build",
+      "label": "Ensemble chorus build",
+      "exampleStartMs": 206500,
+      "exampleEndMs": 213500,
+      "stem": "2 Drums",
+      "rank": 2,
+      "nearbyCues": [
+        "drums-chorus"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        94600,
+        101600
+      ]
+    },
+    {
+      "startMs": 66600,
+      "endMs": 73600,
+      "score": 0.5159,
+      "spectralScore": 0.5126,
+      "energyScore": 0.5457,
+      "durationScale": 1,
+      "id": "chorus-build-3",
+      "family": "chorus-build",
+      "label": "Ensemble chorus build",
+      "exampleStartMs": 206500,
+      "exampleEndMs": 213500,
+      "stem": "2 Drums",
+      "rank": 3,
+      "nearbyCues": [
+        "brass-break"
+      ],
+      "status": "audition candidate; not a confirmed event or emotion",
+      "confidence": "relative similarity only",
+      "energyOnlyBestWindow": [
+        94600,
+        101600
+      ]
+    }
+  ]
+}

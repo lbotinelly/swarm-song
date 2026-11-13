@@ -3,14 +3,14 @@ import {selectComposition,renderStill,renderMedia} from '@remotion/renderer';
 import {mkdir,readFile,writeFile} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
 const args=process.argv.slice(2);
-const version=args.includes('--percussion')?'v5':args.includes('--music-cues')?'v4':'v3';
-const inputProps={musicCues:version!=='v3',rhythmCues:version==='v5'};
+const version=args.includes('--director')?'v6':args.includes('--percussion')?'v5':args.includes('--music-cues')?'v4':'v3';
+const inputProps={musicCues:version!=='v3',rhythmCues:['v5','v6'].includes(version),directorCues:version==='v6'};
 const dir=`assets/milestone7/review-${version}`;await mkdir(dir,{recursive:true});await mkdir('output/milestone7',{recursive:true});
 const serveUrl=await bundle({entryPoint:'scripts/song-stage.tsx'});
 const full=await selectComposition({serveUrl,id:'SwarmSong',inputProps});
 const master='assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav';
 if(args.includes('--stills')){
- for(const ms of [...(inputProps.musicCues?[9000,42000,71900,126700,136600,153500,228900,260300]:[]),3000,14000,18500,24400,26500,45000,55000,64000,92500,102500,128500,134800,154500,179500,198500,208500,232000,244500,248000,253000]){
+ for(const ms of [...(inputProps.directorCues?[25000,25600,43000,49600,74833,92300,210000]:[]),...(inputProps.musicCues?[9000,42000,71900,126700,136600,153500,228900,260300]:[]),3000,14000,18500,24400,26500,45000,55000,64000,92500,102500,128500,134800,154500,179500,198500,208500,232000,244500,248000,253000]){
  await renderStill({serveUrl,composition:full,frame:Math.ceil(ms*30/1000),output:`${dir}/song-${ms}.png`});console.log('still',ms);}
  for(const [scene,offsetMs,layoutOverride] of [['gpu',24160,'lower-center'],['village',54580,'lower-center']]){
  const props={scene,offsetMs,layoutOverride};

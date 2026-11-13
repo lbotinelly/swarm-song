@@ -1,15 +1,16 @@
 import {Img,staticFile} from 'remotion';
 import {agent407} from './sprites';
-import {musicStateAt,percussionStateAt,type MusicCue} from './music-cues';
+import {musicStateAt,percussionStateAt,applyMusicDirection,percussionAllowedAt,type MusicCue} from './music-cues';
 import cueData from '../assets/milestone7/musical-cues.json';
 import additions from '../assets/milestone7/musical-cue-additions.json';
 import percussion from '../assets/milestone7/percussion-cues.json';
+import direction from '../assets/milestone7/music-director-corrections.json';
 const expandedCues=[...cueData.cues,...additions.cues].sort((a,b)=>a.startMs-b.startMs);
 
-export function MusicCueStudy({ms,rhythm=false}:{ms:number;rhythm?:boolean}){
- const cues=rhythm?expandedCues:cueData.cues;
+export function MusicCueStudy({ms,rhythm=false,directed=false}:{ms:number;rhythm?:boolean;directed?:boolean}){
+ const cues=directed?applyMusicDirection(expandedCues,direction):rhythm?expandedCues:cueData.cues;
  const state=musicStateAt(ms,cues as MusicCue[]),cue=state.active;
- const bop=percussionStateAt(ms,rhythm?percussion.events:[],Boolean(cue?.enabled));
+ const bop=percussionStateAt(ms,rhythm&&(!directed||percussionAllowedAt(ms,direction))?percussion.events:[],Boolean(cue?.enabled&&cue.action!=='rhythm'));
  const sprite=agent407[state.pose],scale=320/sprite.width;
  const next=cues.find(c=>c.startMs>ms);
  return <>
@@ -20,7 +21,7 @@ export function MusicCueStudy({ms,rhythm=false}:{ms:number;rhythm?:boolean}){
   </div>
   {rhythm&&<div style={{position:'absolute',left:185,top:545,fontFamily:'Bitcount Single',fontWeight:550,fontSize:21,color:'#456b70'}}><span style={{display:'inline-block',width:12,height:12,borderRadius:'50%',marginRight:12,background:'#b76b49',opacity:.15+.85*bop.pulse}}/>PERCUSSION</div>}
   <div style={{position:'absolute',left:670,top:175,width:1080,minHeight:235,padding:'25px 32px',boxSizing:'border-box',background:'#fff9e9ed',boxShadow:'3px 6px 0 #c7b68b60',transform:'rotate(-.45deg)',color:'#355f64'}}>
-   <div style={{fontFamily:'Bitcount Single',fontWeight:550,fontSize:24,color:'#82745d'}}>{(ms/1000).toFixed(2)}s · {cue?'CUE CANDIDATE':'LISTENING BETWEEN CUES'}</div>
+   <div style={{fontFamily:'Bitcount Single',fontWeight:550,fontSize:24,color:'#82745d'}}>{(ms/1000).toFixed(2)}s · {cue?(directed&&(cue.id in direction.overrides||direction.newCues.some(c=>c.id===cue.id))?'DIRECTOR CUE':'CUE CANDIDATE'):'LISTENING BETWEEN CUES'}</div>
    <div style={{fontFamily:'Finger Paint',fontSize:38,marginTop:12}}>{cue?.label??'Let the music breathe'}</div>
    <div style={{fontFamily:'Finger Paint',fontSize:23,marginTop:12}}>{cue?`${cue.emotionalRole} · ${cue.enabled?cue.action:'listen first — gesture held'}`:next?`Next: ${next.label} · ${(next.peakMs/1000).toFixed(2)}s`:'A little space after the last note'}</div>
    {cue&&<>

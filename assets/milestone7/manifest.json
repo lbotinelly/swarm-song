@@ -11,9 +11,17 @@
     "bytes": 25881,
     "sha256": "cb0831a8c8b79e97e7c246c6091cb105f7d21cef2e9af17c01c2cabc37403b16"
   },
+  "DIRECTOR_MUSIC_REVIEW.md": {
+    "bytes": 3054,
+    "sha256": "dbdc2228b080eeae097c560b4dd26fac2d2a4ac368ea64c88d63d41c3cbd6f1b"
+  },
   "focused-windows.json": {
     "bytes": 1347,
     "sha256": "2f7a3edc49eca8d4e045f94ab8c675c6ac4dfeda9095aea55d11adc988a04493"
+  },
+  "music-director-corrections.json": {
+    "bytes": 3059,
+    "sha256": "8f94e6f573d727bb0cba18c3bec77e16d5cc29a5c445018f94baaa429e46939c"
   },
   "music-playback-feedback.json": {
     "bytes": 420,
@@ -22,6 +30,10 @@
   "musical-cue-additions.json": {
     "bytes": 7655,
     "sha256": "34acc61d9432fe47bf2f637e2fea913ad12f128a659db371c8a77d35dc1a42d5"
+  },
+  "musical-cues-v6.json": {
+    "bytes": 37345,
+    "sha256": "9e15826737b044a8bd12f042867fcfdb229416b76c6b489e6d26deb3a950f96e"
   },
   "musical-cues.json": {
     "bytes": 28945,
@@ -71,13 +83,17 @@
     "bytes": 4213,
     "sha256": "4b7de5f4dd6b25a91907b914def069bad71b7785f523b477323c0b8a79039e33"
   },
+  "qa-report-v6.json": {
+    "bytes": 5126,
+    "sha256": "2b3765f80bcfcbf72f583a38bc023e9d2f1ad91fec8112bf6faee405f54f1966"
+  },
   "qa-report.json": {
     "bytes": 3135,
     "sha256": "ea82c2ed9fb39e2f213d0210da351dcfa2b907c2daff31e54412fdc8d00f6ec9"
   },
   "README.md": {
-    "bytes": 7635,
-    "sha256": "36959390c5688d7bfa0b5b8caf61372fb3dcca612ade2f13e4db420bef71c393"
+    "bytes": 8025,
+    "sha256": "4263a503f1e4729e21277977229ab8facff5304125ece47a52017215ce95fce4"
   },
   "REVIEW.md": {
     "bytes": 3171,
@@ -86,6 +102,14 @@
   "reviewed-corrections.json": {
     "bytes": 2252,
     "sha256": "7ca9cc42fdc159d7340b7a9145d21a8c0d9e08eae8bab73fb0b6a37ffe0ab100"
+  },
+  "spectral-pattern-candidates.json": {
+    "bytes": 11603,
+    "sha256": "1296b3c63cd2b26ef6072992feaff33c50349a0621b4084a379965bd72d45692"
+  },
+  "SPECTRAL_PATTERN_REVIEW.md": {
+    "bytes": 4435,
+    "sha256": "be3d17784a8497d1c86f9730c65eadc72ac0b3bf76021b445589b8eb905c1d89"
   },
   "timeline-v1.json": {
     "bytes": 151728,
@@ -107,6 +131,34 @@
     "bytes": 692,
     "sha256": "f327298bc2adfcb7218e2a8d5e86517911c2aa63e89248f542b634d1c0b6249f"
   },
+  "director-audio/big-chorus-swell.mp3": {
+    "bytes": 169493,
+    "sha256": "b378e46d43e8df633c63f6700f74cb6f5903ad66d9ee461c6683863df17afa49"
+  },
+  "director-audio/brass-followup.mp3": {
+    "bytes": 169493,
+    "sha256": "3954f944ce40905ea514ca4403d35095798c65ec2860c894db3663f08da189fc"
+  },
+  "director-audio/drums-enter.mp3": {
+    "bytes": 169493,
+    "sha256": "759ba4ee2d8f6557b9974066f00297c567b973d4ba6214a9597bf69028010982"
+  },
+  "director-audio/registry-anticipation.mp3": {
+    "bytes": 169493,
+    "sha256": "15f9c8671d64950df1c3e3eee38503610dac1c5ba4eb0e15df169272d854f3fa"
+  },
+  "director-audio/should-we-pause.mp3": {
+    "bytes": 169493,
+    "sha256": "57cae195100516dc54294bfa024c3bd6140fd18176cb56fefe65837b79eb813a"
+  },
+  "director-audio/strings-first-bloom.mp3": {
+    "bytes": 169493,
+    "sha256": "5d9af3e6c3fa43bc2da989bcfc289b3505fc8ab7061fbbe49d453eca8a7adcec"
+  },
+  "director-audio/strings-second-lift.mp3": {
+    "bytes": 169493,
+    "sha256": "1d118bd52be58e3dee9483eb65430eddd0fc5ecacd0514842c12106b16e98535"
+  },
   "evidence/awakening-qwen-initial.json": {
     "bytes": 3542,
     "sha256": "c9f27fadda1427d23673d5417f5c94c0c2255bbe278564cc099b14e2c4f19db4"
@@ -114,6 +166,10 @@
   "evidence/awakening-qwen.json": {
     "bytes": 3542,
     "sha256": "a5f616c21646b805faa102f5e195882feeee066eb0018304875fb3e009ae99bd"
+  },
+  "evidence/brass-followup-match.json": {
+    "bytes": 818,
+    "sha256": "903cd0a8471a6002e8219815f9a7050f1a2c62582f22233d08ecae85e15ac726"
   },
   "evidence/comic-qwen-initial.json": {
     "bytes": 3592,
@@ -342,6 +398,70 @@
   "music-review/synth-inheritance.mp3": {
     "bytes": 169493,
     "sha256": "93589f4740e84598a439ebc95fcc028ef3d40435bdafaea4f7ed3ec0b05af009"
+  },
+  "pattern-review/brass-response-1.mp3": {
+    "bytes": 162581,
+    "sha256": "26668b1883e8331ce9fc0a679798bb72e99cfb34be20703d531e19ff818631c2"
+  },
+  "pattern-review/brass-response-2.mp3": {
+    "bytes": 162581,
+    "sha256": "235fd60ac7761dca056351ea677c3acd46181cb12b953ff76fa4585465df40a2"
+  },
+  "pattern-review/brass-response-3.mp3": {
+    "bytes": 179285,
+    "sha256": "afd8be2f175d1e5dead1f8cb75ab893254f0c402ad7677211dc1688363d45884"
+  },
+  "pattern-review/chorus-build-1.mp3": {
+    "bytes": 241493,
+    "sha256": "85788fed946e54f6c4862d474b1a73b68b0c970a883479293b178e6e5b54caaa"
+  },
+  "pattern-review/chorus-build-2.mp3": {
+    "bytes": 241493,
+    "sha256": "5947b962feb38161133784affbfce4df21a47a49c8d2a45da9ba72ebdc7aaf57"
+  },
+  "pattern-review/chorus-build-3.mp3": {
+    "bytes": 241493,
+    "sha256": "0397817a56d5a365f56a8469bbe059f1f2d1ec9e9bb0841f7e97b7999b87597b"
+  },
+  "pattern-review/index.html": {
+    "bytes": 6831,
+    "sha256": "efa700a217c0ca0bc85f198ee4a6d01a9295485ba0dcf279dba975d356aa4f52"
+  },
+  "pattern-review/piano-anticipation-1.mp3": {
+    "bytes": 159701,
+    "sha256": "42953bdd6d6a5a37dc9a7d70a419d65a1bbae54d120e930b61c821afbe5bdf37"
+  },
+  "pattern-review/piano-anticipation-2.mp3": {
+    "bytes": 159701,
+    "sha256": "28dce8c32cfaf39a18ff9b0171d42fdbb8c28b4b4a8e7cdb2c6f8263d76c3701"
+  },
+  "pattern-review/piano-anticipation-3.mp3": {
+    "bytes": 176981,
+    "sha256": "27563112257453d3a74ebd419178eb3da199369dd43b27635f54f456da91eedf"
+  },
+  "pattern-review/quiet-response-1.mp3": {
+    "bytes": 148181,
+    "sha256": "e5c4f10cc87ee9a95825d250a794a9863fac492ca937b2cd0af705b8136a8e59"
+  },
+  "pattern-review/quiet-response-2.mp3": {
+    "bytes": 148181,
+    "sha256": "0a8129edbd49408fdf400682eadbb8f1bb4ad3449597d959166a1dc108b6baa0"
+  },
+  "pattern-review/quiet-response-3.mp3": {
+    "bytes": 186197,
+    "sha256": "f35af2c2a603df3d34f99c910e2f04c199c9c943f1d3514a22068e0ff6ea00fc"
+  },
+  "pattern-review/strings-build-1.mp3": {
+    "bytes": 183893,
+    "sha256": "b21a48b4049454dc2f10cdf11331c7b2666c7478ce1b893157dfbd568bef34ac"
+  },
+  "pattern-review/strings-build-2.mp3": {
+    "bytes": 183893,
+    "sha256": "6c74ca49eae4af1c8a0655474cb48990b7a8ade15c1edce603d99d381eeae931"
+  },
+  "pattern-review/strings-build-3.mp3": {
+    "bytes": 183893,
+    "sha256": "b8bfd8b80ac7d16ae6e7412084c7f93c47ea924d957536bf48885bd12faeeaaa"
   },
   "review/chorus-read.mp4": {
     "bytes": 997009,
@@ -1134,6 +1254,202 @@
   "review-v5/swarm-song-v5.mp4": {
     "bytes": 35263294,
     "sha256": "00eb18e01a14f82b8b12756a1add3977661a7b4227c6e97447ac551f25334827"
+  },
+  "review-v6/composition-gpu.png": {
+    "bytes": 2651369,
+    "sha256": "ccf5075500f1c83d0e4e09dd1b75b8b58a05af177414e24950d1938eddb9b840"
+  },
+  "review-v6/composition-village.png": {
+    "bytes": 3409846,
+    "sha256": "978ca300283e071d6b5ab571cd9ecca5c6686e11114ec2618ea614fda4e2ed7e"
+  },
+  "review-v6/compressed-128500.png": {
+    "bytes": 1217708,
+    "sha256": "d5b74af5c1be8001069f572304292c8e50373e6f2d48efc6c0ba9a3d2397d5b6"
+  },
+  "review-v6/compressed-14000.png": {
+    "bytes": 1457392,
+    "sha256": "b6874434c10dd3acc11d1315db4b196ba6bf327b2105cc88c4e77a8256cac591"
+  },
+  "review-v6/compressed-154500.png": {
+    "bytes": 1456807,
+    "sha256": "6d088b65c0567d185d0ae8c61ac5a9c70539f92af45805cfe8b75c8521eda2e4"
+  },
+  "review-v6/compressed-208500.png": {
+    "bytes": 1506624,
+    "sha256": "083e3ea22878cb5b5ee3f33b9e940c6dae81a2b88eb749e2f2f77e05b04c3b0f"
+  },
+  "review-v6/compressed-244500.png": {
+    "bytes": 1457442,
+    "sha256": "772b4d8899cded95df85791300fb13a4ddb46e3d9363185cd333f2c250f7aa21"
+  },
+  "review-v6/compressed-248000.png": {
+    "bytes": 1393729,
+    "sha256": "4dd3d4fe9ae38fdb9dfce91f8795a3f98a8f1138653edb8bd610d841335b0a94"
+  },
+  "review-v6/compressed-55000.png": {
+    "bytes": 1458035,
+    "sha256": "e633096b6ecbaf7b9dc61a9ef87b8b415effe0df569339a2220b7089fef98163"
+  },
+  "review-v6/compressed-92500.png": {
+    "bytes": 1525124,
+    "sha256": "0c26e4d7ec4bca0c792f6d4008135e19ba04e586017711ffa2d33d9e03d2c70e"
+  },
+  "review-v6/compressed-contact-sheet.jpg": {
+    "bytes": 383848,
+    "sha256": "ca2980baba724e28464eb8e18a7a9f058748147f6c01d75143520d415e218770"
+  },
+  "review-v6/index.html": {
+    "bytes": 28509,
+    "sha256": "ab46e5a402aa47919fe9ee732227c3dc29535288f3580a31a54584815bbdc88b"
+  },
+  "review-v6/song-102500.png": {
+    "bytes": 2926943,
+    "sha256": "905b01024c9b245770a3bf6c5c937a0359a9b9eeb245be743db6918387fe4d5b"
+  },
+  "review-v6/song-126700.png": {
+    "bytes": 2759204,
+    "sha256": "be971e648878009fb135f277f23a92e1d049ac51fe5233ecbe1f495e80833135"
+  },
+  "review-v6/song-128500.png": {
+    "bytes": 2767197,
+    "sha256": "460e0bc02bf39d35121447658ac8567ebf7a5f5d2b37b332d6eb9174825fdd1f"
+  },
+  "review-v6/song-134800.png": {
+    "bytes": 2783974,
+    "sha256": "9d32b606dde4fc7af87e08284838f840e849810058192567b2bc49193738bee7"
+  },
+  "review-v6/song-136600.png": {
+    "bytes": 2774532,
+    "sha256": "e6be15f474511bbfb5809fd546d8f5ff6fa9c41fbe8630043bd073538e0daff6"
+  },
+  "review-v6/song-14000.png": {
+    "bytes": 2892648,
+    "sha256": "f7960115248f3487794c15ac9f7cf1a97ac2c438f7a562c0d57df19e4867dc3e"
+  },
+  "review-v6/song-153500.png": {
+    "bytes": 2903338,
+    "sha256": "9914e655256a025c40473440901f5debf4e6c1515359a54bc691574e21f42104"
+  },
+  "review-v6/song-154500.png": {
+    "bytes": 2899882,
+    "sha256": "4804c119be02690c75551e2c8a63d07f7161a7464a14f24ec433a8faa79716af"
+  },
+  "review-v6/song-179500.png": {
+    "bytes": 2919386,
+    "sha256": "f18a760b7475443e3aca08dc2c1b5881ece639ec891162323c8c3dae8feed7e9"
+  },
+  "review-v6/song-18500.png": {
+    "bytes": 2923291,
+    "sha256": "37c5e43386680b3a8d1a5df03ff126c2dff8285ab7d05754b509fef435c864be"
+  },
+  "review-v6/song-198500.png": {
+    "bytes": 2893005,
+    "sha256": "9cd3d5d3a081d6834f0c1b54721392a2f26d398afcf7953e3f24063955ae6083"
+  },
+  "review-v6/song-208500.png": {
+    "bytes": 2913043,
+    "sha256": "3b2543b150839dd692f519a705626daeb0a3500bcfb6a9a2ec1632015c50f223"
+  },
+  "review-v6/song-210000.png": {
+    "bytes": 2824962,
+    "sha256": "c890c022875356e07d0b49475962fdf85ff0ed98e7a3c7306b2ca08acf45d3a6"
+  },
+  "review-v6/song-228900.png": {
+    "bytes": 2885778,
+    "sha256": "17806580b7e9b1eb7653fe19c25e5b2c08aedf906b4719db5307bc8cdcd00b36"
+  },
+  "review-v6/song-232000.png": {
+    "bytes": 2887473,
+    "sha256": "e6c44e363e94b33a2b2c6dcb29ae5dcfeabff3310e919e3ac57d5c978951f819"
+  },
+  "review-v6/song-24400.png": {
+    "bytes": 2865555,
+    "sha256": "33672b2d0c965faeb8975f948f695ca48cf9075eb583d2fec4af0c0d895db673"
+  },
+  "review-v6/song-244500.png": {
+    "bytes": 2918941,
+    "sha256": "0c1630708066a44bdc130d6474da501a823a08ccf1735b3d93fa7398be448e64"
+  },
+  "review-v6/song-248000.png": {
+    "bytes": 2883825,
+    "sha256": "0a318a27b3820041a89811bf1a0cb62c6fd07c8c29c9f8394cd1af286318b37e"
+  },
+  "review-v6/song-25000.png": {
+    "bytes": 2868178,
+    "sha256": "8af29d19ae4f9ba28c3612f8f23f7284504eae781086cfd2510ea02ff5eaf37b"
+  },
+  "review-v6/song-253000.png": {
+    "bytes": 2839753,
+    "sha256": "0d3e0d84a10e9a035c04a0164adc4aa9609def14faf126d7329baa5a63f8548b"
+  },
+  "review-v6/song-25600.png": {
+    "bytes": 2852341,
+    "sha256": "1dbca0f33bee8521f54c5a490c0169a81a81d694448558e39e1f531332b3e347"
+  },
+  "review-v6/song-260300.png": {
+    "bytes": 2825461,
+    "sha256": "6c6b12a0725b379c43de6de464768244ec5ae7a2bd365a44bb8d4cfc66593a0f"
+  },
+  "review-v6/song-26500.png": {
+    "bytes": 2870669,
+    "sha256": "192e89e9630102abd80fb1bf4b133407009dfdda89545ee21918e9ed13148987"
+  },
+  "review-v6/song-3000.png": {
+    "bytes": 2832688,
+    "sha256": "c8002407c918af601329cb327cbd7125d726a97b5a1d68402113a977e0bb5d90"
+  },
+  "review-v6/song-42000.png": {
+    "bytes": 2899099,
+    "sha256": "829e4d5da3e1cf8244d37a4980a6a957be1ad12e9be9b540e57afbb9c3c28c3c"
+  },
+  "review-v6/song-43000.png": {
+    "bytes": 2815207,
+    "sha256": "0f1706adc57779c7b07756de112ee6aa7281436be5d5dc7463e943474466bd82"
+  },
+  "review-v6/song-45000.png": {
+    "bytes": 2896679,
+    "sha256": "979126dc7e5f84cc8a2b422a75d020138cb651f2dae5afa1bbee2afb842d5f30"
+  },
+  "review-v6/song-49600.png": {
+    "bytes": 2817361,
+    "sha256": "e71a90ba3d728f0ed57e07c7fcf027d4f254743259ec170cc2b0a6a93e1698b6"
+  },
+  "review-v6/song-55000-repeat.png": {
+    "bytes": 2897014,
+    "sha256": "a0711dd0e7934145f0576f7660d4093171cdee7a4d3ff96915cc59f0a2a80e9c"
+  },
+  "review-v6/song-55000.png": {
+    "bytes": 2897014,
+    "sha256": "a0711dd0e7934145f0576f7660d4093171cdee7a4d3ff96915cc59f0a2a80e9c"
+  },
+  "review-v6/song-64000.png": {
+    "bytes": 2881292,
+    "sha256": "4660bee09dc262df50df7f54c0b9970f41bf68cfa59d0761d8e719d40e5b06e4"
+  },
+  "review-v6/song-71900.png": {
+    "bytes": 2820981,
+    "sha256": "17bc1c5316c4448192e08d7f2967f99514bab477c18cc5ec262739a141ba95fb"
+  },
+  "review-v6/song-74833.png": {
+    "bytes": 2826900,
+    "sha256": "8ad2eced497ae8c71df0f62cd3a82e3eb873570efe49a527ff6adefcc8f11af6"
+  },
+  "review-v6/song-9000.png": {
+    "bytes": 2815064,
+    "sha256": "4ce7fafc581ef91db8664178f26aa668154dc74a799786b30805763392752ca3"
+  },
+  "review-v6/song-92300.png": {
+    "bytes": 2931861,
+    "sha256": "4244ab084ce341fdadcf3961a7d5caff85ea9352139872e82d22f79539bc49df"
+  },
+  "review-v6/song-92500.png": {
+    "bytes": 2931775,
+    "sha256": "0c7d4054a6d482eecd814eb7893b1d7ac9bd7511d636a1c65e9bbb2c03c128de"
+  },
+  "review-v6/swarm-song-v6.mp4": {
+    "bytes": 35804594,
+    "sha256": "f77b1b6c96348b948f1c10485d9dc862444ed86062bd06f4f61ceee5c375edcf"
   },
   "review/cycle1/composition-village.png": {
     "bytes": 3690468,

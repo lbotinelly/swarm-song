@@ -2,7 +2,7 @@ import json,hashlib,subprocess,sys
 from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
-ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';version='v5' if '--percussion' in sys.argv else 'v4' if '--music-cues' in sys.argv else 'v3';review=base/f'review-{version}'
+ROOT=Path(__file__).resolve().parents[1];base=ROOT/'assets/milestone7';version='v6' if '--director' in sys.argv else 'v5' if '--percussion' in sys.argv else 'v4' if '--music-cues' in sys.argv else 'v3';review=base/f'review-{version}'
 def read(p):return json.loads(p.read_text(encoding='utf-8-sig'))
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 j=read(base/'timeline.json');master=ROOT/j['master'];movie=review/f'swarm-song-{version}.mp4'
@@ -38,11 +38,11 @@ sheet.save(review/'compressed-contact-sheet.jpg',quality=92)
 clippedPerformance=[dict(phrase=p['id'],word=w['id'],onsetMs=w['startMs'],presentationClearMs=p['presentation']['endMs']+j['presentationDefaults']['exitMs']) for p in j['phrases'] for w in p['words'] if w['startMs']>=p['presentation']['endMs']+j['presentationDefaults']['exitMs']]
 assert not clippedPerformance,clippedPerformance
 result=dict(masterHashPreserved=True,approvedCharacterMastersPreserved=True,comparisons=comparisons,repeatFrameHash=sha(review/'song-55000.png'),video=dict(width=v['width'],height=v['height'],fps=v['r_frame_rate'],frames=v['nb_frames'],duration=probe['format']['duration']),audio=dict(codec=a['codec_name'],sampleRate=a['sample_rate'],channels=a['channels'],checks=rows),editorialLines=len(set(p['sourceLine'] for p in j['phrases'])),phrases=len(j['phrases']),words=sum(len(p['words']) for p in j['phrases']),unresolvedWords=sum(w['status']=='unresolved' for p in j['phrases'] for w in p['words']),performanceOnsetsAfterCaptionClear=clippedPerformance,continuousAudiovisualReview='unverified',limitations=['Acoustic coverage differs from verified editorial text coverage; see ALIGNMENT.md.','Compression contact sheet is static evidence, not continuous playback review.'])
-if version in ['v4','v5']:
+if version in ['v4','v5','v6']:
  cues=read(base/'musical-cues.json')
  assert sha(base/'timeline.json')==cues['lyricTimelineSha256']
  extra_ids=set()
- if version=='v5':
+ if version in ['v5','v6']:
   rhythm=read(base/'percussion-cues.json')
   assert rhythm['approvedCueMapSha256']==sha(base/'musical-cues.json')
   extra=read(base/'musical-cue-additions.json')['cues'];extra_ids={c['id'] for c in extra}
@@ -51,15 +51,34 @@ if version in ['v4','v5']:
   assert all(0<=e['atMs']<262800 and e['correlation']>=.3 for e in events)
   assert all(events[i]['atMs']-events[i-1]['atMs']>=300 for i in range(1,len(events)))
   result['percussion']=dict(accents=len(events),reviewedCueMapUnchanged=True,newMoments=len(extra),listeningApproval=False)
+ director_ids=set()
+ if version=='v6':
+  direction=read(base/'music-director-corrections.json')
+  assert direction['baselineMapSha256']==sha(base/'musical-cues.json')
+  director_ids=set(direction['overrides'])|{c['id'] for c in direction['newCues']}
+  cues=read(base/'musical-cues-v6.json')
+  result['director']=dict(revisedSwells=direction['overrides'],newMoments=len(direction['newCues']),percussion=direction['percussion'],baselineMeasurementsPreserved=True)
  clips=[]
  for cue in cues['cues']:
-  path=base/('music-additions' if cue['id'] in extra_ids else 'music-review')/f"{cue['id']}.mp3"
+  path=base/('director-audio' if cue['id'] in director_ids else 'music-additions' if cue['id'] in extra_ids else 'music-review')/f"{cue['id']}.mp3"
   info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(path)]))
   expected=min(7,262.8-max(0,cue['peakMs']/1000-3))
   assert abs(float(info['format']['duration'])-expected)<.1
   assert info['streams'][0]['channels']==2
   clips.append(cue['id'])
  result['musicalCues']=dict(total=len(cues['cues']),enabled=sum(c['enabled'] for c in cues['cues']),held=sum(not c['enabled'] for c in cues['cues']),lyricTimelineUnchanged=True,validatedStereoExcerpts=clips,listeningApproval=False)
+if version=='v6' and (base/'spectral-pattern-candidates.json').exists():
+ patterns=read(base/'spectral-pattern-candidates.json')
+ assert patterns['masterSha256']==sha(master)
+ for row in patterns['matches']:
+  assert 0<=row['startMs']<row['endMs']<=262800
+  assert np.isfinite(row['score']) and np.isfinite(row['spectralScore'])
+  clip=base/'pattern-review'/f"{row['id']}.mp3"
+  info=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(clip)]))
+  start=max(0,row['startMs']/1000-1.5)
+  expected=min(262.8-start,(row['endMs']-row['startMs'])/1000+3)
+  assert abs(float(info['format']['duration'])-expected)<.1 and info['streams'][0]['channels']==2
+ result['spectralPatternSearch']=dict(librosaVersion=patterns['librosaVersion'],families=len(patterns['examples']),validatedExcerpts=len(patterns['matches']),scanRangeMs=patterns['scanRangeMs'],status='Audition candidates, not confirmed events or emotion')
 (base/f'qa-report-{version}.json').write_text(json.dumps(result,indent=2)+'\n')
 manifest={str(p.relative_to(base)).replace('\\','/'):dict(bytes=p.stat().st_size,sha256=sha(p)) for p in base.rglob('*') if p.is_file() and p.name!='manifest.json'}
 (base/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

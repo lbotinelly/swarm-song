@@ -1,0 +1,101 @@
+{
+  "date": "2026-11-13",
+  "source": "Leo playback notes and clarification: existing peaks occur two-thirds through the swells.",
+  "baselineMapSha256": "8a8827044f07dcd8122411e2eceba50358a74424c64ef731dd43cef401bc4e83",
+  "notes": [
+    "User timestamps are approximate direction, not measured acoustic boundaries.",
+    "Swells retain starts; rise duration multiplied by1.5. Original measured peaks remain in baseline map.",
+    "Piano-roll description comes from Leo; no new instrument-classification claim.",
+    "Final chorus is an ensemble swell, not the isolated synth RMS maximum."
+  ],
+  "overrides": {
+    "strings-first-bloom": {
+      "peakMs": 42994,
+      "endMs": 44494
+    },
+    "strings-second-lift": {
+      "peakMs": 49566,
+      "endMs": 51066
+    }
+  },
+  "percussion": {
+    "startMs": 14000,
+    "rests": [
+      {
+        "startMs": 24400,
+        "endMs": 27200
+      },
+      {
+        "startMs": 90700,
+        "endMs": 94600
+      }
+    ]
+  },
+  "newCues": [
+    {
+      "id": "drums-enter",
+      "sectionId": "opening",
+      "startMs": 14000,
+      "peakMs": 14491,
+      "endMs": 16400,
+      "label": "Drums enter",
+      "emotionalRole": "start bopping",
+      "action": "rhythm",
+      "enabled": true,
+      "uncertaintyMs": 500,
+      "directionStatus": "director-guided timing; playback confirmation pending"
+    },
+    {
+      "id": "registry-anticipation",
+      "sectionId": "opening",
+      "startMs": 24400,
+      "peakMs": 25600,
+      "endMs": 27200,
+      "label": "Piano roll / anticipation",
+      "emotionalRole": "hold still, then surprise",
+      "action": "surprise",
+      "enabled": true,
+      "uncertaintyMs": 500,
+      "directionStatus": "director-guided timing; playback confirmation pending"
+    },
+    {
+      "id": "brass-followup",
+      "sectionId": "instrumental",
+      "startMs": 73800,
+      "peakMs": 74817,
+      "endMs": 76600,
+      "label": "Brass follow-up flourish",
+      "emotionalRole": "another cheerful answer",
+      "action": "hop",
+      "enabled": true,
+      "uncertaintyMs": 500,
+      "directionStatus": "director-guided timing; playback confirmation pending"
+    },
+    {
+      "id": "should-we-pause",
+      "sectionId": "comic",
+      "startMs": 90700,
+      "peakMs": 92300,
+      "endMs": 94600,
+      "label": "Should we go? Oh no…",
+      "emotionalRole": "hesitate in the quiet",
+      "action": "hesitate",
+      "enabled": true,
+      "uncertaintyMs": 500,
+      "directionStatus": "director-guided timing; playback confirmation pending"
+    },
+    {
+      "id": "big-chorus-swell",
+      "sectionId": "final-chorus",
+      "startMs": 206500,
+      "peakMs": 210000,
+      "endMs": 213500,
+      "label": "Big chorus swell",
+      "emotionalRole": "open up into the whole chorus",
+      "action": "grand-swell",
+      "enabled": true,
+      "uncertaintyMs": 1000,
+      "directionStatus": "director-guided timing; playback confirmation pending"
+    }
+  ]
+}

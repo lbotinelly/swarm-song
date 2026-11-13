@@ -1,7 +1,7 @@
 """Sparse drum/percussion onset candidates, checked locally against the master.
 Uses existing FFmpeg/NumPy, no tempo grid or new audio dependencies.
 """
-import json,runpy,hashlib,html
+import json,runpy,hashlib,html,sys,subprocess
 from pathlib import Path
 import numpy as np
 ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'assets/milestone7'
@@ -61,7 +61,21 @@ for a,b in [(0,40),(40,84),(84,112),(112,153),(153,183),(183,239),(239,263)]:pri
 # Extend the existing static listening gallery, with a separate percussion lane.
 extra=json.loads((BASE/'musical-cue-additions.json').read_text(encoding='utf-8'))
 all_cues=sorted([(c,'music-review') for c in cue_map['cues']]+[(c,'music-additions') for c in extra['cues']],key=lambda pair:pair[0]['peakMs'])
-review=BASE/'review-v5';review.mkdir(exist_ok=True)
+directed='--director' in sys.argv
+version='v6' if directed else 'v5'
+if directed:
+ direction=json.loads((BASE/'music-director-corrections.json').read_text(encoding='utf-8'))
+ assert direction['baselineMapSha256']==hashlib.sha256((BASE/'musical-cues.json').read_bytes()).hexdigest()
+ all_cues=[({**c,**direction['overrides'].get(c['id'],{})},'director-audio' if c['id'] in direction['overrides'] else folder) for c,folder in all_cues]
+ all_cues.extend((c,'director-audio') for c in direction['newCues']);all_cues.sort(key=lambda pair:pair[0]['peakMs'])
+ (BASE/'musical-cues-v6.json').write_text(json.dumps({**cue_map,'version':6,'status':'Baseline candidates plus director-guided presentation; revised playback pending','directionSource':'music-director-corrections.json','cues':[c for c,_ in all_cues]},indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+ (BASE/'director-audio').mkdir(exist_ok=True)
+ for c,folder in all_cues:
+  if folder!='director-audio':continue
+  start=max(0,c['peakMs']/1000-3)
+  subprocess.run(['ffmpeg','-v','error','-y','-ss',str(start),'-i',str(h['MASTER']),'-t',str(min(7,262.8-start)),'-c:a','libmp3lame','-b:a','192k',str(BASE/folder/(c['id']+'.mp3'))],check=True)
+ clean=[e for e in clean if e['atMs']>=direction['percussion']['startMs'] and not any(r['startMs']<=e['atMs']<r['endMs'] for r in direction['percussion']['rests'])]
+review=BASE/f'review-{version}';review.mkdir(exist_ok=True)
 svg=['<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 160" role="img" aria-label="Major cue and percussion timestamps"><rect width="1400" height="160" fill="#fff9e9"/><g font-family="sans-serif" font-size="14" fill="#355f64"><text x="12" y="35">Moments</text><text x="12" y="100">Percussion</text>']
 for i,(c,folder) in enumerate(all_cues):
  x=120+c['peakMs']/262800*1250
@@ -73,6 +87,10 @@ for t in range(0,263,20):svg.append(f'<text x="{120+t/262.8*1250}" y="145">{t}s<
 svg.append('</g></svg>')
 cards=[]
 for i,(c,folder) in enumerate(all_cues):
- label='NEW CANDIDATE' if folder=='music-additions' else 'V4 TIMING RETAINED' if c['enabled'] else 'HELD FOR REVIEW'
+ label='DIRECTOR CUE' if folder=='director-audio' else 'NEW CANDIDATE' if folder=='music-additions' else 'V4 TIMING RETAINED' if c['enabled'] else 'HELD FOR REVIEW'
  cards.append(f'<article><button data-time="{max(0,c["peakMs"]/1000-3)}">{i+1}. {c["peakMs"]/1000:.3f}s · {html.escape(c["label"])}</button><p>{label} · {html.escape(c["emotionalRole"])}</p><audio controls preload="none" src="../{folder}/{c["id"]}.mp3"></audio></article>')
-(review/'index.html').write_text('''<!doctype html><html lang="en"><meta charset="utf-8"><title>Swarm Song — percussion and expanded cues</title><style>body{max-width:1400px;margin:30px auto;padding:0 20px;background:#eee4ce;color:#355f64;font:18px system-ui}video,svg{width:100%}video{max-height:60vh}article{background:#fff9e9;padding:16px;margin:14px 0}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}audio{max-width:100%}</style><h1>A little more music in the bunny</h1><p>V4 timings retained. Five additional moments and 283 master-checked percussion accents are new listening candidates. Small bops yield to larger gestures and soften through goodbye. No fixed BPM grid.</p><video id="film" controls preload="metadata" src="swarm-song-v5.mp4"></video>'''+''.join(svg)+''.join(cards)+'''<script>document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{const v=document.querySelector('#film');v.currentTime=Number(b.dataset.time);v.play();v.scrollIntoView({behavior:'smooth',block:'center'});});</script></html>''',encoding='utf-8')
+page='''<!doctype html><html lang="en"><meta charset="utf-8"><title>Swarm Song — percussion and expanded cues</title><style>body{max-width:1400px;margin:30px auto;padding:0 20px;background:#eee4ce;color:#355f64;font:18px system-ui}video,svg{width:100%}video{max-height:60vh}article{background:#fff9e9;padding:16px;margin:14px 0}button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}audio{max-width:100%}</style><h1>A little more music in the bunny</h1><p>V4 timings retained. Five additional moments and 283 master-checked percussion accents are new listening candidates. Small bops yield to larger gestures and soften through goodbye. No fixed BPM grid.</p><video id="film" controls preload="metadata" src="swarm-song-v5.mp4"></video>'''+''.join(svg)+''.join(cards)+'''<script>document.querySelectorAll('[data-time]').forEach(b=>b.onclick=()=>{const v=document.querySelector('#film');v.currentTime=Number(b.dataset.time);v.play();v.scrollIntoView({behavior:'smooth',block:'center'});});</script></html>'''
+if directed:
+ page=page.replace('<h1>','<p><a href="../pattern-review/index.html">Whole-song spectral-pattern audition: examples beyond the supplied timestamps</a></p><h1>',1)
+ page=page.replace('swarm-song-v5.mp4','swarm-song-v6.mp4').replace('V4 timings retained. Five additional moments and 283 master-checked percussion accents are new listening candidates. Small bops yield to larger gestures and soften through goodbye. No fixed BPM grid.','Director pass: later swell peaks, anticipation pauses, a second brass flourish, and the big chorus. Bopping starts after14s and rests through both pauses. Caption timing and original measurements remain unchanged.')
+(review/'index.html').write_text(page,encoding='utf-8')

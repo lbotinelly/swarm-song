@@ -1,5 +1,9 @@
 # Milestone 7 — The song is the timeline
 
+[Whole-song spectral-pattern audition](pattern-review/index.html) uses Leo’s examples to search by spectral contrast, flux and tonal texture. [Method and findings](SPECTRAL_PATTERN_REVIEW.md).
+
+**V6 director pass:** [full test and cue map](review-v6/index.html) applies Leo’s specific pauses, later swell peaks, follow-up brass and big chorus. [Details](DIRECTOR_MUSIC_REVIEW.md).
+
 **Current: V5 percussion and cue additions.** [Play V5](review-v5/index.html), or read [the evidence and reproduction notes](PERCUSSION_REVIEW.md). The V4 cue map and caption timing are preserved.
 
 **Preserved V4 musical-cue listening study.** [Watch with the interactive cue map](music-review/index.html). The full master accompanies cue labels and the existing solo agent performing selected swells, accents and releases. Approved lyric timing is unchanged. See [MUSIC_REVIEW.md](MUSIC_REVIEW.md) for evidence, limitations and reproduction. This is a listening-review candidate, not an approved emotional score.

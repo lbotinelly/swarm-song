@@ -1,0 +1,37 @@
+{
+  "wideWindowCandidates": [
+    {
+      "stemCenterMs": 74850,
+      "offsetMs": 875,
+      "correlation": 0.4615
+    },
+    {
+      "stemCenterMs": 75250,
+      "offsetMs": 599,
+      "correlation": 0.3476
+    },
+    {
+      "stemCenterMs": 75650,
+      "offsetMs": 427,
+      "correlation": 0.4046
+    }
+  ],
+  "boundedBrassWindows": [
+    {
+      "stemCenterMs": 75050,
+      "offsetMs": -442,
+      "correlation": 0.1752
+    },
+    {
+      "stemCenterMs": 75250,
+      "offsetMs": -433,
+      "correlation": 0.2867
+    },
+    {
+      "stemCenterMs": 75450,
+      "offsetMs": -433,
+      "correlation": 0.3766
+    }
+  ],
+  "note": "Bounded search uses neighboring locally matched brass offsets; wide mixed windows confuse repeated motifs. Director cue remains approximate."
+}
