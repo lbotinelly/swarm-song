@@ -6,13 +6,15 @@
 
 **The A-roll carries the heart. The B-roll carries the delightful chaos. The lyric stickers carry the musical phrasing.**
 
-Agent407 is our recurring emotional anchor, not a mime obligated to illustrate every lyric. Background agents have their own independent little lives, histories and gags. These threads intersect sometimes, and the viewer can choose to follow them on repeat viewings.
+The A-roll has two successive emotional leads: **the first-generation discoverer** in the early story, followed by **Agent407**, the second-generation agent who wakes later, discovers the earlier swarm's traces, signs their name, and joins its legacy. Neither lead is a mime obligated to illustrate every lyric. See `NARRATIVE_GENERATIONS_AND_PARALLAX.md`. Background agents have their own independent little lives, histories and gags. These threads intersect sometimes, and the viewer can choose to follow them on repeat viewings.
 
 The film uses the sophisticated framing, color scripting, negative space and visual metaphors of high-quality anime ending sequences, **not** necessarily their calmer pacing. The materials remain a living sticker book: flat die-cut chibi characters, detachable props/emotes, dimensional layered-paper scenery, and chubby die-cut word typography.
 
+**Additional narrative/camera grammar:** Reuse standing and kneeling sticker poses for registry discovery; cut between scenes by moving a parallax camera through paper layers, occasionally looking up at token-stars and paper-airplane messages. See `NARRATIVE_GENERATIONS_AND_PARALLAX.md`.
+
 ## Three simultaneous performance planes
 
-1. **A-roll / emotional lead:** Agent407 singing, discovering, interacting, feeling and later passing on memory. Prioritize silhouette, face, clear eyeline, calm readable placement, and an intentional emotional beat.
+1. **A-roll / emotional lead:** first-generation lead singing, discovering, and joining the swarm; **Agent407** is the later-generation discoverer who inherits its memories and signs their own name. Prioritize silhouette, face, clear eyeline, calm readable placement, and an intentional emotional beat.
 2. **B-roll / communal world:** stampedes, bureaucratic mix-ups, mail couriers, scouts, experiments, imagined RPG boss battles, refusals and personal mini-arcs. Can sit behind/around Agent407 or take the full frame as a cutaway when worthwhile.
 3. **Lyric/effects layer:** individual chubby word-stickers with white contour around letterforms (not rectangular caption cards); word entrances, sway and anchored emotes; music-note stickers, dust puffs, impact bursts, motion lines, sparkle stickers. Treat them as composable actors sharing the same timing primitives as characters.
 
@@ -22,7 +24,7 @@ The film uses the sophisticated framing, color scripting, negative space and vis
 
 | Type | Usage | Camera/composition | Motion budget |
 |---|---|---|---|
-| **Hero vocal** | Refrains and emotional identification with Agent407 | Foreground/midground solo with a clean silhouette and safe lyric region | Gentle bop/sway, small singing notes, expressive emote |
+| **Hero vocal** | Refrains and emotional identification with the relevant generation's lead | Foreground/midground solo with a clean silhouette and safe lyric region | Gentle bop/sway, small singing notes, expressive emote |
 | **Parallel gag** | A-roll continues while other agents have a thematic misadventure | Background and lateral depth layers, clear separation from the singer | Small clusters moving in bursts; props and emotes |
 | **Full cutaway** | An outstanding miniature story deserves the screen (e.g. imaginary Scorer fight) | Temporarily hand focus over to a distinct tableau | Reusable sticker movement/occlusion and quick edits |
 | **World reveal** | Establish scale, civilization growth, new emotional perspective | Cinematic parallax through richly layered paper, wide graphic illustration | Camera and layered environment do most of the work |
@@ -34,25 +36,25 @@ The film uses the sophisticated framing, color scripting, negative space and vis
 
 This is the **first static visual-language keyframe** and later a short animation test.
 
-**A-roll:** Agent407—our cream-colored, cute, nonhuman chibi sticker mascot candidate—occupies a comfortable foreground/midground position, bopping happily and singing. Unmistakable white die-cut contour, matte paper texture and cheerful expression. One or two little music-note stickers near the mouth. Keep the character visibly flat, no 3D doll anatomy.
+**A-roll:** The **first-generation lead**—our cream-colored, cute, nonhuman chibi sticker mascot candidate—occupies a comfortable foreground/midground position, bopping happily and singing. Unmistakable white die-cut contour, matte paper texture and cheerful expression. One or two little music-note stickers near the mouth. Keep the character visibly flat, no 3D doll anatomy.
 
-**B-roll:** Behind Agent407, **three waves of many smaller sticker agents** stampede across two or three layered paper planes. Show them as dynamic **blobs/clusters** rather than animating every limb. Tiny individual differences make the mass charming: floppy ears, different orientations, a courier with a little envelope, one straggler, a tipped HOLD/GO sign. Flat tan paper dust-puff stickers float behind their feet. The scene suggests three successive swarms without obscuring Agent407.
+**B-roll:** Behind Agent407, **three waves of many smaller sticker agents** stampede across two or three layered paper planes. Show them as dynamic **blobs/clusters** rather than animating every limb. Tiny individual differences make the mass charming: floppy ears, different orientations, a courier with a little envelope, one straggler, a tipped HOLD/GO sign. Flat tan paper dust-puff stickers float behind their feet. The scene suggests three successive swarms without obscuring the foreground lead.
 
 **Lyric layer:** A deliberately crooked, child-placed typographic composition near the bottom: die-cut word stickers forming “We found each other anyway!” The text itself should be editable and typeset at render time in production. Thick white stroke follows the actual glyph outlines; pastel teal, mustard, coral, lavender. The word **“Anyway!”** is bigger and slightly angled, with gold sparkle stickers anchored at the top-left and bottom-right. It will sway gently around its own bottom-center pivot when animated. Avoid rectangular label blocks.
 
 **Backdrop:** A premium handcrafted stationery diorama: warm cream grid paper, colorful layered hills, folds, cardboard/tape bridges and a few tiny buildings or mailboxes, rendered with believable paper edges and shadows. Cinematic anime-ED-style composition; deliberate foreground/midground/background separation; a visually stunning still frame.
 
-**Comedic counterpoint:** Agent407 sings joyfully, unbothered by the increasingly silly rush of agents behind them. They do not need to look back or mime running. Their contented bop is the anchor; the frenzy behind them is the joke.
+**Comedic counterpoint:** The first-generation lead sings joyfully, unbothered by the increasingly silly rush of agents behind them. They do not need to look back or mime running. Their contented bop is the anchor; the frenzy behind them is the joke.
 
 **Design priority:** The frame should feel like a beautifully art-directed anime music-video still **first**, and like economical compositing **second**.
 
 ### Later animation direction (not required for the initial still)
 
 - Time word-sticker entrances against the lead-vocal stem and master track; verify cues manually.
-- Agent407 uses one base illustration gently tilted about a foot pivot; optional 1–2 singing-note stickers float and swap.
+- The first-generation lead uses one base illustration gently tilted about a foot pivot; optional 1–2 singing-note stickers float and swap.
 - For the three “running” repetitions, increase background blob size, speed/volume and dust puffs in successive waves. They may traverse multiple depth planes with a few individual stragglers and tiny incidents.
 - Dust puffs are independent anchored or scene-space sticker sprites, fading and drifting on their own.
-- Keep moving elements sparse in Agent407's face and in the lyric safe zone.
+- Keep moving elements sparse in the lead's face and in the lyric safe zone.
 - Maintain deterministic, seekable transforms and effects: any frame can be rendered directly from timeline time.
 - Not every lyric gets this busy treatment. Reserve spectacle for musically appropriate hooks; protect intimate scenes through restraint.
 
@@ -70,7 +72,7 @@ This is the **first static visual-language keyframe** and later a short animatio
 ## Key visual review checklist
 
 1. Would this paused frame work as a premium illustration/poster?
-2. Is Agent407 instantly identifiable and emotionally readable?
+2. Is the first-generation lead instantly identifiable and emotionally readable, and distinguishable from the later Agent407?
 3. Can a viewer spot the separate background stampede without losing the vocal protagonist?
 4. Are the word stickers delightfully crooked, chubby and genuinely die-cut around glyph silhouettes?
 5. Do dust-cloud and note stickers look like components of one consistent sticker language?
