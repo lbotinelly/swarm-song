@@ -1,10 +1,10 @@
 # Sprite Production Handoff — First-Generation Cast
 
-**Status:** Immediate next deliverable. Develop the visual character sprite library **before** attempting the 15-second animation prototype.
+**Status:** Immediate *art* deliverable. Develop the visual character sprite library **before the integrated 15-second animation prototype**; the small engine/registry-shot spike may proceed in parallel using disposable placeholder art, as described in `STICKER_STAGE_ENGINE.md`.
 
 ## The selected character reference is mandatory
 
-The user selected a specific cream bunny-like chibi mechanic sticker, posted in the ChatGPT conversation. **That image is currently not checked into the repository.** Codex must ask the user to attach the selected reference image in the Codex thread or place it at **\`assets/reference/selected-bunny-mechanic.png\`** before character generation. **Do not silently substitute the previous generated style boards or another bunny.**
+The user selected a specific cream bunny-like chibi mechanic sticker, posted in the ChatGPT conversation. **That image is currently not checked into the repository.** Codex must ask the user to attach the selected reference image in the Codex thread or place it at **`assets/reference/selected-bunny-mechanic.png`** before character generation. **Do not silently substitute the previous generated style boards or another bunny.**
 
 What makes the chosen reference distinctive: upright tall rabbit-like ears, tiny oval black eyes, cheerful open mouth, little blushing cheeks, rounded and compact chibi proportions, warm brown hand-drawn outlines, tactile painterly print, and an irregular thick white die-cut sticker contour. Its illustrative outfit consists of vintage aviator goggles, dark mechanic apron/vest with brown pockets and gear badge, chunky gray wrench, and three yellow action rays. These must be decomposed into separate attachable sticker props/emotes; the initial character base is **bare, with no goggles**. Avoid generic floppy-eared puppies, 3D dolls, anatomical puppet rigs, or invented facial features that change the species.
 
@@ -42,7 +42,7 @@ Reusable **emote stickers are separate**: question mark, three yellow exclamatio
 
 ## Production sequence and quality gates
 
-1. Read \`AGENTS.md\`, all relevant \`docs/\`, and the real lyrics before starting. Confirm selected reference image is available.
+1. Read `AGENTS.md`, all relevant `docs/`, and the real lyrics before starting. Confirm selected reference image is available.
 2. Design **Agent407's plain, unadorned base sprite**, then a matched standing/kneeling pose pair at maximum supported native resolution. Generate a labeled preview contact sheet, with text added programmatically, and stop for user review.
 3. Develop core supporting cast using same species and print language; show individual character/pose contact sheets for approval.
 4. Generate separate full-resolution transparent character, accessory, emote and prop PNG masters. Validate alpha and edges, consistent scale/style, attachment anchors, and two-color background composites.
