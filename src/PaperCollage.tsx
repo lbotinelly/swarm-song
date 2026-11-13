@@ -12,14 +12,14 @@ function Card({x,y,w,h,color,angle=0}:{x:number;y:number;w:number;h:number;color
   </div>
  </div>;
 }
-function Bunny({x,y,role,angle=0}:{x:number;y:number;role:'agent'|'organizer'|'courier';angle?:number}) {
- const s=agent407.standing,scale=.18;
+function Bunny({x,y,role,angle=0,singing=false}:{x:number;y:number;role:'agent'|'organizer'|'courier';angle?:number;singing?:boolean}) {
+ const s=singing?agent407.singing:agent407.standing,scale=.18;
  return <div style={{position:'absolute',left:x,top:y,transform:`rotate(${angle}deg)`,filter:'drop-shadow(1px 3px 1px #62544335)'}}>
   {role==='agent'?<Img src={staticFile(s.src)} style={{position:'absolute',width:s.width*scale,left:-s.anchors.footPivot[0]*scale,top:-s.anchors.footPivot[1]*scale}}/>:
   <Img src={staticFile(`nightshift/stickers/${role==='organizer'?'phaseone':'courier'}-wardrobe-v1.png`)} style={{position:'absolute',width:1417*.23,left:-675*.23,top:-1210*.23}}/>}
  </div>;
 }
-function Home({x,y,role,angle,darkness}:{x:number;y:number;role:'agent'|'organizer'|'courier';angle:number;darkness:number}) {
+function Home({x,y,role,angle,darkness,calling=false}:{x:number;y:number;role:'agent'|'organizer'|'courier';angle:number;darkness:number;calling?:boolean}) {
  const agent=role==='agent',courier=role==='courier';
  return <div style={{position:'absolute',left:x,top:y,width:490,height:250,transform:`rotate(${angle}deg)`}}>
   <Card x={-9} y={-9} w={510} h={266} color="#c3a77d" angle={.6}/>
@@ -48,14 +48,14 @@ function Home({x,y,role,angle,darkness}:{x:number;y:number;role:'agent'|'organiz
   <Piece part="lamp" x={courier?155:170} y={18} w={70} h={61} style={{transform:`rotate(${courier?-5:3}deg)`,filter:'drop-shadow(2px 3px 1px #70543225)'}}/>
   <Card x={407} y={4} w={80} h={10} color="#b69d75" angle={-3}/>
   <Piece part="curtain" x={courier?425:444} y={15} w={courier?58:34} h={216} style={{transform:`rotate(${agent?2:-1}deg)`}}/>
-  <Bunny role={role} x={courier?270:agent?310:340} y={239} angle={courier?-4:agent?1:3}/>
+  <Bunny role={role} x={courier?270:agent?310:340} y={239} angle={courier?-4:agent?1:3} singing={agent&&calling}/>
   <Piece part="rail" x={-6} y={205} w={501} h={53} style={{transform:`rotate(${agent?-1:1}deg)`,filter:'drop-shadow(1px 3px 1px #62544335)'}}/>
   <div style={{position:'absolute',inset:'-2px -1px -6px',background:'#273e54',opacity:darkness*.62,mixBlendMode:'multiply',clipPath:'polygon(0 0,99% 1%,100% 99%,0 100%)'}}/>
  </div>;
 }
-export function PaperCollage() {
+export function PaperCollage({awake=false,calling=false}:{awake?:boolean;calling?:boolean}) {
  const frame=useCurrentFrame(),{fps}=useVideoConfig();
- const {angleTop,angleBottom,darkness}=fanPower(frame*1000/fps);
+ const {angleTop,angleBottom,darkness}=awake?{angleTop:-8+frame/fps*12,angleBottom:13+frame/fps*9,darkness:0}:fanPower(frame*1000/fps);
  return <AbsoluteFill style={{background:'#e9e3d3',overflow:'hidden'}}>
   {/* A sheet on the worktable; modest misalignment belongs to individual pieces. */}
   <Card x={130} y={62} w={1660} h={947} color="#bfcfc8" angle={-.6}/>
@@ -69,7 +69,7 @@ export function PaperCollage() {
   <Card x={757} y={855} w={62} h={19} color="#dec18d" angle={13}/>
   {[0,1,2,3,4,5,6,7].map(n=><Card key={n} x={500+n*39} y={870+n%3*3} w={23} h={46} color="#d7b66c" angle={n%2?2:-3}/>)}
   <Home darkness={darkness} x={833} y={112} role="organizer" angle={1.3}/>
-  <Home darkness={darkness} x={825} y={381} role="agent" angle={-1.4}/>
+  <Home darkness={darkness} calling={calling} x={825} y={381} role="agent" angle={-1.4}/>
   <Home darkness={darkness} x={839} y={648} role="courier" angle={.7}/>
   {/* A few leftover cut-paper scraps make this a child's assembled scene. */}
   <Card x={1470} y={820} w={57} h={31} color="#d6b273" angle={-17}/>

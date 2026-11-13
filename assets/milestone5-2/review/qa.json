@@ -1,0 +1,21 @@
+{
+  "nativeMasters": 8,
+  "selectedNewParts": 7,
+  "approvedCharacterHashesPreserved": 6,
+  "nativeRejected": "sun-v1 top ray touched canvas; sun-v2 used instead",
+  "padding": 100,
+  "directSeek": {
+    "maxDifference": 0.0,
+    "meanDifference": 0.0,
+    "sha256": "6b5b297d4bb6967321f246f532ee322b204fef1128727bee039a656b9cf0229d",
+    "repeatSha256": "6b5b297d4bb6967321f246f532ee322b204fef1128727bee039a656b9cf0229d"
+  },
+  "sunOcclusion": {
+    "hiddenSunRoiDifference": 0.0,
+    "removedCloudRoiDifference": 92.76333333333334
+  },
+  "smoke": {
+    "visiblePixelsAboveLip": 7980,
+    "visiblePixelsBelowLip": 0
+  }
+}

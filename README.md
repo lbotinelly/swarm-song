@@ -1,5 +1,11 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 5.2 — The Village We Imagined
+
+[Village review package](assets/milestone5-2/README.md) · [playable gallery](assets/milestone5-2/review/index.html). A 14-second silent, provisional study moves from the approved GPU collage into a shared imagined village: rough crayon hills, crooked houses, a translucent tissue sheet, paper smoke and three interacting bunny stickers. The physical agents remain in separate rooms. New village art awaits human approval; independent visual and animation gates are reported separately.
+
+The [M5 flat collage and gentle fan power-down](assets/milestone5/COLLAGE_REVIEW.md) are user-approved. This child-assembled 2D construction language supersedes the earlier miniature-perspective approach. Previous environment studies remain preserved references.
+
 ## Milestone 4 — The Pages Between Us
 
 [Review package](assets/milestone4/README.md): GPU-apartment concepts and three 31-second cinematic animatics using the exact master126–157s excerpt. [Play all three](assets/milestone4/review/index.html). Latest user direction places all stacked apartments inside one GPU slab, with verandas along the same outward-facing edge. Second-generation awakening is in a **different apartment**, with a rhyming composition; this M4 direction supersedes older same-box location wording for the current exploration. Architecture and animatics remain proposals, not automatically approved canon. See the package for independent criticism and unverified motion/pacing limits.

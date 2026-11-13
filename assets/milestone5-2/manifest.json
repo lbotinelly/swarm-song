@@ -1,0 +1,197 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/milestone5-2/masters/cloud-v1.png",
+      "sourceSha256": "a2b97ee3bd29df1ec048b6044710445ee6f19619c095d718a0b95e77b53059a6",
+      "nativeDimensions": [
+        1962,
+        801
+      ],
+      "output": "public/milestone5-2/cloud-v1.png",
+      "outputDimensions": [
+        2162,
+        1001
+      ],
+      "outputSha256": "6fc6e3d444a183bb4c84c98c4b93774897f37d1a0f4f6ada55465c7f36387464",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        173,
+        193,
+        1960,
+        826
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/hill-a-v1.png",
+      "sourceSha256": "4b0f3d263801b0a2da7f7dd534ef67f503ab1d1b946649fc3f25aac3343f5f4d",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone5-2/hill-a-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "7373e4e6310985c3a240200475f81b022505e48720909b0d1b532cf08f1f4794",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        108,
+        262,
+        1627,
+        978
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/hill-b-v1.png",
+      "sourceSha256": "7918819dea6722e42db2ebeaebda24eb8c9ec6abcb698420fd85d436908335e7",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone5-2/hill-b-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "bd06032526a5847509c668247affae4297d5262f247d35ab6cbf829e93d989d9",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        110,
+        417,
+        1621,
+        917
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/house-a-v1.png",
+      "sourceSha256": "2df52f920d7407dbf0b78e82a0a1b6385fa54c8c0781929cd426768f91fc8ff9",
+      "nativeDimensions": [
+        1359,
+        1157
+      ],
+      "output": "public/milestone5-2/house-a-v1.png",
+      "outputDimensions": [
+        1559,
+        1357
+      ],
+      "outputSha256": "460c6314d593e3f213a8555753faadba8b3a0fa64cf70ad7a5b697c9df718a01",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        143,
+        132,
+        1408,
+        1231
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/house-b-v1.png",
+      "sourceSha256": "c4c0061a95879e456bfb0b416471536ca105686f9a0d52354d7ab520104849ac",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone5-2/house-b-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "9647008646dbff986609d87f0be817ffd9a66a96920d0e9f9fa31b9c933ffcc2",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        239,
+        159,
+        1497,
+        1071
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/smoke-v1.png",
+      "sourceSha256": "a154bbcb5b09afcfc34abf51f7de7c6c5ffd35fb2b8cfb44ca359a9ec315f809",
+      "nativeDimensions": [
+        1024,
+        1536
+      ],
+      "output": "public/milestone5-2/smoke-v1.png",
+      "outputDimensions": [
+        1224,
+        1736
+      ],
+      "outputSha256": "951e5be730165779f8848965b91e67c581550721778b1d4023ac6e0f724ed172",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        377,
+        243,
+        774,
+        1516
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/sun-v1.png",
+      "sourceSha256": "fceb25a9830fa611de65e6131e88899416d2345818e740f82fcb68f32ebeaa19",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "output": "public/milestone5-2/sun-v1.png",
+      "outputDimensions": [
+        1454,
+        1454
+      ],
+      "outputSha256": "41454ca7678ff4aaa31259f7bd88bc09889fc75ff7e82a98ed14ec28e3c2ff7c",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        117,
+        100,
+        1340,
+        1344
+      ]
+    },
+    {
+      "source": "assets/milestone5-2/masters/sun-v2.png",
+      "sourceSha256": "ad0f26e08416f2312c41d246fdbd69c3ca3019b06aa9fbd9257c7d2437ad024a",
+      "nativeDimensions": [
+        1254,
+        1254
+      ],
+      "output": "public/milestone5-2/sun-v2.png",
+      "outputDimensions": [
+        1454,
+        1454
+      ],
+      "outputSha256": "1f950bd9517eb19f8d10ee0222fdd4306f1b936f757df4206ab8898ddd3ad344",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        210,
+        173,
+        1257,
+        1272
+      ]
+    }
+  ]
+}
