@@ -1,5 +1,7 @@
 # Integrated equipment — first standing review
 
+**Protester v2 correction:** the pole now joins the center of the plaque's lower edge. The user explicitly permits slight face overlap and sign tilt for natural construction. `protester-standing-v2.png` supersedes v1 in the review sheet; v1 remains archived. The v2 native master is 1308×1202; its exact edit prompt is in `protester-v2-prompt.json`. The sign remains blank and slightly overlaps the right cheek/eye edge.
+
 User-approved production approach (November 13, 2026): standalone props remain their best presentation for discovery, pickup and handoff. Once worn/held, use a separate illustrated equipped copy of the baseline character, with perspective, grip and occlusion integrated. Clean masters are never replaced. This supersedes the earlier assumption that every worn prop must remain a runtime overlay.
 
 This first review contains PhaseOne holding a clipboard, the Ethical Protester holding a blank placard, and the Courier wearing a satchel. One standing pose each, no goggles. New equipped artwork awaits visual approval before multiplying poses or beginning the chorus. The previous mechanical fitting study remains archived under `assets/accessories/supporting-v1/`.

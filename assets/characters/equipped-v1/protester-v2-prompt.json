@@ -1,0 +1,6 @@
+{
+  "tool": "Built-in Codex image generation",
+  "reference": "public/characters/equipped-v1/protester-standing-v1.png",
+  "prompt": "Precise object edit of this equipped bunny sticker. Fix ONLY the placard construction: the wooden pole must attach behind the exact MIDPOINT of the plaque's lower edge, not its left corner. Keep the paw gripping the pole naturally. Move the plaque left over the existing pole as needed; it is expressly okay for the plaque to overlap a small part of the right cheek/face and for the entire sign to tilt a little. Pole and board must share coherent orientation, with pole running along the board's central axis. Keep the existing bunny identity, ear shapes, face expression, very short legs, proportions, cream watercolor softness, brown outline, warm-white die-cut border, and blank coral-rimmed cream plaque. Do not redesign the character, add text or add accessories. Preserve true transparent background and generous padding. Highest useful native resolution, one full-body lossless transparent sprite. No ground shadow or glow.",
+  "transparent_background": true
+}

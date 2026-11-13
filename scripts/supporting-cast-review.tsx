@@ -54,7 +54,7 @@ const Props=()=> <AbsoluteFill style={{background:'#eae1d0',fontFamily:'Arial, s
 const equipped = [
   {name:'Approved clean baseline',src:'characters/agent407/standing-v1.png',w:1400,h:1500,scale:.39,x:693,y:1363},
   {name:'PhaseOne / integrated grip',src:'characters/equipped-v1/phaseone-standing-v1.png',w:1412,h:1498,scale:.435,x:700,y:1284},
-  {name:'Protester / integrated grip',src:'characters/equipped-v1/protester-standing-v1.png',w:1516,h:1395,scale:.435,x:610,y:1218},
+  {name:'Protester / centered pole v2',src:'characters/equipped-v1/protester-standing-v2.png',w:1508,h:1402,scale:.50,x:640,y:1151},
   {name:'Courier / worn satchel',src:'characters/equipped-v1/courier-standing-v1.png',w:1412,h:1498,scale:.435,x:700,y:1287},
 ];
 const Equipped=()=> <AbsoluteFill style={{background:'#eae1d0',fontFamily:'Arial, sans-serif',color:'#59483c'}}>

@@ -72,6 +72,30 @@
         1277,
         1218
       ]
+    },
+    {
+      "source": "assets/characters/equipped-v1/masters/protester-standing-v2.png",
+      "sourceSha256": "0f453805cd38a8faf20e6941b8af63d670d32034ef9b42c3252eea9dae5ce493",
+      "nativeDimensions": [
+        1308,
+        1202
+      ],
+      "output": "public/characters/equipped-v1/protester-standing-v2.png",
+      "outputDimensions": [
+        1508,
+        1402
+      ],
+      "outputSha256": "c39829aee6eab493a0878c6eafbd354d74d9c598867e9ed5fbd878df28088963",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        287,
+        220,
+        1108,
+        1151
+      ]
     }
   ]
 }
