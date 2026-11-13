@@ -1,0 +1,152 @@
+[
+  {
+    "file": "standing-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      0,
+      1170,
+      1328
+    ],
+    "visible_alpha_above_16_bounds": [
+      141,
+      53,
+      958,
+      1281
+    ],
+    "sha256": "1fac2446cce566f99480d1f5de3760913fd36f3d574e1d995aace96a5be0e4e0"
+  },
+  {
+    "file": "kneeling-v2.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      5,
+      1136,
+      1286
+    ],
+    "visible_alpha_above_16_bounds": [
+      203,
+      118,
+      1025,
+      1220
+    ],
+    "sha256": "e5847fce83ec85ab82150a220d64b411d898d9752e177a654a6b37095cb35709"
+  },
+  {
+    "file": "singing-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      9,
+      1168,
+      1328
+    ],
+    "visible_alpha_above_16_bounds": [
+      140,
+      54,
+      957,
+      1278
+    ],
+    "sha256": "b81972cb4e00b2745e010e872873ce9c3f43d624e2522393525de08388d1d0d1"
+  },
+  {
+    "file": "surprised-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      27,
+      1165,
+      1328
+    ],
+    "visible_alpha_above_16_bounds": [
+      138,
+      50,
+      954,
+      1280
+    ],
+    "sha256": "8903c77a0e0e799d77190d887319376b650c7f70c5b0b3aa93ac7201d83d5850"
+  },
+  {
+    "file": "cheer-v1.png",
+    "native_dimensions": [
+      1182,
+      1331
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      0,
+      1164,
+      1331
+    ],
+    "visible_alpha_above_16_bounds": [
+      132,
+      53,
+      949,
+      1282
+    ],
+    "sha256": "5ebdf841670c40af175b8f01e569b79d59784049c8c4d4f762f8d622ac3495a6"
+  },
+  {
+    "file": "walking-v1.png",
+    "native_dimensions": [
+      1184,
+      1328
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      254
+    ],
+    "nonzero_alpha_bounds": [
+      0,
+      0,
+      1172,
+      1320
+    ],
+    "visible_alpha_above_16_bounds": [
+      134,
+      59,
+      963,
+      1260
+    ],
+    "sha256": "161702ebff5a8856d5e7fb62f2ceece4c7b7f0f4d1b34793eb9d47a58b23f0b1"
+  }
+]
