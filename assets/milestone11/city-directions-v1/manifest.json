@@ -1,0 +1,30 @@
+{
+  "mode": "built-in image_gen",
+  "status": "reference options awaiting director selection",
+  "images": [
+    {
+      "file": "A-rooftop-reveal.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "747a410db5e2e0c075075dad56cbd61cba07de6d91fc09b20796c8551b77da1f"
+    },
+    {
+      "file": "B-circuit-boulevard.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "1eca7f1e49b8032f5ee98342edf248da13c69bf10006a88dfb65330f459df1b0"
+    },
+    {
+      "file": "C-street-canyon.png",
+      "size": [
+        1672,
+        941
+      ],
+      "sha256": "0ca63c3ad733aaa4d910acef41da0220814fc29f4f01e3634fb4e577245f31e9"
+    }
+  ]
+}

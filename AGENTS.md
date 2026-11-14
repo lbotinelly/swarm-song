@@ -2,6 +2,8 @@
 
 ## Active focused production — M11 opening
 
+**Latest director correction:** Leo rejected the V2 city as underwhelming and not a city. Do not treat the critic's8.5 as approval. He requests premium technical execution under a child's interpretation, with a camera discovering several layers of inhabited buildings through parallax. Three reference directions are in `assets/milestone11/city-directions-v1/`; director selection is pending. These are reference stills, not production layers. Pause production redesign until he chooses.
+
 Read `assets/milestone11/BRIEF.md`, `README.md`, `REVIEW-V2.md` and `docs/OPENING_A_ROLL.md`. M11 authorizes the 0–13s GPU-city/title/apartment opening and separate 0–20s continuity candidate, plus one sleeping pose and cushion. Leo rejected realistic cushion upholstery; use the flat watercolor die-cut `cushion-v2.png`. V2 varies supporting building profiles and adds a kneeling rise and curious lean. Preserve M10 and M11 V1 films. Independent still/source scores are not continuous audiovisual or director approval. Before eventual full-film adoption, carry the fixed cushion through the later unchanged registry room rather than dropping it at the excerpt boundary. No full-film rerender is requested for this focused milestone.
 
 ## Active milestone - M10 full-film integration
