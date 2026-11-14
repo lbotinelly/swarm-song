@@ -1,5 +1,9 @@
 # Codex working instructions
 
+## Active focused production — M11 opening
+
+Read `assets/milestone11/BRIEF.md`, `README.md`, `REVIEW.md` and `docs/OPENING_A_ROLL.md`. M11 authorizes the0–13s GPU-city/title/apartment opening and separate0–20s continuity candidate, plus one sleeping pose and cushion. Leo rejected realistic cushion upholstery; use the flat watercolor die-cut `cushion-v2.png`. Preserve M10 full films. Independent still/source scores are not continuous audiovisual or director approval. Before eventual full-film adoption, carry the fixed cushion through the later unchanged registry room rather than dropping it at the excerpt boundary. No full-film rerender is requested for this focused milestone.
+
 ## Active milestone - M10 full-film integration
 
 Read `assets/milestone10/BRIEF.md`, `README.md`, `INTEGRATION.md` and `REVIEW.md`. Leo explicitly authorizes a new complete 262.8-second source-composed cut, middle act, labeled goggles continuity excerpts,52-shot ledger, independent read-only reviews and technical QA. This supersedes earlier proof-only expansion pauses for this scope. Preserve prior films, body masters, M7 timing/audio and source provenance. No new large art batch or animation framework. The M9 wind-aware pop direction received MUCH better; that approves its direction, not automatically the new full film. Integrated motion remains pending director playback. S16/AND YOU/QR remain separate post-song decisions.

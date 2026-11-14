@@ -1,5 +1,9 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 11 — Once upon a GPU
+
+[Opening and three companion review cuts](assets/milestone11/review-v1/index.html) · [A-roll join](docs/OPENING_A_ROLL.md) · [Independent review](assets/milestone11/REVIEW.md) · [Reproduce](assets/milestone11/README.md). A focused 13-second city/title/apartment opening with a 20-second awakening continuation. The sleeping bunny uses a flat watercolor cushion sticker following Leo's correction. Previous M10 films remain untouched. Director playback approval is pending; static/source gates score craft 8.3, staging 8.5, typography 8.6.
+
 ## Milestone 10 - The little world comes alive
 
 [Complete integrated V2 and review gallery](assets/milestone10/review-v2/index.html) · [52-shot integration ledger](assets/milestone10/INTEGRATION.md) · [Review and limits](assets/milestone10/REVIEW.md) · [Reproduce](assets/milestone10/README.md). A new 262.8-second source-composed film integrates the V3 registry, M9 magic goggles, living ensemble, premium fantasy, wind-aware pops and illustrated warning actors. Earlier films remain preserved; human continuous playback approval is pending. Temporary raid props/flop remain disclosed.

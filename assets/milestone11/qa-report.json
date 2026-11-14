@@ -1,0 +1,99 @@
+{
+  "preservedInputs": 41,
+  "videos": {
+    "opening": {
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "frames": 390,
+      "duration": 13,
+      "audioCorrelationNoLag": 0.9999914339003814,
+      "blackFrames": 45,
+      "blackMax": 0,
+      "sha256": "e28fe6f3171a7105637a92e8ae9c9803fb6a554551b4fb08a0de6a1550ee804e"
+    },
+    "continuity-20s": {
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "frames": 600,
+      "duration": 20,
+      "audioCorrelationNoLag": 0.9999770434649796,
+      "blackFrames": 45,
+      "blackMax": 0,
+      "sha256": "1d984a74b03ac9b188928af1bdfa8d213a5cb84feb1c25c12ba69c04e0651cb2"
+    },
+    "city": {
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "frames": 390,
+      "duration": 13,
+      "audioCorrelationNoLag": 0.9999914339003814,
+      "blackFrames": 45,
+      "blackMax": 0,
+      "sha256": "87921c6de922f8dcb2c1738936249f5bebd4a252fd9b20a5791f06c9113eeaf7"
+    },
+    "title": {
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 30,
+      "frames": 390,
+      "duration": 13,
+      "audioCorrelationNoLag": 0.9999914339003814,
+      "blackFrames": 45,
+      "blackMax": 0,
+      "sha256": "066b49bd9e4a93c3f3c1a20e7fc641754a12ea4c54923e0cafe8ae720b33fd44"
+    }
+  },
+  "assets": [
+    {
+      "file": "public/milestone11/cushion-v1.png",
+      "alphaBounds": [
+        181,
+        242,
+        1771,
+        895
+      ],
+      "nativeMasterPreserved": true
+    },
+    {
+      "file": "public/milestone11/cushion-v2.png",
+      "alphaBounds": [
+        193,
+        231,
+        1758,
+        915
+      ],
+      "nativeMasterPreserved": true
+    },
+    {
+      "file": "public/milestone11/sleeping-v1.png",
+      "alphaBounds": [
+        331,
+        130,
+        1371,
+        1098
+      ],
+      "nativeMasterPreserved": true
+    }
+  ],
+  "sourceFirstFrameBlack": true,
+  "repeatSeek7000": {
+    "byteIdentical": true,
+    "sha256": "7d05a8c36e8fb55ca31e3bf7440daa6d4b7fd333ad7d15a9b4d202f18db48e23"
+  },
+  "join389to390": {
+    "meanChannelDelta": 0.007605774176954732,
+    "maximumChannelDelta": 13.0,
+    "note": "Same room and settled camera; resident breathing and lamp grade continue across join."
+  }
+}

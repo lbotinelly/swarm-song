@@ -1,0 +1,77 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/milestone11/masters/cushion-v1.png",
+      "sourceSha256": "3c6604a74804ec8eeb05a77fd2d2a66a9e6e04929e5cac22e22f5c7ff697d727",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/milestone11/cushion-v1.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "7d031fa62ebb09715313ce7ddcc8f9238bca95114c192b2b2535b8ead155ee16",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        181,
+        242,
+        1771,
+        895
+      ]
+    },
+    {
+      "source": "assets/milestone11/masters/cushion-v2.png",
+      "sourceSha256": "578a15e7d5206b8fd698c697d72ab752581319c7874b280e2107e91049b418b6",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/milestone11/cushion-v2.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "78043254f3e865a20294295aa2d8ea13bde1941477d0aae9cd6096b88e9bbc0d",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        193,
+        231,
+        1758,
+        915
+      ]
+    },
+    {
+      "source": "assets/milestone11/masters/sleeping-v1.png",
+      "sourceSha256": "f12ec0dec55a3c20f6384bcdb0d7826687081c782acf7bf3b799ab8a98a3fa49",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone11/sleeping-v1.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "bdb817400ccd3c1e73526d855cb8ca1bbf5b47f4718d5b3dbe1d9b9fa2c9856f",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        331,
+        130,
+        1371,
+        1098
+      ]
+    }
+  ]
+}
