@@ -4,7 +4,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 
-base=Path('assets/registry-finish'); review=base/'review-v2'
+base=Path('assets/registry-finish'); review=base/'review-v3'
 sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
 board=json.loads(Path('assets/milestone8/storyboard.json').read_text(encoding='utf-8'))
 for p,h in board['protectedInputs'].items(): assert sha(p)==h,p
@@ -37,10 +37,10 @@ for name,frames in [('registry-finish',146),('registry-context',240)]:
         ref=samples(board['master'],23+t);out=samples(path,t);n=min(len(ref),len(out));c=float(np.corrcoef(ref[:n],out[:n])[0,1]);assert c>.99
         correlations.append({'exportSeconds':t,'masterSeconds':23+t,'correlationWithoutLagCorrection':c})
     exports.append({'file':str(path),'frames':frames,'fps':30,'durationSeconds':frames/30,'sha256':sha(path),'audioChecks':correlations})
-for frame in [35,53,66,80,90,108,126,145,164,180,190,195,210]:
+for frame in [0,20,35,53,60,66,75,80,87,90,108,126,145,164,180,190,195,210]:
     subprocess.run(['ffmpeg','-v','error','-y','-i',str(review/'registry-context.mp4'),'-vf',f'select=eq(n\\,{frame})','-frames:v','1','-update','1',str(review/f'encoded-{frame:03}.png')],check=True)
 font=ImageFont.truetype('C:/Windows/Fonts/arial.ttf',20)
-for name,frames in [('performance',[0,35,66,80,108,164,180,210]),('boundaries',[34,35,52,53,89,90,97,98])]:
+for name,frames in [('performance',[0,20,53,60,66,80,108,180]),('boundaries',[34,35,52,53,89,90,97,98])]:
     sheet=Image.new('RGB',(1280,4*390),'#ede5d3');draw=ImageDraw.Draw(sheet)
     for i,frame in enumerate(frames):
         im=Image.open(review/f'frame-{frame:03}.png').convert('RGB');im.thumbnail((640,360),Image.Resampling.LANCZOS)
@@ -48,5 +48,5 @@ for name,frames in [('performance',[0,35,66,80,108,164,180,210]),('boundaries',[
     sheet.save(review/f'{name}.jpg',quality=94)
 report={'protectedInputsPreserved':True,'approvedBodyAndPaperMastersPreserved':True,'repeatFrameByteIdentical':sha(review/'frame-108.png')==sha(review/'repeat-108.png'),'repeatPixelsIdentical':True,'exports':exports,'visibleCues':[{'requestedMasterMs':23000+ms,'localFrame':int(np.ceil(ms*.03)),'visibleMasterMs':23000+float(np.ceil(ms*.03)/.03)} for ms in [1160,1750,3000,3240,4000]],'approval':'Final-quality candidate. Art critic inspected stills; continuous audiovisual approval remains with Leo.'}
 report['inheritanceChecks']={'gogglesHiddenByClosedCorner':True,'gogglesVisibleAfterPeeling':True,'studyIsUntimed':True}
-(base/'qa-report-v2.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
+(base/'qa-report-v3.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(report,indent=2))

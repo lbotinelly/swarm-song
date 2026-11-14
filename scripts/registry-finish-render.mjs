@@ -2,12 +2,12 @@ import {bundle} from '@remotion/bundler';
 import {selectComposition,renderStill,renderMedia} from '@remotion/renderer';
 import {mkdir} from 'node:fs/promises';
 import {execFileSync} from 'node:child_process';
-const dir='assets/registry-finish/review-v2';
+const dir='assets/registry-finish/review-v3';
 await mkdir(dir,{recursive:true});await mkdir('output/registry-finish',{recursive:true});
 const serveUrl=await bundle({entryPoint:'scripts/registry-finish-stage.tsx'});
 const composition=await selectComposition({serveUrl,id:'RegistryFinish'});
 if(process.argv.includes('--stills')){
- for(const frame of [0,34,35,52,53,66,80,89,90,97,98,108,120,126,132,138,145,164,180,190,195,210,225,239]){
+ for(const frame of [0,20,34,35,52,53,60,62,66,75,80,87,89,90,97,98,108,120,126,132,138,145,164,180,190,195,210,225,239]){
   await renderStill({serveUrl,composition,frame,output:`${dir}/frame-${String(frame).padStart(3,'0')}.png`});
   console.log(`still ${frame}`);
  }

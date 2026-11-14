@@ -2,7 +2,7 @@
 
 ## Registry finishing candidate
 
-[Play the corrected corner/vent shot](assets/registry-finish/review-v2/index.html) · [Art-critic evaluation](assets/registry-finish/REVIEW-V2.md) · [Reproduction](assets/registry-finish/README.md). A focused peel/vent/plane-message finishing attempt using existing approved art and timing, with an inherited-goggles continuity still. Awaiting Leo's playback review. The full M8 animatic remains unchanged.
+[Play the corrected corner/vent shot](assets/registry-finish/review-v3/index.html) · [Art-critic evaluation](assets/registry-finish/REVIEW-V3.md) · [Reproduction](assets/registry-finish/README.md). A focused peel/vent/plane-message finishing attempt using existing approved art and timing, with an inherited-goggles continuity still. Awaiting Leo's playback review. The full M8 animatic remains unchanged.
 
 ## Milestone 8 — The whole story
 

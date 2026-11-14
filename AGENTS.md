@@ -2,7 +2,7 @@
 
 ## Current finishing study — registry discovery
 
-**Latest correction:** read `docs/REGISTRY_VENT_CONTINUITY.md`. Registry = grille under the bottom-right paper corner; every message is a plane sticker passing between bars; gen2 reveals goggles already there by peeling their own corner. The earlier ledger-pocket finishing study is superseded. V2 lives in `assets/registry-finish/review-v2/`.
+**Latest correction:** read `docs/REGISTRY_VENT_CONTINUITY.md`. Registry = grille under the bottom-right paper corner; every message is a plane sticker passing between bars; gen2 reveals goggles already there by peeling their own corner. The earlier ledger-pocket finishing study is superseded. V3 adds the tiny-corner hint, approach, grip hold and paw-attached retreat/pull: `assets/registry-finish/review-v3/`.
 
 Leo authorized one well-defined final-quality attempt with an art critic. `assets/registry-finish/README.md` records the isolated23–27.8667s candidate and eight-second context extension. Preserve M7 timing and approved artwork. The independent critic's static-frame assessment is not human playback approval; do not replace the M8 film or expand production based on it alone.
 

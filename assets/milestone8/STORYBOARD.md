@@ -132,7 +132,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![A writable seam](review-v2/SH005.jpg)
 
-**A-roll / character:** Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.
+**A-roll / character:** Agent407 notices a tiny lifted bottom-right paper corner, approaches, grips it, then retreats while pulling the sheet to reveal a vent grille. The paper tip stays in the paw until release; no goggles or ledger pocket.
 
 **B-roll / background:** Question mark follows the head through pose swap.
 

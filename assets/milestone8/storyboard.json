@@ -313,9 +313,9 @@
       "scene": "registry",
       "title": "A writable seam",
       "world": "physical",
-      "aRoll": "Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.",
+      "aRoll": "Agent407 notices a tiny lifted bottom-right paper corner, approaches, grips it, then retreats while pulling the sheet to reveal a vent grille. The paper tip stays in the paw until release; no goggles or ledger pocket.",
       "bRoll": "Question mark follows the head through pose swap.",
-      "characterPerformance": "Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.",
+      "characterPerformance": "Agent407 notices a tiny lifted bottom-right paper corner, approaches, grips it, then retreats while pulling the sheet to reveal a vent grille. The paper tip stays in the paw until release; no goggles or ledger pocket.",
       "backgroundPerformance": "Question mark follows the head through pose swap.",
       "camera": "Medium two-object composition.",
       "layers": [

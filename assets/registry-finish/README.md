@@ -1,6 +1,14 @@
 # Registry discovery — finishing candidate
 
-## Current V2 — corner, vent and inherited goggles
+## Current V3 — notice, approach, grip, pull
+
+[Current film and gallery](review-v3/index.html) · [critic review](REVIEW-V3.md) · [QA](qa-report-v3.json). Leo's next direction adds an already-lifted tiny corner as a clue, followed by approach, grab and moving away while pulling it.
+
+Local shot timing: hint from0ms; approach350–1750ms; kneeling grip hold1750–2050ms; retreat/pull2050–2900ms; release on the approved standing swap at3000ms. The tip tracks the approved kneeling right-hand anchor (foot-relative77.4,-25.8 at0.43scale) throughout the pull. The flap curves as the character retreats, keeping an actual sheet connection. All existing lyric/reaction onset data is unchanged. New blocking is proposed for playback review.
+
+The render and QA commands below now produce `review-v3` and `qa-report-v3.json`. V2 remains preserved; reproduce that version from commit `de5e5d2`. No new images, dependencies or character edits.
+
+## V2 — corner, vent and inherited goggles
 
 Leo corrected the prop interpretation: [the registry is the vent](../../docs/REGISTRY_VENT_CONTINUITY.md). [Current review gallery](review-v2/index.html) · [eight-second peel/message film](review-v2/registry-context.mp4) · [inheritance continuity still](review-v2/inheritance.png) · [V2 critic review](REVIEW-V2.md) · [V2 QA](qa-report-v2.json).
 
