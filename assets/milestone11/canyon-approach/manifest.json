@@ -1,0 +1,23 @@
+{
+  "left-row": {
+    "size": [
+      1448,
+      1086
+    ],
+    "sha256": "cc3fbe758566a576c901bc62583360b51f643388cdf79a781135c4b3dca75d44"
+  },
+  "right-row": {
+    "size": [
+      1448,
+      1086
+    ],
+    "sha256": "947debeed25f51c2b970f79ed322a7fc6b32e5b8000def496f164e7b7451b9c9"
+  },
+  "rear": {
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "18bdcd114719fb93d81884cca4ab847fc3ec7423315fb8b3b67382cbd37b99ff"
+  }
+}
