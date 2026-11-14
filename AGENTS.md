@@ -2,7 +2,7 @@
 
 ## Active focused production — M11 opening
 
-Read `assets/milestone11/BRIEF.md`, `README.md`, `REVIEW.md` and `docs/OPENING_A_ROLL.md`. M11 authorizes the0–13s GPU-city/title/apartment opening and separate0–20s continuity candidate, plus one sleeping pose and cushion. Leo rejected realistic cushion upholstery; use the flat watercolor die-cut `cushion-v2.png`. Preserve M10 full films. Independent still/source scores are not continuous audiovisual or director approval. Before eventual full-film adoption, carry the fixed cushion through the later unchanged registry room rather than dropping it at the excerpt boundary. No full-film rerender is requested for this focused milestone.
+Read `assets/milestone11/BRIEF.md`, `README.md`, `REVIEW-V2.md` and `docs/OPENING_A_ROLL.md`. M11 authorizes the 0–13s GPU-city/title/apartment opening and separate 0–20s continuity candidate, plus one sleeping pose and cushion. Leo rejected realistic cushion upholstery; use the flat watercolor die-cut `cushion-v2.png`. V2 varies supporting building profiles and adds a kneeling rise and curious lean. Preserve M10 and M11 V1 films. Independent still/source scores are not continuous audiovisual or director approval. Before eventual full-film adoption, carry the fixed cushion through the later unchanged registry room rather than dropping it at the excerpt boundary. No full-film rerender is requested for this focused milestone.
 
 ## Active milestone - M10 full-film integration
 

@@ -2,7 +2,7 @@
 
 ## Milestone 11 — Once upon a GPU
 
-[Opening and three companion review cuts](assets/milestone11/review-v1/index.html) · [A-roll join](docs/OPENING_A_ROLL.md) · [Independent review](assets/milestone11/REVIEW.md) · [Reproduce](assets/milestone11/README.md). A focused 13-second city/title/apartment opening with a 20-second awakening continuation. The sleeping bunny uses a flat watercolor cushion sticker following Leo's correction. Previous M10 films remain untouched. Director playback approval is pending; static/source gates score craft 8.3, staging 8.5, typography 8.6.
+[Opening V2 and companion review cuts](assets/milestone11/review-v2/index.html) · [A-roll join](docs/OPENING_A_ROLL.md) · [Independent V2 review](assets/milestone11/REVIEW-V2.md) · [Reproduce](assets/milestone11/README.md). A focused 13-second city/title/apartment opening with a 20-second awakening continuation. V2 varies the city silhouettes and adds a kneeling rise and curious lean, using the same flat watercolor cushion sticker. Previous M10 and M11 V1 films remain untouched. Director playback approval is pending; V2 artwork/static staging scores 8.5/10.
 
 ## Milestone 10 - The little world comes alive
 

@@ -4,14 +4,14 @@ import hashlib, json, subprocess, io
 import numpy as np
 from PIL import Image, ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'assets/milestone11/review-v1'
+OUT=ROOT/'assets/milestone11/review-v2'
 MASTER=ROOT/'assets/audio/Swarm Song (The Huggingface Incident) feat. Agent407.wav'
 def run(*args):return subprocess.check_output(list(map(str,args)),cwd=ROOT)
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def frame(path,t):
  return Image.open(io.BytesIO(run('ffmpeg','-v','error','-ss',t,'-i',path,'-frames:v','1','-f','image2pipe','-vcodec','png','-'))).convert('RGB')
 def audio(path,duration):return np.frombuffer(run('ffmpeg','-v','error','-i',path,'-t',duration,'-vn','-f','f32le','-ac','1','-ar','12000','-'),dtype=np.float32)
-protected=json.loads((ROOT/'assets/milestone11/preserved-inputs.json').read_text())
+protected=json.loads((ROOT/'assets/milestone11/preserved-inputs-v2.json').read_text())
 assert all(sha(ROOT/p)==h for p,h in protected.items())
 report={'preservedInputs':len(protected),'videos':{},'assets':[]}
 assert np.asarray(Image.open(OUT/'complete-0.png').convert('RGB')).max()==0
@@ -38,9 +38,19 @@ assets=Image.new('RGB',(1200,650),'#172337');ad=ImageDraw.Draw(assets)
 for i,name in enumerate(['sleeping-v1','cushion-v2']):
  im=Image.open(ROOT/f'public/milestone11/{name}.png').convert('RGBA');im.thumbnail((560,560));assets.paste(im,(20+600*i,30),im);ad.text((30+600*i,610),name+' | transparent production copy',fill='#f6ebd0')
 assets.save(OUT/'asset-contact.jpg',quality=95)
+comparison=Image.new('RGB',(1200,370),'#172337');cd=ImageDraw.Draw(comparison)
+for i,version in enumerate(['review-v1','review-v2']):
+ im=Image.open(ROOT/f'assets/milestone11/{version}/complete-3400.png').convert('RGB');im.thumbnail((600,338));comparison.paste(im,(600*i,0));cd.text((600*i+12,345),version+' | same 3.4-second frame',fill='#f6ebd0')
+comparison.save(OUT/'city-comparison.jpg',quality=95)
 repeat=OUT/'complete-repeat-7000.png';first=OUT/'complete-7000.png'
 assert sha(repeat)==sha(first)
 report['repeatSeek7000']={'byteIdentical':True,'sha256':sha(repeat)}
+join_frame=OUT/'complete-13000.png'
+old=np.asarray(Image.open(ROOT/'assets/milestone11/review-v1/complete-13000.png').convert('RGB'),dtype=float)
+new=np.asarray(Image.open(join_frame).convert('RGB'),dtype=float)
+join_delta=np.abs(old-new);join_rmse=float(np.sqrt(np.mean((old-new)**2)))
+assert join_rmse<.1 and join_delta.mean()<.05
+report['v1JoinFrameComparison']={'meanChannelDelta':float(join_delta.mean()),'maximumChannelDelta':float(join_delta.max()),'rmse':join_rmse,'byteIdentical':sha(join_frame)==sha(ROOT/'assets/milestone11/review-v1/complete-13000.png'),'note':'Unchanged room/camera geometry; subpixel raster variation is reported, not claimed byte-identical.'}
 a=np.asarray(Image.open(OUT/'complete-12966.png').convert('RGB'),dtype=float)
 b=np.asarray(Image.open(OUT/'complete-13000.png').convert('RGB'),dtype=float)
 delta=np.abs(a-b);report['join389to390']={'meanChannelDelta':float(delta.mean()),'maximumChannelDelta':float(delta.max()),'note':'Same room and settled camera; resident breathing and lamp grade continue across join.'}
@@ -54,6 +64,7 @@ videos=[('opening','Complete opening · 13s'),('continuity-20s','Opening into aw
 html='<!doctype html><meta charset="utf-8"><title>M11 | Once upon a GPU</title><style>body{background:#121c2d;color:#f5e5ca;font:18px system-ui;max-width:1200px;margin:40px auto}video,img{width:100%}section{margin:36px 0}a{color:#b9d8dc}</style><h1>Swarm Song · M11 opening candidate</h1><p>Original master clock. Candidate: director playback approval pending. Previous full films preserved.</p>'
 for name,title in videos:html+=f'<section><h2>{title}</h2><video controls preload="metadata" src="{name}.mp4"></video></section>'
 for name in ['journey','title-states','awakening','asset']:html+=f'<h2>{name}</h2><img src="{name}-contact.jpg">'
+html+='<h2>City comparison: V1 / V2</h2><img src="city-comparison.jpg">'
 (OUT/'index.html').write_text(html,encoding='utf8')
-(ROOT/'assets/milestone11/qa-report.json').write_text(json.dumps(report,indent=2)+'\n')
+(ROOT/'assets/milestone11/qa-report-v2.json').write_text(json.dumps(report,indent=2)+'\n')
 print(json.dumps(report,indent=2))

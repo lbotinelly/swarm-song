@@ -26,6 +26,7 @@ Block top/side faces use authored shallow paper geometry. Fronts reuse fan cutou
 | 9.6–10.5s | Architectural facade slides aside |
 | 10.5–12.9s | Three-room reveal becomes intimate middle-room framing |
 | 13s | Awakening begins in the same room, camera already settled |
+| 13.5–13.9s | V2: kneeling rise on the cushion |
 | 13.9–14.8s | Economical waking pose/forward step off cushion to established floor anchor |
 
 The M7 strings-intro candidate spans 6.952–10.252s, peak 8.952s. This performance places the rewrite/payoff within that swell, with breathing room for the final subtitle before departure. These are authored accents for director audition, not newly claimed sample-accurate musical detections. Existing first drum cue starts 14s; no earlier percussion bop is introduced.
@@ -35,6 +36,8 @@ The M7 strings-intro candidate spans 6.952–10.252s, peak 8.952s. This performa
 `openingCamera()` reaches translate(173px,0) scale(.82), no perspective rotation, by 12.9s. The internal RegistryFinish scale(.96), room trim, furniture, floor and vent corner are unchanged. The same component renders both sides of 13s—there is no image swap or room re-proportioning at the boundary.
 
 Agent407 starts asleep, ungoggled, on the new sticker cushion. The cushion bottom sits at room floor 676; resting paws are at 560. Waking uses approved walking/standing poses, a small forward/downward arc, then the established M10 standing foot pivot(1335,676) by 14.8s. This is the only localized SH003 performance change. The cushion stays in place rather than vanishing during the excerpt.
+
+V2 inserts the existing kneeling pose at 13.5–13.9s before the step, then a small curious lean and breathing after landing. This extends the local SH003 performance without changing its floor anchor or the 13s join. The supporting city gains three authored building profiles; the hero geometry, title sequence and camera are unchanged. V1 exports remain preserved.
 
 The proof ends at 20s. For later full-film adoption, retain this cushion at its fixed room coordinates through the unchanged 23s vent approach; do not cut back to an empty-floor M10 room at 20s. This is an integration note, not permission to replace the previous film. The M11 scope intentionally does not rerender or alter the 23s registry scene.
 

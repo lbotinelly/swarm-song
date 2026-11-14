@@ -23,13 +23,15 @@ function Resident({ms,neighbor=0}:{ms:number;neighbor?:number}){
  const wake=neighbor===0?ramp(ms,13000,14400):0;
  const breathe=Math.sin(ms/850+neighbor*1.7)*.006*(1-wake);
  const stand=ms>=13900&&neighbor===0;
- const s=ms<14800?agent407.walking:agent407.standing,k=.43;
+ const rising=neighbor===0&&ms>=13500&&ms<13900;
+ const s=rising?agent407.kneeling:ms<14800?agent407.walking:agent407.standing,k=.43;
  const step=ramp(ms,13900,14800);
+ const curious=-3.5*Math.sin(Math.PI*ramp(ms,15100,17400))+2*Math.sin(Math.PI*ramp(ms,18000,19500));
  return <>
   <Cushion/>
-  {!stand?<div style={{...abs,left:1315,top:560,transform:`rotate(${-3*ramp(ms,13200,13850)*(neighbor===0?1:0)}deg) scaleY(${1+breathe})`,transformOrigin:'0 0'}}>
+  {!stand&&!rising?<div style={{...abs,left:1315,top:560,transform:`rotate(${-3*ramp(ms,13200,13850)*(neighbor===0?1:0)}deg) scaleY(${1+breathe})`,transformOrigin:'0 0'}}>
    {image('milestone11/sleeping-v1.png',-850*.43,-1098*.43,1736*.43)}
-  </div>:<div style={{...abs,left:1315+20*step,top:560+116*step-30*Math.sin(Math.PI*step),transform:`rotate(${-4*(1-step)}deg)`,transformOrigin:'0 0'}}>
+  </div>:<div style={{...abs,left:1315+20*step,top:560+116*step-30*Math.sin(Math.PI*step),transform:`rotate(${-4*(1-step)+curious}deg) scaleY(${1+.003*Math.sin(ms/900)*step})`,transformOrigin:'0 0'}}>
    {image(s.src,-s.anchors.footPivot[0]*k,-s.anchors.footPivot[1]*k,s.width*k)}
   </div>}
  </>;
@@ -41,23 +43,29 @@ function Apartment({ms,neighbor=0}:{ms:number;neighbor?:number}){
  </div>;
 }
 // Five hand-placed residential blocks, repeated paper pieces, independent light cues.
-function Block({x,y,w,h,color,index,ms}:{x:number;y:number;w:number;h:number;color:string;index:number;ms:number}){
+function Block({x,y,w,h,color,index,ms,shape='slab'}:{x:number;y:number;w:number;h:number;color:string;index:number;ms:number;shape?:'slab'|'tower'|'lowrise'}){
  const glow=ramp(ms,1550+index*150,2400+index*140);
+ // Three explicitly placed cardboard constructions, not a city generator.
+ const d=shape==='tower'?58:shape==='lowrise'?82:95;
+ const towerFan=Math.min(w*.65,h*.3);
+ const fans=shape==='tower'?[[(w-towerFan)/2,h-towerFan-16,towerFan]]:shape==='lowrise'?[[w*.09,h*.4,w*.31],[w*.55,h*.4,w*.31]]:[[w*.045,h*.22-w*.15,w*.3],[w*.045,h*.68-w*.15,w*.3]];
+ const windows=shape==='tower'?[0,1,2,3].map(i=>[w*.18+(i%2)*w*.39,20+Math.floor(i/2)*h*.25,w*.21,h*.18]):shape==='lowrise'?[0,1,2,3].map(i=>[w*.08+i*w*.23,18,w*.15,h*.21]):[0,1,2,3,4,5].map(i=>[w*(.5+(i%2)*.23),22+Math.floor(i/2)*(h-40)/3+(i+index)%2*4,w*(i===index%6?.18:.14),(h-65)/(index%2?3.6:3)]);
  return <div style={{...abs,left:x,top:y,width:w,height:h,filter:`brightness(${.45+.55*ramp(ms,1550+index*90,3000)}) drop-shadow(18px 25px 8px #02091675)`}}>
-  <div style={{...abs,left:w,top:-38,width:95,height:h+38,clipPath:`polygon(0 38px,100% 0,100% ${h}px,0 100%)`}}><Card x={0} y={0} w={95} h={h+38} color={index%2?'#465b61':'#3e555b'}/>
+  <div style={{...abs,left:w,top:-38,width:d,height:h+38,clipPath:`polygon(0 38px,100% 0,100% ${h}px,0 100%)`}}><Card x={0} y={0} w={d} h={h+38} color={index%2?'#465b61':'#3e555b'}/>
    <div style={{...abs,inset:0,background:'linear-gradient(110deg,#07162355,transparent 40%,#07162370)'}}/>
-   {[0,1,2,3].map(i=><div key={i} style={{...abs,left:12+i*19,top:38-i*7,width:3,height:h-30,background:'#bac0a733',transform:'rotate(.4deg)'}}/>)}
-   <svg width="95" height={h+38} style={{...abs,inset:0}}><path d={`M12 ${h-20} L12 ${h*.7} 65 ${h*.7-22} 65 ${h*.35}`} stroke="#ad987a" strokeWidth="3" fill="none" opacity=".7"/></svg>
+   {(shape==='tower'?[0,1,2,3,4,5]:[0,1,2]).map(i=><div key={i} style={{...abs,left:8+i*(d-16)/(shape==='tower'?6:3),top:38-i*5,width:3,height:h-30,background:'#bac0a733',transform:'rotate(.4deg)'}}/>)}
+   {shape==='slab'&&<svg width={d} height={h+38} style={{...abs,inset:0}}><path d={`M12 ${h-20} L12 ${h*.7} 65 ${h*.7-22} 65 ${h*.35}`} stroke="#ad987a" strokeWidth="3" fill="none" opacity=".7"/></svg>}
+   {shape==='lowrise'&&[0,1,2].map(i=><Card key={i} x={10} y={50+i*32} w={d-20} h={9} color="#8d9c94" angle={-22}/>)}
   </div>
-  <div style={{...abs,left:0,top:-38,width:w,height:38,transform:'skewX(-68deg)',transformOrigin:'0 100%'}}><Card x={0} y={0} w={w} h={38} color="#82908a"/></div>
+  <div style={{...abs,left:0,top:-38,width:w,height:38,transform:`skewX(${-Math.atan(d/38)*180/Math.PI}deg)`,transformOrigin:'0 100%'}}><Card x={0} y={0} w={w} h={38} color="#82908a"/></div>
   <Card x={0} y={0} w={w} h={h} color={color}/>
-  <Card x={9} y={12} w={w*.39} h={h-24} color="#355963"/>
-  {[.22,.68].map((v,i)=><Piece key={v} part="fan" x={w*.045} y={h*v-w*.15} w={w*.3} h={w*.3} style={{transform:`rotate(${ms*.0008*(i?-1:1)}deg)`,filter:'brightness(.75)'}}/>)}
-  {[0,1,2,3,4,5].map(i=><div key={i} style={{...abs,left:w*(.5+(i%2)*.23),top:22+Math.floor(i/2)*(h-40)/3+(i+index)%2*4,width:w*(i===index%6?.18:.14),height:(h-65)/(index%2?3.6:3),background:(i+index)%4===0?'#526876':(i+index)%3===0?'#e8b18a':'#f6ca77',opacity:(i+index)%4===0?1:glow*(.65+(i+index)%3*.13),boxShadow:'0 0 16px #f3bf7022',border:'4px solid #827960',transform:`rotate(${i%2?1.4:-.8}deg)`}}>
+  <Card x={9} y={shape==='slab'?12:h*.35} w={shape==='slab'?w*.39:w-18} h={shape==='slab'?h-24:h*.61} color="#355963"/>
+  {fans.map(([fx,fy,fw],i)=><Piece key={i} part="fan" x={fx} y={fy} w={fw} h={fw} style={{transform:`rotate(${ms*.0008*(i?-1:1)}deg)`,filter:'brightness(.75)'}}/>)}
+  {windows.map(([wx,wy,ww,wh],i)=><div key={i} style={{...abs,left:wx,top:wy,width:ww,height:wh,background:(i+index)%4===0?'#526876':(i+index)%3===0?'#e8b18a':'#f6ca77',opacity:(i+index)%4===0?1:glow*(.65+(i+index)%3*.13),boxShadow:'0 0 16px #f3bf7022',border:'4px solid #827960',transform:`rotate(${i%2?1.4:-.8}deg)`}}>
    {(i+index)%3===1&&<div style={{...abs,left:0,top:'57%',height:3,width:'100%',background:'#a49470'}}/>}
   </div>)}
   <Card x={-6} y={18} w={11} h={h-32} color="#b7a88c" angle={-.7}/>
-  <Card x={w*.34} y={-8} w={w*.27} h={17} color="#c8bd9b" angle={-9+index*2}/>
+  <Card x={shape==='tower'?-6:shape==='lowrise'?w*.7:w*.34} y={shape==='tower'?h*.51:-8} w={w*.27} h={17} color="#c8bd9b" angle={-9+index*2}/>
   <div style={{...abs,left:w*.17,top:h-18,width:6,height:5,background:index%2?'#ce9c76':'#a9c2a3',opacity:.55+.2*Math.sin(ms/1700+index),boxShadow:'0 0 5px #efcf8c'}}/>
   {[0,1,2,3,4].map(i=><Card key={i} x={25+i*(w-50)/5} y={h-3} w={12} h={22} color="#c8a465"/>)}
  </div>;
@@ -76,16 +84,16 @@ function City({ms}:{ms:number}){
     {[[220,540],[520,450],[740,720],[1040,420],[1490,650],[1340,1030],[1710,325]].map(([x,y],i)=><g key={x} opacity={ramp(ms,1850+i*150,2400+i*150)}><circle cx={x} cy={y} r="15" fill="#d7a66c"/><circle cx={x} cy={y} r="6" fill="#ffe6aa"/></g>)}
    </svg>
    <div style={{opacity:.48}}>
-    <Block x={80} y={60} w={100} h={145} color="#60787e" index={1} ms={ms}/>
-    <Block x={1100} y={40} w={120} h={170} color="#60787e" index={2} ms={ms}/>
+    <Block x={80} y={60} w={100} h={145} color="#60787e" index={1} ms={ms} shape="tower"/>
+    <Block x={1100} y={40} w={150} h={115} color="#60787e" index={2} ms={ms} shape="lowrise"/>
     <Block x={1430} y={5} w={100} h={120} color="#72877e" index={0} ms={ms}/>
-    <Block x={1720} y={120} w={120} h={185} color="#827d87" index={3} ms={ms}/>
+    <Block x={1720} y={120} w={120} h={185} color="#827d87" index={3} ms={ms} shape="tower"/>
    </div>
-   <Block x={310} y={110} w={210} h={260} color="#60787e" index={0} ms={ms}/>
-   <Block x={720} y={80} w={190} h={230} color="#8c8275" index={1} ms={ms}/>
-   <Block x={40} y={400} w={230} h={340} color="#64837e" index={2} ms={ms}/>
+   <Block x={310} y={180} w={240} h={190} color="#60787e" index={0} ms={ms} shape="lowrise"/>
+   <Block x={720} y={30} w={155} h={280} color="#8c8275" index={1} ms={ms} shape="tower"/>
+   <Block x={40} y={430} w={290} h={235} color="#64837e" index={2} ms={ms} shape="lowrise"/>
    <Block x={640} y={430} w={270} h={350} color="#827d87" index={3} ms={ms}/>
-   <Block x={1530} y={590} w={230} h={320} color="#7c8d88" index={4} ms={ms}/>
+   <Block x={1570} y={565} w={175} h={345} color="#7c8d88" index={4} ms={ms} shape="tower"/>
   </div>}
   <AbsoluteFill style={{background:'#eee4ce',opacity:ramp(ms,11700,12900)}}/>
   <div style={{...abs,left:c.x,top:c.y,width:1920,height:1080,transform:`scale(${c.scale}) perspective(6000px) rotateY(${c.angle}deg)`,transformOrigin:'0 0',opacity:ramp(ms,1800,2900)}}>
