@@ -1,0 +1,152 @@
+{
+  "masters": 8,
+  "approvedBodiesPreserved": 6,
+  "repeatRender": {
+    "living-town": {
+      "max": 0,
+      "mean": 0.0,
+      "changedPixels": 0
+    },
+    "wind": {
+      "max": 0,
+      "mean": 0.0,
+      "changedPixels": 0
+    },
+    "vent": {
+      "max": 0,
+      "mean": 0.0,
+      "changedPixels": 0
+    }
+  },
+  "ventPlaneRemoval": {
+    "0": {
+      "max": 168,
+      "mean": 0.44637811856995885,
+      "changedPixels": 33239
+    },
+    "49": {
+      "max": 238,
+      "mean": 1.7649699395576133,
+      "changedPixels": 33232
+    },
+    "50": {
+      "max": 238,
+      "mean": 2.0177805105452675,
+      "changedPixels": 32964
+    },
+    "51": {
+      "max": 238,
+      "mean": 2.18623521090535,
+      "changedPixels": 32137
+    },
+    "55": {
+      "max": 226,
+      "mean": 1.9374660815329219,
+      "changedPixels": 24970
+    },
+    "65": {
+      "max": 217,
+      "mean": 2.0095566486625516,
+      "changedPixels": 25529
+    },
+    "80": {
+      "max": 217,
+      "mean": 1.746899916409465,
+      "changedPixels": 22239
+    },
+    "95": {
+      "max": 217,
+      "mean": 0.19163435570987655,
+      "changedPixels": 2886
+    },
+    "120": {
+      "max": 13,
+      "mean": 0.0003046231995884774,
+      "changedPixels": 243,
+      "flightBandChangedPixels": 0
+    },
+    "165": {
+      "max": 13,
+      "mean": 0.0003051054526748971,
+      "changedPixels": 243,
+      "flightBandChangedPixels": 0
+    },
+    "195": {
+      "max": 217,
+      "mean": 0.6205922067901235,
+      "changedPixels": 8477
+    },
+    "205": {
+      "max": 217,
+      "mean": 1.762026105967078,
+      "changedPixels": 22848
+    },
+    "230": {
+      "max": 237,
+      "mean": 1.7444661458333333,
+      "changedPixels": 22238
+    },
+    "269": {
+      "max": 176,
+      "mean": 0.418676054526749,
+      "changedPixels": 33237
+    }
+  },
+  "fullPlaneVerticalBounds": [
+    547.8106249636182,
+    603.5762773314094
+  ],
+  "clearSlot": [
+    525,
+    666
+  ],
+  "grille": "vertical slats per latest director request",
+  "entryExit": "same spatial slices; plane turns while fully hidden, nose-first return",
+  "videos": {
+    "living-town": {
+      "frames": 360,
+      "duration": 12.0,
+      "masterStartSeconds": 55,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999465264003218
+    },
+    "blossom": {
+      "frames": 240,
+      "duration": 8.0,
+      "masterStartSeconds": 83,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999535391971177
+    },
+    "wind": {
+      "frames": 420,
+      "duration": 14.0,
+      "masterStartSeconds": null,
+      "audio": false
+    },
+    "vent": {
+      "frames": 270,
+      "duration": 9.0,
+      "masterStartSeconds": null,
+      "audio": false
+    },
+    "registry": {
+      "frames": 240,
+      "duration": 8.0,
+      "masterStartSeconds": 23,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999868427882888
+    },
+    "goggle-craft": {
+      "frames": 390,
+      "duration": 13.0,
+      "masterStartSeconds": 42,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999567283058185
+    }
+  },
+  "limitations": [
+    "No claim of human continuous audiovisual approval.",
+    "Illustrative wind is an authored field, not a physical solver.",
+    "Exact isolated lavender-cloud reference unavailable."
+  ]
+}

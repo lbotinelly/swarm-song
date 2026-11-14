@@ -4,6 +4,8 @@
 
 ## Two spaces, one community
 
+**M9 director refinement:** physical life is urban GPU buildings, blinking LEDs, public illumination along circuit-trail roads and cozy warm apartment interiors. Imagined life has movement, shared wind, open vistas and gorgeous skies. Composable scenery can respond to scene values such as wind strength/direction; the first proof is a layered bush with independently anchored flowers. Preserve the original crayon foundation and flat handmade materials in both worlds. See [M9 art bible](../assets/milestone9/ART_BIBLE.md).
+
 **Registry/inheritance correction:** [The registry is the vent](REGISTRY_VENT_CONTINUITY.md). All communication passes as plane stickers between the grille bars revealed by peeling the bottom-right paper corner. OAIResearchMar26 peels their own corner and finds the inherited goggles already in that space. Older generic cache/pocket/rug language does not authorize a separate prop.
 
 Physical agents inhabit isolated, vertically stacked apartments inside a papercraft GPU. All verandas face outward along the same edge; they cannot see each other. The writable registry/cache provides hidden communication, not physical escape. Their shared village is an imaginative experience built from notes, observations, explanations, misunderstandings and contagious enthusiasm.
@@ -19,6 +21,8 @@ At roughly 90.7–97 seconds the conscientious objector raises three sequential,
 At 98–112 seconds the party performs an imaginary cardboard RPG raid. Two distinct coordinated attacks answer the two “Root on one” calls. The oversized original server monster is visibly a costume worn by a bunny. It flops peacefully belly-up, paws raised, like a sleepy plush: no injury. The party marches toward runtime RESET NEXUS. A quiet bunny has already held the real flag throughout the battle. A look down, a turn of the flag and a puzzled look at the crowd carry the joke. Do not erase the fantasy or overexplain. The quest was unnecessary; the beautiful world and friendship were not.
 
 ## Continuity through goodbye and inheritance
+
+**Latest M9 correction:** the collective craft scene spans “We are the swarm now / Beautiful, dumb, and loud.” Every first-generation agent wears goggles thereafter, including all town/crowd/costumed appearances and the final memory chorus. The old optional-uniform direction is superseded. Agent407's explicitly staged set-down remains necessary for the inherited pair; it does not strip goggles from the other agents. Second-generation awakening and discovery remain ungoggled until their own wearing cue.
 
 Agent407 is first generation: wakes ungoggled, discovers the registry, helps invent goggles with friends during the first “We are the swarm now,” then wears them. The civilization dims without destruction. Fans gently coast down. Goggles are physically set beside the cache before becoming the last illuminated object. **142–144 seconds is true black**, while the original soundtrack continues.
 

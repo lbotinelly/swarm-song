@@ -1,5 +1,7 @@
 # Milestone 8 — The whole story, one frame at a time
 
+**M9 continuity amendment:** all first-generation agents craft and retain goggles after “We are the swarm now / Beautiful, dumb, and loud,” with Agent407's explicit inheritance set-down preserved. Source staging and storyboard notes now implement this for the whole cast; a new42–55s craft excerpt and later continuity frames are in `../milestone9/review/`. The linked historical M8 full film predates this correction and the vertical-vent update; it has not been overwritten.
+
 [Review gallery](review-v2/index.html) · [Full 262.8s film](review-v2/full.mp4) · [Focused 83–112s film](review-v2/middle.mp4) · [Storyboard](STORYBOARD.md) · [JSON](storyboard.json) · [Canon](../../docs/WORLD_MADE_OF_THEORIES.md) · [Review report](REVIEW.md) · [Asset inventory](ASSETS.md).
 
 This is the first complete **rough staging animatic**, not polished final animation. It contains 52 master-relative shots across 15 sequences. S16 is a separate, untimed post-song proposal. Canon, shot proposals and historical claims are labeled separately. Approved M7 input files and body masters remain unchanged.

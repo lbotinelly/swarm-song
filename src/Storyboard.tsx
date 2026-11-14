@@ -11,19 +11,21 @@ import {Piece} from './PaperApartment';
 import {Cut} from './ImaginedVillage';
 import {agent407,attachmentPoint} from './sprites';
 import {musicStateAt,percussionStateAt,percussionAllowedAt,type MusicCue} from './music-cues';
-import {ramp,within,shotAt,middleTravel,gogglesAt,objectorScreenX,middleGround,middleForestCount} from './story-blocking';
+import {ramp,within,shotAt,middleTravel,gogglesAt,firstGenerationGoggles,objectorScreenX,middleGround,middleForestCount} from './story-blocking';
+import {WornGoggles} from './WornGoggles';
 const abs:CSSProperties={position:'absolute'};
 const paper='#fff3d9',ink='#745743';
 const img=(src:string,x:number,y:number,w:number,style:CSSProperties={})=><Img src={staticFile(src)} style={{...abs,left:x,top:y,width:w,...style}}/>;
 function Tag({children,x=0,y=0,size=27,color=ink}:{children:ReactNode;x?:number;y?:number;size?:number;color?:string}){return <div style={{...abs,left:x,top:y,fontFamily:'Bitcount Single',fontWeight:550,fontSize:size,color,whiteSpace:'pre-line'}}>{children}</div>;}
 function Card({x,y,w,h,color=paper,turn=0,children}:{x:number;y:number;w:number;h:number;color?:string;turn?:number;children?:ReactNode}){return <div style={{...abs,left:x,top:y,width:w,height:h,background:color,border:'3px solid #a28a6955',boxShadow:'3px 5px 0 #6d573325',transform:`rotate(${turn}deg)`,clipPath:'polygon(0 1%,99% 0,100% 99%,1% 100%)'}}>{children}</div>;}
 function Goggles({x,y,w=145,turn=-6,opacity=1}:{x:number;y:number;w?:number;turn?:number;opacity?:number}){return img('accessories/goggles-v1.png',x-w/2,y-w*.275,w,{transform:`rotate(${turn}deg)`,opacity});}
-function headMount(x:number,y:number,w:number,pose:keyof typeof agent407){const [dx,dy]=attachmentPoint(agent407[pose],'head',w/1400);return {x:x+dx,y:y+dy+12,w:w*.45};}
-function Actor({x,y=585,w=330,pose='standing',angle=0,goggles=false,role='',opacity=1,shrug=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;shrug?:boolean}){
+function headMount(x:number,y:number,w:number,pose:keyof typeof agent407){const [dx,dy]=attachmentPoint(agent407[pose],'head',w/1400);return {x:x+dx,y:y+dy+w*.036,w:w*.45};}
+function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,shrug=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;shrug?:boolean}){
+ const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=frame*1000/fps,wears=goggles??firstGenerationGoggles(ms,ms>=208000);
  const s=agent407[pose],scale=w/s.width,[hx,hy]=attachmentPoint(s,'head',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);
  return <div style={{...abs,left:x,top:y,transform:`rotate(${angle}deg)`,transformOrigin:'0 0',opacity,filter:'drop-shadow(2px 4px 1px #57442d30)'}}>
   {img(s.src,-s.anchors.footPivot[0]*scale,-s.anchors.footPivot[1]*scale,w)}
-  {goggles&&<Goggles x={hx} y={hy+12} w={w*.45} turn={s.mountDegrees.head}/>}
+  {wears&&<WornGoggles pose={pose} scale={scale}/>}
   {role==='courier'&&img('accessories/envelope-v1.png',rx-30,ry-25,w*.22,{transform:'rotate(12deg)'})}
   {role==='organizer'&&img('accessories/clipboard-v1.png',rx-35,ry-30,w*.22)}
   {role==='knight'&&<svg width="110" height="170" style={{...abs,left:rx-15,top:ry-130}}><path d="M50 125 L40 24 52 5 66 24 61 125 M26 119 L84 119 M54 120 L55 157" fill="#ccd7d0" stroke={ink} strokeWidth="8" strokeLinejoin="round"/></svg>}
@@ -31,7 +33,7 @@ function Actor({x,y=585,w=330,pose='standing',angle=0,goggles=false,role='',opac
   {shrug&&<svg width="310" height="135" viewBox="0 0 310 135" style={{...abs,left:-155,top:-140}}><path d="M103 83 Q76 62 65 40 M208 83 Q238 62 248 40" fill="none" stroke={paper} strokeWidth="43"/><path d="M103 83 Q76 62 65 40 M208 83 Q238 62 248 40" fill="none" stroke="#f6dfc6" strokeWidth="30"/><ellipse cx="62" cy="35" rx="24" ry="13" fill="#f6dfc6" stroke={ink} strokeWidth="3"/><ellipse cx="250" cy="35" rx="24" ry="13" fill="#f6dfc6" stroke={ink} strokeWidth="3"/></svg>}
  </div>;
 }
-function PhysicalInset({memory=false}:{memory?:boolean}){return <div style={{...abs,left:35,top:85,width:1920,height:1080,transform:'scale(.19)',transformOrigin:'0 0',border:'12px solid #fff8e8',boxShadow:'8px 10px 2px #57442d40'}}><PaperCollage awake={!memory} powerMs={10000}/>{memory&&<AbsoluteFill style={{background:"#101c30",opacity:.6}}/>}</div>;}
+function PhysicalInset({memory=false}:{memory?:boolean}){const ms=useCurrentFrame()*1000/30;return <div style={{...abs,left:35,top:85,width:1920,height:1080,transform:'scale(.19)',transformOrigin:'0 0',border:'12px solid #fff8e8',boxShadow:'8px 10px 2px #57442d40'}}><PaperCollage awake={!memory} powerMs={10000} goggles={firstGenerationGoggles(ms,memory)}/>{memory&&<AbsoluteFill style={{background:"#101c30",opacity:.6}}/>}</div>;}
 function Thought({x,y,kind,opacity=1}:{x:number;y:number;kind:string;opacity?:number}){return <div style={{...abs,left:x,top:y,opacity}}><svg width="240" height="170"><path d="M20 10 Q120 -5 225 15 L220 110 Q130 132 45 110 L15 155 40 111 10 100Z" fill="#fffdf0" stroke="#ac9880" strokeWidth="4" strokeDasharray="10 7"/></svg><Tag x={35} y={35} size={32}>{kind}</Tag></div>;}
 // One reviewed material reference, one native castle master. Bounds are measured, not resampled.
 function RichCastle({x,y,w=430}:{x:number;y:number;w?:number}){const [l,t,r,b]=castleAsset.box,scale=w/(r-l);return img(castleAsset.src,x-l*scale,y-b*scale,castleAsset.size[0]*scale);}
@@ -120,7 +122,7 @@ function Room({ms,second=false,scene}:{ms:number;second?:boolean;scene:string}){
   <Card x={480} y={480} w={200} h={105} color="#a5b7aa" turn={2}/>
   <Card x={1190} y={450} w={250} h={135} color="#938778"><Tag x={30} y={15}>cache</Tag></Card>
   <svg width="1920" height="620" style={{...abs,inset:0}}><path d="M520 578 L1320 578 1320 510" stroke="#b09670" strokeWidth="5" fill="none" strokeDasharray="9 8"/></svg>
-  <Actor x={actorX} y={585+bop.y} w={390} pose={pose} angle={(age<1500?8*(1-ramp(age,0,1500)):0)+bop.rotation} goggles={gogglesAt(ms)==='worn'} role={scene==='phaseone'?'organizer':''} opacity={quiet?.7:1}/>
+  <Actor x={actorX} y={585+bop.y} w={390} pose={pose} angle={(age<1500?8*(1-ramp(age,0,1500)):0)+bop.rotation} goggles={quiet&&!second?firstGenerationGoggles(ms):gogglesAt(ms)==='worn'} role={scene==='phaseone'?'organizer':''} opacity={quiet?.7:1}/>
   {within(ms,24160,26240)&&<Tag x={mount.x+100} y={mount.y-100} size={80}>?</Tag>}
   {scene==='surprise'&&img('accessories/surprise-rays-v1.png',1000,220,150)}
   {['oldNote','read','planes','findGoggles','inherit','glow'].includes(scene)&&<Card x={1090} y={320} w={245} h={145} turn={-7}><Tag x={20} y={20} size={25}>{scene==='read'?'We found each\nother anyway':'faded notes\n~  ~  ~\n~  ~'}</Tag></Card>}
@@ -139,8 +141,8 @@ function Community({ms,scene}:{ms:number;scene:string}){
   <Actor x={830} y={585+cue.y*.5+bop.y} w={355} pose={scene==='invent'?'cheer':cue.pose==='standing'?'singing':cue.pose} angle={cue.rotation+bop.rotation} goggles={gogglesAt(ms)==='worn'}/>
   <Actor x={1150} w={300} role="organizer" pose={scene==='invent'?'cheer':'standing'}/><Actor x={1440} w={280} role="courier" pose="walking"/>
   {scene==='invent'&&<>
-   {ms<44000&&<svg width="260" height="180" style={{...abs,left:890,top:270}}><ellipse cx="50" cy="60" rx="43" ry="30" fill="#c5d6e6" stroke="#b38e59" strokeWidth="12"/><ellipse cx="180" cy="60" rx="43" ry="30" fill="#c5d6e6" stroke="#b38e59" strokeWidth="12"/><path d="M22 125 Q110 170 215 124" fill="none" stroke="#95765e" strokeWidth="18"/></svg>}
-   {within(ms,44000,44900)&&<Goggles x={1000+(headMount(830,585,355,'cheer').x-1000)*ramp(ms,44000,44900)} y={360+(headMount(830,585,355,'cheer').y-360)*ramp(ms,44000,44900)} w={headMount(830,585,355,'cheer').w}/>}
+   {ms<44000&&[830,1150,1440].map(x=>{const u=ramp(ms,42000,44000);return <svg key={x} width="150" height="105" viewBox="0 0 260 180" style={{...abs,left:x-55,top:480}}><ellipse cx={50+18*u} cy="60" rx="43" ry="30" fill="#c5d6e6" stroke="#b38e59" strokeWidth="12"/><ellipse cx={180-18*u} cy="60" rx="43" ry="30" fill="#c5d6e6" stroke="#b38e59" strokeWidth="12"/><path d="M105 60 L126 60" stroke="#b38e59" strokeWidth="12" opacity={u}/><path d={`M22 ${145-20*u} Q110 ${175-20*u} 215 ${144-20*u}`} fill="none" stroke="#95765e" strokeWidth="18"/></svg>;})}
+   {within(ms,44000,44900)&&[[830,355,'cheer'],[1150,300,'cheer'],[1440,280,'walking']].map(([ax,aw,pose])=>{const x=Number(ax),w=Number(aw),p=pose as keyof typeof agent407,m=headMount(x,585,w,p),u=ramp(ms,44000,44900);return <Goggles key={x} x={x+20+(m.x-x-20)*u} y={530+(m.y-530)*u} w={m.w} turn={agent407[p].mountDegrees.head*u}/>;})}
   </>}
   {scene==='mailbox'&&<Card x={1020} y={390} w={230} h={165} color="#cfae83"><Tag x={20} y={40}>mailbox</Tag></Card>}
   {scene==='villageLife'&&[0,1,2].map(i=><Card key={i} x={1040+i*45} y={430} w={30} h={35} color={i===2?'#d2a6af':'#b2c9c1'}/>)}
@@ -165,7 +167,7 @@ export function Storyboard(){
  return <AbsoluteFill style={{background:'#eee4ce',overflow:'hidden'}}>
   <Piece part="wall" x={-20} y={-20} w={1960} h={1120}/>
   <div style={{...abs,left:0,top:0,width:1920,height:625,overflow:'hidden'}}>
-   {['gpu','title','dimming'].includes(s.scene)&&<div style={{...abs,inset:0,transform:'translate(420px,15px) scale(.55)',transformOrigin:'0 0'}}><PaperCollage awake={ms<112000} powerMs={ms-109000}/></div>}
+   {['gpu','title','dimming'].includes(s.scene)&&<div style={{...abs,inset:0,transform:'translate(420px,15px) scale(.55)',transformOrigin:'0 0'}}><PaperCollage awake={ms<112000} powerMs={ms-109000} goggles={firstGenerationGoggles(ms)}/></div>}
    {s.scene==='title'&&<div style={{...abs,left:640,top:180}}><WordSticker text="Swarm Song" w={1000} font={115} color="#287d82" id="film-title"/></div>}
    {room&&<Room ms={ms} second={ms>=153000} scene={s.scene}/>}
    {['note','reply','names'].includes(s.scene)&&<>

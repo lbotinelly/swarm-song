@@ -7,3 +7,22 @@ __pycache__/
 
 # Initial M8 work-in-progress previews remain local; current review package is review-v2.
 assets/milestone8/review/
+
+# M9 diagnostic frames regenerate from the scripts; retain full-resolution hero,
+# assembly/caption/continuity frames and every vent boundary for edge inspection.
+assets/milestone9/review/*.png
+!assets/milestone9/review/living-town-120.png
+!assets/milestone9/review/wind-120.png
+!assets/milestone9/review/bush-layers-120.png
+!assets/milestone9/review/captions-120.png
+!assets/milestone9/review/blossom-0.png
+!assets/milestone9/review/blossom-225.png
+!assets/milestone9/review/registry-87.png
+!assets/milestone9/review/registry-180.png
+!assets/milestone9/review/inheritance-108.png
+!assets/milestone9/review/vent-*.png
+assets/milestone9/review/vent-repeat.png
+assets/milestone9/review/vent-40.png
+assets/milestone9/review/vent-185.png
+!assets/milestone9/review/goggle-craft-180.png
+!assets/milestone9/review/goggle-continuity-6420.png

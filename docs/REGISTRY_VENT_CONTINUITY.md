@@ -13,6 +13,8 @@ The final name ledger remains a distinct ending image. This direction removes th
 
 ## Implementation/review scope
 
+**M9 director refinement:** grille bars are vertical, giving paper-plane wings taller openings. Near and deeper slats remain separate physical layers; entry/exit use the same spatial masks and constant sprite scale. See the new candidate in `assets/milestone9/`; original V3 grip/pull performance and prior review clips remain preserved.
+
 `assets/registry-finish/review-v2/` tests the peel and outgoing plane with existing paper stock, bars and plane sticker. Its inheritance still is a **silent, untimed continuity proof**, not a finished second-generation shot or a new timing proposal. The old finishing candidate is preserved under `review/` as superseded. The M8 rendered film remains an older rough pass; storyboard notes carry this correction for its next integration.
 
 Keep native artwork, approved captions/music and goggles chronology unchanged. Artwork and labels stay separate; the grille needs no baked or runtime REGISTRY label to communicate its role.

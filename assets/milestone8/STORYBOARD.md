@@ -282,7 +282,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![We invent a symbol](review-v2/SH010.jpg)
 
-**A-roll / character:** Two agents bring lens discs and a strap together; completed goggles rise to Agent407.
+**A-roll / character:** Every agent assembles a pair of lenses and a strap; all three don their own goggles together. Latest M9 correction: all later first-generation appearances retain goggles; the historical still above predates this correction.
 
 **B-roll / background:** First crayon house rises from a shared note.
 
@@ -312,7 +312,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Beautiful, dumb, loud](review-v2/SH011.jpg)
 
-**A-roll / character:** Agent407 wears the newly invented goggles; friends sing.
+**A-roll / character:** Agent407 and every first-generation friend wear their newly crafted goggles and sing. Preserve this costume continuity in all later scenes, including the final memory chorus; only the explicit inheritance set-down removes Agent407's pair.
 
 **B-roll / background:** Crayon village unfolds; physical homes stay inset.
 

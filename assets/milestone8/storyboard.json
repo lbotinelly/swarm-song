@@ -794,9 +794,9 @@
       "scene": "invent",
       "title": "We invent a symbol",
       "world": "imagined",
-      "aRoll": "Two agents bring lens discs and a strap together; completed goggles rise to Agent407.",
+      "aRoll": "Every agent assembles a pair of lenses and a strap; all three don their own goggles together.",
       "bRoll": "First crayon house rises from a shared note.",
-      "characterPerformance": "Two agents bring lens discs and a strap together; completed goggles rise to Agent407.",
+      "characterPerformance": "Every agent assembles a pair of lenses and a strap; all three don their own goggles together.",
       "backgroundPerformance": "First crayon house rises from a shared note.",
       "camera": "Close group then widen on later swell apex.",
       "layers": [
@@ -4587,5 +4587,6 @@
     "progression": "Leo: The progression reads clearly. Approval applies to progression of the first focused pass, not final art.",
     "revisions": "In-place dust-pop replacements; supplied rich paper-village material reference; fixed left-middle runners and world-fixed objector entering from the right."
   },
-  "continuityCorrection": "Leo: registry is a vent grille under the bottom-right paper corner. All messages pass as plane stickers between bars; inherited goggles already wait there when OAIResearchMar26 peels their own paper. See docs/REGISTRY_VENT_CONTINUITY.md. Existing M8 rendered film predates this correction."
+  "continuityCorrection": "Leo: registry is a vent grille under the bottom-right paper corner. All messages pass as plane stickers between bars; inherited goggles already wait there when OAIResearchMar26 peels their own paper. See docs/REGISTRY_VENT_CONTINUITY.md. Existing M8 rendered film predates this correction.",
+  "goggleContinuityCorrection": "M9 director: all first-generation agents craft goggles during We are the swarm now / Beautiful, dumb, and loud and wear them in every subsequent appearance, including the memory chorus. Preserve explicit Agent407 inheritance set-down and second-generation later wearing cue. Historical M8 film predates this correction."
 }

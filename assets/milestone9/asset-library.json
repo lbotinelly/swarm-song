@@ -1,0 +1,622 @@
+{
+  "newAssets": [
+    {
+      "source": "assets/milestone9/masters/bush-base.png",
+      "sourceSha256": "e8c2011b1df4c85e8c0c2e3763687e7b1731123e9ff8b033a98a3be8ad4730a1",
+      "nativeDimensions": [
+        2172,
+        724
+      ],
+      "output": "public/milestone9/bush-base.png",
+      "outputDimensions": [
+        2372,
+        924
+      ],
+      "outputSha256": "9442d78558ea18ef2f647c88091a7f898ca1e9eb4c41076e9744e87c62ec4987",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        152,
+        179,
+        2222,
+        751
+      ],
+      "id": "bush-base",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.8,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.6531636224933021,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/cloud-bank.png",
+      "sourceSha256": "27494696b30a6e264a788c54826e2315143eb7cd7a2d43b1ea6d09260d6bea51",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/milestone9/cloud-bank.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "b5f70da53580590f2f618eb412f245f5e10b141abab271cf36d87123d43b20ab",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        133,
+        190,
+        1842,
+        910
+      ],
+      "id": "cloud-bank",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.05,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.6231646174882488,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/cottage.png",
+      "sourceSha256": "200ec4c60124d93550e5ed0ab114a0bd78db58e19cdc9988f114d6dee60332b2",
+      "nativeDimensions": [
+        1312,
+        1199
+      ],
+      "output": "public/milestone9/cottage.png",
+      "outputDimensions": [
+        1512,
+        1399
+      ],
+      "outputSha256": "96e4e1349f92155fcb3afeaa44d466a8096c498b63bce5df793d229009542d5c",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        110,
+        110,
+        1402,
+        1276
+      ],
+      "id": "cottage",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.4886578092439422,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/flower-coral.png",
+      "sourceSha256": "0b3aba8f9bb077b186d7cd0eda2202a809de7c7a79fca8a3eee2d867e1b15e8e",
+      "nativeDimensions": [
+        1086,
+        1448
+      ],
+      "output": "public/milestone9/flower-coral.png",
+      "outputDimensions": [
+        1286,
+        1648
+      ],
+      "outputSha256": "a265b9ead35f06c2a3473bca7dbb49f7c9c0606ba383e157649ad0efddda0cfc",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        244,
+        194,
+        1044,
+        1457
+      ],
+      "id": "flower-coral",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.8,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.7920557837201226,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/garden-strip.png",
+      "sourceSha256": "510de9d2165b1953e203165c360b63b43f96c37bba393d7af581ec6c1dbeef22",
+      "nativeDimensions": [
+        2172,
+        724
+      ],
+      "output": "public/milestone9/garden-strip.png",
+      "outputDimensions": [
+        2372,
+        924
+      ],
+      "outputSha256": "d71158f339aef10b783a8b4f7bb5bfc4c997c1b0c8d46a8f7ccadc6fc8a28cca",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        155,
+        180,
+        2217,
+        751
+      ],
+      "id": "garden-strip",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.8,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.6575428155318543,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/layered-sun.png",
+      "sourceSha256": "f8f7ce93ad239f7bfbf475e0474753660da853bd6a91b3e4df184d5bdccdd495",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/layered-sun.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "0be7513c4bfc75ad179d0071962efec5a3b910ef9a5c3fe046e919699a80b404",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        340,
+        110,
+        1377,
+        1099
+      ],
+      "id": "layered-sun",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.035,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.781415187042559,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/tree-cluster.png",
+      "sourceSha256": "d7323d4b44e8932c9c132c5db85909d1cfaee79bbcd4ae782b9f59307dd95784",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/tree-cluster.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "758f501995dd3e0fe8418c79c014910e9672d221c0e3f1df2efe89d2ae53c345",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        176,
+        110,
+        1553,
+        1089
+      ],
+      "id": "tree-cluster",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.24,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.6244216100418662,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    },
+    {
+      "source": "assets/milestone9/masters/workshop.png",
+      "sourceSha256": "05f87dc027cd668eb1501cf3946b83aff95e0df57804ed96d99e1174282ea1e7",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/workshop.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "b3e925e19971c1283ec1367120f5fe9fc4f459844f773aeea1332d58355d3d3f",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        267,
+        212,
+        1467,
+        1018
+      ],
+      "id": "workshop",
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "alphaRange": [
+        0,
+        255
+      ],
+      "transparentFraction": 0.6763783470377398,
+      "provenance": "Built-in imagegen; native original preserved. Prompt stored in package. Proposed art except director-liked original garden strip."
+    }
+  ],
+  "reusedAssets": [
+    {
+      "file": "public/milestone5/kraft-wall-v1.png",
+      "roles": "sky paper; tissue; cut terrain; vent; banner; mailbox",
+      "resolution": [
+        1648,
+        1286
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        176,
+        167,
+        1471,
+        1154
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.02,
+      "sha256": "8231d1d74f2a0174e7763e2469c16ed39df42cc5cdf33b63d16e2481f86763ff",
+      "provenanceRecord": "assets/milestone5/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/hill-a-v1.png",
+      "roles": "distant crayon hill",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        108,
+        262,
+        1627,
+        978
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.08,
+      "sha256": "7373e4e6310985c3a240200475f81b022505e48720909b0d1b532cf08f1f4794",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/hill-b-v1.png",
+      "roles": "foreground crayon hill",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        110,
+        417,
+        1621,
+        917
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.5,
+      "sha256": "bd06032526a5847509c668247affae4297d5262f247d35ab6cbf829e93d989d9",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/cloud-v1.png",
+      "roles": "independent humble cloud",
+      "resolution": [
+        2162,
+        1001
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        173,
+        193,
+        1960,
+        826
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.055,
+      "sha256": "6fc6e3d444a183bb4c84c98c4b93774897f37d1a0f4f6ada55465c7f36387464",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/smoke-v1.png",
+      "roles": "wind-responsive chimney ribbon",
+      "resolution": [
+        1224,
+        1736
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        377,
+        243,
+        774,
+        1516
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "951e5be730165779f8848965b91e67c581550721778b1d4023ac6e0f724ed172",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/house-a-v1.png",
+      "roles": "preserved cottage and transformation before states",
+      "resolution": [
+        1559,
+        1357
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        143,
+        132,
+        1408,
+        1231
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "460c6314d593e3f213a8555753faadba8b3a0fa64cf70ad7a5b697c9df718a01",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/house-b-v1.png",
+      "roles": "transformation before state",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        239,
+        159,
+        1497,
+        1071
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "9647008646dbff986609d87f0be817ffd9a66a96920d0e9f9fa31b9c933ffcc2",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone5-2/sun-v2.png",
+      "roles": "transformation before state",
+      "resolution": [
+        1454,
+        1454
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        210,
+        173,
+        1257,
+        1272
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.035,
+      "sha256": "1f950bd9517eb19f8d10ee0222fdd4306f1b936f757df4206ab8898ddd3ad344",
+      "provenanceRecord": "assets/milestone5-2/manifest.json"
+    },
+    {
+      "file": "public/milestone8/castle-v2.png",
+      "roles": "hero castle",
+      "resolution": [
+        1536,
+        1024
+      ],
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        0,
+        9,
+        1514,
+        1024
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "3421ec3dad05db4cc003e313687922b25fca52907a3bc56e4378d3268fd0ac73",
+      "provenanceRecord": "assets/milestone8/castle-asset.json"
+    },
+    {
+      "file": "public/nightshift/stickers/paper-plane-v1.png",
+      "roles": "vent message",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        291,
+        217,
+        1428,
+        1025
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0,
+      "sha256": "e715321e564d2e58eb9c487609f2982cd67ce3c39c70b0b175f72e7d2e09bd6b",
+      "provenanceRecord": "assets/nightshift/stickers/manifest.json"
+    },
+    {
+      "file": "public/nightshift/stickers/dust-puff-v1.png",
+      "roles": "in-place swap concealment",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        483,
+        373,
+        1291,
+        858
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "710df356880e6055570eeb9c1f2cfdbeaaa4352b8d79c6927991ec1c4a719a0e",
+      "provenanceRecord": "assets/nightshift/stickers/manifest.json"
+    },
+    {
+      "file": "public/accessories/envelope-v1.png",
+      "roles": "town delivery",
+      "resolution": [
+        1736,
+        1224
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        408,
+        315,
+        1319,
+        932
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "633720c92b6cc28bdb7fa880e3e01fa6ae729ca3ea5ceb72ac235a23b5b0dcc0",
+      "provenanceRecord": "assets/accessories/pack-v1/manifest.json"
+    },
+    {
+      "file": "public/accessories/goggles-v1.png",
+      "roles": "hidden inheritance object",
+      "resolution": [
+        1974,
+        1087
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        280,
+        266,
+        1694,
+        809
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0,
+      "sha256": "435afd5cea20ddfb5e9d4bd4cee7ee54acd6f4ef68dc4e7f014a74e9a3e4a7d6",
+      "provenanceRecord": "assets/accessories/pack-v1/manifest.json"
+    }
+  ],
+  "characters": "Approved Agent407 production derivatives; exact per-pose foot/head/paw anchors in src/sprites.ts, provenance assets/characters/agent407/PRODUCTION.md",
+  "timing": "M7 Song captions and canonical audio; unchanged",
+  "reference": "reference/director-night-sky.png (user supplied after initial batch)"
+}

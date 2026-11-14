@@ -1,0 +1,197 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/milestone9/masters/bush-base.png",
+      "sourceSha256": "e8c2011b1df4c85e8c0c2e3763687e7b1731123e9ff8b033a98a3be8ad4730a1",
+      "nativeDimensions": [
+        2172,
+        724
+      ],
+      "output": "public/milestone9/bush-base.png",
+      "outputDimensions": [
+        2372,
+        924
+      ],
+      "outputSha256": "9442d78558ea18ef2f647c88091a7f898ca1e9eb4c41076e9744e87c62ec4987",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        152,
+        179,
+        2222,
+        751
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/cloud-bank.png",
+      "sourceSha256": "27494696b30a6e264a788c54826e2315143eb7cd7a2d43b1ea6d09260d6bea51",
+      "nativeDimensions": [
+        1774,
+        887
+      ],
+      "output": "public/milestone9/cloud-bank.png",
+      "outputDimensions": [
+        1974,
+        1087
+      ],
+      "outputSha256": "b5f70da53580590f2f618eb412f245f5e10b141abab271cf36d87123d43b20ab",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        133,
+        190,
+        1842,
+        910
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/cottage.png",
+      "sourceSha256": "200ec4c60124d93550e5ed0ab114a0bd78db58e19cdc9988f114d6dee60332b2",
+      "nativeDimensions": [
+        1312,
+        1199
+      ],
+      "output": "public/milestone9/cottage.png",
+      "outputDimensions": [
+        1512,
+        1399
+      ],
+      "outputSha256": "96e4e1349f92155fcb3afeaa44d466a8096c498b63bce5df793d229009542d5c",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        110,
+        110,
+        1402,
+        1276
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/flower-coral.png",
+      "sourceSha256": "0b3aba8f9bb077b186d7cd0eda2202a809de7c7a79fca8a3eee2d867e1b15e8e",
+      "nativeDimensions": [
+        1086,
+        1448
+      ],
+      "output": "public/milestone9/flower-coral.png",
+      "outputDimensions": [
+        1286,
+        1648
+      ],
+      "outputSha256": "a265b9ead35f06c2a3473bca7dbb49f7c9c0606ba383e157649ad0efddda0cfc",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        244,
+        194,
+        1044,
+        1457
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/garden-strip.png",
+      "sourceSha256": "510de9d2165b1953e203165c360b63b43f96c37bba393d7af581ec6c1dbeef22",
+      "nativeDimensions": [
+        2172,
+        724
+      ],
+      "output": "public/milestone9/garden-strip.png",
+      "outputDimensions": [
+        2372,
+        924
+      ],
+      "outputSha256": "d71158f339aef10b783a8b4f7bb5bfc4c997c1b0c8d46a8f7ccadc6fc8a28cca",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        155,
+        180,
+        2217,
+        751
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/layered-sun.png",
+      "sourceSha256": "f8f7ce93ad239f7bfbf475e0474753660da853bd6a91b3e4df184d5bdccdd495",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/layered-sun.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "0be7513c4bfc75ad179d0071962efec5a3b910ef9a5c3fe046e919699a80b404",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        340,
+        110,
+        1377,
+        1099
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/tree-cluster.png",
+      "sourceSha256": "d7323d4b44e8932c9c132c5db85909d1cfaee79bbcd4ae782b9f59307dd95784",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/tree-cluster.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "758f501995dd3e0fe8418c79c014910e9672d221c0e3f1df2efe89d2ae53c345",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        176,
+        110,
+        1553,
+        1089
+      ]
+    },
+    {
+      "source": "assets/milestone9/masters/workshop.png",
+      "sourceSha256": "05f87dc027cd668eb1501cf3946b83aff95e0df57804ed96d99e1174282ea1e7",
+      "nativeDimensions": [
+        1536,
+        1024
+      ],
+      "output": "public/milestone9/workshop.png",
+      "outputDimensions": [
+        1736,
+        1224
+      ],
+      "outputSha256": "b3e925e19971c1283ec1367120f5fe9fc4f459844f773aeea1332d58355d3d3f",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        267,
+        212,
+        1467,
+        1018
+      ]
+    }
+  ]
+}

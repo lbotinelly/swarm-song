@@ -5,10 +5,11 @@ import {agent407,attachmentPoint} from './sprites';
 import {stateAt} from './timeline';
 import {Song} from './Song';
 import {smooth} from './lyrics';
+import {LayeredVent} from './LayeredVent';
 
 // One shot, not another runner: reuse the approved registry clock and M7 captions.
 // All positions are flat paper layers. The room has no perspective or 3D camera.
-export function RegistryFinish({inheritance=false}:{inheritance?:boolean}){
+export function RegistryFinish({inheritance=false,layeredVent=false}:{inheritance?:boolean;layeredVent?:boolean}){
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=frame*1000/fps;
  const state=stateAt(frame,fps),s=agent407[state.pose],scale=.43;
  const approach=smooth((ms-350)/1400),pull=smooth((ms-2050)/850);
@@ -34,7 +35,7 @@ export function RegistryFinish({inheritance=false}:{inheritance?:boolean}){
    {/* Lovingly crooked frame and lining; the same cut stock used in the approved home. */}
    <Card x={88} y={29} w={1750} h={738} color="#bba47f" angle={-.6}/>
    <div style={{position:'absolute',left:1490,top:513,width:296,height:168,background:'#293c3a',boxShadow:'inset 6px 8px 8px #111b1d80'}}/>
-   {inheritance&&<Img src={staticFile('accessories/goggles-v1.png')} style={{position:'absolute',left:1583,top:598,width:155,transform:'rotate(-8deg)'}}/>}
+   {inheritance&&!layeredVent&&<Img src={staticFile('accessories/goggles-v1.png')} style={{position:'absolute',left:1583,top:598,width:155,transform:'rotate(-8deg)'}}/>}
    <div style={{position:'absolute',inset:0,clipPath:`polygon(0 0,1920px 0,1920px ${676-340*opened}px,1820px ${676-340*opened}px,${1820-495*opened}px 676px,0 676px)`}}>
     <Card x={105} y={43} w={1715} h={700} color="#f6e1b9"/>
    </div>
@@ -73,14 +74,14 @@ export function RegistryFinish({inheritance=false}:{inheritance?:boolean}){
     </div>)}
    </div>
    {/* The plane is behind the foreground bars, not faded over their surface. */}
-   {!inheritance&&ms>=5080&&ms<7100&&<div style={{position:'absolute',inset:0,clipPath:'inset(0 148px 0 0)'}}><div style={{position:'absolute',left:1360+510*note,top:555-20*Math.sin(Math.PI*note),width:220,transform:'rotate(17deg)',transformOrigin:'100% 50%'}}>
+   {!layeredVent&&!inheritance&&ms>=5080&&ms<7100&&<div style={{position:'absolute',inset:0,clipPath:'inset(0 148px 0 0)'}}><div style={{position:'absolute',left:1360+510*note,top:555-20*Math.sin(Math.PI*note),width:220,transform:'rotate(17deg)',transformOrigin:'100% 50%'}}>
     <Img src={staticFile('nightshift/stickers/paper-plane-v1.png')} style={{width:'100%',filter:'drop-shadow(2px 3px 1px #51433235)'}}/>
    </div></div>}
-   <div style={{position:'absolute',inset:0,clipPath:cornerHole}}>
+   {layeredVent?<LayeredVent nose={1400+490*note} showPlane={!inheritance&&ms>=5080} inheritance={inheritance} opening={cornerHole}/>:<div style={{position:'absolute',inset:0,clipPath:cornerHole}}>
     {[0,1,2,3].map(i=><Card key={i} x={1500} y={526+i*43} w={275} h={13} color="#9da99c"/>)}
     <Card x={1490} y={513} w={14} h={168} color="#b2bcab"/>
     <Card x={1772} y={513} w={14} h={168} color="#b2bcab"/>
-   </div>
+   </div>}
    {/* Low rail in the foreground continues the apartment, but clears every caption. */}
    <Piece part="rail" x={80} y={716} w={1760} h={54} style={{filter:'drop-shadow(2px 5px 2px #58462b20)'}}/>
   </div>

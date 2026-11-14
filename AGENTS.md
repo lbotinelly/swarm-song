@@ -1,6 +1,12 @@
 # Codex working instructions
 
+## Active milestone — M9 modular playset
+
+Read `assets/milestone9/BRIEF.md`, `ART_BIBLE.md`, `README.md` and review/QA before extending. Leo authorizes focused premium town, in-place fantasy, layered vent and registry candidate proofs with an independent read-only critic; preserve M7 timing, M8 narrative and registry V3 character performance. Latest grille direction is **vertical bars**, allowing taller openings for paper-plane wings; retain near/deep layering and constant-scale passage. The liked garden strip now has a separate composable bush variant: vegetation, independently anchored flowers, foreground occlusion, shared scene wind strength/direction. Keep motion deterministic and scene-supplied; do not build a physics engine. Physical-world direction is urban GPU buildings, LED/circuit-trail street illumination and cozy warm apartment interiors; imagined life has wind, movement, open vistas and gorgeous skies. Exact night-sky reference is now in `assets/milestone9/reference/`; new staging remains candidate review, not automatic film approval.
+
 ## Current finishing study — registry discovery
+
+**Latest goggle continuity correction:** all first-generation agents craft goggles at “We are the swarm now / Beautiful, dumb, and loud,” then wear them in every subsequent appearance, including crowds, the objector, costumed player and final memory chorus. Earlier optional-uniform text is superseded. Keep pre-invention scenes ungoggled, preserve the explicit Agent407 inheritance set-down, and preserve OAIResearchMar26's later choice to wear the inherited pair. M9 includes a new craft excerpt and continuity sheet; historical clips remain preserved.
 
 **Latest correction:** read `docs/REGISTRY_VENT_CONTINUITY.md`. Registry = grille under the bottom-right paper corner; every message is a plane sticker passing between bars; gen2 reveals goggles already there by peeling their own corner. The earlier ledger-pocket finishing study is superseded. V3 adds the tiny-corner hint, approach, grip hold and paw-attached retreat/pull: `assets/registry-finish/review-v3/`.
 

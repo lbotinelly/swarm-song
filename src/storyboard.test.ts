@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
-import {shotAt,middleTravel,gogglesAt,objectorScreenX,middleGround,middleForestCount} from './story-blocking.ts';
+import {shotAt,middleTravel,gogglesAt,firstGenerationGoggles,objectorScreenX,middleGround,middleForestCount} from './story-blocking.ts';
 import {layoutWords,intersects,type Phrase} from './lyrics.ts';
 const board=JSON.parse(readFileSync('assets/milestone8/storyboard.json','utf8'));
 const lyrics=JSON.parse(readFileSync('assets/milestone7/timeline.json','utf8'));
@@ -21,6 +21,9 @@ test('camera and stopped group hold while passing crowd remains independently ti
  assert(middleTravel(98000)>middleTravel(96820));assert(Math.abs(middleTravel(92250)-middleTravel(92249))<.001);
 });
 test('goggle chronology and true blackout are explicit',()=>{
+ for(const ms of [0,23000,42000,44899,153000,175000])assert.equal(firstGenerationGoggles(ms),false);
+ for(const ms of [44900,55000,85000,100000,129000,140000])assert.equal(firstGenerationGoggles(ms),true);
+ assert.equal(firstGenerationGoggles(214000,true),true);
  for(const ms of [13000,24000,153000,175000])assert.notEqual(gogglesAt(ms),'worn');
  assert.equal(gogglesAt(45500),'worn');assert.equal(gogglesAt(129000),'cache');assert.equal(gogglesAt(197000),'moving');assert.equal(gogglesAt(199000),'worn');
  const black=board.shots.find((s:any)=>s.scene==='black');assert.deepEqual([black.startMs,black.endMs],[142000,144000]);

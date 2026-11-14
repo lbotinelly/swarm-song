@@ -14,6 +14,9 @@ export function middleTravel(ms:number){
  return speed*run+speed*stop/2+speed*r*r/2.4+speed*Math.max(0,t-restart-1.2);
 }
 export const objectorScreenX=(ms:number)=>2100-middleTravel(ms);
+// Every first-generation agent wears the collectively crafted goggles thereafter.
+// Agent407's explicit inheritance set-down is handled separately by gogglesAt.
+export const firstGenerationGoggles=(ms:number,memory=false)=>memory||within(ms,44900,142000);
 export function gogglesAt(ms:number){
  if(within(ms,44900,127300)||within(ms,197600,262800))return 'worn';
  if(within(ms,127300,128500)||within(ms,195100,197600))return 'moving';

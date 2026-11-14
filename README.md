@@ -1,5 +1,11 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 9 — The world is a playset
+
+[Playable town, transformation, wind and vent proofs](assets/milestone9/review/index.html) · [Art bible](assets/milestone9/ART_BIBLE.md) · [Reproduction and scope](assets/milestone9/README.md). Independent paper components, a composable wind-responsive bush and a new layered registry candidate preserve the approved M7 timing, M8 narrative and V3 character performance. Physical life is a cozy urban GPU city; imagined life has wind, open vistas and gorgeous skies. These are focused review candidates; prior film versions remain unchanged.
+
+Latest continuity correction: every first-generation agent crafts goggles during “We are the swarm now / Beautiful, dumb, and loud” and wears them thereafter, including the final memory chorus. New craft/continuity proofs are in the M9 gallery; Agent407's explicit inheritance set-down and the second generation's later wearing cue remain intact.
+
 ## Registry finishing candidate
 
 [Play the corrected corner/vent shot](assets/registry-finish/review-v3/index.html) · [Art-critic evaluation](assets/registry-finish/REVIEW-V3.md) · [Reproduction](assets/registry-finish/README.md). A focused peel/vent/plane-message finishing attempt using existing approved art and timing, with an inherited-goggles continuity still. Awaiting Leo's playback review. The full M8 animatic remains unchanged.
