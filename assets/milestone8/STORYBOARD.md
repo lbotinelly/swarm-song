@@ -312,7 +312,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Beautiful, dumb, loud](review-v2/SH011.jpg)
 
-**A-roll / character:** Agent407 and every first-generation friend wear their newly crafted goggles and sing. Preserve this costume continuity in all later scenes, including the final memory chorus; only the explicit inheritance set-down removes Agent407's pair.
+**A-roll / character:** Agent407 sings in the new goggles and keeps the wrench. The two friends acknowledge each other, share raised-paw bops, then walk together carrying their tools; their action continues from the crafting shot. Preserve goggles in all later scenes, including the final memory chorus; only the explicit inheritance set-down removes Agent407's pair. The historical still above predates this follow-through revision.
 
 **B-roll / background:** Crayon village unfolds; physical homes stay inset.
 

@@ -6,6 +6,12 @@ Eight new native masters support the priority kit: cloud bank, sun, trees, garde
 
 ## Focused proofs
 
+**Supporting-friend follow-through:** after donning, the two friends acknowledge one another, turn together, share small bops from the existing percussion map, then walk off together carrying their tools. Their action continues through the46.5s shot boundary. The raised-paw celebration uses the approved cheer pose; this is not a literal palm-contact high-five. [Previous static-follow-through version](review/goggle-magic-v2.mp4) is preserved.
+
+**Village errands and chores:** the courier delivers to the workshop and continues along the path; the veranda resident shakes and drapes a rug; the banner helper steps back to inspect the raised flag and leaves. Updated living-town and blossom clips share this staging. Their previous versions are preserved as `living-town-v1.mp4` and `blossom-v1.mp4`. [Ensemble staging](../../docs/ENSEMBLE_STAGING.md) records the rule and review checklist for all scene families.
+
+**Individual running:** [Objector crowd proof](review/crowd-individuality.mp4),8s with master90–98s. Background runners have different baseline speeds, smooth pace changes and distance-driven step phases. The foreground trio varies its stride and relative position, settles into a shared listening stop, then resumes. Camera/objector timing stays unchanged. Reproduce with `--only=crowd-individuality --stills --video`.
+
 **Latest performance corrections:** wrenches render in front of the bunny artwork and white sticker borders. The two friends on the right face the lead through a complete local-group flip: body, attachment points, tool rotation, smoke and goggle flight mirror together around the foot pivot. Pops occur at42.35/43.0/43.3s; each friend catches and dons separately, finishing at44.0/44.6/44.9s. [Previous tool-layer/timing version](review/goggle-magic-v1.mp4) is preserved for comparison.
 
 - **Latest revised crafting candidate:** [Magic tools: pop, catch, wear](review/goggle-magic.mp4). Three friends use the existing watercolor wrench; small paper-smoke bursts produce complete goggles, which arc to their waiting paws, hold briefly, then settle on their foreheads by44.9s. The13s excerpt retains master42–55s and protected captions. Leo rejected the earlier lens/strap assembly; `goggle-craft.mp4` remains archived for comparison. This is a new performance candidate using the existing rough scene staging.

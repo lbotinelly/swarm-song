@@ -3,9 +3,9 @@
   "approvedBodiesPreserved": 6,
   "repeatRender": {
     "living-town": {
-      "max": 0,
-      "mean": 0.0,
-      "changedPixels": 0
+      "max": 5,
+      "mean": 0.0005226015946502057,
+      "changedPixels": 2139
     },
     "wind": {
       "max": 0,
@@ -149,6 +149,13 @@
       "masterStartSeconds": 42,
       "audio": true,
       "decodedAudioCorrelationNoLagCorrection": 0.9999567283058185
+    },
+    "crowd-individuality": {
+      "frames": 240,
+      "duration": 8.0,
+      "masterStartSeconds": 90,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999693168257445
     }
   },
   "limitations": [

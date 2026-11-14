@@ -1,6 +1,20 @@
 # Independent art review and measured QA
 
-## Director rejection and revised magic-tool candidate
+## Latest ensemble and individuality review
+
+The independent read-only reviewer inspected source and craft frames120,134/135,162,180,212,230,243,270,300,345,389. Friends keep positions, props and goggles through the46.5s cut, face each other to celebrate, and clearly depart together. Minor adjacent ear-border overlap at300 leaves faces readable. The right friend's partial exit by389 is intentional. The reviewer caught the lead's wrench disappearing at the cut; the lead now retains it while switching to singing and existing music gestures. The240ms paper-turn squash remains a stylistic candidate for playback review.
+
+Village follow-up inspected frames72/195/270/315: the rug reads as held near the paws, then draped over the rail; the courier leaves empty-handed and the flag worker departs. The letter remains spatially inside the mailbox, concealed by its front card. Rug material reuses the existing ochre quilt stock, not a newly generated asset.
+
+Crowd follow-up inspected frames24/69/120/210/239 and motion source: distinct paces and strides coexist with a readable planted listening group and continuing rear traffic. Near-runner/objector overlap at239 reads as a candidate pass-behind; it is the tightest sampled overlap and needs playback judgement. No new blocking defect was established. These are source/still findings, not continuous audiovisual approval.
+
+Current validation: TypeScript and36tests pass, including individual forward travel, varying speed, reverse-seek equality, fixed listening positions and safe near-runner spacing. Render/audio/gallery QA passes for all updated clips and the new90–98s crowd proof. The updated town repeat differs by at most5/255 (whole-image mean0.000523), within the existing renderer tolerance; it is not pixel-identical. Historical pixel-identical measurements below refer to the previous town rendering. The approved master inputs and old review clips remain preserved.
+
+## Earlier crafting revisions
+
+**Supporting-agent revision:** after the individual wearing cues, each friend acknowledges the other; the middle friend turns toward the right friend, they gather closer and share small bops on the existing47.345/48.938/49.542s percussion accents. The right friend turns to travel, and they walk together from50.1/50.3s, carrying their tools. Their same absolute-time performance spans the46.5s shot boundary. This uses the existing cheer/walking poses and is a raised-paw celebration, not a literal high-five. The prior completed-craft/static aftermath is preserved as `goggle-magic-v2.mp4`.
+
+The supporting-friend test verifies continuity across the shot boundary, mirrored facing before/after the turns, departure and pair spacing. No protected music/caption cues or approved artwork were changed. The new ensemble-staging rule is documented for future shot reviews, not a claim that every historical film shot has been restaged.
 
 **Latest director follow-ups:** Leo called the magic treatment much better, but identified tools behind the stickers/characters and overly simultaneous completion. Tools now render after the Actor layer, above the body and die-cut border. Each friend has authored pop/catch/lift/finish times:42.35/42.95/43.3/44.0s,43.0/43.65/44.0/44.6s,43.3/43.95/44.3/44.9s. The right two friends mirror around their foot origins to face the lead; the entire local group includes every attachment and motion. Actor also accepts `flip` for other anchored poses. All finish by the existing44.9s continuity boundary. `goggle-magic-v1.mp4` preserves the prior layering/timing; `goggle-magic.mp4` is the corrected candidate.
 

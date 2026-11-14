@@ -11,7 +11,7 @@ import {Piece} from './PaperApartment';
 import {Cut} from './ImaginedVillage';
 import {agent407,attachmentPoint} from './sprites';
 import {musicStateAt,percussionStateAt,percussionAllowedAt,type MusicCue} from './music-cues';
-import {ramp,within,shotAt,middleTravel,gogglesAt,firstGenerationGoggles,objectorScreenX,middleGround,middleForestCount} from './story-blocking';
+import {ramp,within,shotAt,middleTravel,gogglesAt,firstGenerationGoggles,objectorScreenX,middleGround,middleForestCount,craftFriendAt,crowdStrideAt,warningRunnerAt} from './story-blocking';
 import {WornGoggles} from './WornGoggles';
 const abs:CSSProperties={position:'absolute'};
 const paper='#fff3d9',ink='#745743';
@@ -73,7 +73,7 @@ function World({ms,fantasy=false,memory=false}:{ms:number;fantasy?:boolean;memor
   <Tag x={45} y={310} size={22}>separate rooms</Tag><Tag x={45} y={341} size={22}>shared {memory?'memory':'imagination'}</Tag>
  </>;
 }
-function Crowd({ms,start=67060,count=7,y=560,scale=1,speed=350}:{ms:number;start?:number;count?:number;y?:number;scale?:number;speed?:number}){return <>{Array.from({length:count},(_,i)=>{const x=((ms-start)/1000*speed-i*185+2400)%2400-200;return <Actor key={i} x={x} y={y+Math.sin(ms/100+i)*7} w={190*scale} pose="walking" angle={Math.sin(ms/90+i)*7} role={i%3===0?'courier':''}/>;})}</>;}
+function Crowd({ms,start=67060,count=7,y=560,scale=1,speed=350}:{ms:number;start?:number;count?:number;y?:number;scale?:number;speed?:number}){return <>{Array.from({length:count},(_,i)=>{const stride=crowdStrideAt(ms,start,i,speed),x=((stride.distance-i*185)%2400+2400)%2400-200;return <Actor key={i} x={x} y={y+stride.y-i%3*5} w={190*scale} pose="walking" angle={stride.angle} role={i%3===0?'courier':''}/>;})}</>;}
 function Middle({ms}:{ms:number}){
  const objectX=objectorScreenX(ms),theory=ms<90060,warning=within(ms,90700,96820),battle=ms>=98000,root1=ramp(ms,104940,105240)*(1-ramp(ms,105240,105580)),root2=ramp(ms,106860,107160)*(1-ramp(ms,107160,107500)),flop=ramp(ms,107660,108200);
  return <>
@@ -96,7 +96,7 @@ function Middle({ms}:{ms:number}){
   </>:<>
    {/* Near cluster and camera halt together. The rear lane deliberately does not. */}
    <Crowd ms={ms} start={90060} y={440} scale={.72} count={6} speed={300}/>
-   {[0,1,2].map(i=><Actor key={i} x={450+i*175} w={290} y={585} pose={ms<91200||ms>=96820?'walking':'standing'} angle={warning?(i===2?-4:2):Math.sin(ms/120+i)*6}/>)}
+   {[0,1,2].map(i=>{const runner=warningRunnerAt(ms,i);return <Actor key={i} x={runner.x} w={290} y={runner.y} pose={runner.walking?'walking':'standing'} angle={runner.angle}/>;})}
    <Actor x={objectX} w={320} pose="standing"/>
    {ms>=90700&&<svg width="180" height="300" style={{...abs,left:objectX+10,top:245}}><path d="M130 10 L37 280" stroke={paper} strokeWidth="20"/><path d="M130 10 L37 280" stroke="#bb9762" strokeWidth="12"/></svg>}
    {ms>=90700&&<Card x={objectX+10} y={100} w={260} h={165} color="#fff6e8" turn={-3}>
@@ -136,7 +136,8 @@ function Room({ms,second=false,scene}:{ms:number;second?:boolean;scene:string}){
 // SH010: reuse approved wrench, goggles and dust with authored transforms.
 // One local group keeps the tool, catch and forehead mount attached during bops.
 function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;index:number;flip?:boolean}){
- const pose='cheer',scale=w/1400,s=agent407[pose];
+ const friend=index>0?craftFriendAt(ms,index as 1|2):null;
+ const pose=friend?.walking?'walking':index===0&&ms>=46500?'singing':'cheer',scale=w/1400,s=agent407[pose];
  const [lx,ly]=attachmentPoint(s,'leftHand',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);
  const mount=headMount(0,0,w,pose);
  const [pop,catchAt,liftAt,wearAt]=[[42350,42950,43300,44000],[43000,43650,44000,44600],[43300,43950,44300,44900]][index];
@@ -148,9 +149,11 @@ function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;ind
  const gx=tip.x+(rx-tip.x)*flight,gy=tip.y+(ry-tip.y)*flight-95*Math.sin(Math.PI*flight);
  const caught=ms>=catchAt,settle=caught?6*Math.sin(Math.PI*ramp(ms,catchAt,catchAt+180)):0;
  const hop=-9*Math.sin(Math.PI*ramp(ms,pop-130,pop+350));
+ const sharedBop=index>0&&within(ms,46500,50000)?percussionStateAt(ms,drums.events):{y:0,rotation:0};
+ const leadCue=index===0&&ms>=46500?musicStateAt(ms,music.cues as MusicCue[]):{y:0,rotation:0};
  // Mirror the whole local scenelet once: body, paws, props, rays and flight.
  // World placement stays fixed; local rotations and trajectories mirror with it.
- return <div style={{...abs,left:x,top:585+hop,transform:`scaleX(${flip?-1:1})`,transformOrigin:'0 0'}}>
+ return <div style={{...abs,left:x+(friend?.x??0),top:585+hop+(friend?.y??0)+sharedBop.y+leadCue.y*.5,transform:`scaleX(${friend?.facing??(flip?-1:1)}) rotate(${(friend?.angle??0)+sharedBop.rotation+leadCue.rotation}deg)`,transformOrigin:'0 0'}}>
   <Actor x={0} y={0} w={w} pose={pose} goggles={ms>=wearAt}/>
   {/* Held tools sit above both the character art and its die-cut border. */}
   <div style={{...abs,left:lx,top:ly,transform:`rotate(${turn}deg)`,transformOrigin:'0 0'}}>
@@ -169,8 +172,8 @@ function Community({ms,scene}:{ms:number;scene:string}){
   {['chorus1','villageLife'].includes(scene)&&<Crowd ms={ms} y={490} scale={.8} start={scene==='running1'?67060:55000}/>}
   {scene==='running1'&&[67060,67940,68780,69860].map((start,i)=><div key={start} style={{opacity:ms>=start?1:0}}><Crowd ms={ms} start={start} count={i+2} y={430+i*30} scale={.55+i*.06} speed={600+i*80}/></div>)}
   {scene==='invent'?[[830,355],[1150,300],[1440,280]].map(([x,w],index)=><MagicGoggles key={x} ms={ms} x={x} w={w} index={index} flip={index>0}/>):<>
-   <Actor x={830} y={585+cue.y*.5+bop.y} w={355} pose={cue.pose==='standing'?'singing':cue.pose} angle={cue.rotation+bop.rotation} goggles={gogglesAt(ms)==='worn'}/>
-   <Actor x={1150} w={300} role="organizer" pose="standing"/><Actor x={1440} w={280} role="courier" pose="walking"/>
+   {scene==='village'?<MagicGoggles ms={ms} x={830} w={355} index={0}/>:<Actor x={830} y={585+cue.y*.5+bop.y} w={355} pose={cue.pose==='standing'?'singing':cue.pose} angle={cue.rotation+bop.rotation} goggles={gogglesAt(ms)==='worn'}/>}
+   {scene==='village'?<><MagicGoggles ms={ms} x={1150} w={300} index={1} flip/><MagicGoggles ms={ms} x={1440} w={280} index={2} flip/></>:<><Actor x={1150} w={300} role="organizer" pose="standing"/><Actor x={1440} w={280} role="courier" pose="walking"/></>}
   </>}
   {scene==='mailbox'&&<Card x={1020} y={390} w={230} h={165} color="#cfae83"><Tag x={20} y={40}>mailbox</Tag></Card>}
   {scene==='villageLife'&&[0,1,2].map(i=><Card key={i} x={1040+i*45} y={430} w={30} h={35} color={i===2?'#d2a6af':'#b2c9c1'}/>)}

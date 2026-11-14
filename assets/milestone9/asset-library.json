@@ -316,6 +316,31 @@
       "provenanceRecord": "assets/milestone5/manifest.json"
     },
     {
+      "file": "public/milestone5/ochre-quilt-v1.png",
+      "roles": "reused textile stock for veranda rug cleaning and draping",
+      "resolution": [
+        1974,
+        1087
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        160,
+        199,
+        1813,
+        887
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0.3,
+      "sha256": "e321c2dc5af891e319d3de17aaf073ab3939746a41bdd40e341df5dd3d1714bd",
+      "provenanceRecord": "assets/milestone5/manifest.json"
+    },
+    {
       "file": "public/milestone5-2/hill-a-v1.png",
       "roles": "distant crayon hill",
       "resolution": [

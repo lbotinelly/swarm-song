@@ -5,9 +5,10 @@ import {execFileSync} from 'node:child_process';
 const dir='assets/milestone9/review';
 await mkdir(dir,{recursive:true});await mkdir('output/milestone9',{recursive:true});
 const serveUrl=await bundle({entryPoint:'scripts/playset-stage.tsx'});
-const specs=[['Playset','living-town',55,[0,120,240,359]],['Blossom','blossom',83,[0,60,75,105,125,180,225]],['Captions','captions',55,[120,240]],['Wind','wind',null,[0,120,300,390]],['Vent','vent',null,[0,49,50,51,55,65,80,95,120,165,195,205,230,269]],['RegistryM9','registry',23,[0,53,66,87,108,164,180,195,225]],['InheritanceM9','inheritance',null,[0,108]]];
+const specs=[['Playset','living-town',55,[0,72,120,195,240,270,315,359]],['Blossom','blossom',83,[0,60,75,105,125,180,225]],['Captions','captions',55,[120,240]],['Wind','wind',null,[0,120,300,390]],['Vent','vent',null,[0,49,50,51,55,65,80,95,120,165,195,205,230,269]],['RegistryM9','registry',23,[0,53,66,87,108,164,180,195,225]],['InheritanceM9','inheritance',null,[0,108]]];
 specs.push(['BushLayers','bush-layers',null,[120]]);
-specs.push(['GoggleCraft','goggle-magic',42,[0,21,26,31,36,41,49,57,70,80,86,87,90,120,180,300,389]]);
+specs.push(['CrowdIndividuality','crowd-individuality',90,[0,6,24,45,69,90,120,150,210,225,239]]);
+specs.push(['GoggleCraft','goggle-magic',42,[0,21,26,31,36,41,49,57,70,80,86,87,90,120,134,135,162,180,212,230,243,270,300,345,389]]);
 specs.push(['GoggleContinuity','goggle-continuity',null,[720,1350,2550,3000,3900,4950,6420]]);
 const only=process.argv.find(a=>a.startsWith('--only='))?.split('=')[1];
 for(const [id,name,start,frames] of specs){

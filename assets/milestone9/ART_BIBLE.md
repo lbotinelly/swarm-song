@@ -24,6 +24,10 @@ Leo's follow-up makes the bush the first composite artifact: vegetation base →
 
 ## Motion grammar
 
+**Every resident has an intention and a next action.** The courier delivers a letter and continues without it; the veranda resident shakes and drapes a rug made from the existing ochre quilt stock; the banner helper inspects the raised flag and departs. The crafting friends acknowledge one another, celebrate and walk together across the next shot. Use meaningful pauses and subordinate gestures, not universal idle loops. See `docs/ENSEMBLE_STAGING.md` for the whole-film checklist.
+
+**Crowd individuality:** vary base pace by a few percent, add smooth bounded pace changes, and derive each gait from distance travelled with a distinct phase. The objector's near trio keeps bounded relative spacing and settles into a true listening stop while rear traffic continues. Evaluate motion directly from master time; no frame-state simulation or random jitter.
+
 **Held props and facing:** tools render above body artwork and die-cut borders. Mirror the complete foot-relative character group, including tools, emotes, goggles and trajectories; never flip just the bitmap while leaving anchors in world coordinates. SH010's right two friends face the lead. Give each a separate completion beat (44.0/44.6/44.9s), rather than synchronized assembly.
 
 **SH010 magic crafting:** a child's pretend tool makes the finished object appear. Friends hold the existing watercolor wrenches, flick them with a small anticipation, and release staggered paper-smoke pops. Each complete pair of goggles follows a short arc to a waiting paw, holds for a readable catch, then lifts to the forehead. No schematic lens assembly. Reuse the approved tool, dust, goggles, cheer pose and measured attachment points; keep the44.9s settled-wearing cue and all subsequent continuity.

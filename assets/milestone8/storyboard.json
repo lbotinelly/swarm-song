@@ -890,9 +890,9 @@
       "scene": "village",
       "title": "Beautiful, dumb, loud",
       "world": "imagined",
-      "aRoll": "Agent407 wears the newly invented goggles; friends sing.",
+      "aRoll": "Agent407 sings in the new goggles. The friends acknowledge each other, share raised-paw bops, then walk together carrying their tools; their action continues from the crafting shot.",
       "bRoll": "Crayon village unfolds; physical homes stay inset.",
-      "characterPerformance": "Agent407 wears the newly invented goggles; friends sing.",
+      "characterPerformance": "Agent407 sings in the new goggles. The friends acknowledge each other, share raised-paw bops, then walk together carrying their tools; their action continues from the crafting shot.",
       "backgroundPerformance": "Crayon village unfolds; physical homes stay inset.",
       "camera": "Wide with generous upper-story negative space.",
       "layers": [

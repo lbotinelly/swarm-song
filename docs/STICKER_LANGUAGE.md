@@ -12,6 +12,9 @@ The important unification is **placement + timing = performance**. A beautiful i
 
 ## Character performance
 
+- **Ensemble life continues after the main cue.** Track each visible friend's attention, current action and next action. A completed task can lead to a glance, shared celebration or walk with another agent. Use intentional pauses, individual timing and shared responses; avoid a frozen supporting cast or constant decorative movement. Whole-character pose swaps, foot-pivot bops and existing attachment groups remain the preferred tools.
+- **Running groups contain individuals.** Vary comfortable pace, smooth accelerations and step phase; derive gait from travel so it follows speed changes. Retain readable group destinations, safe spacing and authored stops. Use direct-seekable motion, not random per-frame perturbations.
+
 - Base agents are original **non-human, very cute, expressive, flat 2D chibi sticker creatures**. The current leading visual reference is a small cream bunny-like mechanic with generous ears, rosy cheeks and a charming minimalist face. This is a promising *direction*, not yet a locked canonical species or design.
 - Separate the base character from modular **wearables, hand-held tools, and emote stickers**. The goggles, wrench, clothing, and yellow action rays seen on the reference mechanic can all become independently renderable assets.
 - Name local attachment anchors such as **head, ear/upper-head emote, face/mouth, left hand, right hand, chest, back, and foot pivot**. An attached sticker inherits the parent's placement/rotation while retaining its own animation.

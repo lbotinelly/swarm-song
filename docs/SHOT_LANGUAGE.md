@@ -62,6 +62,8 @@ This is the **first static visual-language keyframe** and later a short animatio
 
 ## Narrative editing guardrails
 
+- **Every visible agent has an ongoing intention.** For each shot, describe what each agent is doing before, during and after their featured cue, who they attend to, and what they do next. Supporting agents may listen, react, bop together, celebrate, work or walk somewhere; finishing an A-roll cue must not leave them as forgotten statues. Stillness can communicate attention or feeling. Keep secondary gestures smaller and less frequent than the lead, and preserve their action and props across cuts. Do not replace purposeful staging with indiscriminate idle loops.
+
 - **Goggle invention performance:** tools, a magical smoke pop, goggles flying into the friends' waiting paws, a catch hold, then wearing. This child-imagined action replaces the rejected schematic lens/strap assembly. All first-generation agents keep their goggles afterward.
 
 - **The frame as a whole can interpret a lyric; the protagonist need not literalize it.**

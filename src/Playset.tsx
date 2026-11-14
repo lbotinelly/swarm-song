@@ -25,6 +25,17 @@ function Dust({ms,at,x,y,w=360}:{ms:number;at:number;x:number;y:number;w?:number
  const p=(ms-at)/700;if(p<0||p>=1)return null;const k=w/805;
  return <div style={{...abs,left:x,top:y,opacity:smooth(p*7)*(1-smooth((p-.4)/.6)),transform:`scale(${.8+.35*p})`,transformOrigin:'50% 70%'}}><Img src={staticFile('nightshift/stickers/dust-puff-v1.png')} style={{...abs,left:-484*k,top:-374*k,width:1736*k}}/></div>;
 }
+// A bounded household task: shake the rug, drape it, then inspect the result.
+function BalconyChore({ms}:{ms:number}){
+ const shake=[1800,3900,6100].reduce((sum,at)=>{const p=(ms-at)/850;return sum+(p>0&&p<1?Math.sin(p*Math.PI*4)*Math.sin(p*Math.PI):0);},0);
+ const drape=smooth((ms-7900)/1000),inspect=smooth((ms-9300)/700);
+ return <>
+  <Bunny x={720+6*inspect} y={729+shake*2} pose={inspect>.5?'standing':'cheer'} angle={shake*2-4*inspect} size={.065}/>
+  <Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>
+  <Piece part="quilt" x={715-18*drape} y={703+18*drape+shake*2*(1-drape)} w={23+18*drape} h={39-12*drape} style={{transform:`rotate(${shake*7*(1-drape)}deg)`,transformOrigin:'50% 0',filter:'drop-shadow(1px 2px 1px #695c4430)'}}/>
+  {[1800,3900,6100].map(at=><Dust key={at} ms={ms} at={at+180} x={721} y={752} w={24}/>)}
+ </>;
+}
 export function LivingBush({x,y,w,ms,exploded=false,wind=windAt}:{x:number;y:number;w:number;ms:number;exploded?:boolean;wind?:WindSampler}){
  const h=w*572/2070;
  return <div style={{...abs,left:x,top:y-h,width:w,height:h}}>
@@ -40,7 +51,8 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
  const richAt=(at:number)=>!blossom||ms>=at;
  const travel=blossom?0:130*smooth(ms/10000),t=ms/1000;
  const cottage=richAt(2300),workshop=richAt(3300),fort=richAt(3900),forest=richAt(5800),sky=richAt(6500);
- const courier=730+230*smooth((ms-1200)/4300),delivery=smooth((ms-5600)/900);
+ const departure=smooth((ms-7200)/4200),courier=730+230*smooth((ms-1200)/4300)+300*departure,delivery=smooth((ms-5600)/900);
+ const delivering=ms>=5500&&ms<7200,flagCheck=smooth((ms-6500)/1000),flagLeave=smooth((ms-9000)/3000);
  return <AbsoluteFill style={{background:'#eee5d3',overflow:'hidden'}}>
   <Piece part="wall" x={-30} y={-25} w={1980} h={1130}/>
   <div style={{...abs,left:0,top:0,width:1920,height:1080,overflow:'hidden',transform:captions?'translate(268px,0) scale(.72)':'none',transformOrigin:'0 0'}}>
@@ -66,15 +78,14 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
      {/* Smoke feeds upward through a fixed channel behind the chimney lip. */}
      <div style={{...abs,left:520,top:340,width:80,height:175,overflow:'hidden'}}><Cut id="smoke-v1" x={8*windResponse(ms,1.4,450)} y={-5-8*Math.sin(t*.55)} w={62} angle={-5*windResponse(ms,1.4,450)}/></div>
      <Card x={523} y={508} w={52} h={10} color="#d6bc8f"/>
-     <Bunny x={720} y={729} pose="cheer" angle={3*Math.sin(t*1.7)} size={.065}/>
-     <Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>
+     <BalconyChore ms={ms}/>
     </>}
-    {/* Delivery, balcony greeting and banner raising overlap but stay subordinate. */}
-    <Bunny x={courier} y={838} pose={ms<5500?'walking':'standing'} angle={ms<5500?3*Math.sin(t*6):0} size={.09}/>
-    <Img src={staticFile('accessories/envelope-v1.png')} style={{...abs,left:courier+15+delivery*35,top:790-delivery*9,width:42,transform:`rotate(${-8+16*delivery}deg)`}}/>
+    {/* Each resident has a task and a next action, not an endless idle loop. */}
+    <Bunny x={courier} y={838+27*departure} pose={delivering?'standing':'walking'} angle={delivering?0:3*Math.sin(t*6)} size={.09}/>
+    <Img src={staticFile('accessories/envelope-v1.png')} style={{...abs,left:(ms>=6500?960:courier)+15+delivery*35,top:790-delivery*9,width:42,transform:`rotate(${-8+16*delivery}deg)`}}/>
     {workshop&&<><Card x={1015} y={790} w={14} h={58} color="#b5905e"/><Card x={995} y={766} w={58} h={39} color="#b9c8be"/></>}
     {forest&&<>
-     <Bunny x={1435} y={805} pose="cheer" size={.095}/>
+     <Bunny x={1435-45*flagCheck-120*flagLeave} y={805+20*flagCheck+25*flagLeave} pose={ms<6500?'cheer':ms<9000?'standing':'walking'} angle={ms<6500?0:ms<9000?-5*flagCheck:3*Math.sin(t*6)} size={.095}/>
      <Card x={1475} y={623} w={8} h={181} color="#af8d60"/>
      <div style={{...abs,left:1483,top:690-60*smooth((ms-1600)/4500),width:100,height:61,transform:`rotate(${-7*windResponse(ms,.8,100)}deg)`,transformOrigin:'0 0',clipPath:'polygon(0 0,100% 7%,85% 50%,100% 95%,0 100%)'}}><Piece part="wall" w={100} h={61}/><AbsoluteFill style={{background:'#b3c9cb',mixBlendMode:'multiply'}}/></div>
     </>}
