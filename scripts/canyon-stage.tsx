@@ -1,0 +1,3 @@
+import {Composition,registerRoot} from 'remotion';
+import {CanyonOpening,CanyonRoomPlate} from '../src/CanyonOpening';
+registerRoot(()=> <><Composition id="Canyon" component={CanyonOpening} durationInFrames={600} fps={30} width={1920} height={1080}/><Composition id="Room" component={CanyonRoomPlate} durationInFrames={1} fps={30} width={1920} height={1080}/></>);

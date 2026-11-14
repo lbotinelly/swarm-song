@@ -19,7 +19,7 @@ export function openingCamera(ms:number){
   cutaway:ramp(ms,9600,10500),enter};
 }
 export function Cushion(){return image('milestone11/cushion-v2.png',1038,375,650);}
-function Resident({ms,neighbor=0}:{ms:number;neighbor?:number}){
+export function Resident({ms,neighbor=0}:{ms:number;neighbor?:number}){
  const wake=neighbor===0?ramp(ms,13000,14400):0;
  const breathe=Math.sin(ms/850+neighbor*1.7)*.006*(1-wake);
  const stand=ms>=13900&&neighbor===0;

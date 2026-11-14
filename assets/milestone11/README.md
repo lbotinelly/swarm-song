@@ -2,6 +2,8 @@
 
 Focused opening candidate, original master clock. Previous M10 films remain untouched.
 
+**Current candidate:** Leo selected C and authorized the full-screen street-canyon / sliding-shroud proof. See `canyon-proof/README.md` and `canyon-proof/review/canyon-opening-20s.mp4`. The V2 city below was rejected as underwhelming; its score is historical, not approval.
+
 Open `review-v2/index.html` for four soundtrack-equipped review versions. V1 remains intact under `review-v1/` (source at commit `017cef2`).
 
 - `opening.mp4`: exact 0–13s, 390 frames, main candidate.
