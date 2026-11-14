@@ -6,6 +6,8 @@ Eight new native masters support the priority kit: cloud bank, sun, trees, garde
 
 ## Focused proofs
 
+**Latest performance corrections:** wrenches render in front of the bunny artwork and white sticker borders. The two friends on the right face the lead through a complete local-group flip: body, attachment points, tool rotation, smoke and goggle flight mirror together around the foot pivot. Pops occur at42.35/43.0/43.3s; each friend catches and dons separately, finishing at44.0/44.6/44.9s. [Previous tool-layer/timing version](review/goggle-magic-v1.mp4) is preserved for comparison.
+
 - **Latest revised crafting candidate:** [Magic tools: pop, catch, wear](review/goggle-magic.mp4). Three friends use the existing watercolor wrench; small paper-smoke bursts produce complete goggles, which arc to their waiting paws, hold briefly, then settle on their foreheads by44.9s. The13s excerpt retains master42–55s and protected captions. Leo rejected the earlier lens/strap assembly; `goggle-craft.mp4` remains archived for comparison. This is a new performance candidate using the existing rough scene staging.
 
 - Hero still and 12s living town, actual master55–67s: differential parallax, cloud drift, balcony greeting, delivery, banner raising and smoke.

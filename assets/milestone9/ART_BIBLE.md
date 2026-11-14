@@ -24,6 +24,8 @@ Leo's follow-up makes the bush the first composite artifact: vegetation base →
 
 ## Motion grammar
 
+**Held props and facing:** tools render above body artwork and die-cut borders. Mirror the complete foot-relative character group, including tools, emotes, goggles and trajectories; never flip just the bitmap while leaving anchors in world coordinates. SH010's right two friends face the lead. Give each a separate completion beat (44.0/44.6/44.9s), rather than synchronized assembly.
+
 **SH010 magic crafting:** a child's pretend tool makes the finished object appear. Friends hold the existing watercolor wrenches, flick them with a small anticipation, and release staggered paper-smoke pops. Each complete pair of goggles follows a short arc to a waiting paw, holds for a readable catch, then lifts to the forehead. No schematic lens assembly. Reuse the approved tool, dust, goggles, cheer pose and measured attachment points; keep the44.9s settled-wearing cue and all subsequent continuity.
 
 **First-generation costume continuity:** all agents craft their goggles during “We are the swarm now / Beautiful, dumb, and loud” and wear them thereafter, including background happenings and the final memory chorus. Reuse the approved loose prop on measured head anchors; no new body art. The already-authored44.9s completed-donning cue remains within that lyric scene. Agent407's later explicit inheritance set-down and the second generation's later choice stay intact. Old optional-uniform text is superseded.

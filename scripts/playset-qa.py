@@ -94,7 +94,7 @@ if (D/'goggle-continuity-6420.png').exists():
  sheet('goggle-craft.jpg',[(f'goggle-craft-{f}.png',f'Master {42+f/30:.1f}s') for f in [0,45,75,90,180,300]])
 # Light/dark isolated review at useful scale; never used as a source asset.
 if (D/'goggle-magic-120.png').exists():
- sheet('goggle-magic.jpg',[(f'goggle-magic-{f}.png',label) for f,label in [(0,'Tools ready'),(26,'Magic pops from wrench'),(36,'Airborne goggles'),(57,'Catch and hold'),(80,'Put them on'),(87,'All wearing / 44.9s')]])
+ sheet('goggle-magic.jpg',[(f'goggle-magic-{f}.png',label) for f,label in [(0,'Tools in front / friends face the lead'),(21,'Lead goes first'),(36,'Friends follow at their own pace'),(57,'Separate catches and lifts'),(70,'Lead wearing / friends still finishing'),(87,'All wearing by 44.9s')]])
 out=Image.new('RGB',(1920,370*((len(assets)+1)//2)),'#eee5d3');dr=ImageDraw.Draw(out)
 for i,a in enumerate(assets):
  x=i%2*960;y=i//2*370;dr.rectangle((x+480,y,x+959,y+330),fill='#202d32')
@@ -110,6 +110,7 @@ for name,title,desc in films:
  poster={'blossom':225,'registry':180,'vent':65,'goggle-craft':180}.get(name,120)
  html+=f'<section><h2>{title}</h2><p>{desc}</p><video controls preload="metadata" poster="{name}-{poster}.png" src="{name}.mp4"></video></section>'
 html+='<section><h2>One reusable object, three layer roles</h2><img src="bush-layers-120.png"></section>'
+html+='<p><a href="goggle-magic-v1.mp4">Previous magic-tool layering (before foreground correction)</a></p>'
 html+='<section><h2>Captions stay readable</h2><img src="captions-120.png"></section>'
 for name in ['goggle-magic','vent-stages','blossom-stages','registry-stages','wind-stages','goggle-craft','goggle-continuity','asset-sheet']:html+=f'<section><h2>{name.replace("-"," ")}</h2><a href="{name}.jpg"><img src="{name}.jpg"></a></section>'
 html+='<p>Stills, decoded-frame checks and technical QA do not establish human audiovisual approval. Previous film versions remain unchanged.</p>'

@@ -20,10 +20,10 @@ function Tag({children,x=0,y=0,size=27,color=ink}:{children:ReactNode;x?:number;
 function Card({x,y,w,h,color=paper,turn=0,children}:{x:number;y:number;w:number;h:number;color?:string;turn?:number;children?:ReactNode}){return <div style={{...abs,left:x,top:y,width:w,height:h,background:color,border:'3px solid #a28a6955',boxShadow:'3px 5px 0 #6d573325',transform:`rotate(${turn}deg)`,clipPath:'polygon(0 1%,99% 0,100% 99%,1% 100%)'}}>{children}</div>;}
 function Goggles({x,y,w=145,turn=-6,opacity=1}:{x:number;y:number;w?:number;turn?:number;opacity?:number}){return img('accessories/goggles-v1.png',x-w/2,y-w*.275,w,{transform:`rotate(${turn}deg)`,opacity});}
 function headMount(x:number,y:number,w:number,pose:keyof typeof agent407){const [dx,dy]=attachmentPoint(agent407[pose],'head',w/1400);return {x:x+dx,y:y+dy+w*.036,w:w*.45};}
-function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,shrug=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;shrug?:boolean}){
+function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,shrug=false,flip=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;shrug?:boolean;flip?:boolean}){
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=frame*1000/fps,wears=goggles??firstGenerationGoggles(ms,ms>=208000);
  const s=agent407[pose],scale=w/s.width,[hx,hy]=attachmentPoint(s,'head',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);
- return <div style={{...abs,left:x,top:y,transform:`rotate(${angle}deg)`,transformOrigin:'0 0',opacity,filter:'drop-shadow(2px 4px 1px #57442d30)'}}>
+ return <div style={{...abs,left:x,top:y,transform:`scaleX(${flip?-1:1}) rotate(${angle}deg)`,transformOrigin:'0 0',opacity,filter:'drop-shadow(2px 4px 1px #57442d30)'}}>
   {img(s.src,-s.anchors.footPivot[0]*scale,-s.anchors.footPivot[1]*scale,w)}
   {wears&&<WornGoggles pose={pose} scale={scale}/>}
   {role==='courier'&&img('accessories/envelope-v1.png',rx-30,ry-25,w*.22,{transform:'rotate(12deg)'})}
@@ -135,29 +135,32 @@ function Room({ms,second=false,scene}:{ms:number;second?:boolean;scene:string}){
 }
 // SH010: reuse approved wrench, goggles and dust with authored transforms.
 // One local group keeps the tool, catch and forehead mount attached during bops.
-function MagicGoggles({ms,x,w,index}:{ms:number;x:number;w:number;index:number}){
+function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;index:number;flip?:boolean}){
  const pose='cheer',scale=w/1400,s=agent407[pose];
  const [lx,ly]=attachmentPoint(s,'leftHand',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);
- const mount=headMount(0,0,w,pose),pop=42700+index*130,catchAt=pop+650;
+ const mount=headMount(0,0,w,pose);
+ const [pop,catchAt,liftAt,wearAt]=[[42350,42950,43300,44000],[43000,43650,44000,44600],[43300,43950,44300,44900]][index];
  const windup=ramp(ms,pop-450,pop-100),release=ramp(ms,pop-100,pop+100);
  const turn=-65-18*windup+18*release,rad=turn*Math.PI/180;
  const toolW=w*.45,unit=toolW/1536,dx=-330*unit,dy=-550*unit;
  const tip={x:lx+dx*Math.cos(rad)-dy*Math.sin(rad),y:ly+dx*Math.sin(rad)+dy*Math.cos(rad)};
- const flight=Math.max(0,Math.min(1,(ms-pop)/650)),lift=ramp(ms,44050,44900);
+ const flight=Math.max(0,Math.min(1,(ms-pop)/(catchAt-pop))),lift=ramp(ms,liftAt,wearAt);
  const gx=tip.x+(rx-tip.x)*flight,gy=tip.y+(ry-tip.y)*flight-95*Math.sin(Math.PI*flight);
  const caught=ms>=catchAt,settle=caught?6*Math.sin(Math.PI*ramp(ms,catchAt,catchAt+180)):0;
  const hop=-9*Math.sin(Math.PI*ramp(ms,pop-130,pop+350));
- return <div style={{...abs,left:x,top:585+hop}}>
-  {/* The handle sits behind the existing paw; no replacement anatomy. */}
+ // Mirror the whole local scenelet once: body, paws, props, rays and flight.
+ // World placement stays fixed; local rotations and trajectories mirror with it.
+ return <div style={{...abs,left:x,top:585+hop,transform:`scaleX(${flip?-1:1})`,transformOrigin:'0 0'}}>
+  <Actor x={0} y={0} w={w} pose={pose} goggles={ms>=wearAt}/>
+  {/* Held tools sit above both the character art and its die-cut border. */}
   <div style={{...abs,left:lx,top:ly,transform:`rotate(${turn}deg)`,transformOrigin:'0 0'}}>
    {img('accessories/wrench-v1.png',-900*unit,-950*unit,toolW)}
   </div>
-  <Actor x={0} y={0} w={w} pose={pose} goggles={ms>=44900}/>
   <ImaginationDust ms={ms} at={pop-50} x={tip.x-30} y={tip.y-28} w={60}/>
   {within(ms,pop,pop+430)&&<svg width="140" height="140" viewBox="-70 -70 140 140" style={{...abs,left:tip.x-70,top:tip.y-70,opacity:1-ramp(ms,pop+140,pop+430),transform:`scale(${.65+.5*ramp(ms,pop,pop+350)})`}}>
    {[0,72,144,216,288].map(a=><path key={a} d="M0 -37 L0 -51" stroke="#e9bd62" strokeWidth="6" strokeLinecap="round" transform={`rotate(${a})`}/>)}
   </svg>}
-  {within(ms,pop,44900)&&<Goggles x={gx+(mount.x-gx)*lift} y={gy+settle+(mount.y-gy-settle)*lift} w={mount.w*(1+.14*Math.sin(Math.PI*ramp(ms,pop,pop+200)))} turn={caught?s.mountDegrees.head*lift:-22*Math.sin(Math.PI*flight)}/>}
+  {within(ms,pop,wearAt)&&<Goggles x={gx+(mount.x-gx)*lift} y={gy+settle+(mount.y-gy-settle)*lift} w={mount.w*(1+.14*Math.sin(Math.PI*ramp(ms,pop,pop+200)))} turn={caught?s.mountDegrees.head*lift:-22*Math.sin(Math.PI*flight)}/>}
  </div>;
 }
 function Community({ms,scene}:{ms:number;scene:string}){
@@ -165,7 +168,7 @@ function Community({ms,scene}:{ms:number;scene:string}){
  return <><World ms={ms}/>
   {['chorus1','villageLife'].includes(scene)&&<Crowd ms={ms} y={490} scale={.8} start={scene==='running1'?67060:55000}/>}
   {scene==='running1'&&[67060,67940,68780,69860].map((start,i)=><div key={start} style={{opacity:ms>=start?1:0}}><Crowd ms={ms} start={start} count={i+2} y={430+i*30} scale={.55+i*.06} speed={600+i*80}/></div>)}
-  {scene==='invent'?[[830,355],[1150,300],[1440,280]].map(([x,w],index)=><MagicGoggles key={x} ms={ms} x={x} w={w} index={index}/>):<>
+  {scene==='invent'?[[830,355],[1150,300],[1440,280]].map(([x,w],index)=><MagicGoggles key={x} ms={ms} x={x} w={w} index={index} flip={index>0}/>):<>
    <Actor x={830} y={585+cue.y*.5+bop.y} w={355} pose={cue.pose==='standing'?'singing':cue.pose} angle={cue.rotation+bop.rotation} goggles={gogglesAt(ms)==='worn'}/>
    <Actor x={1150} w={300} role="organizer" pose="standing"/><Actor x={1440} w={280} role="courier" pose="walking"/>
   </>}
