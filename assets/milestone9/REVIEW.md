@@ -1,5 +1,15 @@
 # Independent art review and measured QA
 
+## Director rejection and revised magic-tool candidate
+
+Leo rejected the original crafting performance as low quality despite the earlier bounded critic check below. That check only established continuity and a lack of mounting snaps; it did not establish a satisfying crafting idea. The old assembly clip is explicitly superseded, preserved for comparison, and must not be treated as approved animation.
+
+The new `goggle-magic.mp4` uses the approved watercolor wrench, dust puff, goggles and cheer pose. Each friend holds a tool, anticipates a flick, produces goggles with a small smoke-and-rays pop, catches the short arc in the other paw, holds, then wears the pair. The three pops are staggered130ms; catch flights last650ms; all pairs finish on the unchanged44.9s forehead cue. The source is a small SH010-specific transform sequence using existing helpers, not a new animation or physics system. Full body and prop masters, protected song inputs, old films and inheritance chronology are preserved.
+
+Implementer inspection caught hidden wrench heads in the first pass; tools now point outward so the source of each pop is visible. Smoke is smaller to protect faces. The surrounding M8 set and fixed cheer-pose hands remain economical rough staging; this is a revised performance candidate for Leo's playback review.
+
+Validation for this revision: TypeScript and34existing tests pass; render QA verifies390frames at1920×1080/30fps, original42–55s audio correlation0.9999567 without lag correction, preserved master assets and valid gallery links. Implementer inspected the stage contact sheet and a catch frame decoded from the final MP4. The independent critic was requested but returned no verdict before being stopped; **no independent visual pass or new score is claimed for this revision**. The previous scores below do not approve this new performance. Continuous audiovisual review remains pending.
+
 The independent read-only critic was separate from the implementing agent. No scores are attributed to Leo; final human playback approval remains pending.
 
 ## Batch checkpoint

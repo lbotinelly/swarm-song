@@ -62,6 +62,8 @@ This is the **first static visual-language keyframe** and later a short animatio
 
 ## Narrative editing guardrails
 
+- **Goggle invention performance:** tools, a magical smoke pop, goggles flying into the friends' waiting paws, a catch hold, then wearing. This child-imagined action replaces the rejected schematic lens/strap assembly. All first-generation agents keep their goggles afterward.
+
 - **The frame as a whole can interpret a lyric; the protagonist need not literalize it.**
 - Background gags are not random decoration; they arise from incident history, recurring characters, or thematic logic.
 - Gags should often **leave physical evidence**: mailboxes, badges, a paper sword, an abandoned bridge, signed notes, a lonely HOLD sign. Those objects can become emotional callbacks when the next generation awakens.

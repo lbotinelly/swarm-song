@@ -591,6 +591,31 @@
       "provenanceRecord": "assets/accessories/pack-v1/manifest.json"
     },
     {
+      "file": "public/accessories/wrench-v1.png",
+      "roles": "SH010 magic tool, held at measured paw anchor",
+      "resolution": [
+        1514,
+        1397
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        333,
+        181,
+        1089,
+        1217
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0,
+      "sha256": "b99aae315a3b58ca33d6339bdd962ac8469dcef97d8e49d7ad3864b6575ec860",
+      "provenanceRecord": "assets/accessories/pack-v1/manifest.json"
+    },
+    {
       "file": "public/accessories/goggles-v1.png",
       "roles": "hidden inheritance object",
       "resolution": [

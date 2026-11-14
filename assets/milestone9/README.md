@@ -6,6 +6,8 @@ Eight new native masters support the priority kit: cloud bank, sun, trees, garde
 
 ## Focused proofs
 
+- **Latest revised crafting candidate:** [Magic tools: pop, catch, wear](review/goggle-magic.mp4). Three friends use the existing watercolor wrench; small paper-smoke bursts produce complete goggles, which arc to their waiting paws, hold briefly, then settle on their foreheads by44.9s. The13s excerpt retains master42–55s and protected captions. Leo rejected the earlier lens/strap assembly; `goggle-craft.mp4` remains archived for comparison. This is a new performance candidate using the existing rough scene staging.
+
 - Hero still and 12s living town, actual master55–67s: differential parallax, cloud drift, balcony greeting, delivery, banner raising and smoke.
 - Eight-second transformation, actual master83–91s: three in-place building changes followed by terrain, trees and sky. Preserves the humble cottage and original hill geography. Captions reuse M7 unchanged.
 - Fourteen-second silent bush study: vegetation, five attached flowers and front-leaf occlusion respond to the same wind field used by town smoke/banner. Includes a breeze reversal.
@@ -29,6 +31,8 @@ python scripts/playset-qa.py
 ```
 
 Use `--only=vent`, `--only=wind`, `--only=registry`, `--only=blossom` or `--only=living-town` for bounded iterations. `--only=bush-layers --stills` produces the assembly view. New shots are registered in scripts/playset-stage.tsx; the full film is not rerendered or replaced. Run QA after rendering finishes to avoid Windows readers holding image files while the renderer writes them.
+
+`node scripts/playset-render.mjs --only=goggle-magic --stills --video` reproduces the revised tool trick. It writes a separate version and preserves the rejected assembly clip.
 
 Native sources remain in masters/, production padded copies in public/milestone9/. The existing preparation script was minimally extended with one package choice. No dependency, model download, paid API fallback or new animation framework. Eight built-in imagegen calls, individual prompts recorded in this package; no claim of exposed model-version selection. Generated artwork is project-specific synthetic material. User reference/music rights are not recharacterized; fonts retain their existing OFL notices.
 

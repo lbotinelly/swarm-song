@@ -142,6 +142,13 @@
       "masterStartSeconds": 42,
       "audio": true,
       "decodedAudioCorrelationNoLagCorrection": 0.9999567283058185
+    },
+    "goggle-magic": {
+      "frames": 390,
+      "duration": 13.0,
+      "masterStartSeconds": 42,
+      "audio": true,
+      "decodedAudioCorrelationNoLagCorrection": 0.9999567283058185
     }
   },
   "limitations": [

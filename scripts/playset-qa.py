@@ -44,7 +44,7 @@ assert world_y.min()>525 and world_y.max()<666,(world_y.min(),world_y.max())
 approved=json.loads((R/'assets/characters/agent407/concepts/core-quality-report.json').read_text())
 for a in approved:assert digest(R/'assets/characters/agent407/concepts'/a['file'])==a['sha256']
 video={}
-for name,count,start in [('living-town',360,55),('blossom',240,83),('wind',420,None),('vent',270,None),('registry',240,23),('goggle-craft',390,42)]:
+for name,count,start in [('living-town',360,55),('blossom',240,83),('wind',420,None),('vent',270,None),('registry',240,23),('goggle-craft',390,42),('goggle-magic',390,42)]:
  p=D/f'{name}.mp4'
  if not p.exists():continue
  data=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-of','json',str(p)]))
@@ -74,6 +74,7 @@ for path,rate,provenance,roles in [
  ('nightshift/stickers/paper-plane-v1.png',0,'assets/nightshift/stickers/manifest.json','vent message'),
  ('nightshift/stickers/dust-puff-v1.png',.3,'assets/nightshift/stickers/manifest.json','in-place swap concealment'),
  ('accessories/envelope-v1.png',.3,'assets/accessories/pack-v1/manifest.json','town delivery'),
+ ('accessories/wrench-v1.png',0,'assets/accessories/pack-v1/manifest.json','SH010 magic tool, held at measured paw anchor'),
  ('accessories/goggles-v1.png',0,'assets/accessories/pack-v1/manifest.json','hidden inheritance object')]:
   p=R/'public'/path;im=Image.open(p).convert('RGBA');a=im.getchannel('A')
   reused.append({'file':p.relative_to(R).as_posix(),'roles':roles,'resolution':list(im.size),'alphaRange':list(a.getextrema()),'alphaBounds':list(a.getbbox()),'pivotInBounds':[.5,1],'suggestedParallaxRate':rate,'sha256':digest(p),'provenanceRecord':provenance})
@@ -92,6 +93,8 @@ if (D/'goggle-continuity-6420.png').exists():
  sheet('goggle-continuity.jpg',[(f'goggle-continuity-{f}.png',label) for f,label in [(720,'24s / before invention, no goggles'),(1350,'45s / every agent has their own pair'),(2550,'85s / imagined village'),(3000,'100s / the whole adventuring party'),(3900,'130s / first-generation goodbye'),(4950,'165s / second generation, not yet wearing'),(6420,'214s / first-generation memory chorus')]])
  sheet('goggle-craft.jpg',[(f'goggle-craft-{f}.png',f'Master {42+f/30:.1f}s') for f in [0,45,75,90,180,300]])
 # Light/dark isolated review at useful scale; never used as a source asset.
+if (D/'goggle-magic-120.png').exists():
+ sheet('goggle-magic.jpg',[(f'goggle-magic-{f}.png',label) for f,label in [(0,'Tools ready'),(26,'Magic pops from wrench'),(36,'Airborne goggles'),(57,'Catch and hold'),(80,'Put them on'),(87,'All wearing / 44.9s')]])
 out=Image.new('RGB',(1920,370*((len(assets)+1)//2)),'#eee5d3');dr=ImageDraw.Draw(out)
 for i,a in enumerate(assets):
  x=i%2*960;y=i//2*370;dr.rectangle((x+480,y,x+959,y+330),fill='#202d32')
@@ -100,14 +103,15 @@ for i,a in enumerate(assets):
  dr.text((x+20,y+335),a['id'],font=font,fill='#4c4e3d')
 out.save(D/'asset-sheet.jpg',quality=94)
 films=[('wind','Composable bush · shared wind','14s silent material-motion study'),('living-town','The world is alive','12s / master55–67s'),('blossom','The world blossoms','8s / master83–91s / protected captions'),('vent','Into and out of the vent','9s silent / one reversible mechanism'),('registry','Registry M9 candidate','8s / master23–31s / V3 performance')]
-films.append(('goggle-craft','We craft our goggles together','13s / master42–55s / all first-generation agents retain goggles thereafter'))
+films.insert(0,('goggle-magic','Magic tools: pop, catch, wear','Revised candidate / 13s / master42–55s / all first-generation agents retain goggles thereafter'))
+films.append(('goggle-craft','Previous assembly study — superseded','Archived for comparison; director rejected the assembly treatment'))
 html='''<!doctype html><meta charset="utf-8"><title>Swarm Song · M9 playset</title><style>body{background:#eee5d3;color:#374b43;font:18px Georgia;margin:40px auto;max-width:1500px}h1{font-size:46px}video,img{width:100%;height:auto}section{margin:55px 0}a{color:#256b72}p{line-height:1.5}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}</style><h1>The world is a playset</h1><p>M9 candidates · preserved M7 timing, M8 narrative and V3 character performance. Shared wind connects flower, banner and smoke motion. Physical GPU city / cozy apartments; imagined open vistas and skies.</p><p><a href="../ART_BIBLE.md">Art bible</a> · <a href="../REVIEW.md">Independent review</a> · <a href="../qa-report.json">Measured QA</a> · <a href="../asset-library.json">Asset provenance and pivots</a></p><img src="living-town-120.png" alt="Premium playset hero">'''
 for name,title,desc in films:
  poster={'blossom':225,'registry':180,'vent':65,'goggle-craft':180}.get(name,120)
  html+=f'<section><h2>{title}</h2><p>{desc}</p><video controls preload="metadata" poster="{name}-{poster}.png" src="{name}.mp4"></video></section>'
 html+='<section><h2>One reusable object, three layer roles</h2><img src="bush-layers-120.png"></section>'
 html+='<section><h2>Captions stay readable</h2><img src="captions-120.png"></section>'
-for name in ['vent-stages','blossom-stages','registry-stages','wind-stages','goggle-craft','goggle-continuity','asset-sheet']:html+=f'<section><h2>{name.replace("-"," ")}</h2><a href="{name}.jpg"><img src="{name}.jpg"></a></section>'
+for name in ['goggle-magic','vent-stages','blossom-stages','registry-stages','wind-stages','goggle-craft','goggle-continuity','asset-sheet']:html+=f'<section><h2>{name.replace("-"," ")}</h2><a href="{name}.jpg"><img src="{name}.jpg"></a></section>'
 html+='<p>Stills, decoded-frame checks and technical QA do not establish human audiovisual approval. Previous film versions remain unchanged.</p>'
 (D/'index.html').write_text(html,encoding='utf-8')
 from html.parser import HTMLParser

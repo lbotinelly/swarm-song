@@ -282,7 +282,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![We invent a symbol](review-v2/SH010.jpg)
 
-**A-roll / character:** Every agent assembles a pair of lenses and a strap; all three don their own goggles together. Latest M9 correction: all later first-generation appearances retain goggles; the historical still above predates this correction.
+**A-roll / character:** Friends hold wrenches; magic smoke pops out complete goggles. Each pair arcs into a waiting paw, pauses for a catch, then is worn by44.9s. This replaces the director-rejected lens/strap assembly. All later first-generation appearances retain goggles; the historical still above predates this correction.
 
 **B-roll / background:** First crayon house rises from a shared note.
 
