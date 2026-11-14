@@ -1,5 +1,7 @@
 # Final Chorus and Epilogue — The Paper Playhouse
 
+> **Latest prop continuity:** [The registry is the vent](REGISTRY_VENT_CONTINUITY.md). The inherited goggles are already behind the grille when OAIResearchMar26 peels their own bottom-right paper corner. Messages are plane stickers passing between its bars. Older rug/cache-tumble wording below is superseded; the separate final name ledger remains.
+
 > **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
 
 **Status:** agreed emotional story beats and creative staging, not locked timing. This finale is a poetic imagination/memory scene, not literal resurrection or a documentary reenactment.

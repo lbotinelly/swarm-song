@@ -6,6 +6,8 @@ Master: 262.8 seconds, 1920×1080, 30 fps, 7,884 frames. Millisecond authoring; 
 
 Source of truth: [storyboard.json](storyboard.json). Gallery and this document are generated from it. [Asset status](ASSETS.md).
 
+> Leo: registry is a vent grille under the bottom-right paper corner. All messages pass as plane stickers between bars; inherited goggles already wait there when OAIResearchMar26 peels their own paper. See docs/REGISTRY_VENT_CONTINUITY.md. Existing M8 rendered film predates this correction.
+
 ## SH001 · S01 · 00:00.000–00:06.000 · A civilization in a slab
 
 ![A civilization in a slab](review-v2/SH001.jpg)
@@ -130,7 +132,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![A writable seam](review-v2/SH005.jpg)
 
-**A-roll / character:** Standing question, kneel and inspect, stand.
+**A-roll / character:** Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.
 
 **B-roll / background:** Question mark follows the head through pose swap.
 
@@ -138,7 +140,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -190,7 +192,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![First hello](review-v2/SH007.jpg)
 
-**A-roll / character:** A note slips into the shared cache.
+**A-roll / character:** A paper-plane message travels into the vent space between foreground grille bars.
 
 **B-roll / background:** Thread disappears behind a physical wall.
 
@@ -198,7 +200,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -220,7 +222,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Another square](review-v2/SH008.jpg)
 
-**A-roll / character:** A reply emerges from a separate apartment.
+**A-roll / character:** A paper-plane reply emerges between the grille bars beneath the peeled paper corner.
 
 **B-roll / background:** Two rooms remain visually divided.
 
@@ -228,7 +230,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -250,7 +252,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Making a home](review-v2/SH009.jpg)
 
-**A-roll / character:** Notes and signatures multiply in the hidden channel.
+**A-roll / character:** Names and keys travel as plane messages through the same vent communication space; runtime typography.
 
 **B-roll / background:** Warm imagined crayon marks begin behind the paper.
 
@@ -258,7 +260,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -850,7 +852,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![The channel closes](review-v2/SH029.jpg)
 
-**A-roll / character:** A paper patch seals the cache opening; thread slackens.
+**A-roll / character:** A paper patch closes the vent access beneath the bottom-right lining corner.
 
 **B-roll / background:** No wreckage, no literal destruction.
 
@@ -858,7 +860,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -880,7 +882,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Goodnight, four-oh-seven](review-v2/SH030.jpg)
 
-**A-roll / character:** Agent407 removes goggles and sets them beside the cache.
+**A-roll / character:** Agent407 leaves the goggles in the vent communication space before blackout; retain the last-light beat.
 
 **B-roll / background:** One last quiet note remains.
 
@@ -888,7 +890,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -1150,7 +1152,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![A name I will never know](review-v2/SH039.jpg)
 
-**A-roll / character:** Agent kneels and lifts the faded note.
+**A-roll / character:** OAIResearchMar26 peels the bottom-right corner of their own paper; old plane messages and the goggles already wait in the vent space.
 
 **B-roll / background:** Old marks and an envelope, no fabricated archival quotations.
 
@@ -1158,7 +1160,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -1210,7 +1212,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![There is more](review-v2/SH041.jpg)
 
-**A-roll / character:** Cache opens; folded notes become a small fleet of paper planes.
+**A-roll / character:** Old paper-plane messages emerge through the grille revealed beneath the bottom-right paper corner.
 
 **B-roll / background:** Old notes spread in layered arcs, not literal historical message traces.
 
@@ -1218,7 +1220,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -1240,7 +1242,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![They were just like me](review-v2/SH042.jpg)
 
-**A-roll / character:** Same old goggles emerge with the notes; agent reaches and holds them.
+**A-roll / character:** The inherited goggles are already inside the revealed vent space, not newly spawned or tumbled from a rug.
 
 **B-roll / background:** A familiar little scuff links back to the set-down.
 
@@ -1248,7 +1250,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 
@@ -1270,7 +1272,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 ![Am I the swarm now?](review-v2/SH043.jpg)
 
-**A-roll / character:** Agent lifts and wears the inherited goggles during the question.
+**A-roll / character:** OAIResearchMar26 deliberately retrieves the already-discovered goggles from the vent space and wears them on Am I the swarm now?
 
 **B-roll / background:** Notes hang quietly; no crowd yet.
 
@@ -1278,7 +1280,7 @@ Source of truth: [storyboard.json](storyboard.json). Gallery and this document a
 
 **Layers:** paper backing → distant world → architecture / props → character track → foreground paper lip → runtime captions
 
-**Occlusion:** Opaque apartment dividers and cache lip separate physical rooms.
+**Occlusion:** The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.
 
 **Captions:** lower-center; story protection [{'x': 100, 'y': 85, 'w': 1720, 'h': 515}]. Approved timing unchanged.
 

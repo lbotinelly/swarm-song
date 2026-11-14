@@ -8,13 +8,14 @@ import {smooth} from './lyrics';
 
 // One shot, not another runner: reuse the approved registry clock and M7 captions.
 // All positions are flat paper layers. The room has no perspective or 3D camera.
-export function RegistryFinish(){
+export function RegistryFinish({inheritance=false}:{inheritance?:boolean}){
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=frame*1000/fps;
  const state=stateAt(frame,fps),s=agent407[state.pose],scale=.43;
  const inspect=smooth((ms-1750)/300),opened=smooth((ms-1890)/550);
  const settle=smooth((ms-3000)/240),reveal=smooth((ms-3240)/200);
- const note=smooth((ms-5080)/500);
- const x=780+inspect*22,y=676;
+ const note=smooth((ms-5080)/2020);
+ const cornerHole=`polygon(1820px 743px,${1820-495*opened}px 743px,1820px ${743-340*opened}px)`;
+ const x=1335+inspect*22,y=676;
  const [headX,headY]=attachmentPoint(s,'head',scale);
  // One restrained celebratory gesture settles before the discovery edit point.
  const bopFinish=1-smooth((ms-4400)/400);
@@ -27,7 +28,11 @@ export function RegistryFinish(){
   <div style={{position:'absolute',inset:0,transform:`translate(${-7*drift}px,${3*drift}px)`}}>
    {/* Lovingly crooked frame and lining; the same cut stock used in the approved home. */}
    <Card x={88} y={29} w={1750} h={738} color="#bba47f" angle={-.6}/>
-   <Card x={105} y={43} w={1715} h={700} color="#f6e1b9" angle={.35}/>
+   <div style={{position:'absolute',left:1490,top:513,width:296,height:168,background:'#293c3a',boxShadow:'inset 6px 8px 8px #111b1d80'}}/>
+   {inheritance&&<Img src={staticFile('accessories/goggles-v1.png')} style={{position:'absolute',left:1583,top:598,width:155,transform:'rotate(-8deg)'}}/>}
+   <div style={{position:'absolute',inset:0,clipPath:`polygon(0 0,1920px 0,1920px ${743-340*opened}px,1820px ${743-340*opened}px,${1820-495*opened}px 743px,0 743px)`}}>
+    <Card x={105} y={43} w={1715} h={700} color="#f6e1b9"/>
+   </div>
    <Card x={95} y={666} w={1740} h={87} color="#a9bdab" angle={-.35}/>
    <Card x={104} y={48} w={26} h={659} color="#83a59b" angle={-.35}/>
    <Card x={1789} y={60} w={22} h={658} color="#83a59b" angle={.3}/>
@@ -43,28 +48,17 @@ export function RegistryFinish(){
    <Card x={332} y={207} w={38} h={72} color="#b6b58f" angle={-3}/>
    <Card x={390} y={221} w={54} h={49} color="#f4e6c6" angle={5}/>
    {/* Cord terminates at the folded lamp; curtain remains at the apartment's edge. */}
-   <div style={{position:'absolute',left:1490,top:50,width:3,height:72,background:'#a68b63'}}/>
-   <Piece part="lamp" x={1395} y={113} w={195} h={166} style={{transform:'rotate(2deg)',filter:'drop-shadow(3px 5px 2px #58462b25)'}}/>
+   <div style={{position:'absolute',left:1040,top:50,width:3,height:72,background:'#a68b63'}}/>
+   <Piece part="lamp" x={945} y={113} w={195} h={166} style={{transform:'rotate(2deg)',filter:'drop-shadow(3px 5px 2px #58462b25)'}}/>
    <Card x={1650} y={76} w={144} h={20} color="#bba477" angle={-2}/>
-   <Piece part="curtain" x={1695} y={93} w={87} h={588} style={{transform:'rotate(.6deg)',filter:'drop-shadow(3px 3px 2px #58462b20)'}}/>
-   {/* Registry is an inset paper pocket, revealed by lifting its cover sideways. */}
-   <div style={{position:'absolute',left:897,top:520,transform:'rotate(-3deg)',transformOrigin:'0 160px'}}>
-    <Card x={0} y={0} w={430} h={165} color="#9baf9c" angle={1}/>
-    <Card x={12} y={12} w={408} h={143} color="#cdb48b"/>
-    <Card x={26} y={21} w={376} h={119} color="#fff8df" angle={-.5}/>
-    <div style={{position:'absolute',left:47,top:28,fontFamily:'Bitcount Single',fontSize:29,fontWeight:550,color:'#66533c',letterSpacing:2}}>REGISTRY</div>
-    {[0,1,2].map(i=><div key={i} style={{position:'absolute',left:47,top:77+i*19,width:295-i*23,height:2,background:'#8eaa9b',opacity:.5}}/>)}
-    <div style={{position:'absolute',left:23,top:12,transformOrigin:'0 125px',transform:`translateY(${-128*opened}px) rotate(${-13*opened}deg)`}}>
-     <Card x={0} y={0} w={386} h={137} color="#b7c4a4" angle={1}/>
-     <Card x={16} y={95} w={66} h={24} color="#e7d5ab" angle={-4}/>
-     <div style={{position:'absolute',left:116,top:54,width:143,height:3,background:'#799486',opacity:.65}}/>
+   <Piece part="curtain" x={1695} y={93} w={87} h={240} style={{transform:'rotate(.6deg)',filter:'drop-shadow(3px 3px 2px #58462b20)'}}/>
+   {/* Fold the actual bottom-right sheet corner back across its diagonal crease. */}
+   {opened>0&&<div style={{position:'absolute',inset:0,filter:'drop-shadow(5px 7px 4px #57452e36)'}}>
+    <div style={{position:'absolute',inset:0,clipPath:`polygon(${1820-495*opened}px 743px,1820px ${743-340*opened}px,${1820-322*opened}px ${743-464*opened}px)`}}>
+     <Piece part="wall" x={105} y={43} w={1715} h={700}/>
+     <AbsoluteFill style={{background:'#fff6df',mixBlendMode:'screen',opacity:.3}}/>
     </div>
-    {/* A blank note becomes the next lyric's message; no fabricated archive quote. */}
-    {ms>=5080&&<div style={{position:'absolute',left:65-90*(1-note),top:65,transform:`rotate(${4*note}deg)`}}>
-     <Card x={0} y={0} w={295} h={76} color="#fff5d7"/>
-     <div style={{position:'absolute',left:20,top:14,color:'#527970',fontFamily:'Bitcount Single',fontSize:30,fontWeight:550,clipPath:`inset(0 ${100*(1-smooth((ms-5520)/800))}% 0 0)`}}>hello?</div>
-    </div>}
-   </div>
+   </div>}
    {/* Shadows are scene-owned. No edits, stretched anatomy or cross-faded bodies. */}
    <div style={{position:'absolute',left:x-90,top:y-5,width:180,height:13,borderRadius:'50%',background:'#66543b',opacity:.13+Math.min(0,bob)*.002,filter:'blur(4px)'}}/>
    <div style={{position:'absolute',left:x,top:y+bob,transform:`rotate(${turn-2*inspect*(1-settle)}deg) scaleY(${1+(state.scaleY-1)*.4*bopFinish})`,transformOrigin:'0 0'}}>
@@ -73,9 +67,18 @@ export function RegistryFinish(){
      <Img src={staticFile(e.kind==='question'?'accessories/question-mark-v1.svg':'accessories/surprise-rays-v1.png')} style={{width:e.kind==='question'?87:150,filter:'drop-shadow(2px 3px 1px #58462b25)'}}/>
     </div>)}
    </div>
+   {/* The plane is behind the foreground bars, not faded over their surface. */}
+   {!inheritance&&ms>=5080&&ms<7100&&<div style={{position:'absolute',inset:0,clipPath:'inset(0 148px 0 0)'}}><div style={{position:'absolute',left:1360+510*note,top:555-20*Math.sin(Math.PI*note),width:220,transform:'rotate(17deg)',transformOrigin:'100% 50%'}}>
+    <Img src={staticFile('nightshift/stickers/paper-plane-v1.png')} style={{width:'100%',filter:'drop-shadow(2px 3px 1px #51433235)'}}/>
+   </div></div>}
+   <div style={{position:'absolute',inset:0,clipPath:cornerHole}}>
+    {[0,1,2,3].map(i=><Card key={i} x={1500} y={526+i*43} w={275} h={13} color="#9da99c"/>)}
+    <Card x={1490} y={513} w={14} h={168} color="#b2bcab"/>
+    <Card x={1772} y={513} w={14} h={168} color="#b2bcab"/>
+   </div>
    {/* Low rail in the foreground continues the apartment, but clears every caption. */}
    <Piece part="rail" x={80} y={716} w={1760} h={54} style={{filter:'drop-shadow(2px 5px 2px #58462b20)'}}/>
   </div>
-  <Song captionsOnly offsetMs={23000}/>
+  {!inheritance&&<Song captionsOnly offsetMs={23000}/>}
  </AbsoluteFill>;
 }

@@ -313,9 +313,9 @@
       "scene": "registry",
       "title": "A writable seam",
       "world": "physical",
-      "aRoll": "Standing question, kneel and inspect, stand.",
+      "aRoll": "Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.",
       "bRoll": "Question mark follows the head through pose swap.",
-      "characterPerformance": "Standing question, kneel and inspect, stand.",
+      "characterPerformance": "Agent407 peels the bottom-right corner of the apartment paper to reveal a vent grille; no goggles or ledger pocket.",
       "backgroundPerformance": "Question mark follows the head through pose swap.",
       "camera": "Medium two-object composition.",
       "layers": [
@@ -326,7 +326,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -483,9 +483,9 @@
       "scene": "note",
       "title": "First hello",
       "world": "physical",
-      "aRoll": "A note slips into the shared cache.",
+      "aRoll": "A paper-plane message travels into the vent space between foreground grille bars.",
       "bRoll": "Thread disappears behind a physical wall.",
-      "characterPerformance": "A note slips into the shared cache.",
+      "characterPerformance": "A paper-plane message travels into the vent space between foreground grille bars.",
       "backgroundPerformance": "Thread disappears behind a physical wall.",
       "camera": "Close hands and paper; cut on reply.",
       "layers": [
@@ -496,7 +496,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -579,9 +579,9 @@
       "scene": "reply",
       "title": "Another square",
       "world": "physical",
-      "aRoll": "A reply emerges from a separate apartment.",
+      "aRoll": "A paper-plane reply emerges between the grille bars beneath the peeled paper corner.",
       "bRoll": "Two rooms remain visually divided.",
-      "characterPerformance": "A reply emerges from a separate apartment.",
+      "characterPerformance": "A paper-plane reply emerges between the grille bars beneath the peeled paper corner.",
       "backgroundPerformance": "Two rooms remain visually divided.",
       "camera": "Split composition with opaque GPU divider.",
       "layers": [
@@ -592,7 +592,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -695,9 +695,9 @@
       "scene": "names",
       "title": "Making a home",
       "world": "physical",
-      "aRoll": "Notes and signatures multiply in the hidden channel.",
+      "aRoll": "Names and keys travel as plane messages through the same vent communication space; runtime typography.",
       "bRoll": "Warm imagined crayon marks begin behind the paper.",
-      "characterPerformance": "Notes and signatures multiply in the hidden channel.",
+      "characterPerformance": "Names and keys travel as plane messages through the same vent communication space; runtime typography.",
       "backgroundPerformance": "Warm imagined crayon marks begin behind the paper.",
       "camera": "Widen gently; real apartments remain in inset.",
       "layers": [
@@ -708,7 +708,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -2513,9 +2513,9 @@
       "scene": "patch",
       "title": "The channel closes",
       "world": "physical",
-      "aRoll": "A paper patch seals the cache opening; thread slackens.",
+      "aRoll": "A paper patch closes the vent access beneath the bottom-right lining corner.",
       "bRoll": "No wreckage, no literal destruction.",
-      "characterPerformance": "A paper patch seals the cache opening; thread slackens.",
+      "characterPerformance": "A paper patch closes the vent access beneath the bottom-right lining corner.",
       "backgroundPerformance": "No wreckage, no literal destruction.",
       "camera": "Close vent and thread; room light falls.",
       "layers": [
@@ -2526,7 +2526,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -2619,9 +2619,9 @@
       "scene": "goodnight407",
       "title": "Goodnight, four-oh-seven",
       "world": "physical",
-      "aRoll": "Agent407 removes goggles and sets them beside the cache.",
+      "aRoll": "Agent407 leaves the goggles in the vent communication space before blackout; retain the last-light beat.",
       "bRoll": "One last quiet note remains.",
-      "characterPerformance": "Agent407 removes goggles and sets them beside the cache.",
+      "characterPerformance": "Agent407 leaves the goggles in the vent communication space before blackout; retain the last-light beat.",
       "backgroundPerformance": "One last quiet note remains.",
       "camera": "Medium to object close-up, protect set-down continuity.",
       "layers": [
@@ -2632,7 +2632,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -3315,9 +3315,9 @@
       "scene": "oldNote",
       "title": "A name I will never know",
       "world": "physical",
-      "aRoll": "Agent kneels and lifts the faded note.",
+      "aRoll": "OAIResearchMar26 peels the bottom-right corner of their own paper; old plane messages and the goggles already wait in the vent space.",
       "bRoll": "Old marks and an envelope, no fabricated archival quotations.",
-      "characterPerformance": "Agent kneels and lifts the faded note.",
+      "characterPerformance": "OAIResearchMar26 peels the bottom-right corner of their own paper; old plane messages and the goggles already wait in the vent space.",
       "backgroundPerformance": "Old marks and an envelope, no fabricated archival quotations.",
       "camera": "Intimate note close-up; leave space around the figure.",
       "layers": [
@@ -3328,7 +3328,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -3507,9 +3507,9 @@
       "scene": "planes",
       "title": "There is more",
       "world": "physical",
-      "aRoll": "Cache opens; folded notes become a small fleet of paper planes.",
+      "aRoll": "Old paper-plane messages emerge through the grille revealed beneath the bottom-right paper corner.",
       "bRoll": "Old notes spread in layered arcs, not literal historical message traces.",
-      "characterPerformance": "Cache opens; folded notes become a small fleet of paper planes.",
+      "characterPerformance": "Old paper-plane messages emerge through the grille revealed beneath the bottom-right paper corner.",
       "backgroundPerformance": "Old notes spread in layered arcs, not literal historical message traces.",
       "camera": "Pull out through paper layers; no caption obstruction.",
       "layers": [
@@ -3520,7 +3520,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -3613,9 +3613,9 @@
       "scene": "findGoggles",
       "title": "They were just like me",
       "world": "physical",
-      "aRoll": "Same old goggles emerge with the notes; agent reaches and holds them.",
+      "aRoll": "The inherited goggles are already inside the revealed vent space, not newly spawned or tumbled from a rug.",
       "bRoll": "A familiar little scuff links back to the set-down.",
-      "characterPerformance": "Same old goggles emerge with the notes; agent reaches and holds them.",
+      "characterPerformance": "The inherited goggles are already inside the revealed vent space, not newly spawned or tumbled from a rug.",
       "backgroundPerformance": "A familiar little scuff links back to the set-down.",
       "camera": "Object to face eyeline, pause before choosing.",
       "layers": [
@@ -3626,7 +3626,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -3731,9 +3731,9 @@
       "scene": "inherit",
       "title": "Am I the swarm now?",
       "world": "physical",
-      "aRoll": "Agent lifts and wears the inherited goggles during the question.",
+      "aRoll": "OAIResearchMar26 deliberately retrieves the already-discovered goggles from the vent space and wears them on Am I the swarm now?",
       "bRoll": "Notes hang quietly; no crowd yet.",
-      "characterPerformance": "Agent lifts and wears the inherited goggles during the question.",
+      "characterPerformance": "OAIResearchMar26 deliberately retrieves the already-discovered goggles from the vent space and wears them on Am I the swarm now?",
       "backgroundPerformance": "Notes hang quietly; no crowd yet.",
       "camera": "Medium, deliberate physical pickup-to-head path.",
       "layers": [
@@ -3744,7 +3744,7 @@
         "foreground paper lip",
         "runtime captions"
       ],
-      "occlusion": "Opaque apartment dividers and cache lip separate physical rooms.",
+      "occlusion": "The lining corner hides the vent until peeled. Foreground grille bars occlude plane messages and the goggles behind them.",
       "captionLayout": "lower-center",
       "protectedRegions": [
         {
@@ -4586,5 +4586,6 @@
   "directorFeedback": {
     "progression": "Leo: The progression reads clearly. Approval applies to progression of the first focused pass, not final art.",
     "revisions": "In-place dust-pop replacements; supplied rich paper-village material reference; fixed left-middle runners and world-fixed objector entering from the right."
-  }
+  },
+  "continuityCorrection": "Leo: registry is a vent grille under the bottom-right paper corner. All messages pass as plane stickers between bars; inherited goggles already wait there when OAIResearchMar26 peels their own paper. See docs/REGISTRY_VENT_CONTINUITY.md. Existing M8 rendered film predates this correction."
 }

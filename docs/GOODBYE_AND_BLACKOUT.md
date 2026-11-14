@@ -1,5 +1,7 @@
 # Goodbye / Sleep Instrumental — The Last Light
 
+> **Latest prop continuity:** [The registry is the vent](REGISTRY_VENT_CONTINUITY.md). Goggles remain inside the communication space behind the grille; OAIResearchMar26 reveals them by peeling the bottom-right corner of their own paper. This supersedes the rug, free-standing stash and tumbling-goggles descriptions below. Preserve last-light timing and later deliberate wearing.
+
 > **Current M8 continuity:** [The world made of theories](WORLD_MADE_OF_THEORIES.md) is the canonical middle-act direction. The second awakening is in a **different apartment**, with a matched composition; earlier same-box location wording below is superseded. The final reunion is shared memory/imagination, not resurrection.
 
 Status: strong agreed emotional sequence, precise timing to be aligned against master audio and lead-vocal stem, not inferred.

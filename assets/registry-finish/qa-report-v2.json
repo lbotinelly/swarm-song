@@ -1,0 +1,89 @@
+{
+  "protectedInputsPreserved": true,
+  "approvedBodyAndPaperMastersPreserved": true,
+  "repeatFrameByteIdentical": true,
+  "repeatPixelsIdentical": true,
+  "exports": [
+    {
+      "file": "assets\\registry-finish\\review-v2\\registry-finish.mp4",
+      "frames": 146,
+      "fps": 30,
+      "durationSeconds": 4.866666666666666,
+      "sha256": "93fbbfee6b15b08fdeb7a4945fbc10b5fcba9a022d41010e8485636882e1339a",
+      "audioChecks": [
+        {
+          "exportSeconds": 0.5,
+          "masterSeconds": 23.5,
+          "correlationWithoutLagCorrection": 0.9999640871223694
+        },
+        {
+          "exportSeconds": 2,
+          "masterSeconds": 25,
+          "correlationWithoutLagCorrection": 0.9999907609717362
+        },
+        {
+          "exportSeconds": 3.5,
+          "masterSeconds": 26.5,
+          "correlationWithoutLagCorrection": 0.9999482890574009
+        }
+      ]
+    },
+    {
+      "file": "assets\\registry-finish\\review-v2\\registry-context.mp4",
+      "frames": 240,
+      "fps": 30,
+      "durationSeconds": 8.0,
+      "sha256": "de3268516f54ce3c0dc2fdcb8dfd152d4ed4e1dd10e4776a1b53248b14030ed8",
+      "audioChecks": [
+        {
+          "exportSeconds": 0.5,
+          "masterSeconds": 23.5,
+          "correlationWithoutLagCorrection": 0.9999640871223694
+        },
+        {
+          "exportSeconds": 2,
+          "masterSeconds": 25,
+          "correlationWithoutLagCorrection": 0.9999907609717362
+        },
+        {
+          "exportSeconds": 3.5,
+          "masterSeconds": 26.5,
+          "correlationWithoutLagCorrection": 0.9999482890574009
+        }
+      ]
+    }
+  ],
+  "visibleCues": [
+    {
+      "requestedMasterMs": 24160,
+      "localFrame": 35,
+      "visibleMasterMs": 24166.666666666668
+    },
+    {
+      "requestedMasterMs": 24750,
+      "localFrame": 53,
+      "visibleMasterMs": 24766.666666666668
+    },
+    {
+      "requestedMasterMs": 26000,
+      "localFrame": 90,
+      "visibleMasterMs": 26000.0
+    },
+    {
+      "requestedMasterMs": 26240,
+      "localFrame": 98,
+      "visibleMasterMs": 26266.666666666668
+    },
+    {
+      "requestedMasterMs": 27000,
+      "localFrame": 120,
+      "visibleMasterMs": 27000.0
+    }
+  ],
+  "approval": "Final-quality candidate. Art critic inspected stills; continuous audiovisual approval remains with Leo.",
+  "inheritanceChecks": {
+    "gogglesHiddenByClosedCorner": true,
+    "gogglesVisibleAfterPeeling": true,
+    "studyIsUntimed": true
+  }
+}

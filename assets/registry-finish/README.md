@@ -1,5 +1,19 @@
 # Registry discovery — finishing candidate
 
+## Current V2 — corner, vent and inherited goggles
+
+Leo corrected the prop interpretation: [the registry is the vent](../../docs/REGISTRY_VENT_CONTINUITY.md). [Current review gallery](review-v2/index.html) · [eight-second peel/message film](review-v2/registry-context.mp4) · [inheritance continuity still](review-v2/inheritance.png) · [V2 critic review](REVIEW-V2.md) · [V2 QA](qa-report-v2.json).
+
+The bottom-right corner of the apartment's own paper peels back, revealing a dark grille. The existing paper-plane sticker travels behind foreground bars into the vent; its exit is spatial occlusion, not transparency or a shrink-to-nothing. The inherited goggles are present before the paper opens and become visible through the same grille. No REGISTRY label, ledger pocket or separate rug remains in this candidate. All communication uses this route in the updated storyboard direction.
+
+The silent inheritance still is an untimed mechanism study, not a finished second-apartment scene. The full M8 render has not been replaced; its storyboard/gallery explicitly flag the newer continuity correction. The exact corner size, folded-paper treatment and plane path are proposed staging for Leo to review.
+
+The reproduction commands below now write `review-v2` and `qa-report-v2.json`. The eight-second version shows the plane; the shorter discovery-only cut ends before the sending beat. Both preserve the original master and M7 timing. New QA checks that the goggles are invisible behind closed paper and visible after peeling.
+
+## Superseded V1 production record
+
+The following records the previous pocket interpretation. Its artwork treatment was reviewed, but Leo's vent correction supersedes the prop/story staging. Original outputs remain under `review/` and can be reproduced from commit `e5130f0`.
+
 Leo requested one well-defined final-quality attempt and an art-critic evaluation. The registry is the smallest complete emotional beat with approved character art and cue timing. This package is a **final-quality candidate for director review**, not an approval or a replacement for the full M8 animatic.
 
 - [Primary film](review/registry-finish.mp4): master **23.000–27.8667s**, 146 frames, 1920×1080, 30fps. Curiosity → inspection → realization → one restrained joyful gesture, settled before the cut.

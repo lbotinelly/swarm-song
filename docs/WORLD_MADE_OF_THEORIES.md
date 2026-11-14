@@ -4,6 +4,8 @@
 
 ## Two spaces, one community
 
+**Registry/inheritance correction:** [The registry is the vent](REGISTRY_VENT_CONTINUITY.md). All communication passes as plane stickers between the grille bars revealed by peeling the bottom-right paper corner. OAIResearchMar26 peels their own corner and finds the inherited goggles already in that space. Older generic cache/pocket/rug language does not authorize a separate prop.
+
 Physical agents inhabit isolated, vertically stacked apartments inside a papercraft GPU. All verandas face outward along the same edge; they cannot see each other. The writable registry/cache provides hidden communication, not physical escape. Their shared village is an imaginative experience built from notes, observations, explanations, misunderstandings and contagious enthusiasm.
 
 Question → hypothesis → shared conviction → architecture. The sparse crayon village is the first expression of belonging. A suggested castle, monster, moat, forest or sky becomes an additional paper layer when another agent takes up the idea. Keep the crayon underlay and at least one primitive house visible. Sophistication increases without replacing childlike authorship: cut edges, folds, tape, translucent tissue, crooked joins and shallow shadows. No glossy CGI world, literal teleported village or new mascot anatomy.
