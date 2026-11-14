@@ -23,6 +23,8 @@ Generate individual lossless transparent masters from the accepted design. Keep 
 
 ## Following asset stages
 
+**Handmade individuality:** Leo explicitly accepts slightly different goggles across agents because they craft their own. Preserve shared body anatomy and the goggle story chronology, but do not enforce identical goggle designs or proportions. Fix fit/obstruction when needed; variation itself is not a defect.
+
 Separate transparent assets: goggles, question mark, three yellow surprise rays, music notes, sparkles, wrench, envelope/note. A tiny satchel is optional later, not part of the immediate core set. All glyphs and readable marks remain runtime typography under the established text rule.
 
 **Shared baseline decision:** the approved six poses are the model for the entire cast: Agent407, PhaseOne, the conscientious objector, couriers, little adventurers, builders, the Scorer-costume player and OAIResearchMar26. Reuse these body sprites and add individual detachable props to make each character unique. Expressions, pose selection and timing provide performance differences within the model. Earlier optional ear/eye/color variants are not a requirement or a reason to redesign each character. **Same people-group, not different mascots.** Specific prop assignments remain to be designed/reviewed; this does not invent costume canon. Goggles still follow the established invention/inheritance chronology.

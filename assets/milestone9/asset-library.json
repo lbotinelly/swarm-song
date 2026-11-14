@@ -641,6 +641,56 @@
       "provenanceRecord": "assets/accessories/pack-v1/manifest.json"
     },
     {
+      "file": "public/characters/ensemble-v1/objector-placard-v1.png",
+      "roles": "illustrated objector with integrated goggles and blank runtime-text plaque",
+      "resolution": [
+        1509,
+        1402
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        263,
+        202,
+        1192,
+        1193
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0,
+      "sha256": "afc75b22ec698d761e73086f45a15b7feb12bab63ee449287f5099c176c5b352",
+      "provenanceRecord": "assets/characters/ensemble-v1/manifest.json"
+    },
+    {
+      "file": "public/characters/ensemble-v1/palms-up-v1.png",
+      "roles": "illustrated palms-up passing agent with handmade goggles",
+      "resolution": [
+        1322,
+        1602
+      ],
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        232,
+        188,
+        1031,
+        1377
+      ],
+      "pivotInBounds": [
+        0.5,
+        1
+      ],
+      "suggestedParallaxRate": 0,
+      "sha256": "25fbed0597e68158d3a9183e34fba5e671437f595c8ef733d5a669001859c79d",
+      "provenanceRecord": "assets/characters/ensemble-v1/manifest.json"
+    },
+    {
       "file": "public/accessories/goggles-v1.png",
       "roles": "hidden inheritance object",
       "resolution": [

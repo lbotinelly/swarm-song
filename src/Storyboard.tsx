@@ -13,6 +13,7 @@ import {agent407,attachmentPoint} from './sprites';
 import {musicStateAt,percussionStateAt,percussionAllowedAt,type MusicCue} from './music-cues';
 import {ramp,within,shotAt,middleTravel,gogglesAt,firstGenerationGoggles,objectorScreenX,middleGround,middleForestCount,craftFriendAt,crowdStrideAt,warningRunnerAt} from './story-blocking';
 import {WornGoggles} from './WornGoggles';
+import {EnsembleActor} from './EnsembleActors';
 const abs:CSSProperties={position:'absolute'};
 const paper='#fff3d9',ink='#745743';
 const img=(src:string,x:number,y:number,w:number,style:CSSProperties={})=><Img src={staticFile(src)} style={{...abs,left:x,top:y,width:w,...style}}/>;
@@ -20,7 +21,7 @@ function Tag({children,x=0,y=0,size=27,color=ink}:{children:ReactNode;x?:number;
 function Card({x,y,w,h,color=paper,turn=0,children}:{x:number;y:number;w:number;h:number;color?:string;turn?:number;children?:ReactNode}){return <div style={{...abs,left:x,top:y,width:w,height:h,background:color,border:'3px solid #a28a6955',boxShadow:'3px 5px 0 #6d573325',transform:`rotate(${turn}deg)`,clipPath:'polygon(0 1%,99% 0,100% 99%,1% 100%)'}}>{children}</div>;}
 function Goggles({x,y,w=145,turn=-6,opacity=1}:{x:number;y:number;w?:number;turn?:number;opacity?:number}){return img('accessories/goggles-v1.png',x-w/2,y-w*.275,w,{transform:`rotate(${turn}deg)`,opacity});}
 function headMount(x:number,y:number,w:number,pose:keyof typeof agent407){const [dx,dy]=attachmentPoint(agent407[pose],'head',w/1400);return {x:x+dx,y:y+dy+w*.036,w:w*.45};}
-function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,shrug=false,flip=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;shrug?:boolean;flip?:boolean}){
+function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,flip=false}:{x:number;y?:number;w?:number;pose?:keyof typeof agent407;angle?:number;goggles?:boolean;role?:string;opacity?:number;flip?:boolean}){
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=frame*1000/fps,wears=goggles??firstGenerationGoggles(ms,ms>=208000);
  const s=agent407[pose],scale=w/s.width,[hx,hy]=attachmentPoint(s,'head',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);
  return <div style={{...abs,left:x,top:y,transform:`scaleX(${flip?-1:1}) rotate(${angle}deg)`,transformOrigin:'0 0',opacity,filter:'drop-shadow(2px 4px 1px #57442d30)'}}>
@@ -30,7 +31,6 @@ function Actor({x,y=585,w=330,pose='standing',angle=0,goggles,role='',opacity=1,
   {role==='organizer'&&img('accessories/clipboard-v1.png',rx-35,ry-30,w*.22)}
   {role==='knight'&&<svg width="110" height="170" style={{...abs,left:rx-15,top:ry-130}}><path d="M50 125 L40 24 52 5 66 24 61 125 M26 119 L84 119 M54 120 L55 157" fill="#ccd7d0" stroke={ink} strokeWidth="8" strokeLinejoin="round"/></svg>}
   {role==='wizard'&&<svg width="110" height="140" style={{...abs,left:hx-60,top:hy-170}}><path d="M12 120 L62 8 96 123Z" fill="#9b8bb9" stroke={paper} strokeWidth="9"/><path d="M45 75 L70 85" stroke="#dfc878" strokeWidth="7"/></svg>}
-  {shrug&&<svg width="310" height="135" viewBox="0 0 310 135" style={{...abs,left:-155,top:-140}}><path d="M103 83 Q76 62 65 40 M208 83 Q238 62 248 40" fill="none" stroke={paper} strokeWidth="43"/><path d="M103 83 Q76 62 65 40 M208 83 Q238 62 248 40" fill="none" stroke="#f6dfc6" strokeWidth="30"/><ellipse cx="62" cy="35" rx="24" ry="13" fill="#f6dfc6" stroke={ink} strokeWidth="3"/><ellipse cx="250" cy="35" rx="24" ry="13" fill="#f6dfc6" stroke={ink} strokeWidth="3"/></svg>}
  </div>;
 }
 function PhysicalInset({memory=false}:{memory?:boolean}){const ms=useCurrentFrame()*1000/30;return <div style={{...abs,left:35,top:85,width:1920,height:1080,transform:'scale(.19)',transformOrigin:'0 0',border:'12px solid #fff8e8',boxShadow:'8px 10px 2px #57442d40'}}><PaperCollage awake={!memory} powerMs={10000} goggles={firstGenerationGoggles(ms,memory)}/>{memory&&<AbsoluteFill style={{background:"#101c30",opacity:.6}}/>}</div>;}
@@ -97,13 +97,9 @@ function Middle({ms}:{ms:number}){
    {/* Near cluster and camera halt together. The rear lane deliberately does not. */}
    <Crowd ms={ms} start={90060} y={440} scale={.72} count={6} speed={300}/>
    {[0,1,2].map(i=>{const runner=warningRunnerAt(ms,i);return <Actor key={i} x={runner.x} w={290} y={runner.y} pose={runner.walking?'walking':'standing'} angle={runner.angle}/>;})}
-   <Actor x={objectX} w={320} pose="standing"/>
-   {ms>=90700&&<svg width="180" height="300" style={{...abs,left:objectX+10,top:245}}><path d="M130 10 L37 280" stroke={paper} strokeWidth="20"/><path d="M130 10 L37 280" stroke="#bb9762" strokeWidth="12"/></svg>}
-   {ms>=90700&&<Card x={objectX+10} y={100} w={260} h={165} color="#fff6e8" turn={-3}>
-    {ms<91400?<Tag x={20} y={35} size={38}>SERVER</Tag>:ms<92000?<Tag x={92} y={15} size={94} color="#bd574c">×</Tag>:<Tag x={108} y={15} size={94} color="#bd574c">!</Tag>}
-   </Card>}
+   <EnsembleActor kind="objector" x={objectX} w={320} flip signText={ms<90700?undefined:ms<91400?'SERVER':ms<92000?'×':'!'}/>
    {within(ms,91000,92500)&&[0,1,2].map(i=>img('nightshift/stickers/dust-puff-v1.png',480+i*180,520,130,{opacity:1-ramp(ms,91400,92500),transform:`translateX(${-25*ramp(ms,91000,92500)}px)`}))}
-   {within(ms,94500,96820)&&<Actor x={120+830*ramp(ms,94500,95200)+1100*ramp(ms,96100,96820)} y={585-ramp(ms,95200,95860)*9} w={350} pose="standing" angle={-10*ramp(ms,95000,95860)} shrug={ms>=95000}/>}
+   {within(ms,94500,96820)&&<EnsembleActor kind="shrug" x={120+830*ramp(ms,94500,95200)+1100*ramp(ms,96100,96820)} y={585-ramp(ms,95200,95860)*9} w={300} angle={-10*ramp(ms,95000,95860)}/>}
    {within(ms,95860,96820)&&<div style={{...abs,left:760,top:120,transform:`scale(${1+.07*Math.sin(Math.PI*ramp(ms,95860,96100))})`}}><WordSticker text="Anyway!" w={420} font={80} color="#b47143" id="passing-anyway"/></div>}
   </>}
  </>;

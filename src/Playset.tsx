@@ -10,6 +10,8 @@ import manifest from '../assets/milestone9/manifest.json';
 import castle from '../assets/milestone8/castle-asset.json';
 import {windAt,windResponse,type WindSampler} from './playset-wind';
 import {WornGoggles} from './WornGoggles';
+import {PaperPop} from './PaperPop';
+import {buildingPops} from './paper-pop';
 const abs:CSSProperties={position:'absolute'};
 // One authored playset: measured native bounds, ordinary layers and foot pivots.
 export function PlaysetPart({id,x,y,w,angle=0,style={}}:{id:string;x:number;y:number;w:number;angle?:number;style?:CSSProperties}){
@@ -26,12 +28,12 @@ function Dust({ms,at,x,y,w=360}:{ms:number;at:number;x:number;y:number;w?:number
  return <div style={{...abs,left:x,top:y,opacity:smooth(p*7)*(1-smooth((p-.4)/.6)),transform:`scale(${.8+.35*p})`,transformOrigin:'50% 70%'}}><Img src={staticFile('nightshift/stickers/dust-puff-v1.png')} style={{...abs,left:-484*k,top:-374*k,width:1736*k}}/></div>;
 }
 // A bounded household task: shake the rug, drape it, then inspect the result.
-function BalconyChore({ms}:{ms:number}){
+function BalconyChore({ms,rail=true}:{ms:number;rail?:boolean}){
  const shake=[1800,3900,6100].reduce((sum,at)=>{const p=(ms-at)/850;return sum+(p>0&&p<1?Math.sin(p*Math.PI*4)*Math.sin(p*Math.PI):0);},0);
  const drape=smooth((ms-7900)/1000),inspect=smooth((ms-9300)/700);
  return <>
   <Bunny x={720+6*inspect} y={729+shake*2} pose={inspect>.5?'standing':'cheer'} angle={shake*2-4*inspect} size={.065}/>
-  <Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>
+  {rail&&<Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>}
   <Piece part="quilt" x={715-18*drape} y={703+18*drape+shake*2*(1-drape)} w={23+18*drape} h={39-12*drape} style={{transform:`rotate(${shake*7*(1-drape)}deg)`,transformOrigin:'50% 0',filter:'drop-shadow(1px 2px 1px #695c4430)'}}/>
   {[1800,3900,6100].map(at=><Dust key={at} ms={ms} at={at+180} x={721} y={752} w={24}/>)}
  </>;
@@ -56,7 +58,7 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
  return <AbsoluteFill style={{background:'#eee5d3',overflow:'hidden'}}>
   <Piece part="wall" x={-30} y={-25} w={1980} h={1130}/>
   <div style={{...abs,left:0,top:0,width:1920,height:1080,overflow:'hidden',transform:captions?'translate(268px,0) scale(.72)':'none',transformOrigin:'0 0'}}>
-   {sky&&<div style={{...abs,left:-100-travel*.02,top:-30,width:2200,height:680,overflow:'hidden',maskImage:'linear-gradient(#000 75%,transparent)'}}><Piece part="wall" w={2200} h={850}/><AbsoluteFill style={{background:'#b9d9d8',mixBlendMode:'color',opacity:.7}}/><AbsoluteFill style={{background:'linear-gradient(#b2d4db60,#fff4dc80)'}}/></div>}
+   {sky&&<div style={{...abs,left:-100-travel*.02,top:-30,width:2200,height:680,opacity:blossom?smooth((ms-6500)/450):1,overflow:'hidden',maskImage:'linear-gradient(#000 75%,transparent)'}}><Piece part="wall" w={2200} h={850}/><AbsoluteFill style={{background:'#b9d9d8',mixBlendMode:'color',opacity:.7}}/><AbsoluteFill style={{background:'linear-gradient(#b2d4db60,#fff4dc80)'}}/></div>}
    {sky?<PlaysetPart id="layered-sun" x={1280-travel*.035} y={230} w={180}/>:<Cut id="sun-v2" x={1280} y={50} w={180}/>}
    <Cut id="hill-a-v1" x={-60-travel*.08} y={355} w={2140}/>
    {/* Existing translucent tissue; it bridges materials without erasing the crayon. */}
@@ -65,21 +67,25 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
    <Cut id="cloud-v1" x={180-travel*.055+12*Math.sin(t*.3)} y={130} w={330}/>
    {sky&&<PlaysetPart id="cloud-bank" x={680-travel*.04+8*Math.sin(t*.3)} y={190} w={270}/>}
    {sky&&<PlaysetPart id="cloud-bank" x={1400-travel*.05+17*Math.sin(t*.25)} y={240+5*Math.sin(t*.4)} w={500}/>}
+   {blossom&&<><PaperPop wind={windAt} ms={ms} swap={6500} x={1272} y={40} w={196} h={202}/><PaperPop wind={windAt} ms={ms} swap={6500} x={672} y={65} w={292} h={137}/><PaperPop wind={windAt} ms={ms} swap={6500} x={1388} y={12} w={542} h={244}/></>}
    {forest&&<PlaysetPart id="tree-cluster" x={990-travel*.24} y={680} w={430}/>}
+   {blossom&&<PaperPop wind={windAt} ms={ms} swap={5800} x={982} y={365} w={446} h={323}/>}
    <div style={{...abs,left:-travel*.3,top:0}}>
     {fort?<Castle x={1160} y={695} w={590}/>:<Cut id="house-a-v1" x={1330} y={470} w={260}/>}
     {/* Original humble house remains. Neither hill nor house geography changes. */}
     <Cut id="house-a-v1" x={205} y={570} w={200} angle={-3}/>
     {cottage?<PlaysetPart id="cottage" x={480} y={780} w={320}/>:<Cut id="house-b-v1" x={480} y={548} w={320}/>}
     {workshop?<PlaysetPart id="workshop" x={935} y={835} w={320}/>:<Cut id="house-a-v1" x={935} y={557} w={320}/>}
+    {cottage&&<>
+     {/* Architectural attachments share the building's cover; smoke starts after reveal. */}
+     {(!blossom||ms>=3150)&&<div style={{...abs,left:520,top:340,width:80,height:175,overflow:'hidden'}}><Cut id="smoke-v1" x={8*windResponse(ms,1.4,450)} y={-5-8*Math.sin(t*.55)} w={62} angle={-5*windResponse(ms,1.4,450)}/></div>}
+     <Card x={523} y={508} w={52} h={10} color="#d6bc8f"/>
+     {blossom&&<Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>}
+    </>}
+    {blossom&&buildingPops.map(p=><PaperPop key={p.swap} wind={windAt} ms={ms} {...p}/>)}
     {/* A cut-paper path lies on the same plane as its residents. */}
     <svg width="1920" height="1080" style={{...abs,inset:0}}><path d="M130 825 Q500 780 780 845 T1350 870 Q1600 845 1770 760" fill="none" stroke="#9b845d30" strokeWidth="52"/><path d="M130 820 Q500 775 780 840 T1350 865 Q1600 840 1770 755" fill="none" stroke="#f5e3be" strokeWidth="45"/><path d="M130 820 Q500 775 780 840 T1350 865 Q1600 840 1770 755" fill="none" stroke="#c4aa79" strokeDasharray="8 11" strokeWidth="2"/></svg>
-    {cottage&&<>
-     {/* Smoke feeds upward through a fixed channel behind the chimney lip. */}
-     <div style={{...abs,left:520,top:340,width:80,height:175,overflow:'hidden'}}><Cut id="smoke-v1" x={8*windResponse(ms,1.4,450)} y={-5-8*Math.sin(t*.55)} w={62} angle={-5*windResponse(ms,1.4,450)}/></div>
-     <Card x={523} y={508} w={52} h={10} color="#d6bc8f"/>
-     <BalconyChore ms={ms}/>
-    </>}
+    {cottage&&<BalconyChore ms={ms} rail={!blossom}/>}
     {/* Each resident has a task and a next action, not an endless idle loop. */}
     <Bunny x={courier} y={838+27*departure} pose={delivering?'standing':'walking'} angle={delivering?0:3*Math.sin(t*6)} size={.09}/>
     <Img src={staticFile('accessories/envelope-v1.png')} style={{...abs,left:(ms>=6500?960:courier)+15+delivery*35,top:790-delivery*9,width:42,transform:`rotate(${-8+16*delivery}deg)`}}/>
@@ -94,9 +100,10 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
     </>}
    </div>
    {forest&&<PlaysetPart id="tree-cluster" x={-205-travel*.65} y={895} w={440}/>}
+   {blossom&&<PaperPop wind={windAt} ms={ms} swap={5800} x={-213} y={574} w={456} h={329}/>}
    <Cut id="hill-b-v1" x={-100-travel*.5} y={930} w={2270}/>
    {forest&&<><LivingBush x={-80-travel*.8} y={1080} w={700} ms={ms}/><LivingBush x={1360-travel*.8} y={1090} w={700} ms={ms}/></>}
-   {blossom&&[[2100,450,540,400],[3100,920,580,400],[3700,1160,320,650],[5600,0,460,460],[6300,1170,120,650]].map(([at,x,y,w])=><Dust key={at} ms={ms} at={at} x={x} y={y} w={w}/>)}
+   {blossom&&<><PaperPop wind={windAt} ms={ms} swap={5800} x={-88} y={878} w={716} h={210}/><PaperPop wind={windAt} ms={ms} swap={5800} x={1352} y={888} w={716} h={210}/></>}
   </div>
   {captions&&<Song captionsOnly offsetMs={blossom?83000:55000}/>}
  </AbsoluteFill>;

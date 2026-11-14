@@ -1,0 +1,14 @@
+{
+  "mode": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Edit the supplied character sticker with ONE tightly localized change: reduce the complete forehead goggles (both lenses, rims and bridge together) to about 72% of their current width and height, keeping them centered on the forehead and naturally attached with a slender strap. Their lenses should span about two-thirds of the cheek-to-cheek head width, matching the smaller goggles used by neighboring characters. Restore matching cream forehead watercolor where the oversized goggles previously covered it. Keep the eyes and entire face clear.\nPreserve EVERYTHING else: same canvas size and framing, exact bunny body proportions, head/ears/face, pose, short legs, feet positions, paws, watercolor texture, white die-cut border, and any blank sign and its pole/grip. Do not resize, reposition or redraw the overall character or any sign. No new accessories, text or symbols. Genuine transparent RGBA background with clean transparent padding; no detached speckles or added shadows. This is a goggle-fit correction, not a redesign.",
+  "edits": [
+    {
+      "input": "masters/objector-placard-v1.png",
+      "output": "masters/objector-placard-v2.png"
+    },
+    {
+      "input": "masters/palms-up-v1.png",
+      "output": "masters/palms-up-v2.png"
+    }
+  ]
+}

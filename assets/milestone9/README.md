@@ -6,6 +6,10 @@ Eight new native masters support the priority kit: cloud bank, sun, trees, garde
 
 ## Focused proofs
 
+**Illustrated warning actors:** the objector now faces the crowd with a naturally illustrated blank plaque and pole grip. The passing palms-up agent is a generated pose, replacing the vector-arm stand-in. Both use their own handcrafted goggles. [Asset pack, prompts and QA](../characters/ensemble-v1/README.md); the updated crowd proof retains the original soundtrack and runtime warning lettering. `crowd-individuality-v1.mp4` preserves the previous rough props.
+
+**Bubble Pop transformation:** the updated blossom clip uses overlapping warm-white circles, fully covering each building's old/new bounds through the swap. Unequal radii, radial launch speeds, drag and lifetimes create a fast release followed by upward float, shrink and fade. Small bubbles are faster and more wind-responsive. The effect samples the same scene wind used by smoke/flowers and supports calm scenes when no sampler is supplied. The original zooming-puff treatment remains in `blossom-v2.mp4`.
+
 **Supporting-friend follow-through:** after donning, the two friends acknowledge one another, turn together, share small bops from the existing percussion map, then walk off together carrying their tools. Their action continues through the46.5s shot boundary. The raised-paw celebration uses the approved cheer pose; this is not a literal palm-contact high-five. [Previous static-follow-through version](review/goggle-magic-v2.mp4) is preserved.
 
 **Village errands and chores:** the courier delivers to the workshop and continues along the path; the veranda resident shakes and drapes a rug; the banner helper steps back to inspect the raised flag and leaves. Updated living-town and blossom clips share this staging. Their previous versions are preserved as `living-town-v1.mp4` and `blossom-v1.mp4`. [Ensemble staging](../../docs/ENSEMBLE_STAGING.md) records the rule and review checklist for all scene families.

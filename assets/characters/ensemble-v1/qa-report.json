@@ -1,0 +1,86 @@
+{
+  "assets": [
+    {
+      "file": "public/characters/ensemble-v1/objector-placard-v1.png",
+      "nativeSize": [
+        1309,
+        1202
+      ],
+      "preparedSize": [
+        1509,
+        1402
+      ],
+      "alphaBounds": [
+        263,
+        202,
+        1192,
+        1193
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "file": "public/characters/ensemble-v1/objector-placard-v2.png",
+      "nativeSize": [
+        1309,
+        1201
+      ],
+      "preparedSize": [
+        1509,
+        1401
+      ],
+      "alphaBounds": [
+        262,
+        200,
+        1194,
+        1194
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "file": "public/characters/ensemble-v1/palms-up-v1.png",
+      "nativeSize": [
+        1122,
+        1402
+      ],
+      "preparedSize": [
+        1322,
+        1602
+      ],
+      "alphaBounds": [
+        232,
+        188,
+        1031,
+        1377
+      ],
+      "sourcePreserved": true
+    },
+    {
+      "file": "public/characters/ensemble-v1/palms-up-v2.png",
+      "nativeSize": [
+        1122,
+        1402
+      ],
+      "preparedSize": [
+        1322,
+        1602
+      ],
+      "alphaBounds": [
+        230,
+        186,
+        1029,
+        1379
+      ],
+      "sourcePreserved": true
+    }
+  ],
+  "checks": [
+    "native hashes unchanged",
+    "true alpha",
+    "100px added padding without resampling",
+    "prepared alpha bounded"
+  ],
+  "limits": [
+    "Generated identity-preserving variants are not pixel-identical to the approved body.",
+    "Manual scale, sign plane and pose review remain separate from numerical QA."
+  ]
+}

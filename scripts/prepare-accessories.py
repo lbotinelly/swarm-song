@@ -7,13 +7,16 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 parser = argparse.ArgumentParser()
-parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1', 'equipped-v1', 'nightshift', 'milestone4', 'milestone5', 'milestone5-2', 'milestone9'], default='pack-v1')
+parser.add_argument('--pack', choices=['pack-v1', 'supporting-v1', 'equipped-v1', 'ensemble-v1', 'nightshift', 'milestone4', 'milestone5', 'milestone5-2', 'milestone9'], default='pack-v1')
 pack = parser.parse_args().pack
 SOURCE = ROOT / ('assets/characters' if pack == 'equipped-v1' else 'assets/accessories') / pack / 'masters'
 DEST = ROOT / ('public/characters/equipped-v1' if pack == 'equipped-v1' else 'public/accessories')
 if pack == 'nightshift':
     SOURCE = ROOT / 'assets/nightshift/stickers/masters'
     DEST = ROOT / 'public/nightshift/stickers'
+if pack == 'ensemble-v1':
+    SOURCE = ROOT / 'assets/characters/ensemble-v1/masters'
+    DEST = ROOT / 'public/characters/ensemble-v1'
 if pack == 'milestone4':
     SOURCE = ROOT / 'assets/milestone4/masters'
     DEST = ROOT / 'public/milestone4'

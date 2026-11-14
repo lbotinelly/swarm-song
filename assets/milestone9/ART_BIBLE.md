@@ -24,6 +24,10 @@ Leo's follow-up makes the bush the first composite artifact: vegetation base →
 
 ## Motion grammar
 
+**White Bubble Pop:** cover the whole old/new object silhouette, including roof, flag, rail and cast-shadow margin, then release from fixed scene-space positions. A brief opaque hold straddles the swap. Give each circle visibly different size, initial radial velocity, air-drag rate and lifetime. Integrate decaying launch speed analytically; buoyancy becomes dominant as the burst slows. Shrink and fade each bubble on its own clock. Small perimeter bubbles move faster and catch more shared scene wind. An absent wind sampler means calm. Keep the effect at the object's depth so faces/captions remain clear; delay chimney smoke until its building is revealed. No top-left image zoom or stateful particle framework.
+
+**Handmade goggles:** differences between agents' own crafted pairs are desired. Keep fit and story continuity coherent without forcing identical designs.
+
 **Every resident has an intention and a next action.** The courier delivers a letter and continues without it; the veranda resident shakes and drapes a rug made from the existing ochre quilt stock; the banner helper inspects the raised flag and departs. The crafting friends acknowledge one another, celebrate and walk together across the next shot. Use meaningful pauses and subordinate gestures, not universal idle loops. See `docs/ENSEMBLE_STAGING.md` for the whole-film checklist.
 
 **Crowd individuality:** vary base pace by a few percent, add smooth bounded pace changes, and derive each gait from distance travelled with a distinct phase. The objector's near trio keeps bounded relative spacing and settles into a true listening stop while rear traffic continues. Evaluate motion directly from master time; no frame-state simulation or random jitter.

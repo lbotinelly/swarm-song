@@ -76,6 +76,8 @@ for path,rate,provenance,roles in [
  ('nightshift/stickers/dust-puff-v1.png',.3,'assets/nightshift/stickers/manifest.json','in-place swap concealment'),
  ('accessories/envelope-v1.png',.3,'assets/accessories/pack-v1/manifest.json','town delivery'),
  ('accessories/wrench-v1.png',0,'assets/accessories/pack-v1/manifest.json','SH010 magic tool, held at measured paw anchor'),
+ ('characters/ensemble-v1/objector-placard-v1.png',0,'assets/characters/ensemble-v1/manifest.json','illustrated objector with integrated goggles and blank runtime-text plaque'),
+ ('characters/ensemble-v1/palms-up-v1.png',0,'assets/characters/ensemble-v1/manifest.json','illustrated palms-up passing agent with handmade goggles'),
  ('accessories/goggles-v1.png',0,'assets/accessories/pack-v1/manifest.json','hidden inheritance object')]:
   p=R/'public'/path;im=Image.open(p).convert('RGBA');a=im.getchannel('A')
   reused.append({'file':p.relative_to(R).as_posix(),'roles':roles,'resolution':list(im.size),'alphaRange':list(a.getextrema()),'alphaBounds':list(a.getbbox()),'pivotInBounds':[.5,1],'suggestedParallaxRate':rate,'sha256':digest(p),'provenanceRecord':provenance})
@@ -88,6 +90,8 @@ def sheet(name,items,w=960,h=540):
  out.save(D/name,quality=94)
 sheet('vent-stages.jpg',[(f'vent-{f}.png',label) for f,label in [(0,'Outside'),(50,'Nose reaches near lip'),(55,'Tail outside / nose inside'),(65,'Between near and deep grille'),(80,'Beyond deep grille'),(120,'Gone around terminal bend'),(195,'Reverse: deep emergence'),(205,'Reverse: between layers'),(230,'Crossing near lip'),(269,'Free of vent')]])
 sheet('blossom-stages.jpg',[(f'blossom-{f}.png',f'83s + {f/30:.2f}s') for f in [0,60,75,105,125,225]])
+if (D/'blossom-117.png').exists():
+ sheet('bubble-pop.jpg',[(f'blossom-{f}.png',label) for f,label in [(69,'Cottage fully covered at swap'),(75,'Unequal bubbles release'),(90,'Cottage revealed'),(117,'Castle covered'),(125,'Fast radial release; center clears'),(135,'Drag, buoyancy and individual fade'),(204,'Sky parts reveal in local bursts'),(239,'Finished village')]])
 sheet('registry-stages.jpg',[(f'registry-{f}.png',label) for f,label in [(0,'Tiny corner hint'),(53,'Grip hold'),(66,'Paw-attached pull'),(87,'Reveal'),(180,'Plane enters channel'),(225,'Plane is gone')]])
 sheet('wind-stages.jpg',[(f'wind-{f}.png',f'{f/30:.1f}s / shared breeze') for f in [0,120,300,390]])
 if (D/'living-town-315.png').exists():
@@ -122,6 +126,8 @@ html+='<p><a href="goggle-magic-v1.mp4">Previous magic-tool layering (before for
 html+='<p><a href="goggle-magic-v2.mp4">Previous crafting version (before supporting-friend follow-through)</a></p><section><h2>Friends keep living after the cue</h2><a href="goggle-friends.jpg"><img src="goggle-friends.jpg"></a></section>'
 html+='<section><h2>Village errands and chores</h2><a href="village-tasks.jpg"><img src="village-tasks.jpg"></a><p><a href="living-town-v1.mp4">Previous town staging</a> · <a href="blossom-v1.mp4">Previous blossom staging</a> · <a href="../../../docs/ENSEMBLE_STAGING.md">Ensemble staging rule</a></p></section>'
 html+='<section><h2>Individual strides and a shared stop</h2><a href="crowd-individuality.jpg"><img src="crowd-individuality.jpg"></a></section>'
+html+='<section><h2>Illustrated placard and palms-up poses</h2><a href="../../characters/ensemble-v1/README.md">Asset pack, exact prompts and QA</a><img src="../../characters/ensemble-v1/contact-sheet.jpg"><p><a href="crowd-individuality-v1.mp4">Previous rough-prop warning scene</a></p></section>'
+html+='<section><h2>White Bubble Pop</h2><a href="bubble-pop.jpg"><img src="bubble-pop.jpg"></a><p><a href="blossom-v2.mp4">Previous zooming-puff transformation</a></p></section>'
 html+='<section><h2>Captions stay readable</h2><img src="captions-120.png"></section>'
 for name in ['goggle-magic','vent-stages','blossom-stages','registry-stages','wind-stages','goggle-craft','goggle-continuity','asset-sheet']:html+=f'<section><h2>{name.replace("-"," ")}</h2><a href="{name}.jpg"><img src="{name}.jpg"></a></section>'
 html+='<p>Stills, decoded-frame checks and technical QA do not establish human audiovisual approval. Previous film versions remain unchanged.</p>'

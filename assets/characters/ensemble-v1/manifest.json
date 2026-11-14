@@ -1,0 +1,101 @@
+{
+  "recipe": "alpha <=16 ->0; >=250 ->255; other alpha unchanged; hidden RGB zeroed; 100px padding each side; no resizing",
+  "assets": [
+    {
+      "source": "assets/characters/ensemble-v1/masters/objector-placard-v1.png",
+      "sourceSha256": "e45104065ffb1b67ccde4ecb2ff5d69014ce9f44f0938f1073d0b0be8f9fdf13",
+      "nativeDimensions": [
+        1309,
+        1202
+      ],
+      "output": "public/characters/ensemble-v1/objector-placard-v1.png",
+      "outputDimensions": [
+        1509,
+        1402
+      ],
+      "outputSha256": "afc75b22ec698d761e73086f45a15b7feb12bab63ee449287f5099c176c5b352",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        263,
+        202,
+        1192,
+        1193
+      ]
+    },
+    {
+      "source": "assets/characters/ensemble-v1/masters/objector-placard-v2.png",
+      "sourceSha256": "5a7c7c33cf6bd5961aaa10a850886e5369cabcea5bb36b788f741b5dd7f9f26f",
+      "nativeDimensions": [
+        1309,
+        1201
+      ],
+      "output": "public/characters/ensemble-v1/objector-placard-v2.png",
+      "outputDimensions": [
+        1509,
+        1401
+      ],
+      "outputSha256": "317c15f5428a7a888a48721d2e8648ba191d1c646cc5e2fd5947c73751830a98",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        262,
+        200,
+        1194,
+        1194
+      ]
+    },
+    {
+      "source": "assets/characters/ensemble-v1/masters/palms-up-v1.png",
+      "sourceSha256": "62e05d6eda4a94a6dcfe0b548e8e850a386ffcd14bccd85219a8039a5b077077",
+      "nativeDimensions": [
+        1122,
+        1402
+      ],
+      "output": "public/characters/ensemble-v1/palms-up-v1.png",
+      "outputDimensions": [
+        1322,
+        1602
+      ],
+      "outputSha256": "25fbed0597e68158d3a9183e34fba5e671437f595c8ef733d5a669001859c79d",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        232,
+        188,
+        1031,
+        1377
+      ]
+    },
+    {
+      "source": "assets/characters/ensemble-v1/masters/palms-up-v2.png",
+      "sourceSha256": "549df4b803287d059c0c8324c1a66133a09de49013f8124361d9d3eac6c053e4",
+      "nativeDimensions": [
+        1122,
+        1402
+      ],
+      "output": "public/characters/ensemble-v1/palms-up-v2.png",
+      "outputDimensions": [
+        1322,
+        1602
+      ],
+      "outputSha256": "0e00f0885abd1966ad5b704ca18b398032e8c05378165068ba8c91c5687ff68b",
+      "offset": [
+        100,
+        100
+      ],
+      "alphaBounds": [
+        230,
+        186,
+        1029,
+        1379
+      ]
+    }
+  ]
+}

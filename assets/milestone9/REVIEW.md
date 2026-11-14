@@ -1,5 +1,15 @@
 # Independent art review and measured QA
 
+## Illustrated warning actors and wind-aware bubble pops
+
+The warning proof now uses generated blank-placard and palms-up equipped copies, with the objector mirrored toward the crowd and runtime plaque text counter-flipped for readability. The independent critic found a natural grip, readable expression and clear shrug. Leo explicitly accepts handmade goggle differences, so the original v1 variants remain selected; two smaller-goggle edits are unused alternatives. The shrug body was reduced from350 to300 scene-width units. Asset provenance, exact prompts and four native outputs are recorded in `assets/characters/ensemble-v1/`.
+
+The blossom proof replaces the scaling cloud with overlapping warm-white circles. Each has deterministic size, launch speed, exponential drag and lifetime; smaller circles escape faster and respond more to optional scene wind. With no wind, only the radial release and upward float remain. Old/new building regions stay covered through the swap, then the center clears before the perimeter. Chimney cap and rail share the cover; smoke starts after the cottage reveal.
+
+Final independent read-only review inspected frames69,75,117,125,135,204,239 and motion source. No remaining must-fix defect was established. The earlier regular grid/wreath is substantially reduced, architectural attachments no longer float above the cover, actors remain legible, and239 is clean. Remaining aesthetic limitations: large opaque bursts, especially117, and smooth graphic white against textured scenery. The castle is heavily veiled at125 and readable by135; continuous playback must decide whether this feels punchy enough. This is still/source assessment, not human audiovisual approval.
+
+Validation: TypeScript and39tests pass, including per-bubble drag/lifetime variation, left/right/calm wind, smaller-bubble wind response and deterministic seeking. Coverage tests sample the three old/new building union rectangles every4px at four swap offsets; this is geometric sampling, not a full pixel-mask proof. Asset QA confirms native/derivative hashes, true alpha and padding without resampling. Render/audio/gallery QA passes: both updated clips are240frames at30fps, with decoded master-audio correlation above0.99995 without lag correction. Previous proofs remain as `blossom-v2.mp4` and `crowd-individuality-v1.mp4`; approved bodies, master inputs and historical full films are preserved.
+
 ## Latest ensemble and individuality review
 
 The independent read-only reviewer inspected source and craft frames120,134/135,162,180,212,230,243,270,300,345,389. Friends keep positions, props and goggles through the46.5s cut, face each other to celebrate, and clearly depart together. Minor adjacent ear-border overlap at300 leaves faces readable. The right friend's partial exit by389 is intentional. The reviewer caught the lead's wrench disappearing at the cut; the lead now retains it while switching to singing and existing music gestures. The240ms paper-turn squash remains a stylistic candidate for playback review.
