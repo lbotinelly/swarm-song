@@ -48,12 +48,12 @@ export function LivingBush({x,y,w,ms,exploded=false,wind=windAt}:{x:number;y:num
  </div>;
 }
 export function WindStudy({exploded=false}:{exploded?:boolean}){const f=useCurrentFrame(),ms=f*1000/30,w=windAt(ms);return <AbsoluteFill style={{background:'#eee5d3'}}><Piece part="wall" w={1920} h={1080}/><LivingBush x={150} y={exploded?800:850} w={1620} ms={ms} exploded={exploded}/><div style={{...abs,left:100,top:80,fontFamily:'Georgia',fontSize:38,color:'#62523e'}}>{exploded?'Bush assembly · flowers / vegetation / front leaves':'One bush · shared breeze'}</div><div style={{...abs,left:100,top:145,fontFamily:'monospace',fontSize:24,color:'#62523e'}}>wind.strength {w.strength.toFixed(2)} · wind.direction {w.direction.toFixed(2)}</div><div style={{...abs,left:100,top:990,fontFamily:'Georgia',fontSize:24,color:'#62523e'}}>Vegetation stays planted. Five flowers turn about their glued stems; front leaves conceal the roots.</div></AbsoluteFill>;}
-export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'hero';captions?:boolean}){
- const f=useCurrentFrame(),{fps}=useVideoConfig(),ms=f*1000/fps,blossom=mode==='blossom';
- const richAt=(at:number)=>!blossom||ms>=at;
- const travel=blossom?0:130*smooth(ms/10000),t=ms/1000;
+export function Playset({mode='alive',captions=false,timeMs,early=false,residents=true,film=false,travelOverride}:{mode?:'alive'|'blossom'|'hero';captions?:boolean;timeMs?:number;early?:boolean;residents?:boolean;film?:boolean;travelOverride?:number}){
+ const f=useCurrentFrame(),{fps}=useVideoConfig(),ms=timeMs??f*1000/fps,blossom=mode==='blossom';
+ const richAt=(at:number)=>!early&&(!blossom||ms>=at);
+ const travel=travelOverride??(blossom?0:130*smooth(ms/10000)),t=ms/1000;
  const cottage=richAt(2300),workshop=richAt(3300),fort=richAt(3900),forest=richAt(5800),sky=richAt(6500);
- const departure=smooth((ms-7200)/4200),courier=730+230*smooth((ms-1200)/4300)+300*departure,delivery=smooth((ms-5600)/900);
+ const departure=smooth((ms-7200)/4200),courier=730+230*smooth((ms-1200)/4300)+300*departure+(film?Math.max(0,ms-11400)*.12:0),delivery=smooth((ms-5600)/900);
  const delivering=ms>=5500&&ms<7200,flagCheck=smooth((ms-6500)/1000),flagLeave=smooth((ms-9000)/3000);
  return <AbsoluteFill style={{background:'#eee5d3',overflow:'hidden'}}>
   <Piece part="wall" x={-30} y={-25} w={1980} h={1130}/>
@@ -67,9 +67,9 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
    <Cut id="cloud-v1" x={180-travel*.055+12*Math.sin(t*.3)} y={130} w={330}/>
    {sky&&<PlaysetPart id="cloud-bank" x={680-travel*.04+8*Math.sin(t*.3)} y={190} w={270}/>}
    {sky&&<PlaysetPart id="cloud-bank" x={1400-travel*.05+17*Math.sin(t*.25)} y={240+5*Math.sin(t*.4)} w={500}/>}
-   {blossom&&<><PaperPop wind={windAt} ms={ms} swap={6500} x={1272} y={40} w={196} h={202}/><PaperPop wind={windAt} ms={ms} swap={6500} x={672} y={65} w={292} h={137}/><PaperPop wind={windAt} ms={ms} swap={6500} x={1388} y={12} w={542} h={244}/></>}
+   {blossom&&!early&&<><PaperPop brisk={film} wind={windAt} ms={ms} swap={6500} x={1272} y={40} w={196} h={202}/><PaperPop brisk={film} wind={windAt} ms={ms} swap={6500} x={672} y={65} w={292} h={137}/><PaperPop brisk={film} wind={windAt} ms={ms} swap={6500} x={1388} y={12} w={542} h={244}/></>}
    {forest&&<PlaysetPart id="tree-cluster" x={990-travel*.24} y={680} w={430}/>}
-   {blossom&&<PaperPop wind={windAt} ms={ms} swap={5800} x={982} y={365} w={446} h={323}/>}
+   {blossom&&!early&&<PaperPop brisk={film} wind={windAt} ms={ms} swap={5800} x={982} y={365} w={446} h={323}/>}
    <div style={{...abs,left:-travel*.3,top:0}}>
     {fort?<Castle x={1160} y={695} w={590}/>:<Cut id="house-a-v1" x={1330} y={470} w={260}/>}
     {/* Original humble house remains. Neither hill nor house geography changes. */}
@@ -80,30 +80,32 @@ export function Playset({mode='alive',captions=false}:{mode?:'alive'|'blossom'|'
      {/* Architectural attachments share the building's cover; smoke starts after reveal. */}
      {(!blossom||ms>=3150)&&<div style={{...abs,left:520,top:340,width:80,height:175,overflow:'hidden'}}><Cut id="smoke-v1" x={8*windResponse(ms,1.4,450)} y={-5-8*Math.sin(t*.55)} w={62} angle={-5*windResponse(ms,1.4,450)}/></div>}
      <Card x={523} y={508} w={52} h={10} color="#d6bc8f"/>
-     {blossom&&<Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>}
+     {blossom&&!early&&<Card x={684} y={721} w={72} h={8} color="#dc9c7b"/>}
     </>}
-    {blossom&&buildingPops.map(p=><PaperPop key={p.swap} wind={windAt} ms={ms} {...p}/>)}
+    {blossom&&!early&&buildingPops.map(p=><PaperPop key={p.swap} wind={windAt} ms={ms} {...p}/>)}
     {/* A cut-paper path lies on the same plane as its residents. */}
     <svg width="1920" height="1080" style={{...abs,inset:0}}><path d="M130 825 Q500 780 780 845 T1350 870 Q1600 845 1770 760" fill="none" stroke="#9b845d30" strokeWidth="52"/><path d="M130 820 Q500 775 780 840 T1350 865 Q1600 840 1770 755" fill="none" stroke="#f5e3be" strokeWidth="45"/><path d="M130 820 Q500 775 780 840 T1350 865 Q1600 840 1770 755" fill="none" stroke="#c4aa79" strokeDasharray="8 11" strokeWidth="2"/></svg>
-    {cottage&&<BalconyChore ms={ms} rail={!blossom}/>}
+    {residents&&<BalconyChore ms={ms} rail={!blossom||early}/>}
     {/* Each resident has a task and a next action, not an endless idle loop. */}
+    {residents&&<>
     <Bunny x={courier} y={838+27*departure} pose={delivering?'standing':'walking'} angle={delivering?0:3*Math.sin(t*6)} size={.09}/>
     <Img src={staticFile('accessories/envelope-v1.png')} style={{...abs,left:(ms>=6500?960:courier)+15+delivery*35,top:790-delivery*9,width:42,transform:`rotate(${-8+16*delivery}deg)`}}/>
-    {workshop&&<><Card x={1015} y={790} w={14} h={58} color="#b5905e"/><Card x={995} y={766} w={58} h={39} color="#b9c8be"/></>}
-    {forest&&<>
-     <Bunny x={1435-45*flagCheck-120*flagLeave} y={805+20*flagCheck+25*flagLeave} pose={ms<6500?'cheer':ms<9000?'standing':'walking'} angle={ms<6500?0:ms<9000?-5*flagCheck:3*Math.sin(t*6)} size={.095}/>
+    {(workshop||early)&&<><Card x={1015} y={790} w={14} h={58} color="#b5905e"/><Card x={995} y={766} w={58} h={39} color="#b9c8be"/></>}
+    {(forest||early)&&<>
+     <Bunny x={1435-45*flagCheck-120*flagLeave-(film?Math.max(0,ms-12000)*.10:0)} y={805+20*flagCheck+25*flagLeave} pose={ms<6500?'cheer':ms<9000?'standing':'walking'} angle={ms<6500?0:ms<9000?-5*flagCheck:3*Math.sin(t*6)} size={.095}/>
      <Card x={1475} y={623} w={8} h={181} color="#af8d60"/>
      <div style={{...abs,left:1483,top:690-60*smooth((ms-1600)/4500),width:100,height:61,transform:`rotate(${-7*windResponse(ms,.8,100)}deg)`,transformOrigin:'0 0',clipPath:'polygon(0 0,100% 7%,85% 50%,100% 95%,0 100%)'}}><Piece part="wall" w={100} h={61}/><AbsoluteFill style={{background:'#b3c9cb',mixBlendMode:'multiply'}}/></div>
     </>}
-    {blossom&&<><Bunny x={845} y={836} pose={ms<1800?'standing':'cheer'} size={.12}/><Bunny x={1110} y={920} pose={ms<3000?'standing':'cheer'} size={.12}/>
+    </>}
+    {residents&&blossom&&!early&&<><Bunny x={845} y={836} pose={ms<1800?'standing':'cheer'} size={.12}/><Bunny x={1110} y={920} pose={ms<3000?'standing':'cheer'} size={.12}/>
      {ms>=900&&ms<3900&&<div style={{...abs,left:800,top:490,width:190,height:150,background:'#fff4df',borderRadius:'35%',boxShadow:'3px 5px 2px #75604730'}}><svg width="190" height="150"><path d="M25 112 V48 H40 V63 H55 V48 H70 V112 M70 78 H120 M120 112 V48 H135 V63 H150 V48 H165 V112 M25 112 H165 M85 112 V92 Q95 80 105 92 V112" stroke="#98815c" strokeWidth="5" fill="none"/><text x="85" y="48" fontFamily="Georgia" fontSize="39" fill="#675e51">{ms<2200?'?':'!'}</text></svg></div>}
     </>}
    </div>
    {forest&&<PlaysetPart id="tree-cluster" x={-205-travel*.65} y={895} w={440}/>}
-   {blossom&&<PaperPop wind={windAt} ms={ms} swap={5800} x={-213} y={574} w={456} h={329}/>}
+   {blossom&&!early&&<PaperPop brisk={film} wind={windAt} ms={ms} swap={5800} x={-213} y={574} w={456} h={329}/>}
    <Cut id="hill-b-v1" x={-100-travel*.5} y={930} w={2270}/>
    {forest&&<><LivingBush x={-80-travel*.8} y={1080} w={700} ms={ms}/><LivingBush x={1360-travel*.8} y={1090} w={700} ms={ms}/></>}
-   {blossom&&<><PaperPop wind={windAt} ms={ms} swap={5800} x={-88} y={878} w={716} h={210}/><PaperPop wind={windAt} ms={ms} swap={5800} x={1352} y={888} w={716} h={210}/></>}
+   {blossom&&!early&&<><PaperPop brisk={film} wind={windAt} ms={ms} swap={5800} x={-88} y={878} w={716} h={210}/><PaperPop brisk={film} wind={windAt} ms={ms} swap={5800} x={1352} y={888} w={716} h={210}/></>}
   </div>
   {captions&&<Song captionsOnly offsetMs={blossom?83000:55000}/>}
  </AbsoluteFill>;

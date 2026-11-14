@@ -8,7 +8,7 @@ export function ventNose(ms:number){
  const u=ms<=4500?smooth((ms-350)/3600):1-smooth((ms-5050)/3600);
  return 1400+490*u;
 }
-export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening='inset(0)',hidePlane=false,outbound=false}:{nose?:number;showPlane?:boolean;inheritance?:boolean;opening?:string;hidePlane?:boolean;outbound?:boolean}){
+export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening='inset(0)',hidePlane=false,outbound=false,goggles}:{nose?:number;showPlane?:boolean;inheritance?:boolean;opening?:string;hidePlane?:boolean;outbound?:boolean;goggles?:{x:number;y:number;w:number;turn?:number}}){
  const {near,deep,end,y}=ventPlanes;
  const plane=(lo:number,hi:number)=>showPlane&&!hidePlane&&<div style={{position:'absolute',inset:0,clipPath:`polygon(${lo}px 0,${hi}px 0,${hi}px 1080px,${lo}px 1080px)`}}><Img src={staticFile('nightshift/stickers/paper-plane-v1.png')} style={{position:'absolute',left:0,top:0,width:1736,height:1224,transform:`translate(${nose}px,${y}px) scaleX(${outbound?-1:1}) rotate(28deg) scale(.075) translate(-1385px,-260px)`,transformOrigin:'0 0'}}/></div>;
  return <>
@@ -18,7 +18,7 @@ export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening=
    {plane(deep,end)}
    <Card x={end} y={513} w={20} h={168} color="#536a5e"/>
    {[deep,1734].map(x=><Card key={x} x={x} y={528} w={12} h={138} color="#718876"/>)}
-   {inheritance&&<Img src={staticFile('accessories/goggles-v1.png')} style={{position:'absolute',left:1583,top:617,width:145,transform:'rotate(-8deg)'}}/>}
+   {(inheritance||goggles)&&<Img src={staticFile('accessories/goggles-v1.png')} style={{position:'absolute',left:goggles?.x??1583,top:goggles?.y??617,width:goggles?.w??145,transform:`rotate(${goggles?.turn??-8}deg)`}}/>}
    {plane(near,deep)}
    {/* Director revision: tall vertical openings, with folded right-hand returns. */}
    {[near,1652,1756].map(x=><div key={x} style={{position:'absolute',left:x+12,top:525,width:22,height:141,background:'#718672',clipPath:'polygon(0 0,100% 9%,100% 92%,0 100%)',boxShadow:'inset 4px 0 3px #3d503a'}}/>)}
@@ -28,7 +28,7 @@ export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening=
    <Card x={1772} y={513} w={14} h={168} color="#b7c3ac"/>
   </div>
   {/* Outside portion remains in front of the room and near structure. */}
-  {!inheritance&&plane(-500,near)}
+  {plane(-500,near)}
  </>;
 }
 export function VentStudy({hidePlane=false}:{hidePlane?:boolean}){

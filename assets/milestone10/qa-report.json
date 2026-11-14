@@ -1,0 +1,333 @@
+{
+  "decodedFullFrameCount": 7884,
+  "wholeMasterAudioCorrelationWithoutLagCorrection": 0.9999023374037915,
+  "protectedInputsPreserved": true,
+  "approvedBodyMastersPreserved": true,
+  "repeatFrameComparison": {
+    "hashA": "e61f1f356d3d3bed695273e9ccc941d9a5ba6d7c142ef8f433ca5528b8a5a8da",
+    "hashB": "e61f1f356d3d3bed695273e9ccc941d9a5ba6d7c142ef8f433ca5528b8a5a8da",
+    "byteIdentical": true,
+    "maximumChannelDelta": 0,
+    "changedPixels": 0,
+    "rmseOn255Scale": 0.0,
+    "acceptance": "max channel delta <=3/255 and RMSE <0.1/255; no claim of byte-identical raster output"
+  },
+  "blackout": {
+    "startMs": 142000,
+    "endMs": 144000,
+    "decodedBlackFrames": 60,
+    "maximumGrayValue": 1,
+    "meanGrayValue": 0.011111111111111112,
+    "sourceFrameExactlyBlack": true,
+    "note": "Lossless still is all zero; H.264 export permits <=1/255 residual with mean <0.02/255."
+  },
+  "exports": [
+    {
+      "file": "assets\\milestone10\\review-v2\\full.mp4",
+      "duration": 262.8,
+      "frames": 7884,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 13,
+          "exportSeconds": 13,
+          "correlationWithoutLagCorrection": 0.9999661533357442
+        },
+        {
+          "masterSeconds": 55,
+          "exportSeconds": 55,
+          "correlationWithoutLagCorrection": 0.9999929150017959
+        },
+        {
+          "masterSeconds": 128,
+          "exportSeconds": 128,
+          "correlationWithoutLagCorrection": 0.9999287383856901
+        },
+        {
+          "masterSeconds": 208,
+          "exportSeconds": 208,
+          "correlationWithoutLagCorrection": 0.9998777762875377
+        },
+        {
+          "masterSeconds": 247,
+          "exportSeconds": 247,
+          "correlationWithoutLagCorrection": 0.9999863512453735
+        }
+      ],
+      "bytes": 41908357,
+      "sha256": "b0daafd4b8774f4f327074be6c3e2a7d845469afab17425baaf8b5296966a4c5"
+    },
+    {
+      "file": "assets\\milestone10\\review-v2\\middle.mp4",
+      "duration": 29,
+      "frames": 870,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 84,
+          "exportSeconds": 1,
+          "correlationWithoutLagCorrection": 0.9998709665960122
+        },
+        {
+          "masterSeconds": 92,
+          "exportSeconds": 9,
+          "correlationWithoutLagCorrection": 0.9999858300627843
+        },
+        {
+          "masterSeconds": 98,
+          "exportSeconds": 15,
+          "correlationWithoutLagCorrection": 0.9998850288755446
+        },
+        {
+          "masterSeconds": 108,
+          "exportSeconds": 25,
+          "correlationWithoutLagCorrection": 0.9999214721535724
+        }
+      ],
+      "bytes": 9245504,
+      "sha256": "db4ab9b9b26294d93c95a95f54546942932df62d9e7bd5df066cc50b905c6e7c"
+    },
+    {
+      "file": "assets\\milestone10\\review-v2\\goggles-invention.mp4",
+      "duration": 13,
+      "frames": 390,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 43,
+          "exportSeconds": 1,
+          "correlationWithoutLagCorrection": 0.9999926888524066
+        },
+        {
+          "masterSeconds": 48,
+          "exportSeconds": 6,
+          "correlationWithoutLagCorrection": 0.9999866616657374
+        },
+        {
+          "masterSeconds": 53,
+          "exportSeconds": 11,
+          "correlationWithoutLagCorrection": 0.9998996774702446
+        }
+      ],
+      "bytes": 2525257,
+      "sha256": "4e64d780d79f02eb0352ff5eb4d99d67f0f09b6c4e27219abad3ce665757c344"
+    },
+    {
+      "file": "assets\\milestone10\\review-v2\\goodbye-blackout.mp4",
+      "duration": 32.8,
+      "frames": 984,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 122.2,
+          "exportSeconds": 2,
+          "correlationWithoutLagCorrection": 0.9999883205903013
+        },
+        {
+          "masterSeconds": 130.2,
+          "exportSeconds": 10,
+          "correlationWithoutLagCorrection": 0.9999021551849895
+        },
+        {
+          "masterSeconds": 144.2,
+          "exportSeconds": 24,
+          "correlationWithoutLagCorrection": 0.9999600632304129
+        }
+      ],
+      "bytes": 5245693,
+      "sha256": "d55c9138246d668eb8641c74d7d0a8df21af5ec618a39481a2803d75d1a3e40f"
+    },
+    {
+      "file": "assets\\milestone10\\review-v2\\awakening-inheritance.mp4",
+      "duration": 55,
+      "frames": 1650,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 154,
+          "exportSeconds": 1,
+          "correlationWithoutLagCorrection": 0.9999808794797358
+        },
+        {
+          "masterSeconds": 178,
+          "exportSeconds": 25,
+          "correlationWithoutLagCorrection": 0.9999965101904484
+        },
+        {
+          "masterSeconds": 197,
+          "exportSeconds": 44,
+          "correlationWithoutLagCorrection": 0.9999885224706119
+        }
+      ],
+      "bytes": 5790455,
+      "sha256": "8bd33cf347e05c347e3cb06e5735400136b5265e37ae33b9d835717c41855b0f"
+    },
+    {
+      "file": "assets\\milestone10\\review-v2\\reunion.mp4",
+      "duration": 32,
+      "frames": 960,
+      "fps": 30,
+      "audio": "AAC 320k stereo 48kHz; original master, no remix/time warp",
+      "audioChecks": [
+        {
+          "masterSeconds": 210,
+          "exportSeconds": 2,
+          "correlationWithoutLagCorrection": 0.9997932225483422
+        },
+        {
+          "masterSeconds": 223,
+          "exportSeconds": 15,
+          "correlationWithoutLagCorrection": 0.9999462646847503
+        },
+        {
+          "masterSeconds": 237,
+          "exportSeconds": 29,
+          "correlationWithoutLagCorrection": 0.9999827858658855
+        }
+      ],
+      "bytes": 6749197,
+      "sha256": "30baf755565edf8b6cacf2e03ec83639399eea0966d0b2353a6976eb8753a0de"
+    }
+  ],
+  "frameQuantization": [
+    {
+      "requestedMs": 24160,
+      "visibleFrame": 725,
+      "visibleMs": 24166.666666666668
+    },
+    {
+      "requestedMs": 24750,
+      "visibleFrame": 743,
+      "visibleMs": 24766.666666666668
+    },
+    {
+      "requestedMs": 26000,
+      "visibleFrame": 780,
+      "visibleMs": 26000.0
+    },
+    {
+      "requestedMs": 26240,
+      "visibleFrame": 788,
+      "visibleMs": 26266.666666666668
+    },
+    {
+      "requestedMs": 44900,
+      "visibleFrame": 1347,
+      "visibleMs": 44900.0
+    },
+    {
+      "requestedMs": 90700,
+      "visibleFrame": 2721,
+      "visibleMs": 90700.0
+    },
+    {
+      "requestedMs": 91400,
+      "visibleFrame": 2742,
+      "visibleMs": 91400.0
+    },
+    {
+      "requestedMs": 92000,
+      "visibleFrame": 2760,
+      "visibleMs": 92000.0
+    },
+    {
+      "requestedMs": 94500,
+      "visibleFrame": 2835,
+      "visibleMs": 94500.0
+    },
+    {
+      "requestedMs": 95860,
+      "visibleFrame": 2876,
+      "visibleMs": 95866.66666666667
+    },
+    {
+      "requestedMs": 96820,
+      "visibleFrame": 2905,
+      "visibleMs": 96833.33333333334
+    },
+    {
+      "requestedMs": 104940,
+      "visibleFrame": 3149,
+      "visibleMs": 104966.66666666667
+    },
+    {
+      "requestedMs": 106860,
+      "visibleFrame": 3206,
+      "visibleMs": 106866.66666666667
+    },
+    {
+      "requestedMs": 107660,
+      "visibleFrame": 3230,
+      "visibleMs": 107666.66666666667
+    },
+    {
+      "requestedMs": 108380,
+      "visibleFrame": 3252,
+      "visibleMs": 108400.0
+    },
+    {
+      "requestedMs": 127300,
+      "visibleFrame": 3819,
+      "visibleMs": 127300.0
+    },
+    {
+      "requestedMs": 128500,
+      "visibleFrame": 3855,
+      "visibleMs": 128500.0
+    },
+    {
+      "requestedMs": 142000,
+      "visibleFrame": 4260,
+      "visibleMs": 142000.0
+    },
+    {
+      "requestedMs": 144000,
+      "visibleFrame": 4320,
+      "visibleMs": 144000.0
+    },
+    {
+      "requestedMs": 196000,
+      "visibleFrame": 5880,
+      "visibleMs": 196000.0
+    },
+    {
+      "requestedMs": 197600,
+      "visibleFrame": 5928,
+      "visibleMs": 197600.0
+    },
+    {
+      "requestedMs": 208000,
+      "visibleFrame": 6240,
+      "visibleMs": 208000.0
+    },
+    {
+      "requestedMs": 210000,
+      "visibleFrame": 6300,
+      "visibleMs": 210000.0
+    },
+    {
+      "requestedMs": 247200,
+      "visibleFrame": 7416,
+      "visibleMs": 247200.0
+    },
+    {
+      "requestedMs": 255000,
+      "visibleFrame": 7650,
+      "visibleMs": 255000.0
+    }
+  ],
+  "continuousAudiovisualReview": "Not performed by automated QA. Leo approval pending.",
+  "reviewScope": "Static frames, source, exact coverage, preserved hashes, decoded audio correlation, technical video inspection.",
+  "motionStrips": {
+    "count": 5,
+    "samplesPerStrip": 12,
+    "source": "final encoded full film",
+    "scope": "temporal still samples, not audiovisual approval"
+  },
+  "galleryLinksVerified": true
+}

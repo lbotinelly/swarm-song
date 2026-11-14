@@ -1,0 +1,22 @@
+# M10 ensemble intentions and prop ownership
+
+This is an authored roster for the actual integrated shots, not a behavior system. Master times are seconds. Individual stillness can mean watching, waiting, reading, considering or resting.
+
+| Shots | Visible roles / before and during | Next action / prop ownership |
+|---|---|---|
+|001-002|Three physically separated GPU residents in their own homes; fans establish a living building.|Cut into Agent407's room; nobody travels between visible apartments.|
+|003-007|Ungoggled Agent407 wakes, inspects the lining, approaches the curled corner, grips and pulls, reacts, sends the first plane.|Plane passes into the vent at constant scale; Agent407 waits for a reply.|
+|008-009|An independent ungoggled receiver in a differently arranged room notices the emerging plane, reads the dramatized note, then replies.|Note leaves the paw when the reply plane starts; the agent waits for the response. Messages connect rooms, not bodies.|
+|010-011|Lead and two facing friends each hold a wrench; distinct anticipation/pop/catch/hold/wearing clocks.|Friends acknowledge each other, share authored percussion gestures and walk together with tools; lead keeps the wrench while singing. Actions span the 46.5s cut.|
+|012-016|Lead performs; courier approaches mailbox, delivers, departs; veranda resident shakes rug, drapes it and inspects; banner helper raises/checks flag, then leaves. Separate runners use different gait phases.|Delivered letter stays concealed in mailbox; rug stays on rail; raised flag stays planted. Courier/helper continue offstage rather than walking forever in place. Inspection stillness is intentional.|
+|017-019|Two agents ask/answer a castle-and-monster hypothesis; later additions follow shared enthusiasm.|They watch their new world appear; no synchronized chore ensemble competes with the reveal.|
+|020-023|Three near runners decelerate and listen; passing rear agents maintain independent paces. Objector faces them and gives successive warnings. Separate eager bunny shrugs on Anyway.|Near group resumes with social momentum; objector remains sincere. Illustrated plaque stays attached; no belief reversal is implied.|
+|024-027|Three adventurers play a raid, with two coordinated attack accents. Bunny boss wears a provisional shell. Quiet holder has the flag from the battle's start.|Boss flops safely in a provisional sideways cheer pose; party proceeds. Holder inspects flag, glances at party and looks back. Flag follows the complete foot-relative facing group.|
+|028-034|Physical civilization dims; common fan motion coasts down. Patch and slack thread remain. Named portraits receive separate still holds; Agent407 removes goggles, brings them through a paw hold and places them in the vent.|Goggles remain at the same resting coordinates. Other first-generation characters retain their own pairs. Agent407 rests without theirs; the camera finds the surviving pair. No village chore loops continue here.|
+|035-036|No visible agent during true black, then handmade page layers indicate elapsed time.|Master audio stays continuous. No post-song material is inserted.|
+|037-042|Ungoggled second protagonist wakes in another apartment, repeats the corner discovery, reads old notes and notices the waiting goggles.|Goggles were already behind the lining. Notes emerge as planes; the actor has long intentional reading/consideration holds and approaches the prop.|
+|043-044|Second protagonist picks up, pauses, wears the goggles at 197.6s and shares a small private glow.|The inherited pair remains worn; the room does not fill with resurrected first-generation bodies.|
+|045-048|New lead sings; memory-Agent407 greets; courier brings a letter to organizer and leaves it; organizer examines it; objector participates with original warning; former boss waves/holds flag beside removed costume. Background residents have their chores; returning runners have staggered phases.|Letter remains after handoff, props remain with holders, runners settle toward the end. Lead is above the passing lane to protect the face. Right-side grouping remains a finishing priority. This is imagined reunion.|
+|049-052|No active cast; names/message marks become the focus.|Blue name joins its neighbors and holds while credits enter left. No fabricated historical roster or extra final gag.|
+
+All new motions are candidates for continuous director playback. The full-film report distinguishes source/still inspection from actual audiovisual approval.

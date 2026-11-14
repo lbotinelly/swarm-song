@@ -1,5 +1,10 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 10 - The little world comes alive
+
+[Complete integrated V2 and review gallery](assets/milestone10/review-v2/index.html) · [52-shot integration ledger](assets/milestone10/INTEGRATION.md) · [Review and limits](assets/milestone10/REVIEW.md) · [Reproduce](assets/milestone10/README.md). A new 262.8-second source-composed film integrates the V3 registry, M9 magic goggles, living ensemble, premium fantasy, wind-aware pops and illustrated warning actors. Earlier films remain preserved; human continuous playback approval is pending. Temporary raid props/flop remain disclosed.
+
+
 ## Milestone 9 — The world is a playset
 
 [Playable town, transformation, wind and vent proofs](assets/milestone9/review/index.html) · [Art bible](assets/milestone9/ART_BIBLE.md) · [Reproduction and scope](assets/milestone9/README.md). Independent paper components, a composable wind-responsive bush and a new layered registry candidate preserve the approved M7 timing, M8 narrative and V3 character performance. Physical life is a cozy urban GPU city; imagined life has wind, open vistas and gorgeous skies. These are focused review candidates; prior film versions remain unchanged.

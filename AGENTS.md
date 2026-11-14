@@ -1,5 +1,10 @@
 # Codex working instructions
 
+## Active milestone - M10 full-film integration
+
+Read `assets/milestone10/BRIEF.md`, `README.md`, `INTEGRATION.md` and `REVIEW.md`. Leo explicitly authorizes a new complete 262.8-second source-composed cut, middle act, labeled goggles continuity excerpts,52-shot ledger, independent read-only reviews and technical QA. This supersedes earlier proof-only expansion pauses for this scope. Preserve prior films, body masters, M7 timing/audio and source provenance. No new large art batch or animation framework. The M9 wind-aware pop direction received MUCH better; that approves its direction, not automatically the new full film. Integrated motion remains pending director playback. S16/AND YOU/QR remain separate post-song decisions.
+
+
 ## Active milestone — M9 modular playset
 
 Read `assets/milestone9/BRIEF.md`, `ART_BIBLE.md`, `README.md` and review/QA before extending. Leo authorizes focused premium town, in-place fantasy, layered vent and registry candidate proofs with an independent read-only critic; preserve M7 timing, M8 narrative and registry V3 character performance. Latest grille direction is **vertical bars**, allowing taller openings for paper-plane wings; retain near/deep layering and constant-scale passage. The liked garden strip now has a separate composable bush variant: vegetation, independently anchored flowers, foreground occlusion, shared scene wind strength/direction. Keep motion deterministic and scene-supplied; do not build a physics engine. Physical-world direction is urban GPU buildings, LED/circuit-trail street illumination and cozy warm apartment interiors; imagined life has wind, movement, open vistas and gorgeous skies. Exact night-sky reference is now in `assets/milestone9/reference/`; new staging remains candidate review, not automatic film approval.

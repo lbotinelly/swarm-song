@@ -28,3 +28,18 @@ assets/milestone9/review/vent-185.png
 !assets/milestone9/review/goggle-continuity-6420.png
 !assets/milestone9/review/goggle-magic-120.png
 !assets/milestone9/review/crowd-individuality-120.png
+
+# M10 diagnostic PNGs regenerate; keep selected full-resolution continuity evidence.
+assets/milestone10/review-v2/*.png
+!assets/milestone10/review-v2/beat-24750.png
+!assets/milestone10/review-v2/beat-43300.png
+!assets/milestone10/review-v2/beat-87000.png
+!assets/milestone10/review-v2/beat-96100.png
+!assets/milestone10/review-v2/repeat-96100.png
+!assets/milestone10/review-v2/beat-110300.png
+!assets/milestone10/review-v2/beat-128500.png
+!assets/milestone10/review-v2/beat-143000.png
+!assets/milestone10/review-v2/beat-164000.png
+!assets/milestone10/review-v2/beat-196500.png
+!assets/milestone10/review-v2/beat-210000.png
+!assets/milestone10/review-v2/beat-259000.png

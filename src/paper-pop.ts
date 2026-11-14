@@ -4,7 +4,7 @@ export type PopRegion={x:number;y:number;w:number;h:number};
 import type {WindSampler} from './playset-wind';
 const ease=(t:number)=>{const u=Math.max(0,Math.min(1,t));return u*u*(3-2*u);};
 const variation=(id:number,salt:number)=>{const n=Math.sin(id*127.1+salt*311.7)*43758.5453;return n-Math.floor(n);};
-export function paperPopAt(ms:number,swap:number,box:PopRegion,wind?:WindSampler){
+export function paperPopAt(ms:number,swap:number,box:PopRegion,wind?:WindSampler,brisk=false){
  const age=ms-swap;if(age< -180||age>=1300)return [];
  const cols=Math.max(2,Math.ceil(box.w/190)),rows=Math.max(2,Math.ceil(box.h/190));
  const cw=box.w/cols,ch=box.h/rows,base=Math.hypot(cw,ch)*.64;
@@ -28,7 +28,7 @@ export function paperPopAt(ms:number,swap:number,box:PopRegion,wind?:WindSampler
   // Integral of an exponentially decaying launch velocity: fast out, then coast.
   const out=launchSpeed/drag*(1-Math.exp(-drag*elapsed));
   const nearCenter=Math.hypot(dx/(box.w/2),dy/(box.h/2))<.82;
-  const lifetime=(560+420*variation(p.id,7))*(nearCenter?.58:1),life=elapsed*1000/lifetime;
+  const lifetime=(560+420*variation(p.id,7))*(nearCenter?.58:1)*(brisk&&p.r>=base?.57:1),life=elapsed*1000/lifetime;
   const fadeStart=nearCenter?.08:.28+.22*variation(p.id,8),opacity=1-ease((life-fadeStart)/(1-fadeStart));
   const floatUp=(40+45*variation(p.id,9))*speed*(elapsed-(1-Math.exp(-3*elapsed))/3);
   const drift=breeze*75*speed*elapsed*(1-Math.exp(-4*elapsed));
