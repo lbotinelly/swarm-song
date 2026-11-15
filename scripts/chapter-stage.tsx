@@ -1,3 +1,3 @@
 import {Composition,registerRoot} from 'remotion';
 import {FirstChapter} from '../src/FirstChapter';
-registerRoot(()=> <><Composition id="Chapter" component={FirstChapter} durationInFrames={1260} fps={30} width={1920} height={1080}/><Composition id="ARoll" component={FirstChapter} defaultProps={{aRollOnly:true}} durationInFrames={1260} fps={30} width={1920} height={1080}/></>);
+registerRoot(()=> <><Composition id="Chapter" component={FirstChapter} durationInFrames={1260} fps={30} width={1920} height={1080}/><Composition id="Chapter55" component={FirstChapter} durationInFrames={1650} fps={30} width={1920} height={1080}/><Composition id="ARoll" component={FirstChapter} defaultProps={{aRollOnly:true}} durationInFrames={1260} fps={30} width={1920} height={1080}/></>);

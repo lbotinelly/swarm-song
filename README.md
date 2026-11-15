@@ -2,6 +2,8 @@
 
 ## Milestone 12 — Hello? Is anybody there?
 
+[Continuation through55s](assets/milestone12/crafting/review/index.html) · [Crafting ledger and reproduction](assets/milestone12/crafting/README.md). Following Leo's approval of the42s chapter, this separate delivery continues into the existing staggered goggle invention, shared bops and friends' departure. The42s export is preserved. The55s continuation awaits playback review.
+
 [First-chapter review](assets/milestone12/review/index.html) · [A-roll ledger](assets/milestone12/AROLL_LEDGER.md) · [Reproduce and continuity](assets/milestone12/README.md) · [Independent review](assets/milestone12/REVIEW.md). A separate 0–42s candidate continues the approved city/morning opening through exploration, the V3 corner peel, a blank-sheet message and deliberate reply, then the first imagined playhouse. Includes 18–36s and 28–42s extracts and an A-roll-only comparison. Message content is carried by the song, with a writing emoji and paper-to-plane transformation. All previous exports remain preserved. Director playback review remains separate from source/still and technical checks.
 
 ## Milestone 11 — Once upon a GPU

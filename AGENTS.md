@@ -2,6 +2,8 @@
 
 ## Active production — M12 first chapter
 
+Leo approved the 42-second chapter and asked to proceed. `assets/milestone12/crafting/README.md` records the bounded continuation through SH010/SH011 to55s using unchanged crafting choreography and the same caption engine. Preserve the approved42s export. Next handoff is the village-life entrance at55s; the new55s delivery awaits director playback.
+
 Read `assets/milestone12/BRIEF.md`, `README.md`, `AROLL_LEDGER.md` and `REVIEW.md`. Leo authorizes a continuous 0–42s A-roll candidate, 18–36/28–42 extracts, A-roll-only comparison and technical/independent review. Preserve approved M11 city, morning/focus/caption sources and all old exports. Latest correction: messages are blank sheet stickers plus a wiggling writing emoji, folding into planes; do not duplicate the song's dialogue on notes. Reuse V3 grip/pull, vertical layered vent and SH010 crafting handoff. No new engine or unnecessary art batch.
 
 ## Active focused production — M11 opening

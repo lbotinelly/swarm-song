@@ -1,0 +1,27 @@
+{
+  "videos": {
+    "chapter-55s": {
+      "frames": 1650,
+      "masterStartSeconds": 0,
+      "audioCorrelation": 0.9999792966016215,
+      "fullDecode": "pass"
+    },
+    "crafting-42-55": {
+      "frames": 390,
+      "masterStartSeconds": 42,
+      "audioCorrelation": 0.9999642922782597,
+      "fullDecode": "pass"
+    },
+    "handoff-39-55": {
+      "frames": 480,
+      "masterStartSeconds": 39,
+      "audioCorrelation": 0.9999741325580698,
+      "fullDecode": "pass"
+    }
+  },
+  "approvedChapterSHA256": "a115128008b66249e095d4fcc52bdf2b4f9da10b5afd37d16b37cf3d63e60be0",
+  "frame1259MatchesApprovedChapter": true,
+  "testsPassed": 54,
+  "runtimeChoreographyUnchanged": true,
+  "technicalOnlyNotPlaybackApproval": true
+}
