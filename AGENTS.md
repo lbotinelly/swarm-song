@@ -2,6 +2,8 @@
 
 ## Active focused production — M11 opening
 
+**Latest camera refinement:** Leo approved the morning-routines preview, then requested a gentle push-in after ~14s, with the protagonist apartment in the upper screen and breathing room for city buildings and active neighbors. `assets/milestone11/morning-focus/README.md` records the separate camera candidate. Preserve the approved morning-routines export.
+
 **Performance mandate:** read `docs/PERFORMANCE_MANDATE.md`. Every visible agent needs a purposeful action throughout their appearance; supporting cast must not fall back to statues. Leo approved the elevated approach as PERFECT. Preserve that camera/city. The morning-routines candidate adds staggered waking, news, coffee/sweeping, and the protagonist's yawn/stretch/task-list/ellipsis sequence. Acting and revised caption placement await playback review; preserve the approved approach film.
 
 **Current direction:** Leo selected density reference A and authorized approaching the central facing protagonist building, then refined it to a drone-like view at mid-building altitude: only buildings, no ground. Side rows move as rigid layers; their native foundations remain below frame. Dense rear buildings fade into blue haze, no visible horizon. See `assets/milestone11/canyon-approach/README.md`. Preserve the earlier C proof. New motion is pending director playback, not approved by static critique.

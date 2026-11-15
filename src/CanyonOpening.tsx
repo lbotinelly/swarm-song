@@ -37,9 +37,12 @@ function SideRows({advance}:{advance:number}){return <>{[
  ].map((r,i)=><div key={i} style={{...abs,inset:0,transform:`scale(${1/(1-r.depth*advance)})`,transformOrigin:'960px 470px',filter:'brightness(.95)'}}>
   {rowArt(`${r.side}-row`,{left:r.x,top:r.y,width:r.w})}
  </div>)}</>;}
-export function CanyonOpening({dense=false,active=false}:{dense?:boolean;active?:boolean}){
+export function CanyonOpening({dense=false,active=false,focus=false}:{dense?:boolean;active?:boolean;focus?:boolean}){
  const ms=useCurrentFrame()*1000/30,c=canyonCamera(ms,dense),advance=.07*c.travel+.48*c.enter;
+ const focusTime=focus?ramp(ms,14000,19500):0,push=focusTime*focusTime*(3-2*focusTime);
  return <AbsoluteFill style={{background:'#080f26',overflow:'hidden'}}>
+  {/* One optical push keeps every building and its floor attached. Captions stay in screen space. */}
+  <AbsoluteFill style={{transform:`translateY(${-80*push}px) scale(${1+.4*push})`,transformOrigin:'960px 470px'}}>
   {dense?rowArt('rear',{left:-200,top:-120,width:2320,filter:'brightness(.65)',transform:`scale(${1/(1-.25*advance)})`,transformOrigin:'1160px 590px'}):art('backdrop',{left:-80-35*c.travel,top:-40,width:2100,transform:`scale(${1+.035*c.travel})`})}
   {/* Independent cards at three depths; the city remains around the cutaway. */}
   {!dense&&[
@@ -65,6 +68,7 @@ export function CanyonOpening({dense=false,active=false}:{dense?:boolean;active?
    {art('left',{left:-550-420*c.travel-700*c.enter,top:-350,width:1120,zIndex:8,filter:'brightness(.65)'})}
    {art('right',{left:1590+350*c.travel+600*c.enter,top:-380,width:1100,zIndex:8,filter:'brightness(.7)'})}
   </>}
+  </AbsoluteFill>
   <AbsoluteFill style={{zIndex:9,background:'linear-gradient(90deg,#03091b80,transparent 52%),linear-gradient(0deg,#03091b70,transparent 28%)',pointerEvents:'none'}}/>
   <div style={{...abs,inset:0,zIndex:10}}><OpeningTitle ms={ms}/></div>
   <div style={{...abs,inset:0,zIndex:11,transform:active?'translate(-470px,60px) scale(.48)':'scale(.92)'}}><Song captionsOnly layoutOverride="lower-center"/></div>

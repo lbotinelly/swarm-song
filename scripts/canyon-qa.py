@@ -4,9 +4,10 @@ import hashlib,json,subprocess,sys
 import numpy as np
 from PIL import Image,ImageDraw
 
-morning='--morning' in sys.argv
+focus='--focus' in sys.argv
+morning='--morning' in sys.argv or focus
 dense='--approach' in sys.argv or morning
-root=Path('assets/milestone11')/('morning-routines' if morning else 'canyon-approach' if dense else 'canyon-proof'); review=root/'review'
+root=Path('assets/milestone11')/('morning-focus' if focus else 'morning-routines' if morning else 'canyon-approach' if dense else 'canyon-proof'); review=root/'review'
 video=review/'canyon-opening-20s.mp4'
 def run(*args): return subprocess.check_output(args)
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -26,10 +27,14 @@ if dense:
 if morning:
  old='assets/milestone11/canyon-approach/review/canyon-opening-20s.mp4'
  preserved[old]=hashlib.sha256(run('git','show',f'd58ae11:{old}')).hexdigest()
+if focus:
+ old='assets/milestone11/morning-routines/review/canyon-opening-20s.mp4'
+ preserved[old]=hashlib.sha256(run('git','show',f'ffe0605:{old}')).hexdigest()
 assert all(sha(p)==expected for p,expected in preserved.items())
-manifest=json.loads((root/'manifest.json').read_text())
+asset_root=Path('assets/milestone11/morning-routines') if focus else root
+manifest=json.loads((asset_root/'manifest.json').read_text())
 for name,item in manifest.items():
- assert sha(root/'masters'/f'{name}.png')==item['sha256']==sha(Path('public/milestone11')/('morning' if morning else 'canyon-approach' if dense else 'canyon')/f'{name}.png')
+ assert sha(asset_root/'masters'/f'{name}.png')==item['sha256']==sha(Path('public/milestone11')/('morning' if morning else 'canyon-approach' if dense else 'canyon')/f'{name}.png')
 report={'video':str(video),'frames':600,'dimensions':[1920,1080],'fps':30,'durationSeconds':float(meta['format']['duration']),'fullDecode':'pass','first45FramesRGBMax':max(black),'audioCorrelationWithMaster':corr,'preservedInputHashes':len(preserved),'nativeAndProductionAssetHashes':'pass','automatedChecksDoNotConstitutePlaybackApproval':True}
 (root/'QA.json').write_text(json.dumps(report,indent=2)+'\n')
 times=[10800,14000,15200,17400,18200,19000] if morning else [3400,7000,9800,10800,13000,16000]; sheet=Image.new('RGB',(1280,1140),'#10162a'); draw=ImageDraw.Draw(sheet)
@@ -43,3 +48,6 @@ if dense:
  gallery.write_text(gallery.read_text(encoding='utf-8').replace('C canyon proof','A elevated approach proof').replace('C — the city opens like a playset','A — elevated approach to the facing apartment').replace('Full-screen city and one sliding facade.','Mid-building altitude, no visible ground, dense blue-hazed rows and one sliding facade.'),encoding='utf-8')
 if morning:
  gallery.write_text(gallery.read_text(encoding='utf-8').replace('A — elevated approach to the facing apartment','The apartments wake up').replace('A elevated approach proof','Morning routines').replace('Mid-building altitude, no visible ground, dense blue-hazed rows and one sliding facade.','Approved elevated camera; staggered waking, news, coffee, sweeping and task-list reading. Caption placement adjusted for the supporting performances.'),encoding='utf-8')
+
+if focus:
+ gallery.write_text(gallery.read_text(encoding='utf-8').replace('Approved elevated camera;', 'Approved approach, then a gentle 14�19.5s push-in toward the upper-screen protagonist apartment;'),encoding='utf-8')
