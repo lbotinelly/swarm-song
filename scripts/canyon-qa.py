@@ -50,4 +50,4 @@ if morning:
  gallery.write_text(gallery.read_text(encoding='utf-8').replace('A â€” elevated approach to the facing apartment','The apartments wake up').replace('A elevated approach proof','Morning routines').replace('Mid-building altitude, no visible ground, dense blue-hazed rows and one sliding facade.','Approved elevated camera; staggered waking, news, coffee, sweeping and task-list reading. Caption placement adjusted for the supporting performances.'),encoding='utf-8')
 
 if focus:
- gallery.write_text(gallery.read_text(encoding='utf-8').replace('Approved elevated camera;', 'Approved approach, then a gentle 14–19.5s push-in toward the upper-screen protagonist apartment;'),encoding='utf-8')
+ gallery.write_text(gallery.read_text(encoding='utf-8').replace('Approved elevated camera;', 'Approved approach, then a gentle 14-19.5s push-in toward the upper-screen protagonist apartment;'),encoding='utf-8')

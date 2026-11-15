@@ -1,0 +1,16 @@
+{
+  "video": "assets\\milestone11\\morning-focus\\review\\canyon-opening-20s.mp4",
+  "frames": 600,
+  "dimensions": [
+    1920,
+    1080
+  ],
+  "fps": 30,
+  "durationSeconds": 20.0,
+  "fullDecode": "pass",
+  "first45FramesRGBMax": 0,
+  "audioCorrelationWithMaster": 0.999979131426668,
+  "preservedInputHashes": 48,
+  "nativeAndProductionAssetHashes": "pass",
+  "automatedChecksDoNotConstitutePlaybackApproval": true
+}
