@@ -22,7 +22,7 @@ export function WordSticker({text,w,font,color,id}:{text:string;w:number;font:nu
   <text x={12} y={font*1.12} fontFamily="Finger Paint" fontWeight="400" fontSize={font} fill={color} stroke="#fffdf7" strokeWidth={9} strokeLinejoin="round" paintOrder="stroke fill" filter={`url(#ink-${id})`}>{text}</text>
  </svg>;
 }
-export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride='',musicCues=false,rhythmCues=false,directorCues=false,captionsOnly=false}:{offsetMs?:number;strategy?:string;scene?:string;layoutOverride?:string;musicCues?:boolean;rhythmCues?:boolean;directorCues?:boolean;captionsOnly?:boolean}){
+export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride='',musicCues=false,rhythmCues=false,directorCues=false,captionsOnly=false,bottomGradient=false,captionScale=1}:{offsetMs?:number;strategy?:string;scene?:string;layoutOverride?:string;musicCues?:boolean;rhythmCues?:boolean;directorCues?:boolean;captionsOnly?:boolean;bottomGradient?:boolean;captionScale?:number}){
  const [fontHandle]=useState(()=>delayRender('Loading bundled typography'));
  useEffect(()=>{loadFonts().then(()=>continueRender(fontHandle)).catch(cancelRender);},[fontHandle]);
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=offsetMs+frame*1000/fps;
@@ -30,6 +30,7 @@ export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride=''
  const quiet=section?.id==='goodbye'||section?.id==='sleep';
  const dark=ms>=142000&&ms<144000;
  const live=visiblePhrases(phrases,ms);
+ const backdropOpacity=bottomGradient?Math.max(0,...live.flatMap(p=>p.words.map(w=>wordMotion(p,w,ms,strategy).opacity))):0;
  const contract=sceneContracts[scene];
  const preset=layoutOverride||contract?.preset;
  if(contract)for(const p of live)if(conflicts(p,contract.protectedRegions,preset||p.layout).length)throw new Error(`Caption ${p.id} overlaps protected ${scene} region; author a different layout.`);
@@ -49,12 +50,16 @@ export function Song({offsetMs=0,strategy='slap',scene='paper',layoutOverride=''
    <div style={{marginLeft:36,fontFamily:'Finger Paint',fontSize:32,color:'#74634f'}}>a little song about finding each other</div>
   </div>}
   </>}
+  {/* Screen-space contrast stays full width; only the word layer scales. */}
+  {bottomGradient&&<AbsoluteFill style={{pointerEvents:'none',opacity:backdropOpacity,background:'linear-gradient(to bottom,rgba(0,0,0,0) 58%,rgba(0,0,0,.65) 78%,rgba(0,0,0,.9) 100%)'}}/>}
+  <AbsoluteFill style={{transform:`scale(${captionScale})`,transformOrigin:'50% 100%'}}>
   {live.map(p=><div key={p.id} style={{position:'absolute',inset:0}}>{layoutWords(p,preset||p.layout).map(({word,w,font,x,y,angle},i)=>{
    const m=wordMotion(p,word,ms,strategy);
    return <div key={word.id} style={{position:'absolute',left:x,top:y,transformOrigin:`${w/2}px ${font*1.2}px`,opacity:m.opacity,transform:`translate(${m.x}px,${m.y}px) rotate(${angle+m.turn}deg) scale(${m.scale})`,filter:`drop-shadow(1px ${m.shadow}px 1.5px #45362a38)`}}>
     <WordSticker text={word.text} w={w} font={font} color={quiet?'#625c77':word===p.words.at(-1)?(p.mode==='hero'?'#b45342':'#87702b'):'#287d82'} id={word.id}/>
    </div>;
   })}</div>)}
+  </AbsoluteFill>
   {ms>=251000&&!captionsOnly&&<div style={{position:'absolute',left:790,top:470,fontFamily:'Bitcount Single',fontWeight:550,fontSize:38,color:'#417eaa',opacity:smooth((ms-251000)/1500)*(1-smooth((ms-260000)/2800))}}>OAIResearchMar26</div>}
   {musicCues&&<MusicCueStudy ms={ms} rhythm={rhythmCues} directed={directorCues}/>}
   {dark&&<AbsoluteFill style={{background:'#000'}}/>}

@@ -1,5 +1,11 @@
 # Every visible agent has a purpose
 
+## Captions over rich scenes
+
+Leo approved bottom captions backed by a transparent black gradient spanning the full viewport, above all scenery including side buildings. Apply this treatment when revising other scenes: keep environmental lighting and background performances intact, and fade the contrast layer with visible lyrics. Scale or position the words independently from the full-width gradient. Check each composition for readability and clear faces; the gradient is not a guarantee for arbitrary text colors or placements. The approved opening example is `assets/milestone11/morning-captions/`.
+
+The existing `Song` caption renderer owns this capability: `<Song captionsOnly layoutOverride="lower-center" bottomGradient captionScale={.78}/>` mounted in an untransformed full-viewport overlay above the scene. `bottomGradient` follows actual word visibility and the selected animation strategy; `captionScale` affects words only. Defaults preserve existing scene renders. Reuse this renderer for future shots instead of duplicating lyric timing or gradient layers in scene code.
+
 Leo's mandate: every agent has something to do, including background residents and members of a group. Do not leave supporting characters in unattended standing/idle states after their featured beat. This applies across the film, not just the opening.
 
 Author a continuous action for each visible character: waking, reading, preparing coffee, cleaning, carrying a message, reacting to someone, travelling to a destination. Rest, a thoughtful pause and sleep can be deliberate actions; a generic bob alone does not replace purpose. Stagger starts and holds. Keep actions natural and cute, with readable anticipation, handling and follow-through. Shared anatomy does not imply synchronized timing.

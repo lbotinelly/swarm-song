@@ -37,7 +37,7 @@ function SideRows({advance}:{advance:number}){return <>{[
  ].map((r,i)=><div key={i} style={{...abs,inset:0,transform:`scale(${1/(1-r.depth*advance)})`,transformOrigin:'960px 470px',filter:'brightness(.95)'}}>
   {rowArt(`${r.side}-row`,{left:r.x,top:r.y,width:r.w})}
  </div>)}</>;}
-export function CanyonOpening({dense=false,active=false,focus=false}:{dense?:boolean;active?:boolean;focus?:boolean}){
+export function CanyonOpening({dense=false,active=false,focus=false,bottomCaptions=false}:{dense?:boolean;active?:boolean;focus?:boolean;bottomCaptions?:boolean}){
  const ms=useCurrentFrame()*1000/30,c=canyonCamera(ms,dense),advance=.07*c.travel+.48*c.enter;
  const focusTime=focus?ramp(ms,14000,19500):0,push=focusTime*focusTime*(3-2*focusTime);
  return <AbsoluteFill style={{background:'#080f26',overflow:'hidden'}}>
@@ -71,7 +71,10 @@ export function CanyonOpening({dense=false,active=false,focus=false}:{dense?:boo
   </AbsoluteFill>
   <AbsoluteFill style={{zIndex:9,background:'linear-gradient(90deg,#03091b80,transparent 52%),linear-gradient(0deg,#03091b70,transparent 28%)',pointerEvents:'none'}}/>
   <div style={{...abs,inset:0,zIndex:10}}><OpeningTitle ms={ms}/></div>
-  <div style={{...abs,inset:0,zIndex:11,transform:active?'translate(-470px,60px) scale(.48)':'scale(.92)'}}><Song captionsOnly layoutOverride="lower-center"/></div>
+  {/* Caption engine owns its full-viewport scrim and independently scaled words. */}
+  <AbsoluteFill style={{zIndex:19,isolation:'isolate',pointerEvents:'none'}}>
+   {bottomCaptions?<Song captionsOnly layoutOverride="lower-center" bottomGradient captionScale={.78}/>:<div style={{...abs,inset:0,transform:active?'translate(-470px,60px) scale(.48)':'scale(.92)'}}><Song captionsOnly layoutOverride="lower-center"/></div>}
+  </AbsoluteFill>
   <AbsoluteFill style={{zIndex:20,background:'#000',opacity:1-ramp(ms,1500,3000)}}/>
  </AbsoluteFill>;
 }
