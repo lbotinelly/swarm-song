@@ -2,6 +2,8 @@
 
 ## Active focused production — M11 opening
 
+**Performance mandate:** read `docs/PERFORMANCE_MANDATE.md`. Every visible agent needs a purposeful action throughout their appearance; supporting cast must not fall back to statues. Leo approved the elevated approach as PERFECT. Preserve that camera/city. The morning-routines candidate adds staggered waking, news, coffee/sweeping, and the protagonist's yawn/stretch/task-list/ellipsis sequence. Acting and revised caption placement await playback review; preserve the approved approach film.
+
 **Current direction:** Leo selected density reference A and authorized approaching the central facing protagonist building, then refined it to a drone-like view at mid-building altitude: only buildings, no ground. Side rows move as rigid layers; their native foundations remain below frame. Dense rear buildings fade into blue haze, no visible horizon. See `assets/milestone11/canyon-approach/README.md`. Preserve the earlier C proof. New motion is pending director playback, not approved by static critique.
 
 **Latest director correction:** Leo selected C (street canyon) and authorized a focused transition proof: individual parallax buildings, an 8–10-storey hero building, full-screen world behind the cutaway, captions over the world, and one GPU shroud sliding aside. See `assets/milestone11/canyon-proof/README.md`. The candidate uses eight storeys and the fifth floor from the top. Preserve prior films; director playback review remains pending. Leo rejected V2 as underwhelming and not a city; do not treat the earlier critic's8.5 as approval.

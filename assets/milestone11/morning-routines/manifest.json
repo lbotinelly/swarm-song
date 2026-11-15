@@ -1,0 +1,44 @@
+{
+  "yawn": {
+    "size": [
+      1212,
+      1298
+    ],
+    "sha256": "6453e32780bd1bedb71edf47d6201c0d40454b7f46bb870308e7ace4b7bfe117"
+  },
+  "coffee": {
+    "size": [
+      1199,
+      1312
+    ],
+    "sha256": "16790ce380930691ae30cf7f82fb44f7f7101cc433b598fb589afbb4ab919ca2"
+  },
+  "broom": {
+    "size": [
+      1024,
+      1536
+    ],
+    "sha256": "c167af65a72b49fc99f86a671c392c2565c981a93d0bcd8b8733a2edbe3df031"
+  },
+  "sip": {
+    "size": [
+      1212,
+      1298
+    ],
+    "sha256": "11b226b12fda8762be5fbbaa6c2c0c8956ec64aca8f26fddf99b71b66e49616c"
+  },
+  "coffee-empty": {
+    "size": [
+      1199,
+      1312
+    ],
+    "sha256": "74e87aa800bfccaf8d460e89f792fab5ca627b69948224830ed2818ee46baba9"
+  },
+  "mug": {
+    "size": [
+      1312,
+      1199
+    ],
+    "sha256": "099f4a1b9474563d37f14124158d1f937d1e3640527a4e712135ebf5d1b4a953"
+  }
+}
