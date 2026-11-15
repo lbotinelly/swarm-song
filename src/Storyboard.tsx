@@ -137,7 +137,7 @@ function Room({ms,second=false,scene}:{ms:number;second?:boolean;scene:string}){
 }
 // SH010: reuse approved wrench, goggles and dust with authored transforms.
 // One local group keeps the tool, catch and forehead mount attached during bops.
-function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;index:number;flip?:boolean}){
+export function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;index:number;flip?:boolean}){
  const friend=index>0?craftFriendAt(ms,index as 1|2):null;
  const pose=friend?.walking?'walking':index===0&&ms>=46500?'singing':'cheer',scale=w/1400,s=agent407[pose];
  const [lx,ly]=attachmentPoint(s,'leftHand',scale),[rx,ry]=attachmentPoint(s,'rightHand',scale);

@@ -13,6 +13,7 @@ import {Song} from './Song';
 import {Piece} from './PaperApartment';
 import {Cut} from './ImaginedVillage';
 import {CraftingHandoff} from './Storyboard';
+import {ImaginationStage} from './ImaginationStage';
 const abs:CSSProperties={position:'absolute'};
 const picture=(src:string,x:number,y:number,w:number)=><Img src={staticFile(src)} style={{...abs,left:x,top:y,width:w}}/>;
 const mounted=(p:ItemPose,node:ReactNode)=><div style={{...abs,left:p.x,top:p.y,transform:`rotate(${p.angle}deg) scale(${(p.facing??(p.flip?-1:1))*p.scale},${p.scale})`,transformOrigin:'0 0'}}>{node}</div>;
@@ -76,14 +77,23 @@ function RecipientRoom({ms}:{ms:number}){
  const news=pickAt(ms,{start:31550,duration:300,from:{x:1170,y:475,angle:-4,scale:.65},to:{x:1020,y:489,angle:0,scale:.7},height:30,turn:4});
  return <RegistryFinish layeredVent captions={false} performance={{planeInFront:true,ms:8000,opened:1,second:true,frontActor:true,actor:ms>=37000?<><Bunny x={1244.6} pose="kneeling" angle={1.5*Math.sin(ms/180)}/>{mounted({x:1310,y:578,angle:0,scale:.65},<Message drawing writing={ramp(ms,37000,38900)}/>)}<Pencil ms={ms} x={1315+5*Math.sin(ms/80)} y={565}/></>:<Correspondent ms={ms} recipient/>,plane:ms<32000?{nose:a.incoming,outbound:true}:ms>=34100&&ms<35200?{nose:a.reply,outbound:false}:undefined,overlay:mounted(news.pose,<ReadingBoard news/>),setDressing:<>{picture('milestone11/morning/coffee-empty.png',220,420,260)}{picture('milestone11/morning/mug.png',335,550,95)}</>}}/>;
 }
-export function FirstChapter({aRollOnly=false}:{aRollOnly?:boolean}){
+export function FirstChapter({aRollOnly=false,imaginationTurn=false}:{aRollOnly?:boolean;imaginationTurn?:boolean}){
  const ms=useCurrentFrame()*1000/30,a=chapterAt(ms),recipient=ms>=31200&&ms<35200;
+ const lift=ramp(ms,39000,39360),land=ramp(ms,39360,40100);
+ const motionBlur=imaginationTurn?(ms>=39360?80*(1-land):80*lift):0;
  return <AbsoluteFill style={{background:'#eee4ce',overflow:'hidden'}}>
+  {imaginationTurn&&ms>=39000&&ms<40100&&<AbsoluteFill style={{background:'linear-gradient(#91bccd,#e8e8ce)'}}/>}
+  <svg width="0" height="0"><defs><filter id="imagination-up-blur" x="-20%" y="-40%" width="140%" height="180%"><feGaussianBlur stdDeviation={`1 ${motionBlur}`}/></filter></defs></svg>
+  <AbsoluteFill style={{transform:imaginationTurn?`translateY(${400*lift}px)`:undefined,opacity:imaginationTurn?1-ramp(ms,39220,39420):1,filter:motionBlur>.1?'url(#imagination-up-blur)':undefined}}>
+  {!(imaginationTurn&&ms>=39420)&&<>
   {recipient?<AbsoluteFill style={{background:'#152335'}}><div style={{...abs,inset:0,transform:'translate(-180px,25px) scale(1.05)',transformOrigin:'0 0'}}><RecipientRoom ms={ms}/></div></AbsoluteFill>:<CanyonOpening dense active focus bottomCaptions captions={false} aRollOnly={aRollOnly} revealHeroEdge={ms>=20000} heroInterior={ms>=20000?<HeroInterior ms={ms}/>:undefined} heroForeground={ms>=23000&&ms<28000?<RegistryFinish actorOnly captions={false} performance={{ms:ms-23000,steadyRoom:true}}/>:undefined}/>}
   {ms>=37000&&ms<39000&&<div style={{...abs,left:30,top:40,width:1920,height:1080,transform:'scale(.23)',transformOrigin:'0 0',border:'12px solid #fff5df',boxShadow:'6px 8px 2px #18293d66'}}><RecipientRoom ms={ms}/></div>}
-  {ms>=39000&&<div style={{...abs,left:1243*(1-a.unfolding),top:522*(1-a.unfolding),width:194+1726*a.unfolding,height:80+1000*a.unfolding,transform:`rotate(${-6*(1-a.unfolding)}deg)`,transformOrigin:'0 0',overflow:'hidden',boxShadow:a.unfolding<1?'5px 8px 4px #47382c55':undefined}}>
+  {!imaginationTurn&&ms>=39000&&<div style={{...abs,left:1243*(1-a.unfolding),top:522*(1-a.unfolding),width:194+1726*a.unfolding,height:80+1000*a.unfolding,transform:`rotate(${-6*(1-a.unfolding)}deg)`,transformOrigin:'0 0',overflow:'hidden',boxShadow:a.unfolding<1?'5px 8px 4px #47382c55':undefined}}>
    <div style={{...abs,width:1920,height:1080,transform:`scale(${(194+1726*a.unfolding)/1920},${(80+1000*a.unfolding)/1080})`,transformOrigin:'0 0'}}><CraftingHandoff ms={ms}/></div>
   </div>}
+  </>}
+  </AbsoluteFill>
+  {imaginationTurn&&ms>=39200&&<AbsoluteFill style={{opacity:ramp(ms,39200,39420),transform:`translateY(${-50*(1-land)}px) scale(${1+.12*(1-land)})`,filter:motionBlur>.1?'url(#imagination-up-blur)':undefined}}><ImaginationStage ms={ms}/></AbsoluteFill>}
   <AbsoluteFill style={{zIndex:30,isolation:'isolate',pointerEvents:'none'}}><Song captionsOnly layoutOverride="lower-center" bottomGradient captionScale={.78}/></AbsoluteFill>
  </AbsoluteFill>;
 }

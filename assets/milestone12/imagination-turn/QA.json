@@ -1,0 +1,23 @@
+{
+  "videos": {
+    "chapter-55s": {
+      "frames": 1650,
+      "masterStartSeconds": 0,
+      "audioCorrelation": 0.9999792966016215,
+      "fullDecode": "pass"
+    },
+    "imagination-38-55": {
+      "frames": 510,
+      "masterStartSeconds": 38,
+      "audioCorrelation": 0.9999746357353181,
+      "fullDecode": "pass"
+    }
+  },
+  "preservedExports": {
+    "assets/milestone12/review/first-chapter-42s.mp4": "a115128008b66249e095d4fcc52bdf2b4f9da10b5afd37d16b37cf3d63e60be0",
+    "assets/milestone12/crafting/review/chapter-55s.mp4": "a0398963a1fb01343397327340b03b09954358ae2eb886ab6fa4070678ca109f"
+  },
+  "testsPassed": 54,
+  "sourceAndSampledStillReview": "no remaining blockers after grounding and transition-edge corrections",
+  "continuousPlaybackApproval": false
+}
