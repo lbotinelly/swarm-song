@@ -1,5 +1,9 @@
 # Codex working instructions
 
+## Active production — M12 first chapter
+
+Read `assets/milestone12/BRIEF.md`, `README.md`, `AROLL_LEDGER.md` and `REVIEW.md`. Leo authorizes a continuous 0–42s A-roll candidate, 18–36/28–42 extracts, A-roll-only comparison and technical/independent review. Preserve approved M11 city, morning/focus/caption sources and all old exports. Latest correction: messages are blank sheet stickers plus a wiggling writing emoji, folding into planes; do not duplicate the song's dialogue on notes. Reuse V3 grip/pull, vertical layered vent and SH010 crafting handoff. No new engine or unnecessary art batch.
+
 ## Active focused production — M11 opening
 
 **Latest caption refinement:** Leo approved the morning-focus camera and requested captions at the bottom, then refined this to a transparent black gradient behind visible lyrics instead of darkening the apartment. `assets/milestone11/morning-captions/README.md` records this candidate; preserve the approved camera, acting and previous exports.

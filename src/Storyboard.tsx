@@ -168,6 +168,7 @@ function MagicGoggles({ms,x,w,index,flip=false}:{ms:number;x:number;w:number;ind
   {within(ms,pop,wearAt)&&<Goggles x={gx+(mount.x-gx)*lift} y={gy+settle+(mount.y-gy-settle)*lift} w={mount.w*(1+.14*Math.sin(Math.PI*ramp(ms,pop,pop+200)))} turn={caught?s.mountDegrees.head*lift:-22*Math.sin(Math.PI*flight)}/>}
  </div>;
 }
+export function CraftingHandoff({ms}:{ms:number}){return <AbsoluteFill style={{background:'#eee4ce'}}><Piece part="wall" x={-20} y={-20} w={1960} h={1120}/><div style={{position:'absolute',left:0,top:0,width:1920,height:625,overflow:'hidden'}}><Community ms={ms} scene="invent" integrated/></div></AbsoluteFill>;}
 function Community({ms,scene,integrated=false}:{ms:number;scene:string;integrated?:boolean}){
  const cue=musicStateAt(ms,music.cues as MusicCue[]),bop=percussionStateAt(ms,percussionAllowedAt(ms,direction)?drums.events:[],Boolean(cue.active?.enabled));
  return <><World ms={ms} integrated={integrated}/>

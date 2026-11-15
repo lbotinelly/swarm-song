@@ -1,0 +1,68 @@
+{
+  "videos": {
+    "first-chapter-42s": {
+      "frames": 1260,
+      "masterStartSeconds": 0,
+      "audioCorrelation": 0.999984950258715,
+      "fullDecode": "pass"
+    },
+    "continuity-18-36": {
+      "frames": 540,
+      "masterStartSeconds": 18,
+      "audioCorrelation": 0.9999864513807537,
+      "fullDecode": "pass"
+    },
+    "connection-28-42": {
+      "frames": 420,
+      "masterStartSeconds": 28,
+      "audioCorrelation": 0.9999912720868624,
+      "fullDecode": "pass"
+    },
+    "aroll-only-42s": {
+      "frames": 1260,
+      "masterStartSeconds": 0,
+      "audioCorrelation": 0.999984950258715,
+      "fullDecode": "pass"
+    }
+  },
+  "unchangedProtectedInputs": 205,
+  "documentedSourceExtensions": [
+    "src/RegistryFinish.tsx",
+    "src/Storyboard.tsx"
+  ],
+  "sourceBaseline": "1d9ce57",
+  "approvedOpeningExactSampleMatches": [
+    0,
+    10800,
+    14000,
+    19000
+  ],
+  "reverseDirectSeekPNGs": {
+    "20000": {
+      "actual": "70a25d4dabe6c9744f7a316e2b5859786092ca793acb0cd27a63805327aabae2",
+      "expected": "70a25d4dabe6c9744f7a316e2b5859786092ca793acb0cd27a63805327aabae2",
+      "exact": true,
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0
+    },
+    "25500": {
+      "actual": "4355d11c764a273bb9b45b1543d56f61a20a6aceec8aec8fcc43d03c1c43aeec",
+      "expected": "4355d11c764a273bb9b45b1543d56f61a20a6aceec8aec8fcc43d03c1c43aeec",
+      "exact": true,
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0
+    },
+    "40000": {
+      "actual": "1bfca5d2174ce4a32a963bc240ef78d4add53a3c2dbe49cc609974019e73ff3a",
+      "expected": "1bfca5d2174ce4a32a963bc240ef78d4add53a3c2dbe49cc609974019e73ff3a",
+      "exact": true,
+      "changedPixels": 0,
+      "maxChannelDifference": 0,
+      "meanChannelDifference": 0
+    }
+  },
+  "frameStateTests": 1260,
+  "technicalOnlyNotContinuousPlaybackApproval": true
+}

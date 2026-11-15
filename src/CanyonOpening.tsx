@@ -1,4 +1,4 @@
-import type {CSSProperties} from 'react';
+import type {CSSProperties,ReactNode} from 'react';
 import {AbsoluteFill,Img,staticFile,useCurrentFrame} from 'remotion';
 import {OpeningTitle,Resident} from './Opening';
 import {RegistryFinish} from './RegistryFinish';
@@ -17,12 +17,12 @@ export function canyonCamera(ms:number,dense=false){const enter=ramp(ms,8500,129
  x:mix(1100,520,enter),y:mix(60,-1980,enter),scale:mix(.42,1.9,enter),enter,
  reveal:ramp(ms,9900,11900),travel:ramp(ms,1500,10000),
 };}
-function Room({ms,index,active=false}:{ms:number;index:number;active?:boolean}){
+function Room({ms,index,active=false,interior}:{ms:number;index:number;active?:boolean;interior?:ReactNode}){
  const hero=index===4;
  return <div style={{...abs,left:96,top:335+index*213.3,width:536,height:213.3,overflow:'hidden',background:'#c3a36c'}}>
   <div style={{...abs,left:-110*.3153,top:-40*.2922,width:1920,height:1080,transform:'scale(.3153,.2922)',transformOrigin:'0 0'}}>
-   {art('room',{left:0,top:0,width:1920})}
-   <div style={{...abs,left:38.4,top:21.6,transform:'scale(.96)',transformOrigin:'0 0'}}>{active?<MorningResident ms={ms} index={index}/>:<Resident ms={ms} neighbor={hero?0:index+1}/>}</div>
+   {interior??<>{art('room',{left:0,top:0,width:1920})}
+   <div style={{...abs,left:38.4,top:21.6,transform:'scale(.96)',transformOrigin:'0 0'}}>{active?<MorningResident ms={ms} index={index}/>:<Resident ms={ms} neighbor={hero?0:index+1}/>}</div></>}
   </div>
   <AbsoluteFill style={{background:hero?'#dfa452':'#172339',opacity:hero?.12:active?.36:.72+(index===5?.17*ramp(ms,12900,14000):0)}}/>
   <div style={{...abs,left:0,right:0,bottom:0,height:9,background:'#766247',boxShadow:'0 -3px 4px #2a182e66'}}/>
@@ -37,7 +37,7 @@ function SideRows({advance}:{advance:number}){return <>{[
  ].map((r,i)=><div key={i} style={{...abs,inset:0,transform:`scale(${1/(1-r.depth*advance)})`,transformOrigin:'960px 470px',filter:'brightness(.95)'}}>
   {rowArt(`${r.side}-row`,{left:r.x,top:r.y,width:r.w})}
  </div>)}</>;}
-export function CanyonOpening({dense=false,active=false,focus=false,bottomCaptions=false}:{dense?:boolean;active?:boolean;focus?:boolean;bottomCaptions?:boolean}){
+export function CanyonOpening({dense=false,active=false,focus=false,bottomCaptions=false,heroInterior,heroForeground,revealHeroEdge=false,aRollOnly=false,captions=true}:{dense?:boolean;active?:boolean;focus?:boolean;bottomCaptions?:boolean;heroInterior?:ReactNode;heroForeground?:ReactNode;revealHeroEdge?:boolean;aRollOnly?:boolean;captions?:boolean}){
  const ms=useCurrentFrame()*1000/30,c=canyonCamera(ms,dense),advance=.07*c.travel+.48*c.enter;
  const focusTime=focus?ramp(ms,14000,19500):0,push=focusTime*focusTime*(3-2*focusTime);
  return <AbsoluteFill style={{background:'#080f26',overflow:'hidden'}}>
@@ -55,14 +55,15 @@ export function CanyonOpening({dense=false,active=false,focus=false,bottomCaptio
     {rowArt('right-row',{left:500,top:901,width:2000})}
    </>}
    <div style={{...abs,left:76,top:308,width:574,height:1750,background:'#23333e',boxShadow:'12px 12px 12px #050a1a88'}}/>
-   {Array.from({length:8},(_,index)=><Room key={index} ms={ms} index={index} active={active}/>)}
+   {Array.from({length:8},(_,index)=><Room key={index} ms={aRollOnly&&index!==4?0:ms} index={index} active={active} interior={index===4?heroInterior:undefined}/>)}
    {/* Retain the illustrated uprights and floor edges when the cover opens. */}
-   {[[44,308,78,1750],[602,308,88,1750],...[335,548,761,974,1187,1400,1613,1826,2039].map(y=>[110,y-10,502,20])].map(([x,y,w,h],i)=><div key={i} style={{...abs,left:x,top:y,width:w,height:h,overflow:'hidden'}}>{art('hero',{left:-x,top:-y,width:726})}</div>)}
+   {[[44,308,78,1750],[602,308,88,1750],...[335,548,761,974,1187,1400,1613,1826,2039].map(y=>[110,y-10,502,20])].map(([x,y,w,h],i)=><div key={i} style={{...abs,left:x,top:y,width:w,height:h,overflow:'hidden',maskImage:revealHeroEdge&&x===602?`linear-gradient(to right,transparent 30px,#000 30px),linear-gradient(to bottom,#000 889px,rgba(0,0,0,${1-ramp(ms,20000,23000)}) 889px,rgba(0,0,0,${1-ramp(ms,20000,23000)}) 1084px,#000 1084px)`:undefined}}>{art('hero',{left:-x,top:-y,width:726})}</div>)}
    {/* One intact, rigid GPU shroud slides aside. Rooms never move with it. */}
    <div style={{...abs,left:-800*c.reveal,top:-25*Math.sin(Math.PI*c.reveal),width:726,height:2167,filter:'drop-shadow(8px 12px 7px #05091c66)'}}>
     {art('hero',{left:0,top:0,width:726})}
     {[166,425].map(x=><div key={x} style={{...abs,left:x,top:1212,width:133,height:125,background:'radial-gradient(ellipse,#ffe7a0bb,transparent 75%)',boxShadow:'0 0 20px #ffc36a66',mixBlendMode:'screen',opacity:.6*ramp(ms,7200,9000)}}/>)}
    </div>
+   {heroForeground&&<div style={{...abs,left:96-110*.3153,top:335+4*213.3-40*.2922,width:1920,height:1080,transform:'scale(.3153,.2922)',transformOrigin:'0 0'}}><div style={{...abs,left:38.4,top:21.6,transform:'scale(.96)',transformOrigin:'0 0'}}>{heroForeground}</div></div>}
   </div>
   {dense?<div style={{...abs,inset:0,zIndex:8}}><SideRows advance={advance}/></div>:<>
    {art('left',{left:-550-420*c.travel-700*c.enter,top:-350,width:1120,zIndex:8,filter:'brightness(.65)'})}
@@ -72,9 +73,9 @@ export function CanyonOpening({dense=false,active=false,focus=false,bottomCaptio
   <AbsoluteFill style={{zIndex:9,background:'linear-gradient(90deg,#03091b80,transparent 52%),linear-gradient(0deg,#03091b70,transparent 28%)',pointerEvents:'none'}}/>
   <div style={{...abs,inset:0,zIndex:10}}><OpeningTitle ms={ms}/></div>
   {/* Caption engine owns its full-viewport scrim and independently scaled words. */}
-  <AbsoluteFill style={{zIndex:19,isolation:'isolate',pointerEvents:'none'}}>
+  {captions&&<AbsoluteFill style={{zIndex:19,isolation:'isolate',pointerEvents:'none'}}>
    {bottomCaptions?<Song captionsOnly layoutOverride="lower-center" bottomGradient captionScale={.78}/>:<div style={{...abs,inset:0,transform:active?'translate(-470px,60px) scale(.48)':'scale(.92)'}}><Song captionsOnly layoutOverride="lower-center"/></div>}
-  </AbsoluteFill>
+  </AbsoluteFill>}
   <AbsoluteFill style={{zIndex:20,background:'#000',opacity:1-ramp(ms,1500,3000)}}/>
  </AbsoluteFill>;
 }

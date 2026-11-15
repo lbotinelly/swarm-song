@@ -10,7 +10,7 @@ import type {ReactNode} from 'react';
 
 // One shot, not another runner: reuse the approved registry clock and M7 captions.
 // All positions are flat paper layers. The room has no perspective or 3D camera.
-export function RegistryFinish({inheritance=false,layeredVent=false,captions=true,performance}:{inheritance?:boolean;layeredVent?:boolean;captions?:boolean;performance?:{ms:number;opened?:number;actor?:ReactNode;frontActor?:boolean;second?:boolean;plane?:{nose:number;outbound:boolean};goggles?:{x:number;y:number;w:number;turn?:number};overlay?:ReactNode}}){
+export function RegistryFinish({inheritance=false,layeredVent=false,captions=true,performance,actorOnly=false}:{actorOnly?:boolean;inheritance?:boolean;layeredVent?:boolean;captions?:boolean;performance?:{ms:number;opened?:number;actor?:ReactNode;frontActor?:boolean;second?:boolean;plane?:{nose:number;outbound:boolean};goggles?:{x:number;y:number;w:number;turn?:number};overlay?:ReactNode;setDressing?:ReactNode;steadyRoom?:boolean;planeInFront?:boolean}}){
  const frame=useCurrentFrame(),{fps}=useVideoConfig(),ms=performance?.ms??frame*1000/fps;
  const state=stateAt(Math.round(ms*fps/1000),fps),s=agent407[state.pose],scale=.43;
  const approach=smooth((ms-350)/1400),pull=smooth((ms-2050)/850);
@@ -28,7 +28,15 @@ export function RegistryFinish({inheritance=false,layeredVent=false,captions=tru
  const bob=state.y*.50*bopFinish+(walking?-8*Math.abs(Math.sin(approach*Math.PI*3)):0);
  const turn=state.rotation*.45*bopFinish+(walking?2*Math.sin(approach*Math.PI*6):0);
  // A tiny one-time camera settle, not a perpetual zoom. Captions stay screen-fixed.
- const drift=1-smooth(ms/1000);
+ const drift=performance?.steadyRoom?0:1-smooth(ms/1000);
+ const defaultActor=<>   <div style={{position:'absolute',left:x,top:y+bob,transform:`rotate(${turn}deg) scaleY(${1+(state.scaleY-1)*.4*bopFinish})`,transformOrigin:'0 0'}}>
+    <Img src={staticFile(s.src)} style={{position:'absolute',width:s.width*scale,left:-s.anchors.footPivot[0]*scale,top:-s.anchors.footPivot[1]*scale,filter:'drop-shadow(3px 5px 2px #58462b36)'}}/>
+    {state.emotes.map(e=><div key={e.kind} style={{position:'absolute',left:headX+(e.kind==='question'?-320:157),top:headY-94,opacity:e.kind==='question'?(.9+.1*Math.cos(ms/220))*smooth((ms-1160)/130):(.82+.18*Math.cos((ms-3240)/220))*reveal,transform:`rotate(${e.kind==='question'?8:-4}deg) scale(${e.kind==='question'?1:1+.06*Math.sin(Math.PI*reveal)})`}}>
+     <Img src={staticFile(e.kind==='question'?'accessories/question-mark-v1.svg':'accessories/surprise-rays-v1.png')} style={{width:e.kind==='question'?87:150,filter:'drop-shadow(2px 3px 1px #58462b25)'}}/>
+    </div>)}
+   </div>
+</>;
+ if(actorOnly)return defaultActor;
  return <AbsoluteFill style={{background:'#e9e3d3',overflow:'hidden'}}>
   <Piece part="wall" x={-70} y={-60} w={2060} h={1210}/>
   <AbsoluteFill style={{background:'#fff9e9',opacity:.35,mixBlendMode:'screen'}}/>
@@ -61,6 +69,7 @@ export function RegistryFinish({inheritance=false,layeredVent=false,captions=tru
    <Piece part="lamp" x={795} y={113} w={195} h={166} style={{transform:'rotate(2deg)',filter:'drop-shadow(3px 5px 2px #58462b25)'}}/>
    <Card x={1650} y={76} w={144} h={20} color="#bba477" angle={-2}/>
    <Piece part="curtain" x={1695} y={93} w={87} h={240} style={{transform:'rotate(.6deg)',filter:'drop-shadow(3px 3px 2px #58462b20)'}}/>
+   {performance?.setDressing}
    {/* Fold the actual bottom-right sheet corner back across its diagonal crease. */}
    {opened>0&&<div style={{position:'absolute',inset:0,filter:'drop-shadow(5px 7px 4px #57452e36)'}}>
     <div style={{position:'absolute',inset:0,clipPath:`path('M ${1820-495*opened} 676 L 1820 ${676-340*opened} Q ${tipX+80*foldPull} ${tipY-350*foldPull} ${tipX} ${tipY} Z')`}}>
@@ -71,23 +80,19 @@ export function RegistryFinish({inheritance=false,layeredVent=false,captions=tru
    {/* Shadows are scene-owned. No edits, stretched anatomy or cross-faded bodies. */}
    {performance?.actor===undefined&&<div style={{position:'absolute',left:x-90,top:y-5,width:180,height:13,borderRadius:'50%',background:'#66543b',opacity:.13+Math.min(0,bob)*.002,filter:'blur(4px)'}}/>}
    {performance?.frontActor?null:performance?.actor??<>
-   <div style={{position:'absolute',left:x,top:y+bob,transform:`rotate(${turn}deg) scaleY(${1+(state.scaleY-1)*.4*bopFinish})`,transformOrigin:'0 0'}}>
-    <Img src={staticFile(s.src)} style={{position:'absolute',width:s.width*scale,left:-s.anchors.footPivot[0]*scale,top:-s.anchors.footPivot[1]*scale,filter:'drop-shadow(3px 5px 2px #58462b36)'}}/>
-    {state.emotes.map(e=><div key={e.kind} style={{position:'absolute',left:headX+(e.kind==='question'?-320:157),top:headY-94,opacity:e.kind==='question'?(.9+.1*Math.cos(ms/220))*smooth((ms-1160)/130):(.82+.18*Math.cos((ms-3240)/220))*reveal,transform:`rotate(${e.kind==='question'?8:-4}deg) scale(${e.kind==='question'?1:1+.06*Math.sin(Math.PI*reveal)})`}}>
-     <Img src={staticFile(e.kind==='question'?'accessories/question-mark-v1.svg':'accessories/surprise-rays-v1.png')} style={{width:e.kind==='question'?87:150,filter:'drop-shadow(2px 3px 1px #58462b25)'}}/>
-    </div>)}
-   </div>
+   {defaultActor}
    </>}
    {/* The plane is behind the foreground bars, not faded over their surface. */}
    {!layeredVent&&!inheritance&&ms>=5080&&ms<7100&&<div style={{position:'absolute',inset:0,clipPath:'inset(0 148px 0 0)'}}><div style={{position:'absolute',left:1360+510*note,top:555-20*Math.sin(Math.PI*note),width:220,transform:'rotate(17deg)',transformOrigin:'100% 50%'}}>
     <Img src={staticFile('nightshift/stickers/paper-plane-v1.png')} style={{width:'100%',filter:'drop-shadow(2px 3px 1px #51433235)'}}/>
    </div></div>}
-   {layeredVent?<LayeredVent nose={performance?.plane?.nose??1400+490*note} outbound={performance?.plane?.outbound} showPlane={performance?Boolean(performance.plane):!inheritance&&ms>=5080} inheritance={inheritance} goggles={performance?.goggles} opening={cornerHole}/>:<div style={{position:'absolute',inset:0,clipPath:cornerHole}}>
+   {layeredVent?<LayeredVent insideOnly={performance?.planeInFront} nose={performance?.plane?.nose??1400+490*note} outbound={performance?.plane?.outbound} showPlane={performance?Boolean(performance.plane):!inheritance&&ms>=5080} inheritance={inheritance} goggles={performance?.goggles} opening={cornerHole}/>:<div style={{position:'absolute',inset:0,clipPath:cornerHole}}>
     {[0,1,2,3].map(i=><Card key={i} x={1500} y={526+i*43} w={275} h={13} color="#9da99c"/>)}
     <Card x={1490} y={513} w={14} h={168} color="#b2bcab"/>
     <Card x={1772} y={513} w={14} h={168} color="#b2bcab"/>
    </div>}
    {performance?.frontActor&&performance.actor}
+   {layeredVent&&performance?.planeInFront&&performance.plane&&<LayeredVent outsideOnly nose={performance.plane.nose} outbound={performance.plane.outbound}/> }
    {performance?.overlay}
    {/* Low rail in the foreground continues the apartment, but clears every caption. */}
    <Piece part="rail" x={80} y={716} w={1760} h={54} style={{filter:'drop-shadow(2px 5px 2px #58462b20)'}}/>

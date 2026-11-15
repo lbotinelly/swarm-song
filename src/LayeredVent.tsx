@@ -8,9 +8,10 @@ export function ventNose(ms:number){
  const u=ms<=4500?smooth((ms-350)/3600):1-smooth((ms-5050)/3600);
  return 1400+490*u;
 }
-export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening='inset(0)',hidePlane=false,outbound=false,goggles}:{nose?:number;showPlane?:boolean;inheritance?:boolean;opening?:string;hidePlane?:boolean;outbound?:boolean;goggles?:{x:number;y:number;w:number;turn?:number}}){
+export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening='inset(0)',hidePlane=false,outbound=false,goggles,outsideOnly=false,insideOnly=false}:{nose?:number;showPlane?:boolean;inheritance?:boolean;opening?:string;hidePlane?:boolean;outbound?:boolean;goggles?:{x:number;y:number;w:number;turn?:number};outsideOnly?:boolean;insideOnly?:boolean}){
  const {near,deep,end,y}=ventPlanes;
  const plane=(lo:number,hi:number)=>showPlane&&!hidePlane&&<div style={{position:'absolute',inset:0,clipPath:`polygon(${lo}px 0,${hi}px 0,${hi}px 1080px,${lo}px 1080px)`}}><Img src={staticFile('nightshift/stickers/paper-plane-v1.png')} style={{position:'absolute',left:0,top:0,width:1736,height:1224,transform:`translate(${nose}px,${y}px) scaleX(${outbound?-1:1}) rotate(28deg) scale(.075) translate(-1385px,-260px)`,transformOrigin:'0 0'}}/></div>;
+ if(outsideOnly)return plane(-500,near);
  return <>
   <div style={{position:'absolute',inset:0,clipPath:opening}}>
    <div style={{position:'absolute',left:1490,top:513,width:296,height:168,background:'#263936',boxShadow:'inset 7px 9px 10px #101b1b'}}/>
@@ -28,7 +29,7 @@ export function LayeredVent({nose=1400,showPlane=true,inheritance=false,opening=
    <Card x={1772} y={513} w={14} h={168} color="#b7c3ac"/>
   </div>
   {/* Outside portion remains in front of the room and near structure. */}
-  {plane(-500,near)}
+  {!insideOnly&&plane(-500,near)}
  </>;
 }
 export function VentStudy({hidePlane=false}:{hidePlane?:boolean}){

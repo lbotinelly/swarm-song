@@ -1,0 +1,26 @@
+{
+  "20000": {
+    "actual": "70a25d4dabe6c9744f7a316e2b5859786092ca793acb0cd27a63805327aabae2",
+    "expected": "70a25d4dabe6c9744f7a316e2b5859786092ca793acb0cd27a63805327aabae2",
+    "exact": true,
+    "changedPixels": 0,
+    "maxChannelDifference": 0,
+    "meanChannelDifference": 0
+  },
+  "25500": {
+    "actual": "4355d11c764a273bb9b45b1543d56f61a20a6aceec8aec8fcc43d03c1c43aeec",
+    "expected": "4355d11c764a273bb9b45b1543d56f61a20a6aceec8aec8fcc43d03c1c43aeec",
+    "exact": true,
+    "changedPixels": 0,
+    "maxChannelDifference": 0,
+    "meanChannelDifference": 0
+  },
+  "40000": {
+    "actual": "1bfca5d2174ce4a32a963bc240ef78d4add53a3c2dbe49cc609974019e73ff3a",
+    "expected": "1bfca5d2174ce4a32a963bc240ef78d4add53a3c2dbe49cc609974019e73ff3a",
+    "exact": true,
+    "changedPixels": 0,
+    "maxChannelDifference": 0,
+    "meanChannelDifference": 0
+  }
+}

@@ -8,7 +8,7 @@ import {attachItem,pickAt,type ItemPose} from './item-actions';
 import {wakeTimes} from './morning-routines';
 const abs:CSSProperties={position:'absolute'};
 const pic=(src:string,x:number,y:number,w:number,style:CSSProperties={})=><Img src={staticFile(src)} style={{...abs,left:x,top:y,width:w,...style}}/>;
-function ReadingBoard({news=false}:{news?:boolean}){return <div style={{...abs,width:260,height:300}}>
+export function ReadingBoard({news=false}:{news?:boolean}){return <div style={{...abs,width:260,height:300}}>
  {pic('accessories/clipboard-v1.png',0,0,260)}
  <div style={{...abs,left:68,top:104,width:130,fontFamily:'sans-serif',fontSize:20,fontWeight:800,color:'#526f66'}}>{news?'NEWS':'TASKS'}</div>
  {[0,1,2].map(i=><div key={i} style={{...abs,left:68,top:141+i*29,width:120,height:8,borderLeft:news?'none':'8px solid #78968c',borderBottom:'3px solid #a68d6c'}}/>)}

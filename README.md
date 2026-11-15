@@ -1,8 +1,12 @@
 # Swarm Song — Chibi Sticker Cinema
 
+## Milestone 12 — Hello? Is anybody there?
+
+[First-chapter review](assets/milestone12/review/index.html) · [A-roll ledger](assets/milestone12/AROLL_LEDGER.md) · [Reproduce and continuity](assets/milestone12/README.md) · [Independent review](assets/milestone12/REVIEW.md). A separate 0–42s candidate continues the approved city/morning opening through exploration, the V3 corner peel, a blank-sheet message and deliberate reply, then the first imagined playhouse. Includes 18–36s and 28–42s extracts and an A-roll-only comparison. Message content is carried by the song, with a writing emoji and paper-to-plane transformation. All previous exports remain preserved. Director playback review remains separate from source/still and technical checks.
+
 ## Milestone 11 — Once upon a GPU
 
-[Opening V2 and companion review cuts](assets/milestone11/review-v2/index.html) · [A-roll join](docs/OPENING_A_ROLL.md) · [Independent V2 review](assets/milestone11/REVIEW-V2.md) · [Reproduce](assets/milestone11/README.md). A focused 13-second city/title/apartment opening with a 20-second awakening continuation. V2 varies the city silhouettes and adds a kneeling rise and curious lean, using the same flat watercolor cushion sticker. Previous M10 and M11 V1 films remain untouched. Director playback approval is pending; V2 artwork/static staging scores 8.5/10.
+[Approved opening direction and caption treatment](assets/milestone11/morning-captions/review/index.html) · [Reproduce](assets/milestone11/morning-captions/README.md). Dense elevated canyon, eight-floor cutaway, staggered morning routines, gentle protagonist focus and full-width lyric contrast. Earlier [V2 studies](assets/milestone11/review-v2/index.html) are preserved historical candidates, not the current visual authority.
 
 ## Milestone 10 - The little world comes alive
 
